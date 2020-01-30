@@ -9,14 +9,14 @@ If you witness any member of our staff violating this Code of Conduct, please fe
 # 0. Purpose
 You are an official member of Project Topaz because of your desire to directly influence the project's direction, organize efforts, serve as a representative, and mentor contributors who are working in collaboration with us to meet our common goal. If you had only wanted to occasionally contribute code, you would have done that through Pull Requests, and not sought the extra recognition of being an official member.
 
-As an official member for the project, you possess the benefit of sharing authority over it. Your ideas, words, and actions are automatically given more credence than others who do not have the title. You always have the ear of the rest of the team, and have a say in whether a given direction should be pursued.
+As an official member for the project, you possess the benefit of sharing authority over it. Your ideas, words and actions are automatically given more credence than those of others. You always have the ear of the rest of the team, and have a say in whether a given direction should be pursued.
 
-However - _your ideas, words, and actions are automatically given more credence than others_. While this can be beneficial, it comes with the added responsibility of properly managing the additional weight you have been granted. Because you are an official member, your words and actions are a direct reflection on the entire project. This reflection is not limited to the quality of code, but includes the rest of our team as people, and the entire private server community as a whole. If one of us looks bad, we all look bad.
+However - _your ideas, words and actions are automatically given more credence than those of others_. While this can be beneficial, it comes with the added responsibility of properly managing the additional weight you have been granted. Because you are an official member, your words and actions are a direct reflection on the entire project. This reflection is not limited to the quality of code, but includes the rest of our team as people, and the entire private server community as a whole. If one of us looks bad, we all look bad.
 
 Therefore, because you represent more than just yourself, there is a higher standard for you to adhere to than those who do not. So long as you carry the weight that comes with the position, you also carry the burden of ensuring that the image people have of you - and by extension, us - is a positive one.
 
 # 1. Collaborative Service Official Rules
-Any and all Terms of Use, Guidelines, or Codes of Conduct put in place by any service which Project Topaz uses for collaboration are incorporated into our rules. Examples of collaboration services include GitHub and Discord. Do not break the Terms of Use for such services while a representative of Project Topaz, or violate any community guidelines while using that service.
+Any and all Terms of Use, Guidelines, or Codes of Conduct put in place by any service which Project Topaz uses for collaboration are incorporated into our rules. Examples of collaboration services include GitHub and Discord. Do not break the Terms of Use for such services while representing Project Topaz, or violate any community guidelines while using that service.
 
 # 2. Toxic Behavior
 Project Topaz wants members of the private server community to feel welcome and valued. Therefore, the following toxic behaviors are unacceptable:
@@ -53,7 +53,7 @@ While the Project Lead will do their best to make sure consensus is built among 
 Staff are encouraged to voice any complaints about the Project Lead to the Project Lead. However, there is also no mechanism for the removal of the Project Lead. If a dispute can not be resolved, and the behavior of the Project Lead is still considered to be inadequate or unacceptable, staff are encouraged to fork the project and select a new Project Lead.
 
 # 6. Community
-Do not make disparaging comments, even in jest, about servers or other codebases. These only upset people who have worked hard on that server or codebase. You never know when someone from that server you mocked will want to contribute to us, but we will lose them when they see us insulting them behind their backs. Please treat members of other communities like they are one of our own, because they might be one day.
+Do not make disparaging comments, even in jest, about servers or other codebases. These only upset people who have worked hard on that server or codebase. You never know when someone from that server you mocked will want to contribute to us, but we will lose them when they see us insulting them behind their backs. Please treat members of other communities like they are one of our own, because one day they might be.
 
 # 7. Representation
 As an official member you represent the project, even when you are interacting with the community "outside" of any sanctioned servers or other communication services we use. This includes websites we do not have a presence on. *_You are expected to behave in the same professional manner elsewhere in the community that you would with us._*
