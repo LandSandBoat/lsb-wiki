@@ -3,8 +3,8 @@ Official Members of Project Topaz agree to uphold this Code of Conduct. These st
 - On Discord: They have the `Staff` role, which also makes their name appear yellow.
 
 If you witness any member of our staff violating this Code of Conduct, please feel free to contact the Project Lead so that they may remedy the situation:
-- On GitHub: https://github.com/project-topaz
-- On Discord: Topaz#4291
+- On GitHub: https://github.com/zircon-tpl
+- On Discord: Zircon#4291
 
 # 0. Purpose
 You are an official member of Project Topaz because of your desire to directly influence the project's direction, organize efforts, serve as a representative, and mentor contributors who are working in collaboration with us to meet our common goal. If you had only wanted to occasionally contribute code, you would have done that through Pull Requests, and not sought the extra recognition of being an official member.
