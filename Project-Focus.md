@@ -8,6 +8,11 @@ Project focuses are typically divided into different categories, with only one d
 
 Categories for project focuses are as follows:
 
+# Meta Content:
+Projects under this category are focused on improving the usage of the codebase and tools (program interactive, or online collaborative), from a point-of-view ranging from server operators to players. They usually result in producing information rather than code.
+
+**Examples:** Setup guides for new administrators, lists of functioning features for players, large-scale reports on retail inaccuracies to assist developers, or guides about how to acquire data from retail.
+
 # General Development
 Projects under this category generally aim to improve or add new features to the codebase itself, more from the point-of-view of a developer than a player. These might have broad, sweeping effects on the rest of the codebase.
 
