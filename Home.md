@@ -58,9 +58,9 @@ then modify this line each time:
 
 Servers are now configured properly. Execute all the following .exe located in the \topaz\ folder (as Admin):
 
-* DSConnect-server.exe
-* DSGame-server.exe
-* DSSearch-server.exe (optional, to use the search function)
+* topaz_connect.exe
+* topaz_game.exe
+* topaz_search.exe (optional, to use the search function)
 
 /!\ DirectPlay /!\
 
