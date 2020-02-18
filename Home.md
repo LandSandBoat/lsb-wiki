@@ -38,9 +38,9 @@ Click on "Execute SQL..." (blue icon on top) > Yes.
 
 in the output console at the bottom and all of these 3 .exe:
 
-* DSConnect-server.exe
-* DSGame-server.exe
-* DSSearch-server.exe
+* topaz_connect.exe
+* topaz_game.exe
+* topaz_search.exe
 
 should be present in the \topaz\ folder.
 
