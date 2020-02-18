@@ -65,7 +65,7 @@ Servers are now configured properly. Execute all the following .exe located in t
 /!\ DirectPlay /!\
 
 You may need to enable this feature to make things work:
-Start menu > Système Windows > Control Panel > Programs and Features > Turn Windows features on or off:
+Start menu > Windows System > Control Panel > Programs and Features > Turn Windows features on or off:
 Open "Legacy Components" and check "DirectPlay" > OK.
 
 ## Client Setup
