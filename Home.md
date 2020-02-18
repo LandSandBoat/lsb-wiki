@@ -30,7 +30,7 @@ Click on "Execute SQL..." (blue icon on top) > Yes.
 
 ## Build the servers:
 
-* Execute Visual Studio Community 2019: Open a project or solution (on the right) > select the "darkstar.sln" file from the \darkstar\win32 folder > Open.
+* Execute Visual Studio Community 2019: Open a project or solution (on the right) > select the "topaz.sln" file from the \topaz\win32 folder > Open.
 * Once it's loaded > Build > Build Solution.
 
 * To confirm that everything was built properly, you should see:
