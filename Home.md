@@ -4,7 +4,7 @@ This is the wiki for Project Topaz. As we are still setting up the project, it m
 
 (For Windows 10.)
 
-## Softwares needed:
+## Softwares needed:dsp
 
 * Download and install [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/): Under "Workloads" > check "Desktop development with C++".
 * Download and install [Git for Windows](https://gitforwindows.org/): Nothing to do in particular during the installation.
@@ -20,7 +20,7 @@ This is the wiki for Project Topaz. As we are still setting up the project, it m
 ## Prepare the database:
 
 * Execute HeidiSQL and click on "New" (bottom left) then name your session as you wish > Password: Password previously saved from the MariaDB installation > Open > right click on it (left) > Create new > Database > name it "tpzdb" > OK.
-* Select "dspdb" > File > Run SQL file... > select every .sql files from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done.
+* Select "tpzdb" > File > Run SQL file... > select every .sql files from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done.
 
 * Don't forget to verify that the IP adress displayed in the "zoneip" column ("Data" tab) of the zone_settings table is the correct one (local (127.0.0.1) by default). In case you need to update all the lines at once: Click on the "Query" tab the type:
 
