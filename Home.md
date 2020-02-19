@@ -8,6 +8,8 @@ This is the wiki for Project Topaz. As we are still setting up the project, it m
 
 ## Client Setup
 How to set up a client to connect to a Project Topaz server
+## [[Topaz servers online|Topaz-Severs]]
+Join one of the available topaz servers here, or if you want to test out topaz before setting up your own server.
 ## Documentation
 Information for developers who code for Project Topaz
 ## [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
