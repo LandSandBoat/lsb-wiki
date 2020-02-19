@@ -16,7 +16,7 @@
 * Execute HeidiSQL and click on "New" (bottom left) then name your session as you wish > Password: Password previously saved from the MariaDB installation > Open > right click on it (left) > Create new > Database > name it "tpzdb" > OK.
 * Select "tpzdb" > File > Run SQL file... > select every .sql files from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done.
 
-* Don't forget to verify that the IP adress displayed in the "zoneip" column ("Data" tab) of the zone_settings table is the correct one (local (127.0.0.1) by default). In case you need to update all the lines at once: Click on the "Query" tab the type:
+* Don't forget to verify that the IP adress displayed in the "zoneip" column ("Data" tab) of the zone_settings table is the correct one (local (127.0.0.1) by default). In case you need to update all the lines at once: Click on the "Query" tab then type:
 
 > UPDATE zone_settings SET zoneip = '**your.IP**';
 
