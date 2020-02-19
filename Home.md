@@ -4,7 +4,7 @@ This is the wiki for Project Topaz. As we are still setting up the project, it m
 
 (For Windows 10.)
 
-## Softwares needed:dsp
+## Softwares needed:
 
 * Download and install [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/): Under "Workloads" > check "Desktop development with C++".
 * Download and install [Git for Windows](https://gitforwindows.org/): Nothing to do in particular during the installation.
