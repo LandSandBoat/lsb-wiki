@@ -2,9 +2,9 @@ This is the wiki for Project Topaz. As we are still setting up the project, it m
 
 ## Server Installation + Setup
 
-[[Windows 10|https://github.com/project-topaz/topaz/wiki/Server-Installation---Setup-%5BWindows-10%5D]]
+[[Windows 10|Server-installation-setup-%5BWindows-10%5D]]
 
-[[Ubuntu 18.04|https://github.com/project-topaz/topaz/wiki/Server-Installation---Setup-%5BUbuntu-18.04-LTS%5D]]
+[[Ubuntu 18.04|Server-Installation---Setup-%5BUbuntu-18.04-LTS%5D]]
 
 ## Client Setup
 How to set up a client to connect to a Project Topaz server
