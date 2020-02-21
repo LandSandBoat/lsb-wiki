@@ -14,5 +14,5 @@ Information for developers who code for Project Topaz
 Information relating to the "meta" of Project Topaz - like project goals, codes of conduct, project roadmaps, and licensing information
 ## [[Server List|Topaz-Servers]]
 List of known public Topaz servers, if you want to join one, or test out Topaz before setting up your own
-## Resources
+## [Resources](https://github.com/project-topaz/topaz/wiki/Resources)
 Additional resources and tools of interest to administrators, developers, or players
