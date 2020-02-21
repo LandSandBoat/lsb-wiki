@@ -4,3 +4,4 @@
   * [[Ubuntu 18.04|https://github.com/project-topaz/topaz/wiki/Server-Installation---Setup-%5BUbuntu-18.04-LTS%5D]]
 * [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
 * [[Server List|Topaz-Servers]]
+* [Resources](https://github.com/project-topaz/topaz/wiki/Resources)
