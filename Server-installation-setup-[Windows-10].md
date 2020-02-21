@@ -1,4 +1,4 @@
-## Softwares needed:
+## Software needed:
 
 * Download and install [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/): Under "Workloads" > check "Desktop development with C++".
 * Download and install [Git for Windows](https://gitforwindows.org/): Nothing to do in particular during the installation.
@@ -14,9 +14,9 @@
 ## Prepare the database:
 
 * Execute HeidiSQL and click on "New" (bottom left) then name your session as you wish > Password: Password previously saved from the MariaDB installation > Open > right click on it (left) > Create new > Database > name it "tpzdb" > OK.
-* Select "tpzdb" > File > Run SQL file... > select every .sql files from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done.
+* Select "tpzdb" > File > Run SQL file... > select every .sql file from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done. Alternatively, you can run the Database_initial_setup file located in the \topaz\tools folder. 
 
-* Don't forget to verify that the IP adress displayed in the "zoneip" column ("Data" tab) of the zone_settings table is the correct one (local (127.0.0.1) by default). In case you need to update all the lines at once: Click on the "Query" tab then type:
+* Don't forget to verify that the IP address displayed in the "zoneip" column ("Data" tab) of the zone_settings table is the correct one (local (127.0.0.1) by default). In case you need to update all the lines at once: Click on the "Query" tab then type:
 
 > UPDATE zone_settings SET zoneip = '**your.IP**';
 
@@ -38,7 +38,7 @@ in the output console at the bottom and all of these 3 .exe:
 
 should be present in the \topaz\ folder.
 
-## Servers configuration:
+## Server configuration:
 
 In the \topaz\conf folder, open these three files (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
 
