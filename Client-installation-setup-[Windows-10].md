@@ -50,15 +50,15 @@ Password: Password (then repeat)
 Username: Username
 Password: Password
 ```
-/!\ **or** /!\
+---
 
-Use the --pass args in the settings.xml Windower file (as showed below) to log in automatically when launching xiloader.
+/!\ **or** /!\
 
 ---
 
-## Windower
+## Use Windower
 
-* Downloade [Windower](http://windower.net/).
+* Download [Windower](http://windower.net/).
 * Execute Windower as an administrator and it will download updates automatically.
 
 * Click on the pen to edit the "Default Profile" and modify it's options at your will.
@@ -70,3 +70,6 @@ Use the --pass args in the settings.xml Windower file (as showed below) to log i
   <args>--server Server IP.address --user Username --pass Password</args>
   <executable>HDD:\path\to\xiloader.exe</executable>
 </profile>
+
+* Execute Windower.exe.
+* Select your profile and click on the arrow (bottom right), it will launch xiloader.
