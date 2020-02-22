@@ -70,6 +70,7 @@ Password: Password
   <args>--server Server IP.address --user Username --pass Password</args>
   <executable>HDD:\path\to\xiloader.exe</executable>
 </profile>
+```
 
 * Execute Windower.exe.
 * Select your profile and click on the arrow (bottom right), it will launch xiloader.
