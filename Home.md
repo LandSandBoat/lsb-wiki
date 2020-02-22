@@ -7,7 +7,7 @@ This is the wiki for Project Topaz. As we are still setting up the project, it m
 [[Ubuntu 18.04|https://github.com/project-topaz/topaz/wiki/Server-Installation---Setup-%5BUbuntu-18.04-LTS%5D]]
 
 ## Client Setup
-How to set up a client to connect to a Project Topaz server
+[Windows 10](https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows-10%5D)
 ## Documentation
 Information for developers who code for Project Topaz
 ## [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
