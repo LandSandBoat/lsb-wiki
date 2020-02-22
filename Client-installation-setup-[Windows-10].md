@@ -67,7 +67,7 @@ Password: Password
 
 ```
 <profile name="Username">
-  <args>--server Server IP.address --user Username --pass Password</args>
+  <args>--server Server.IP.address --user Username --pass Password</args>
   <executable>HDD:\path\to\xiloader.exe</executable>
 </profile>
 ```
