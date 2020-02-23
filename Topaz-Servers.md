@@ -15,7 +15,7 @@
 
 **Experience:** 1.33x
 
-**Skill-Ups:** ~20%
+**Skill-Ups:** ~30%
 
 **Crafting Skill-Ups:** +15%
 
