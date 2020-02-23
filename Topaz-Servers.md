@@ -1,7 +1,7 @@
 # Dawnbreak:
 **Server address:** dawnbreak.ddns.net
 
-**Discord:** https://discord.gg/3cgsgB
+**Discord:** https://discord.gg/g9XcQPH
 
 **Expansions enabled:** Rise of Zilart, Chains of Promathia, Treasures of Aht Urhgan, Wings of the Goddess.
 
@@ -25,13 +25,13 @@
 
 **Field of Valor Tabs:** +30%
 
-**Player MP gained from subjob:** increased a bit
+**Player MP gained from subjob:** + ~10%
 
 **Player TP Gain:** +5%
 
-**Drop rate:** 10%
+**Drop rate:** +6%
 
-**Chance of break tools while harvesting:** -20%
+**Chance of break tools while harvesting:** reduced to 20% from 50%
 
 # Topaz:
 Focus of this server is to have a good time and enjoy the quality of life improvements (book/crystal teleport, ground/field of valor) that make this game fun to play in small or long sessions.
