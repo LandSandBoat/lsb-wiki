@@ -163,3 +163,5 @@ journalctl -u topaz_game.service -b
 journalctl -u topaz_connect.service -b
 journalctl -u topaz_search.service -b
 ```
+
+That's everything about basic setup for the server.  If you get any errors not handled by this guide, please head over to the #troubleshooting channel on the discord for Topaz, and let us know what you did, and what error you're getting so we can help you resolve it, or head over to #general and let us know how it went for you.
