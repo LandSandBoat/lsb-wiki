@@ -1,4 +1,4 @@
- I will not be covering how to set up a Raspberry Pi with NOOBs or Raspbian in this guide, as this is covered in many places on the Internet.  This guide assumes basic knowledge of Raspbian, terminal commands, and the raspberry pi limitations.
+ I will not be covering how to set up a Raspberry Pi with [NOOBs](https://www.raspberrypi.org/downloads/noobs/) or Raspbian in this guide, as this is covered in many places on the Internet.  This guide assumes basic knowledge of Raspbian, terminal commands, and the raspberry pi limitations.
 
 All the steps below in code block are to be done on the terminal unless otherwise noted:
 
@@ -141,7 +141,7 @@ In this file, you can chenge the server version itself (make it match the intend
 
 ## Running your server
 
-Now for running the server, we have a couple of options.  If your running xwindows (desktop ui like Windows) you can double click the 3 server files topaz_connect, topaz_game, and topaz_search.  By default, they will not have a file extension (this is completely normal if you're not used to Linux).
+Now for running the server, we have a couple of options.  If your running xwindows (desktop ui like Windows) you can double click the 3 server files topaz_connect, topaz_game, and topaz_search.  You will get presented with a prompt asking you how you want to run them, pick Execute in terminal or they will run in the background.  By default, they will not have a file extension (this is completely normal if you're not used to Linux).
 
 
 Or you can try this:
@@ -163,5 +163,12 @@ journalctl -u topaz_game.service -b
 journalctl -u topaz_connect.service -b
 journalctl -u topaz_search.service -b
 ```
+
+## Shutdown the server
+If you've run them in a terminal by double click, or using ```./topaz-x``` in the terminal, just click that terminal window and hit Ctrl+C on your keyboard, or click the X.  If you've run them using the screen commands, you'll have to do this instead:
+```
+In process of adding the correct commands
+```
+
 
 That's everything about basic setup for the server.  If you get any errors not handled by this guide, please head over to the #troubleshooting channel on the discord for Topaz, and let us know what you did, and what error you're getting so we can help you resolve it, or head over to #general and let us know how it went for you.
