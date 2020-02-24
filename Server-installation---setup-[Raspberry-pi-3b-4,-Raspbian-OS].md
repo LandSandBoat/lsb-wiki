@@ -167,8 +167,12 @@ journalctl -u topaz_search.service -b
 ## Shutdown the server
 If you've run them in a terminal by double click, or using ```./topaz-x``` in the terminal, just click that terminal window and hit Ctrl+C on your keyboard, or click the X.  If you've run them using the screen commands, you'll have to do this instead:
 ```
-In process of adding the correct commands
+sudo systemctl stop topaz_connect
+sudo systemctl stop topaz_game
+sudo systemctl stop topaz_search
 ```
+
+Please, make sure you're players are logged out before shutting down your servers!
 
 
 That's everything about basic setup for the server.  If you get any errors not handled by this guide, please head over to the #troubleshooting channel on the discord for Topaz, and let us know what you did, and what error you're getting so we can help you resolve it, or head over to #general and let us know how it went for you.
