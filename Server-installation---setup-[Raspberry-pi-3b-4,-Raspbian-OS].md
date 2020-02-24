@@ -176,3 +176,9 @@ Please, make sure you're players are logged out before shutting down your server
 
 
 That's everything about basic setup for the server.  If you get any errors not handled by this guide, please head over to the #troubleshooting channel on the discord for Topaz, and let us know what you did, and what error you're getting so we can help you resolve it, or head over to #general and let us know how it went for you.
+
+
+## Warnings
+The Raspberry pi 3b/3b+ only has 1GB of ram, and it only has access to a certain amount which varies based on how much you set aside for your graphics adapter during the initial set up of your pi.  Due to this, running topaz_game my make your pi seemingly freeze.  It is thusly advised that you run your servers one at a time starting with topaz_connect, then topaz_game, then topaz_search until they all say they are ready (the search one is the fastest, it will pretty much be ready as soon as it's run).  However, once topaz_game has done everything it needs to do, it will only use about 250MB by itself, and the other 2 servers use very little.
+
+Raspberry pi's require at least a 2.5amp power supply to run at full power, if you are getting a little yellow lightning bolt in the top right, you have hit the limit of your current power supply, and may not be able to take full advantage of your cpu's power, and may lose connectivity to bluetooth, or usb devices.
