@@ -42,6 +42,8 @@ All content comes from the master branch, no custom modifications are in place.
 
 **Server address:** topaz.catsangel.com
 
+**Website:** topaz.catsangel.com
+
 **Expansions enabled:** All [content up to what's available on topaz master github]
 
 **Level Cap:** 75
@@ -58,3 +60,6 @@ All content comes from the master branch, no custom modifications are in place.
 
 **Widescan:** Enabled
 
+**Crafting + Skill ups:** Sames as current retail
+
+**Mission BCNM + CoP Areas:** Same as current retail
