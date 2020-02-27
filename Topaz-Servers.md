@@ -42,7 +42,7 @@ All content comes from the master branch, no custom modifications are in place.
 
 **Server address:** topaz.catsangel.com
 
-**Website:** topaz.catsangel.com
+**Website:** http://topaz.catsangel.com
 
 **Expansions enabled:** All [content up to what's available on topaz master github]
 
