@@ -3,7 +3,7 @@ All the steps below in code block are to be done on the terminal:
 Installs requirements to run the sql database and tools to compile the source code
 ```
 sudo apt update
-sudo apt install mysql-server libmysqlclient-dev libluajit-5.1-dev libzmq3-dev autoconf pkg-config
+sudo apt install mariadb-server libmariadbclient-dev libluajit-5.1-dev libzmq3-dev autoconf pkg-config
 ```
 
 Clones the repository to the current folder you are in
