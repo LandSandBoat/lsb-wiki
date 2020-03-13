@@ -11,7 +11,7 @@ aether, ibm2431, Nyu, Wiggo, Zircon
 
 **Nyu**: Fufilling capture requests; triaging Issues; translating tutorials (how to update server, save data, and common issues); considering further captures
 
-# Pull Requests (9)
+# Pull Requests (14)
 1. [#346 - Add Pinecone Bomb blue magic spell.](https://github.com/project-topaz/topaz/pull/346)
     - Held (ibm2431): Pending research into sleep duration
 2. [#361 - Added Omens Quest (BLU AF2)](https://github.com/project-topaz/topaz/pull/361)
