@@ -5,6 +5,7 @@
   * [[RPi/Raspbian|https://github.com/project-topaz/topaz/wiki/Server-installation---setup-%5BRaspberry-pi-3b-4,-Raspbian-OS%5D]]
 * Client installation + setup
   * [[Windows 10|https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows-10%5D]]
+* [Using Github](https://github.com/project-topaz/topaz/wiki/Using-Github)
 * [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
 * [[Server List|Topaz-Servers]]
 * [Resources](https://github.com/project-topaz/topaz/wiki/Resources)
