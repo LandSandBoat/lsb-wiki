@@ -14,6 +14,11 @@ Right click on your topaz install and choose "make branch". Create the name of t
 
 NOTE: for custom servers, it's probably best to have a separate repository entirely for custom data vs. topaz's build. That way you can clone/download/change/commit for any fixes direct to a separate repository and install. 
 
+# Submitting to multiple repositories
+[You can use git rebase](https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request) to send commits from other locations to topaz in order to submit to multiple locations and/or repoint.
+
+Alternatively, pull a fork of topaz and copy **changes only** manually. 
+
 
 
 
