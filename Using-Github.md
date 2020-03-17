@@ -1,3 +1,4 @@
+## Basic Branch/Pull Request information
 If you followed the Server set-up instructions, you've already cloned topaz's master branch (called release). If you want to make changes and contribute to Topaz, here's a quick guide on how to push changes.
 
 1 - Set up your fork on github if you haven't already. this is where you'll push changes to then submit a pull request. You can click on the fork button above the main project-topaz/topaz repository to fork. 
@@ -14,7 +15,7 @@ Right click on your topaz install and choose "make branch". Create the name of t
 
 NOTE: for custom servers, it's probably best to have a separate repository entirely for custom data vs. topaz's build. That way you can clone/download/change/commit for any fixes direct to a separate repository and install. 
 
-# Submitting to multiple repositories
+## Submitting to multiple repositories
 [You can use git rebase](https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request) to send commits from other locations to topaz in order to submit to multiple locations and/or repoint.
 
 Alternatively, pull a fork of topaz and copy **changes only** manually. 
