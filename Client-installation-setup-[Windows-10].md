@@ -1,10 +1,10 @@
 ## 1. Install, configure and update Final Fantasy XI Ultimate Collection - Seekers Edition
 
-**a.** [Official link to download US installation files](http://www.playonline.com/ff11us/download/media/install_win.html) (get all of them). These files include updates until april 2019.
+1. [Official link to download US installation files](http://www.playonline.com/ff11us/download/media/install_win.html) (get all of them). These files include updates until april 2019.
 
-**b.** Extract the files first by executing the "FFXIFullSetup_US.part1.exe" then proceed to the installation through "FFXISetup.exe" (freshly extracted).
+2. Extract the files first by executing the "FFXIFullSetup_US.part1.exe" then proceed to the installation through "FFXISetup.exe" (freshly extracted).
 
-**c.** Once the whole installation is complete, execute PlayOnline Viewer. If an update is available, click on "Next", then: 
+3. Once the whole installation is complete, execute PlayOnline Viewer. If an update is available, click on "Next", then: 
 * Select "Update" ; once this is done, click on "OK" then "Next". PlayOnline Viewer should restart automatically.
 * Select "For PlayOnline Members!".
 * On the next screen, enter whatever informations you want (doesn't matter if they're accurate or not) in the "Member Name" and "PlayOnline ID"  fields.
@@ -14,31 +14,31 @@
 
 ## 2. Updating (_automatic_ way)
 
-**a.** In the \SquareEnix\FINAL FANTASY XI folder > open file.txt (with a text editor) > delete the first line (7__xbNWmQ0UrEt9vI5DWUT:218802:FTABLE.DAT) > Save.
+1. In the \SquareEnix\FINAL FANTASY XI folder > open file.txt (with a text editor) > delete the first line (7__xbNWmQ0UrEt9vI5DWUT:218802:FTABLE.DAT) > Save.
 
-**b.** Execute PlayOnline Viewer. Click on "Check Files" from the list on the left.
+2. Execute PlayOnline Viewer. Click on "Check Files" from the list on the left.
 
-**c.** Select "FINAL FANTASY XI" in the drop-down menu ("PlayOnline Viewer" is selected by default) then click on "Check Files".
+3. Select "FINAL FANTASY XI" in the drop-down menu ("PlayOnline Viewer" is selected by default) then click on "Check Files".
 
-**d.** PlayOnline Viewer will find errors, click on "File Repair" then "Yes".
+4. PlayOnline Viewer will find errors, click on "File Repair" then "Yes".
 
-**e.** Once everything is done, click on "OK" then "Exit Viewer" and "Yes".
+5. Once everything is done, click on "OK" then "Exit Viewer" and "Yes".
 
 ---
 
 ## 3. Configuration
 
-**a.** Start Menu > PlayOnline > FINAL FANTASY XI Config: configure specific options.
+1. Start Menu > PlayOnline > FINAL FANTASY XI Config: configure specific options.
 
-**b.** Download and install [MSVC 2015 Runtimes](https://www.microsoft.com/en-ca/download/details.aspx?id=48145) (if needed).
+2. Download and install [MSVC 2015 Runtimes](https://www.microsoft.com/en-ca/download/details.aspx?id=48145) (if needed).
 
-**c.** Right click wherever you want to download the xiloader repository > Git Clone... > URL: https://github.com/zircon-tpl/xiloader.git > OK > then Close when it's done.
+3. Right click wherever you want to download the xiloader repository > Git Clone... > URL: https://github.com/zircon-tpl/xiloader.git > OK > then Close when it's done.
 
-**d.** Execute Visual Studio Community 2019: Open a project or solution (on the right) > select the "xiloader.sln" file from the \xiloader\ folder > Open (click "OK" when asked to "Retarget Projects").
+4. Execute Visual Studio Community 2019: Open a project or solution (on the right) > select the "xiloader.sln" file from the \xiloader\ folder > Open (click "OK" when asked to "Retarget Projects").
 
-**e.** Once it's loaded > Build > Build Solution.
+5. Once it's loaded > Build > Build Solution.
 
-**f.** To confirm that everything was built properly, you should see:
+6. To confirm that everything was built properly, you should see:
 
 > ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 
@@ -65,13 +65,13 @@ Password: Password
 
 ## 4. Use Windower
 
-**a.** Download [Windower](http://windower.net/).
+1. Download [Windower](http://windower.net/).
 
-**b.** Execute Windower as an administrator and it will download updates automatically.
+2. Execute Windower as an administrator and it will download updates automatically.
 
-**c.** Click on the pen to edit the "Default Profile" and modify it's options at your will.
+3. Click on the pen to edit the "Default Profile" and modify it's options at your will.
 
-**d.** Open the settings.xml file and set your options as follow (don't forget to save changes):
+4. Open the settings.xml file and set your options as follow (don't forget to save changes):
 
 ```
 <profile name="Username">
@@ -80,6 +80,6 @@ Password: Password
 </profile>
 ```
 
-**e.** Execute Windower.exe.
+5. Execute Windower.exe.
 
-**f.** Select your profile and click on the arrow (bottom right), it will launch xiloader.
+6. Select your profile and click on the arrow (bottom right), it will launch xiloader.
