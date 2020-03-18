@@ -1,4 +1,4 @@
-## 1. Softwares needed:
+## 1. Software needed:
 
 * Download and install [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/): Under "Workloads" > check "Desktop development with C++".
 * Download and install [Git for Windows](https://gitforwindows.org/): Nothing to do in particular during the installation.
@@ -75,9 +75,8 @@ By looking at the files that were changed, you should:
 
 * RERUN EVERY .sql MODIFIED FILES (referring to the example at **3. 2.**).
 * REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **4.**).
-* .lua ARE INSTANT.
 * RESTART YOUR SERVER(S) FOR .conf FILES.
-
+* .lua files ARE INSTANT
 ---
 
 If any new .py file is added (in \topaz\migrations\) during an update make sure to:
@@ -86,11 +85,11 @@ If any new .py file is added (in \topaz\migrations\) during an update make sure 
 
 ---
 
-When an official update is available, you'll need to update the client (Final Fantasy) too. Repeat the whole process of the [2. Updating (automatic way) Client installation setup guide](https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows-10%5D).
+When an official update is available, you'll need to update the client (Final Fantasy) too. Repeat the whole process listed in step [2. Updating (automatic way) Client installation setup guide](https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows-10%5D).
 
-/!\ **common issue** /!\
+/!\ **common issues** /!\
 
-If the server (Project Topaz) and the client (Final Fantasy XI) doesn't share the same version (one of them is not on par with that latest update of the other), you'll probably get this error in the topaz_connect.exe log window:
+If the server (Project Topaz) and the client (Final Fantasy XI) don't share the same version, you'll probably get this error in the topaz_connect.exe log window:
 
 ```
 [Error] lobbyview_parse: Incorrect client version: got 000000xx_x, expected 000000xx_x
@@ -151,13 +150,13 @@ Repeat the whole process of the **3. 2.** part (but select the .sql files you sa
 
 ## Miscellaneous
 
-If you can hear ambiant sound (music, weather, etc.) but no sound effects, this is one of the possible fixes:
+If you can hear ambient sound (music, weather, etc.) but no sound effects, this is one of the possible fixes:
 
 Right click on Speakers > Sounds > Playback tab > right click on Speakers > Configure Speakers > select Stereo > Next > Next > OK.
 
 ---
 
-Gils are not sent to the Delivery Box (from the Auction House), this is one of the possible fixes:
+For gil not sent to the Delivery Box (from the Auction House), this is one of the possible fixes:
 
 Execute HeidiSQL > select your session and connect to it > select "tpzdb" > File > Run SQL file... > select the triggers.sql file from the \topaz\sql folder > Open.
 
