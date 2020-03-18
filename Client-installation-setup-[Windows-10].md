@@ -14,7 +14,7 @@
 
 ## 2. Updating (_automatic_ way)
 
-1. In the \SquareEnix\FINAL FANTASY XI folder > open patch.ver (with a text editor) > delete everything that's inside > Save.
+1. In the \PlayOnline\SquareEnix\FINAL FANTASY XI\ROM\0 folder > delete the 0.dat file.
 
 2. Execute PlayOnline Viewer. Click on "Check Files" from the list on the left.
 
