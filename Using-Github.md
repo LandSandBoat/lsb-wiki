@@ -16,7 +16,7 @@ Right click on your topaz install and choose "make branch". Create the name of t
 NOTE: for custom servers, it's probably best to have a separate repository entirely for custom data vs. topaz's build. That way you can clone/download/change/commit for any fixes direct to a separate repository and install. 
 
 ## Keeping current with Topaz
-You'll want to consistently update your master with recent changes, that's part of why working on changes or on branches when you have WIPs is important. In order to update both your local and remote branch:
+You'll want to consistently update your master with recent changes submitted by contributors, that's part of why working on branches when you have WIPs is important. In order to update both your local and remote master:
 1) Ensure you're on your master branch and have no other local branches checked out
 2) Choose "Pull" from the menu of whichever Git tool you're using
 3) Select the topaz remote branch to merge. Remember Topaz's master branch is called "release". If you haven't pulled from Topaz in a while, you'll want to do a "Fetch" first to update the remote listings in your Git tool.
