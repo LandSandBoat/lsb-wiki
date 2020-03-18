@@ -14,7 +14,7 @@
 
 ## 2. Updating (_automatic_ way)
 
-1. In the \SquareEnix\FINAL FANTASY XI folder > open file.txt (with a text editor) > delete the first line (7__xbNWmQ0UrEt9vI5DWUT:218802:FTABLE.DAT) > Save.
+1. In the \SquareEnix\FINAL FANTASY XI folder > open patch.ver (with a text editor) > delete everything that's inside > Save.
 
 2. Execute PlayOnline Viewer. Click on "Check Files" from the list on the left.
 
