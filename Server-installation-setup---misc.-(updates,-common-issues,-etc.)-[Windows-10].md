@@ -5,6 +5,7 @@
 * Download and install [TortoiseGit](https://tortoisegit.org/): Nothing to do in particular during the installation.
 * Download and install [MariaDB](https://mariadb.org/): You can install HeidiSQL from there or get it separately, just remember the password you set for MariaDB during the installation.
 * Download and install [HeidiSQL](https://www.heidisql.com/): Nothing to do in particular during the installation.
+* Download and install [Python 3.7+](https://www.python.org/downloads/): Accept defaults
 
 ## 2. Download the source code:
 
