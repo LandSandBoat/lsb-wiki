@@ -11,9 +11,9 @@ Right click on your topaz install and choose "make branch". Create the name of t
 
 4 - In the new checked out branch, make the changes as needed. When you've tested and are comfortable with the work, right click on your topaz install folder and choose to commit the branch. In the window that appears, make sure any changes that aren't inline with topaz master (for instance, I have my version info file changed so i can use an older version, but I would not want to commit that) are not included in your commit. You can choose commit and push here to then send the changes to your remote repository from your local. 
 
-4 - In your remote repository, make sure you're on your branch that you're looking to contribute from and select New pull request. Fill out the relevant checkboxes, put in an appropriate title, etc.
+5 - In your remote repository, make sure you're on your branch that you're looking to contribute from and select New pull request. Fill out the relevant checkboxes, put in an appropriate title, etc.
 
-5- Upon review and completion your pull will be merged with topaz's release branch, or the canary branch if it's a large enough or changed enough feature to warrant testing before final merge into release. 
+6 - Upon review and completion your pull will be merged with topaz's release branch, or the canary branch if it's a large enough or changed enough feature to warrant testing before final merge into release. 
 
 NOTE: for custom servers, it's probably best to have a separate repository entirely for custom data vs. topaz's build. That way you can clone/download/change/commit for any fixes direct to a separate repository and install. 
 
