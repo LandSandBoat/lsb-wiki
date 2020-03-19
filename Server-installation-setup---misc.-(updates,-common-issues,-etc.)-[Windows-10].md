@@ -109,7 +109,7 @@ to
 
 save then restart the topaz_connect.exe server.
 
-## 6. Save your database
+## 7. Save your database
 
 _Exporting_:
 
