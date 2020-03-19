@@ -168,6 +168,20 @@ _Official_ screenshots location: PlayOnline\SquareEnix\PlayOnlineViewer\pub\home
 
 ---
 
+Make your character a Game Master:
+
+Execute HeidiSQL > connect to your database > select "chars" > "Data" tab > "gmlevel" column > modify the value from 0 to 5 (maximum level) > close HeidiSQL.
+
+Change zone in game to apply.
+
+Type "!command" in game (refer to the \topaz\scripts\commands folder for a list of commands).
+
+!togglegm: no more aggro.
+!togglegm + /anon: invisible through /search.
+!hide: invisible to players.
+
+---
+
 How to change your loader password:
 
 Execute HeidiSQL > select your session and connect to it > select "tpzdb" > select the "accounts" table > "Query" tab > enter the following line:
