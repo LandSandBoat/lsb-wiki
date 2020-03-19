@@ -52,7 +52,9 @@ In the \topaz\conf folder, open these three files (with the default Windows text
 
 then modify this line each time:
 
-> mysql_password: root (replace "root" with your MariaDB password)
+> mysql_password: root 
+
+(replace "root" with your MariaDB password)
 
 Servers are now configured properly. Execute all the following .exe located in the \topaz\ folder (as Admin):
 
@@ -164,6 +166,7 @@ Execute HeidiSQL > select your session and connect to it > select "tpzdb" > File
 ---
 
 Local macros location: PlayOnline\SquareEnix\FINAL FANTASY XI\USER.
+
 _Official_ screenshots location: PlayOnline\SquareEnix\PlayOnlineViewer\pub\home01\ open\ScreenShots\FinalFantasyXI.
 
 ---
