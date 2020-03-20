@@ -2,7 +2,7 @@ This is the wiki for Project Topaz. As we are still setting up the project, it m
 
 ## Server installation + setup
 
-[[Windows 10|https://github.com/project-topaz/topaz/wiki/Server-installation-setup-%5BWindows-10%5D]]
+[[Windows 10 (+ misc.)|https://github.com/project-topaz/topaz/wiki/Server-installation-setup---misc.-(updates,-common-issues,-etc.)-%5BWindows-10%5D]]
 
 [[Ubuntu 18.04|https://github.com/project-topaz/topaz/wiki/Server-Installation---Setup-%5BUbuntu-18.04-LTS%5D]]
 
