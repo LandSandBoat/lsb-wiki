@@ -36,7 +36,7 @@ aether, ibm2431, KnowOne, Nyu, Wiggo, Zircon
     - Merged into `mystery`
 10. [#435 - Fix Nekros Hound](https://github.com/project-topaz/topaz/pull/435)
     - Merged into `release`
-# Feature Branches (6)
+# Feature Branches (10)
 1. [`adventuringfellow`](https://github.com/project-topaz/topaz/tree/adventuringfellow)
     - Unknown merge date
 2. [`bcnm-level`](https://github.com/project-topaz/topaz/tree/bcnm-level)
@@ -45,15 +45,17 @@ aether, ibm2431, KnowOne, Nyu, Wiggo, Zircon
     - Unknown merge date
 4. [`change-password`](https://github.com/project-topaz/topaz/tree/change-password)
     - Unknown merge date
-5. [`confs`](https://github.com/project-topaz/topaz/tree/confs)
-    - Merged into `release`
-6. [`mount`](https://github.com/project-topaz/topaz/tree/mount)
-    - Merged into `release`
-7. [`mystery`](https://github.com/project-topaz/topaz/tree/mystery)
+5. [`claim`](https://github.com/project-topaz/topaz/tree/claim)
     - Unknown merge date
-8. [`transport`](https://github.com/project-topaz/topaz/tree/transport)
+6. [`confs`](https://github.com/project-topaz/topaz/tree/confs)
+    - Merged into `release`
+7. [`mount`](https://github.com/project-topaz/topaz/tree/mount)
+    - Merged into `release`
+8. [`mystery`](https://github.com/project-topaz/topaz/tree/mystery)
+    - Unknown merge date
+9. [`transport`](https://github.com/project-topaz/topaz/tree/transport)
     - Next week
-9. [`trust`](https://github.com/project-topaz/topaz/tree/trust)
+10. [`trust`](https://github.com/project-topaz/topaz/tree/trust)
     - Unknown merge date
 # General Remarks
 - No general remarks
