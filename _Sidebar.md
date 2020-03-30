@@ -1,6 +1,6 @@
 [Home](https://github.com/project-topaz/topaz/wiki)
 * Server installation + setup
-  * [[Windows 10|https://github.com/project-topaz/topaz/wiki/Server-installation-setup-%5BWindows-10%5D]]
+  * [[Windows 10|https://github.com/project-topaz/topaz/wiki/Server-installation-setup---misc.-(updates,-common-issues,-etc.)-%5BWindows-10%5D]]
   * [[Ubuntu 18.04|https://github.com/project-topaz/topaz/wiki/Server-Installation---Setup-%5BUbuntu-18.04-LTS%5D]]
   * [[RPi/Raspbian|https://github.com/project-topaz/topaz/wiki/Server-installation---setup-%5BRaspberry-pi-3b-4,-Raspbian-OS%5D]]
 * Client installation + setup
