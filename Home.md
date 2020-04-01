@@ -10,7 +10,7 @@ This is the wiki for Project Topaz. As we are still setting up the project, it m
 
 ## Client installation + setup
 [Windows 10](https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows-10%5D)
-## Documentation
+## Development
 Information for developers who code for Project Topaz
 ## [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
 Information relating to the "meta" of Project Topaz - like project goals, codes of conduct, project roadmaps, and licensing information
