@@ -187,13 +187,4 @@ Type "!command" in game (refer to the \topaz\scripts\commands folder for a list 
 
 How to change your loader password:
 
-Execute HeidiSQL > select your session and connect to it > select "tpzdb" > select the "accounts" table > "Query" tab > enter the following line:
-```
-update accounts set password = password('Your.new.password') where id=Your.account.ID
-```
-Click on "Execute SQL... (F9)" > Yes.
-
-/!\ **issue regarding the length of the password** /!\ 
-
-It is possible to change your password if the _new one_ doesn't exceed 16 characters. If that's the case, the query will be taken in consideration but **you won't be able to log in through the loader**.
-It is possible to have a password that exceeds 16 characters but _only_ when you create your account through the loader.
+Directly by following steps from the loader when you launch it (third option).
