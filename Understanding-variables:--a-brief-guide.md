@@ -22,10 +22,10 @@ This is a global scoped lua var. Still in memory and not stored, but hangs out i
 
 ```lua
 -- Sets a "localvar" named "string" on an entity (such as player, mob, npc) to 3
-entity:setLoccalVar("string", 3)
+entity:setLocalVar("string", 3)
 
 -- Returns the var we set above so we can use or compare it
-entity:getLoccalVar("string")
+entity:getLocalVar("string")
 ```
 This is lost the moment the entity respawns but otherwise stays in memory. For players this means when you zone or login the localVar is gone. For monsters the distinction between "when it respawns" and "when it dies/despawns" lets you do some tricky things by setting a the var on a mob that isn't presently up or has just died and then reading it back elsewhere.
 <br><br>
