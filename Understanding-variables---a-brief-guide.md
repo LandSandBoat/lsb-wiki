@@ -4,10 +4,10 @@
  - var - This is shorthand for variable
  - zero out - variables that don't exist have a value of zero by design. and when we set their value to zero, they are erased automatically
  - local - That which is not global is limited to a particular section or "[scope](https://en.wikipedia.org/wiki/Scope_(computer_science))"
- - global - This means it is omnipresent, like god or a really good acid trip.
+ - global - This means it is not limited in scope, and the variable is "visible" to the entire programs. It's everywhere.
 
 
-### In lua
+## In lua
 ```lua
 local stuff = thing
 ```
@@ -51,7 +51,7 @@ Divides universe by zero. Don't do this. :smiley:
 
 (It's used for very specific circumstances where you need a global var that persists even between server restarts)
 
-### C++
+## In C++
 Now, teaching you all the C++ basics is outside the scope of this document, so we'll just give a few examples while explaining some key differences in what we just saw in Lua above.
 ```cpp
 // Set an unsigned 8 bit integer variable named exampleOne to the value of zero
@@ -66,7 +66,7 @@ std::string exampleThree = "that'll be tree fiddy";
 // Here the compiler tries to figure out what you wanted instead of you declaring the type.
 auto ExampleWhateverMan = 666;
 ```
-As you can see, unlike lua you need to say what kind of data you wanted your variable to hold (or "auto" all the things and risk your compiler giving you surprise optimization you didn't know you wanted).
+As you can see, unlike Lua you need to say what kind of data you wanted your variable to hold (or "auto" all the things and risk your compiler giving you surprise optimization you didn't know you wanted).
 
 ```cpp
 m_PBaseEntity->SetLocalVar(varName, value);
