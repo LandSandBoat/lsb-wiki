@@ -1,4 +1,4 @@
-### Jargon:
+## Jargon:
  - Lua - This is the language in the scripts, where most people will be needing this info. And its Lua or lua, not LUA.
  - C++ or ".cpp" - This refers to those scary "core" files new people shy away from
  - var - This is shorthand for variable
@@ -7,7 +7,7 @@
  - global - This means it is not limited in scope, and the variable is "visible" to the entire programs. It's everywhere.
 
 
-## In lua
+# In lua
 ```lua
 local stuff = thing
 ```
@@ -51,7 +51,7 @@ Divides universe by zero. Don't do this. :smiley:
 
 (It's used for very specific circumstances where you need a global var that persists even between server restarts)
 
-## In C++
+# In C++
 Now, teaching you all the C++ basics is outside the scope of this document, so we'll just give a few examples while explaining some key differences in what we just saw in Lua above.
 ```cpp
 // Set an unsigned 8 bit integer variable named exampleOne to the value of zero
