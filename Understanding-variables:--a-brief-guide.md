@@ -12,13 +12,13 @@
 local stuff = thing
 ```
 This is a local scoped lua var. These are in lua's memory space and are not saved. Only active in the scope (dis 'ere code block or file) and then forgotten.
-
+<br><br>
 
 ```lua
 stuff = thing
 ```
 This is a global scoped lua var. Still in memory and not stored, but hangs out in memory forever (or till exe closes) and everything and its mom sees this. Generally a bad thing, but certain use cases exist. Like global tables full of essential things that otherwise would have been hundreds of global variables.
-
+<br><br>
 
 ```lua
 -- Sets a "localvar" named "string" on an entity (such as player, mob, npc) to 3
@@ -28,7 +28,7 @@ entity:setLoccalVar("string", 3)
 entity:getLoccalVar("string")
 ```
 This is lost the moment the entity respawns but otherwise stays in memory. For players this means when you zone or login the localVar is gone. For monsters the distinction between "when it respawns" and "when it dies/despawns" lets you do some tricky things by setting a the var on a mob that isn't presently up or has just died and then reading it back elsewhere.
-
+<br><br>
 
 ```lua
 -- Stores a variable in the database table char_vars named "string" to a value of 2. 
@@ -38,7 +38,7 @@ player:setCharVar("string", 2)
 player:getCharVar("string")
 ```
 This persists through logging out and back in and only work with player type entities. Quests and missions use a lot of these.
-
+<br><br>
 
 ```lua
 -- Sets a server var in the database
@@ -50,6 +50,7 @@ GetServerVar("string")
 Divides universe by zero. Don't do this. :smiley: 
 
 (It's used for very specific circumstances where you need a global var that persists even between server restarts)
+<br><br>
 
 # In C++
 Now, teaching you all the C++ basics is outside the scope of this document, so we'll just give a few examples while explaining some key differences in what we just saw in Lua above.
@@ -67,7 +68,7 @@ std::string exampleThree = "that'll be tree fiddy";
 auto ExampleWhateverMan = 666;
 ```
 As you can see, unlike Lua you need to say what kind of data you wanted your variable to hold (or "auto" all the things and risk your compiler giving you surprise optimization you didn't know you wanted).
-
+<br><br>
 ```cpp
 m_PBaseEntity->SetLocalVar(varName, value);
 ```
