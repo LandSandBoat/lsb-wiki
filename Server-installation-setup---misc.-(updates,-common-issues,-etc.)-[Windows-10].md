@@ -44,7 +44,7 @@ should be present in the \topaz\ folder.
 
 ## 5. Server configuration:
 
-In the \topaz\conf folder, open these three files (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
+In the \topaz\conf\default folder, make sure you take all the files in there and put them in the precedent folder (\topaz\conf\) like the readme.md file says. Open these three files (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
 
 * login.conf
 * map.conf
@@ -55,6 +55,8 @@ then modify this line each time:
 > mysql_password: root 
 
 (replace "root" with your MariaDB password)
+
+(If you have any problem with a mismatching version, check the /!\ **common issue** /!\ regarding updates below.)
 
 Servers are now configured properly. Execute all the following .exe located in the \topaz\ folder (as Admin):
 
@@ -90,7 +92,7 @@ If any new .py file is added (in \topaz\migrations\) during an update make sure 
 
 When an official update is available, you'll need to update the client (Final Fantasy) too. Repeat the whole process listed in step [2. Updating (automatic way) Client installation setup guide](https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows-10%5D).
 
-/!\ **common issues** /!\
+/!\ **common issue** /!\
 
 If the server (Project Topaz) and the client (Final Fantasy XI) don't share the same version, you'll probably get this error in the topaz_connect.exe log window:
 
@@ -99,13 +101,13 @@ If the server (Project Topaz) and the client (Final Fantasy XI) don't share the 
 [Error] lobbyview_parse: The server must be updated to support this client version
 ```
 
-Open the topaz\version.info file with a text editor (Notepad or [Notepad++](https://notepad-plus-plus.org/)) and modify the following line:
+Open the topaz\conf\version.conf file with a text editor (Notepad or [Notepad++](https://notepad-plus-plus.org/)) and modify the following line:
 
-> ENABLE_VER_LOCK: 1 
+> VER_LOCK: 2
 
 to
 
-> ENABLE_VER_LOCK: 0
+> VER_LOCK: 0
 
 save then restart the topaz_connect.exe server.
 
@@ -180,7 +182,9 @@ Change zone in game to apply.
 Type "!command" in game (refer to the \topaz\scripts\commands folder for a list of commands).
 
 !togglegm: no more aggro.
+
 !togglegm + /anon: invisible through /search.
+
 !hide: invisible to players.
 
 ---
