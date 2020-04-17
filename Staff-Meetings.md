@@ -11,3 +11,4 @@ Project Topaz strives to hold a Staff Meeting once a week in the `#staff` channe
 9. [Staff Meeting #009 (2020/03/26)](https://github.com/project-topaz/topaz/wiki/Staff-Meeting-009-Summary)
 10. [Staff Meeting #010 (2020/04/02)](https://github.com/project-topaz/topaz/wiki/Staff-Meeting-010-Summary)
 11. [Staff Meeting #011 (2020/04/09)](https://github.com/project-topaz/topaz/wiki/Staff-Meeting-011-Summary)
+12. [Staff Meeting #012 (2020/04/16)](https://github.com/project-topaz/topaz/wiki/Staff-Meeting-012-Summary)
