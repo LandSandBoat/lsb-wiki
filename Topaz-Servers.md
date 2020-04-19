@@ -33,18 +33,20 @@
 
 **Chance of break tools while harvesting:** reduced to 20% from 50%
 
-# Topaz:
-Focus of this server is to have a good time and enjoy the quality of life improvements (book/crystal teleport, ground/field of valor) that make this game fun to play in small or long sessions.
+# Canaria:
+Focus of this server is to have a good time, have access to the latest features of Project Topaz, and enjoy the quality of life improvements (book/crystal teleport, ground/field of valor) that make this game fun to play in small or long sessions.
 
 Level cap restriction is set in place as most of the content past level 75 has not really been implemented.
 
-All content comes from the master branch, no custom modifications are in place.
+All content comes from the [canary branch](https://github.com/project-topaz/topaz/tree/canary), no custom modifications are in place.
 
 **Server address:** topaz.catsangel.com
 
 **Website:** http://topaz.catsangel.com
 
-**Expansions enabled:** All [content up to what's available on topaz master github]
+**Discord:** https://discord.gg/VDz2yT
+
+**Expansions enabled:** All [content up to what's available on topaz canary branch](https://github.com/project-topaz/topaz/tree/canary)
 
 **Level Cap:** 75
 
