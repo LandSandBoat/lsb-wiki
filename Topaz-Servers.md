@@ -1,6 +1,31 @@
+* [BNET.cc](#bnetcc)
 * [Canaria](#Canaria)
 * [Dawnbreak](#Dawnbreak)
 * [Vana Skies](#Vana-Skies)
+
+# BNET.cc:
+* **Server address:** ffxi.cc
+* **Website:** http://www.bnet.cc/
+* **Discord:** https://discord.gg/yujujnX
+
+Server has been in operation since 2013, and operates on a dedicated box on a 50 Down/50 Up Fiber Optic line. Its fast, stable, and loads of fun. Setup around people that have already played through the game and really want to just relive some highlights, but not put months or years of their life into it again. Super fast leveling, and some fun commands.
+
+**Expansions enabled:** All Zilart, CoP, ToAU, and WotG [content up to what's available on topaz canary branch](https://github.com/project-topaz/topaz/tree/canary)
+
+Capped to 255
+**Movement Speed:** Around 80 (Wanna move faster? use !flash or !fly )
+**Jobs:** All jobs unlocked, subjobs unlocked.
+**Exp Rate:** around 6x faster than normal with FoV and GoV as well!
+**Skillup Rate:** Super fast
+**Inventory:** Max space
+
+* NM boosted 15x normal for real challenges with all of the player enhancements.
+* Wallhacking encouraged (And turned on for all players), several other commands available (Check website for details as more are added over time!)
+* Custom Commands to enhance player experience (Designed for solo playable), as well full access to GM level 1 Commands
+* Universal Regen/refresh for entire server.
+* GM Commands completely open for level 1. If you break something, its on you!
+* Dualbox up to 2 total connections per IP is welcome.
+* Prepare to be tormented sometimes by server admin. (Tagban) but all jovial. 
 
 # Canaria:
 Focus of this server is to have a good time, have access to the latest features of Project Topaz, and enjoy the quality of life improvements (book/crystal teleport, ground/field of valor) that make this game fun to play in small or long sessions.
