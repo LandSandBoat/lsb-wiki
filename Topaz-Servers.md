@@ -10,14 +10,14 @@
 
 Server has been in operation since 2013, and operates on a dedicated box on a 50 Down/50 Up Fiber Optic line. Its fast, stable, and loads of fun. Setup around people that have already played through the game and really want to just relive some highlights, but not put months or years of their life into it again. Super fast leveling, and some fun commands.
 
-**Expansions enabled:** All Zilart, CoP, ToAU, and WotG [content up to what's available on topaz canary branch](https://github.com/project-topaz/topaz/tree/canary)
-
 * **Level Cap:** 99
 * **Movement Speed:** Around 80 (Wanna move faster? use !flash or !fly )
 * **Jobs:** All jobs unlocked, subjobs unlocked.
 * **Exp Rate:** around 6x faster than normal with FoV and GoV as well!
 * **Skillup Rate:** Super fast
 * **Inventory:** Max space
+
+**Expansions enabled:** All Zilart, CoP, ToAU, and WotG [content up to what's available on Topaz Canary branch](https://github.com/project-topaz/topaz/tree/canary).
 
 * NM boosted 15x normal for real challenges with all of the player enhancements.
 * Wallhacking encouraged (And turned on for all players), several other commands available (Check website for details as more are added over time!)
@@ -38,7 +38,7 @@ All content comes from the [canary branch](https://github.com/project-topaz/topa
 * **Website:** http://topaz.catsangel.com
 * **Discord:** https://discord.gg/VDz2yT
 
-**Expansions enabled:** All [content up to what's available on topaz canary branch](https://github.com/project-topaz/topaz/tree/canary)
+**Expansions enabled:** All [content up to what's available on Topaz Canary branch](https://github.com/project-topaz/topaz/tree/canary)
 
 * **Level Cap:** 75
 * **Fields of Valor:** Enabled
