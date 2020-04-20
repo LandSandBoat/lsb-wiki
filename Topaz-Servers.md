@@ -12,12 +12,12 @@ Server has been in operation since 2013, and operates on a dedicated box on a 50
 
 **Expansions enabled:** All Zilart, CoP, ToAU, and WotG [content up to what's available on topaz canary branch](https://github.com/project-topaz/topaz/tree/canary)
 
-Capped to 255
-**Movement Speed:** Around 80 (Wanna move faster? use !flash or !fly )
-**Jobs:** All jobs unlocked, subjobs unlocked.
-**Exp Rate:** around 6x faster than normal with FoV and GoV as well!
-**Skillup Rate:** Super fast
-**Inventory:** Max space
+* **Level Cap:** 99
+* **Movement Speed:** Around 80 (Wanna move faster? use !flash or !fly )
+* **Jobs:** All jobs unlocked, subjobs unlocked.
+* **Exp Rate:** around 6x faster than normal with FoV and GoV as well!
+* **Skillup Rate:** Super fast
+* **Inventory:** Max space
 
 * NM boosted 15x normal for real challenges with all of the player enhancements.
 * Wallhacking encouraged (And turned on for all players), several other commands available (Check website for details as more are added over time!)
