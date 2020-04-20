@@ -51,9 +51,9 @@ All content comes from the [canary branch](https://github.com/project-topaz/topa
 * **Mission BCNM + CoP Areas:** Same as current retail
 
 # Dawnbreak:
-**Server address:** dawnbreak.ddns.net
 
-**Discord:** https://discord.gg/g9XcQPH
+* **Server address:** dawnbreak.ddns.net
+* **Discord:** https://discord.gg/g9XcQPH
 
 **Expansions enabled:** Rise of Zilart, Chains of Promathia, Treasures of Aht Urhgan, Wings of the Goddess.
 
@@ -76,7 +76,8 @@ All content comes from the [canary branch](https://github.com/project-topaz/topa
 
 Level 99 Cap with endgame ilvl content coming soon. Vanadiel "JP Midnight" has been set to -6.0  (Central Time, USA)
 
-**Discord:** https://discord.gg/rQjzkpA
+* **Server address:** www.vanaskies.tk
+* **Discord:** https://discord.gg/rQjzkpA
 
 **2 characters online limit.**
 
