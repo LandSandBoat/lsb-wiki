@@ -49,6 +49,7 @@ All content comes from the [canary branch](https://github.com/project-topaz/topa
 * **Widescan:** Enabled
 * **Crafting + Skill ups:** Sames as current retail
 * **Mission BCNM + CoP Areas:** Same as current retail
+* **Trusts:** Enabled
 
 # Dawnbreak:
 
