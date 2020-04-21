@@ -1,11 +1,11 @@
 ## 1. Software needed:
 
-* Download and install [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/): Under "Workloads" > check "Desktop development with C++".
-* Download and install [Git for Windows](https://gitforwindows.org/): Nothing to do in particular during the installation.
-* Download and install [TortoiseGit](https://tortoisegit.org/): Nothing to do in particular during the installation.
+* Download and install [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/): Under "Workloads" > check "Desktop development with C++". Creating/linking a free account may be required to use it.
+* Download and install [Git for Windows](https://gitforwindows.org/): Accept defaults.
+* Download and install [TortoiseGit](https://tortoisegit.org/): Accept defaults.
 * Download and install [MariaDB](https://mariadb.org/): You can install HeidiSQL from there or get it separately, just remember the password you set for MariaDB during the installation.
-* Download and install [HeidiSQL](https://www.heidisql.com/): Nothing to do in particular during the installation.
-* Download and install [Python 3.7+](https://www.python.org/downloads/): Accept defaults
+* Download and install [HeidiSQL](https://www.heidisql.com/): Accept defaults.
+* Download and install [Python 3.8+](https://www.python.org/downloads/): Accept defaults.
 
 ## 2. Download the source code:
 
@@ -15,7 +15,7 @@
 
 ## 3. Prepare the database:
 
-1. Execute HeidiSQL and click on "New" (bottom left) then name your session as you wish > Password: Password previously saved from the MariaDB installation > Open > right click on it (left) > Create new > Database > name it "tpzdb" > OK.
+1. Execute HeidiSQL and click on "New" (bottom left) then name your session as you wish > Password: Password previously saved from the MariaDB installation > Open > right click on the freshly created/named session (left) > Create new > Database > name it "tpzdb" > OK.
 
 2. Select "tpzdb" > File > Run SQL file... > select every .sql file from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done. Alternatively, you can run the Database_initial_setup.bat file located in the \topaz\tools folder. 
 
@@ -155,25 +155,29 @@ Repeat the whole process of the **3. 2.** part (but select the .sql files you sa
 
 ## Miscellaneous
 
+**FX sound issue**:
+
 If you can hear ambient sound (music, weather, etc.) but no sound effects, this is one of the possible fixes:
 
 Right click on Speakers > Sounds > Playback tab > right click on Speakers > Configure Speakers > select Stereo > Next > Next > OK.
 
 ---
 
-For gil not sent to the Delivery Box (from the Auction House), this is one of the possible fixes:
+**Gil not sent to the Delivery Box from the Auction House (one of the possible fixes)**:
 
 Execute HeidiSQL > select your session and connect to it > select "tpzdb" > File > Run SQL file... > select the triggers.sql file from the \topaz\sql folder > Open.
 
 ---
 
+**Macros and screenshots**:
+
 Local macros location: PlayOnline\SquareEnix\FINAL FANTASY XI\USER.
 
-_Official_ screenshots location: PlayOnline\SquareEnix\PlayOnlineViewer\pub\home01\ open\ScreenShots\FinalFantasyXI.
+_Official_ screenshots location: PlayOnline\SquareEnix\PlayOnlineViewer\pub\home01\open\ScreenShots\FinalFantasyXI.
 
 ---
 
-Make your character a Game Master:
+**Make your character a Game Master**:
 
 Execute HeidiSQL > connect to your database > select "chars" > "Data" tab > "gmlevel" column > modify the value from 0 to 5 (maximum level) > close HeidiSQL.
 
@@ -189,6 +193,28 @@ Type "!command" in game (refer to the \topaz\scripts\commands folder for a list 
 
 ---
 
-How to change your loader password:
+**Unlock Superior levels (to wear particular items)**:
+
+\topaz\src\map\packets\char_stats.cpp:
+
+Replace:
+```
+//0x52 = superior level (1 or 2)
+```
+
+by:
+```
+ref<uint8>(0x52) = X; (< expected level/5)
+```
+
+or:
+```
+ref<uint8>(0x52) = PChar->GetMLevel () == 99? 5: 0;
+```
+Rebuild the solution.
+
+---
+
+**How to change your loader password**:
 
 Directly by following steps from the loader when you launch it (third option).
