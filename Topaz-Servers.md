@@ -14,7 +14,7 @@ Server has been in operation since 2013, and operates on a dedicated box on a 50
 * **Level Cap:** 99
 * **Movement Speed:** Around 80 (Wanna move faster? use !flash or !fly )
 * **Jobs:** All jobs unlocked, subjobs unlocked.
-* **Exp Rate:** around 6x faster than normal with FoV and GoV as well!
+* **Exp Rate:** 25x, with FoV and GoV as well!
 * **Skillup Rate:** Super fast
 * **Inventory:** Max space
 
