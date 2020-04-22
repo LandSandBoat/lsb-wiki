@@ -1,6 +1,7 @@
 * [BNET.cc](#bnetcc)
 * [Canaria](#Canaria)
 * [Dawnbreak](#Dawnbreak)
+* [QuetzRebirth](#QuetzRebirth)
 * [Vana Skies](#Vana-Skies)
 
 # BNET.cc:
@@ -72,6 +73,39 @@ All content comes from the [canary branch](https://github.com/project-topaz/topa
 * **Player TP Gain:** +5%
 * **Drop rate:** +6%
 * **Chance of break tools while harvesting:** reduced to 20% from 50%
+
+# QuetzRebirth
+
+* **Server address:** 192.99.166.60
+* **Website:** https://quetzrebirth.enjin.com/
+* **Discord:** https://discord.gg/Zdcdhna
+
+Rebirth 2.0, formerly known as QuetzRebirth, strives to give players a great experience of the 75-cap days of FFXI. At the same time our devs have customized the gameplay and continue to do so to find ways that will improve playability and decrease frustration, while maintaining an authentic-feeling experience.
+
+* **Level Cap:** 75
+* **Skill-Up Rate:** 4x
+* **Crafting Skill-Up Rate:** 8x
+* **Fame Growth Rate:** 4x
+* **Blue Magic Learn Rate:** 65%
+* **Movement Speed:** +25% in Cities
+* **Jobs:** All jobs unlocked, Subjob unlocked.
+* **Limit Breaks:** No limit breaks
+* **AF Quests:** No AF Quest. AF is available from storage NPCs at lv50.
+* **Fields of Valor:** Enabled, with gear rewards and 2x EXP!
+* **Grounds of Valor:** Enabled, with 1.5x EXP!
+* **Homepoint Teleport:** Enabled
+* **Survival Guides:** Enabled
+* **All Outpost Warps Unlocked:** Enabled.
+
+**Server Linkshell:** Your choice to join it or not.
+
+**Daily BCNM:** 60 Seals to use (don’t stack up).
+
+**Augment System:** Obtain custom augments from Field of Valor rewards and apply to any non-rare/non-ex.
+Augments are tradeable. Augments can be added to and recovered from items.
+
+**Gambling:** Have three augments you don’t like? Trade them in plus some Conquest Points to receive a new augment!
+
 
 # Vana Skies:
 
