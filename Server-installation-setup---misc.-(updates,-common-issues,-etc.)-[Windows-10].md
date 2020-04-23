@@ -1,4 +1,4 @@
-## 1. Software needed:
+## 1. Softwares needed:
 
 * Download and install [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/): Under "Workloads" > check "Desktop development with C++". Creating/linking a free account may be required to use it.
 * Download and install [Git for Windows](https://gitforwindows.org/): Accept defaults.
@@ -85,8 +85,34 @@ By looking at the files that were changed, you should:
 ---
 
 If any new .py file is added (in \topaz\migrations\) during an update make sure to:
-1. Install [MySQL Connector Python](https://dev.mysql.com/downloads/connector/python/).
-2. Execute the migrate.py file in there to apply possible changes.
+1. Install [MySQL Connector Python](https://dev.mysql.com/downloads/connector/python/): Accept defaults.
+2. Make sure your .conf files are out of the default folder and have the correct passwords entered to access your database.
+
+* Python scripts way:
+
+Double click on the migrate.py script in the \topaz\migrations folder.
+
+* Command prompt way:
+
+Right click + holding the Shift key in the \topaz\migrations folder (empty space, not a file) > context menu: Open PowerShell window here.
+(skip this step if you installed the MySQL Connector Python above) enter this command:
+```
+py -m pip install mysql-connector-python
+```
+It will download and install MySQL Connector Python.
+
+5. Enter this command:
+```
+py migrate.py
+```
+It will run all the migrations scripts.
+
+Updating Python: Default location of the Python installation files is: C:\Users\Username\AppData\Local\Programs\Python, when updating you may want to relocate old files from your old version's folder to the new one (copy/paste).
+
+Updating modules: Make sure you check if your modules are up to date from time to time (you'll probably get reminded while running migrations scripts). To do so, open a command prompt like stated above and enter:
+```
+py -m pip install --upgrade Modulename
+```
 
 ---
 
