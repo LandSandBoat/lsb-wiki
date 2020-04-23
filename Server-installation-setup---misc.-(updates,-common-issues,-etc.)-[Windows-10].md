@@ -81,14 +81,14 @@ By looking at the files that were changed, you should:
 * RERUN EVERY .sql MODIFIED FILES (referring to the example at **3. 2.**).
 * REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **4.**).
 * RESTART YOUR SERVER(S) FOR .conf FILES.
-* .lua files ARE INSTANT
+* .lua files ARE INSTANT.
 ---
 
 If any new .py file is added (in \topaz\migrations\) during an update make sure to:
 1. Install [MySQL Connector Python](https://dev.mysql.com/downloads/connector/python/): Accept defaults.
 2. Make sure your .conf files are out of the default folder and have the correct passwords entered to access your database.
 
-* Python scripts way:
+* Python script way:
 
 Double click on the migrate.py script in the \topaz\migrations folder.
 
