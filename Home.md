@@ -1,8 +1,8 @@
 This is the wiki for Project Topaz. As we are still setting up the project, it may be sparse until more work is put into it.
 
-## Server installation + setup
+## Server installation + setup + maintenance
 
-[[Windows 10 (+ misc.)|https://github.com/project-topaz/topaz/wiki/Server-installation-setup---misc.-(updates,-common-issues,-etc.)-%5BWindows-10%5D]]
+[[Windows 10|https://github.com/project-topaz/topaz/wiki/Server-installation-setup---misc.-(updates,-common-issues,-etc.)-%5BWindows-10%5D]]
 
 [[Ubuntu 18.04|https://github.com/project-topaz/topaz/wiki/Server-Installation---Setup-%5BUbuntu-18.04-LTS%5D]]
 
@@ -10,6 +10,8 @@ This is the wiki for Project Topaz. As we are still setting up the project, it m
 
 ## Client installation + setup
 [Windows 10](https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows-10%5D)
+## Miscellaneous (commands, common issues, tweaks, etc.)
+[Windows 10](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(commands,-common-issues,-tweaks,-etc.)-%5BWindows-10%5D.)
 ## Development
 Information for developers who code for Project Topaz
 ## [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
