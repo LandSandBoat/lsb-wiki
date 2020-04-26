@@ -12,3 +12,6 @@
 - [JSON cutscene event dumps by zone](https://github.com/KnowOne134/FFXI_Events)
 - [Complete list of zone dats by zone id](https://www.reddit.com/r/ffximodding/comments/9ndg2d/complete_list_of_zone_dats_by_zone_id/)
 
+### Other handy Info
+- [[Useful SQL queries]]
+- [[Understanding variables: a brief guide | Understanding-variables:--a-brief-guide]]
