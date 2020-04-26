@@ -63,7 +63,7 @@ Password: Password
 
 ---
 
-## 4. Use Windower
+## 4. Launching via Windower
 
 1. Download [Windower](http://windower.net/).
 
@@ -83,3 +83,17 @@ Password: Password
 5. Execute Windower.exe.
 
 6. Select your profile and click on the arrow (bottom right), it will launch xiloader.
+
+## Launching via Ashita
+
+1. Download [Ashita] (https://www.ashitaxi.com/)
+
+2. Run Ashita as administrator
+
+3. Click on the Plus icon to make a new configuration, then edit the file line with the file path to your xiloader (can use the ... to browse)
+
+4. in the command line, place your server details as --server yourserverip --hairpin (if externally facing). You can also use --user and -pass to autopopulate  your credentials.
+
+5. Choose window to adjust your resolution if need be.
+
+6. click the paper icon to save, launch with the red arrow. 
