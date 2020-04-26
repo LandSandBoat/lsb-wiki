@@ -84,7 +84,7 @@ Password: Password
 
 6. Select your profile and click on the arrow (bottom right), it will launch xiloader.
 
-## Launching via Ashita
+## 4b. Launching via Ashita
 
 1. Download [Ashita] (https://www.ashitaxi.com/)
 
