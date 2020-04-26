@@ -1,0 +1,63 @@
+== Resetting an account password ==
+
+<pre>
+UPDATE accounts SET password = PASSWORD("NEW_PASSWORD_HERE") WHERE login = 'ACCOUNT_NAME_HERE';
+</pre>
+''Note: This function is deprecated in stock MySQL''
+
+== Mail an item to all characters on the entire server ==
+<pre>
+INSERT INTO delivery_box (charid, charname, box, slot, itemid, itemsubid, quantity, extra, senderid, sender, received, sent)
+  SELECT chars.charid, chars.charname, 1, 0, ItemIdHere, 0, 1, NULL, 0, 'The MHMU', 0, 0 FROM chars;
+</pre>
+
+== Mail an item to one character ==
+<pre>
+INSERT INTO delivery_box VALUES (charid, 'name here', 1, 0, itemid, 0, quantity, NULL, 0, 'The MHMU', 0, 0);
+</pre>
+
+== Find All Mobs Without Pets ==
+
+<pre>
+select mobid, mobname, mob_pets.pet_offset 
+from mob_spawn_points 
+inner join mob_groups on mob_spawn_points.groupid = mob_groups.groupid 
+inner join mob_pools on mob_groups.poolid = mob_pools.poolid 
+left join mob_pets on mob_pets.mob_mobid = mob_spawn_points.mobid 
+where mob_pools.mJob IN (9, 14, 15, 18) and mob_pets.pet_offset IS NULL;
+</pre>
+
+== Find All Pets Without a Master ==
+
+<pre>
+select mobid, mobname from mob_spawn_points where mobname LIKE '%\_s\_%' and NOT EXISTS (select * from mob_pets where mob_mobid + pet_offset = mobid limit 1);
+</pre>
+
+== Expansion icons ==
+Icons are set per-account now, in the accounts table. Change the default value in the table design to the value you want everyone to have (without having to set it every time someone creates an account).
+<pre>
+Expansion Icons - 2 Bytes
+
+Byte 1 - Zilart to A Shantotto Ascension
+00000000 Bit0 - Not Used - Original FFXI bit
+00000010 Bit1 - Enables Rise of Zilart Icon
+00000100 Bit2 - Enables Chains of Promathia Icon
+00001000 Bit3 - Enables Treasures of Aht Urhgan Icon
+00010000 Bit4 - Enables Wings of The Goddess
+00100000 Bit5 - Enables A Crystalline Prophecy Icon
+01000000 Bit6 - Enables A Moogle Kupod'Etat Icon
+10000000 Bit7 - Enables A Shantotto Ascension Icon
+
+Byte 2 - Vision of Abyssea to Seekers of Adoulin
+00000001 Bit0 - Enables Vision of Abyssea
+00000010 Bit1 - Enables Scars of Abyssea
+00000100 Bit2 - Enables Heroes of Abyssea
+00001000 Bit3 - Enables Seekers of Adoulin
+00010000 Bit4 - Not Used - Future expansion
+00100000 Bit5 - Not Used - Future expansion
+01000000 Bit6 - Not Used - Future expansion
+10000000 Bit7 - Not Used - Future expansion
+</pre>
+
+It's a decimal representation of multiple bytes. Lets look at them in binary, where it's all on/off (one and zero):<br>
+so our default value of 4094 = 0000111111111110 (everything except the "Not Used" bits). You can use almost any calculator to swap between these formats if you need to.
