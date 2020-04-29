@@ -9,7 +9,7 @@
 
 ## 2. Download the source code:
 
-1. Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/project-topaz/topaz.git > OK > then Close when it's done. 
+1. Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/project-topaz/topaz.git ("release" branch by default) > OK > then Close when it's done. 
 
 2. Don't forget about Navmeshes (https://github.com/project-topaz/xiNavmeshes.git): right click on the freshly downloaded "topaz" folder > TortoiseGit > Submodule Update... > OK > then Close when it's done.
 
