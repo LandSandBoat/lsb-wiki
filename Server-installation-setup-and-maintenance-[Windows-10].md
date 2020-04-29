@@ -1,4 +1,4 @@
-## 1. Softwares needed:
+## 1. Software needed:
 
 * Download and install [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/): Under "Workloads" > check "Desktop development with C++". Creating/linking a free account may be required to use it.
 * Download and install [Git for Windows](https://gitforwindows.org/): Accept defaults.
@@ -173,6 +173,10 @@ Directory: (click on the folder icon on the right then choose a name and a locat
 ```
 3. Export > Close.
 
+If you are looking to backup your entire db, you can use a .bat to backup your database - download [BACKUP - TPZ.bat](https://drive.google.com/open?id=1uqnmsABGWTMCCuLEN4jZtrv3OO0cWebs)
+
 _Importing_:
 
 Repeat the whole process of the **3. 2.** part (but select the .sql files you saved before instead).
+
+You can also choose to build via the [BUILD - TPZ.bat] (https://drive.google.com/drive/folders/1uqnmsABGWTMCCuLEN4jZtrv3OO0cWebs)
