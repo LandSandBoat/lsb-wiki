@@ -137,7 +137,9 @@ to
 
 save then restart the topaz_connect.exe server.
 
-## 7. Save your database
+## 7. Database management
+
+* Manual way:
 
 _Exporting_:
 
@@ -173,10 +175,24 @@ Directory: (click on the folder icon on the right then choose a name and a locat
 ```
 3. Export > Close.
 
-If you are looking to backup your entire db, you can use a .bat to backup your database - download [BACKUP - TPZ.bat](https://drive.google.com/open?id=1uqnmsABGWTMCCuLEN4jZtrv3OO0cWebs)
-
 _Importing_:
 
 Repeat the whole process of the **3. 2.** part (but select the .sql files you saved before instead).
 
-You can also choose to build via the [BUILD - TPZ.bat] (https://drive.google.com/drive/folders/1uqnmsABGWTMCCuLEN4jZtrv3OO0cWebs)
+---
+
+* Automated way (thanks to Wren):
+
+[.bat files (BACKUP - TPZ.bat and BUILD - TPZ.bat) + documentation](https://drive.google.com/open?id=1uqnmsABGWTMCCuLEN4jZtrv3OO0cWebs).
+
+/!\
+
+Don't forget to edit each one with a text editor and change paths accordingly first. There's a documentation guide in there to help out.
+
+_Exporting_:
+
+Download and execute the *BACKUP - TPZ.bat* one.
+
+_Importing_:
+
+Download and execute the *BUILD - TPZ.bat* one.
