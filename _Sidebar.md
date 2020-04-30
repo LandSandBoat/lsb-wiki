@@ -11,7 +11,7 @@
 * [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
   * [[Project Focus|https://github.com/project-topaz/topaz/wiki/Project-Focus]]
   * [[Staff Meeting Notes|https://github.com/project-topaz/topaz/wiki/Staff-Meetings]]
-  * [[Contributor Code of Conduct|https://github.com/project-topaz/topaz/wiki/Contributer-Conduct]]
+  * [[Contributor Code of Conduct|https://github.com/project-topaz/topaz/wiki/Contributor-Conduct]]
   * [[Staff Code of Conduct|https://github.com/project-topaz/topaz/wiki/Staff-Conduct]]
 * [[Server List|Topaz-Servers]]
 * [Resources](https://github.com/project-topaz/topaz/wiki/Resources)
