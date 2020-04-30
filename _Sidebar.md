@@ -10,6 +10,8 @@
 * [Using Github](https://github.com/project-topaz/topaz/wiki/Using-Github)
 * [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
   * [[Project Focus|https://github.com/project-topaz/topaz/wiki/Project-Focus]]
-  * [[Staff Meeting notes| ]]
+  * [[Staff Meeting notes|https://github.com/project-topaz/topaz/wiki/Staff-Meetings]]
+  * [[Contributor code of conduct|https://github.com/project-topaz/topaz/wiki/Contributer-Conduct]]
+  * [[Staff code of conduct|https://github.com/project-topaz/topaz/wiki/Staff-Conduct]]
 * [[Server List|Topaz-Servers]]
 * [Resources](https://github.com/project-topaz/topaz/wiki/Resources)
