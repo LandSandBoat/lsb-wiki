@@ -152,7 +152,7 @@ Level 99 Cap with endgame ilvl content coming soon. Vanadiel "JP Midnight" has b
 
 # Gold Saucer
  * **Server address:** play.gold-saucer.com
- * **Website:** gold-saucer.com (WIP)
+ * **Website:** http://gold-saucer.com/ (WIP)
  * **Discord:** https://discord.gg/8mck2W8
 
 New server--reborn from Resolute--doing an official launch on 05/06/2020 at 2:30pm PST (further details on discord), and run on a privately owned and operated dedicated server.  Gold Saucer's goal is to relive the old-era FFXI feel and experience while bringing modern QoL updates to the game.  We are focused on a strong community and group play, so several features that promote solo-play are disabled.  The level cap will always be 75, even as modern and custom content is added to the game.  Admins and players alike continue to make contributions back to Project Topaz, with a focus on era-content that Gold Saucer is building.
