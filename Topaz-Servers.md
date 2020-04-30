@@ -1,10 +1,13 @@
-* [BNET.cc](#bnetcc)
-* [Canaria](#Canaria)
-* [Dawnbreak](#Dawnbreak)
-* [QuetzRebirth](#QuetzRebirth)
-* [Vana Skies](#Vana-Skies)
-* [Gold Saucer](#Gold-Saucer)
-* [Phynix](#Phynix)
+# 75 Cap Servers
+* [Canaria](#Canaria) era, qol changes
+* [Dawnbreak](#Dawnbreak) era, qol changes
+* [Gold Saucer](#Gold-Saucer) will keep cap with modern content
+* [QuetzRebirth](#QuetzRebirth) era, qol changes, some custom content
+* [Phynix](#Phynix) 
+
+# 99/ilvl Cap Servers
+* [BNET.cc](#bnetcc) modern era, custom content
+* [Vana Skies](#Vana-Skies) modern era
 
 # BNET.cc:
 * **Server address:** ffxi.cc
