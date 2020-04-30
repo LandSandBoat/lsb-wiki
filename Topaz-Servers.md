@@ -3,7 +3,7 @@
 * [Dawnbreak](#Dawnbreak) era, qol changes
 * [Gold Saucer](#Gold-Saucer) will keep cap with modern content
 * [QuetzRebirth](#QuetzRebirth) era, qol changes, some custom content
-* [Phynix](#Phynix) 
+* [Phynix](#Phynix) 75 cap, QOL changes
 
 # 99/ilvl Cap Servers
 * [BNET.cc](#bnetcc) modern era, custom content
@@ -171,4 +171,23 @@ New server--reborn from Resolute--doing an official launch on 05/06/2020 at 2:30
 * Many job trait and ability level requirements have been lowered, including TH2 at level 37
 
 # Phynix
-**Discord:** https://discord.gg/NztTvRK
+* **Discord:** https://discord.gg/NztTvRK
+* **PHYNIX Server:** xi-phynix.com
+* PHYNIX Open to the Public (Stay Classy)
+
+* 75 Custom era.
+* First 60 Player receives Anniversary Ring / Warp Ring.
+* CoP Complete Mission Release/Sea HNM working.
+* Zilart Missions Working Sky Access.
+* Starting Gil: 20,000
+* AH and Economy Built by Players
+* Double Gil Questing
+* QoL Home point Crystals Open
+* 2x EXP For Low population.
+* DNC, SCH, RUN, GEO Not playable
+* Explorer Moogles Active.
+* GM Player appreciation events.
+
+We at PHYNIX believe that the time you spend on FFXI should not go unnoticed.
+
+If you want to be on a Server where GM's are approachable and easy to contact and nothing is done without the player's knowledge. We have been working hard getting content fixed and building a community tho small (25-30ppl) we treasure each and every one. If we grow bigger we will always keep the Players first. We currently do not have an Installer but you can configure your client the PoL update and then use Ashita. Come Join the Fun See you there!!!
