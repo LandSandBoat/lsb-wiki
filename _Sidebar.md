@@ -9,5 +9,7 @@
   * [[Windows 10|https://github.com/project-topaz/topaz/wiki/Miscellaneous-(commands,-common-issues,-tweaks,-etc.)-%5BWindows-10%5D.]]
 * [Using Github](https://github.com/project-topaz/topaz/wiki/Using-Github)
 * [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
+  * [[Project Focus|https://github.com/project-topaz/topaz/wiki/Project-Focus]]
+  * [[Staff Meeting notes| ]]
 * [[Server List|Topaz-Servers]]
 * [Resources](https://github.com/project-topaz/topaz/wiki/Resources)
