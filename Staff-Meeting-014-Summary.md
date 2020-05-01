@@ -47,7 +47,7 @@ aether, ibm2431, Nyu, Wiggo, Zircon
 14. [#539 - Mazurka Fix](https://github.com/project-topaz/topaz/pull/539)
     - Merged into `release`
 
-# Feature Branches (15)
+# Feature Branches (22)
 1. [`adventuringfellow`](https://github.com/project-topaz/topaz/tree/adventuringfellow)
     - Basic adventuring fellow and initial quests
     - Unknown merge date
