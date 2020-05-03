@@ -208,7 +208,7 @@ If you want to be on a Server where GM's are approachable and easy to contact an
 * Chocobo Head/Body Gear Buffs Starting gear Level 1-30
 * Exp Gain Multiplier    2x with Echad Ring (Experience Point Bonus +150, Max Bonus 30,000, Unlimited Use)
 * Subjob    Unlocked at start
-* Combat Skill/Crafting Skill 2.25x
+* Combat Skill/Crafting Skill 2.50x
 * Fame Multiplier 3x
 * Uncapped Missions
 * Battlefield Level cap +5
