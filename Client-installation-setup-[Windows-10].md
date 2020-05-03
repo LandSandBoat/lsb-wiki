@@ -10,6 +10,10 @@
    * On the next screen, enter id like 1234ABCD or ABCD1234 (4 letters 4 numbers it doesn't care about the order, doesn't matter if they're accurate or not) in the "Member Name" and "PlayOnline ID"  fields. If you actually have a retail account you can input that.
    * Click on "Register" > "Yes" > "OK" > "Exit" and finally "Yes".
 
+4. Close pol and apply patch.ver file (need to host)
+
+5. Launch pol again, go to file check, select game from dropdown - should say "unknown" for the FFXI entry
+
 ---
 
 ## 2. Updating (_automatic_ way)
