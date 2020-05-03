@@ -194,7 +194,7 @@ If you want to be on a Server where GM's are approachable and easy to contact an
 
 
 
-**GROUNDS OF TITAN** Topaz Build 75 Cap
+# **GROUNDS OF TITAN** Topaz Build 75 Cap
 
 Greetings All, Brand New Server ran on Dedicated Hosted Box in Atlanta GA. Our server has multiple Quality of Life enhancements as our goal is to appeal
 to all players not only the hardcore or those with tons of extra time. Please check out our server if you are looking for a new home with great QOL Perks.
