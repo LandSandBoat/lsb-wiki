@@ -4,7 +4,8 @@
 * [Gold Saucer](#Gold-Saucer) will keep cap with modern content
 * [QuetzRebirth](#QuetzRebirth) era, qol changes, some custom content
 * [Phynix](#Phynix) 75 cap, QOL changes
-* [Grounds of Titan](# Grounds of Titan) 75 cap, QOL changes
+* [Phynix](#GoT) 75 cap, QOL changes
+
 
 # 99/ilvl Cap Servers
 * [BNET.cc](#bnetcc) modern era, custom content
@@ -194,10 +195,9 @@ We at PHYNIX believe that the time you spend on FFXI should not go unnoticed.
 If you want to be on a Server where GM's are approachable and easy to contact and nothing is done without the player's knowledge. We have been working hard getting content fixed and building a community tho small (25-30ppl) we treasure each and every one. If we grow bigger we will always keep the Players first. We currently do not have an Installer but you can configure your client the PoL update and then use Ashita. Come Join the Fun See you there!!!
 
 
+#GoT
 
-#Grounds of Titan
-
-*Greetings All, Brand New Server ran on Dedicated Hosted Box in Atlanta GA. Our server has multiple Quality of Life enhancements as our goal is to appeal to all players not only the hardcore or those with tons of extra time. Please check out our server if you are looking for a new home with great QOL Perks. We are hoping to build a great community where everyone can enjoy their time as much as we do.
+*Greetings All, Brand New Server (Grounds of Titan) ran on Dedicated Hosted Box in Atlanta GA. Our server has multiple Quality of Life enhancements as our goal is to appeal to all players not only the hardcore or those with tons of extra time. Please check out our server if you are looking for a new home with great QOL Perks. We are hoping to build a great community where everyone can enjoy their time as much as we do.
 
 *Discord: Grounds of Titan https://discord.gg/Rrcr29G
 *Server Connection Info: --server 74.91.127.58 --hairpin
