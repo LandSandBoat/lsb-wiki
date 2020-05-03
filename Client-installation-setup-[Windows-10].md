@@ -7,7 +7,7 @@
 3. Once the whole installation is complete, execute PlayOnline Viewer. If an update is available, click on "Next", then: 
 * Select "Update" ; once this is done, click on "OK" then "Next". PlayOnline Viewer should restart automatically.
 * Select "For PlayOnline Members!".
-* On the next screen, enter whatever informations you want (doesn't matter if they're accurate or not) in the "Member Name" and "PlayOnline ID"  fields.
+* On the next screen, enter id like 1234ABCD or ABCD1234 (4 letters 4 number sit doesn't care about the order) (doesn't matter if they're accurate or not) in the "Member Name" and "PlayOnline ID"  fields.
 * Click on "Register" > "Yes" > "OK" > "Exit" and finally "Yes".
 
 ---
