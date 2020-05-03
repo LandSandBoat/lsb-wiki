@@ -4,7 +4,7 @@
 * [Gold Saucer](#Gold-Saucer) will keep cap with modern content
 * [QuetzRebirth](#QuetzRebirth) era, qol changes, some custom content
 * [Phynix](#Phynix) 75 cap, QOL changes
-* [Grounds of Titan](#Grounds of Titan) 75 cap, QOL changes
+* [Grounds of Titan](# Grounds of Titan) 75 cap, QOL changes
 
 # 99/ilvl Cap Servers
 * [BNET.cc](#bnetcc) modern era, custom content
