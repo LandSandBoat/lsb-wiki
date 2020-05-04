@@ -11,7 +11,7 @@
 * [Vana Skies](#Vana-Skies) modern era
 
 ***
-# Server List
+# Server Details
 ## BNET.cc:
 * **Server address:** ffxi.cc
 * **Website:** http://www.bnet.cc/
