@@ -36,7 +36,7 @@ Server has been in operation since 2013, and operates on a dedicated box on a 50
 * Dualbox up to 2 total connections per IP is welcome.
 * Prepare to be tormented sometimes by server admin. (Tagban) but all jovial. 
 
-# Canaria:
+## Canaria:
 Focus of this server is to have a good time, have access to the latest features of Project Topaz, and enjoy the quality of life improvements (book/crystal teleport, ground/field of valor) that make this game fun to play in small or long sessions.
 
 Level cap restriction is set in place as most of the content past level 75 has not really been implemented.
@@ -60,7 +60,7 @@ All content comes from the [canary branch](https://github.com/project-topaz/topa
 * **Mission BCNM + CoP Areas:** Same as current retail
 * **Trusts:** Enabled
 
-# Dawnbreak:
+## Dawnbreak:
 
 * **Server address:** dawnbreak.ddns.net
 * **Discord:** https://discord.gg/g9XcQPH
@@ -82,7 +82,7 @@ All content comes from the [canary branch](https://github.com/project-topaz/topa
 * **Drop rate:** +6%
 * **Chance of break tools while harvesting:** reduced to 20% from 50%
 
-# Gold Saucer
+## Gold Saucer
  * **Server address:** play.gold-saucer.com
  * **Website:** http://gold-saucer.com/ (WIP)
  * **Discord:** https://discord.gg/8mck2W8
@@ -102,7 +102,7 @@ New server--reborn from Resolute--doing an official launch on 05/06/2020 at 2:30
 * Dualboxing in the field is not allowed.  You may have a second account/character that is restricted to storage and crafting.
 * Many job trait and ability level requirements have been lowered, including TH2 at level 37
 
-# Grounds of Titan
+## Grounds of Titan
 
 * Greetings All, Brand New Server (Grounds of Titan) ran on Dedicated Hosted Box in Atlanta GA. Our server has multiple Quality of Life enhancements as our goal is to appeal to all players not only the hardcore or those with tons of extra time. Please check out our server if you are looking for a new home with great QOL Perks. We are hoping to build a great community where everyone can enjoy their time as much as we do.
 
@@ -126,7 +126,7 @@ New server--reborn from Resolute--doing an official launch on 05/06/2020 at 2:30
 * Fields of Valor/Grounds Tome    Enabled
 * Level Sync    Enabled
 
-# Phynix
+## Phynix
 * **Discord:** https://discord.gg/NztTvRK
 * **PHYNIX Server:** xi-phynix.com
 * PHYNIX Open to the Public (Stay Classy)
@@ -148,7 +148,7 @@ We at PHYNIX believe that the time you spend on FFXI should not go unnoticed.
 
 If you want to be on a Server where GM's are approachable and easy to contact and nothing is done without the player's knowledge. We have been working hard getting content fixed and building a community tho small (25-30ppl) we treasure each and every one. If we grow bigger we will always keep the Players first. We currently do not have an Installer but you can configure your client the PoL update and then use Ashita. Come Join the Fun See you there!!!
 
-# QuetzRebirth
+## QuetzRebirth
 
 * **Server address:** 192.99.166.60
 * **Website:** https://quetzrebirth.enjin.com/
@@ -180,7 +180,7 @@ Augments are tradeable. Augments can be added to and recovered from items.
 
 **Gambling:** Have three augments you don’t like? Trade them in plus some Conquest Points to receive a new augment!
 
-# Vana Skies:
+## Vana Skies:
 
 Level 99 Cap with endgame ilvl content coming soon. Vanadiel "JP Midnight" has been set to -6.0  (Central Time, USA)
 
