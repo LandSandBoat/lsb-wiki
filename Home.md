@@ -17,6 +17,10 @@ Information for developers who code for Project Topaz
 - [Using GitHub](https://github.com/project-topaz/topaz/wiki/Using-GitHub)
 # [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
 Information relating to the "meta" of Project Topaz - like project goals, codes of conduct, project roadmaps, and licensing information
+- [[Project Focus|https://github.com/project-topaz/topaz/wiki/Project-Focus]]
+- [[Staff Meetings|https://github.com/project-topaz/topaz/wiki/Staff-Meetings]]
+- [[Contributor Conduct|https://github.com/project-topaz/topaz/wiki/Contributor-Conduct]]
+- [[Staff Conduct|https://github.com/project-topaz/topaz/wiki/Staff-Conduct]]
 # [[Server List|Topaz-Servers]]
 List of known public Topaz servers, if you want to join one, or test out Topaz before setting up your own
 # [Resources](https://github.com/project-topaz/topaz/wiki/Resources)
