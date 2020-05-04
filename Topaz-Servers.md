@@ -1,11 +1,10 @@
 # 75 Cap Servers
-* [Canaria](#Canaria) era, qol changes
-* [Dawnbreak](#Dawnbreak) era, qol changes
+* [Canaria](#Canaria) QOL changes
+* [Dawnbreak](#Dawnbreak) era, QOL changes
 * [Gold Saucer](#Gold-Saucer) will keep cap with modern content
-* [QuetzRebirth](#QuetzRebirth) era, qol changes, some custom content
+* [Grounds of Titan](#GoT) 75 cap,  great QOL perks (new server 2020/05)
+* [QuetzRebirth](#QuetzRebirth) era, QOL changes, some custom content
 * [Phynix](#Phynix) 75 cap, QOL changes
-* [Grounds of Titan](#GoT) 75 cap, New Server 05/02 Great QOL perks
-
 
 # 99/ilvl Cap Servers
 * [BNET.cc](#bnetcc) modern era, custom content
@@ -81,6 +80,72 @@ All content comes from the [canary branch](https://github.com/project-topaz/topa
 * **Drop rate:** +6%
 * **Chance of break tools while harvesting:** reduced to 20% from 50%
 
+# Gold Saucer
+ * **Server address:** play.gold-saucer.com
+ * **Website:** http://gold-saucer.com/ (WIP)
+ * **Discord:** https://discord.gg/8mck2W8
+
+New server--reborn from Resolute--doing an official launch on 05/06/2020 at 2:30pm PST (further details on discord), and run on a privately owned and operated dedicated server.  Gold Saucer's goal is to relive the old-era FFXI feel and experience while bringing modern QoL updates to the game.  We are focused on a strong community and group play, so several features that promote solo-play are disabled.  The level cap will always be 75, even as modern and custom content is added to the game.  Admins and players alike continue to make contributions back to Project Topaz, with a focus on era-content that Gold Saucer is building.
+
+* **Level Cap:** 75
+* **Movement Speed:** 60 (1.5x retail)
+* **Jobs:** All jobs up to TOAU unlocked for new players, DNC and SCH are available to unlock by normal means.
+* **Exp Rate:** 2008 era (100xp for EM)
+* **Expansions enabled:**  All content currently available from Topaz.
+* **Home Point Warps:** Enabled
+* **Outpost Warps:** Unlocked at start
+* **GOV/FOV/Explorer Moogle:** Disabled
+* **Crafting:**  2008 era skillup rate and levels.
+* NMs are slightly boosted
+* Dualboxing in the field is not allowed.  You may have a second account/character that is restricted to storage and crafting.
+* Many job trait and ability level requirements have been lowered, including TH2 at level 37
+
+# Grounds of Titan
+
+* Greetings All, Brand New Server (Grounds of Titan) ran on Dedicated Hosted Box in Atlanta GA. Our server has multiple Quality of Life enhancements as our goal is to appeal to all players not only the hardcore or those with tons of extra time. Please check out our server if you are looking for a new home with great QOL Perks. We are hoping to build a great community where everyone can enjoy their time as much as we do.
+
+* Discord: Grounds of Titan https://discord.gg/Rrcr29G
+* Server Connection Info: --server 74.91.127.58 --hairpin
+* 24/7 Uptime
+* Build - Topaz 
+* Expansion    TOAU
+* Level Cap    75
+* Chocobo Head/Body Gear Buffs Starting gear Level 1-30
+* Exp Gain Multiplier    2x with Echad Ring (Experience Point Bonus +150, Max Bonus 30,000, Unlimited Use)
+* Subjob    Unlocked at start
+* Combat Skill/Crafting Skill 2.50x
+* Fame Multiplier 3x
+* Uncapped Missions
+* Battlefield Level cap +5
+* Player Movement Speed Increased
+* Crystal Teleport    Enabled
+* Survivial Guides    Enabled
+* All Outpost Warps Unlocked
+* Fields of Valor/Grounds Tome    Enabled
+* Level Sync    Enabled
+
+# Phynix
+* **Discord:** https://discord.gg/NztTvRK
+* **PHYNIX Server:** xi-phynix.com
+* PHYNIX Open to the Public (Stay Classy)
+
+* 75 Custom era.
+* First 60 Player receives Anniversary Ring / Warp Ring.
+* CoP Complete Mission Release/Sea HNM working.
+* Zilart Missions Working Sky Access.
+* Starting Gil: 20,000
+* AH and Economy Built by Players
+* Double Gil Questing
+* QoL Home point Crystals Open
+* 2x EXP For Low population.
+* DNC, SCH, RUN, GEO Not playable
+* Explorer Moogles Active.
+* GM Player appreciation events.
+
+We at PHYNIX believe that the time you spend on FFXI should not go unnoticed.
+
+If you want to be on a Server where GM's are approachable and easy to contact and nothing is done without the player's knowledge. We have been working hard getting content fixed and building a community tho small (25-30ppl) we treasure each and every one. If we grow bigger we will always keep the Players first. We currently do not have an Installer but you can configure your client the PoL update and then use Ashita. Come Join the Fun See you there!!!
+
 # QuetzRebirth
 
 * **Server address:** 192.99.166.60
@@ -112,7 +177,6 @@ Rebirth 2.0, formerly known as QuetzRebirth, strives to give players a great exp
 Augments are tradeable. Augments can be added to and recovered from items.
 
 **Gambling:** Have three augments you don’t like? Trade them in plus some Conquest Points to receive a new augment!
-
 
 # Vana Skies:
 
@@ -151,71 +215,3 @@ Level 99 Cap with endgame ilvl content coming soon. Vanadiel "JP Midnight" has b
 * **Widescan:** Enabled for all jobs
 * **All Outpost Warps Unlocked:** Enabled.
 * **New Style Skill-Ups:** Enabled. (Allows parry, block, and guard to skill up regardless of the action occurring)
-
-# Gold Saucer
- * **Server address:** play.gold-saucer.com
- * **Website:** http://gold-saucer.com/ (WIP)
- * **Discord:** https://discord.gg/8mck2W8
-
-New server--reborn from Resolute--doing an official launch on 05/06/2020 at 2:30pm PST (further details on discord), and run on a privately owned and operated dedicated server.  Gold Saucer's goal is to relive the old-era FFXI feel and experience while bringing modern QoL updates to the game.  We are focused on a strong community and group play, so several features that promote solo-play are disabled.  The level cap will always be 75, even as modern and custom content is added to the game.  Admins and players alike continue to make contributions back to Project Topaz, with a focus on era-content that Gold Saucer is building.
-
-* **Level Cap:** 75
-* **Movement Speed:** 60 (1.5x retail)
-* **Jobs:** All jobs up to TOAU unlocked for new players, DNC and SCH are available to unlock by normal means.
-* **Exp Rate:** 2008 era (100xp for EM)
-* **Expansions enabled:**  All content currently available from Topaz.
-* **Home Point Warps:** Enabled
-* **Outpost Warps:** Unlocked at start
-* **GOV/FOV/Explorer Moogle:** Disabled
-* **Crafting:**  2008 era skillup rate and levels.
-* NMs are slightly boosted
-* Dualboxing in the field is not allowed.  You may have a second account/character that is restricted to storage and crafting.
-* Many job trait and ability level requirements have been lowered, including TH2 at level 37
-
-# Phynix
-* **Discord:** https://discord.gg/NztTvRK
-* **PHYNIX Server:** xi-phynix.com
-* PHYNIX Open to the Public (Stay Classy)
-
-* 75 Custom era.
-* First 60 Player receives Anniversary Ring / Warp Ring.
-* CoP Complete Mission Release/Sea HNM working.
-* Zilart Missions Working Sky Access.
-* Starting Gil: 20,000
-* AH and Economy Built by Players
-* Double Gil Questing
-* QoL Home point Crystals Open
-* 2x EXP For Low population.
-* DNC, SCH, RUN, GEO Not playable
-* Explorer Moogles Active.
-* GM Player appreciation events.
-
-We at PHYNIX believe that the time you spend on FFXI should not go unnoticed.
-
-If you want to be on a Server where GM's are approachable and easy to contact and nothing is done without the player's knowledge. We have been working hard getting content fixed and building a community tho small (25-30ppl) we treasure each and every one. If we grow bigger we will always keep the Players first. We currently do not have an Installer but you can configure your client the PoL update and then use Ashita. Come Join the Fun See you there!!!
-
-
-# GoT
-
-* Greetings All, Brand New Server (Grounds of Titan) ran on Dedicated Hosted Box in Atlanta GA. Our server has multiple Quality of Life enhancements as our goal is to appeal to all players not only the hardcore or those with tons of extra time. Please check out our server if you are looking for a new home with great QOL Perks. We are hoping to build a great community where everyone can enjoy their time as much as we do.
-
-* Discord: Grounds of Titan https://discord.gg/Rrcr29G
-* Server Connection Info: --server 74.91.127.58 --hairpin
-* 24/7 Uptime
-* Build - Topaz 
-* Expansion    TOAU
-* Level Cap    75
-* Chocobo Head/Body Gear Buffs Starting gear Level 1-30
-* Exp Gain Multiplier    2x with Echad Ring (Experience Point Bonus +150, Max Bonus 30,000, Unlimited Use)
-* Subjob    Unlocked at start
-* Combat Skill/Crafting Skill 2.50x
-* Fame Multiplier 3x
-* Uncapped Missions
-* Battlefield Level cap +5
-* Player Movement Speed Increased
-* Crystal Teleport    Enabled
-* Survivial Guides    Enabled
-* All Outpost Warps Unlocked
-* Fields of Valor/Grounds Tome    Enabled
-* Level Sync    Enabled 
-
