@@ -17,7 +17,7 @@
 
 1. Execute HeidiSQL and click on "New" (bottom left) then name your session as you wish > Password: Password previously saved from the MariaDB installation > Open > right click on the freshly created/named session (left) > Create new > Database > name it "tpzdb" > OK.
 
-2. Select "tpzdb" > File > Run SQL file... > select every .sql file from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done. Alternatively, you can run the Database_initial_setup.bat file located in the \topaz\tools folder. 
+2. Run the Database_initial_setup.bat file located in the \topaz\tools folder. Alternatively, you can manually load files via this method: Select "tpzdb" > File > Run SQL file... > select every .sql file from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done. 
 
 * Don't forget to verify that the IP address displayed in the "zoneip" column ("Data" tab) of the zone_settings table is the correct one (local (127.0.0.1) by default). In case you need to update all the lines at once: Click on the "Query" tab then type:
 
@@ -78,7 +78,7 @@ Open "Legacy Components" and check "DirectPlay" > OK.
 
 By looking at the files that were changed, you should:
 
-* RERUN EVERY .sql MODIFIED FILES (referring to the example at **3. 2.**).
+* RERUN EVERY .sql MODIFIED FILES (referring to the example at **3. 2.**). This will overwrite any custom changes you have made to your sql tables. If you are running custom mobs/items/etc of any kind, you'll want to load the sql changes to a separate database and compare.
 * REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **4.**).
 * RESTART YOUR SERVER(S) FOR .conf FILES.
 * .lua files ARE INSTANT.
