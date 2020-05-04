@@ -6,6 +6,67 @@ One possible fix: Execute HeidiSQL > select your session and connect to it > sel
 
 # 2. Tweaks
 
+## Setting up an automated Auction House with Python (pydarkstar).
+
+Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/AdamGagorik/pydarkstar.git > OK > then Close when it's done.
+
+/!\ Running topaz-search.exe in the background (as administrator) is mandatory /!\
+
+Right click + holding the Shift key > context menu: Open PowerShell window here.: then type:
+
+```
+py -m pip
+```
+
+Enter > then enter each of these commands (followed by "Enter" each time) and le it download stuff:
+
+```
+py -m pip install beautifulsoup4
+py -m pip install pymysql
+py -m pip install pyyaml
+py -m pip install pip
+py -m pip install sqlalchemy
+```
+
+Double click on \pydarkstar\makebin.py to create base files then open \pydarkstar\bin\config.yaml with a text editor (default options listed):
+
+```
+name: Zissou (name of the bot displayed in game)
+database: dspdb (change it accordingly to your database's name)
+password: root (replace with your MariaDB password)
+restock: 3600 (seconds between each automatic restock)
+tick: 30 (seconds between the bot buying stuff listed on the Auction House)
+stock01: 5 (number of single items that will be restocked each tick)
+stock12: 5 (number of stacks items that will be restocked each tick)
+```
+
+1. Execute \pydarkstar\pydarkstar\bin\scrub.py to build up the items list from https://www.ffxiah.com/ (will take some time). Unfortunately you can't select the server from which the prices are pulled, if I'm correct Bahamut is by default. Rerun it if you want to update prices automatically.
+
+2. Execute \pydarkstar\pydarkstar\bin\broker.py = Script that will automatically buy/sell stuff. Let it run in the background.
+
+---
+
+Executing \pydarkstar\pydarkstar\bin\refill.py will restock items automatically.
+
+Editing prices manually: open \pydarkstar\bin\items.csv with a text editor (0 = non listed item, add them by referring to the IDs in \topaz\sql\item_equipment.sql if necessary) and change prices accordingly.
+
+HeidiSQL useful querys:
+
+```
+UPDATE auction_house SET seller_name = 'Your-choice-here';
+UPDATE auction_house SET buyer_name = 'Your-choice-here';
+UPDATE auction_house SET buyer_name = 'Your-choice-here' where buyer_name is null or buyer_name = 'Your-choice-here';
+UPDATE auction_house SET sell_date = 'Your-choice-here' where sell_date = 'Your-choice-here';
+```
+
+---
+
+/!\
+
+The search_server.exe will list errors ("[SQL] DB error - Duplicate entry [...]"), edit every occurrence you'll find of "2020" in the in the pydarkstar\auction\manager.py file (L131, 139, 150, 158) to "2099". Save. 
+
+---
+
 ## Make your character a Game Master
 
 Open up your SQL editor > connect to your database > select "chars" > "Data" tab > "gmlevel" column > modify the value from 0 to 5 (maximum level) > close your editor.
