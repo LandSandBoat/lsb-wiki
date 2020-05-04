@@ -1,36 +1,34 @@
-## Basic Branch/Pull Request information
-If you followed the Server set-up instructions, you've already cloned topaz's master branch (called release). If you want to make changes and contribute to Topaz, here's a quick guide on how to push changes.
+# Basic Branch/Pull Request Information
+If you followed the Server Setup instructions, you've already cloned Topaz's default branch (called `release`). If you want to make changes and contribute to Topaz, here's a quick guide on how to push changes.
 
-1 - Set up your fork on github if you haven't already. this is where you'll push changes to then submit a pull request. You can click on the fork button above the main project-topaz/topaz repository to fork. 
+**1 - Set up your fork on GitHub if you haven't already.** This is where you'll push changes to then submit a pull request. You can click on the fork button in the upper-right, above the main `project-topaz/topaz` repository to fork.
 
-2 - Set up a .gitignore file. If you're running an era server, your version info will always be set to 0 vs. the default 1. If you don't add versioninfo to git ignore, it will try to commit it and add to every pr you do.
+**2 - Make a new branch from your copy of `release` for _any_ changes.** Do NOT make your changes directly on `release`. Even if you _don't_ plan on making Pull Requests, make a new branch for your personal changes - this lets you easily update your copy of Topaz's `release` branch and merge it into your personal branch. **Making changes on `release` will prevent you from making different changes until the Pull Request you've opened is reviewed and incorporated.**
 
-3 - Make a new branch for any changes. Do NOT make your changes on master unless you don't plan on making a pull request to contribute. Making changes on master will prevent you from making changes elsewhere until the PR is reviewed and incorporated. You can make a branch for anything, but typically it's for a unit of work (which could be something as overarching as sql edits for all mobs or something more project focused like a single bcnm)
+You can make a branch for anything, but typically it's for a unit of work, which could be something as overarching as SQL edits for all mobs, something more project focused like a single BCNM, or fixing a single bug.
 
-Right click on your topaz install and choose "make branch". Create the name of the branch and then right click on your topaz install and choose switch and checkout to change to the branch. If you've made any changes at this point, you'll get an error and be forced to commit or stash your changes. Commit means actually resolving the changes with your local and master branch, a true save. Stash is a temp save. 
+Open your preferred Git client, select `release`, and choose "make branch" (your exact process may vary depending on your Git client). Choose a name for the branch. Select this new branch and "checkout" it to switch to that branch.
 
-4 - In the new checked out branch, make the changes as needed. When you've tested and are comfortable with the work, right click on your topaz install folder and choose to commit the branch. In the window that appears, make sure any changes that aren't inline with topaz master (for instance, I have my version info file changed so i can use an older version, but I would not want to commit that) are not included in your commit. You can choose commit and push here to then send the changes to your remote repository from your local. 
+If you've made any changes at this point, you'll get an error and be forced to "commit" or "stash" your changes. Commit means bundling the changes you have made on your local machine compared against the branch's original state - a "hard" save. Stash is a temporary "soft" save which lets you change branches and restore that work when you come back. 
 
-5 - In your remote repository, make sure you're on your branch that you're looking to contribute from and select New pull request. Fill out the relevant checkboxes, put in an appropriate title, etc.
+**3 - In the new, checked out branch, make the changes as needed.** When you've tested and are comfortable with the work, open your Git client and choose to Commit your changes to the branch. In the window that appears, make sure any changes that you don't _intend_ to change on Topaz (ex: customized settings or scripts that you don't want merged into Topaz) are not included in your commit. You can choose to "Push" from here to send the changes from your local copy to your remote repository. 
 
-6 - Upon review and completion your pull will be merged with topaz's release branch, or the canary branch if it's a large enough or changed enough feature to warrant testing before final merge into release. 
+**4 - In your remote repository, make sure you're on your new branch which you're looking to contribute from and select New Pull Request.** Fill out the relevant checkboxes, put in an appropriate title, etc.
 
-NOTE: for custom servers, it's probably best to have a separate repository entirely for custom data vs. topaz's build. That way you can clone/download/change/commit for any fixes direct to a separate repository and install. 
+**5 - Upon review and you making any requested changes, your Pull Request will be merged** with Topaz's `release` branch, or a new branch if it's large enough or changed something which warrants further testing before final merge into `release`. All new "side" branches Topaz creates in this manner are merged into Topaz's `canary` branch for ease of testing, or for servers that want to try out cutting-edge features.
 
-## Keeping current with Topaz
-You'll want to consistently update your master with recent changes submitted by contributors, that's part of why working on branches when you have WIPs is important. In order to update both your local and remote master:
-1) Ensure you're on your master branch and have no other local branches checked out
-2) Choose "Pull" from the menu of whichever Git tool you're using
-3) Select the topaz remote branch to merge. Remember Topaz's master branch is called "release". If you haven't pulled from Topaz in a while, you'll want to do a "Fetch" first to update the remote listings in your Git tool.
-4) Pull from release into your master. 
-5) You'll now need to update your remote repository to reflect using the "Push" command. Merge your master with your remote origin
+**NOTE:** For custom servers, it's probably best to have a separate repository entirely for your server versus your local copy of Topaz's vanilla build. That way you can clone/download/branch/edit/commit for contributions to Topaz without interfering with files in use by your server.
 
+# Keeping Current With Topaz
+You'll want to consistently update your local copy of Topaz's `release` branch with recent changes submitted by contributors. This is part of why working on branches when you have WIPs is important. In order to update both your local and remote `release`:
+1. Ensure you're on your `release` branch and have no other local branches checked out
+2. Choose "Pull" from the menu of whichever Git tool you're using
+3. Select the Topaz remote branch to pull in updates from. Remember Topaz's default branch is `release`. If you haven't pulled from Topaz in a while, you'll want to do a "Fetch" first to update the remote listings in your Git tool.
+4. Pull from Topaz's remote `release` into your local `release` copy. 
+5. You'll now need to update your remote repository using the "Push" command. This updates your remote copy ("origin") to reflect the new updates you just pulled locally.
 
-## Submitting to multiple repositories
+# Submitting to Multiple Repositories
 [You can use git rebase](https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request) to send commits from other locations to topaz in order to submit to multiple locations and/or repoint.
 
-Alternatively, pull a fork of topaz and copy **changes only** manually. 
-
-
-
+Alternatively, pull a fork of Topaz and copy **changes only** manually. 
 
