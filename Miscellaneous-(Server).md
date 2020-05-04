@@ -63,7 +63,7 @@ UPDATE auction_house SET sell_date = 'Your-choice-here' where sell_date = 'Your-
 
 /!\
 
-The search_server.exe will list errors ("[SQL] DB error - Duplicate entry [...]"), edit every occurrence you'll find of "2020" in the in the pydarkstar\auction\manager.py file (L131, 139, 150, 158) to "2099". Save. 
+The search_server.exe will list errors ("[SQL] DB error - Duplicate entry [...]"), edit every occurrence you'll find of "2020" in the pydarkstar\auction\manager.py file (L131, 139, 150, 158) to "2099". Save. 
 
 ---
 
