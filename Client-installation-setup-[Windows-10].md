@@ -28,6 +28,14 @@
 
 5. Once everything is done, click on "OK" then "Exit Viewer" and "Yes".
 
+6. Check that direct play is enabled.
+ * To enable DirectPlay, first press the Win key + R keyboard shortcut to open Run.
+ * Then enter "Control Panel" in Run, and click the OK button.
+ * Click "Programs and Features"
+ * Click "Turn Windows features on or off"
+ * Double-click Legacy Components to expand it
+ * Check DirectPlay check box (if it is not already marked).
+
 ---
 
 ## 3. Configuration
