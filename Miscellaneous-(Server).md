@@ -8,7 +8,7 @@ One possible fix: Execute HeidiSQL > select your session and connect to it > sel
 
 ## Make your character a Game Master
 
-Execute HeidiSQL > connect to your database > select "chars" > "Data" tab > "gmlevel" column > modify the value from 0 to 5 (maximum level) > close HeidiSQL.
+Open up your SQL editor > connect to your database > select "chars" > "Data" tab > "gmlevel" column > modify the value from 0 to 5 (maximum level) > close your editor.
 
 Change zone in game to apply.
 
@@ -39,3 +39,6 @@ or:
 ref<uint8>(0x52) = PChar->GetMLevel () == 99? 5: 0;
 ```
 Rebuild the solution.
+
+## Change default settings (covers XP, speed, fame rate, skill rate, merit points held, HP/MP of mobs, etc.)
+Open up map.conf in your preferred text editor and change values accordingly. Save, then reboot your servers. 
