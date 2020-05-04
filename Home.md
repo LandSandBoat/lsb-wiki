@@ -15,6 +15,7 @@ Instructions for installing FFXI, connecting to a private server, and keeping th
 # Development
 Information for developers who code for Project Topaz
 - [Using GitHub](https://github.com/project-topaz/topaz/wiki/Using-GitHub)
+- [Style Guide](https://github.com/project-topaz/topaz/blob/release/CONTRIBUTING.md)
 # [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
 Information relating to the "meta" of Project Topaz - like project goals, codes of conduct, project roadmaps, and licensing information
 - [[Project Focus|https://github.com/project-topaz/topaz/wiki/Project-Focus]]
