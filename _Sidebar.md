@@ -5,7 +5,7 @@
   * [[RPi/Raspbian|https://github.com/project-topaz/topaz/wiki/Server-installation---setup-%5BRaspberry-pi-3b-4,-Raspbian-OS%5D]]
   * [Common Issues & Tweaks](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Server))
 * Client Setup
-  * [[Windows 10|https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows-10%5D]]
+  * [[Windows|https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows%5D]]
   * [Common Issues & Tweaks](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Client))
 * Development
   * [Using Github](https://github.com/project-topaz/topaz/wiki/Using-Github)
