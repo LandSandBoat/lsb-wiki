@@ -9,6 +9,7 @@
   * [Common Issues & Tweaks](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Client))
 * Development
   * [Using Github](https://github.com/project-topaz/topaz/wiki/Using-Github)
+  * [Style Guide](https://github.com/project-topaz/topaz/blob/release/CONTRIBUTING.md)
 * [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
   * [[Project Focus|https://github.com/project-topaz/topaz/wiki/Project-Focus]]
   * [[Staff Meeting Notes|https://github.com/project-topaz/topaz/wiki/Staff-Meetings]]
