@@ -13,12 +13,12 @@
 4. Close pol and apply patch.ver file (need to host)
 
 5. Check that direct play is enabled.
- * To enable DirectPlay, first press the Win key + R keyboard shortcut to open Run.
- * Then enter "Control Panel" in Run, and click the OK button.
- * Click "Programs and Features"
- * Click "Turn Windows features on or off"
- * Double-click Legacy Components to expand it
- * Check DirectPlay check box (if it is not already marked).
+   * To enable DirectPlay, first press the Win key + R keyboard shortcut to open Run.
+   * Then enter "Control Panel" in Run, and click the OK button.
+   * Click "Programs and Features"
+   * Click "Turn Windows features on or off"
+   * Double-click Legacy Components to expand it
+   * Check DirectPlay check box (if it is not already marked).
 
 6. Launch pol again, go to file check, select game from dropdown - should say "unknown" for the FFXI entry
 
