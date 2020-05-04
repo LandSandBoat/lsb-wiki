@@ -35,4 +35,5 @@ Directly by following steps from the loader when you launch it (third option).
 /!\ NB /!\
 
 Username (3-15) (as displayed on the loader for now): less than 3 characters and more than 15 characters works.
+
 Password (6-15) (as displayed on the loader for now): less than 6 characters works. More than 15 characters works _when you register BUT note_ that typing the first 15 characters when you're tring to log in will let you in.
