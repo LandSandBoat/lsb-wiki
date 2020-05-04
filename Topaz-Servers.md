@@ -10,7 +10,9 @@
 * [BNET.cc](#bnetcc) modern era, custom content
 * [Vana Skies](#Vana-Skies) modern era
 
-# BNET.cc:
+***
+# Server List
+## BNET.cc:
 * **Server address:** ffxi.cc
 * **Website:** http://www.bnet.cc/
 * **Discord:** https://discord.gg/yujujnX
