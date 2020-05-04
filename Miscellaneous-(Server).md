@@ -8,7 +8,7 @@ One possible fix: Execute HeidiSQL > select your session and connect to it > sel
 
 ## Setting up an automated Auction House with Python.
 
-* Download and install [Python 3.8+](https://www.python.org/downloads/): Accept defaults.
+* Download and install [Python (latest version)](https://www.python.org/downloads/): Accept defaults.
 
 Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/AdamGagorik/pydarkstar.git > OK > then Close when it's done.
 
