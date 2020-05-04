@@ -12,7 +12,7 @@
 
 4. Close pol and apply the client patch files (need to host)
 
-5. Check that direct play is enabled.
+5. Check that direct play is enabled.  
 This step is for windows 10 users and can be skipped otherwise.
    * To enable DirectPlay, first press the Win key + R keyboard shortcut to open Run.
    * Then enter "Control Panel" in Run, and click the OK button.
