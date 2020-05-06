@@ -10,7 +10,21 @@
    * On the next screen, enter id like 1234ABCD or ABCD1234 (4 letters 4 numbers it doesn't care about the order, doesn't matter if they're accurate or not) in the "Member Name" and "PlayOnline ID"  fields. If you actually have a retail account you can input that.
    * Click on "Register" > "Yes" > "OK" > "Exit" and finally "Yes".
 
-4. Close pol and apply the client patch files (need to host)
+4. Close pol and apply the client patch files ([FFXI-UpdatePatch.zip](http://www.dspt.info/FFXI-UpdatePatch.zip))
+   * Open the file using an archiving program
+   * Extract to a new directory e.g. c:\patch
+   * Close your archiving program
+   * Navigate to c:\patch
+   * Single left-click anywhere in the folder and press Ctrl+A
+   * Once you see everything highlighted press Ctrl+C
+   * Step 3 (part 2) - Updating Final Fantasy XI (continued)
+   * Navigate to the directory you installed Final Fantasy XI.
+(For 64-bit systems, the default location is C:\Program Files (x86)\PlayOnline\SquareEnix\FINAL FANTASY XI\)
+(For 32-bit systems, the default location is C:\Program Files\PlayOnline\SquareEnix\FINAL FANTASY XI\)
+   * Paste those files you copied from C:\Patch to /FINAL FANTASY XI/ directory.
+   * Single left click any where in the directory and hold Ctrl+V
+   * When prompted to overwrite the files say Yes to All
+   * Close windows explorer.
 
 5. Check that direct play is enabled.  
 This step is for windows 10 users and can be skipped otherwise.
