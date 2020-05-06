@@ -10,7 +10,7 @@
    * On the next screen, enter id like 1234ABCD or ABCD1234 (4 letters 4 numbers it doesn't care about the order, doesn't matter if they're accurate or not) in the "Member Name" and "PlayOnline ID"  fields. If you actually have a retail account you can input that.
    * Click on "Register" > "Yes" > "OK" > "Exit" and finally "Yes".
 
-4. Close pol and apply the client patch files ([FFXI-UpdatePatch.zip](http://www.dspt.info/FFXI-UpdatePatch.zip))
+4. Close pol and apply the client patch files
    * Open the file using an archiving program
    * Extract to a new directory e.g. c:\patch
    * Close your archiving program
