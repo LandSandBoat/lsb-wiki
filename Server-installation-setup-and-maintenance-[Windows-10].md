@@ -19,11 +19,11 @@
 
 2. Run the Database_initial_setup.bat file located in the \topaz\tools folder. Alternatively, you can manually load files via this method: Select "tpzdb" > File > Run SQL file... > select every .sql file from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done. 
 
-* Don't forget to verify that the IP address displayed in the "zoneip" column ("Data" tab) of the zone_settings table is the correct one (local (127.0.0.1) by default). If you are running a server for others to connect to, you NEED to update this setting. You can adjust all the lines at once by clicking on the "Query" tab then typing:
+3. Don't forget to verify that the IP address displayed in the "zoneip" column ("Data" tab) of the zone_settings table is the correct one (local (127.0.0.1) by default). If you are running a server for others to connect to, you NEED to update this setting. You can adjust all the lines at once by clicking on the "Query" tab then typing:
 
-> UPDATE zone_settings SET zoneip = '**your.IP**';
+  > UPDATE zone_settings SET zoneip = '**your.IP**';
 
-Click on "Execute SQL..." (blue icon on top) > Yes.
+  Click on "Execute SQL..." (blue icon on top) > Yes.
 
 ## 4. Build the servers:
 
