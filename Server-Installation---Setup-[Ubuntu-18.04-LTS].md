@@ -117,7 +117,9 @@ nano version.info
 ```
 Port forwarding 
 ```
-If you are running a server for others to play on, make sure you have the following ports forwarded: TCP Ports: 54230 54231 54001 54002 UDP Port: 54230
+If you are running a server for others to play on, make sure you have 
+the following ports forwarded: 
+TCP Ports: 54230 54231 54001 54002 UDP Port: 54230
 ```
 Now it's time to run your server
 ```
