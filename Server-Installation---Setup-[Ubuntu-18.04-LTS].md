@@ -72,7 +72,7 @@ hostname -I
 ```
 
 The following is going to log in to your sql server and change the zoneip value of the zone_settings table
-Replace '127.0.0.1' with the IP you will be using from the previous step
+Replace '127.0.0.1' with the IP you will be using from the previous step - this is REQUIRED if your server is public-facing.
 ```
 mysql -u topazadmin -ptopazisawesome
 USE tpzdb;
@@ -115,7 +115,9 @@ For any change to the version you want your clients be running
 cd ../..
 nano version.info
 ```
-
+Port forwarding 
+```If you are running a server for others to play on, make sure you have the following ports forwarded: TCP Ports: 54230 54231 54001 54002 UDP Port: 54230
+```
 Now it's time to run your server
 ```
 screen -d -m -S topaz_connect ./topaz_connect
