@@ -19,7 +19,7 @@
 
 2. Run the Database_initial_setup.bat file located in the \topaz\tools folder. Alternatively, you can manually load files via this method: Select "tpzdb" > File > Run SQL file... > select every .sql file from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done. 
 
-* Don't forget to verify that the IP address displayed in the "zoneip" column ("Data" tab) of the zone_settings table is the correct one (local (127.0.0.1) by default). In case you need to update all the lines at once: Click on the "Query" tab then type:
+* Don't forget to verify that the IP address displayed in the "zoneip" column ("Data" tab) of the zone_settings table is the correct one (local (127.0.0.1) by default). If you are running a server for others to connect to, you NEED to update this setting. You can adjust all the lines at once by clicking on the "Query" tab then typing:
 
 > UPDATE zone_settings SET zoneip = '**your.IP**';
 
@@ -70,6 +70,12 @@ You may need to enable this feature to make things work:
 Start menu > Windows System > Control Panel > Programs and Features > Turn Windows features on or off:
 Open "Legacy Components" and check "DirectPlay" > OK.
 
+/!\ **Port Forwarding** /!\
+
+If you are running a server for others to play on, make sure you have the following ports forwarded:
+TCP Ports: 54230 54231 54001 54002
+UDP Port: 54230
+
 ## 6. How to update the server:
 
 1. Right click wherever you want > TortoiseGit > Settings > Context Menu > check: "Pull..." > Apply > OK.
@@ -82,6 +88,7 @@ By looking at the files that were changed, you should:
 * REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **4.**).
 * RESTART YOUR SERVER(S) FOR .conf FILES.
 * .lua files ARE INSTANT.
+* RUN any included migrations (see below)
 ---
 
 If any new .py file is added (in \topaz\migrations\) during an update make sure to:
