@@ -3,8 +3,10 @@ All the steps below in code block are to be done on the terminal:
 Installs requirements to run the sql database and tools to compile the source code
 ```
 sudo apt update
-sudo apt install mariadb-server libmariadbclient-dev libmariadb-dev-compat libluajit-5.1-dev libzmq3-dev autoconf pkg-config
+sudo apt install mariadb-server libmariadbclient-dev libmariadb-dev-compat libluajit-5.1-dev libzmq3-dev autoconf pkg-config zlib1g-dev libssl-dev
 ```
+> Note: If you receive errors regarding dependency conflicts, you can remove `libmariadbclient-dev`
+
 
 Clones the repository to the current folder you are in
 ```
@@ -81,6 +83,14 @@ exit
 ```
 
 Now we are going to enter the username and password for sql inside three different files login.conf, map.conf, and search_server.conf
+
+First, copy these config files to the conf folder:
+```
+cp conf/default/* conf/
+```
+
+Then edit them as follows:
+
 ```
 cd conf
 nano login.conf
