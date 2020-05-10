@@ -24,20 +24,6 @@
 | 9-1 | Breaking Barriers | unknown | Needs Review |
 | 9-2 | The Heir to the Light | unknown | Needs Review |
 
-## Bastock
-
-## Windurst
-
-***
-
-# Quest
-
-## San D'oria
-
-## Bastock
-
-## Windurst
-
 ***
 
 # Editing
