@@ -116,29 +116,22 @@ Then in the prompt command, enter the following commands:
 ```
 Enter password: Your-current-MariaDB-password
 ```
-Hit "Enter".
-Then:
+Hit "Enter", then type:
 
 ```
 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('Your-new-desired-password');
 ```
-Hit "Enter".
-Then:
+Hit "Enter" (returned message: "Query OK, 0 rows affected"), then type:
 
-(returned message: "Query OK, 0 rows affected")
 ```
 FLUSH PRIVILEGES;
 ```
-Hit "Enter".
-Then:
+Hit "Enter" (returned message: "Query OK, 0 rows affected"), then type:
 
-(returned message: "Query OK, 0 rows affected")
 ```
 exit
 ```
-Hit "Enter".
-
-(returned message: "Bye")
+Hit "Enter" (returned message: "Bye").
 
 ---
 
@@ -147,8 +140,7 @@ Hit "Enter".
 ```
 mysql -u root -p
 ```
-Hit "Enter".
-Then:
+Hit "Enter", then type:
 ```
 Enter password: Your-new-MariaDB-password
 ```
@@ -156,9 +148,7 @@ Hit "Enter".
 ```
 exit
 ```
-Hit "Enter".
-
-(returned message: "Bye")
+Hit "Enter" (returned message: "Bye").
 
 Done.
 
@@ -169,4 +159,5 @@ Done.
 Open up these files in your preferred text editor and change values accordingly: 
 
 \topaz\conf\map.conf (after getting it out of the default folder). Save, then reboot your servers.
+
 \topaz\scripts\globals\settings.lua. Save, use the GM command !reloadglobal settings in game or reboot your servers.
