@@ -83,6 +83,8 @@ Type "!command" in game (refer to the \topaz\scripts\commands folder for a list 
 
 !hide: invisible to players.
 
+---
+
 ## Unlock Superior levels (to wear particular items)
 
 \topaz\src\map\packets\char_stats.cpp:
@@ -103,5 +105,68 @@ ref<uint8>(0x52) = PChar->GetMLevel () == 99? 5: 0;
 ```
 Rebuild the solution.
 
+---
+
+## Change your MariaDB password
+
+Open: Start Menu > "MariaDB xx.x (x64)" folder > "MySQL Client (MariaDB xx.x)".
+
+Then in the prompt command, enter the following commands:
+
+```
+Enter password: Your-current-MariaDB-password
+```
+Hit "Enter".
+Then:
+
+```
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('Your-new-desired-password');
+```
+Hit "Enter".
+Then:
+
+(returned message: "Query OK, 0 rows affected")
+```
+FLUSH PRIVILEGES;
+```
+Hit "Enter".
+Then:
+
+(returned message: "Query OK, 0 rows affected")
+```
+exit
+```
+Hit "Enter".
+
+(returned message: "Bye")
+
+---
+
+## How to check if it was changed correctly (while still having the same prompt command open)
+
+```
+mysql -u root -p
+```
+Hit "Enter".
+Then:
+```
+Enter password: Your-new-MariaDB-password
+```
+Hit "Enter".
+```
+exit
+```
+Hit "Enter".
+
+(returned message: "Bye")
+
+Done.
+
+---
+
 ## Change default settings (covers XP, speed, fame rate, skill rate, merit points held, HP/MP of mobs, etc.)
-Open up map.conf in your preferred text editor and change values accordingly. Save, then reboot your servers. 
+
+Open up these files in your preferred text editor and change values accordingly: 
+
+\topaz\conf\map.conf (after getting it out of the default folder). Save, then reboot your servers.
+\topaz\scripts\globals\settings.lua. Save, use the GM command !reloadglobal settings in game or reboot your servers.
