@@ -14,20 +14,20 @@ Right click wherever you want to download the repository > Git Clone... > URL: h
 
 /!\ Running topaz-search.exe in the background (as administrator) is mandatory /!\
 
-Right click + holding the Shift key > context menu: Open PowerShell window here.: then type:
+Right click + holding the Shift key > context menu: Open command window here/Open PowerShell window here.: then type:
 
 ```
-py -m pip
+py -m pip3
 ```
 
 Enter > then enter each of these commands (followed by "Enter" each time) and le it download stuff:
 
 ```
-py -m pip install beautifulsoup4
-py -m pip install pymysql
-py -m pip install pyyaml
-py -m pip install pip
-py -m pip install sqlalchemy
+py -m pip3 install beautifulsoup4
+py -m pip3 install pymysql
+py -m pip3 install pyyaml
+py -m pip3 install pip
+py -m pip3 install sqlalchemy
 ```
 
 Double click on \pydarkstar\makebin.py to create base files then open \pydarkstar\bin\config.yaml with a text editor (default options listed):
