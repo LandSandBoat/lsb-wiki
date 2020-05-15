@@ -88,7 +88,7 @@ By looking at the files that were changed, you should:
 * REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **4.**).
 * RESTART YOUR SERVER(S) FOR .conf FILES.
 * .lua files ARE INSTANT.
-* RUN any included migrations (see below)
+* RUN the migrate.py file if there's any new addition in the folder (see below).
 ---
 
 If any new .py file is added (in \topaz\migrations\) during an update make sure to:
@@ -101,10 +101,10 @@ Double click on the migrate.py script in the \topaz\migrations folder.
 
 * Command prompt way:
 
-Right click + holding the Shift key in the \topaz\migrations folder (empty space, not a file) > context menu: Open PowerShell window here.
+Right click + holding the Shift key in the \topaz\migrations folder (empty space, not a file) > context menu: Open command window here/Open PowerShell window here.
 (skip this step if you installed the MySQL Connector Python above) enter this command:
 ```
-py -m pip install mysql-connector-python
+py -m pip3 install mysql-connector-python
 ```
 It will download and install MySQL Connector Python.
 
@@ -118,7 +118,7 @@ Updating Python: Default location of the Python installation files is: C:\Users\
 
 Updating modules: Make sure you check if your modules are up to date from time to time (you'll probably get reminded while running migrations scripts). To do so, open a command prompt like stated above and enter:
 ```
-py -m pip install --upgrade Modulename
+py -m pip3 install --upgrade Modulename
 ```
 
 ---
