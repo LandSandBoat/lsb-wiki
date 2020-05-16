@@ -92,19 +92,23 @@ By looking at the files that were changed, you should:
 ---
 
 If any new .py file is added (in \topaz\migrations\) during an update make sure to:
-1. Install [MySQL Connector Python](https://dev.mysql.com/downloads/connector/python/): Accept defaults.
+1. Download and install [MySQL Connector Python](https://dev.mysql.com/downloads/connector/python/): Accept defaults.
 2. Make sure your .conf files are out of the default folder and have the correct passwords entered to access your database.
 
 * Python script way:
 
 Double click on the migrate.py script in the \topaz\migrations folder.
 
-* Command prompt way:
+* Command prompt way (**use "pip3" (default) or "pip" in each command, the one that works for you**):
 
 Right click + holding the Shift key in the \topaz\migrations folder (empty space, not a file) > context menu: Open command window here/Open PowerShell window here.
 (skip this step if you installed the MySQL Connector Python above) enter this command:
 ```
-py -m pip3 install mysql-connector-python
+pip install -r requirements.txt
+```
+or
+```
+pip3 install mysql-connector-python
 ```
 It will download and install MySQL Connector Python.
 
