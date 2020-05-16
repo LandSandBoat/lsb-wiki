@@ -9,18 +9,28 @@ One possible fix: Execute HeidiSQL > select your session and connect to it > sel
 ## Setting up an automated Auction House with Python.
 
 * Download and install [Python (latest version)](https://www.python.org/downloads/): Accept defaults.
+* Download and install [MySQL Connector Python](https://dev.mysql.com/downloads/connector/python/): Accept defaults.
 
 Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/AdamGagorik/pydarkstar.git > OK > then Close when it's done.
 
 /!\ Running topaz-search.exe in the background (as administrator) is mandatory /!\
 
-Right click + holding the Shift key > context menu: Open command window here/Open PowerShell window here.: then type:
+Right click + holding the Shift key > context menu: Open command window here/Open PowerShell window here.: then type (**use "pip3" (default) or "pip" in each command, the one that works for you**):
 
 ```
 py -m pip3
 ```
+(skip this step if you installed the MySQL Connector Python above) enter this command:
+```
+pip install -r requirements.txt
+```
+or
+```
+pip3 install mysql-connector-python
+```
+It will download and install MySQL Connector Python.
 
-Enter > then enter each of these commands (followed by "Enter" each time) and le it download stuff:
+then enter each of these commands (hit "Enter" after each one) and it will download and install automatically:
 
 ```
 py -m pip3 install beautifulsoup4
