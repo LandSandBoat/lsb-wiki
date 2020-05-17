@@ -1,32 +1,18 @@
-## 1. Install, configure and update Final Fantasy XI Ultimate Collection - Seekers Edition
+## 1. Install, Configure and Update Final Fantasy XI Ultimate Collection - Seekers Edition
 
-1. [Official link to download US installation files](http://www.playonline.com/ff11us/download/media/install_win.html) (get all of them). These files include updates until april 2019.
+**Note: To be able to update the Final Fantasy XI client - and connect to Project Topaz servers using the most recent version - you must be capable of connecting to retail at least once. Possible methods for doing so may be found below in sub-step five. Project Topaz does not condone methods enabling client updates without having connected to SquareEnix's retail servers.**
+
+1. [Official link to download US installation files](http://www.playonline.com/ff11us/download/media/install_win.html) (get all of them). These files include updates until April 2019.
 
 2. Extract the files first by executing the "FFXIFullSetup_US.part1.exe" then proceed to the installation through "FFXISetup.exe" (freshly extracted).
 
 3. Once the whole installation is complete, execute PlayOnline Viewer. If an update is available, click on "Next", then: 
    * Select "Update" ; once this is done, click on "OK" then "Next". PlayOnline Viewer should restart automatically.
    * Select "For PlayOnline Members!".
-   * On the next screen, enter id like 1234ABCD or ABCD1234 (4 letters 4 numbers it doesn't care about the order, doesn't matter if they're accurate or not) in the "Member Name" and "PlayOnline ID"  fields. If you actually have a retail account you can input that.
+   * On the next screen, enter id like 1234ABCD or ABCD1234 (4 letters 4 numbers it doesn't care about the order, doesn't matter if they're accurate or not) in the "Member Name" and "PlayOnline ID"  fields. If you wish to use your retail or trial account, you can input that.
    * Click on "Register" > "Yes" > "OK" > "Exit" and finally "Yes".
 
-4. Close pol and apply the [client patch](https://yadi.sk/d/6qZuTFf73QmV9a) files
-   * Open the file using an archiving program
-   * Extract to a new directory e.g. c:\patch
-   * Close your archiving program
-   * Navigate to c:\patch
-   * Single left-click anywhere in the folder and press Ctrl+A
-   * Once you see everything highlighted press Ctrl+C
-   * Step 3 (part 2) - Updating Final Fantasy XI (continued)
-   * Navigate to the directory you installed Final Fantasy XI.
-(For 64-bit systems, the default location is C:\Program Files (x86)\PlayOnline\SquareEnix\FINAL FANTASY XI\)
-(For 32-bit systems, the default location is C:\Program Files\PlayOnline\SquareEnix\FINAL FANTASY XI\)
-   * Paste those files you copied from C:\Patch to /FINAL FANTASY XI/ directory.
-   * Single left click any where in the directory and hold Ctrl+V
-   * When prompted to overwrite the files say Yes to All
-   * Close windows explorer.
-
-5. Check that direct play is enabled.  
+4. Check that direct play is enabled.  
 This step is for windows 10 users and can be skipped otherwise.
    * To enable DirectPlay, first press the Win key + R keyboard shortcut to open Run.
    * Then enter "Control Panel" in Run, and click the OK button.
@@ -35,25 +21,27 @@ This step is for windows 10 users and can be skipped otherwise.
    * Double-click Legacy Components to expand it
    * Check DirectPlay check box (if it is not already marked).
 
-6. Launch pol again, go to file check, select game from dropdown - should say "unknown" for the FFXI entry
+5. To be capable of connecting to a Project Topaz server, you must be able to update your local install of Final Fantasy XI. To do this, you must connect - or have connected - to SquareEnix's retail servers at least once. You may connect to the official retail servers in the following ways:
+   1. Connect to retail with your existing retail subscription.
+   2. Purchase a copy of Final Fantasy XI, which comes with a 30-day subscription.
+   3. For users who have previously purchased Final Fantasy XI and have since reinstalled the software, connect to retail during a Return Home to Vana'diel campaign when SquareEnix allows former subscribers to play on retail servers for free.
+   4. Activate a trial account provided by SquareEnix.
 
+## 2. Later Updates
 
+After having connected to retail at least once since installing Final Fantasy XI, you may then update it at any time by deleting a file on your local installation and using "Check Files" from the PlayOnline Viewer. You may use this method without an existing subscription to retail.
 
----
-
-## 2. Updating (_automatic_ way)
-
-1. In the \PlayOnline\SquareEnix\FINAL FANTASY XI\ROM\0 folder > delete the 0.dat file.
+1. Inside the `\PlayOnline\SquareEnix\FINAL FANTASY XI\ROM\0` folder > delete the `0.dat` file.
 
 2. Execute PlayOnline Viewer. Click on "Check Files" from the list on the left.
 
-3. Select "FINAL FANTASY XI" in the drop-down menu ("PlayOnline Viewer" is selected by default) then click on "Check Files".
+3. Select "FINAL FANTASY XI" in the drop-down menu ("PlayOnline Viewer" is selected by default) then click on "Check Files". Be sure that you are checking Final Fantasy XI and not the PlayOnline Viewer.
 
-4. PlayOnline Viewer will find errors, click on "File Repair" then "Yes".
+4. If Final Fantasy XI is not an option available in the drop-down menu from the "Check Files" menu, you have not connected to retail since installing the client.
 
-5. Once everything is done, click on "OK" then "Exit Viewer" and "Yes".
+5. PlayOnline Viewer will find errors, click on "File Repair" then "Yes".
 
----
+6. Once everything is done, click on "OK" then "Exit Viewer" and "Yes".
 
 ## 3. Configuration
 
