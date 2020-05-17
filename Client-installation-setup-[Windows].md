@@ -25,7 +25,7 @@ This step is for windows 10 users and can be skipped otherwise.
    1. Connect to retail with your existing retail subscription.
    2. Purchase a copy of Final Fantasy XI, which comes with a 30-day subscription.
    3. For users who have previously purchased Final Fantasy XI and have since reinstalled the software, connect to retail during a Return Home to Vana'diel campaign when SquareEnix allows former subscribers to play on retail servers for free.
-   4. Activate a trial account provided by SquareEnix.
+   4. [Activate a trial account provided by SquareEnix.](https://store.na.square-enix-games.com/en_US/product/442968/final-fantasy-xi-free-trial-pc-download) When you do so, you will be emailed an activation key. This key may be used like a normal activation key.
 
 ## 2. Later Updates
 
