@@ -43,7 +43,7 @@ All content comes from the [canary branch](https://github.com/project-topaz/topa
 
 * **Server address:** topaz.catsangel.com
 * **Website:** http://topaz.catsangel.com
-* **Discord:** https://discord.gg/VDz2yT
+* **Discord:** https://discord.gg/3MMnnx4
 
 **Expansions enabled:** All [content up to what's available on Topaz Canary branch](https://github.com/project-topaz/topaz/tree/canary)
 
