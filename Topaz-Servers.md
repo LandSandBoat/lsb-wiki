@@ -1,5 +1,4 @@
 # 75 Cap Servers
-* [Canaria](#Canaria) QOL changes
 * [Dawnbreak](#Dawnbreak) era, QOL changes
 * [Gold Saucer](#Gold-Saucer) will keep cap with modern content
 * [Grounds of Titan](#GoT) 75 cap,  great QOL perks (new server 2020/05)
@@ -8,6 +7,7 @@
 
 # 99/ilvl Cap Servers
 * [BNET.cc](#bnetcc) modern era, custom content
+* [Canaria](#Canaria) modern era
 * [Vana Skies](#Vana-Skies) modern era
 
 ***
@@ -39,8 +39,6 @@ Server has been in operation since 2013, and operates on a dedicated box on a 50
 ## Canaria:
 Focus of this server is to have a good time, have access to the latest features of Project Topaz, and enjoy the quality of life improvements (book/crystal teleport, ground/field of valor) that make this game fun to play in small or long sessions.
 
-Level cap restriction is set in place as most of the content past level 75 has not really been implemented.
-
 All content comes from the [canary branch](https://github.com/project-topaz/topaz/tree/canary), no custom modifications are in place.
 
 * **Server address:** topaz.catsangel.com
@@ -49,14 +47,14 @@ All content comes from the [canary branch](https://github.com/project-topaz/topa
 
 **Expansions enabled:** All [content up to what's available on Topaz Canary branch](https://github.com/project-topaz/topaz/tree/canary)
 
-* **Level Cap:** 75
+* **Level Cap:** 99
 * **Fields of Valor:** Enabled
 * **Grounds of Valor:** Enabled
 * **Explorer Moogles:** Enabled
 * **Crystal and Book Teleport:** Enabled
 * **Weapon Skill Damage Formula:** Current formula post Adoulin
 * **Widescan:** Enabled
-* **Crafting + Skill ups:** Sames as current retail
+* **Crafting + Skill ups:** Sames as current retail (crafting is broken so its currently at x2.6)
 * **Mission BCNM + CoP Areas:** Same as current retail
 * **Trusts:** Enabled
 
