@@ -152,7 +152,7 @@ screen -r topaz_search
 As development is always ongoing, you may want to periodically update to the latest version of Topaz. This can be done quite simply with a few steps, and using the magic of `git`! 
 
 0. Backup your SQL database!
-Use a tool of your choice, HeidiSQL or the command line MySQL utility `mysqldump tpzdb -u tpz -p<yourDBpassword> > topaz.backup.sql`
+Use a tool of your choice, HeidiSQL or the command line MySQL utility `mysqldump tpzdb -u topazadmin -p<yourDBpassword> > topaz.backup.sql`
 1. Save your custom modifications + settings
 ```git stash```
 This will ask git to store changes you've made since cloning so we can put them back after updating.
