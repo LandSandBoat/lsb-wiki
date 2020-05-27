@@ -146,3 +146,21 @@ screen -r topaz_connect
 screen -r topaz_game
 screen -r topaz_search
 ```
+
+## Updating Topaz
+
+As development is always ongoing, you may want to periodically update to the latest version of Topaz. This can be done quite simply with a few steps, and using the magic of `git`! 
+
+0. Backup your SQL database!
+Use a tool of your choice, HeidiSQL or the command line MySQL utility `mysqldump tpzdb -u tpz -p<yourDBpassword> > topaz.backup.sql`
+1. Save your custom modifications + settings
+```git stash```
+This will ask git to store changes you've made since cloning so we can put them back after updating.
+2. Pull new changes from the repository. You should also close your topaz servers before updating.
+```git pull origin release```
+This assumes you cloned from the topaz github as detailed above. If you are using your own fork, this command may differ for you.
+3. Put back your changes
+```git stash pop```
+Git may notify you which, if any, files were changed by both yourself and the Topaz project. You will want to edit these to confirm they are set the way you'd like them.
+4. Import any changed sql files from the `sql/` folder.
+5. Run the migration script `migrations/migrate.py`.
