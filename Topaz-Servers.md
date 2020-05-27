@@ -1,4 +1,5 @@
 # 75 Cap Servers
+* [Aurora](#Aurora) era, custom hardcore
 * [Dawnbreak](#Dawnbreak) era, QOL changes
 * [Gold Saucer](#Gold-Saucer) will keep cap with modern content
 * [Grounds of Titan](#GoT) 75 cap,  great QOL perks (new server 2020/05)
@@ -12,6 +13,31 @@
 
 ***
 # Server Details
+## Aurora
+* **Server address:** ffxi.aurorahcs.com
+* **Website:** http://aurorahcs.com/
+* **Discord:** https://discord.gg/HYtX3Re
+
+Aurora is a forever 75 caped server with a twist, when a character dies the current job you are playing as falls back to 1. Don't Panic! When releveling a job we have a EXP Relevel Bonus and it is quite substantial.
+
+**Expansions enabled:** All but RoV
+
+* **Level Cap:** 75
+* **EXP:** 2005 Era with a custom Releveling System
+* **Level Sync:** Enabled with a maximum level gap of 25
+* **Conquest EXP Ring:** Once a week
+* **Field/Grounds of Valor:** Enabled, 20% exp/gil reward
+* **Fame:** 0.25 (2005 era)
+* **Movement:** 40 (2005 Era); but chocobos are super quick
+* **WS/Damage/Cure Formulas:** Old 2005 formulas
+* **Mission BCNM:** Capped
+* **CoP Capped Zones:** Capped
+* **Homepoint Teleports:** Enabled, but homepoints are only in towns
+* **HELM:** Higher success, lower breaks, 10 chances per spawn
+* **AH:** Unlimited player listings
+* **Survival Guides:** Disabled
+* **Trusts:** Disabled
+
 ## BNET.cc:
 * **Server address:** ffxi.cc
 * **Website:** http://www.bnet.cc/
