@@ -54,9 +54,8 @@ As a special circumstance after the conclusion of the Return Home to Vana'diel c
     - Rhapsodies of Vana'diel 1-1 to 1-18
     - **Merge date:** Unknown
 9. [`teamwork`](https://github.com/project-topaz/topaz/tree/teamwork)
-    - Basic trust summoning and behavior
-    - Capability to quest starting trusts; enabled by default with setting
-    - *Merged into release**
+    - Implements "Introduction to Teamwork" quest line
+    - **Merged into release**
 10. [`trust`](https://github.com/project-topaz/topaz/tree/trust)
     - Basic trust summoning and behavior
     - Capability to quest starting trusts; enabled by default with setting
