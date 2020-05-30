@@ -22,9 +22,9 @@ Type "!command" in game (refer to the \topaz\scripts\commands folder for a list 
 
 !hide: invisible to players.
 
-## Macros and screenshots
+## In game configuration data, macros and screenshots
 
-Local macros location: PlayOnline\SquareEnix\FINAL FANTASY XI\USER.
+In game configuration data and local macros location: PlayOnline\SquareEnix\FINAL FANTASY XI\USER.
 
 _Official_ screenshots location: PlayOnline\SquareEnix\PlayOnlineViewer\pub\home01\open\ScreenShots\FinalFantasyXI.
 
