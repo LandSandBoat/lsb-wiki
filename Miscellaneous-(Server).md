@@ -40,7 +40,7 @@ py -m pip3 install pip
 py -m pip3 install sqlalchemy
 ```
 
-Double click on \pydarkstar\makebin.py to create base files then open \pydarkstar\bin\config.yaml with a text editor (default options listed):
+Double click on \pydarkstar\makebin.py to create base files then open \pydarkstar\bin\config.yaml with a text editor (default options listed below):
 
 ```
 name: Zissou (name of the bot displayed in game)
@@ -52,9 +52,9 @@ stock01: 5 (number of single items that will be restocked each tick)
 stock12: 5 (number of stacks items that will be restocked each tick)
 ```
 
-1. Execute \pydarkstar\pydarkstar\bin\scrub.py to build up the items list from https://www.ffxiah.com/ (will take some time). Unfortunately you can't select the server from which the prices are pulled, if I'm correct Bahamut is by default. Rerun it if you want to update prices automatically.
+1. Execute \pydarkstar\pydarkstar\bin\scrub.py to build up the items list from https://www.ffxiah.com/ (will take some time). Unfortunately you can't select the server from which the prices are pulled, if I'm correct Bahamut is the server by default. Rerun it if you want to update prices automatically.
 
-2. Execute \pydarkstar\pydarkstar\bin\broker.py = Script that will automatically buy/sell stuff. Let it run in the background.
+2. Execute \pydarkstar\pydarkstar\bin\broker.py: Script that will automatically buy/sell stuff. Let it run in the background.
 
 ---
 
@@ -75,7 +75,7 @@ UPDATE auction_house SET sell_date = 'Your-choice-here' where sell_date = 'Your-
 
 /!\
 
-The search_server.exe will list errors ("[SQL] DB error - Duplicate entry [...]"), edit every occurrence you'll find of "2020" in the pydarkstar\auction\manager.py file (L131, 139, 150, 158) to "2099". Save. 
+The search_server.exe will list errors ("[SQL] DB error - Duplicate entry [...]"), to fix this, edit every occurrence you'll find of "2020" in the pydarkstar\auction\manager.py file (L131, 139, 150, 158) to "2099". Save. 
 
 ---
 
