@@ -40,14 +40,14 @@ py -m pip3 install pip
 py -m pip3 install sqlalchemy
 ```
 
-Double click on \pydarkstar\makebin.py to create base files then open \pydarkstar\bin\config.yaml with a text editor (default options listed below):
+Double click on \pydarkstar\makebin.py to create base files then open \pydarkstar\bin\config.yaml with a text editor (default options are listed below, you can edit them at your convenience):
 
 ```
-name: Zissou (name of the bot displayed in game)
+name: Zissou (will be the name of the bot displayed in the AH lists, buying and selling items)
 database: dspdb (change it accordingly to your database's name)
 password: root (replace with your MariaDB password)
 restock: 3600 (seconds between each automatic restock)
-tick: 30 (seconds between the bot buying stuff listed on the Auction House)
+tick: 30 (seconds between each purchase will be made by the bot)
 stock01: 5 (number of single items that will be restocked each tick)
 stock12: 5 (number of stacks items that will be restocked each tick)
 ```
