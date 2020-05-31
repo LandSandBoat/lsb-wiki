@@ -9,7 +9,7 @@ One possible fix: Execute HeidiSQL > select your session and connect to it > sel
 ## Setting up an automated Auction House with Python.
 
 * Download and install [Python (latest version)](https://www.python.org/downloads/): Accept defaults.
-* Download and install [MySQL Connector Python](https://dev.mysql.com/downloads/connector/python/): Accept defaults.
+* Download and install [MySQL Connector Python](https://dev.mysql.com/downloads/connector/python/): Accept defaults (make sure it's now the default application associated with .py files).
 
 Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/AdamGagorik/pydarkstar.git > OK > then Close when it's done.
 
