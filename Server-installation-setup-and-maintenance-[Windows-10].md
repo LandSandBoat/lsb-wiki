@@ -1,4 +1,6 @@
-## 1. Software needed:
+## 1. Softwares needed:
+
+### /!\ Make sure you have the latest version of each software mentioned on this page installed on your system, and only this one /!\
 
 * Download and install [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/): Under "Workloads" > check "Desktop development with C++". Creating/linking a free account may be required to use it.
 * Download and install [Git for Windows](https://gitforwindows.org/): Accept defaults.
