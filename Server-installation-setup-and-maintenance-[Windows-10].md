@@ -72,10 +72,12 @@ You may need to enable this feature to make things work:
 Start menu > Windows System > Control Panel > Programs and Features > Turn Windows features on or off:
 Open "Legacy Components" and check "DirectPlay" > OK.
 
-/!\ **Port Forwarding** /!\
+/!\ **Port forwarding** /!\
 
 If you are running a server for others to play on, make sure you have the following ports forwarded:
+
 TCP Ports: 54230 54231 54001 54002
+
 UDP Port: 54230
 
 ## 6. How to update the server:
