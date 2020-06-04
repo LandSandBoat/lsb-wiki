@@ -76,9 +76,9 @@ Open "Legacy Components" and check "DirectPlay" > OK.
 
 If you are running a server for others to play on, make sure you have the following ports forwarded:
 
-TCP Ports: 54230 54231 54001 54002
+TCP ports: 54230, 54231, 54001 and 54002.
 
-UDP Port: 54230
+UDP port: 54230.
 
 ## 6. How to update the server:
 
