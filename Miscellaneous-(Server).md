@@ -75,8 +75,6 @@ UPDATE auction_house SET sell_date = 'Your-choice-here' where sell_date = 'Your-
 
 /!\
 
-The search_server.exe will list errors ("[SQL] DB error - Duplicate entry [...]"), to fix this, edit every occurrence you'll find of "2020" in the pydarkstar\auction\manager.py file (L131, 139, 150, 158) to "2099". Save.
-
 Updating Python: Default location of the Python installation files is: C:\Users\Username\AppData\Local\Programs\Python, when updating you may want to relocate old files from your old version's folder to the new one (copy/paste).
 
 Updating modules: Make sure you check if your modules are up to date from time to time (you'll probably get reminded while running migrations scripts). To do so, open a command prompt like stated above and enter:
