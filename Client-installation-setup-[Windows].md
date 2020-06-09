@@ -78,7 +78,7 @@ Password: Password
 /!\ NB /!\
 
 Username (3-15) (as displayed on the loader for now): less than 3 characters and more than 15 characters works.
-Password (6-15) (as displayed on the loader for now): less than 6 characters works. More than 15 characters works _when you register BUT note_ that typing the first 15 characters when you're tring to log in will let you in.
+Password (6-15) (as displayed on the loader for now): less than 6 characters works. More than 15 characters works _when you register, BUT note_ that typing the first 15 characters when you're trying to log in will let you in.
 
 ---
 
@@ -92,9 +92,9 @@ Password (6-15) (as displayed on the loader for now): less than 6 characters wor
 
 2. Execute Windower as an administrator and it will download updates automatically.
 
-3. Click on the pen to edit the "Default Profile" and modify it's options at your will.
+3. Click on the pen to edit the "Default Profile" and modify its options at your will.
 
-4. Open the settings.xml file and set your options as follow (don't forget to save changes):
+4. Open the settings.xml file and set your options as followed (don't forget to save changes):
 
 ```
 <profile name="Username">
