@@ -90,7 +90,7 @@ Open up your SQL editor > connect to your database > select "chars" > "Data" tab
 
 Change zone in game to apply.
 
-Type "!command" in game (refer to the \topaz\scripts\commands folder for a list of commands).
+Type "!<command>" in game (for said <command> refer to the ones listed here: https://github.com/project-topaz/topaz/tree/release/scripts/commands).
 
 !togglegm: no more aggro.
 
