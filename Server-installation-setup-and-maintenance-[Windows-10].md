@@ -1,16 +1,31 @@
-## 1. Softwares needed:
+## 1. Software needed:
 
 ### /!\ Make sure you have the latest version of each software mentioned on this page installed on your system, and only this one /!\
 
-* Download and install [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/): Under "Workloads" > check "Desktop development with C++". Creating/linking a free account may be required to use it.
-* Download and install [Git for Windows](https://gitforwindows.org/): Accept defaults.
-* Download and install [TortoiseGit](https://tortoisegit.org/): Accept defaults.
-* Download and install [MariaDB](https://mariadb.org/): You can install HeidiSQL from there or get it separately, just remember the password you set for MariaDB during the installation.
-* Download and install [HeidiSQL](https://www.heidisql.com/): Accept defaults.
-* Download and install [Python (latest version)](https://www.python.org/downloads/): Accept defaults (make sure it's now the default application associated with .py files).
+To build, run, and maintain a Topaz server, you will need to download and install the following third-party software:
+
+**All of:**
+* [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/): Under "Workloads" > check "Desktop development with C++". Creating/linking a free account may be required to use it. Used to compile and build the source files.
+* [MariaDB](https://mariadb.org/): You can install HeidiSQL from there or get it separately, just remember the password you set for MariaDB during the installation. Used as SQL database.
+* [HeidiSQL](https://www.heidisql.com/): Accept defaults. Used as a GUI frontend for viewing and editing your SQL database.
+* [Python (latest version)](https://www.python.org/downloads/): **Must be 3.5+, _not_ 2.7!** Accept defaults (make sure it's now the default application associated with .py files).  Used for server updates and migrations.
+
+**One of:**
+* [GitHub Desktop](https://desktop.github.com/), a git client for managing git repositories and branches
+* [Git for Windows](https://gitforwindows.org/) _and_ [TortoiseGit](https://tortoisegit.org/), a git client for managing git repositories and branches
+
 
 ## 2. Download the source code:
 
+**GitHub Desktop:**
+1. Open GitHub desktop. File > Clone repository > URL button (along top)
+2. Enter the following:
+  * Repository URL: either [your forked copy of our repository](https://raw.githubusercontent.com/wiki/project-topaz/topaz/images/github-fork.png) `https://github.com/your-github-name/topaz.git` (recommended), or our repository `https://github.com/project-topaz/topaz.git`
+  * Local path: Where you want the source code to live on your computer
+3. Select `Clone` button
+[[/images/github-desktop-clone.png|Pull Origin button location]]
+
+**TortoiseGit:**
 1. Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/project-topaz/topaz.git ("release" branch by default) > OK > then Close when it's done. 
 
 2. Don't forget about Navmeshes (https://github.com/project-topaz/xiNavmeshes.git): right click on the freshly downloaded "topaz" folder > TortoiseGit > Submodule Update... > OK > then Close when it's done.
@@ -81,7 +96,11 @@ TCP ports: 54230, 54231, 54001 and 54002.
 UDP port: 54230.
 
 ## 6. How to update the server:
+**GitHub Desktop:**
+1. Open GitHub Desktop. Next to where your current branch is listed, click either `Fetch origin` (checking for updates), or `Pull origin`
+[[/images/pull_origin.png|Pull Origin button location]]
 
+**TortoiseGit:**
 1. Right click wherever you want > TortoiseGit > Settings > Context Menu > check: "Pull..." > Apply > OK.
 
 2. Right click on the "topaz" folder > Git Pull... > Remote Branch: (select or type) "release" (stable) or "canary" (master) > OK > Close.
