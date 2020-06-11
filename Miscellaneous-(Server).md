@@ -176,3 +176,19 @@ Open up these files in your preferred text editor and change values accordingly:
 \topaz\conf\map.conf (after getting it out of the default folder). Save, then reboot your servers.
 
 \topaz\scripts\globals\settings.lua. Save, use the GM command !reloadglobal settings in game or reboot your servers.
+
+---
+
+## How to make a dump file with Visual Studio 2019
+
+(Make sure you're running your servers and you identified a crash for which you've been asked to provide a dump file.)
+
+Execute Visual Studio 2019 > Debug > Attach to Process... > select topaz_game.exe in the list > Attach.
+
+Once the crash is reproduced while being monitored by Visual Studio 2019:
+
+Debug > Save Dump As...
+
+Same steps can be made through the Task Manager:
+
+Right click on the taskbar > Task Manager > Processes > right click on topaz_game.exe > Create Dump File.
