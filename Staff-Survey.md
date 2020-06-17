@@ -1,4 +1,4 @@
-When a Community Member involved with Project Topaz indicates to the Project Lead that they wish to join Project Topaz as official Staff, all community members will be surveyed regarding the potential merits - and demerits, if any - of that Community Member's inclusion as Staff.
+When a Community Member involved with Project Topaz indicates to the Project Lead that they wish to join Project Topaz as official Staff, all Community Members will be surveyed regarding the potential merits - and demerits, if any - of that Community Member's inclusion as Staff.
 
 The below is a sample of the Survey which will be sent out to the community.
 
