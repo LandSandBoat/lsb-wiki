@@ -2,6 +2,8 @@ When a Community Member involved with Project Topaz indicates to the Project Lea
 
 The below is a sample of the Survey which will be sent out to the community.
 
+***
+
 **"Overall, I feel [Candidate] is..."**
 
 | | Strongly Disagree | Disagree | Neutral | Agree | Strongly Agree |
