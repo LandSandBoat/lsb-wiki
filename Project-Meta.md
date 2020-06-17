@@ -1,7 +1,8 @@
 # Project Direction
 - [Project Focus](https://github.com/project-topaz/topaz/wiki/Project-Focus)
 
-# Staff Meetings
+# Staff and Meetings
+- [Project Staff](https://github.com/project-topaz/topaz/wiki/Project-Staff)
 - [Staff Meeting Summaries](https://github.com/project-topaz/topaz/wiki/Staff-Meetings)
 
 # Codes of Conduct
