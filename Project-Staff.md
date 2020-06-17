@@ -30,7 +30,7 @@ In exchange for these additional privileges and power to shape the project, **of
 - **Participate in our weekly Staff Meetings when available**; participation is not always required each week, but some effort is expected should their schedule allow
 - Abide by - and carry out if applicable - any final decisions made by the Project Lead
 
-# Survey and Selection
+# Survey
 When a Community Member involved with Project Topaz indicates to the Project Lead that they wish to join Project Topaz as official Staff, all Community Members will be surveyed regarding the potential merits - and demerits, if any - of that Community Member's inclusion as Staff. **Responses from current members of our Staff, and all members of the project's Consul of downstream servers, will be given additional weight.**
 
 **A sample of our current Staff Selection survey may be found here:**  
