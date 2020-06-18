@@ -1,5 +1,5 @@
 # Roll Call
-aether, cocosolos, ibm2431, Nyu, Wiggo, Zircon
+aether, cocosolos, ibm2431, Wiggo, Zircon
 # Opening Remarks
 > I have no Opening Remarks for today.
 
