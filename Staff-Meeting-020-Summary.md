@@ -142,8 +142,8 @@ aether, cocosolos, ibm2431, Wiggo, Zircon
     - Adjusts Paladin ability "Rampart" to match current retail
     - **Merge date: Delayed, tentatively next week**
 12. [`ranperre-rest`](https://github.com/project-topaz/topaz/tree/ranperre-rest)
-    - Adjusts NPCs related to San d'Oria mission "Ranperre's Final Rest
-    - **Merge date:** Two weeks
+    - Adjusts NPCs related to San d'Oria mission "Ranperre's Final Rest"
+    - **Merge date: Two weeks**
 13. [`raptor-speed`](https://github.com/project-topaz/topaz/tree/raptor-speed)
     - Implements Jeuno quest "Full Speed Ahead!"
     - Implements packet 0x3A
