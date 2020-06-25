@@ -112,6 +112,7 @@ By looking at the files that were changed, you should:
 * RESTART YOUR SERVER(S) FOR .conf FILES.
 * .lua files ARE INSTANT.
 * RUN the migrate.py file if there's any new addition in the folder (see below).
+* /!\ In the \topaz\conf\default folder, make sure you take the version.conf file and put it in the precedent folder (\topaz\conf) after a server update which include a Pull Request to be on par with the client (to prevent version error messages below). /!\
 ---
 
 If any new .py file is added (in \topaz\migrations\) during an update make sure to:
