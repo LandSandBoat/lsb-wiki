@@ -81,12 +81,6 @@ Servers are now configured properly. Execute all the following .exe located in t
 * topaz_game.exe
 * topaz_search.exe (optional, to use the search function)
 
-/!\ **DirectPlay** /!\
-
-You may need to enable this feature to make things work:
-Start menu > Windows System > Control Panel > Programs and Features > Turn Windows features on or off:
-Open "Legacy Components" and check "DirectPlay" > OK.
-
 /!\ **Port forwarding** /!\
 
 If you are running a server for others to play on, make sure you have the following ports forwarded:
