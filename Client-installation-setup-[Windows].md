@@ -12,14 +12,14 @@
    * On the next screen, enter id like 1234ABCD or ABCD1234 (4 letters 4 numbers it doesn't care about the order, doesn't matter if they're accurate or not) in the "Member Name" and "PlayOnline ID"  fields. If you wish to use your retail or trial account, you can input that.
    * Click on "Register" > "Yes" > "OK" > "Exit" and finally "Yes".
 
-4. Check that direct play is enabled.  
-This step is for windows 10 users and can be skipped otherwise.
-   * To enable DirectPlay, first press the Win key + R keyboard shortcut to open Run.
+4. Check that DirectPlay is enabled.  
+This step is for Windows 10 users and can be skipped otherwise.
+   * To enable DirectPlay, first press the Windpws key + R keyboard shortcut to open Run.
    * Then enter "Control Panel" in Run, and click the OK button.
-   * Click "Programs and Features"
-   * Click "Turn Windows features on or off"
-   * Double-click Legacy Components to expand it
-   * Check DirectPlay check box (if it is not already marked).
+   * Click "Programs and Features".
+   * Click "Turn Windows features on or off".
+   * Double-click "Legacy Components" to expand it.
+   * Check the DirectPlay check box (if it is not already marked).
 
 5. To be capable of connecting to a Project Topaz server, you must be able to update your local install of Final Fantasy XI. To do this, you must connect - or have connected - to SquareEnix's retail servers at least once. You may connect to the official retail servers in the following ways:
    1. Connect to retail with your existing retail subscription.
