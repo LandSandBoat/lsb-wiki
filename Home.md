@@ -1,13 +1,13 @@
 This is the wiki for Project Topaz. As we are still setting up the project, it may be sparse until more work is put into it.
 
-# Server Setup + Maintenance
+# Server Setup + Maintenance (1/2)
 Instructions for cloning, building, and running a Project Topaz server
 - [[Windows 10|https://github.com/project-topaz/topaz/wiki/Server-installation-setup-and-maintenance-%5BWindows-10%5D]]
 - [[Ubuntu 18.04|https://github.com/project-topaz/topaz/wiki/Server-Installation---Setup-%5BUbuntu-18.04-LTS%5D]]
 - [[Raspberry Pi 3b/3b+/4b (Raspbian)|https://github.com/project-topaz/topaz/wiki/Server-installation---setup-%5BRaspberry-pi-3b-4,-Raspbian-OS%5D]]
 - [Common Issues & Tweaks](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Server))
 
-# Client Setup
+# Client Setup (2/2)
 Instructions for installing FFXI, connecting to a private server, and keeping the game updated.
 - [Windows](https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows%5D)
 - [Common Issues & Tweaks](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Client))
