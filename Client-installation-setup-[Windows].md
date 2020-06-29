@@ -86,7 +86,7 @@ Password (6-15) (as displayed on the loader for now): less than 6 characters wor
 
 ---
 
-## 4. Launching via Windower
+## 4a. Launching via Windower
 
 1. Download [Windower](http://windower.net/).
 
@@ -109,14 +109,14 @@ Password (6-15) (as displayed on the loader for now): less than 6 characters wor
 
 ## 4b. Launching via Ashita
 
-1. Download [Ashita] (https://www.ashitaxi.com/)
+1. Download [Ashita](https://www.ashitaxi.com/).
 
-2. Run Ashita as administrator
+2. Run Ashita as administrator.
 
-3. Click on the Plus icon to make a new configuration, then edit the file line with the file path to your xiloader (can use the ... to browse)
+3. Click on the Plus icon to make a new configuration, then edit the file line with the file path to your xiloader (can use the ... to browse).
 
-4. in the command line, place your server details as --server yourserverip --hairpin (if externally facing). You can also use --user and -pass to autopopulate  your credentials.
+4. In the command line, place your server details as --server yourserverip --hairpin (if externally facing). You can also use --user and -pass to autopopulate  your credentials.
 
-5. Choose window to adjust your resolution if need be.
+5. Choose "Window" to adjust your resolution if need be.
 
-6. click the paper icon to save, launch with the red arrow. 
+6. Click the paper icon to save, launch with the red arrow.
