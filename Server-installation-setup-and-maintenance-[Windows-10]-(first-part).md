@@ -151,6 +151,8 @@ When an official update is available, you'll need to update the client (Final Fa
 
 /!\ **common issue** /!\
 
+/!\ **WE STRONGLY ADVISE AGAINST LOCKING THE SERVER TO OLDER VERSIONS. IT IS A UNIVERSALLY BAD IDEA.** It _will_ cause issues if you chose to not keep both versions on par! /!\
+
 If the server (Project Topaz) and the client (Final Fantasy XI) don't share the same version, you'll probably get this error in the topaz_connect.exe log window:
 
 ```
