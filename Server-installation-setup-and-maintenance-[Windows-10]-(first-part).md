@@ -10,7 +10,7 @@ To build, run, and maintain a Topaz server, you will need to download and instal
 * [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/): Under "Workloads" > check "Desktop development with C++". Creating/linking a free account may be required to use it. Used to compile and build the source files.
 * [MariaDB](https://mariadb.org/): You can install HeidiSQL from there or get it separately, just remember the password you set for MariaDB during the installation. Used as SQL database. _**New versions of MySQL from Oracle will NOT work. Use MariaDB!** MySQL hasn't worked properly out of the box since 5.7 - that's a long time ago!_
 * [HeidiSQL](https://www.heidisql.com/): Accept defaults. Used as a GUI frontend for viewing and editing your SQL database.
-* [Python (latest version)](https://www.python.org/downloads/): **Must be 3.5+, _not_ 2.7!** Accept defaults (make sure it's now the default application associated with .py files).  Used for server updates and migrations.
+* [Python (latest version)](https://www.python.org/downloads/): **Must be 3.5+, _not_ 2.7!** Check "Add Python 3.8 to PATH". Click on "Customize installation" then everything should be checked on the first window that shows up > Next. Options 2, 3 and 4 should be checked on the second window. Install > Close.
 
 **One of:**
 * [GitHub Desktop](https://desktop.github.com/), a git client for managing git repositories and branches
