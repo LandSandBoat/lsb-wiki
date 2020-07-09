@@ -151,8 +151,9 @@ New server--reborn from Resolute--doing an official launch on 05/06/2020 at 2:30
 * Level Sync    Enabled
 
 ## Phynix
-* **Discord:** https://discord.gg/NztTvRK
-* **PHYNIX Server:** xi-phynix.com
+* **Discord:  https://discord.gg/hUEzYcM
+* **Server Connection Info: --server play.xi-phynix.com --hairpin
+
 * PHYNIX Open to the Public (Stay Classy)
 
 * 75 Custom era.
