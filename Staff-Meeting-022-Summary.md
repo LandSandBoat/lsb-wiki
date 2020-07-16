@@ -167,7 +167,10 @@ aether, cocosolos, ibm2431, Zircon
     - Adds crafting limitation system; configurable
     - Corrects skillup rates and amounts
     - **Merge date: Two weeks**
-18. [`trust`](https://github.com/project-topaz/topaz/tree/trust)
+18. [`thick-thieves`](https://github.com/project-topaz/topaz/tree/thick-thieves)
+    - Corrects spawn conditions for NM "Climbpix" during "Thick as Thieves" quest
+    - **Merge date:** Unknown
+19. [`trust`](https://github.com/project-topaz/topaz/tree/trust)
     - Basic trust summoning and behavior
     - Capability to quest starting trusts; enabled by default with setting
     - Basic capability to script trusts to use magic and job abilities
