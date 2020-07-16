@@ -98,7 +98,7 @@ aether, cocosolos, ibm2431, Zircon
 - ibm2431 requested review of [#831 - Add distinction between days and elements + fix elemental ordering](https://github.com/project-topaz/topaz/pull/831) due to difficulties keeping it current
 - ibm2431 expressed importance of community involvement in reviewing [#651 - [WIP] Refactor effort](https://github.com/project-topaz/topaz/pull/651) due to fundamental changes in project
 
-# Feature Branches (15)
+# Branches (15)
 1. [`adventuringfellow`](https://github.com/project-topaz/topaz/tree/adventuringfellow)
     - Basic adventuring fellow and initial quests
     - **Merge date:** Unknown
@@ -164,7 +164,8 @@ aether, cocosolos, ibm2431, Zircon
     - **Merge date: Two weeks**
 17. [`synth-science`](https://github.com/project-topaz/topaz/tree/synth-science)
     - Removes various crafting myths
-    - Corrects HQ and skillup rates
+    - Adds crafting limitation system; configurable
+    - Corrects skillup rates and amounts
     - **Merge date: Two weeks**
 18. [`trust`](https://github.com/project-topaz/topaz/tree/trust)
     - Basic trust summoning and behavior
