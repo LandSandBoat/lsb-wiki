@@ -101,7 +101,12 @@ UPDATE zone_settings SET zoneip = '127.0.0.1';
 exit
 ```
 
-Now we are going to enter the username and password for sql inside three different files login.conf, map.conf, and search_server.conf  For each of these, there will be a line that says ```mysql_login``` and mysql_password```.
+Next, copy these config files from conf/default to the conf folder:
+
+cp conf/default/* conf/
+
+Now we are going to enter the username and password for sql inside three different files login.conf, map.conf, and search_server.conf
+For each of these, there will be a line that says ```mysql_login``` and mysql_password```.
 
 You want to change them so that they match the username and password you created to log in to your DB.  For example from
 ```
