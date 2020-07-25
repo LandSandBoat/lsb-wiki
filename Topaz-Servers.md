@@ -175,7 +175,7 @@ If you want to be on a Server where GM's are approachable and easy to contact an
 
 ## QuetzRebirth
 
-* **Server address:** 192.99.166.60
+* **Server address:** 51.81.32.201
 * **Website:** https://quetzrebirth.enjin.com/
 * **Discord:** https://discord.gg/Zdcdhna
 
