@@ -102,8 +102,9 @@ exit
 ```
 
 Next, copy these config files from conf/default to the conf folder:
-
+```
 cp conf/default/* conf/
+```
 
 Now we are going to enter the username and password for sql inside three different files login.conf, map.conf, and search_server.conf
 For each of these, there will be a line that says ```mysql_login``` and mysql_password```.
