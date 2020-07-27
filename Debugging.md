@@ -37,7 +37,7 @@ This is preferable to a full core dump because it's quick and easy to catch mult
 
 The loop is pretty tight, you'll have to spam CTRL+C a few times to get back to the gdb interface. You can then quit with `quit`.
 
-**Example output:**
+**Example output (gdb.txt):**
 ```cpp
 12074    inline int32 CLuaBaseEntity::spawnTrust(lua_State *L)
 12075    {
