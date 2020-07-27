@@ -214,6 +214,6 @@ end
 
 Launch the game with `gdb -x multirun.gdb`.
 
-If gdb catches a fatal crash, it will dump the source location (list) and the stack trace (bt) into `gdb.txt`. If you can't diagnose what the issue is from that output, staff will be able to help. The information is appended onto gdb.txt, so it can catch multiple crashes if needed.
+If gdb catches a fatal crash, it will dump the source location (list), the stack trace (bt), and the last few assembly instructions (x/5i $pc-6) into `gdb.txt`. If you can't diagnose what the issue is from that output, staff will be able to help. The information is appended onto gdb.txt, so it can catch multiple crashes if needed.
 
 The loop is pretty tight, you'll have to spam CTRL+C a few times to get back to the gdb interface. You can then quit with `quit`.
