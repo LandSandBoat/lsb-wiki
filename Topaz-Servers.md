@@ -1,6 +1,5 @@
 # 75 Cap Servers
 * [Aurora](#Aurora) era, custom hardcore
-* [Dawnbreak](#Dawnbreak) era, QOL changes
 * [Gold Saucer](#Gold-Saucer) will keep cap with modern content
 * [Grounds of Titan](#GoT) 75 cap,  great QOL perks (new server 2020/05)
 * [QuetzRebirth](#QuetzRebirth) era, QOL changes, some custom content
@@ -9,6 +8,7 @@
 # 99/ilvl Cap Servers
 * [BNET.cc](#bnetcc) modern era, custom content
 * [Canaria](#Canaria) modern era
+* [Tantalus](#Tantalus) 80 cap era, QOL changes
 * [Vana Skies](#Vana-Skies) modern era
 
 ***
@@ -83,28 +83,6 @@ All content comes from the [canary branch](https://github.com/project-topaz/topa
 * **Crafting + Skill ups:** Sames as current retail (crafting is broken so its currently at x2.6)
 * **Mission BCNM + CoP Areas:** Same as current retail
 * **Trusts:** Enabled
-
-## Dawnbreak:
-
-* **Server address:** dawnbreak.ddns.net
-* **Discord:** https://discord.gg/g9XcQPH
-
-**Expansions enabled:** Rise of Zilart, Chains of Promathia, Treasures of Aht Urhgan, Wings of the Goddess.
-
-* **Level Cap:** 75
-* **Fields of Valor:** Enabled
-* **Grounds of Valor:** Disabled
-* **Explorer Moogles:** Enabled
-* **Experience:** 1.33x
-* **Skill-Ups:** ~30%
-* **Crafting Skill-Ups:** +15%
-* **Fame:** ~2x
-* **Field of Valor XP:** -20%
-* **Field of Valor Tabs:** +30%
-* **Player MP gained from subjob:** + ~10%
-* **Player TP Gain:** +5%
-* **Drop rate:** +6%
-* **Chance of break tools while harvesting:** reduced to 20% from 50%
 
 ## Gold Saucer
  * **Server address:** play.gold-saucer.com
@@ -204,6 +182,30 @@ Rebirth 2.0, formerly known as QuetzRebirth, strives to give players a great exp
 Augments are tradeable. Augments can be added to and recovered from items.
 
 **Gambling:** Have three augments you don’t like? Trade them in plus some Conquest Points to receive a new augment!
+
+## Tantalus:
+
+* **Server address:** tantalus.ninja
+* **Website:** http://tantalus.ninja/
+* **Discord:** https://discord.gg/a9Xcgjr
+
+**Expansions enabled:** Rise of Zilart, Chains of Promathia, Treasures of Aht Urhgan, Wings of the Goddess, Vision of Abyssea.
+
+* **Level Cap:** 80
+* **Fields of Valor:** Enabled increased gil and tabs but no XP
+* **Grounds of Valor:** Enabled increased gil and tabs but no XP
+* **Explorer Moogles:** Enabled
+* **Experience:** 2x
+* **Skill-Ups:** ~30%
+* **Crafting Skill-Ups:** +15%
+* **Fame:** ~2x
+* **Field of Valor XP:** -20%
+* **Field of Valor Tabs:** +30%
+* **Player MP gained from subjob:** + ~10%
+* **Player TP Gain:** +5%
+* **Drop rate:** +6%
+* **Chance of break tools while harvesting:** reduced to 20% from 50%
+
 
 ## Vana Skies:
 
