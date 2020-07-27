@@ -208,6 +208,7 @@ while 1
   set logging on
   list
   bt
+  x/5i $pc-6
 end
 ```
 
