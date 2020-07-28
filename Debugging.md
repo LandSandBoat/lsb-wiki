@@ -19,6 +19,7 @@ Right click on the taskbar > Task Manager > Processes > right click on topaz_gam
 Create a file in your topaz root directory called `multirun.gdb` with the following contents:
 ```gdb
 while 1
+  set confirm off
   set logging off 
   file topaz_game
   run
