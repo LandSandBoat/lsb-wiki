@@ -1,5 +1,6 @@
 Project Topaz strives to hold a Staff Meeting once a week in the `#staff` channel of its Discord server. The channel can be read by every member of the server. Since long meetings may be difficult to read, summaries are provided below. To read the full text of the meeting, you may search the Discord server for `Project Topaz Staff Meeting #XXX`, where `XXX` is the three-digit number of the meeting you wish to review.
 
+* [Staff Meeting #023 (2020/07/29)](https://github.com/project-topaz/topaz/wiki/Staff-Meeting-023-Summary)
 * [Staff Meeting #022 (2020/07/15)](https://github.com/project-topaz/topaz/wiki/Staff-Meeting-022-Summary)
 * [Staff Meeting #021 (2020/07/01)](https://github.com/project-topaz/topaz/wiki/Staff-Meeting-021-Summary)
 * [Staff Meeting #020 (2020/06/24)](https://github.com/project-topaz/topaz/wiki/Staff-Meeting-020-Summary)
