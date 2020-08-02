@@ -1,4 +1,4 @@
-### /!\ NEXT STEP TO FOLLOW ONCE YOU'RE _DONE_ WITH THIS FIRST PART: [[Client installation setup [Windows] (second part)|https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows%5D-(second-part)]] /!\
+### /!\ NEXT STEP TO FOLLOW ONCE YOU'RE _DONE_ WITH THIS FIRST PART: [[Client installation setup [Windows]|https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows%5D]] /!\
 
 ## 1. Software needed:
 
@@ -153,7 +153,7 @@ When an official update is available, you'll need to update the client (Final Fa
 
 /!\ **common issue** /!\
 
-/!\ **WE STRONGLY ADVISE AGAINST LOCKING THE SERVER TO OLDER VERSIONS. IT IS A UNIVERSALLY BAD IDEA.** It _will_ cause issues if you chose to not keep both versions on par! /!\
+/!\ **WE STRONGLY ADVISE AGAINST LOCKING THE SERVER TO OLDER VERSIONS. IT IS A UNIVERSALLY BAD IDEA.** It _will_ cause issues even _if_ you manage to keep both server and client versions on par! /!\
 
 If the server (Project Topaz) and the client (Final Fantasy XI) don't share the same version, you'll probably get this error in the topaz_connect.exe log window:
 
