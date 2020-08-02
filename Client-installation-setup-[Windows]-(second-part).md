@@ -52,9 +52,9 @@ After having connected to retail at least once since installing Final Fantasy XI
 
 To connect to a private server, you need to be able to direct _where_ your local client communicates. This is done through programs like [xiloader](https://github.com/zircon-tpl/xiloader/releases).
 
-**Ashita has a loader built into it. Users who plan to use Ashita may skip to [Section 6 - Launcher Configuration](https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows%5D-%28second-part%29/#6-launcher-configuration). However, we _highly recommend_ connecting to your server for the first time with only xiloader so that you can minimize potential setup problems.**
+**Note: Ashita has a loader built into it. Users who plan to use Ashita may skip to [Section 6 - Launcher Configuration](https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows%5D-%28second-part%29/#6-launcher-configuration). However, we _highly recommend_ connecting to your server for the first time with only xiloader so that you can minimize potential setup problems.**
 
-To build xiloader from source:
+To build xiloader from [source](https://github.com/zircon-tpl/xiloader/):
 
 1. Download and install [MSVC 2015 Runtimes](https://www.microsoft.com/en-ca/download/details.aspx?id=48145) (if needed).
 
