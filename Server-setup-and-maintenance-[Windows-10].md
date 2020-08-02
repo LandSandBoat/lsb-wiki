@@ -1,4 +1,4 @@
-### /!\ NEXT STEP TO FOLLOW ONCE YOU'RE _DONE_ WITH THIS FIRST PART: [[Client installation setup [Windows]|https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows%5D]] /!\
+### /!\ NEXT STEP TO FOLLOW ONCE YOU'RE _DONE_ WITH THIS FIRST PART: [[Client Setup [Windows]|https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D]] /!\
 
 ## 1. Software needed:
 
