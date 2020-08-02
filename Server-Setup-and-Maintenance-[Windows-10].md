@@ -109,7 +109,7 @@ By looking at the files that were changed, you should:
 * RERUN EVERY .sql MODIFIED FILES (referring to the example at **3. 2.**). This will overwrite any custom changes you have made to your sql tables. If you are running custom mobs/items/etc of any kind, you'll want to load the sql changes to a separate database and compare.
 * REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **4.**).
 * RESTART YOUR SERVER(S) FOR .conf FILES.
-* .lua files ARE INSTANT.
+* .lua files ARE INSTANT (use !reloadglobal as a GM if you're in game and want the changes to be applied directly ; zone if necessary).
 * RUN the migrate.py file if there's any new addition in the folder (see below).
 * /!\ In the \topaz\conf\default folder, make sure you take any .conf file that was updated and put it/them in the precedent folder (\topaz\conf). /!\
 ---
