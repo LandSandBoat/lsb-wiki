@@ -1,6 +1,6 @@
-## 1. Install, Configure and Update Final Fantasy XI Ultimate Collection - Seekers Edition
+**Note: To be able to update the Final Fantasy XI client - and connect to Project Topaz servers using the most recent version - you must be capable of connecting to retail at least once. Possible methods for doing so may be found below in [Section 2 - Connect to Retail](https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows%5D-%28second-part%29/#2-connecting-to-retail). Project Topaz does not condone methods enabling client updates without having connected to SquareEnix's retail servers.**
 
-**Note: To be able to update the Final Fantasy XI client - and connect to Project Topaz servers using the most recent version - you must be capable of connecting to retail at least once. Possible methods for doing so may be found below in sub-step five. Project Topaz does not condone methods enabling client updates without having connected to SquareEnix's retail servers.**
+# 1. Install and Update Final Fantasy XI
 
 1. [Official link to download US installation files](http://www.playonline.com/ff11us/download/media/install_win.html) (get all of them). These files include updates until April 2019.
 
@@ -21,15 +21,20 @@ This step is for Windows 10 users and can be skipped otherwise.
    * Double-click "Legacy Components" to expand it.
    * Check the DirectPlay check box (if it is not already marked).
 
-5. To be capable of connecting to a Project Topaz server, you must be able to update your local install of Final Fantasy XI. To do this, you must connect - or have connected - to SquareEnix's retail servers at least once. You may connect to the official retail servers in the following ways:
+5. Configure game technical optiones.
+   * Start Menu > PlayOnline > FINAL FANTASY XI Config; _or_
+   * `(Root FFXI Install Directory)/PlayOnline/SquareEnix/FINAL FANTASY XI/Tools/FINAL FANTASY XI Config`
+
+# 2. Connecting to Retail
+To be capable of connecting to a Project Topaz server, you must be able to update your local install of Final Fantasy XI. To do this, you must connect - or have connected - to SquareEnix's retail servers at least once. You may connect to the official retail servers in the following ways:
    1. Connect to retail with your existing retail subscription.
    2. Purchase a copy of Final Fantasy XI, which comes with a 30-day subscription.
    3. For users who have previously purchased Final Fantasy XI and have since reinstalled the software, connect to retail during a Return Home to Vana'diel campaign when SquareEnix allows former subscribers to play on retail servers for free.
    4. [Activate a trial account provided by SquareEnix.](https://store.na.square-enix-games.com/en_US/product/442968/final-fantasy-xi-free-trial-pc-download) When you do so, you will be emailed an activation key. This key may be used like a normal activation key.
 
-## 2. Later Updates
+# 3. Later Updates
 
-After having connected to retail at least once since installing Final Fantasy XI, you may then update it at any time by deleting a file on your local installation and using "Check Files" from the PlayOnline Viewer. You may use this method without an existing subscription to retail.
+After having connected to retail at least once since installing Final Fantasy XI, you may then update it at any time by deleting a file on your local installation and using "Check Files" from the PlayOnline Viewer. You may use this method even if your previous subscription to retail is inactive.
 
 1. Inside the `\PlayOnline\SquareEnix\FINAL FANTASY XI\ROM\0` folder > delete the `0.dat` file.
 
@@ -43,28 +48,32 @@ After having connected to retail at least once since installing Final Fantasy XI
 
 6. Once everything is done, click on "OK" then "Exit Viewer" and "Yes".
 
-## 3. Configuration
+# 4. Building xiloader
 
-1. Start Menu > PlayOnline > FINAL FANTASY XI Config: configure specific options.
+To connect to a private server, you need to be able to direct _where_ your local client communicates. This is done through programs like [xiloader](https://github.com/zircon-tpl/xiloader/releases).
 
-2. Download and install [MSVC 2015 Runtimes](https://www.microsoft.com/en-ca/download/details.aspx?id=48145) (if needed).
+**Ashita has a loader built into it. Users who plan to use Ashita may skip to [Section 6 - Launcher Configuration](https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows%5D-%28second-part%29/#6-launcher-configuration). However, we _highly recommend_ connecting to your server for the first time with only xiloader so that you can minimize potential setup problems.**
 
-3. Right click wherever you want to download the xiloader repository > Git Clone... > URL: https://github.com/zircon-tpl/xiloader.git > OK > then Close when it's done.
+To build xiloader from source:
 
-4. Execute Visual Studio Community 2019: Open a project or solution (on the right) > select the "xiloader.sln" file from the \xiloader\ folder > Open (click "OK" when asked to "Retarget Projects").
+1. Download and install [MSVC 2015 Runtimes](https://www.microsoft.com/en-ca/download/details.aspx?id=48145) (if needed).
 
-5. Once it's loaded > Build > Build Solution.
+2. Right click wherever you want to download the xiloader repository > Git Clone... > URL: https://github.com/zircon-tpl/xiloader.git > OK > then Close when it's done.
 
-6. To confirm that everything was built properly, you should see:
+3. Execute Visual Studio Community 2019: Open a project or solution (on the right) > select the "xiloader.sln" file from the \xiloader\ folder > Open (click "OK" when asked to "Retarget Projects").
+
+4. Once it's loaded > Build > Build Solution.
+
+5. To confirm that everything was built properly, you should see:
 
 > ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 
 in the output console at the bottom and the xiloader executable file should be present in the \xiloader\Debug\ folder.
-Put it wherever you want but remember it's path.
+Put it wherever you want but remember its path.
 
----
+# 5. Connecting to a Private Server
 
-* Execute xiloader.exe as an administrator (after launching both (atleast) topaz) then select the "Create New Account" option by hitting "2" then:
+* Execute xiloader.exe as an administrator (_after_ launching `topaz-login` and `topaz-map` if connecting to your own local sever), then select the "Create New Account" option by hitting "2" then:
 ```
 Username: Username
 Password: Password (then repeat)
@@ -75,18 +84,15 @@ Username: Username
 Password: Password
 ```
 
-/!\ NB /!\
+/!\ **Notes** /!\
 
-Username (3-15) (as displayed on the loader for now): less than 3 characters and more than 15 characters works.
-Password (6-15) (as displayed on the loader for now): less than 6 characters works. More than 15 characters works _when you register, BUT note_ that typing the first 15 characters when you're trying to log in will let you in.
+* Username (3-15) (as displayed on the loader for now): less than 3 characters and more than 15 characters works.
+* Password (6-15) (as displayed on the loader for now): less than 6 characters works. More than 15 characters works _when you register, BUT note_ that typing the first 15 characters when you're trying to log in will let you in.
 
----
+# 6. Launcher Configuration
+After confirming that your client can connect to a server, you can use one of the popular third-party launchers for ease-of-use and additional features.
 
-/!\ **or** /!\
-
----
-
-## 4a. Launching via Windower
+## 6a. Launching via Windower
 
 1. Download [Windower](http://windower.net/).
 
@@ -107,7 +113,7 @@ Password (6-15) (as displayed on the loader for now): less than 6 characters wor
 
 6. Select your profile and click on the arrow (bottom right), it will launch xiloader.
 
-## 4b. Launching via Ashita
+## 6b. Launching via Ashita
 
 1. Download [Ashita](https://www.ashitaxi.com/).
 
