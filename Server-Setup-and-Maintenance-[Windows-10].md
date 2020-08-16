@@ -39,7 +39,33 @@ To build, run, and maintain a Topaz server, you will need to download and instal
 
 1. Execute HeidiSQL and click on "New" (bottom left) then name your session as you wish > Password: Password previously saved from the MariaDB installation > Open > right click on the freshly created/named session (left) > Create new > Database > name it "tpzdb" > OK.
 
-2. Run the Database_initial_setup.bat file located in the \topaz\tools folder. Alternatively, you can manually load files via this method: Select "tpzdb" > File > Run SQL file... > select every .sql file from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done. 
+2. Create the tpzdb database from the sql files: 
+
+* Python script way:
+
+In the \topaz\conf\default folder, make sure you take all the files in there and put them in the precedent folder (\topaz\conf\) like the readme.md file says. Open these three files (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
+
+* login.conf
+* map.conf
+* search_server.conf
+
+then modify this line each time:
+
+> mysql_password: root 
+
+(replace "root" with the password previously saved from the MariaDB installation)
+
+Save changes to all three files.
+
+Right click + holding the Shift key in the \topaz\tools folder (empty space, not a file) > context menu: Open command window here/Open PowerShell window here.
+
+Enter this command:
+```
+py dbtool.py
+```
+This will prepare your tpzdb database from the sql files.
+
+* Alternatively, you can manually load files in HeidiSQL via this method: Select "tpzdb" > File > Run SQL file... > select every .sql file from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done. 
 
 3. Don't forget to verify that the IP address displayed in the "zoneip" column ("Data" tab) of the zone_settings table is the correct one (local (127.0.0.1) by default). If you are running a server for others to connect to, you NEED to update this setting. You can adjust all the lines at once by clicking on the "Query" tab then typing:
 
@@ -65,6 +91,8 @@ in the output console at the bottom and all of these 3 .exe:
 should be present in the \topaz\ folder.
 
 ## 5. Server configuration:
+
+(you can skip this step if you prepared the database using the Python script in **Step 3** above)
 
 In the \topaz\conf\default folder, make sure you take all the files in there and put them in the precedent folder (\topaz\conf\) like the readme.md file says. Open these three files (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
 
