@@ -11,6 +11,7 @@
 * Development
   * [Using Github](https://github.com/project-topaz/topaz/wiki/Using-Github)
   * [Style Guide](https://github.com/project-topaz/topaz/blob/release/CONTRIBUTING.md)
+  * [Understanding Variables](https://github.com/project-topaz/topaz/wiki/Understanding-variables-%E2%80%94-a-brief-guide)
 * [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
   * [[Project Focus|https://github.com/project-topaz/topaz/wiki/Project-Focus]]
   * [[Project Staff|https://github.com/project-topaz/topaz/wiki/Project-Staff]]
