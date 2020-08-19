@@ -14,4 +14,4 @@
 
 ### Other handy Info
 - [[Useful SQL queries]]
-- [[Understanding variables: a brief guide | Understanding-variables-%E2%80%94-a-brief-guide]]
+- [[Understanding variables: a brief guide | Understanding-variables-—-a-brief-guide]]
