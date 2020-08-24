@@ -7,11 +7,11 @@
 To build, run, and maintain a Topaz server, you will need to download and install the following third-party software:
 
 **All of:**
-* [Git for Windows](https://gitforwindows.org/) 
+* [Git for Windows](https://gitforwindows.org/): Accept defaults.
 * [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/): Under "Workloads" > check "Desktop development with C++". Creating/linking a free account may be required to use it. Used to compile and build the source files.
 * [MariaDB](https://mariadb.org/): You can install HeidiSQL from there or get it separately, just remember the password you set for MariaDB during the installation. Used as SQL database. _**New versions of MySQL from Oracle will NOT work. Use MariaDB!** MySQL hasn't worked properly out of the box since 5.7 - that's a long time ago!_
 * [HeidiSQL](https://www.heidisql.com/): Accept defaults. Used as a GUI frontend for viewing and editing your SQL database.
-* Download and install [Python (latest version)](https://www.python.org/downloads/): **Must be 3.5+, _not_ 2.7!** Check "Add Python 3.8 to PATH". Click on "Customize installation" then everything should be checked on the first window that shows up > Next. Options 2, 3 and 4 should be checked on the second window. Install > Close.
+* Download and install [Python (latest version)](https://www.python.org/downloads/): **Must be 3.5+, _not_ 2.7!** Check "Add Python 3.8 to PATH". Click on "Customize installation" then everything should be checked on the first window that shows up > Next. Options 2, 3 and 4 should be checked on the second window. Install > Close. Make sure .py files are associated with Python by default so you can double click on them to open them.
 * Download and install [MySQL Connector Python](https://dev.mysql.com/downloads/connector/python/): Accept defaults.
 
 **Make sure both Python and the MySQL Connector are x86 or x64**.
@@ -40,33 +40,62 @@ To build, run, and maintain a Topaz server, you will need to download and instal
 
 1. Execute HeidiSQL and click on "New" (bottom left) then name your session as you wish > Password: Password previously saved from the MariaDB installation > Open > right click on the freshly created/named session (left) > Create new > Database > name it "tpzdb" > OK.
 
-2. Create the tpzdb database from the sql files: 
+---
 
-* Python script way:
+2. Python script way (recommended!):
 
-In the \topaz\conf\default folder, make sure you take all the files in there and put them in the precedent folder (\topaz\conf\) like the readme.md file says. Open these three files (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
+Right click + holding the Shift key > context menu: Open command window here/Open PowerShell window here.: then type (**use "pip3" (default) or "pip" in each command, the one that works for you**):
 
-* login.conf
-* map.conf
-* search_server.conf
+```
+py -m pip3
+```
+(skip this step if you installed the MySQL Connector Python manually) enter this command:
+```
+pip install -r requirements.txt
+```
+or
+```
+pip3 install mysql-connector-python
+```
+It will download and install MySQL Connector Python.
 
-then modify this line each time:
+then enter each of these commands (hit "Enter" after each one) and it will download and install automatically:
 
-> mysql_password: root 
+```
+py -m pip3 install gitpython
+py -m pip3 install pip
+py -m pip3 install pyyaml
+py -m pip3 install colorama
+```
 
-(replace "root" with the password previously saved from the MariaDB installation)
-
-Save changes to all three files.
-
-Right click + holding the Shift key in the \topaz\tools folder (empty space, not a file) > context menu: Open command window here/Open PowerShell window here.
-
-Enter this command:
+Followed by:
 ```
 py dbtool.py
 ```
-This will prepare your tpzdb database from the sql files.
+(or just double click on \topaz\tools\dbtool.py)
 
-* Alternatively, you can manually load files in HeidiSQL via this method: Select "tpzdb" > File > Run SQL file... > select every .sql file from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done. 
+In the new dbtool window:
+
+Select the first option "1. Update DB" > "Would you like yo backup your database? [y/N]" > y > Enter > "Proceed with update? [y/N] > y > Enter > Done.
+
+This will run all your .sql files and update .py migrations scripts.
+
+/!\
+
+Updating Python: Default location of the Python installation files is: C:\Users\Username\AppData\Local\Programs\Python, when updating you may want to relocate old files from your old version's folder to the new one (copy/paste).
+
+Updating modules: Make sure you check if your modules are up to date from time to time (you'll probably get reminded while running migrations scripts). To do so, open a command prompt like stated above and enter:
+```
+py -m pip3 install --upgrade Modulename
+```
+
+---
+
+* Alternatively, you can use the HeidiSQL manual way
+
+Select "tpzdb" > File > Run SQL file... > select every .sql file from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done. 
+
+---
 
 3. Don't forget to verify that the IP address displayed in the "zoneip" column ("Data" tab) of the zone_settings table is the correct one (local (127.0.0.1) by default). If you are running a server for others to connect to, you NEED to update this setting. You can adjust all the lines at once by clicking on the "Query" tab then typing:
 
@@ -92,8 +121,6 @@ in the output console at the bottom and all of these 3 .exe:
 should be present in the \topaz\ folder.
 
 ## 5. Server configuration:
-
-(you can skip this step if you prepared the database using the Python script in **Step 3** above)
 
 In the \topaz\conf\default folder, make sure you take all the files in there and put them in the precedent folder (\topaz\conf\) like the readme.md file says. Open these three files (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
 
@@ -135,46 +162,12 @@ UDP port: 54230.
 
 By looking at the files that were changed, you should:
 
-* RERUN EVERY .sql MODIFIED FILES (referring to the example at **3. 2.**). This will overwrite any custom changes you have made to your sql tables. If you are running custom mobs/items/etc of any kind, you'll want to load the sql changes to a separate database and compare.
+* RERUN EVERY .sql MODIFIED FILES (follow the same steps as showed above once you launched the dbtool ("3. Prepare the database")). This will overwrite any custom changes you have made to your SQL tables. If you are running custom mobs/items/etc. of any kind, you'll want to load the SQL changes to a separate database and compare.
 * REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **4.**).
 * RESTART YOUR SERVER(S) FOR .conf FILES.
 * .lua files ARE INSTANT IN MOST CASES (\topaz\scripts\globals .luas will need to be reloaded by using the GM command !reloadglobal where appropriate or restarting the server).
-* RUN the migrate.py file if there's any new addition in the folder (see below).
+* If there's any new .py file addition in the \topaz\tools\migrations folder, follow the same steps as showed above once you launched the dbtool (3. Prepare the database).
 * /!\ In the \topaz\conf\default folder, make sure you take any .conf file that was updated and put it/them in the precedent folder (\topaz\conf). /!\
----
-
-If any new .py file is added (in \topaz\migrations\) during an update make sure to:
-1. Make sure your .conf files are out of the default folder and have the correct passwords entered to access your database.
-
-* Python script way:
-
-Double click on the migrate.py script in the \topaz\migrations folder.
-
-* Command prompt way (**use "pip3" (default) or "pip" in each command, the one that works for you**):
-
-Right click + holding the Shift key in the \topaz\migrations folder (empty space, not a file) > context menu: Open command window here/Open PowerShell window here.
-(skip this step if you installed the MySQL Connector Python above) enter this command:
-```
-pip install -r requirements.txt
-```
-or
-```
-pip3 install mysql-connector-python
-```
-It will download and install MySQL Connector Python.
-
-5. Enter this command:
-```
-py migrate.py
-```
-It will run all the migrations scripts.
-
-Updating Python: Default location of the Python installation files is: C:\Users\Username\AppData\Local\Programs\Python, when updating you may want to relocate old files from your old version's folder to the new one (copy/paste).
-
-Updating modules: Make sure you check if your modules are up to date from time to time (you'll probably get reminded while running migrations scripts). To do so, open a command prompt like stated above and enter:
-```
-py -m pip3 install --upgrade Modulename
-```
 
 ---
 
@@ -203,7 +196,7 @@ save then restart the topaz_connect.exe server.
 
 ## 7. Database management
 
-* Manual way:
+* Manual way (HeidiSQL):
 
 _Exporting_:
 
@@ -241,22 +234,4 @@ Directory: (click on the folder icon on the right then choose a name and a locat
 
 _Importing_:
 
-Repeat the whole process of the **3. 2.** part (but select the .sql files you saved before instead).
-
----
-
-* Automated way (thanks to Wren):
-
-[.bat files (BACKUP - TPZ.bat and BUILD - TPZ.bat) + documentation](https://drive.google.com/open?id=1uqnmsABGWTMCCuLEN4jZtrv3OO0cWebs).
-
-/!\
-
-Don't forget to edit each one with a text editor and change paths accordingly first. There's a documentation guide in there to help out.
-
-_Exporting_:
-
-Download and execute the *BACKUP - TPZ.bat* one.
-
-_Importing_:
-
-Download and execute the *BUILD - TPZ.bat* one.
+Repeat the alternative steps to import .sql files manually under "3. Prepare the database" (but select the .sql files you saved before instead).
