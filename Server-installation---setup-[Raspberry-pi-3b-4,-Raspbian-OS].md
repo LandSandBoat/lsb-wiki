@@ -15,6 +15,11 @@ Clone the repository to a new folder named topaz by putting:
 git clone --recursive https://github.com/project-topaz/topaz.git
 ```
 
+If you want to clone the repository with `canary` branch already checked-out you can use:
+```
+git clone --recursive --single-branch --branch canary https://github.com/project-topaz/topaz.git
+```
+
 ## Compiling the Server
 
 Go inside the project's folder and compile the source code like so:
