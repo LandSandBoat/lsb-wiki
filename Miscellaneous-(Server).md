@@ -8,10 +8,7 @@ One possible fix: Execute HeidiSQL > select your session and connect to it > sel
 
 ## Setting up an automated Auction House with Python.
 
-* Download and install [Python (latest version)](https://www.python.org/downloads/): **Must be 3.5+, _not_ 2.7!** Check "Add Python 3.8 to PATH". Click on "Customize installation" then everything should be checked on the first window that shows up > Next. Options 2, 3 and 4 should be checked on the second window. Install > Close.
-* Download and install [MySQL Connector Python](https://dev.mysql.com/downloads/connector/python/): Accept defaults.
-
-**Make sure both Python and the MySQL Connector are x86 or x64**.
+Python and the MySQL Python Connector are needed and should be already installed if you previously followed our [Windows 10 installation setup guide](https://github.com/project-topaz/topaz/wiki/Server-Setup-and-Maintenance-[Windows-10]).
 
 Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/AdamGagorik/pydarkstar.git > OK > then Close when it's done.
 
@@ -22,23 +19,12 @@ Right click + holding the Shift key > context menu: Open command window here/Ope
 ```
 py -m pip3
 ```
-(skip this step if you installed the MySQL Connector Python above) enter this command:
-```
-pip install -r requirements.txt
-```
-or
-```
-pip3 install mysql-connector-python
-```
-It will download and install MySQL Connector Python.
 
 then enter each of these commands (hit "Enter" after each one) and it will download and install automatically:
 
 ```
 py -m pip3 install beautifulsoup4
 py -m pip3 install pymysql
-py -m pip3 install pyyaml
-py -m pip3 install pip
 py -m pip3 install sqlalchemy
 ```
 
