@@ -17,18 +17,18 @@ To build, run, and maintain a Topaz server, you will need to download and instal
 **Make sure both Python and the MySQL Connector are x86 or x64**.
 
 **One of:**
-* [GitHub Desktop](https://desktop.github.com/), a git client for managing git repositories and branches
-* [TortoiseGit](https://tortoisegit.org/), a git client for managing git repositories and branches
+* [GitHub Desktop](https://desktop.github.com/), a Git client for managing git repositories and branches.
+* [TortoiseGit](https://tortoisegit.org/), a Git client for managing git repositories and branches.
 
 
 ## 2. Download the source code:
 
 **GitHub Desktop:**
-1. Open GitHub desktop. File > Clone repository > URL button (along top)
+1. Open GitHub desktop. File > Clone repository > URL button (along top).
 2. Enter the following:
   * Repository URL: either [your forked copy of our repository](https://raw.githubusercontent.com/wiki/project-topaz/topaz/images/github-fork.png) `https://github.com/your-github-name/topaz.git` (recommended), or our repository `https://github.com/project-topaz/topaz.git`
-  * Local path: Where you want the source code to live on your computer
-3. Select `Clone` button
+  * Local path: Where you want the source code to live on your computer.
+3. Select `Clone` button:
 [[/images/github-desktop-clone.png|Pull Origin button location]]
 
 **TortoiseGit:**
@@ -36,13 +36,39 @@ To build, run, and maintain a Topaz server, you will need to download and instal
 
 2. Don't forget about Navmeshes (https://github.com/project-topaz/xiNavmeshes.git): right click on the freshly downloaded "topaz" folder > TortoiseGit > Submodule Update... > OK > then Close when it's done.
 
-## 3. Prepare the database:
+## 3. .conf files configuration:
 
-1. Execute HeidiSQL and click on "New" (bottom left) then name your session as you wish > Password: Password previously saved from the MariaDB installation > Open > right click on the freshly created/named session (left) > Create new > Database > name it "tpzdb" > OK.
+In the \topaz\conf\default folder, make sure you take all the files in there and put them in the precedent folder (\topaz\conf\) like the readme.md file says. Open these three files (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
 
----
+* login.conf
+* map.conf
+* search_server.conf
 
-2. Python script way (recommended!):
+then modify this line each time:
+
+> mysql_password: root 
+
+(replace "root" with your MariaDB password)
+
+(If you have any problem with a mismatching version, check the /!\ **common issue** /!\ regarding updates below.)
+
+Servers are now configured properly. Execute all the following .exe located in the \topaz\ folder (as Admin):
+
+* topaz_connect.exe
+* topaz_game.exe
+* topaz_search.exe (optional, to use the search function)
+
+/!\ **Port forwarding** /!\
+
+If you are running a server for others to play on, make sure you have the following ports forwarded:
+
+TCP ports: 54230, 54231, 54001 and 54002.
+
+UDP port: 54230.
+
+## 4. Preparing the database:
+
+1. Python script way (recommended!):
 
 Right click + holding the Shift key > context menu: Open command window here/Open PowerShell window here.: then type (**use "pip3" (default) or "pip" in each command, the one that works for you**):
 
@@ -93,6 +119,8 @@ py -m pip3 install --upgrade Modulename
 
 * Alternatively, you can use the HeidiSQL manual way
 
+2. Execute HeidiSQL and click on "New" (bottom left) then name your session as you wish > Password: Password previously saved from the MariaDB installation > Open > right click on the freshly created/named session (left) > Create new > Database > name it "tpzdb" > OK.
+
 Select "tpzdb" > File > Run SQL file... > select every .sql file from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done. 
 
 ---
@@ -103,7 +131,7 @@ Select "tpzdb" > File > Run SQL file... > select every .sql file from the \topaz
 
   Click on "Execute SQL..." (blue icon on top) > Yes.
 
-## 4. Build the servers:
+## 5. Build the servers:
 
 1. Execute Visual Studio Community 2019: Open a project or solution (on the right) > select the "topaz.sln" file from the \topaz\win32 folder > Open.
 
@@ -120,36 +148,6 @@ in the output console at the bottom and all of these 3 .exe:
 
 should be present in the \topaz\ folder.
 
-## 5. Server configuration:
-
-In the \topaz\conf\default folder, make sure you take all the files in there and put them in the precedent folder (\topaz\conf\) like the readme.md file says. Open these three files (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
-
-* login.conf
-* map.conf
-* search_server.conf
-
-then modify this line each time:
-
-> mysql_password: root 
-
-(replace "root" with your MariaDB password)
-
-(If you have any problem with a mismatching version, check the /!\ **common issue** /!\ regarding updates below.)
-
-Servers are now configured properly. Execute all the following .exe located in the \topaz\ folder (as Admin):
-
-* topaz_connect.exe
-* topaz_game.exe
-* topaz_search.exe (optional, to use the search function)
-
-/!\ **Port forwarding** /!\
-
-If you are running a server for others to play on, make sure you have the following ports forwarded:
-
-TCP ports: 54230, 54231, 54001 and 54002.
-
-UDP port: 54230.
-
 ## 6. How to update the server:
 **GitHub Desktop:**
 1. Open GitHub Desktop. Next to where your current branch is listed, click either `Fetch origin` (checking for updates), or `Pull origin`
@@ -162,7 +160,7 @@ UDP port: 54230.
 
 By looking at the files that were changed, you should:
 
-* RERUN EVERY .sql MODIFIED FILES (follow the same steps as showed above once you launched the dbtool ("3. Prepare the database")). This will overwrite any custom changes you have made to your SQL tables. If you are running custom mobs/items/etc. of any kind, you'll want to load the SQL changes to a separate database and compare.
+* RERUN EVERY .sql MODIFIED FILES (follow the same steps as showed above once you launched the dbtool ([4. Preparing the database](https://github.com/project-topaz/topaz/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/_edit#5-preparing-the-database))). This will overwrite any custom changes you have made to your SQL tables. If you are running custom mobs/items/etc. of any kind, you'll want to load the SQL changes to a separate database and compare.
 * REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **4.**).
 * RESTART YOUR SERVER(S) FOR .conf FILES.
 * .lua files ARE INSTANT IN MOST CASES (\topaz\scripts\globals .luas will need to be reloaded by using the GM command !reloadglobal where appropriate or restarting the server).
@@ -234,4 +232,4 @@ Directory: (click on the folder icon on the right then choose a name and a locat
 
 _Importing_:
 
-Repeat the alternative steps to import .sql files manually under "3. Prepare the database" (but select the .sql files you saved before instead).
+Repeat the alternative steps to import .sql files manually under [4. Preparing the database](https://github.com/project-topaz/topaz/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/_edit#5-preparing-the-database) (but select the .sql files you saved before instead).
