@@ -50,22 +50,6 @@ then modify this line each time:
 
 (replace "root" with your MariaDB password)
 
-(If you have any problem with a mismatching version, check the /!\ **common issue** /!\ regarding updates below.)
-
-Servers are now configured properly. Execute all the following .exe located in the \topaz\ folder (as Admin):
-
-* topaz_connect.exe
-* topaz_game.exe
-* topaz_search.exe (optional, to use the search function)
-
-/!\ **Port forwarding** /!\
-
-If you are running a server for others to play on, make sure you have the following ports forwarded:
-
-TCP ports: 54230, 54231, 54001 and 54002.
-
-UDP port: 54230.
-
 ## 4. Preparing the database:
 
 1. Python script way (recommended!):
@@ -147,6 +131,18 @@ in the output console at the bottom and all of these 3 .exe:
 * topaz_search.exe
 
 should be present in the \topaz\ folder.
+
+Servers are now configured properly. Execute all the above .exes (as Administrator, you can create a shortcut for each one and topaz_search.exe is optional, if you want to use the search function and pydarkstar).
+
+---
+
+/!\ **Port forwarding** /!\
+
+If you are running a server for others to play on, make sure you have the following ports forwarded:
+
+TCP ports: 54230, 54231, 54001 and 54002.
+
+UDP port: 54230.
 
 ## 6. How to update the server:
 **GitHub Desktop:**
