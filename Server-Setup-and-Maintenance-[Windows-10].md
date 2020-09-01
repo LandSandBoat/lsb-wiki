@@ -77,7 +77,7 @@ py dbtool.py
 
 In the new dbtool window:
 
-Select "r. Reset DB" > Enter > "Would you like yo backup your database? [y/N]" > y > Enter > "Are you sure you want to reset your database to default? Type "reset dbtool" to confirm." > type it > Enter > Done.
+"Database tpzdb (default name, change it in the .conf files if you want a different one) does not exist. Would you like to create new database: tpzdb? [y/N]" > y > Enter > Done.
 
 Run HeidiSQL > enter your MariaDB password > verify that the IP address displayed in the "zoneip" column ("Data" tab) of the zone_settings table (bottom) is the correct one (local (127.0.0.1) by default). If you are running a server for others to connect to, you NEED to update this setting. You can adjust all the lines at once by clicking on the "Query" tab then typing:
 
@@ -136,11 +136,11 @@ UDP port: 54230.
 
 By looking at the files that were changed, you should:
 
-* RERUN EVERY .sql MODIFIED FILES: double click on \topaz\tools\dbtool.py > select "1. Update DB" > Enter > "Would you like yo backup your database? [y/N]" > y > Enter > "Proceed with update? [y/N] > y > Enter > Done. This will run all your .sql files and update .py migrations scripts. It will also possibly overwrite any custom changes you have made to your SQL tables. If you are running custom mobs/items/etc. of any kind, you'll want to load the SQL changes to a separate database and compare.
+* RERUN EVERY .sql MODIFIED FILES: double click on \topaz\tools\dbtool.py > select "e. Express Update" (available if .sql were changed) > Enter > "Would you like yo backup your database? [y/N]" > y > Enter > "Proceed with update? [y/N] > y > Enter > Done. This will run all your .sql files. It will also possibly overwrite any custom changes you have made to your SQL tables. If you are running custom mobs/items/etc. of any kind, you'll want to load the SQL changes to a separate database and compare.
 * REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **[5. Build the servers](https://github.com/project-topaz/topaz/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/_edit#5-build-the-servers)**).
 * RESTART YOUR SERVER(S) FOR .conf FILES.
 * .lua files ARE INSTANT IN MOST CASES (\topaz\scripts\globals .luas will need to be reloaded by using the GM command !reloadglobal where appropriate or restarting the server).
-* If there's any new .py file addition in the \topaz\tools\migrations folder, follow the same steps as showed above once you launched the dbtool (3. Prepare the database).
+* If there's any new .py file addition in the \topaz\tools\migrations folder, double click on \topaz\tools\dbtool.py > select "e. Express Update" (available if .py scripts were changed) > Enter > "Would you like yo backup your database? [y/N]" > y > Enter > "Proceed with update? [y/N] > y > Enter > Done. This will run all your .py migrations scripts.
 * /!\ In the \topaz\conf\default folder, make sure you take any .conf file that was updated and put it/them in the precedent folder (\topaz\conf). /!\
 
 ---
