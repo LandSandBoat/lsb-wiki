@@ -8,20 +8,6 @@ Right click on Speakers > Sounds > Playback tab > right click on Speakers > Conf
 
 # 2. Tweaks
 
-## Make your character a Game Master
-
-Execute HeidiSQL > connect to your database > select "chars" > "Data" tab > "gmlevel" column > modify the value from 0 to 5 (maximum level) > close HeidiSQL.
-
-Change zone in game to apply.
-
-Type "!command" in game (refer to the \topaz\scripts\commands folder for a list of commands).
-
-!togglegm: no more aggro.
-
-!togglegm + /anon: invisible through /search.
-
-!hide: invisible to players.
-
 ## In game configuration data, macros and screenshots
 
 In game configuration data and local macros location: PlayOnline\SquareEnix\FINAL FANTASY XI\USER.
