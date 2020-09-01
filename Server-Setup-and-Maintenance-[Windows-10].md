@@ -11,8 +11,8 @@ To build, run, and maintain a Topaz server, you will need to download and instal
 * [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/community/): Under "Workloads" > check "Desktop development with C++". Creating/linking a free account may be required to use it. Used to compile and build the source files.
 * [MariaDB](https://mariadb.org/): You can install HeidiSQL from there or get it separately, just remember the password you set for MariaDB during the installation. Used as SQL database. _**New versions of MySQL from Oracle will NOT work. Use MariaDB!** MySQL hasn't worked properly out of the box since 5.7 - that's a long time ago!_
 * [HeidiSQL](https://www.heidisql.com/): Accept defaults. Used as a GUI frontend for viewing and editing your SQL database.
-* Download and install [Python (latest version)](https://www.python.org/downloads/): **Must be 3.5+, _not_ 2.7!** Check "Add Python 3.8 to PATH". Click on "Customize installation" then everything should be checked on the first window that shows up > Next. Options 2, 3 and 4 should be checked on the second window. Install > Close. Make sure .py files are associated with Python by default so you can double click on them to open them.
-* Download and install [MySQL Connector Python](https://dev.mysql.com/downloads/connector/python/): Accept defaults.
+* [Python](https://www.python.org/downloads/): **Must be 3.5+, _not_ 2.7!** Check "Add Python 3.8 to PATH". Click on "Customize installation" then everything should be checked on the first window that shows up > Next. Options 2, 3 and 4 should be checked on the second window. Install > Close. Make sure .py files are associated with Python by default so you can double click on them to open them.
+* [MySQL Connector Python](https://dev.mysql.com/downloads/connector/python/): Accept defaults (it will be installed through Python below if you don't want to download it this way).
 
 **Make sure both Python and the MySQL Connector are x86 or x64**.
 
@@ -52,31 +52,22 @@ then modify this line each time:
 
 ## 4. Preparing the database:
 
-1. Python script way (recommended!):
-
 Right click + holding the Shift key > context menu: Open command window here/Open PowerShell window here.: then type (**use "pip3" (default) or "pip" in each command, the one that works for you**):
 
 ```
 py -m pip3
 ```
-(skip this step if you installed the MySQL Connector Python manually) enter this command:
+enter this command:
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
-or
-```
-pip3 install mysql-connector-python
-```
-It will download and install MySQL Connector Python.
 
-then enter each of these commands (hit "Enter" after each one) and it will download and install automatically:
+then type this command (hit "Enter" right after):
 
 ```
-py -m pip3 install gitpython
 py -m pip3 install pip
-py -m pip3 install pyyaml
-py -m pip3 install colorama
 ```
+It will download and install MySQL Connector Python, gitpython, pyyaml, colorama and pip.
 
 Followed by:
 ```
@@ -86,10 +77,15 @@ py dbtool.py
 
 In the new dbtool window:
 
-Select the first option "1. Update DB" > "Would you like yo backup your database? [y/N]" > y > Enter > "Proceed with update? [y/N] > y > Enter > Done.
+Select "r. Reset DB" > Enter > "Would you like yo backup your database? [y/N]" > y > Enter > "Are you sure you want to reset your database to default? Type "reset dbtool" to confirm." > type it > Enter > Done.
 
-This will run all your .sql files and update .py migrations scripts.
+Run HeidiSQL > enter your MariaDB password > verify that the IP address displayed in the "zoneip" column ("Data" tab) of the zone_settings table (bottom) is the correct one (local (127.0.0.1) by default). If you are running a server for others to connect to, you NEED to update this setting. You can adjust all the lines at once by clicking on the "Query" tab then typing:
 
+  > UPDATE zone_settings SET zoneip = '**your.IP**';
+
+  Click on "Execute SQL..." (blue icon on top) > Yes.
+
+---
 /!\
 
 Updating Python: Default location of the Python installation files is: C:\Users\Username\AppData\Local\Programs\Python, when updating you may want to relocate old files from your old version's folder to the new one (copy/paste).
@@ -98,22 +94,6 @@ Updating modules: Make sure you check if your modules are up to date from time t
 ```
 py -m pip3 install --upgrade Modulename
 ```
-
----
-
-* Alternatively, you can use the HeidiSQL manual way
-
-2. Execute HeidiSQL and click on "New" (bottom left) then name your session as you wish > Password: Password previously saved from the MariaDB installation > Open > right click on the freshly created/named session (left) > Create new > Database > name it "tpzdb" > OK.
-
-Select "tpzdb" > File > Run SQL file... > select every .sql file from the \topaz\sql folder > Open > click on "Refresh" (F5) once everything is done. 
-
----
-
-3. Don't forget to verify that the IP address displayed in the "zoneip" column ("Data" tab) of the zone_settings table is the correct one (local (127.0.0.1) by default). If you are running a server for others to connect to, you NEED to update this setting. You can adjust all the lines at once by clicking on the "Query" tab then typing:
-
-  > UPDATE zone_settings SET zoneip = '**your.IP**';
-
-  Click on "Execute SQL..." (blue icon on top) > Yes.
 
 ## 5. Build the servers:
 
@@ -156,8 +136,8 @@ UDP port: 54230.
 
 By looking at the files that were changed, you should:
 
-* RERUN EVERY .sql MODIFIED FILES (follow the same steps as showed above once you launched the dbtool ([4. Preparing the database](https://github.com/project-topaz/topaz/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/_edit#5-preparing-the-database))). This will overwrite any custom changes you have made to your SQL tables. If you are running custom mobs/items/etc. of any kind, you'll want to load the SQL changes to a separate database and compare.
-* REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **4.**).
+* RERUN EVERY .sql MODIFIED FILES: double click on \topaz\tools\dbtool.py > select "1. Update DB" > Enter > "Would you like yo backup your database? [y/N]" > y > Enter > "Proceed with update? [y/N] > y > Enter > Done. This will run all your .sql files and update .py migrations scripts. It will also possibly overwrite any custom changes you have made to your SQL tables. If you are running custom mobs/items/etc. of any kind, you'll want to load the SQL changes to a separate database and compare.
+* REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **[5. Build the servers](https://github.com/project-topaz/topaz/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/_edit#5-build-the-servers)**).
 * RESTART YOUR SERVER(S) FOR .conf FILES.
 * .lua files ARE INSTANT IN MOST CASES (\topaz\scripts\globals .luas will need to be reloaded by using the GM command !reloadglobal where appropriate or restarting the server).
 * If there's any new .py file addition in the \topaz\tools\migrations folder, follow the same steps as showed above once you launched the dbtool (3. Prepare the database).
@@ -182,7 +162,7 @@ Open the topaz\conf\version.conf file with a text editor (Notepad or [Notepad++]
 
 > VER_LOCK: 2
 
-to
+to)
 
 > VER_LOCK: 0
 
@@ -190,42 +170,12 @@ save then restart the topaz_connect.exe server.
 
 ## 7. Database management
 
-* Manual way (HeidiSQL):
+Execute \topaz\tools\dbtool.py.
 
-_Exporting_:
+_Backup_:
 
-1. Execute HeidiSQL > select your session and connect to it > select "tpzdb" in the left panel > select:
-```
-accounts
-auction_house
-chars
-char_effects
-char_equip
-char_exp
-char_inventory
-char_jobs
-char_look
-char_pet
-char_points
-char_profile
-char_skills
-char_spells
-char_stats
-char_storage
-char_vars
-conquest_system
-delivery_box
-linkshells
-```
-2. Right click on it/them > Export database as SQL...:
-```
-Table(s): check "Create".
-Data: Insert.
-Output: Directory - one file per object in database subdirectories.
-Directory: (click on the folder icon on the right then choose a name and a location to save your stuff).
-```
-3. Export > Close.
+Select "3. Backup" > Enter > "Would you like to backup your database? [y/N]" > y > Enter > Done.
 
-_Importing_:
+_Restore/Import_:
 
-Repeat the alternative steps to import .sql files manually under [4. Preparing the database](https://github.com/project-topaz/topaz/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/_edit#5-preparing-the-database) (but select the .sql files you saved before instead).
+Select "4. Restore/Import" > Enter > "Would you like to backup your database? [y/N]" > y > Enter > "Choose a number to import, or type "delete #" to delete a file." > select desired backup > Enter > "If this is a full backup created by this tool, it is recommended to manually change the DB_VER in ..\conf\version.conf to the hash sequence in the filename, between the database name and the timestamp, so that express update functions properly. Import _desired-backup.sql_? [y/N]" > y > Enter > Done.
