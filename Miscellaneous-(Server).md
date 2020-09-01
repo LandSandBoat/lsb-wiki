@@ -136,9 +136,7 @@ exit
 ```
 Hit "Enter" (returned message: "Bye").
 
----
-
-## How to check if it was changed correctly (while still having the same prompt command open)
+How to check if it was changed correctly (while still having the same prompt command open):
 
 ```
 mysql -u root -p
