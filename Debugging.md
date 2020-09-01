@@ -1,3 +1,14 @@
+## Apply a Pull Request that is not already merged (**at your own risk, will not provide support afterward!**)
+
+Add ".patch" to the end of a Pull Request URL and hit Enter, example:
+https://github.com/project-topaz/topaz/pull/#.patch.
+Copy/paste everything it into a newly created .txt file > save > rename the file extension to ".patch".
+Right click on the new .patch file > TortoiseGit > Review/apply single patch... > select the root folder of the project ("topaz" in this case).
+Two windows will open:
+In the big one you can compare differences and possible conflicts between the patch files and your files.
+In the small one, hit "Patch all items".
+Close TortoiseGit.
+
 ## How to make a dump file with Visual Studio 2019
 
 (Make sure you're running your servers and you identified a crash for which you've been asked to provide a dump file.)
