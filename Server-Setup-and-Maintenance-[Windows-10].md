@@ -162,7 +162,7 @@ Open the topaz\conf\version.conf file with a text editor (Notepad or [Notepad++]
 
 > VER_LOCK: 2
 
-to)
+to:
 
 > VER_LOCK: 0
 
