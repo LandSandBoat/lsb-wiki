@@ -10,6 +10,7 @@
   * [Common Issues & Tweaks](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Client))
 * Development
   * [Using Github](https://github.com/project-topaz/topaz/wiki/Using-Github)
+  * [Developer Workflow](https://github.com/project-topaz/topaz/wiki/Developer-Workflow)
   * [Style Guide](https://github.com/project-topaz/topaz/blob/release/CONTRIBUTING.md)
   * [Understanding Variables](https://github.com/project-topaz/topaz/wiki/Understanding-variables-%E2%80%94-a-brief-guide)
 * [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
