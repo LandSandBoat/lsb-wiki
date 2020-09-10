@@ -1,6 +1,6 @@
 ## Apply a Pull Request that is not already merged (**at your own risk, will not provide support afterward!**)
 
-Add ".patch" to the end of a Pull Request URL and hit Enter, example:
+Add ".diff" to the end of a Pull Request URL and hit Enter, example:
 https://github.com/project-topaz/topaz/pull/#.patch.
 Copy/paste everything into a newly created .txt file > save > rename the file extension to ".patch".
 Right click on the new .patch file > TortoiseGit > Review/apply single patch... > select the root folder of the project ("topaz" in this case).
