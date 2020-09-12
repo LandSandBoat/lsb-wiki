@@ -38,7 +38,7 @@ To build, run, and maintain a Topaz server, you will need to download and instal
 
 ## 3. .conf files configuration:
 
-In the \topaz\conf\default folder, make sure you take all the files in there and put them in the precedent folder (\topaz\conf\) like the readme.md file says. Open these three files (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
+In the \topaz\conf\default folder, make sure you **copy** all the files in there and put them in the precedent folder (\topaz\conf\) like the readme.md file says. Open these three files (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
 
 * login.conf
 * map.conf
