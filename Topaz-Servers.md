@@ -132,11 +132,12 @@ New server--reborn from Resolute--doing an official launch on 05/06/2020 at 2:30
 * **Discord:**  https://discord.gg/hUEzYcM
 * **Server Connection Info:** --server play.xi-phynix.com --hairpin
 
-* PHYNIX Open to the Public (Stay Classy)
+* **PHYNIX**
 
-* 75 Cap Custom era.
+* Level Cap 75
 * New Players Anniversary Ring / Warp Ring.
 * CoP Complete Mission Release/Sea HNM working/Limbus.
+* Server Uptime 24/7 
 * Zilart Missions Working Sky Access/Apoc Nigh.
 * Starting Gil: 20,000
 * AH and Economy Built by Players
