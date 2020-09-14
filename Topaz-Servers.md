@@ -134,18 +134,17 @@ New server--reborn from Resolute--doing an official launch on 05/06/2020 at 2:30
 
 * PHYNIX Open to the Public (Stay Classy)
 
-* 75 Custom era.
-* First 60 Player receives Anniversary Ring / Warp Ring.
-* CoP Complete Mission Release/Sea HNM working.
-* Zilart Missions Working Sky Access.
+* 75 Cap Custom era.
+* New Players Anniversary Ring / Warp Ring.
+* CoP Complete Mission Release/Sea HNM working/Limbus.
+* Zilart Missions Working Sky Access/Apoc Nigh.
 * Starting Gil: 20,000
 * AH and Economy Built by Players
-* Double Gil Questing
 * QoL Home point Crystals Open
 * 2x EXP For Low population.
 * DNC, SCH, RUN, GEO Not playable
 * Explorer Moogles Active.
-* GM Player appreciation events.
+* Player appreciation events.
 
 We at PHYNIX believe that the time you spend on FFXI should not go unnoticed.
 
