@@ -1,6 +1,5 @@
 # 75 Cap Servers
 * [Aurora](#Aurora) era, custom hardcore
-* [Gold Saucer](#Gold-Saucer) will keep cap with modern content
 * [Grounds of Titan](#GoT) 75 cap,  great QOL perks (new server 2020/05)
 * [QuetzRebirth](#QuetzRebirth) era, QOL changes, some custom content
 * [Phynix](#Phynix) 75 cap, QOL changes
@@ -83,26 +82,6 @@ All content comes from the [canary branch](https://github.com/project-topaz/topa
 * **Crafting + Skill ups:** Sames as current retail (crafting is broken so its currently at x2.6)
 * **Mission BCNM + CoP Areas:** Same as current retail
 * **Trusts:** Enabled
-
-## Gold Saucer
- * **Server address:** play.gold-saucer.com
- * **Website:** http://gold-saucer.com/ (WIP)
- * **Discord:** https://discord.gg/8mck2W8
-
-New server--reborn from Resolute--doing an official launch on 05/06/2020 at 2:30pm PST (further details on discord), and run on a privately owned and operated dedicated server.  Gold Saucer's goal is to relive the old-era FFXI feel and experience while bringing modern QoL updates to the game.  We are focused on a strong community and group play, so several features that promote solo-play are disabled.  The level cap will always be 75, even as modern and custom content is added to the game.  Admins and players alike continue to make contributions back to Project Topaz, with a focus on era-content that Gold Saucer is building.
-
-* **Level Cap:** 75
-* **Movement Speed:** 60 (1.5x retail)
-* **Jobs:** All jobs up to TOAU unlocked for new players, DNC and SCH are available to unlock by normal means.
-* **Exp Rate:** 2008 era (100xp for EM)
-* **Expansions enabled:**  All content currently available from Topaz.
-* **Home Point Warps:** Enabled
-* **Outpost Warps:** Unlocked at start
-* **GOV/FOV/Explorer Moogle:** Disabled
-* **Crafting:**  2008 era skillup rate and levels.
-* NMs are slightly boosted
-* Dualboxing in the field is not allowed.  You may have a second account/character that is restricted to storage and crafting.
-* Many job trait and ability level requirements have been lowered, including TH2 at level 37
 
 ## Grounds of Titan
 
