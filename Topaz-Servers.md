@@ -9,7 +9,7 @@
 * [Canaria](#Canaria) modern era
 * [Tantalus](#Tantalus) 80 cap era, QOL changes
 * [Vana Skies](#Vana-Skies) modern era
-* [Funzone] (#Funzone) modern era
+* [Omicron](#Omicron) modern era, QOL changes
 
 ***
 # Server Details
@@ -225,15 +225,17 @@ Level 99 Cap with endgame ilvl content coming soon. Vanadiel "JP Midnight" has b
 * **All Outpost Warps Unlocked:** Enabled.
 * **New Style Skill-Ups:** Enabled. (Allows parry, block, and guard to skill up regardless of the action occurring)
 
-## Funzone:
+## Omicron:
 
-Level 99 Cap Just here to have fun, made this server to have my old friends/family to play and relive some of the glory-ish day's. Based of Canary branch will update every so often.
+Level 99 Cap Just here to have fun, made this server to have my old friends/family to play and relive some of the glory-ish day's. Based of Canary branch will update every so often. Bot's, Multi Boxing, Farm bots, etc.. Are fine I honestly don't care play how you like. On the topic of Bots If you use Cure Please/UH or anything like that let me know and I will **99 WHM only**. You have to buy your own spells/gear.
 
 * **Server address:** --server 96.244.4.162 --hairpin
-* **Discord:** discord.gg/4MS2FWr
+* **Discord:** https://discord.gg/4MS2FWr
 
-* **EXP Rate:** x2
+* **Expansions:** All expansions are Active within the limitation's of Project Topaz.
+* **EXP Rate:** x2 
 * **Fame Rate:** x2
+* **FOV:** Active with crazy EXP and Tab's
 * **Skill-Up Rate:** Maxed
 * **Craft Skill-Up Rate:** Maxed
 * **Skill/Craft Multiplier:** x5
@@ -243,23 +245,23 @@ Level 99 Cap Just here to have fun, made this server to have my old friends/fami
 * **EXP Loss:** None
 * **Battlefield Lvl Cap:** 99
 * **Player Speed:** 70
-* **Trust's stats:** x2.5 (just to speed things along) 
+* **Trust's stats:** x2.5 (just to help speed things along) 
 * **Mob Speed:** normal
 * **Unlocked Subjob:** Disabled.
 * **All Maps Unlocked:** Enabled.
-* **Level Cap:** 99, Unlocked
-* **Subjob:** Unlocked
-* **Advanced Job's:** still gotta work for them lvl 30 
-* **Fields of Valor:** Enabled
-* **Grounds of Valor:** Enabled
-* **Explorer Moogles:** Enabled, available at level 1
-* **Crystal and Book Teleport:** Enabled
-* **Widescan:** Enabled for all jobs
+* **Level Cap:** 99, Unlocked.
+* **Subjob:** Unlocked.
+* **Advanced Job's:** still got to work for them - lvl 30! 
+* **Fields of Valor:** Enabled.
+* **Grounds of Valor:** Enabled.
+* **Explorer Moogles:** Enabled, available at level 1.
+* **Crystal and Book Teleport:** Enabled.
+* **Widescan:** Enabled for all jobs.
 * **All Outpost Warps Unlocked:** Enabled.
-* **Mobs:** have 1 second respawn time
-* **subjob-to-mainjob:** 2/3 of main job (99/66)
+* **Mobs:** all mobs have 1 second respawn time. 
+* **subjob-to-mainjob:** 2/3 of main job (99/66).
 * **Max Meritpoints held:** 200 for no actual reason.
-* **King Behemoth:** has 7.5mil HP...for fun.
+* **King Behemoth:** has 7.5mil HP...for fun. If you want defending ring, just ask.
 * **Auction House:** is fully stocked for 100 gil. As more players are active, I will adjust.
-* **Gobbie Box:** Active at start, 100 Login points daily.
-* **Custom Commands** !AH, !Homepoint, !Goto, !REGEN- regen/refresh/regain/Exp bonus for 4 hours
+* **Gobbie Box:** Active at start, 150Login points daily.
+* **Custom Commands:** !AH, !Homepoint, !Goto, !REGEN- regen/refresh/regain/Exp bonus for 4 hours.
