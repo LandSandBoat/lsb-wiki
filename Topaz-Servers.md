@@ -9,6 +9,7 @@
 * [Canaria](#Canaria) modern era
 * [Tantalus](#Tantalus) 80 cap era, QOL changes
 * [Vana Skies](#Vana-Skies) modern era
+* [Funzone] (#Funzone) modern era
 
 ***
 # Server Details
@@ -223,3 +224,42 @@ Level 99 Cap with endgame ilvl content coming soon. Vanadiel "JP Midnight" has b
 * **Widescan:** Enabled for all jobs
 * **All Outpost Warps Unlocked:** Enabled.
 * **New Style Skill-Ups:** Enabled. (Allows parry, block, and guard to skill up regardless of the action occurring)
+
+## Funzone:
+
+Level 99 Cap Just here to have fun, made this server to have my old friends/family to play and relive some of the glory-ish day's. Based of Canary branch will update every so often.
+
+* **Server address:** --server 96.244.4.162 --hairpin
+* **Discord:** Not yet
+
+* **EXP Rate:** x2
+* **Fame Rate:** x2
+* **Skill-Up Rate:** Maxed
+* **Craft Skill-Up Rate:** Maxed
+* **Skill/Craft Multiplier:** x5
+* **Starting Gil:** 100,000 gil
+* **Start Inventory:** 80
+* **Healing tick speed:** 1 seconds.
+* **EXP Loss:** None
+* **Battlefield Lvl Cap:** 99
+* **Player Speed:** 70
+* **Trust's stats:** x2.5 (just to speed things along) 
+* **Mob Speed:** normal
+* **Unlocked Subjob:** Disabled.
+* **All Maps Unlocked:** Enabled.
+* **Level Cap:** 99, Unlocked
+* **Subjob:** Unlocked
+* **Advanced Job's:** still gotta work for them lvl 30 
+* **Fields of Valor:** Enabled
+* **Grounds of Valor:** Enabled
+* **Explorer Moogles:** Enabled, available at level 1
+* **Crystal and Book Teleport:** Enabled
+* **Widescan:** Enabled for all jobs
+* **All Outpost Warps Unlocked:** Enabled.
+* **Mobs:** have 1 second respawn time
+* **subjob-to-mainjob:** 2/3 of main job (99/66)
+* **Max Meritpoints held:** 200 for no actual reason.
+* **King Behemoth:** has 7.5mil HP...for fun.
+* **Auction House:** is fully stocked for 100 gil. As more players are active, I will adjust.
+* **Gobbie Box:** Active at start, 100 Login points daily.
+* **Custom Commands** !AH, !Homepoint, !Goto, !REGEN- regen/refresh/regain/Exp bonus for 4 hours
