@@ -230,7 +230,7 @@ Level 99 Cap with endgame ilvl content coming soon. Vanadiel "JP Midnight" has b
 Level 99 Cap Just here to have fun, made this server to have my old friends/family to play and relive some of the glory-ish day's. Based of Canary branch will update every so often.
 
 * **Server address:** --server 96.244.4.162 --hairpin
-* **Discord:** Not yet
+* **Discord:** discord.gg/4MS2FWr
 
 * **EXP Rate:** x2
 * **Fame Rate:** x2
