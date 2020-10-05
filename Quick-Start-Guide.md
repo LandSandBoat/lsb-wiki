@@ -69,7 +69,7 @@
   * Select 'Reset DB' and follow the instructions to "reset" the database.
 
   ## To Update:
-  * Open the topaz dir in a terminal.
+  * Open the `topaz` dir in a terminal.
   * Type:
   ```
   git stash
