@@ -37,7 +37,7 @@
   <summary>Linux</summary>
   
   ## To Install
-  * Use your package manager to install the following packages, dev version if available: 
+  * Use your package manager to install the following packages or their equivalent, dev version if available: 
 `mariadb-server libmariadbclient libluajit-5.1 libzmq3 autoconf pkg-config libssl python3 git`
   * Type:
   ```
