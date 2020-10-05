@@ -9,7 +9,7 @@
   * Open VS2019
   * Clone from URL https://github.com/project-topaz/topaz.git
   * Open in Explorer, **copy** all files in `topaz/conf/default/` into `topaz/conf/`.
-  * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files and change `mysql_password` to the password set during MariaDB setup.
+  * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_password` to the password set during MariaDB setup.
   * Open the tools folder, shift+right-click, open Powershell.
   * Type:
   ```
@@ -46,17 +46,12 @@
   * Follow the instructions for setting up the DB.
   * Type (changing 'password' to your password of choice):
   ```
-  sudo mysql -u root -p
-  CREATE USER 'topaz'@'localhost' IDENTIFIED BY 'password';
-  CREATE DATABASE tpzdb;
-  USE tpzdb;
-  GRANT ALL PRIVILEGES ON tpzdb.* TO 'topaz'@'localhost';
-  exit
+  sudo mysql -u root -p -e "CREATE USER 'topaz'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE tpzdb;USE tpzdb;GRANT ALL PRIVILEGES ON tpzdb.* TO 'topaz'@'localhost';"
   git clone --recursive https://github.com/project-topaz/topaz.git
   cd topaz
   cp conf/default/* conf/
   ```
-  * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files and change `mysql_login` and `mysql_password` to the login/password set during MariaDB setup.
+  * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_login` and `mysql_password` to the login/password set during MariaDB setup.
   * In the `topaz` dir, type:
   ```
   sh autogen.sh
