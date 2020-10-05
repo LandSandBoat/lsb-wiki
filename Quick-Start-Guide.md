@@ -19,7 +19,7 @@
   * Follow the on-screen instructions.
   * Build the solution in VS2019.
 
-  ## To Update:
+  ## To Update
   * Open the topaz folder in Explorer.
   * Shift+right-click, open Powershell.
   * Type:
@@ -68,7 +68,7 @@
   ```
   * Select 'Reset DB' and follow the instructions to "reset" the database.
 
-  ## To Update:
+  ## To Update
   * Open the `topaz` dir in a terminal.
   * Type:
   ```
