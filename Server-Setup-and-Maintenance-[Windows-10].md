@@ -21,8 +21,11 @@ To build, run, and maintain a Topaz server, you will need to download and instal
 <details>
   <summary>Git CLI</summary>
   
-1. Open a Powershell window.
-2. Type: `git clone --recursive https://github.com/project-topaz/topaz.git`
+1. Open a PowerShell window.
+2. Type:
+```
+git clone --recursive https://github.com/project-topaz/topaz.git
+```
 </details>
 <details>
   <summary>GitHub Desktop</summary>
@@ -44,7 +47,7 @@ To build, run, and maintain a Topaz server, you will need to download and instal
 
 ## 3. .conf files configuration:
 
-In the \topaz\conf\default folder, make sure you **copy** all the files in there and put them in the precedent folder (\topaz\conf\) like the readme.md file says. Open these three files (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
+In the `topaz\conf\default\` folder, make sure you **copy** all the files in there and put them in the precedent folder (`topaz\conf\`) like the readme.md file says. Open these three files (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
 
 * login.conf
 * map.conf
@@ -58,12 +61,8 @@ then modify this line each time:
 
 ## 4. Preparing the database:
 
-Right click + holding the Shift key > context menu: Open command window here/Open PowerShell window here.: then type:
+In the `topaz\tools\` folder, right click + holding the Shift key > context menu: Open command window here/Open PowerShell window here.: then type:
 
-```
-py -3 -m pip
-```
-enter this command:
 ```
 py -3 -m pip install -r requirements.txt
 ```
@@ -71,20 +70,30 @@ It will download and install MySQL Connector Python, gitpython, pyyaml, colorama
 
 Followed by:
 ```
-py dbtool.py
+py -3 dbtool.py
 ```
-(or just double click on \topaz\tools\dbtool.py)
+(or just double click on `topaz\tools\dbtool.py`)
 
 In the new dbtool window:
 
-"Database tpzdb (default name, change it in the .conf files if you want a different one) does not exist. Would you like to create new database: tpzdb? [y/N]" > y > Enter > Done.
+"Database tpzdb (default name, change it in the .conf files if you want a different one) does not exist. Would you like to create new database: tpzdb? [y/N]" > y > Enter
 
-Run HeidiSQL > enter your MariaDB password > verify that the IP address displayed in the "zoneip" column ("Data" tab) of the zone_settings table (bottom) is the correct one (local (127.0.0.1) by default). If you are running a server for others to connect to, you NEED to update this setting. Create a file in `topaz/sql/backups/` with the following line: `UPDATE zone_settings SET zoneip = 'your.public.IP';` then run dbtool. Select the option to import/restore backup, and import the file you just created. Be sure to import this file again if an update overwrites this setting. You can also use a url as the zoneip, as in: `UPDATE zone_settings SET zoneip = 'myurl.noip.com';`. This process is also how you would go about maintaining custom mob levels, positions, and other custom database changes while staying mostly up to date with upstream.
+Done.
+
+If you are running a server for others to connect to, you NEED to update the `zoneip` column in the `zone_settings` table in your database. An easy way to do this is to create a .sql file in `topaz\sql\backups\` with the following line: 
+```
+UPDATE zone_settings SET zoneip = 'your.public.IP';
+```
+Then run dbtool, select the option to Restore/Import, and import the file you just created. Be sure to import this file again if an update overwrites this setting. You can also use a url as the zoneip, as in: 
+```
+UPDATE zone_settings SET zoneip = 'myurl.noip.com';
+```
+This process is also how you would go about maintaining custom mob levels, positions, and other custom database changes while staying mostly up to date with upstream.
 
 ---
 /!\
 
-Updating Python: Default location of the Python installation files is: C:\Users\Username\AppData\Local\Programs\Python, when updating you may want to relocate old files from your old version's folder to the new one (copy/paste).
+Updating Python: Default location of the Python installation files is: `C:\Users\Username\AppData\Local\Programs\Python`, when updating you may want to relocate old files from your old version's folder to the new one (copy/paste).
 
 Updating modules: Make sure you check if your modules are up to date from time to time (you'll probably get reminded while running migrations scripts). To do so, open a command prompt like stated above and enter:
 ```
@@ -93,7 +102,7 @@ py -3 -m pip install --upgrade Modulename
 
 ## 5. Build the servers:
 
-1. Execute Visual Studio Community 2019: Open a project or solution (on the right) > select the "topaz.sln" file from the \topaz\win32 folder > Open.
+1. Execute Visual Studio Community 2019: Open a project or solution (on the right) > select the "topaz.sln" file from the `topaz\win32\` folder > Open.
 
 2. Once it's loaded > Build > Build Solution.
 
@@ -106,7 +115,7 @@ in the output console at the bottom and all of these 3 .exe:
 * topaz_game.exe
 * topaz_search.exe
 
-should be present in the \topaz\ folder.
+should be present in the `topaz\` folder.
 
 Servers are now configured properly. Execute all the above .exes (as Administrator, you can create a shortcut for each one and topaz_search.exe is optional, if you want to use the search function and pydarkstar).
 
@@ -124,7 +133,7 @@ UDP port: 54230.
 <details>
   <summary>Git CLI</summary>
   
-1. Open a Powershell window.
+1. In the `topaz\` folder, open a PowerShell window.
 2. Type:
 ```
 git stash
@@ -148,11 +157,15 @@ git stash pop
 
 After pulling the new files:
 
-* RERUN EVERY .sql MODIFIED FILES: double click on \topaz\tools\dbtool.py > select "e. Express Update" (available if .sql were changed) > Enter > "Would you like yo backup your database? [y/N]" > y > Enter > "Proceed with update? [y/N] > y > Enter > Done. This will run all your .sql files and any needed migrations. It will also possibly overwrite any custom changes you have made to your SQL tables. If you are running custom mobs/items/etc. of any kind, you'll want to save these as queries in a .sql file in `topaz/sql/backups/` and use the Import/Restore Backup option in dbtool to import those changes after an update. See [4. Preparing the Database](https://github.com/project-topaz/topaz/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#4-preparing-the-database) for more info.
+* RERUN EVERY .sql MODIFIED FILES: Open a PowerShell window in the `topaz\tools\` folder and type:
+```
+py -3 dbtool.py update
+```
+This will import all of the .sql files that were updated and run any needed migrations. It will also possibly overwrite any custom changes you have made to your SQL tables. If you are running custom mobs/items/etc. of any kind, you'll want to save these as queries in a .sql file in `topaz\sql\backups\` and use the Restore/Import option in dbtool to import those changes after an update. See [4. Preparing the Database](https://github.com/project-topaz/topaz/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#4-preparing-the-database) for more info.
 * REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **[5. Build the servers](https://github.com/project-topaz/topaz/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#5-build-the-servers)**).
 * RESTART YOUR SERVER(S) FOR .conf FILES AND AFTER UPDATES WITH dbtool.
-* .lua files ARE INSTANT IN MOST CASES (\topaz\scripts\globals .luas will need to be reloaded by using the GM command !reloadglobal where appropriate or restarting the server).
-* /!\ In the \topaz\conf\default folder, make sure you take any .conf file that was updated and put it/them in the precedent folder (\topaz\conf). Do not overwrite version.conf, as dbtool uses it to track DB version and will update CLIENT_VER for you if it changes./!\
+* .lua files ARE INSTANT IN MOST CASES (`topaz\scripts\globals\` .luas will need to be reloaded by using the GM command `!reloadglobal` where appropriate or restarting the server).
+* /!\ In the `topaz\conf\default\` folder, make sure you take any .conf file that was updated and put it/them in the precedent folder (`topaz\conf\`). Do not overwrite version.conf, as dbtool uses it to track DB version and will update CLIENT_VER for you if it changes./!\
 
 ---
 
@@ -169,7 +182,7 @@ If the server (Project Topaz) and the client (Final Fantasy XI) don't share the 
 [Error] lobbyview_parse: The server must be updated to support this client version
 ```
 
-Open the topaz\conf\version.conf file with a text editor (Notepad or [Notepad++](https://notepad-plus-plus.org/)) and modify the following line:
+Open the `topaz\conf\version.conf` file with a text editor (Notepad or [Notepad++](https://notepad-plus-plus.org/)) and modify the following line:
 
 > VER_LOCK: 2
 
@@ -181,7 +194,7 @@ save then restart the topaz_connect.exe server.
 
 ## 7. Database management
 
-Execute \topaz\tools\dbtool.py.
+Execute `topaz\tools\dbtool.py`.
 
 _Backup_:
 
@@ -221,4 +234,7 @@ Select "4. Restore/Import" > Enter > "Would you like to backup your database? [y
   - linkshells.sql
   - server_variables.sql
 ```
-These files will be left untouched by default during updates using dbtool. You can manually edit this list using dbtool or editing `\topaz\tools\config.yaml`. You can also create a backup of _only_ these tables by typing `py -3 dbtool.py backup lite` in a PowerShell window in `topaz/tools/`.
+These files will be left untouched by default during updates using dbtool. You can manually edit this list using dbtool or editing `topaz\tools\config.yaml`. You can also create a backup of _only_ these tables by opening a PowerShell window in the `topaz\tools\` folder and typing:
+```
+py -3 dbtool.py backup lite
+```
