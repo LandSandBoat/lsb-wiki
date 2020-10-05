@@ -8,7 +8,7 @@
   * Install [Python 3](https://www.python.org/downloads/), check to add to PATH.
   * Open VS2019
   * Clone from URL https://github.com/project-topaz/topaz.git
-  * Open in Explorer, copy all files in `topaz/conf/default/` into `topaz/conf/`.
+  * Open in Explorer, **copy** all files in `topaz/conf/default/` into `topaz/conf/`.
   * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files and change `mysql_password` to the password set during MariaDB setup.
   * Open the tools folder, shift+right-click, open Powershell.
   * Type:
