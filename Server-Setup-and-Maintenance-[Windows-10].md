@@ -169,8 +169,6 @@ This will import all of the .sql files that were updated and run any needed migr
 
 ---
 
-When an official update is available, you'll need to update the client (Final Fantasy) too. Repeat the whole process listed in step [2. Updating (automatic way) Client installation setup guide](https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows-10%5D).
-
 /!\ **common issue** /!\
 
 /!\ **WE STRONGLY ADVISE AGAINST LOCKING THE SERVER TO OLDER VERSIONS. IT IS A UNIVERSALLY BAD IDEA.** It _will_ cause issues even _if_ you manage to keep both server and client versions on par! /!\
