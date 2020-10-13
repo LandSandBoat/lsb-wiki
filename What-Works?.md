@@ -18,6 +18,7 @@ This list is free for anyone to update and is very probably out of date, feel fr
 
 # Jobs
 | Status| Jobs |
+|---|---|
 | ❌ | GEO, RUN |
 | ⚠️ | SMN, BLU |
 | ⛔ | PUP |
