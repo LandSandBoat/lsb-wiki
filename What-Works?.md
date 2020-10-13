@@ -16,6 +16,14 @@ This list is free for anyone to update and is very probably out of date, feel fr
 | ❔ | Status Unknown |
 | No Mark | Status Unknown |
 
+# Jobs
+| Status| Jobs |
+| ❌ | GEO, RUN |
+| ⚠️ | SMN, BLU |
+| ⛔ | PUP |
+| ✔️ | All others (up to Lv75) |
+| ❔ | All others (post-75) |
+
 # Missions
 Playable missions are marked in the following file with `--+--` after their names <br>
 https://github.com/project-topaz/topaz/blob/release/scripts/globals/missions.lua
@@ -103,7 +111,11 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 # Hobby & Misc Content
 ### Fishing ❌
 ### Gardening ✔️
+### Mog Garden ❌
+### Monstrosity ❌
 ### Mounts & 'Full Speed Ahead' Minigame ✔️
+### Chocobo Raising ❌
+### Adventuring Fellows ❌
 ### Trusts 🐤
 ### Records of Eminence ✔️
 ### Magian Trials 🐤
