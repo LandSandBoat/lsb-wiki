@@ -124,6 +124,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 ### Chocobo Digging ✔️
 ### Chocobo Racing ❌
 ### Chocobo Raising ❌
+### Crafting ✔️
 ### Fields of Valor ✔️
 ### Fishing ❌
 ### Gardening ✔️
