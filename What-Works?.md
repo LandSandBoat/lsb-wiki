@@ -44,7 +44,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/missions.lua
 | ⛔ | A Shantotto Ascension | Up to ASA 3 |
 | ⛔ | A Shantotto Ascension | Up to ASA 3 |
 | ⛔ | Rhapsodies of Vanadiel | Up to ROV 1-18 |
-| ⛔ | The Voracious Resurgence | |
+| ❌ | The Voracious Resurgence | |
 
 # Quests
 Playable missions are marked in the following file with `--+--` after their names <br>
@@ -54,94 +54,116 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 ## Pre-Item Level
 
 ### Base Game & Rise of the Zilart ⚠️
-#### BCNMs
-> Unusable fights are commented out with `--`: https://github.com/project-topaz/topaz/blob/release/scripts/globals/bcnm.lua
-#### HNMs - Land Kings ✔️
-#### "Classic" Dynamis ❌
-#### "Neo" Dynamis ⚠️
-> City and Dreamworld zones farmable, some unimplemented NMs
-#### Sky NMs ✔️
+
+| Status | Name | Notes |
+|---|---|---|
+| ⚠️ | BCNMs | Unusable fights are commented out with `--`: https://github.com/project-topaz/topaz/blob/release/scripts/globals/bcnm.lua |
+| ✔️ | HNMs - Land Kings | |
+| ❌ | "Classic" Dynamis | |
+| ⚠️ | "Neo" Dynamis | City and Dreamworld zones farmable, some unimplemented NMs |
+| ✔️ | Sky NMs | |
 
 ### Chains of Promathia ⛔
-#### HNMs - Wyrms ✔️
-#### Sea NMs ⚠️
-> Some NMs unimplemented, notably Jailer of Love / Absolute Virtue
-#### Limbus ⛔
-#### Empty Notorious Monsters (ENM) ❔
+
+| Status | Name | Notes |
+|---|---|---|
+| ✔️ | HNMs - Wyrms | |
+| ⚠️ | Sea NMs | Some NMs unimplemented, notably Jailer of Love / Absolute Virtue |
+| ⛔ | Limbus | |
+| ❔ | Empty Notorious Monsters (ENM) | |
 
 ### Treasures of Aht Urhgan ❔
-#### Assault ❌
-#### Besieged ❌
-#### Einherjar ❌
-#### HNMs - ToAU Zones ❔
-#### Imperial Seal Notorious Monsters (ISNM) ❔
-#### Nyzul Isle Investigation ❌
-#### Salvage ❌
-#### Zeni Notorious Monsters (ZNM) ❔
-> Some NMs scripted (accuracy unverified), Zeni itself not implemented
+
+| Status | Name | Notes |
+|---|---|---|
+| ❌ | Assault | |
+| ❌ | Besieged | |
+| ❌ | Einherjar | |
+| ❔ | HNMs - ToAU Zones| |
+| ❔ | Imperial Seal Notorious Monsters (ISNM) | |
+| ❌ | Nyzul Isle Investigation | |
+| ❌ | Salvage | |
+| ❔ | Zeni Notorious Monsters (ZNM) | Some NMs scripted (accuracy unverified), Zeni itself not implemented |
 
 ### Wings of the Goddess ❌
-#### Allied Notes Notorious Monsters (ANNM) ❌
-#### Campaign ❌
-#### Stronghold Notorious Monsters (SCNM) ❌
-#### Walk of Echoes ❌
+
+| Status | Name | Notes |
+|---|---|---|
+| ❌ | Allied Notes Notorious Monsters (ANNM) | |
+| ❌ | Campaign | |
+| ❌ | Stronghold Notorious Monsters (SCNM) | |
+| ❌ | Walk of Echoes | |
 
 ### Abyssea Era  ⛔
-#### Abyssea ⛔
-#### Bastion ❌
-#### Legion ❌
-#### Meeble Burrows ❌
-#### Voidwatch ❌
+
+| Status | Name | Notes |
+|---|---|---|
+| ⛔ | Abyssea  | |
+| ❌ | Bastion | |
+| ❌ | Legion | |
+| ❌ | Meeble Burrows | |
+| ❌ | Voidwatch  | |
 
 ## Post-Item Level ❌
 
 ### Seekers of Adoulin ❌
-#### Skirmish ❌
-#### Delve ❌
-#### Incursion ❌
-#### Reives ❌
-#### Sinister Reign ❌
-#### Vagary ❌
+
+| Status | Name | Notes |
+|---|---|---|
+| ❌ | Skirmish | |
+| ❌ | Delve | |
+| ❌ | Incursion | |
+| ❌ | Reives | |
+| ❌ | Sinister Reign | |
+| ❌ | Vagary | |
 
 ### Modern Era ❌
-#### AMAN Trove ❌
-#### Ambuscade ❌
-#### Domain Invasion ❌
-#### Dynamis Divergence ❌
-#### High-Tier Mission Battlefields ❌
-#### Geas Fete ❌
-#### Odyssey ❌
-#### Omen ❌
-#### Sacred Kindred Crest Notorious Monsters (SKCNM) ❌
-#### Unity - Wanted ❌
+
+| Status | Name | Notes |
+|---|---|---|
+| ❌ | AMAN Trove | |
+| ❌ | Ambuscade | |
+| ❌ | Domain Invasion | |
+| ❌ | Dynamis Divergence | |
+| ❌ | High-Tier Mission Battlefields | |
+| ❌ | Geas Fete | |
+| ❌ | Odyssey | |
+| ❌ | Omen | |
+| ❌ | Sacred Kindred Crest Notorious Monsters (SKCNM) | |
+| ❌ | Unity - Wanted | |
 
 # Hobby & Misc Content
-### Adventuring Fellows ❌
-### Ballista ❌
-### Brenner ❌
-### Chocobo Digging ✔️
-### Chocobo Racing ❌
-### Chocobo Raising ❌
-### Crafting ✔️
-### Fields of Valor ✔️
-### Fishing ❌
-### Gardening ✔️
-### Gobbie Mystery Box 🐤
-### Grounds of Valor ✔️
-### HELM ✔️
-### Hunt Registry ✔️
-### Magian Trials 🐤
-### Mog Garden ❌
-### Monstrosity ❌
-### Mounts & 'Full Speed Ahead' Minigame ✔️
-### Pankration ❌
-### Records of Eminence 🐤
-### Synergy ❌
-### Trusts 🐤
-> Current status tracker: https://github.com/project-topaz/topaz/issues/446
+
+| Status | Name | Notes |
+|---|---|---|
+| ❌ | Adventuring Fellows | |
+| ❌ | Ballista | |
+| ❌ | Brenner | |
+| ✔️ | Chocobo Digging | |
+| ❌ | Chocobo Racing | |
+| ❌ | Chocobo Raising | |
+| ✔️ | Crafting | |
+| ✔️ | Fields of Valor | |
+| ❌ | Fishing | |
+| ✔️ | Gardening | |
+| 🐤 | Gobbie Mystery Box | |
+| ✔️ | Grounds of Valor | |
+| ✔️ | HELM | |
+| ✔️ | Hunt Registry | |
+| 🐤 | Magian Trials | |
+| ❌ | Mog Garden | |
+| ❌ | Monstrosity | |
+| ✔️ | Mounts & 'Full Speed Ahead' Minigame | |
+| ❌ | Pankration | |
+| 🐤 | Records of Eminence| |
+| ❌ | Synergy | |
+| 🐤 | Trusts | Current status tracker: https://github.com/project-topaz/topaz/issues/446 |
 
 # Mechanics
-### Aura Effects ⛔
-### Basic PVP ⚠️
-### Confrontation Effects ⛔
-### Stagger Effects ❌
+
+| Status | Name | Notes |
+|---|---|---|
+| ⛔ | Aura Effects | |
+| ⚠️ | Basic PVP | |
+| ⛔ | Confrontation Effects | |
+| ❌ | Stagger Effects | |
