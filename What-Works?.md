@@ -58,10 +58,12 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 ### Base Game & Rise of the Zilart ⚠️
 #### "Classic" Dynamis ❌
 #### "Neo" Dynamis ⚠️
+> City and Dreamworld zones farmable, some unimplemented NMs
 #### Sky NMs ✔️
 
 ### Chains of Promathia ⛔
 #### Sea NMs ⚠️
+> Some NMs unimplemented, notably Jailer of Love / Absolute Virtue
 #### Limbus ⛔
 #### Empty Notorious Monsters (ENM) ❔
 
@@ -73,6 +75,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 #### Nyzul Isle Investigation ❌
 #### Salvage ❌
 #### Zeni Notorious Monsters (ZNM) ❔
+> Some NMs scripted (accuracy unverified), Zeni itself not implemented
 
 ### Wings of the Goddess ❌
 #### Allied Notes Notorious Monsters (ANNM) ❌
