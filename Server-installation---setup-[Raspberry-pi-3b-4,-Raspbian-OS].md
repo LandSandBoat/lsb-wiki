@@ -146,16 +146,16 @@ cd scripts/globals
 nano settings.lua
 ```
 
-If you ever get an error that prevents users from logging in that says "The client has been updated, plus log out and update your client through play online" or anything very similar to this, you'll need to edit version.info:
+If you ever get an error that prevents users from logging in that says "The client has been updated, please log out and update your client through play online" or anything very similar to this, you'll need to edit version.info:
 ```
 cd ../..
 nano version.info
 ```
-In this file, you can chenge the server version itself (make it match the intended client version, which you can find by logging into your client and typing /ver in chat).  You can also change the VER_LOCK: option to either not care at all(0) or allow clients that match the server version, and newer versions, to connect (2).  Note an either case, if the user's client version does not match the version in this file, the player will be presented with a message that says "This server does not support this client."  Most of the time, this is nothing to worry about, but if there is a version that has major differences, players may receive weird functionality or even crashes caused by incorrect data being sent between the server and the client.  It is recommended that your players use a client version that is as close to your server version as possible.
+In this file, you can chenge the server version itself (make it match the intended client version, which you can find by logging into your client and typing /ver in chat).  You can also change the VER_LOCK: option to either not care at all(0) or allow clients that match the server version, and newer versions, to connect (2).  Note in either case, if the user's client version does not match the version in this file, the player will be presented with a message that says "This server does not support this client."  Most of the time, this is nothing to worry about, but if there is a version that has major differences, players may receive weird functionality or even crashes caused by incorrect data being sent between the server and the client.  It is recommended that your players use a client version that is as close to your server version as possible.
 
 ## Running your server
 
-Now for running the server, we have a couple of options.  If your running xwindows (desktop ui like Windows) you can double click the 3 server files topaz_connect, topaz_game, and topaz_search.  You will get presented with a prompt asking you how you want to run them, pick Execute in terminal or they will run in the background.  By default, they will not have a file extension (this is completely normal if you're not used to Linux).
+Now for running the server, we have a couple of options.  If you're running xwindows (desktop ui like Windows) you can double click the 3 server files topaz_connect, topaz_game, and topaz_search.  You will get presented with a prompt asking you how you want to run them, pick Execute in terminal or they will run in the background.  By default, they will not have a file extension (this is completely normal if you're not used to Linux).
 
 
 Or you can try this:
@@ -186,7 +186,7 @@ sudo systemctl stop topaz_game
 sudo systemctl stop topaz_search
 ```
 
-Please, make sure you're players are logged out before shutting down your servers!
+Please, make sure your players are logged out before shutting down your servers!
 
 
 That's everything about basic setup for the server.  If you get any errors not handled by this guide, please head over to the #troubleshooting channel on the discord for Topaz, and let us know what you did, and what error you're getting so we can help you resolve it, or head over to #general and let us know how it went for you.
