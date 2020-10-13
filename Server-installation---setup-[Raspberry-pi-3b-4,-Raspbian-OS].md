@@ -1,3 +1,5 @@
+# Warning!  If you're using a 3B or 3B+ you may need to reduce the amount of zones loaded by the server.  If you don't, and you use up 100% of the pi's ram, you may end in a situation where you have to pull the plug on the pi due to a system lock up, which can damage your SD card.  I recommend using a Raspberry Pi 4B 2G or higher model (they go up to 8GB as of the time of this document) if you plan on running all zones on one pi.
+
  I will not be covering how to set up a Raspberry Pi with [NOOBs](https://www.raspberrypi.org/downloads/noobs/) or Raspbian in this guide, as this is covered in many places on the Internet.  This guide assumes basic knowledge of Raspbian, terminal commands, and the raspberry pi limitations.
 
 All the steps below in code block are to be done on the terminal unless otherwise noted:
