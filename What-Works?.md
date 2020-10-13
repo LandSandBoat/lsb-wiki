@@ -116,18 +116,25 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 
 # Hobby & Misc Content
 ### Adventuring Fellows ❌
+### Ballista ❌
+### Brenner ❌
+### Chocobo Digging ✔️
+### Chocobo Racing ❌
 ### Chocobo Raising ❌
 ### Fields of Valor ✔️
 ### Fishing ❌
 ### Gardening ✔️
 ### Gobbie Mystery Box 🐤
 ### Grounds of Valor ✔️
+### HELM ✔️
 ### Hunt Registry ✔️
 ### Magian Trials 🐤
 ### Mog Garden ❌
 ### Monstrosity ❌
 ### Mounts & 'Full Speed Ahead' Minigame ✔️
+### Pankration ❌
 ### Records of Eminence 🐤
+### Synergy ❌
 ### Trusts 🐤
 > Current status tracker: https://github.com/project-topaz/topaz/issues/446
 
