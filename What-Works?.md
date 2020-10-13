@@ -7,7 +7,7 @@ This list is free for anyone to update and is very probably out of date, feel fr
 
 | Mark | Status |
 |---|---|
-| ✅ | Implemented (As close to retail as possible) |
+| ✅ | Verified (As close to retail as possible) |
 | ✔️ | Implemented (A fair approximation of retail) |
 | ⚠️ | Partially Implemented = Playable |
 | ⛔ | Partially Implemented = Unplayable / Broken |
