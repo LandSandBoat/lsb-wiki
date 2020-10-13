@@ -56,6 +56,8 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 ## Pre-Item Level
 
 ### Base Game & Rise of the Zilart ⚠️
+#### BCNMs
+> Unusable fights are commented out with `--`: https://github.com/project-topaz/topaz/blob/release/scripts/globals/bcnm.lua
 #### "Classic" Dynamis ❌
 #### "Neo" Dynamis ⚠️
 > City and Dreamworld zones farmable, some unimplemented NMs
@@ -117,12 +119,14 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 ### Chocobo Raising ❌
 ### Fishing ❌
 ### Gardening ✔️
+### Gobbie Mystery Box 🐤
 ### Magian Trials 🐤
 ### Mog Garden ❌
 ### Monstrosity ❌
 ### Mounts & 'Full Speed Ahead' Minigame ✔️
 ### Records of Eminence 🐤
 ### Trusts 🐤
+> Current status tracker: https://github.com/project-topaz/topaz/issues/446
 
 # Since the fork from DSP
 ...
