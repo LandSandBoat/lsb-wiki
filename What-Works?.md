@@ -117,9 +117,12 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 # Hobby & Misc Content
 ### Adventuring Fellows ❌
 ### Chocobo Raising ❌
+### Fields of Valor ✔️
 ### Fishing ❌
 ### Gardening ✔️
 ### Gobbie Mystery Box 🐤
+### Grounds of Valor ✔️
+### Hunt Registry ✔️
 ### Magian Trials 🐤
 ### Mog Garden ❌
 ### Monstrosity ❌
@@ -127,3 +130,8 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 ### Records of Eminence 🐤
 ### Trusts 🐤
 > Current status tracker: https://github.com/project-topaz/topaz/issues/446
+
+# Mechanics
+### Aura Effects ⛔
+### Confrontation Effects ⛔
+### Stagger Effects ❌
