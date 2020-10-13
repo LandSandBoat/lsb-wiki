@@ -58,12 +58,14 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 ### Base Game & Rise of the Zilart ⚠️
 #### BCNMs
 > Unusable fights are commented out with `--`: https://github.com/project-topaz/topaz/blob/release/scripts/globals/bcnm.lua
+#### HNMs - Land Kings ✔️
 #### "Classic" Dynamis ❌
 #### "Neo" Dynamis ⚠️
 > City and Dreamworld zones farmable, some unimplemented NMs
 #### Sky NMs ✔️
 
 ### Chains of Promathia ⛔
+#### HNMs - Wyrms ✔️
 #### Sea NMs ⚠️
 > Some NMs unimplemented, notably Jailer of Love / Absolute Virtue
 #### Limbus ⛔
@@ -73,6 +75,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 #### Assault ❌
 #### Besieged ❌
 #### Einherjar ❌
+#### HNMs - ToAU Zones ❔
 #### Imperial Seal Notorious Monsters (ISNM) ❔
 #### Nyzul Isle Investigation ❌
 #### Salvage ❌
