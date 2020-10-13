@@ -127,6 +127,3 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 ### Records of Eminence 🐤
 ### Trusts 🐤
 > Current status tracker: https://github.com/project-topaz/topaz/issues/446
-
-# Since the fork from DSP
-...
