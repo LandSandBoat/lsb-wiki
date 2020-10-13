@@ -42,7 +42,6 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/missions.lua
 | ❔ | A Crystalline Prophecy |  |
 | ⛔ | A Moogle Kupo d'Etat | Up to AMK 4 |
 | ⛔ | A Shantotto Ascension | Up to ASA 3 |
-| ⛔ | A Shantotto Ascension | Up to ASA 3 |
 | ⛔ | Rhapsodies of Vanadiel | Up to ROV 1-18 |
 | ❌ | The Voracious Resurgence | |
 
