@@ -11,7 +11,7 @@ This list is free for anyone to update and is very probably out of date, feel fr
 | ✔️ | Implemented (A fair approximation of retail) |
 | ⚠️ | Partially Implemented = Playable |
 | ⛔ | Partially Implemented = Unplayable / Broken |
-| 🐤 | In progress in `canary` or `feature` branches |
+| 🐤 | In progress, likely available in `canary` or `feature` branches |
 | ❌ | Unimplemented |
 | ❔ | Status Unknown |
 | No Mark | Status Unknown |
