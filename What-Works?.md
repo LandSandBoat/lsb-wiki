@@ -17,7 +17,7 @@ This list is free for anyone to update and is very probably out of date, feel fr
 | No Mark | Status Unknown |
 
 # Jobs
-| Status| Jobs |
+| Status | Jobs |
 |---|---|
 | ❌ | GEO, RUN |
 | ⚠️ | SMN, BLU |
@@ -29,24 +29,22 @@ This list is free for anyone to update and is very probably out of date, feel fr
 Playable missions are marked in the following file with `--+--` after their names <br>
 https://github.com/project-topaz/topaz/blob/release/scripts/globals/missions.lua
 
-### Bastok ✔️
-### San d'Oria ✔️
-### Windurst ✔️
-### Rise of the Zilart ✔️
-### Chains of Promathia ✔️
-### Treasures of Aht Urhgan ⚠️
-> Some bugs and broken cutscenes
-### Wings of the Goddess ❌
-### Seekers of Adoulin ⛔
-> Up to SOA 1-8
-### A Crystalline Prophecy ❔
-### A Moogle Kupo d'Etat ⛔
-> Up to AMK 4
-### A Shantotto Ascension ⛔
-> Up to ASA 3
-### Rhapsodies of Vanadiel ⛔
-> Up to ROV 1-18
-### The Voracious Resurgence ❌
+| Status | Name | Notes |
+|---|---|---|
+| ✔️ | Bastok | |
+| ✔️ | San d'Oria | |
+| ✔️ | Windurst | |
+| ✔️ | Rise of the Zilart | |
+| ✔️ | Chains of Promathia | |
+| ⚠️ | Treasures of Aht Urhgan | Some bugs and broken cutscenes |
+| ❌ | Wings of the Goddess | |
+| ⛔ | Seekers of Adoulin | Up to SOA 1-8 |
+| ❔ | A Crystalline Prophecy |  |
+| ⛔ | A Moogle Kupo d'Etat | Up to AMK 4 |
+| ⛔ | A Shantotto Ascension | Up to ASA 3 |
+| ⛔ | A Shantotto Ascension | Up to ASA 3 |
+| ⛔ | Rhapsodies of Vanadiel | Up to ROV 1-18 |
+| ⛔ | The Voracious Resurgence | |
 
 # Quests
 Playable missions are marked in the following file with `--+--` after their names <br>
