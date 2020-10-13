@@ -28,75 +28,69 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/missions.lua
 ### Treasures of Aht Urhgan ✔️ (some bugs and broken cutscenes)
 ### Wings of the Goddess ❌
 ### Abyssea Era ❌
-### Seekers of Adoulin
+### Seekers of Adoulin ⛔
 Up to SOA 1-8
-### A Crystalline Prophecy
-❔
+### A Crystalline Prophecy ❔
 ### A Moogle Kupo d'Etat ⛔
 Up to AMK 4
 ### A Shantotto Ascension ⛔
 Up to ASA 3
-### Rhapsodies of Vanadiel
+### Rhapsodies of Vanadiel ⛔
 Up to ROV 1-18
-### The Voracious Resurgence
+### The Voracious Resurgence ❌
 
 # Quests
 Playable missions are marked in the following file with `--+--` after their names <br>
 https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 
-# Battle Content
-## Pre-Item Level
-
+# Battle Content (By Expansion)
 ### Base Game & Rise of the Zilart
 #### Dynamis ⛔
 #### Sky NMs ✔️
 
 ### Chains of Promathia
 #### Dynamis
-#### Sea NMs
-#### Limbus
+#### Sea NMs ✔️
+#### Limbus ⛔
 #### Empty Notorious Monsters (ENM)
 
 ### Treasures of Aht Urhgan
-#### Assault 
-#### Besieged
-#### Salvage
-#### Einherjar
+#### Assault ❌
+#### Besieged ❌
+#### Salvage ❌
+#### Einherjar ❌
 #### Zeni Notorious Monsters (ZNM)
 #### Nyzul Isle Investigation
 #### Imperial Seal Notorious Monsters (ISNM)
 
 ### Wings of the Goddess
-#### Campaign 
+#### Campaign ❌
 #### Stronghold Notorious Monsters (SCNM)
 #### Allied Notes Notorious Monsters (ANNM)
-#### Meeble Burrows
+#### Meeble Burrows ❌
 
 ### Abyssea Era
-#### Abyssea
-#### Voidwatch
+#### Abyssea ❌
+#### Voidwatch ❌
 
 ### Seekers of Adoulin
-#### Skirmish
-#### Delve
+#### Skirmish ❌
+#### Delve ❌
 
 ### Rhapsodies of Vanadiel
-#### Omen
-#### Legion
+#### Omen ❌
+#### Legion ❌
 
-## Post-Item Level ❌
+### Modern Era ❌
 Ambuscade • A.M.A.N. Trove • Delve • Dynamis Divergence • High-Tier Mission Battlefields • Incursion • Odyssey • Omen • Sinister Reign • SKCNMs • Skirmish • Unity • Vagary • Domain Invasion • Geas Fete • Reives • Records of Eminence
 
 # Hobby & Misc Content
-## Crafting
-###
-
-## Fishing ❌
+### Fishing ❌
+### Gardening ✔️
 ### Mounts & 'Full Speed Ahead' Minigame ✔️
-
-## Trusts 🐤
-
-## Records of Eminence ✔️
+### Trusts 🐤
+### Records of Eminence ✔️
+### Magian Trials 🐤
 
 # Since the fork from DSP
 ...
