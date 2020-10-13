@@ -67,7 +67,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 | Status | Name | Notes |
 |---|---|---|
 | ✔️ | HNMs - Wyrms | |
-| ⚠️ | Sea NMs | Some NMs unimplemented, notably Jailer of Love / Absolute Virtue |
+| ⚠️ | Sea NMs | Some NMs unimplemented: Jailer of Justice / Jailer of Love / Absolute Virtue |
 | ⛔ | Limbus | |
 | ❔ | Empty Notorious Monsters (ENM) | |
 
