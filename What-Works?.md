@@ -156,7 +156,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 | ❌ | Pankration | |
 | 🐤 | Records of Eminence| |
 | ❌ | Synergy | |
-| 🐤 | Trusts | Current status tracker: https://github.com/project-topaz/topaz/issues/446 |
+| 🐤 | Trusts | Current status tracker: <br>https://github.com/project-topaz/topaz/issues/446 |
 
 # Mechanics
 
