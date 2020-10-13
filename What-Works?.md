@@ -165,4 +165,4 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 | ⛔ | Aura Effects | |
 | ⚠️ | Basic PVP | |
 | ⛔ | Confrontation Effects | |
-| ❌ | Stagger Effects | |
+| ⚠️ | Stagger Effects | Neo-Dynamis proc system implemented |
