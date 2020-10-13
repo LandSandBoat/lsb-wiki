@@ -134,7 +134,7 @@ nano login.conf
 nano map.conf
 nano search_server.conf
 ```
-Note: map.conf has many options for controlling drop rates, exp rates, and other things you may want to change.
+Note: map.conf has many options for controlling drop rates, exp rates, and other things you may want to change.  Some of these settings are not coded in, and may be removed at a later date (an example of this is the conquest calculation days, which will always be 7 days no matter what you put in here, it's never even checked by the server).
 
 ```
 cd ..
