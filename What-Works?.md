@@ -57,7 +57,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 
 ### Base Game & Rise of the Zilart ⚠️
 #### "Classic" Dynamis ❌
-#### Neo Dynamis ⚠️
+#### "Neo" Dynamis ⚠️
 #### Sky NMs ✔️
 
 ### Chains of Promathia ⛔
@@ -110,16 +110,16 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 #### Unity - Wanted ❌
 
 # Hobby & Misc Content
+### Adventuring Fellows ❌
+### Chocobo Raising ❌
 ### Fishing ❌
 ### Gardening ✔️
+### Magian Trials 🐤
 ### Mog Garden ❌
 ### Monstrosity ❌
 ### Mounts & 'Full Speed Ahead' Minigame ✔️
-### Chocobo Raising ❌
-### Adventuring Fellows ❌
+### Records of Eminence 🐤
 ### Trusts 🐤
-### Records of Eminence ✔️
-### Magian Trials 🐤
 
 # Since the fork from DSP
 ...
