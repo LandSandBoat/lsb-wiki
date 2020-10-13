@@ -1,4 +1,8 @@
-This is the wiki for Project Topaz. As we are still setting up the project, it may be sparse until more work is put into it.
+This is the wiki for Project Topaz.
+
+# General
+General articles about the project
+- [[What Works?|https://github.com/project-topaz/topaz/wiki/What-Works%3F]]
 
 # Server Setup + Maintenance
 Instructions for cloning, building, and running a Project Topaz server
