@@ -34,18 +34,18 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/missions.lua
 ### Windurst ✔️
 ### Rise of the Zilart ✔️
 ### Chains of Promathia ✔️
-### Treasures of Aht Urhgan ✔️ (some bugs and broken cutscenes)
+### Treasures of Aht Urhgan ⚠️
+> Some bugs and broken cutscenes
 ### Wings of the Goddess ❌
-### Abyssea Era ❌
 ### Seekers of Adoulin ⛔
-Up to SOA 1-8
+> Up to SOA 1-8
 ### A Crystalline Prophecy ❔
 ### A Moogle Kupo d'Etat ⛔
-Up to AMK 4
+> Up to AMK 4
 ### A Shantotto Ascension ⛔
-Up to ASA 3
+> Up to ASA 3
 ### Rhapsodies of Vanadiel ⛔
-Up to ROV 1-18
+> Up to ROV 1-18
 ### The Voracious Resurgence ❌
 
 # Quests
