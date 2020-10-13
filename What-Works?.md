@@ -97,7 +97,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 
 | Status | Name | Notes |
 |---|---|---|
-| ⛔ | Abyssea  | |
+| ⛔ | Abyssea  | Can enter zones. Normal mobs and time-spawned NMs are up, but do not respawn if killed. Everthing else not implemented. |
 | ❌ | Bastion | |
 | ❌ | Legion | |
 | ❌ | Meeble Burrows | |
