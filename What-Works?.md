@@ -46,7 +46,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/missions.lua
 | ❌ | The Voracious Resurgence | |
 
 # Quests
-Playable missions are marked in the following file with `--+--` after their names <br>
+Playable missions are marked in the following file with `--+--` after their names
 https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 
 # Battle Content (by era)
@@ -56,7 +56,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 
 | Status | Name | Notes |
 |---|---|---|
-| ⚠️ | BCNMs | Unusable fights are commented out with `--`: https://github.com/project-topaz/topaz/blob/release/scripts/globals/bcnm.lua |
+| ⚠️ | BCNMs | Unusable fights are commented out with `--`: <br>https://github.com/project-topaz/topaz/blob/release/scripts/globals/bcnm.lua |
 | ✔️ | HNMs - Land Kings | |
 | ❌ | "Classic" Dynamis | |
 | ⚠️ | "Neo" Dynamis | City and Dreamworld zones farmable, some unimplemented NMs |
