@@ -46,7 +46,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/missions.lua
 | ❌ | The Voracious Resurgence | |
 
 # Quests
-Playable missions are marked in the following file with `--+--` after their names <br>
+Playable quests are marked in the following file with `--+--` after their names <br>
 https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 
 # Battle Content (by era)
