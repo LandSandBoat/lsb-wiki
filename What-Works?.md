@@ -43,46 +43,62 @@ Up to ROV 1-18
 Playable missions are marked in the following file with `--+--` after their names <br>
 https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 
-# Battle Content (By Expansion)
-### Base Game & Rise of the Zilart
-#### Dynamis ⛔
+# Battle Content (by era)
+## Pre-Item Level
+
+### Base Game & Rise of the Zilart ⚠️
+#### "Classic" Dynamis ❌
+#### Neo Dynamis ⚠️
 #### Sky NMs ✔️
 
-### Chains of Promathia
-#### Dynamis
-#### Sea NMs ✔️
+### Chains of Promathia ⛔
+#### Sea NMs ⚠️
 #### Limbus ⛔
-#### Empty Notorious Monsters (ENM)
+#### Empty Notorious Monsters (ENM) ❔
 
-### Treasures of Aht Urhgan
+### Treasures of Aht Urhgan ❔
 #### Assault ❌
 #### Besieged ❌
-#### Salvage ❌
 #### Einherjar ❌
-#### Zeni Notorious Monsters (ZNM)
-#### Nyzul Isle Investigation
-#### Imperial Seal Notorious Monsters (ISNM)
+#### Imperial Seal Notorious Monsters (ISNM) ❔
+#### Nyzul Isle Investigation ❌
+#### Salvage ❌
+#### Zeni Notorious Monsters (ZNM) ❔
 
-### Wings of the Goddess
+### Wings of the Goddess ❌
+#### Allied Notes Notorious Monsters (ANNM) ❌
 #### Campaign ❌
-#### Stronghold Notorious Monsters (SCNM)
-#### Allied Notes Notorious Monsters (ANNM)
-#### Meeble Burrows ❌
+#### Stronghold Notorious Monsters (SCNM) ❌
+#### Walk of Echoes ❌
 
-### Abyssea Era
-#### Abyssea ❌
+### Abyssea Era  ⛔
+#### Abyssea ⛔
+#### Bastion ❌
+#### Legion ❌
+#### Meeble Burrows ❌
 #### Voidwatch ❌
 
-### Seekers of Adoulin
+## Post-Item Level ❌
+
+### Seekers of Adoulin ❌
 #### Skirmish ❌
 #### Delve ❌
-
-### Rhapsodies of Vanadiel
-#### Omen ❌
-#### Legion ❌
+#### Incursion ❌
+#### Reives ❌
+#### Sinister Reign ❌
+#### Vagary ❌
 
 ### Modern Era ❌
-Ambuscade • A.M.A.N. Trove • Delve • Dynamis Divergence • High-Tier Mission Battlefields • Incursion • Odyssey • Omen • Sinister Reign • SKCNMs • Skirmish • Unity • Vagary • Domain Invasion • Geas Fete • Reives • Records of Eminence
+#### AMAN Trove ❌
+#### Ambuscade ❌
+#### Domain Invasion ❌
+#### Dynamis Divergence ❌
+#### High-Tier Mission Battlefields ❌
+#### Geas Fete ❌
+#### Odyssey ❌
+#### Omen ❌
+#### Sacred Kindred Crest Notorious Monsters (SKCNM) ❌
+#### Unity - Wanted ❌
 
 # Hobby & Misc Content
 ### Fishing ❌
