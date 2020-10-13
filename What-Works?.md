@@ -144,5 +144,6 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 
 # Mechanics
 ### Aura Effects ⛔
+### Basic PVP ⚠️
 ### Confrontation Effects ⛔
 ### Stagger Effects ❌
