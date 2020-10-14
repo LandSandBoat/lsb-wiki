@@ -68,7 +68,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 |---|---|---|
 | ✔️ | HNMs - Wyrms | |
 | ⚠️ | Sea NMs | Some NMs unimplemented: Jailer of Justice / Jailer of Love / Absolute Virtue |
-| ⛔ | Limbus | |
+| 🐤 | Limbus | |
 | ❔ | Empty Notorious Monsters (ENM) | |
 
 ### Treasures of Aht Urhgan ❔
@@ -97,7 +97,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 
 | Status | Name | Notes |
 |---|---|---|
-| ⛔ | Abyssea  | Can enter zones. Normal mobs and time-spawned NMs are up, but do not respawn if killed. Everthing else not implemented. |
+| ⛔ | Abyssea  | Can enter zones. Normal mobs and time-spawned NMs are up, but do not respawn if killed. Most else not implemented. |
 | ❌ | Bastion | |
 | ❌ | Legion | |
 | ❌ | Meeble Burrows | |
@@ -165,4 +165,4 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 | ⛔ | Aura Effects | |
 | ⚠️ | Basic PVP | |
 | ⛔ | Confrontation Effects | |
-| ⚠️ | Stagger Effects | Neo-Dynamis proc system implemented |
+| ⚠️ | Stagger Effects | Neo-Dynamis and Abyssea proc systems implemented |
