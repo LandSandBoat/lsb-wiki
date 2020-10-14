@@ -1,6 +1,6 @@
 [Home](https://github.com/project-topaz/topaz/wiki)
 * General
-  * [[What Works?|https://github.com/project-topaz/topaz/wiki/What-Works%3F]]
+  * [[What Works|https://github.com/project-topaz/topaz/wiki/What-Works]]
 * Server Setup + Maintenance
   * [[Windows 10|https://github.com/project-topaz/topaz/wiki/Server-setup-and-maintenance-%5BWindows-10%5D]]
   * [[Ubuntu 18.04|https://github.com/project-topaz/topaz/wiki/Server-Installation---Setup-%5BUbuntu-18.04-LTS%5D]]
