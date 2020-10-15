@@ -155,7 +155,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 | ❌ | Monstrosity | |
 | ✔️ | Mounts & 'Full Speed Ahead' Minigame | |
 | ❌ | Pankration | |
-| 🐤 | Records of Eminence| |
+| 🐤 | Records of Eminence| ~300 records + Timed challenges |
 | ❌ | Synergy | |
 | 🐤 | Trusts | Current status tracker: <br>https://github.com/project-topaz/topaz/issues/446 |
 
