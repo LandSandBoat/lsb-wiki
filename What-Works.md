@@ -149,6 +149,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 | ✔️ | Grounds of Valor | |
 | ✔️ | HELM | |
 | ✔️ | Hunt Registry | |
+| ❌ | Job Points | |
 | 🐤 | Magian Trials | |
 | ❌ | Mog Garden | |
 | ❌ | Monstrosity | |
