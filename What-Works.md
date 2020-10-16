@@ -90,9 +90,9 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 |---|---|---|
 | ❌ | Allied Notes Notorious Monsters (ANNM) | |
 | ❌ | Campaign | |
+| ❌ | Moblin Maze Mongers | |
 | ❌ | Stronghold Notorious Monsters (SCNM) | |
 | ❌ | Walk of Echoes | |
-| ❌ | Moblin Maze Mongers | |
 
 ### Abyssea Era  ⛔
 
