@@ -80,7 +80,7 @@ All content comes from the [canary branch](https://github.com/project-topaz/topa
 * **Crystal and Book Teleport:** Enabled
 * **Weapon Skill Damage Formula:** Current formula post Adoulin
 * **Widescan:** Enabled
-* **Crafting + Skill ups:** Sames as current retail (crafting is broken so its currently at x2.6)
+* **Crafting + Skill ups:** Sames as current retail
 * **Mission BCNM + CoP Areas:** Same as current retail
 * **Trusts:** Enabled
 
