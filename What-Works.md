@@ -92,6 +92,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 | ❌ | Campaign | |
 | ❌ | Stronghold Notorious Monsters (SCNM) | |
 | ❌ | Walk of Echoes | |
+| ❌ | Moblin Maze Mongers | |
 
 ### Abyssea Era  ⛔
 
