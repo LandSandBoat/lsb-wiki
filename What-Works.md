@@ -39,7 +39,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/missions.lua
 | ⚠️ | Treasures of Aht Urhgan | Some bugs and broken cutscenes |
 | ❌ | Wings of the Goddess | |
 | ⛔ | Seekers of Adoulin | Up to SOA 1-8 |
-| ❔ | A Crystalline Prophecy |  |
+| ⛔ | A Crystalline Prophecy | Up to ACP 4 |
 | ⛔ | A Moogle Kupo d'Etat | Up to AMK 4 |
 | ⛔ | A Shantotto Ascension | Up to ASA 3 |
 | ⛔ | Rhapsodies of Vanadiel | Up to ROV 1-18 |
