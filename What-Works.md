@@ -57,6 +57,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 | Status | Name | Notes |
 |---|---|---|
 | ⚠️ | BCNMs | Unusable fights are commented out with `--`: <br>https://github.com/project-topaz/topaz/blob/release/scripts/globals/bcnm.lua |
+| ❌ | Garrison | |
 | ✔️ | HNMs - Land Kings | |
 | ❌ | "Classic" Dynamis | |
 | ⚠️ | "Neo" Dynamis | City and Dreamworld zones farmable, some unimplemented NMs |
