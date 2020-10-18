@@ -79,7 +79,7 @@ https://github.com/project-topaz/topaz/blob/release/scripts/globals/quests.lua
 | ❌ | Assault | |
 | ❌ | Besieged | |
 | ❌ | Einherjar | |
-| ❔ | HNMs - ToAU Zones| |
+| ✔️ | HNMs - ToAU Zones| |
 | ❔ | Imperial Seal Notorious Monsters (ISNM) | |
 | ❌ | Nyzul Isle Investigation | |
 | ❌ | Salvage | |
