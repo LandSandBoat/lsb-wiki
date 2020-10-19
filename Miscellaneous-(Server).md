@@ -162,3 +162,7 @@ Open up these files in your preferred text editor and change values accordingly:
 \topaz\conf\map.conf (after getting it out of the default folder). Save, then reboot your servers.
 
 \topaz\scripts\globals\settings.lua. Save, use the GM command !reloadglobal settings in game or reboot your servers.
+
+## How do I set JP Midnight?
+
+JP midnight is now coded to align with the retail JST midnight regardless of your local timezone setting and manual configuration is no longer required. There is no setting for JP Midnight and we do not recommend altering server timing behaviour as the client has hard-coded expectations that certain events and resets will occur at certain times.
