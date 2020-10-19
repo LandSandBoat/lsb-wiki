@@ -1,8 +1,8 @@
-### ⚠️ NEXT STEP TO FOLLOW ONCE YOU'RE _DONE_ WITH THIS FIRST PART: [[Client Setup [Windows]|https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D]] ⚠️
+### ⚠️ NEXT STEP TO FOLLOW ONCE YOU'RE _DONE_ WITH THIS FIRST PART: [[Client Setup [Windows]|https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D]]
 
 ## 1. Software needed:
 
-### ⚠️ Make sure you have the latest version of each software mentioned on this page installed on your system, and only this one ⚠️
+### ⚠️ Make sure you have the latest version of each software mentioned on this page installed on your system, and only this one
 
 To build, run, and maintain a Topaz server, you will need to download and install the following third-party software:
 
@@ -121,7 +121,7 @@ Servers are now configured properly. Execute all the above .exes (as Administrat
 
 ---
 
-⚠️ **Port forwarding** ⚠️
+⚠️ **Port forwarding**
 
 If you are running a server for others to play on, make sure you have the following ports forwarded:
 
@@ -169,9 +169,9 @@ This will import all of the .sql files that were updated and run any needed migr
 
 ---
 
-⚠️ **Common Issue** ⚠️
+⚠️ **Common Issue**
 
-⚠️ **WE STRONGLY ADVISE AGAINST LOCKING THE SERVER TO OLDER VERSIONS. IT IS A UNIVERSALLY BAD IDEA.** It _will_ cause issues even _if_ you manage to keep both server and client versions on par! ⚠️
+⚠️ **WE STRONGLY ADVISE AGAINST LOCKING THE SERVER TO OLDER VERSIONS. IT IS A UNIVERSALLY BAD IDEA.** It _will_ cause issues even _if_ you manage to keep both server and client versions on par!
 
 If the server (Project Topaz) and the client (Final Fantasy XI) don't share the same version, you'll probably get this error in the topaz_connect.exe log window:
 
