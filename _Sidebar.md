@@ -16,8 +16,6 @@
   * [General Development](https://github.com/project-topaz/topaz/wiki/General-Development)
 * [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
   * [[Project Focus|https://github.com/project-topaz/topaz/wiki/Project-Focus]]
-  * [[Project Staff|https://github.com/project-topaz/topaz/wiki/Project-Staff]]
-  * [[Staff Meetings|https://github.com/project-topaz/topaz/wiki/Staff-Meetings]]
   * [[Contributor Conduct|https://github.com/project-topaz/topaz/wiki/Contributor-Conduct]]
   * [[Staff Conduct|https://github.com/project-topaz/topaz/wiki/Staff-Conduct]]
 * [[Server List|Topaz-Servers]]
