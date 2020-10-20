@@ -11,10 +11,9 @@
   * [[Windows 10|https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D]]
   * [Common Issues & Tweaks](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Client))
 * [Development](https://github.com/project-topaz/topaz/wiki/Development)
-  * [Using Github](https://github.com/project-topaz/topaz/wiki/Using-Github)
-  * [Developer Workflow](https://github.com/project-topaz/topaz/wiki/Developer-Workflow)
-  * [Style Guide](https://github.com/project-topaz/topaz/blob/release/CONTRIBUTING.md#style-guide)
-  * [Understanding Variables](https://github.com/project-topaz/topaz/wiki/Understanding-variables-%E2%80%94-a-brief-guide)
+  * [GitHub and Contributing](https://github.com/project-topaz/topaz/wiki/GitHub-and-Contributing)
+  * [Guides](https://github.com/project-topaz/topaz/wiki/Guides-(Development))
+  * [General Development](https://github.com/project-topaz/topaz/wiki/General-Development)
 * [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
   * [[Project Focus|https://github.com/project-topaz/topaz/wiki/Project-Focus]]
   * [[Project Staff|https://github.com/project-topaz/topaz/wiki/Project-Staff]]
