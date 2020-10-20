@@ -1,4 +1,4 @@
-This is the wiki for Project Topaz.
+This is the wiki for Project Topaz - an open source Final Fantasy XI server emulator.
 
 # General
 General articles about the project
