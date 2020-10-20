@@ -14,7 +14,13 @@ Instructions for cloning, building, and running a Project Topaz server
 # Client Setup
 Instructions for installing FFXI, connecting to a private server, and keeping the game updated.
 - [Windows 10](https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D)
-- [Common Issues & Tweaks](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Client))
+- [Common Concerns](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Client))
+
+# [Server Administration](https://github.com/project-topaz/topaz/wiki/Server-Administration)
+Information for new server administrators.
+- [Common Issues and Tweaks](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Server))
+- [Debugging](https://github.com/project-topaz/topaz/wiki/Debugging)
+- [Useful SQL Queries](https://github.com/project-topaz/topaz/wiki/Useful-SQL-queries)
 
 # [Development](https://github.com/project-topaz/topaz/wiki/Development)
 Information for developers who work on Project Topaz.
