@@ -10,7 +10,7 @@
 * Client Setup
   * [[Windows 10|https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D]]
   * [Common Issues & Tweaks](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Client))
-* Development
+* [Development](https://github.com/project-topaz/topaz/wiki/Development)
   * [Using Github](https://github.com/project-topaz/topaz/wiki/Using-Github)
   * [Developer Workflow](https://github.com/project-topaz/topaz/wiki/Developer-Workflow)
   * [Style Guide](https://github.com/project-topaz/topaz/blob/release/CONTRIBUTING.md#style-guide)
