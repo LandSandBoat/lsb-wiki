@@ -16,14 +16,14 @@ Instructions for installing FFXI, connecting to a private server, and keeping th
 - [Windows 10](https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D)
 - [Common Issues & Tweaks](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Client))
 
-# Development
-Information for developers who code for Project Topaz
-- [Using GitHub](https://github.com/project-topaz/topaz/wiki/Using-GitHub)
-- [Style Guide](https://github.com/project-topaz/topaz/blob/release/CONTRIBUTING.md)
+# [Development](https://github.com/project-topaz/topaz/wiki/Development)
+Information for developers who work on Project Topaz.
+- [GitHub and Contributing](https://github.com/project-topaz/topaz/wiki/GitHub-and-Contributing)
+- [Guides](https://github.com/project-topaz/topaz/wiki/Guides-(Development))
+- [General Development](https://github.com/project-topaz/topaz/wiki/General-Development)
 # [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
 Information relating to the "meta" of Project Topaz - like project goals, codes of conduct, project roadmaps, and licensing information
 - [[Project Focus|https://github.com/project-topaz/topaz/wiki/Project-Focus]]
-- [[Staff Meetings|https://github.com/project-topaz/topaz/wiki/Staff-Meetings]]
 - [[Contributor Conduct|https://github.com/project-topaz/topaz/wiki/Contributor-Conduct]]
 - [[Staff Conduct|https://github.com/project-topaz/topaz/wiki/Staff-Conduct]]
 # [[Server List|Topaz-Servers]]
