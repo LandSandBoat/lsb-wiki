@@ -1,13 +1,13 @@
 [Home](https://github.com/project-topaz/topaz/wiki)
 * General
   * [[What Works|https://github.com/project-topaz/topaz/wiki/What-Works]]
+* Client Setup
+  * [[Windows 10|https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D]]
+  * [Common Concerns](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Client))
 * Server Setup + Maintenance
   * [[Windows 10|https://github.com/project-topaz/topaz/wiki/Server-setup-and-maintenance-%5BWindows-10%5D]]
   * [[Ubuntu 18.04|https://github.com/project-topaz/topaz/wiki/Server-Installation---Setup-%5BUbuntu-18.04-LTS%5D]]
   * [[RPi/Raspbian|https://github.com/project-topaz/topaz/wiki/Server-installation---setup-%5BRaspberry-pi-3b-4,-Raspbian-OS%5D]]
-* Client Setup
-  * [[Windows 10|https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D]]
-  * [Common Concerns](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Client))
 * [Server Administration](https://github.com/project-topaz/topaz/wiki/Server-Administration)
   * [Common Issues & Tweaks](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Server))
   * [Debugging](https://github.com/project-topaz/topaz/wiki/Debugging)
