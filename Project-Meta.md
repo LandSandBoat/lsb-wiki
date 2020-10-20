@@ -1,3 +1,5 @@
+Information relating to the "meta" of Project Topaz - like project goals, codes of conduct, project roadmaps, and licensing information
+
 # Project Direction
 - [Project Focus](https://github.com/project-topaz/topaz/wiki/Project-Focus)
 
