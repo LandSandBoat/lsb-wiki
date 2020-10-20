@@ -1,4 +1,4 @@
-### ⚠️ NEXT STEP TO FOLLOW ONCE YOU'RE _DONE_ WITH THIS FIRST PART: [[Client Setup [Windows]|https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D]]
+### ⚠️ IF YOU HAVEN'T ALREADY CONFIGURED A CLIENT TO CONNECT TO A PRIVATE SERVER, FOLLOW THIS ONCE YOU'RE _DONE_ WITH THIS FIRST PART: [[Client Setup [Windows]|https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D]]
 
 ## 1. Software needed:
 
@@ -129,44 +129,6 @@ TCP ports: 54230, 54231, 54001 and 54002.
 
 UDP port: 54230.
 
-## 6. How to update the server:
-<details>
-  <summary>Git CLI</summary>
-  
-1. In the `topaz\` folder, open a PowerShell window.
-2. Type:
-```
-git stash
-git pull
-git stash pop
-```
-</details>
-<details>
-  <summary>GitHub Desktop</summary>
-  
-1. Open GitHub Desktop. Next to where your current branch is listed, click either `Fetch origin` (checking for updates), or `Pull origin`
-[[/images/pull_origin.png|Pull Origin button location]]
-</details>
-<details>
-  <summary>TortoiseGit</summary>
-  
-1. Right click wherever you want > TortoiseGit > Settings > Context Menu > check: "Pull..." > Apply > OK.
-
-2. Right click on the "topaz" folder > Git Pull... > Remote Branch: (select or type) "release" (stable) or "canary" (master) > OK > Close.
-</details>
-
-After pulling the new files:
-
-* RERUN EVERY .sql MODIFIED FILES: Open a PowerShell window in the `topaz\tools\` folder and type:
-```
-py -3 dbtool.py update
-```
-This will import all of the .sql files that were updated and run any needed migrations. It will also possibly overwrite any custom changes you have made to your SQL tables. If you are running custom mobs/items/etc. of any kind, you'll want to save these as queries in a .sql file in `topaz\sql\backups\` and use the Restore/Import option in dbtool to import those changes after an update. See [4. Preparing the Database](https://github.com/project-topaz/topaz/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#4-preparing-the-database) for more info.
-* REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **[5. Build the servers](https://github.com/project-topaz/topaz/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#5-build-the-servers)**).
-* RESTART YOUR SERVER(S) FOR .conf FILES AND AFTER UPDATES WITH dbtool.
-* .lua files ARE INSTANT IN MOST CASES (`topaz\scripts\globals\` .luas will need to be reloaded by using the GM command `!reloadglobal` where appropriate or restarting the server).
-* /!\ In the `topaz\conf\default\` folder, make sure you take any .conf file that was updated and put it/them in the precedent folder (`topaz\conf\`). Do not overwrite version.conf, as dbtool uses it to track DB version and will update CLIENT_VER for you if it changes./!\
-
 ---
 
 ⚠️ **Common Issue**
@@ -190,49 +152,3 @@ to:
 
 save then restart the topaz_connect.exe server.
 
-## 7. Database management
-
-Execute `topaz\tools\dbtool.py`.
-
-_Backup_:
-
-Select "3. Backup" > Enter > "Would you like to backup your database? [y/N]" > y > Enter > Done.
-
-_Restore/Import_:
-
-Select "4. Restore/Import" > Enter > "Would you like to backup your database? [y/N]" > y > Enter > "Choose a number to import, or type "delete #" to delete a file." > select desired backup > Enter > "If this is a full backup created by this tool, it is recommended to manually change the DB_VER in ..\conf\version.conf to the hash sequence in the filename, between the database name and the timestamp, so that express update functions properly. Import _desired-backup.sql_? [y/N]" > y > Enter > Done.
-
-/!\
-
-```
-  - accounts.sql
-  - accounts_banned.sql
-  - auction_house.sql
-  - char_blacklist.sql
-  - char_effects.sql
-  - char_equip.sql
-  - char_exp.sql
-  - char_inventory.sql
-  - char_jobs.sql
-  - char_look.sql
-  - char_merit.sql
-  - char_pet.sql
-  - char_points.sql
-  - char_profile.sql
-  - char_skills.sql
-  - char_spells.sql
-  - char_stats.sql
-  - char_storage.sql
-  - char_style.sql
-  - char_unlocks.sql
-  - char_vars.sql
-  - chars.sql
-  - conquest_system.sql
-  - delivery_box.sql
-  - linkshells.sql
-  - server_variables.sql
-```
-These files will be left untouched by default during updates using dbtool. You can manually edit this list using dbtool or editing `topaz\tools\config.yaml`. You can also create a backup of _only_ these tables by opening a PowerShell window in the `topaz\tools\` folder and typing:
-```
-py -3 dbtool.py backup lite
-```
