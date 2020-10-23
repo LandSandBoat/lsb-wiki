@@ -17,6 +17,8 @@ make -j`nproc`
 ```
 
 ## Adding Files
+Add the `.h` and the `.cpp` file to the `SOURCES` list in the `CMakeLists.txt` file in the folder where the new files live.
+
 ![image](https://user-images.githubusercontent.com/1389729/96964877-e7a76000-1513-11eb-9757-710e53b2858a.png)
 
 If you use `Visual Studio` or `CLion`, they will automatically pick up this change and regenerate your CMake cache. On Linux you will need to update your cache by running `cmake ..` in your `build` folder before you run `make`.
