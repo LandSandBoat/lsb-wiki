@@ -23,6 +23,7 @@ This first version is recreating the original build as closely as possible. Now 
 - Make sure build flags and warning/error settings are the same on platforms.
 - Add/remove/upgrade external dependencies more easily.
 - Apply tools like `UBSan` and `Valgrind` to the build more easily.
+- Easily apply performance benchmarking tools like `Orbit` or `Tracy`.
 - Add/split-out new executables more easily, reusing existing code.
 
 ## Adding Files
