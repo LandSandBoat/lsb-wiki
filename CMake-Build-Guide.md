@@ -1,12 +1,14 @@
 ## Windows
 Long term users will notice that the `win32` folder, the `.sln` file, and `.vcproj` files are all gone. In their place: `CMakeLists.txt` files in every folder that has something to be built. Don't worry, `Visual Studio 2017` and `Visual Studio 2019` have `CMake` built-in.
 
-To open the project, follow these steps and open the `CMakeLists.txt` file in the root of the repo. 
+To open the project, follow these steps and open the `CMakeLists.txt` file in the root of the repo.
+
+`File > Open > Folder` in the repo root will also work. 
 
 ![vs_build_1](https://user-images.githubusercontent.com/1389729/96963902-2b00cf00-1512-11eb-804c-47ea881888b9.png)
 ![image](https://user-images.githubusercontent.com/1389729/97025486-cd47a380-1560-11eb-8d02-0d19b539bd2c.png)
 
-Visual Studio will handle everything from there, and you'll be able to select your target to build and debug like you did before. Debug paths, executable output paths etc. are all handled automatically.
+Visual Studio will think for a moment but will handle everything from here. You'll be able to select your target to build and debug as you did before. Debug paths, executable output paths etc. are all handled automatically.
 
 ## Linux
 The same CMake steps as before (make sure you have CMake installed with `sudo apt install cmake` or similar):
