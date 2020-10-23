@@ -4,6 +4,7 @@ Long term users will notice that the `win32` folder, the `.sln` file, and `.vcpr
 To open the project, follow these steps and open the `CMakeLists.txt` file in the root of the repo. 
 
 ![vs_build_1](https://user-images.githubusercontent.com/1389729/96963902-2b00cf00-1512-11eb-804c-47ea881888b9.png)
+![image](https://user-images.githubusercontent.com/1389729/97025486-cd47a380-1560-11eb-8d02-0d19b539bd2c.png)
 
 Visual Studio will handle everything from there, and you'll be able to select your target to build and debug like you did before. Debug paths, executable output paths etc. are all handled automatically.
 
