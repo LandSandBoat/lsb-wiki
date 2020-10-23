@@ -16,6 +16,15 @@ cmake ..
 make -j`nproc`
 ```
 
+## Why the change?
+Historically, we've had 3 build systems: VS Solution, Linux makefile and CMake. On all platforms, when you wanted to add a file you had to add them to the VS `.sln` file, often by hand. This made cross-platform development annoying, and merge conflicts on the XML-based `.sln` files were a pain. `CMake` files are simple and allow us to more easily split the project into logical chunks to build and apply different build settings to.
+
+This first version is recreating the original build as closely as possible. This will allow us to:
+- Make sure build flags and warning/error settings are the same on platforms.
+- Add/remove/upgrade external dependencies more easily.
+- Apply tools like `UBSan` and `Valgrind` to the build more easily.
+- Add/split-out new executables more easily, reusing existing code.
+
 ## Adding Files
 Add the `.h` and the `.cpp` file to the `SOURCES` list in the `CMakeLists.txt` file in the folder where the new files live.
 
