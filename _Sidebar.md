@@ -1,6 +1,7 @@
 [Home](https://github.com/project-topaz/topaz/wiki)
 * General
   * [[What Works|https://github.com/project-topaz/topaz/wiki/What-Works]]
+  * [[Quickstart Guide|https://github.com/project-topaz/topaz/wiki/Quick-Start-Guide]]
 * Client Setup
   * [[Windows 10|https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D]]
   * [Common Concerns](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Client))
@@ -18,6 +19,7 @@
   * [GitHub and Contributing](https://github.com/project-topaz/topaz/wiki/GitHub-and-Contributing)
   * [Guides](https://github.com/project-topaz/topaz/wiki/Guides-(Development))
   * [General Development](https://github.com/project-topaz/topaz/wiki/General-Development)
+  * [CMake Build Guide](https://github.com/project-topaz/topaz/wiki/CMake-Build-Guide)
 * [Project Meta](https://github.com/project-topaz/topaz/wiki/Project-Meta)
   * [[Project Focus|https://github.com/project-topaz/topaz/wiki/Project-Focus]]
   * [[Contributor Conduct|https://github.com/project-topaz/topaz/wiki/Contributor-Conduct]]
