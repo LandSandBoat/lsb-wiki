@@ -6,8 +6,7 @@
   * Install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/community/), check Desktop development with C++.
   * Install [MariaDB](https://mariadb.org/), use defaults, set a root password.
   * Install [Python 3](https://www.python.org/downloads/), check to add to PATH.
-  * Open VS2019
-  * Clone from URL https://github.com/project-topaz/topaz.git
+  * Use Git to clone from URL https://github.com/project-topaz/topaz.git
   * Open in Explorer, **copy** all files in `topaz/conf/default/` into `topaz/conf/`.
   * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_password` to the password set during MariaDB setup.
   * Open the tools folder, shift+right-click, open Powershell.
@@ -17,6 +16,7 @@
   py -3 dbtool.py
   ```
   * Follow the on-screen instructions.
+  * Open the topaz root folder in VS2019.
   * Build the solution in VS2019.
 
   ## To Update
@@ -57,7 +57,7 @@
   mkdir build
   cd build
   cmake ..
-  make -j`nproc`
+  make -j $(nproc)
   cd ../tools
   pip3 install -r requirements.txt
   python3 dbtool.py
