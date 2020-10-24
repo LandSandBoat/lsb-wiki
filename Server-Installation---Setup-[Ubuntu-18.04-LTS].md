@@ -3,7 +3,7 @@ All the steps below in code block are to be done on the terminal:
 Installs requirements to run the sql database and tools to compile the source code
 ```
 sudo apt update
-sudo apt install mariadb-server libmariadbclient-dev libmariadb-dev-compat libluajit-5.1-dev libzmq3-dev autoconf pkg-config zlib1g-dev libssl-dev
+sudo apt install cmake mariadb-server libmariadbclient-dev libmariadb-dev-compat libluajit-5.1-dev libzmq3-dev autoconf pkg-config zlib1g-dev libssl-dev
 ```
 > Note: If you receive errors regarding dependency conflicts, you can remove `libmariadbclient-dev`
 
@@ -21,8 +21,9 @@ git clone --recursive --single-branch --branch canary https://github.com/project
 Goes inside the project's folder and compiles the source code
 ```
 cd topaz
-sh autogen.sh
-./configure --enable-debug=gdb
+mkdir build
+cd build
+cmake ..
 make -j $(nproc)
 ```
 
