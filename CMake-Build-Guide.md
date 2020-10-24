@@ -10,6 +10,14 @@ To open the project, follow these steps and open the `CMakeLists.txt` file in th
 
 Visual Studio will think for a moment but will handle everything from here. You'll be able to select your target to build and debug as you did before. Debug paths, executable output paths etc. are all handled automatically.
 
+## Windows Commandline
+Make sure you have `CMake` available to use in your `PATH` through some means.
+```
+mkdir build
+cd build
+cmake .. && cmake --build .
+```
+
 ## Linux
 The same CMake steps as before (make sure you have CMake installed with `sudo apt install cmake` or similar):
 ```
