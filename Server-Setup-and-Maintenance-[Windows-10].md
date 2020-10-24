@@ -102,14 +102,9 @@ py -3 -m pip install --upgrade Modulename
 
 ## 5. Build the servers:
 
-1. Execute Visual Studio Community 2019: Open a project or solution (on the right) > select the "topaz.sln" file from the `topaz\win32\` folder > Open.
+**We have a new build system, read how to use it here:**
 
-2. Once it's loaded > Build > Build Solution.
-
-3. To confirm that everything was built properly, you should see:
-> ========== Build: 3 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
-
-in the output console at the bottom and all of these 3 .exe:
+https://github.com/project-topaz/topaz/wiki/CMake-Build-Guide
 
 * topaz_connect.exe
 * topaz_game.exe
