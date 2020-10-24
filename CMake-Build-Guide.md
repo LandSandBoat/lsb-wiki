@@ -18,6 +18,8 @@ cd build
 cmake .. && cmake --build .
 ```
 
+The default is x64, you can force 32-bit with: `cmake .. -A Win32 && cmake --build .`
+
 ## Linux
 The same CMake steps as before (make sure you have CMake installed with `sudo apt install cmake` or similar):
 ```
