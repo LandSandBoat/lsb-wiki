@@ -29,6 +29,22 @@ cmake ..
 make -j $(nproc)
 ```
 
+## Troubleshooting
+On Windows, if you have versions of our external libraries installed on your machine, CMake might try to use them. You'll be able to catch this during configuration when CMake reports:
+```
+-- MYSQL_LIBRARY: C:\mysql-ver-1.0\lib
+-- MYSQL_INCLUDE_DIR: C:\mysql-ver-1.0\include
+```
+This should be reporting the bundled versions we keep, something like this:
+```
+-- MYSQL_LIBRARY: C:\dev\topaz\ext\lib\mysql
+-- MYSQL_INCLUDE_DIR: C:\dev\topaz\ext\include\mysql
+```
+If this happens, you can override these paths when you configure CMake:
+```
+cmake .. -DMYSQL_INCLUDE_DIR=C:\dev\topaz\ext\lib\mysql -DMYSQL_LIBRARY=C:\dev\topaz\ext\lib\libmariadb.lib
+```
+
 ## Why the change?
 Historically, we've had 3 build systems: VS Solution, Linux makefile and CMake. On all platforms, when you wanted to add a file you had to add them to the VS `.sln` file, often by hand. This made cross-platform development annoying, and merge conflicts on the XML-based `.sln` files were a pain. `CMake` files are simple and allow us to more easily split the project into logical chunks to build and apply different build settings to.
 
