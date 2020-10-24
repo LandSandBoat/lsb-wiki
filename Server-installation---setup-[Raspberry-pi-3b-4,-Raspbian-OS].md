@@ -10,7 +10,7 @@ All the steps below in code block are to be done on the terminal unless otherwis
 Install the requirements to run the sql database, tools to compile the source code, and lua.
 ```
 sudo apt update
-sudo apt install mariadb-server-10.0 libmariadb-dev-compat libluajit-5.1-dev libzmq3-dev liblua5.1-bitop autoconf pkg-config
+sudo apt install cmake mariadb-server-10.0 libmariadb-dev-compat libluajit-5.1-dev libzmq3-dev liblua5.1-bitop autoconf pkg-config
 ```
 
 Clone the repository to a new folder named topaz by putting:
@@ -28,8 +28,9 @@ git clone --recursive --single-branch --branch canary https://github.com/project
 Go inside the project's folder and compile the source code like so:
 ```
 cd topaz
-sh autogen.sh
-./configure --enable-debug=gdb
+mkdir build
+cd build
+cmake ..
 make -j $(nproc)
 ```
 You will get some warnings with configure, as long as there are no FATAL errors, you're ok to continue.  
