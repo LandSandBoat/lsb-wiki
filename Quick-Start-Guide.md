@@ -37,8 +37,8 @@
   <summary>Linux</summary>
   
   ## To Install
-  * Use your package manager to install the following packages or their equivalent, dev version if available: 
-`g++-8 cmake mariadb-server libmariadbclient libluajit-5.1 libzmq3 libssl python3 git`
+  * Use your package manager to install the following packages or their equivalent (Debian packages listed): 
+`g++-8 cmake mariadb-server libmariadbclient-dev libluajit-5.1-dev libzmq3-dev libssl-dev python3 python3-pip git`
   * Type:
   ```
   sudo mysql_secure_installation
@@ -73,7 +73,7 @@
   git stash pop
   cd build
   cmake ..
-  make -j`nproc`
+  make -j $(nproc)
   cd ../tools
   python3 dbtool.py update
   ```
