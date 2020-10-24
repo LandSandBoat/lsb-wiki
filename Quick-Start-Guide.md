@@ -38,7 +38,7 @@
   
   ## To Install
   * Use your package manager to install the following packages or their equivalent, dev version if available: 
-`mariadb-server libmariadbclient libluajit-5.1 libzmq3 autoconf pkg-config libssl python3 git`
+`g++-8 cmake mariadb-server libmariadbclient libluajit-5.1 libzmq3 libssl python3 git`
   * Type:
   ```
   sudo mysql_secure_installation
@@ -54,10 +54,11 @@
   * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_login` and `mysql_password` to the login/password set during MariaDB setup.
   * In the `topaz` dir, type:
   ```
-  sh autogen.sh
-  ./configure --enable-debug=gdb
-  make
-  cd tools
+  mkdir build
+  cd build
+  cmake ..
+  make -j`nproc`
+  cd ../tools
   pip3 install -r requirements.txt
   python3 dbtool.py
   ```
@@ -70,10 +71,10 @@
   git stash
   git pull
   git stash pop
-  sh autogen.sh
-  ./configure --enable-debug=gdb
-  make
-  cd tools
+  cd build
+  cmake ..
+  make -j`nproc`
+  cd ../tools
   python3 dbtool.py update
   ```
 </details>
