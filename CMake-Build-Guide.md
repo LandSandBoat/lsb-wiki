@@ -24,7 +24,7 @@ The same CMake steps as before (make sure you have CMake installed with `sudo ap
 mkdir build
 cd build
 cmake ..
-make -j`nproc`
+make -j $(nproc)
 ```
 
 ## Why the change?
