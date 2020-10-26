@@ -44,7 +44,7 @@ If you want to build everything, you can go here:
 
 If you want to build and debug a specific executable, you can go here:
 
-![image](https://user-images.githubusercontent.com/1389729/97194631-0c6d3300-17b3-11eb-83cd-9e5411824b2f.png)
+![image](https://user-images.githubusercontent.com/1389729/97194922-6241db00-17b3-11eb-806c-0f2f3cb047cd.png)
 
 Debug paths, executable output paths etc. are all handled automatically, unlike the old `.sln` files which didn't work for debugging 'out-of-the-box'.
 
@@ -57,6 +57,10 @@ cmake .. && cmake --build .
 ```
 
 The default is x64, you can force 32-bit with: `cmake .. -A Win32 && cmake --build .`
+
+## Generate a .sln file
+If for some reason you want a `.sln` file, you can generate one with:
+`cmake -G "Visual Studio 16 2019" ..` or `cmake -G "Visual Studio 15 2017" ..`
 
 ## Linux
 The same CMake steps as before (make sure you have CMake installed with `sudo apt install cmake` or similar):
