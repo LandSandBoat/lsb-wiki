@@ -1,4 +1,4 @@
-**Note: To be able to update the Final Fantasy XI client - and connect to Project Topaz servers using the most recent version - you must be capable of connecting to retail at least once. Possible methods for doing so may be found below in [Section 2 - Connect to Retail](https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows%5D-%28second-part%29/#2-connecting-to-retail). Project Topaz does not condone methods enabling client updates without having connected to SquareEnix's retail servers.**
+**Note: To be able to update the Final Fantasy XI client - and connect to Project Topaz servers using the most recent version - you must be capable of connecting to retail at least once. Possible methods for doing so may be found below in [Section 2 - Connect to Retail](https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D#2-connecting-to-retail). Project Topaz does not condone methods enabling client updates without having connected to SquareEnix's retail servers.**
 
 # 1. Install and Update Final Fantasy XI
 
