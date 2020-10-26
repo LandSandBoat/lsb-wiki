@@ -32,6 +32,10 @@ make -j $(nproc)
 ```
 
 ## Troubleshooting
+#### Paths containing spaces
+Currently, the build will fail on paths that contain spaces: https://github.com/project-topaz/topaz/issues/1436
+
+#### External Libraries
 On Windows, if you have versions of our external libraries installed on your machine, CMake might try to use them. You'll be able to catch this during configuration when CMake reports:
 ```
 -- MYSQL_LIBRARY: C:\mysql-ver-1.0\lib
