@@ -17,7 +17,6 @@
   * [Useful SQL Queries](https://github.com/project-topaz/topaz/wiki/Useful-SQL-queries)
 * [Development](https://github.com/project-topaz/topaz/wiki/Development)
   * [GitHub and Contributing](https://github.com/project-topaz/topaz/wiki/GitHub-and-Contributing)
-  * [Style Guide](https://github.com/project-topaz/topaz/blob/release/CONTRIBUTING.md#style-guide)
   * [Guides and Articles](https://github.com/project-topaz/topaz/wiki/Guides-(Development))
   * [General Development](https://github.com/project-topaz/topaz/wiki/General-Development)
   * [CMake Build Guide](https://github.com/project-topaz/topaz/wiki/CMake-Build-Guide)
