@@ -8,7 +8,11 @@ To open the project, follow these steps and open the `CMakeLists.txt` file in th
 ![vs_build_1](https://user-images.githubusercontent.com/1389729/96963902-2b00cf00-1512-11eb-804c-47ea881888b9.png)
 ![image](https://user-images.githubusercontent.com/1389729/97025486-cd47a380-1560-11eb-8d02-0d19b539bd2c.png)
 
-Visual Studio will think for a moment but will handle everything from here. You'll be able to select your target to build and debug as you did before. Debug paths, executable output paths etc. are all handled automatically.
+CMake will think for a moment, and start configuring your build:
+
+![image](https://user-images.githubusercontent.com/1389729/97170637-b4273880-1794-11eb-895b-fd583f197415.png)
+
+Visual Studio will will handle everything from here. You'll be able to select your target to build and debug as you did before. Debug paths, executable output paths etc. are all handled automatically.
 
 ## Windows Commandline
 Make sure you have `CMake` available to use in your `PATH` through some means.
