@@ -35,6 +35,9 @@ make -j $(nproc)
 #### Paths containing spaces
 Currently, the build will fail on paths that contain spaces: https://github.com/project-topaz/topaz/issues/1436
 
+#### Drive Letters
+It appears as though the build will fail if you try to launch it from a raw drive letter (eg. `D:/`). Instead, use a subfolder: `D:/topaz`.
+
 #### External Libraries
 On Windows, if you have versions of our external libraries installed on your machine, CMake might try to use them. You'll be able to catch this during configuration when CMake reports:
 ```
