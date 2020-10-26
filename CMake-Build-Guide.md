@@ -1,4 +1,4 @@
-## Windows
+# Windows
 Long term users will notice that the `win32` folder, the `.sln` file, and `.vcproj` files are all gone. In their place: `CMakeLists.txt` files in every folder that has something to be built. Don't worry, `Visual Studio 2017` and `Visual Studio 2019` have `CMake` built-in.
 
 To open the project, follow these steps and open the `CMakeLists.txt` file in the root of the repo.
@@ -64,7 +64,7 @@ _Make sure you have `CMake` available to use in your `PATH` through some means._
 If for some reason you want a `.sln` file, you can generate one with:
 `cmake -G "Visual Studio 16 2019" ..` or `cmake -G "Visual Studio 15 2017" ..`
 
-## Linux
+# Linux
 The same CMake steps as before (make sure you have CMake installed with `sudo apt install cmake` or similar):
 ```
 mkdir build
