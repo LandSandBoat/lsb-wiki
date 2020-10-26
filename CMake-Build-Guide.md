@@ -49,7 +49,7 @@ If you want to build and debug a specific executable, you can go here:
 Debug paths, executable output paths etc. are all handled automatically, unlike the old `.sln` files which didn't work for debugging 'out-of-the-box'.
 
 ## Windows Commandline
-Make sure you have `CMake` available to use in your `PATH` through some means.
+_Make sure you have `CMake` available to use in your `PATH` through some means._
 ```
 mkdir build
 cd build
@@ -59,6 +59,8 @@ cmake .. && cmake --build .
 The default is x64, you can force 32-bit with: `cmake .. -A Win32 && cmake --build .`
 
 ## Generate a .sln file
+_Make sure you have `CMake` available to use in your `PATH` through some means._
+
 If for some reason you want a `.sln` file, you can generate one with:
 `cmake -G "Visual Studio 16 2019" ..` or `cmake -G "Visual Studio 15 2017" ..`
 
