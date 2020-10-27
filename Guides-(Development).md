@@ -2,3 +2,4 @@ Articles in this category are guides covering specific subject matter. They're i
 
 * [Spatial Orientation and Relative Positions](https://github.com/project-topaz/topaz/wiki/Spatial-Orientation-and-Relative-Positions)
 * [Understanding Variables](https://github.com/project-topaz/topaz/wiki/Understanding-variables-%E2%80%94-a-brief-guide)
+* [Performance Profiling with Tracy](https://github.com/project-topaz/topaz/wiki/Performance-Profiling-with-Tracy)
