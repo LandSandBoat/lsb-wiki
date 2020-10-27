@@ -25,3 +25,21 @@ Add `-DTRACY_ENABLE=ON` to your `CMake` configuration arguments. It will downloa
 2) Launch `Tracy.exe` from the Tracy Release
 3) In Tracy, press "Connect". It will wait for data to be sent to it.
 4) Launch `topaz_game` and watch the data stream in.
+
+## Gotchas
+Remember that there are a lot of things that can affect performance.
+- Platform (Windows, Linux, OSX)
+- Architecture (x86, x86_64)
+- Type of build (Debug, RelWithDebugInfo, Release, MinSizeRel)
+- Compiler (MSVC, Clang, GCC)
+- Your system specs (CPU Speed, Available Memory, Memory Latency, HDD R/W speed etc.)
+- Other programs using your system's resources
+- Virtualization/Containerization (VMWare, WSL, Docker)
+ 
+If you're performing before/after testing, try as hard as you can to make sure the conditions are the same for both runs and change as little as possible for each change. It is also helpful to take multiple readings and many samples per reading to try and get an accurate view of performance.
+
+## Finding Problems
+`TODO`
+
+## Profiling Lua
+`TODO`
