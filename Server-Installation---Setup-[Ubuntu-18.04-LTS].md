@@ -120,6 +120,15 @@ Once that's changed press CONTROL + X, then press enter and hit Y to save the fi
 cd ..
 ```
 
+Ubuntu installs with unatteded-upgrades enabled by default, this will cause issues
+with mariadb restarting when an update is available, leaving the server without
+access to the database. To fix this run
+```
+dpkg-reconfigure unattended-upgrades
+```
+and choose "No." You just have to make sure to run updates manually.
+
+
 For any custom changes you need to make to your server
 ```
 cd scripts/globals
