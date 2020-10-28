@@ -39,6 +39,8 @@ Remember that there are a lot of things that can affect performance.
 If you're performing before/after testing, try as hard as you can to make sure the conditions are the same for both runs and change as little as possible for each change. It is also helpful to take multiple readings and many samples per reading to try and get an accurate view of performance.
 
 ## Finding Problems
-Known bottlenecks
+Searchable statistics are in the `Statistics` header, log messages are in `Messages`. You can click and drag and zoom around the main timeline window for information about whats going on. You can "re-attach" to the most active frames by clicking on the `Pause/Resume` header and using the options there.
+
+**Known bottlenecks**
 - Excessive use of Lua's `prepFile`
 - Expensive pathing... all the time... every tick... every mob... everywhere... 
