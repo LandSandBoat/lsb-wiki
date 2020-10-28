@@ -21,7 +21,7 @@ We can't know how good/bad our performance is until we measure it.
 
 Add `-DTRACY_ENABLE=ON` to your `CMake` configuration arguments. It will download and build the `Tracy` client into `topaz_game` for you.
 
-1) Build `topaz_game` with `-DTRACY_ENABLE=ON`
+1) Build `topaz_game` with `-DTRACY_ENABLE=ON` (or use one of the `-Tracy` targets in VS)
 2) Launch `Tracy.exe` from the Tracy Release
 3) In Tracy, press "Connect". It will wait for data to be sent to it.
 4) Launch `topaz_game` and watch the data stream in.
@@ -39,7 +39,6 @@ Remember that there are a lot of things that can affect performance.
 If you're performing before/after testing, try as hard as you can to make sure the conditions are the same for both runs and change as little as possible for each change. It is also helpful to take multiple readings and many samples per reading to try and get an accurate view of performance.
 
 ## Finding Problems
-`TODO`
-
-## Profiling Lua
-`TODO`
+Known bottlenecks
+- Excessive use of Lua's `prepFile`
+- Expensive pathing... all the time... every tick... every mob... everywhere... 
