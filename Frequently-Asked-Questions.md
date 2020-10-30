@@ -36,5 +36,5 @@ However, in 2017 Dynamis Divergence was released, a content level 149 version of
 Keep in mind that we haven't completed all content up to 2007, so a full implementation of content from 2017 with mods on top isn't coming any time soon. 
 </details>
 
-## Why is the airship flying over Sauromugue Champaign skidding along the ground like a land speeder?
-It's a feature, not a bug 👀
+## Why is the airship in Sauromugue Champaign skidding along the ground like a land speeder?
+[It's a feature, not a bug.](http://project-topaz.com/issues/10) 👀
