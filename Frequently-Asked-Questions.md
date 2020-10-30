@@ -1,7 +1,7 @@
 ## What is Darkstar Project / DSP?
 Darkstar Project was the most-recent FFXI server codebase which Project Topaz forked from. It is no longer being developed.
 
-## What works?
+## What works? Is quest X implemented?
 https://github.com/project-topaz/topaz/wiki/What-Works
 
 ## When will feature X arrive?
@@ -12,6 +12,16 @@ We will never accept financial or material incentives for our work. This is a ho
 
 ## I heard Topaz is interested in modules and customization?
 _"When the rest of the codebase isn't on fire."_ ~ibm2431
+
+## Can I change job X to play like job Y?
+No.
+<details>
+<summary>Read more</summary>
+You can check in the #customization channel, but _many many_ things are enforced by the game client. For instance; you can set your jobs to be 75NIN/75BLM but you won't be able to equip Lv75 BLM gear - this is enforced by the client. Bypassing these restrictions would need heavy client modification (which we don't support) or support scripts.
+</details>
+
+## Where is fishing?
+Not yet implemented.
 
 ## When can I play "Classic" Dynamis?
 You can't, it isn't in the game anymore.
@@ -25,3 +35,6 @@ However, in 2017 Dynamis Divergence was released, a content level 149 version of
 
 Keep in mind that we haven't completed all content up to 2007, so a full implementation of content from 2017 with mods on top isn't coming any time soon. 
 </details>
+
+## Why is the airship flying over Sauromugue Champaign skidding along the ground like a land speeder?
+It's a feature, not a bug 👀
