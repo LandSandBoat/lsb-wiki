@@ -24,7 +24,10 @@ You can check in the #customization channel, but _many many_ things are enforced
 </details>
 
 ## Where is fishing?
-Not yet implemented.
+Not yet implemented. See: [What Works?](https://github.com/project-topaz/topaz/wiki/What-Works)
+
+## Where is Mog Garden?
+Not yet implemented. See: [What Works?](https://github.com/project-topaz/topaz/wiki/What-Works)
 
 ## When can I play "Classic" Dynamis?
 You can't, it isn't in the game anymore.
