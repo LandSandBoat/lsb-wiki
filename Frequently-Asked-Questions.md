@@ -4,6 +4,9 @@ Darkstar Project was the most-recent FFXI server codebase which Project Topaz fo
 ## What works? Is quest X implemented?
 https://github.com/project-topaz/topaz/wiki/What-Works
 
+## Canary? Release?
+Project Topaz maintains two long-term branches: `release` and `canary`. `release` is the default branch and contains changes that have been vetted and tested. Human error can always occur, but this is the most stable place to get code. `canary` ([origin](https://en.wiktionary.org/wiki/canary_in_a_coal_mine)) is based on `release`, but contains our `feature` branches and experimental content. It is for testing and is not guaranteed to be stable. Think of it as the "beta testing" branch.
+
 ## When will feature X arrive?
 We practice [clean room engineering](https://en.wikipedia.org/wiki/Clean_room_design), which means we have to implement everything from scratch. As such, progress is slow. We are also trying to balance feature development, bugfixes, performance improvements, exploit resolution, code review, and testing.
 
