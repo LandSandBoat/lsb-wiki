@@ -23,7 +23,13 @@ _"When the rest of the codebase isn't on fire."_ ~ibm2431
 No.
 <details>
 <summary>Read more</summary>
-You can check in the #customization channel, but _many many_ things are enforced by the game client. For instance; you can set your jobs to be 75NIN/75BLM but you won't be able to equip Lv75 BLM gear - this is enforced by the client. Bypassing these restrictions would need heavy client modification (which we don't support) or support scripts.
+<p>
+
+You can check in the #customization channel, but _many many_ things are enforced by the game client.
+For instance; you can set your jobs to be 75NIN/75BLM but you won't be able to equip Lv75 BLM gear - this is enforced by the client.
+Bypassing these restrictions would need heavy client modification (which we don't support) or support scripts.
+
+</p>
 </details>
 
 ## Where is fishing?
@@ -33,13 +39,17 @@ Not yet implemented. See: [What Works?](https://github.com/project-topaz/topaz/w
 You can't, it isn't in the game anymore.
 <details>
 <summary>Read more</summary>
-"Classic" Dynamis was removed from the game in 2011. The spawn mechanisms as you remember them are gone from the game, and those zones no longer act the way they used to. The overall project goal is to emulate the retail game as closely as possible, so a massive custom solution to approximate "Classic" Dynamis is not on our roadmap.
+<p>
 
+"Classic" Dynamis was removed from the game in 2011. The spawn mechanisms as you remember them are gone from the game, and those zones no longer act the way they used to.
+The overall project goal is to emulate the retail game as closely as possible, so a massive custom solution to approximate "Classic" Dynamis is not on our roadmap.
 
-However, in 2017 Dynamis Divergence was released, a content level 149 version of the "Classic" Dynamis players wanted to experience again. If we were to support a custom Dynamis solution, it would be the implementation of Dynamis Divergence and a set of mods or switches that scale it down to level 75 era difficulty.
-
+However, in 2017 Dynamis Divergence was released, a content level 149 version of the "Classic" Dynamis players wanted to experience again.
+If we were to support a custom Dynamis solution, it would be the implementation of Dynamis Divergence and a set of mods or switches that scale it down to level 75 era difficulty.
 
 Keep in mind that we haven't completed all content up to 2007, so a full implementation of content from 2017 with mods on top isn't coming any time soon. 
+
+</p>
 </details>
 
 ## Why is the airship in Sauromugue Champaign skidding along the ground like a land speeder?
