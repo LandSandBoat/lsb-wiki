@@ -1,9 +1,10 @@
-This is the wiki for Project Topaz - an open source Final Fantasy XI server emulator.
+This is the wiki for Project Topaz - an open-source Final Fantasy XI server emulator.
 
 # General
 General articles about the project
 - [[What Works|https://github.com/project-topaz/topaz/wiki/What-Works]]
-
+- [[Quickstart Guide|https://github.com/project-topaz/topaz/wiki/Quick-Start-Guide]]
+- [[Frequently Asked Questions|https://github.com/project-topaz/topaz/wiki/Frequently-Asked-Questions]]
 # Client Setup
 Instructions for installing FFXI, connecting to a private server, and keeping the game updated.
 - [Windows 10](https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D)
