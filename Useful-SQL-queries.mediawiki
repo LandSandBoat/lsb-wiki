@@ -61,3 +61,19 @@ Byte 2 - Vision of Abyssea to Seekers of Adoulin
 
 It's a decimal representation of multiple bytes. Lets look at them in binary, where it's all on/off (one and zero):<br>
 so our default value of 4094 = 0000111111111110 (everything except the "Not Used" bits). You can use almost any calculator to swap between these formats if you need to.
+
+== Enable ZONEMISC features everywehre ==
+In this example, we'll enable `MISC_YELL` everywhere.
+```cpp
+MISC_YELL = 0x0400, // Send and receive /yell commands
+```
+
+0x0400 is hex for 1024, so we'll use that value going forwards. The following query will add the flag 1024 to any zone misc that doesn't already have it set.
+
+```sql
+UPDATE tpzdb.zone_settings 
+SET 
+    misc = misc + 1024
+WHERE
+    NOT(misc & 1024);
+```
