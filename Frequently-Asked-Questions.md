@@ -52,7 +52,8 @@ Bypassing these restrictions would need heavy client modification (which we don'
 </details>
 
 ## Why isn't Yell/Trust/Auction House etc. available in every zone?
-What's available to use per-zone is controlled with the `misc` flags column in `zone_settings.sql`. These flags correspond to the `ZONEMISC` enum in `zone.h`. 
+What's available to use per-zone is controlled with the `misc` flags column in `zone_settings.sql`. These flags correspond to the `ZONEMISC` enum in `zone.h`. A query to modify those flags can be found in [Useful SQL queries](https://github.com/project-topaz/topaz/wiki/Useful-SQL-queries#enable-zonemisc-features-everywhere).
+
 <details>
 <summary>Read more</summary>
 <p>
