@@ -63,7 +63,7 @@ It's a decimal representation of multiple bytes. Lets look at them in binary, wh
 so our default value of 4094 = 0000111111111110 (everything except the "Not Used" bits). You can use almost any calculator to swap between these formats if you need to.
 
 == Enable ZONEMISC features everywhere ==
-In this example, we'll enable `MISC_YELL` everywhere.
+In this example, we'll enable MISC_YELL everywhere. You can see these flags [here](https://github.com/project-topaz/topaz/blob/release/src/map/zone.h#L439).
 ```cpp
 MISC_YELL = 0x0400, // Send and receive /yell commands
 ```
