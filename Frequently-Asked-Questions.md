@@ -51,6 +51,33 @@ Bypassing these restrictions would need heavy client modification (which we don'
 </p>
 </details>
 
+## Why isn't Yell/Trust/Auction House etc. available in every zone?
+What's available to use per-zone is controlled with the `misc` flags column in `zone_settings.sql`. These flags correspond to the `ZONEMISC` enum in `zone.h`. 
+<details>
+<summary>Read more</summary>
+<p>
+
+```cpp
+enum ZONEMISC
+{
+    MISC_NONE       = 0x0000,   // Able to be used in any area
+    MISC_ESCAPE     = 0x0001,   // Ability to use Escape Spell
+    MISC_FELLOW     = 0x0002,   // Ability to summon Fellow NPC
+    MISC_MOUNT      = 0x0004,   // Ability to use Chocobos and mounts
+    MISC_MAZURKA    = 0x0008,   // Ability to use Mazurka Spell
+    MISC_TRACTOR    = 0x0010,   // Ability to use Tractor Spell
+    MISC_MOGMENU    = 0x0020,   // Ability to communicate with Nomad Moogle (menu access mog house)
+    MISC_COSTUME    = 0x0040,   // Ability to use a Costumes
+    MISC_PET        = 0x0080,   // Ability to summon Pets
+    MISC_TREASURE   = 0x0100,   // Presence in the global zone TreasurePool
+    MISC_AH         = 0x0200,   // Ability to use the auction house
+    MISC_YELL       = 0x0400    // Send and receive /yell commands
+};
+```
+
+</p>
+</details>
+
 ## What is Darkstar Project / DSP?
 Darkstar Project was the most-recent FFXI server codebase which Project Topaz forked from. It is no longer being developed.
 
