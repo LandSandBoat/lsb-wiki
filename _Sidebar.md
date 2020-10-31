@@ -2,6 +2,7 @@
 * General
   * [[What Works|https://github.com/project-topaz/topaz/wiki/What-Works]]
   * [[Quickstart Guide|https://github.com/project-topaz/topaz/wiki/Quick-Start-Guide]]
+  * [[Frequently Asked Questions|https://github.com/project-topaz/topaz/wiki/Frequently-Asked-Questions]]
 * Client Setup
   * [[Windows 10|https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D]]
   * [Common Concerns](https://github.com/project-topaz/topaz/wiki/Miscellaneous-(Client))
