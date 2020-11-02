@@ -35,12 +35,16 @@ Remember that there are a lot of things that can affect performance.
 - Your system specs (CPU Speed, Available Memory, Memory Latency, HDD R/W speed etc.)
 - Other programs using your system's resources
 - Virtualization/Containerization (VMWare, WSL, Docker)
- 
+
 If you're performing before/after testing, try as hard as you can to make sure the conditions are the same for both runs and change as little as possible for each change. It is also helpful to take multiple readings and many samples per reading to try and get an accurate view of performance.
+
+#### Common Hiccups
+- `ShowWarning`, `std::cout / std::endl`, `printf`, and syscalls of any kind can be slow and blocking. `ShowInfo` was measured to take **7 milliseconds**. When you're trying to track down performance hits of **50 microseconds**, you will freak out if you forget this fact after you've peppered your target code with prints.
 
 ## Finding Problems
 Searchable statistics are in the `Statistics` header, log messages are in `Messages`. You can click and drag and zoom around the main timeline window for information about whats going on. You can "re-attach" to the most active frames by clicking on the `Pause/Resume` header and using the options there.
 
 **Known bottlenecks**
 - Excessive use of Lua's `prepFile`
-- Expensive pathing... all the time... every tick... every mob... everywhere... 
+- Expensive pathing and navmesh access... all the time... every tick... every mob... everywhere...
+- `parse` routine is slow
