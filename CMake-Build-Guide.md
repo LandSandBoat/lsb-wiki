@@ -75,7 +75,7 @@ make -j $(nproc)
 
 ## Troubleshooting
 #### Paths containing spaces
-Currently, the build will fail on paths that contain spaces: https://github.com/project-topaz/topaz/issues/1436
+Previously, the build could fail on paths that contain spaces. While it works _now_, it isn't recommended.
 
 #### Drive Letters
 It appears as though the build will fail if you try to launch it from a raw drive letter (eg. `D:/`). Instead, use a subfolder: `D:/topaz`.
