@@ -1,14 +1,20 @@
 # Windows
 Long term users will notice that the `win32` folder, the `.sln` file, and `.vcproj` files are all gone. In their place: `CMakeLists.txt` files in every folder that has something to be built. Don't worry, `Visual Studio 2017` and `Visual Studio 2019` have `CMake` built-in.
 
-To open the project, follow these steps and open the `CMakeLists.txt` file in the root of the repo.
+First, open Visual Studio. You will see the welcome screen:
 
-`File > Open > Folder` in the repo root will also work. 
+![image](https://user-images.githubusercontent.com/1389729/98077765-7e134400-1e79-11eb-9c4a-cad8a24351f6.png)
+
+If you had `topaz` in `Open recent`, the **configuration** will begin automatically.
+
+If you selected `Continue without code`; follow these steps and open the `CMakeLists.txt` file in the root of the repo.
 
 ![vs_build_1](https://user-images.githubusercontent.com/1389729/96963902-2b00cf00-1512-11eb-804c-47ea881888b9.png)
 ![image](https://user-images.githubusercontent.com/1389729/97025486-cd47a380-1560-11eb-8d02-0d19b539bd2c.png)
 
-CMake will think for a moment and start configuring your build.
+`File > Open > Folder` in the repo root will also work. 
+
+CMake will think for a moment and then start the **configuration** step of your build.
 ```
 ...
 1> Working directory: C:\topaz\topaz\out\build\x86-Debug
