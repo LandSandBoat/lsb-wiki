@@ -20,6 +20,8 @@ If you plan on making heavy modifications to the Topaz codebase while still reci
 
 - **Namespacing.** If you're replacing logic in specific function calls, you could keep your custom work in a namespace. `NewServer::GetRandomNumber()` is very clearly specific to your server.
 
+### Dangers of Copy/Pasting
+
 ### Understanding the Topaz License
 
 
