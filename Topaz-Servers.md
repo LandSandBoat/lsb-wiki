@@ -231,11 +231,12 @@ Level 99 Cap Just here to have fun, made this server to have my old friends/fami
 
 * **Server address:** --server 96.244.4.162 --hairpin
 * **Discord:** https://discord.gg/4MS2FWr
+* **Website:** https://omicronxi.fandom.com
 
 * **Expansions:** All expansions are Active within the limitation's of Project Topaz.
-* **EXP Rate:** x2 
+* **EXP Rate:** x4 
 * **Fame Rate:** x2
-* **FOV:** Active with crazy EXP and Tab's
+* **FOV:** Active
 * **Skill-Up Rate:** Maxed
 * **Craft Skill-Up Rate:** Maxed
 * **Skill/Craft Multiplier:** x5
@@ -244,24 +245,23 @@ Level 99 Cap Just here to have fun, made this server to have my old friends/fami
 * **Healing tick speed:** 1 seconds.
 * **EXP Loss:** None
 * **Battlefield Lvl Cap:** 99
-* **Player Speed:** 70
-* **Trust's stats:** x2.5 (just to help speed things along) 
-* **Mob Speed:** normal
-* **Unlocked Subjob:** Disabled.
+* **Player Speed:** 80
+* **Trusts:** Slightly Custom 
+* **Mob Speed:** normal.
 * **All Maps Unlocked:** Enabled.
 * **Level Cap:** 99, Unlocked.
 * **Subjob:** Unlocked.
-* **Advanced Job's:** still got to work for them - lvl 30! 
+* **Advanced Job's:** Unlocked
 * **Fields of Valor:** Enabled.
 * **Grounds of Valor:** Enabled.
 * **Explorer Moogles:** Enabled, available at level 1.
-* **Crystal and Book Teleport:** Enabled.
+* **Crystal and Book Teleport:** Enabled, but you must collect them.
 * **Widescan:** Enabled for all jobs.
 * **All Outpost Warps Unlocked:** Enabled.
 * **Mobs:** all mobs have 1 second respawn time. 
-* **subjob-to-mainjob:** 2/3 of main job (99/66).
-* **Max Meritpoints held:** 200 for no actual reason.
+* **subjob-to-mainjob:** 1:1 of main job (99/99).
+* **Max Meritpoints held:** 100 for no actual reason.
 * **King Behemoth:** has 7.5mil HP...for fun. If you want defending ring, just ask.
-* **Auction House:** is fully stocked for 100 gil. As more players are active, I will adjust.
+* **Auction House:** is fully stocked up to 75 and some up to 98. As more players are active, I will adjust.
 * **Gobbie Box:** Active at start, 150Login points daily.
-* **Custom Commands:** !AH, !Homepoint, !Goto, !REGEN- regen/refresh/regain/Exp bonus for 4 hours.
+* **Custom Commands:** !AH, !Homepoint, !Goto, !tele (for abyssea), !shop, !mogshop
