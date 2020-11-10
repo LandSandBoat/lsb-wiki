@@ -12,6 +12,9 @@ http://wiki.project-topaz.com/Server-Update
     * ⚠️ You will need Python 3, pip, and the dbtool's dependencies `py -3 -m pip install -r requirements.txt`
 4. [Compile the server. Project Topaz exclusively uses CMake](http://wiki.project-topaz.com/CMake-Build-Guide), which is a different build process from Darkstar Project
 5. Try booting it!
+    * ❕ You may see strange new notices about unrecognized configuration settings, as we've changed or removed settings which Darkstar Project had. You can:
+        1. Copy a new conf file from the `confs/defaults` folder into `confs/` and reapply your desired changes
+        2. Compare your conf file against a default conf file in the `confs/default/` to see what changed and make changes are appropriate
 
 ## If you made many custom changes
 1. Hopefully you properly cloned Darkstar Project, have a proper git history, and have been making your changes as git commits
@@ -30,3 +33,6 @@ http://wiki.project-topaz.com/Server-Update
     * ⚠️ You will need Python 3, pip, and the dbtool's dependencies `py -3 -m pip install -r requirements.txt`
 8. [Compile the server. Project Topaz exclusively uses CMake](http://wiki.project-topaz.com/CMake-Build-Guide), which is a different build process from Darkstar Project
 9. Try booting it!
+    * ❕ You may see strange new notices about unrecognized configuration settings, as we've changed or removed settings which Darkstar Project had. You can:
+        1. Copy a new conf file from the `confs/defaults` folder into `confs/` and reapply your desired changes
+        2. Compare your conf file against a default conf file in the `confs/default/` to see what changed and make changes are appropriate
