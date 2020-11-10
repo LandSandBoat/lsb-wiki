@@ -5,10 +5,13 @@ This guide assumes you've managed to download, build, and run the server correct
 - [GitHub Issues](https://github.com/project-topaz/topaz/issues)
 - [What Works?](https://github.com/project-topaz/topaz/wiki/What-Works)
 - [Using GitHub](https://github.com/project-topaz/topaz/wiki/Using-Github)
-- [Contributing Guide & Style Guide](https://github.com/project-topaz/topaz/blob/release/CONTRIBUTING.md)
+- [Contribution Guide & Style Guide](https://github.com/project-topaz/topaz/blob/release/CONTRIBUTING.md)
 - [Technical Articles & Guides](https://github.com/project-topaz/topaz/wiki/Guides-(Development))
+- [Our License](https://github.com/project-topaz/topaz/blob/release/LICENSE)
 
 ### Whatever your skill level
+Make sure you have read our [Contributor's Guide](https://github.com/project-topaz/topaz/blob/release/CONTRIBUTING.md) (also be aware of our [License](https://github.com/project-topaz/topaz/blob/release/LICENSE)).
+
 Join our Discord server and ask us any questions you may have.
 
 #### I am unfamiliar with programming
