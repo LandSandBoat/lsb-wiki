@@ -54,7 +54,7 @@ No.
 
 You can check in the #customization channel, but _many many_ things are enforced by the game client.
 For instance; you can set your jobs to be 75NIN/75BLM but you won't be able to equip Lv75 BLM gear - this is enforced by the client.
-Bypassing these restrictions would need heavy client modification (which we don't support) or support scripts.
+Bypassing these restrictions would need heavy client modification (which we don't support) or support scripts and changes in core.
 
 </p>
 </details>
