@@ -6,7 +6,7 @@
   * Install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/community/), check Desktop development with C++.
   * Install [MariaDB](https://mariadb.org/), use defaults, set a root password.
   * Install [Python 3](https://www.python.org/downloads/), check to add to PATH.
-  * Use Git to clone from URL https://github.com/project-topaz/topaz.git
+  * [Use a Git client to clone](https://github.com/project-topaz/topaz/wiki/Server-setup-and-maintenance-%5BWindows-10%5D#2-download-the-source-code) from URL https://github.com/project-topaz/topaz.git
   * Open in Explorer, **copy** all files in `topaz/conf/default/` into `topaz/conf/`.
   * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_password` to the password set during MariaDB setup.
   * Open the tools folder, shift+right-click, open Powershell.
