@@ -4,7 +4,7 @@
 http://wiki.project-topaz.com/What-Works
 
 ## How can I help the project?
-https://github.com/project-topaz/topaz/wiki/How-Can-I-Help
+http://wiki.project-topaz.com/How-Can-I-Help
 
 ## Canary? Release?
 Project Topaz maintains two long-term branches: `release` and `canary`. `release` is the default branch and contains changes that have been vetted and tested. Human error can always occur, but this is the most stable place to get code. `canary` ([origin](https://en.wiktionary.org/wiki/canary_in_a_coal_mine)) is based on `release`, but contains our `feature` branches and experimental content. It is for testing and is not guaranteed to be stable. Think of it as the "beta testing" branch.
