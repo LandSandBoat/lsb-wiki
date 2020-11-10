@@ -18,6 +18,7 @@
   * Follow the on-screen instructions.
   * Open the topaz root folder in VS2019.
   * Build the solution in VS2019.
+  * Check the [CMake Build Guide](https://github.com/project-topaz/topaz/wiki/CMake-Build-Guide) if you're unsure about the build.
 
   ## To Update
   * Open the topaz folder in Explorer.
