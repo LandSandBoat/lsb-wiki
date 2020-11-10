@@ -4,7 +4,7 @@ This guide assumes you've managed to download, build, and run the server correct
 - [GitHub Issues tagged as "Good First Issue"](https://github.com/project-topaz/topaz/labels/good%20first%20issue)
 - [GitHub Issues](https://github.com/project-topaz/topaz/issues)
 - [What Works?](https://github.com/project-topaz/topaz/wiki/What-Works)
-- [Using GitHub](Using GitHub)
+- [Using GitHub](https://github.com/project-topaz/topaz/wiki/Using-Github)
 - [Contributing Guide & Style Guide](https://github.com/project-topaz/topaz/blob/release/CONTRIBUTING.md)
 - [Technical Articles & Guides](https://github.com/project-topaz/topaz/wiki/Guides-(Development))
 
