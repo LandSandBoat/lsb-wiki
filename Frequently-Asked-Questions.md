@@ -16,10 +16,15 @@ We practice [clean room engineering](https://en.wikipedia.org/wiki/Clean_room_de
 We will never accept financial or material incentives for our work. This is a hobby project. External incentives would drive developer and staff time in a way that makes it no longer a hobby.
 
 ## Where is fishing?
-Not yet implemented. See: [What Works?](https://github.com/project-topaz/topaz/wiki/What-Works)
+Not yet implemented.
+
+See: [What Works?](https://github.com/project-topaz/topaz/wiki/What-Works)
 
 ## The code for feature X is available in the community, why haven't you taken it?
 Features in Project Topaz are those that have been submitted to us, meet our standards for quality and accuracy, and that we have had the time to review and integrate with the rest of the codebase. It is very rare that we will accept code on someone else's behalf. While there is technically nothing stopping us, it would undermine our position in the community.
+
+
+See: [Where is fishing?](https://github.com/project-topaz/topaz/wiki/Frequently-Asked-Questions#where-is-fishing)
 
 ## When can I play "Classic" Dynamis?
 You can't - it isn't in the game anymore.
