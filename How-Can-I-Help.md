@@ -15,7 +15,7 @@ Make sure you have read our [Contributor's Guide](https://github.com/project-top
 Join our Discord server and ask us any questions you may have.
 
 #### I am unfamiliar with programming
-Not a problem! Since the project has such a long history, many things are not correctly documented. You can go through the "What Works?" page linked above and verify the status of different features by playing. If you find broken features, wacky balance issues, crashes etc., it is very helpful for you to create GitHub Issues for them so we can keep track and eventually fix them.
+Not a problem! Since the project has such a long history, many things are not correctly documented. You can go through the "What Works?" page linked above and verify the status of different features by playing. If you find broken features, wacky balance issues, crashes etc., it is very helpful for you to create GitHub Issues for them so we can keep track and eventually fix them. It is also very helpful to go through existing issues and see what is still valid, or if conditions have changed.
 
 #### I have programmed with different languages
 Off to a good start! Lua (our scripting language) is very easy to pick up, browse through our GitHub Issues and find anything "scripted incorrectly", "cutscene/cs dialogue is wrong", etc. If you find something you think is suitable, ask in Discord if is suitable for your knowledge level.
