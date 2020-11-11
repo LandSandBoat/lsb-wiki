@@ -14,7 +14,7 @@ http://wiki.project-topaz.com/Server-Update
 5. Try booting it!
     * ❕ You may see strange new notices about unrecognized configuration settings, as we've changed or removed settings which Darkstar Project had. You can:
         1. Copy a new conf file from the `confs/defaults` folder into `confs/` and reapply your desired changes
-        2. Compare your conf file against a default conf file in the `confs/default/` to see what changed and make changes are appropriate
+        2. Compare your conf file against a default conf file in the `confs/default/` to see what changed and make changes as appropriate
 
 ## If you made many custom changes
 1. Hopefully you properly cloned Darkstar Project, have a proper git history, and have been making your changes as git commits
