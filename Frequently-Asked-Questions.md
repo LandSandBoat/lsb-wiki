@@ -23,6 +23,7 @@ See: [What Works?](https://github.com/project-topaz/topaz/wiki/What-Works)
 ## The code for feature X is available in the community, why haven't you taken it?
 Features in Project Topaz are those that have been submitted to us, meet our standards for quality and accuracy, and that we have had the time to review and integrate with the rest of the codebase. It is very rare that we will accept code on someone else's behalf. While there is technically nothing stopping us, it would undermine our position in the community.
 
+Similarly, sending us code snippets creates more work and strain on staff and developers. If you have code you want to contribute, please speak to us on Discord and open a Pull Request.
 
 See: [Where is fishing?](https://github.com/project-topaz/topaz/wiki/Frequently-Asked-Questions#where-is-fishing)
 
