@@ -144,7 +144,8 @@ struct LuaEntity
 
     int getLongID()
     {
-        return m_PEntity->ID +  m_PEntity->Zone;
+        // Other logic can live here <--
+        return otherutils::makeLongID(m_PEntity->ID, m_PEntity->Zone);
     }
 };
 
