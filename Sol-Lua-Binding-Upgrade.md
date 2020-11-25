@@ -10,6 +10,12 @@ If it was rock-solid and easy to use/understand/extend, then we would be perfect
 The most promising and well supported library at the moment is **[sol](https://github.com/ThePhD/sol2)** (sol2 v3, referred to as Sol/sol for clarity).
 
 ### Examples
+#### Usage
+```cpp
+#define SOL_ALL_SAFETIES_ON 1
+#include "sol/sol.hpp"
+```
+
 #### Basic
 ```cpp
 int main()
@@ -178,6 +184,57 @@ uint32 someExistingBinding(lua_State* L)
     sol::state_view lua(L); // Create non-owning view into existing lua state
   
     ... // Continue using 'lua' and the sol functionality...
+
+    return 0;
+}
+```
+
+#### Safety wrappers
+```cpp
+template <typename... Args>
+auto safeCall(sol::state& lua, std::string funcName, Args&&... args)
+{
+    auto result = lua[funcName](std::forward<Args>(args)...);
+    if (!result.valid())
+    {
+        sol::error e = result;
+        printf("lua err: %s\n", e.what());
+    }
+    return result;
+}
+
+int main()
+{
+    sol::state lua;
+    lua.open_libraries();
+    lua.script(R"(
+        function test0()
+            print(42)
+        end
+
+        function test1(num1)
+            print(num1 * num1)
+        end
+
+        function test2(num1, num2)
+            print(num1 * num2)
+        end
+    )");
+
+    safeCall(lua, "test0");
+    safeCall(lua, "test1", 2);
+    
+    if (!safeCall(lua, "test2", "bad args").valid())
+    {
+        printf("Bad times :(");
+    }
+
+    // Prints:
+    // lua err: [string "..."]:11: attempt to mul a 'string' with a 'nil'
+    // stack traceback:
+    //         [C]: in metamethod 'mul'
+    //         [string "..."]:11: in function 'test2'
+    // Bad times :(
 
     return 0;
 }
