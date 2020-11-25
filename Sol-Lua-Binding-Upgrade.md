@@ -108,6 +108,68 @@ int main()
 }
 ```
 
+#### Binding Wrappers for Usertypes
+```cpp
+// Underlying Entity
+struct Entity
+{
+    int ID;
+    int Zone;
+
+    int getID()
+    {
+        return ID;
+    }
+
+    int getZone()
+    {
+        return Zone;
+    }
+};
+
+// "Wrapper" around underlying Entity
+struct LuaEntity
+{
+    Entity* m_PEntity;
+
+    int getID()
+    {
+        return m_PEntity->ID;
+    }
+
+    int getZone()
+    {
+        return m_PEntity->Zone;
+    }
+
+    int getLongID()
+    {
+        return m_PEntity->ID +  m_PEntity->Zone;
+    }
+};
+
+int main()
+{
+    sol::state lua(); // Create lua state
+    lua.open_libraries(); // Open all lua standard libs
+  
+    lua.new_usertype<LuaEntity>("LuaEntity",
+        "getID()", &LuaEntity::getID(),
+        "getZone()", &LuaEntity::getZone(),
+        "getLongID()", &LuaEntity::getLongID()
+    );
+
+    lua.script("function printEntityInfo(entity) print(entity:getID()); print(entity:getZone()); print(entity:getLongID()); end");
+
+    auto entity = Entity{42, 99};
+    auto luaEntity = LuaEntity{entity}
+
+    lua["printEntityInfo"](luaEntity);
+
+    return 0;
+}
+```
+
 #### Basic interop with Lunar
 ```cpp
 uint32 someExistingBinding(lua_State* L)
