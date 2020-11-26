@@ -12,6 +12,7 @@
 - All mages are very MP-hungry
 - Spell selection is very simple
 - Trusts don't track if their spells were resisted, or if they might get resisted
+- Melee trusts don't get access to TP skills that can form Light/Dark skillchains until Lv60, unless that's the only skill they have.
 
 ***
 
