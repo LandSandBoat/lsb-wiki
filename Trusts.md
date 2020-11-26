@@ -182,7 +182,7 @@
 | AATT | ❌ | |
 | Aldo | ❌ | |
 | Babban | ❌ | |
-| Cornelia | ❌ | Unsummonable: SE removed from the game |
+| Cornelia | 💀 | Unsummonable: SE removed from the game |
 | Fablinix | ❌ | |
 | Kupofried | ❌ | |
 | Monberaux | ❌ | |
