@@ -6,6 +6,8 @@
 | ⛔ | Partially Implemented (Playable, Most things missing) |
 | ❌ | Unimplemented (Will just stand around) |
 
+### This page is only for tracking Trust combat logic, not whether they obtainable or not. This assumes you have access to them through GM commands or otherwise (`!addalltrusts`).
+
 ## General Notes
 - All mages are very MP-hungry
 - Spell selection is very simple
