@@ -159,7 +159,7 @@ http://project-topaz.com/blob/release/scripts/globals/quests.lua
 | ❌ | Pankration | |
 | 🐤 | Records of Eminence| ~300 records + Timed challenges |
 | ❌ | Synergy | |
-| 🐤 | Trusts | Current status tracker: <br>http://project-topaz.com/issues/446 |
+| 🐤 | Trusts | Current dev & issues tracker: <br>http://project-topaz.com/issues/446 <br>Trust status: <br>http://project-topaz.com/wiki/Trusts |
 
 # Mechanics
 
