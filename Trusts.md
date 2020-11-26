@@ -94,7 +94,7 @@
 | Selh'teus | ❌ | |
 | Semih Lafihna | ❌ | |
 | Tenzen II | ❌ | |
-| Zeid II | ⚠️ | |
+| Zeid II | ⚠️ | Implemented very quickly, probably missing things |
 
 ### Unity Concord
 | Name | Status | Notes |
@@ -141,12 +141,12 @@
 ### Records of Eminence
 | Name | Status | Notes |
 |---|---|---|
-| Adelheid | ⛔ | |
-| Joachim | ⛔ | |
+| Adelheid | ⛔ | No Scholar abilities/spells |
+| Joachim | ⛔ | Song selection is hard-coded |
 | Koru-Moru | ✔️ | |
-| Mihli Aliapoh | ⚠️ | |
-| Tenzen | ✔️ | |
-| Valaineral | ✔️ | |
+| Mihli Aliapoh | ⚠️ | Implemented very quickly, probably missing things |
+| Tenzen | ⚠️ | Implemented very quickly, probably missing things |
+| Valaineral | ⚠️ | Implemented very quickly, probably missing things |
 
 ### Alter Ego Extravaganzas
 | Name | Status | Notes |
@@ -170,7 +170,7 @@
 | Ovjang | ❌ | |
 | Qultada | ❌ | |
 | Rahal | ❌ | |
-| Sakura | ⚠️ | |
+| Sakura | ⚠️ | Immortal, but still can get hit by things when it shouldn't |
 
 ### Other Events
 | Name | Status | Notes |
