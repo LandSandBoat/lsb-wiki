@@ -96,4 +96,53 @@
 | Tenzen II | ❌ | |
 | Zeid II | ⚠️ | |
 
-### TODO: All the other entries
+Unity Concord
+Aldo (UC) • Apururu (UC) • Ayame (UC) • Flaviria (UC) • Invincible Shield (UC) • Jakoh Wahcondalo (UC) • Maat (UC) • Naja Salaheem (UC) • Pieuje (UC) • Sylvie (UC) • Yoran-Oran (UC)
+
+### Repeat Login Campaigns
+| Name | Status | Notes |
+|---|---|---|
+| Abenzio | | |
+| Areuhat | | |
+| Brygid | | |
+| Darrcuiln  | | |
+| D. Shantotto | | |
+| Karaha-Baruha | | |
+|  | | |
+|  | | |
+|  | | |
+|  | | |
+|  | | |
+ •  •  • •  •  • Kuyin Hathdenna • Lehko Habhoka • Lhe Lhangavo • Lion • Luzaf • Mayakov • Naja Salaheem • Najelith • Robel-Akbel • Rongelouts • Rughadjeen • Shantotto II • Star Sibyl • Teodor • Uka Totlihn • Ullegore • Zeid
+
+### Records of Eminence
+| Name | Status | Notes |
+|---|---|---|
+| Adelheid | | |
+| Joachim | | |
+| Koru-Moru | | |
+| Mihli Aliapoh | | |
+| Tenzen | | |
+| Valaineral | | |
+
+Alter Ego Extravaganzas
+• Amchuchu • Cid • Elivira • Ferreous Coffin • Gilgamesh • • Kayeel-Payeel • King of Hearts •  • Kukki-Chebukki • Leonoyne • Lhu Mhakaracca • Makki-Chebukki • Margret • Maximilian •  • Mildaurion • Mnejing • Morimar • Noillurie • Ovjang • Qultada • Rahal • Sakura • • 
+
+### Other Events
+| Name | Status | Notes |
+|---|---|---|
+| AAEV | | |
+| AAGK  | | |
+| AAHM | | |
+| AAMR | | |
+| AATT | | |
+| Aldo | | |
+| Babban | | |
+| Cornelia | | |
+| Fablinix | | |
+| Kupofried | | |
+| Monberaux | | |
+| Moogle | | |
+| Mumor | | |
+| Mumor II | | |
+| Ygnas | | |
