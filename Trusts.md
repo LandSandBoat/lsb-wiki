@@ -131,7 +131,7 @@
 | Robel-Akbel | ❌ | |
 | Rongelouts | ❌ | |
 | Rughadjeen  | ❌ |
-| Shantotto II | ⛔ | |
+| Shantotto II | ⛔ | No TP moves |
 | Star Sibyl | ❌ | |
 | Teodor | ❌ | |
 | Uka Totlihn | ❌ | |
@@ -170,7 +170,7 @@
 | Ovjang | ❌ | |
 | Qultada | ❌ | |
 | Rahal | ❌ | |
-| Sakura | ❌ | |
+| Sakura | ⚠️ | |
 
 ### Other Events
 | Name | Status | Notes |
@@ -182,7 +182,7 @@
 | AATT | ❌ | |
 | Aldo | ❌ | |
 | Babban | ❌ | |
-| Cornelia | ❌ | Note: SE removed from the game, unsummonable |
+| Cornelia | ❌ | Unsummonable: SE removed from the game |
 | Fablinix | ❌ | |
 | Kupofried | ❌ | |
 | Monberaux | ❌ | |
