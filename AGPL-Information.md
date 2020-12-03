@@ -1,7 +1,7 @@
 # Applicability
-This informative document applies to works we have licensed under the AGPL -- potentially including works which have been submitted to us. As part of the Limited Contributor License Agreement which all contributors have agreed to, Project Topaz has permission to license such contributions under the AGPL, and also has permission to apply certain additional terms to the submitted material.
+This informative document applies to works we have licensed under the AGPL -- potentially including works which have been submitted to us. As part of the [Limited Contributor License Agreement](https://github.com/project-topaz/topaz/blob/release/CONTRIBUTOR_AGREEMENT.md) which all contributors have agreed to, Project Topaz has permission to license such contributions under the AGPL, and also has permission to apply certain additional terms to the submitted material.
 
-While Project Topaz was forked from Darkstar Project -- which was licensed under the GPL -- we have the capability to license and combine new, individual portions of work under the AGPL. For more information on this subject, please see this email exchange with the Free Software Foundation:
+While Project Topaz was forked from [Darkstar Project -- which was licensed under the GPL](https://github.com/DarkstarProject/darkstar/blob/master/LICENSE) -- we have the capability to license and combine new, individual portions of work under the AGPL. For more information on this subject, please see this email exchange with the Free Software Foundation:
 
 <https://raw.githubusercontent.com/wiki/project-topaz/topaz/resources/license/fsf_email.txt>
 
@@ -10,11 +10,11 @@ While Project Topaz was forked from Darkstar Project -- which was licensed under
 For the past year, our license document has stipulated the terms under which any of our AGPL works may be used. As we had not yet previously combined AGPL works into the existing software, these terms have not been applicable. Now that Project Topaz has begun integrating AGPL works, it is imperative you understand the terms by which you may use and modify the software.
 
 # Must offer source code to connecting users
-Section 13 of the GPL stipulates that when a work licensed under the GPL has been combined with a work under the AGPL, then Section 13 of the AGPL applies to the combination.
+[Section 13 of the GPL](https://github.com/project-topaz/topaz/blob/release/GPL3#L552-L561) stipulates that when a work licensed under the GPL has been combined with a work under the AGPL, then Section 13 of the AGPL applies to the combination.
 
 This clause is part of the GPL under which our parent project, Darkstar Project, was licensed. It applies to all servers and codebases derived from Darkstar Project. If you use or modify either Darkstar Project or Project Topaz, then Section 13 of the AGPL applies should your server include an AGPL work. This is true even if you are the author of the modification -- by combining it with an AGPL work, Section 13 of the AGPL applies to your modification.
 
-Section 13 of the AGPL states that if you modify the program, and a user interacts with it remotely through a computer network -- if a player connects to your server -- you must offer them access to the source code used in your program. The source code you offer must include any works covered by the GPL. As Section 13 of the GPL stipulates the AGPL’s Section 13 applies to the combination, this includes any modifications to GPL works which are part of the combined program.
+[Section 13 of the AGPL](https://github.com/project-topaz/topaz/blob/release/AGPL3#L540-L559) states that if you modify the program, and a user interacts with it remotely through a computer network -- if a player connects to your server -- you must offer them access to the source code used in your program. The source code you offer must include any works covered by the GPL. As Section 13 of the GPL stipulates the AGPL’s Section 13 applies to the combination, this includes any modifications to GPL works which are part of the combined program.
 
 These terms are part of the GPL, and have always applied to derivatives of Darkstar Project. Project Topaz need not relicense any GPL works to make this requirement apply. The requirement to offer source code to connected users is automatic when GPL works are combined with AGPL works.
 
@@ -22,9 +22,9 @@ You are not required to contribute your modifications to Project Topaz or any ot
 
 
 # Additional terms
-Project Topaz's new modifications are licensed under the AGPL. Any person who uses or modifies our works must do so under its terms. Regardless of how permissible usage of Project Topaz may be explained or notated, the terms of the AGPL are what govern your usage of our works.
+Project Topaz's new modifications are licensed under the AGPL. Any person who uses or modifies our works must do so under its terms. Regardless of how permissible usage of Project Topaz may be explained or notated, [the terms of the AGPL](https://github.com/project-topaz/topaz/blob/release/AGPL3) are what govern your usage of our works.
 
-Under Section 7 of the AGPL, we are permitted to add supplementary "additional permissions" and limited categories of "additional requirements". These supplementary terms -- and their exact text -- may be found in the license file included with the program.
+Under [Section 7 of the AGPL](https://github.com/project-topaz/topaz/blob/release/AGPL3#L331-L351), we are permitted to add supplementary "additional permissions" and limited categories of "additional requirements". These supplementary terms -- and their exact text -- may be found in the license file included with the program.
 
 # Additional permissions - "non-retail" modifications exempt
 We have added an additional permission to our material exempting you from providing to connecting users any modifications you have made to the software which are "non-retail" customizations and are not for the purpose of stability, security or performance. Our works remain licensed under the AGPL, but provided you have not made "retail" modifications to any portion of the program, you may combine our works with GPL works without triggering Section 13 of our AGPL-licensed works -- they may be used in a program as if they were GPL.
