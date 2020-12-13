@@ -1,4 +1,4 @@
-This is the wiki for Topaz Next - an open-source Final Fantasy XI server emulator.
+This is the wiki for Topaz Next - an open-source server emulator for FFXI.
 
 # General
 General articles about the project
