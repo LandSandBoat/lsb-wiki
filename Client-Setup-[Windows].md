@@ -1,4 +1,4 @@
-**Note: To be able to update the Final Fantasy XI client - and connect to Project Topaz servers using the most recent version - you must be capable of connecting to retail at least once. Possible methods for doing so may be found below in [Section 2 - Connect to Retail](https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D#2-connecting-to-retail). Project Topaz does not condone methods enabling client updates without having connected to SquareEnix's retail servers.**
+**Note: To be able to update the Final Fantasy XI client - and connect to Topaz Next servers using the most recent version - you must be capable of connecting to retail at least once. Possible methods for doing so may be found below in [Section 2 - Connect to Retail](https://github.com/topaz-next/topaz/wiki/Client-setup-%5BWindows%5D#2-connecting-to-retail). Topaz Next does not condone methods enabling client updates without having connected to SquareEnix's retail servers.**
 
 # 1. Install and Update Final Fantasy XI
 
@@ -26,7 +26,7 @@ This step is for Windows 10 users and can be skipped otherwise.
    * `(Root FFXI Install Directory)/PlayOnline/SquareEnix/FINAL FANTASY XI/Tools/FINAL FANTASY XI Config`
 
 # 2. Connecting to Retail
-To be capable of connecting to a Project Topaz server, you must be able to update your local install of Final Fantasy XI. To do this, you must connect - or have connected - to SquareEnix's retail servers at least once. You may connect to the official retail servers in the following ways:
+To be capable of connecting to a Topaz Next server, you must be able to update your local install of Final Fantasy XI. To do this, you must connect - or have connected - to SquareEnix's retail servers at least once. You may connect to the official retail servers in the following ways:
    1. Connect to retail with your existing retail subscription.
    2. Purchase a copy of Final Fantasy XI, which comes with a 30-day subscription.
    3. For users who have previously purchased Final Fantasy XI and have since reinstalled the software, connect to retail during a Return Home to Vana'diel campaign when SquareEnix allows former subscribers to play on retail servers for free.
@@ -52,7 +52,7 @@ After having connected to retail at least once since installing Final Fantasy XI
 
 To connect to a private server, you need to be able to direct _where_ your local client communicates. This is done through programs like [xiloader](https://github.com/zircon-tpl/xiloader/releases).
 
-**Note: Ashita has a loader built into it. Users who plan to use Ashita may skip to [Section 6 - Launcher Configuration](https://github.com/project-topaz/topaz/wiki/Client-installation-setup-%5BWindows%5D-%28second-part%29/#6-launcher-configuration). However, we _highly recommend_ connecting to your server for the first time with only xiloader so that you can minimize potential setup problems.**
+**Note: Ashita has a loader built into it. Users who plan to use Ashita may skip to [Section 6 - Launcher Configuration](https://github.com/topaz-next/topaz/wiki/Client-installation-setup-%5BWindows%5D-%28second-part%29/#6-launcher-configuration). However, we _highly recommend_ connecting to your server for the first time with only xiloader so that you can minimize potential setup problems.**
 
 To build xiloader from [source](https://github.com/zircon-tpl/xiloader/):
 

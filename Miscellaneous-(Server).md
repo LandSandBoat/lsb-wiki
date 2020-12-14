@@ -8,7 +8,7 @@ One possible fix: Execute HeidiSQL > select your session and connect to it > sel
 
 ## Setting up an automated Auction House with Python.
 
-Python and the MySQL Python Connector are needed and should be already installed if you previously followed our [Windows 10 installation setup guide](https://github.com/project-topaz/topaz/wiki/Server-Setup-and-Maintenance-[Windows-10]).
+Python and the MySQL Python Connector are needed and should be already installed if you previously followed our [Windows 10 installation setup guide](https://github.com/topaz-next/topaz/wiki/Server-Setup-and-Maintenance-[Windows-10]).
 
 Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/AdamGagorik/pydarkstar.git > OK > then Close when it's done.
 
@@ -78,7 +78,7 @@ Open up your SQL editor > connect to your database > select "chars" > "Data" tab
 
 Change zone in game to apply.
 
-Type "!command" in game (for said "command" refer to the ones listed here: https://github.com/project-topaz/topaz/tree/release/scripts/commands).
+Type "!command" in game (for said "command" refer to the ones listed here: https://github.com/topaz-next/topaz/tree/release/scripts/commands).
 
 !togglegm: no more aggro.
 

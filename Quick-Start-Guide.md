@@ -6,7 +6,7 @@
   * Install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/community/), check Desktop development with C++.
   * Install [MariaDB](https://mariadb.org/), use defaults, set a root password.
   * Install [Python 3](https://www.python.org/downloads/), check to add to PATH.
-  * [Use a Git client to clone](https://github.com/project-topaz/topaz/wiki/Server-setup-and-maintenance-%5BWindows-10%5D#2-download-the-source-code) from URL https://github.com/project-topaz/topaz.git
+  * [Use a Git client to clone](https://github.com/topaz-next/topaz/wiki/Server-setup-and-maintenance-%5BWindows-10%5D#2-download-the-source-code) from URL https://github.com/topaz-next/topaz.git
   * Open in Explorer, **copy** all files in `topaz/conf/default/` into `topaz/conf/`.
   * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_password` to the password set during MariaDB setup.
   * Open the tools folder, shift+right-click, open Powershell.
@@ -18,7 +18,7 @@
   * Follow the on-screen instructions.
   * Open the topaz root folder in VS2019.
   * Build the solution in VS2019.
-  * Check the [CMake Build Guide](https://github.com/project-topaz/topaz/wiki/CMake-Build-Guide) if you're unsure about the build.
+  * Check the [CMake Build Guide](https://github.com/topaz-next/topaz/wiki/CMake-Build-Guide) if you're unsure about the build.
 
   ## To Update
   * Open the topaz folder in Explorer.
@@ -48,7 +48,7 @@
   * Type (changing 'password' to your password of choice):
   ```
   sudo mysql -u root -p -e "CREATE USER 'topaz'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE tpzdb;USE tpzdb;GRANT ALL PRIVILEGES ON tpzdb.* TO 'topaz'@'localhost';"
-  git clone --recursive https://github.com/project-topaz/topaz.git
+  git clone --recursive https://github.com/topaz-next/topaz.git
   cd topaz
   cp conf/default/* conf/
   ```

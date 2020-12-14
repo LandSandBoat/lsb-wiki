@@ -1,4 +1,4 @@
-### ⚠️ IF YOU HAVEN'T ALREADY CONFIGURED A CLIENT TO CONNECT TO A PRIVATE SERVER, FOLLOW THIS ONCE YOU'RE _DONE_ WITH THIS FIRST PART: [[Client Setup [Windows]|https://github.com/project-topaz/topaz/wiki/Client-setup-%5BWindows%5D]]
+### ⚠️ IF YOU HAVEN'T ALREADY CONFIGURED A CLIENT TO CONNECT TO A PRIVATE SERVER, FOLLOW THIS ONCE YOU'RE _DONE_ WITH THIS FIRST PART: [[Client Setup [Windows]|https://github.com/topaz-next/topaz/wiki/Client-setup-%5BWindows%5D]]
 
 ## 1. Software needed:
 
@@ -24,7 +24,7 @@ To build, run, and maintain a Topaz server, you will need to download and instal
 1. Open a PowerShell window.
 2. Type:
 ```
-git clone --recursive https://github.com/project-topaz/topaz.git
+git clone --recursive https://github.com/topaz-next/topaz.git
 ```
 </details>
 <details>
@@ -32,7 +32,7 @@ git clone --recursive https://github.com/project-topaz/topaz.git
   
 1. Open GitHub desktop. File > Clone repository > URL button (along top).
 2. Enter the following:
-  * Repository URL: either [your forked copy of our repository](https://raw.githubusercontent.com/wiki/project-topaz/topaz/images/github-fork.png) `https://github.com/your-github-name/topaz.git` (recommended), or our repository `https://github.com/project-topaz/topaz.git`
+  * Repository URL: either [your forked copy of our repository](https://raw.githubusercontent.com/wiki/topaz-next/topaz/images/github-fork.png) `https://github.com/your-github-name/topaz.git` (recommended), or our repository `https://github.com/topaz-next/topaz.git`
   * Local path: Where you want the source code to live on your computer.
 3. Select `Clone` button:
 [[/images/github-desktop-clone.png|Pull Origin button location]]
@@ -40,9 +40,9 @@ git clone --recursive https://github.com/project-topaz/topaz.git
 <details>
   <summary>TortoiseGit</summary>
   
-1. Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/project-topaz/topaz.git ("release" branch by default) > OK > then Close when it's done. 
+1. Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/topaz-next/topaz.git ("release" branch by default) > OK > then Close when it's done. 
 
-2. Don't forget about Navmeshes (https://github.com/project-topaz/xiNavmeshes.git): right click on the freshly downloaded "topaz" folder > TortoiseGit > Submodule Update... > OK > then Close when it's done.
+2. Don't forget about Navmeshes (https://github.com/topaz-next/xiNavmeshes.git): right click on the freshly downloaded "topaz" folder > TortoiseGit > Submodule Update... > OK > then Close when it's done.
 </details>
 
 ## 3. .conf files configuration:
@@ -104,7 +104,7 @@ py -3 -m pip install --upgrade Modulename
 
 **We have a new build system, read how to use it here:**
 
-https://github.com/project-topaz/topaz/wiki/CMake-Build-Guide
+https://github.com/topaz-next/topaz/wiki/CMake-Build-Guide
 
 * topaz_connect.exe
 * topaz_game.exe
@@ -130,7 +130,7 @@ UDP port: 54230.
 
 ⚠️ **WE STRONGLY ADVISE AGAINST LOCKING THE SERVER TO OLDER VERSIONS. IT IS A UNIVERSALLY BAD IDEA.** It _will_ cause issues even _if_ you manage to keep both server and client versions on par!
 
-If the server (Project Topaz) and the client (Final Fantasy XI) don't share the same version, you'll probably get this error in the topaz_connect.exe log window:
+If the server (Topaz Next) and the client (Final Fantasy XI) don't share the same version, you'll probably get this error in the topaz_connect.exe log window:
 
 ```
 [Error] lobbyview_parse: Incorrect client version: got 000000xx_x, expected 000000xx_x

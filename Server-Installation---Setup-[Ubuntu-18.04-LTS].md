@@ -10,12 +10,12 @@ sudo apt install cmake mariadb-server libmariadbclient-dev libmariadb-dev-compat
 
 Clones the repository to the current folder you are in
 ```
-git clone --recursive https://github.com/project-topaz/topaz.git
+git clone --recursive https://github.com/topaz-next/topaz.git
 ```
 
 If you want to clone the repository with `canary` branch already checked-out you can use:
 ```
-git clone --recursive --single-branch --branch canary https://github.com/project-topaz/topaz.git
+git clone --recursive --single-branch --branch canary https://github.com/topaz-next/topaz.git
 ```
 
 Goes inside the project's folder and compiles the source code

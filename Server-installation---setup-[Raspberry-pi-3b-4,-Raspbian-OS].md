@@ -15,12 +15,12 @@ sudo apt install cmake mariadb-server-10.0 libmariadb-dev-compat libluajit-5.1-d
 
 Clone the repository to a new folder named topaz by putting:
 ```
-git clone --recursive https://github.com/project-topaz/topaz.git
+git clone --recursive https://github.com/topaz-next/topaz.git
 ```
 
 If you want to clone the repository with `canary` branch already checked-out you can use:
 ```
-git clone --recursive --single-branch --branch canary https://github.com/project-topaz/topaz.git
+git clone --recursive --single-branch --branch canary https://github.com/topaz-next/topaz.git
 ```
 
 ## Compiling the Server

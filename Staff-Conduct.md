@@ -1,4 +1,4 @@
-Official Members of Project Topaz agree to uphold this Code of Conduct. These staff members can be identified by:
+Official Members of Topaz Next agree to uphold this Code of Conduct. These staff members can be identified by:
 - On GitHub: The tag `Member` is next to their name on Pull Requests, Issues, and comments
 - On Discord: They have the `Staff` role, which also makes their name appear yellow.
 
@@ -7,7 +7,7 @@ If you witness any member of our staff violating this Code of Conduct, please fe
 - On Discord: Zircon#4291
 
 # 0. Purpose
-You are an official member of Project Topaz because of your desire to directly influence the project's direction, organize efforts, serve as a representative, and mentor contributors who are working in collaboration with us to meet our common goal. If you had only wanted to occasionally contribute code, you would have done that through Pull Requests, and not sought the extra recognition of being an official member.
+You are an official member of Topaz Next because of your desire to directly influence the project's direction, organize efforts, serve as a representative, and mentor contributors who are working in collaboration with us to meet our common goal. If you had only wanted to occasionally contribute code, you would have done that through Pull Requests, and not sought the extra recognition of being an official member.
 
 As an official member for the project, you possess the benefit of sharing authority over it. Your ideas, words and actions are automatically given more credence than those of others. You always have the ear of the rest of the team, and have a say in whether a given direction should be pursued.
 
@@ -16,19 +16,19 @@ However - _your ideas, words and actions are automatically given more credence t
 Therefore, because you represent more than just yourself, there is a higher standard for you to adhere to than those who do not. So long as you carry the weight that comes with the position, you also carry the burden of ensuring that the image people have of you - and by extension, us - is a positive one.
 
 # 1. Collaborative Service Official Rules
-Any and all Terms of Use, Guidelines, or Codes of Conduct put in place by any service which Project Topaz uses for collaboration are incorporated into our rules. Examples of collaboration services include GitHub and Discord. Do not break the Terms of Use for such services, or violate any community guidelines while using that service.
+Any and all Terms of Use, Guidelines, or Codes of Conduct put in place by any service which Topaz Next uses for collaboration are incorporated into our rules. Examples of collaboration services include GitHub and Discord. Do not break the Terms of Use for such services, or violate any community guidelines while using that service.
 
 The official GitHub [Terms of Use](https://help.github.com/en/github/site-policy/github-terms-of-service) and [Community Guidelines](https://help.github.com/en/github/site-policy/github-community-guidelines) are incorporated into our rules.
 
 Additionally, the official Discord [Terms of Service](https://discord.com/terms) and [Community Guidelines](https://discord.com/guidelines) are also incorporated into our rules.
 
-Project Topaz will enforce violations against either set of Terms or Guidelines, regardless upon which service the violation occurs.
+Topaz Next will enforce violations against either set of Terms or Guidelines, regardless upon which service the violation occurs.
 
 # 2. Non-FFXI Topics
 There are many places on the internet you can discuss sex, people's appearance, race, religion, cars, politics, and any other number of non-FFXI topics. This is not one of those places. We are not here to talk about what people believe about religion, who they vote for, or anything else that does not have to do specifically with FFXI. There are a million other places on the internet and in the rest of the world to discuss the other things - please go do so elsewhere.
 
 # 3. Toxic Behavior
-Project Topaz wants members of the private server community to feel welcome and valued. Therefore, the following toxic behaviors are unacceptable:
+Topaz Next wants members of the private server community to feel welcome and valued. Therefore, the following toxic behaviors are unacceptable:
 
 - Disparaging comments about individuals or groups
 - "Jokes" involving sex, genitals, or sexual abuse
@@ -38,7 +38,7 @@ Project Topaz wants members of the private server community to feel welcome and 
 We would rather have the new contributors be comfortable, and create a welcoming environment for everyone, than cater to people, however knowledgeable, who wish to denigrate and belittle others.
 
 # 4. Welcoming Behavior
-To emphasize the above, official members of Project Topaz are expected to always conduct themselves in a manner that encourages contributions by others. This means that you should not:
+To emphasize the above, official members of Topaz Next are expected to always conduct themselves in a manner that encourages contributions by others. This means that you should not:
 
 - Insult people or code. Instead, provide gentle corrections and suggestions.
 - Snap at a contributor. Instead, step back to cool off, then later give a professional response.
@@ -47,7 +47,7 @@ To emphasize the above, official members of Project Topaz are expected to always
 - Disregard a person. Instead, find their value.
 
 # 5. Community
-Project Topaz feels that everyone has a role to play in working towards our shared love of emulating and preserving FFXI. Do not make disparaging comments, even in jest, about servers or other codebases. These only upset people who have worked hard on that server or codebase. You never know when someone from that server you mocked will want to contribute to us, but we will lose them when they see us insulting them behind their backs. Please treat members of other communities like they are one of our own, because one day they might be.
+Topaz Next feels that everyone has a role to play in working towards our shared love of emulating and preserving FFXI. Do not make disparaging comments, even in jest, about servers or other codebases. These only upset people who have worked hard on that server or codebase. You never know when someone from that server you mocked will want to contribute to us, but we will lose them when they see us insulting them behind their backs. Please treat members of other communities like they are one of our own, because one day they might be.
 
 # 6. Dispute Resolution
 Always work towards resolving disputes. Disagreements are to be expected. Behavior which amplifies them is not. While there will be times a dispute can not be resolved satisfactory to both parties, you should still do your best do so.
@@ -72,7 +72,7 @@ Staff are encouraged to voice any complaints about the Project Lead to the Proje
 # 9. Representation
 As an official member you represent the project, even when you are interacting with the community "outside" of any sanctioned servers or other communication services we use. This includes websites we do not have a presence on. *_You are expected to behave in the same professional manner elsewhere in the community that you would with us._*
 
-This applies to _all_ GitHub repositories, Discord servers, or websites related to FFXI which are open to the general public. For example, do not make disparaging comments about a community member in another Discord server for a "private" server, even if that person is not a member of the server. You do not know that person's acquaintances, or if the person will later join that server and see that a Project Topaz member has made disparaging comments about them. Such behavior will discourage them from contributing to us, and reflects negatively on the rest of us to third-party onlookers.
+This applies to _all_ GitHub repositories, Discord servers, or websites related to FFXI which are open to the general public. For example, do not make disparaging comments about a community member in another Discord server for a "private" server, even if that person is not a member of the server. You do not know that person's acquaintances, or if the person will later join that server and see that a Topaz Next member has made disparaging comments about them. Such behavior will discourage them from contributing to us, and reflects negatively on the rest of us to third-party onlookers.
 
 While one-on-one conversation does not have the same reach as conversation in public, remember that you still reflect on us, even when in private. If your general behavior in private leaves people with a negative impression of you, that impression can influence their impression of the rest of us. We obviously can not police behavior of which we are not aware, but please try to be courteous to your fellow team members by not reflecting negatively on them.
 

@@ -1,13 +1,13 @@
 
 
 ## What works? Is quest X implemented?
-http://wiki.project-topaz.com/What-Works
+https://github.com/topaz-next/topaz/wiki/What-Works
 
 ## How can I help the project?
-http://wiki.project-topaz.com/How-Can-I-Help
+https://github.com/topaz-next/topaz/wiki/How-Can-I-Help
 
 ## Canary? Release?
-Project Topaz maintains two long-term branches: `release` and `canary`. `release` is the default branch and contains changes that have been vetted and tested. Human error can always occur, but this is the most stable place to get code. `canary` ([origin](https://en.wiktionary.org/wiki/canary_in_a_coal_mine)) is based on `release`, but contains our `feature` branches and experimental content. It is for testing and is not guaranteed to be stable. Think of it as the "beta testing" branch.
+Topaz Next maintains two long-term branches: `release` and `canary`. `release` is the default branch and contains changes that have been vetted and tested. Human error can always occur, but this is the most stable place to get code. `canary` ([origin](https://en.wiktionary.org/wiki/canary_in_a_coal_mine)) is based on `release`, but contains our `feature` branches and experimental content. It is for testing and is not guaranteed to be stable. Think of it as the "beta testing" branch.
 
 ## When will feature X arrive?
 We practice [clean room engineering](https://en.wikipedia.org/wiki/Clean_room_design), which means we have to implement everything from scratch. As such, progress is slow. We are also trying to balance feature development, bugfixes, performance improvements, exploit resolution, code review, and testing.
@@ -18,14 +18,14 @@ We will never accept financial or material incentives for our work. This is a ho
 ## Where is fishing?
 Not yet implemented.
 
-See: [What Works?](https://github.com/project-topaz/topaz/wiki/What-Works)
+See: [What Works?](https://github.com/topaz-next/topaz/wiki/What-Works)
 
 ## The code for feature X is available in the community, why haven't you taken it?
-Features in Project Topaz are those that have been submitted to us, meet our standards for quality and accuracy, and that we have had the time to review and integrate with the rest of the codebase. It is very rare that we will accept code on someone else's behalf. While there is technically nothing stopping us, it would undermine our position in the community.
+Features in Topaz Next are those that have been submitted to us, meet our standards for quality and accuracy, and that we have had the time to review and integrate with the rest of the codebase. It is very rare that we will accept code on someone else's behalf. While there is technically nothing stopping us, it would undermine our position in the community.
 
 Similarly, sending us code snippets creates more work and strain on staff and developers. If you have code you want to contribute, please speak to us on Discord and open a Pull Request.
 
-See: [Where is fishing?](https://github.com/project-topaz/topaz/wiki/Frequently-Asked-Questions#where-is-fishing)
+See: [Where is fishing?](https://github.com/topaz-next/topaz/wiki/Frequently-Asked-Questions#where-is-fishing)
 
 ## When can I play "Classic" Dynamis?
 You can't - it isn't in the game anymore.
@@ -61,7 +61,7 @@ Bypassing these restrictions would need heavy client modification (which we don'
 </details>
 
 ## Why isn't Yell/Trust/Auction House etc. available in every zone?
-What's available to use per-zone is controlled with the `misc` flags column in `zone_settings.sql`. These flags correspond to the `ZONEMISC` enum in `zone.h`. A query to modify those flags can be found in [Useful SQL queries](https://github.com/project-topaz/topaz/wiki/Useful-SQL-queries#enable-zonemisc-features-everywhere).
+What's available to use per-zone is controlled with the `misc` flags column in `zone_settings.sql`. These flags correspond to the `ZONEMISC` enum in `zone.h`. A query to modify those flags can be found in [Useful SQL queries](https://github.com/topaz-next/topaz/wiki/Useful-SQL-queries#enable-zonemisc-features-everywhere).
 
 <details>
 <summary>Read more</summary>
@@ -89,7 +89,7 @@ enum ZONEMISC
 </details>
 
 ## What is Darkstar Project / DSP?
-Darkstar Project was the most-recent FFXI server codebase which Project Topaz forked from. It is no longer being developed.
+Darkstar Project was the most-recent FFXI server codebase which Topaz Next forked from. It is no longer being developed.
 
 ## Why is the airship in Sauromugue Champaign skidding along the ground like a land speeder?
-[It's a feature, not a bug.](http://project-topaz.com/issues/10) 👀
+It's a feature, not a bug. 👀

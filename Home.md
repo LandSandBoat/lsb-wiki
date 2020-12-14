@@ -11,7 +11,7 @@ Instructions for installing FFXI, connecting to a private server, and keeping th
 - [Common Concerns](https://github.com/topaz-next/topaz/wiki/Miscellaneous-(Client))
 
 # Server Setup
-Instructions for cloning, building, and running a Project Topaz server
+Instructions for cloning, building, and running a Topaz Next server
 - [[Windows 10|https://github.com/topaz-next/topaz/wiki/Server-setup-and-maintenance-%5BWindows-10%5D]]
 - [[Ubuntu 18.04|https://github.com/topaz-next/topaz/wiki/Server-Installation---Setup-%5BUbuntu-18.04-LTS%5D]]
 - [[Raspberry Pi 3b/3b+/4b (Raspbian)|https://github.com/topaz-next/topaz/wiki/Server-installation---setup-%5BRaspberry-pi-3b-4,-Raspbian-OS%5D]]
@@ -25,7 +25,7 @@ Information for new server administrators.
 - [Useful SQL Queries](https://github.com/topaz-next/topaz/wiki/Useful-SQL-queries)
 
 # [Development](https://github.com/topaz-next/topaz/wiki/Development)
-Information for developers who work on Project Topaz.
+Information for developers who work on Topaz Next.
 - [GitHub and Contributing](https://github.com/topaz-next/topaz/wiki/GitHub-and-Contributing)
 - [Guides](https://github.com/topaz-next/topaz/wiki/Guides-(Development))
 - [General Development](https://github.com/topaz-next/topaz/wiki/General-Development)
