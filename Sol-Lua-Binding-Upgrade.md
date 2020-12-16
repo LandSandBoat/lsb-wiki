@@ -239,3 +239,38 @@ int main()
     return 0;
 }
 ```
+
+
+#### Overriding global table entries
+```cpp
+#include <random>
+
+#define SOL_ALL_SAFETIES_ON 1
+#include <sol/sol.hpp>
+
+class tpzrand
+{
+    ...
+};
+
+int main()
+{
+    tpzrand::seed();
+
+    sol::state lua;
+    lua.open_libraries();
+
+    lua["math"]["random"] = sol::overload([](){ return tpzrand::GetRandomNumber<float>(1.0f); }, 
+                                          [](int n){ return tpzrand::GetRandomNumber<int>(1, n); },
+                                          [](int n, int m){ return tpzrand::GetRandomNumber<int>(n, m + 1); });
+
+
+    lua.script(R"(
+        print(math.random())
+        print(math.random(10)) 
+        print(math.random(10, 20))
+    )");
+    
+    return 0;
+}
+```
