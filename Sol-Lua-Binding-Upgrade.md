@@ -260,10 +260,9 @@ int main()
     sol::state lua;
     lua.open_libraries();
 
-    lua["math"]["random"] = sol::overload([](){ return tpzrand::GetRandomNumber<float>(1.0f); }, 
-                                          [](int n){ return tpzrand::GetRandomNumber<int>(1, n); },
-                                          [](int n, int m){ return tpzrand::GetRandomNumber<int>(n, m + 1); });
-
+    lua["math"]["random"] = sol::overload([](){ return tpzrand::GetRandomNumber<lua_Number>(1.0f); }, 
+                                          [](int n){ return tpzrand::GetRandomNumber<lua_Integer>(1, n); },
+                                          [](int n, int m){ return tpzrand::GetRandomNumber<lua_Integer>(n, m + 1); });
 
     lua.script(R"(
         print(math.random())
