@@ -273,3 +273,56 @@ int main()
     return 0;
 }
 ```
+
+#### Object lifetime/ownership
+```cpp
+#define SOL_ALL_SAFETIES_ON 1
+#include <sol/sol.hpp>
+
+struct CChar;
+struct CZone;
+
+struct CZone
+{
+    int id = 42;
+
+    int getID()
+    {
+        return id;
+    }
+};
+
+struct CChar
+{
+    std::shared_ptr<CZone> m_PZone;
+    
+    std::shared_ptr<CZone> getZone()
+    {
+        return m_PZone;
+    }
+};
+
+int main()
+{
+    sol::state lua;
+	lua.open_libraries();
+
+    CChar c {std::make_shared<CZone>()};
+
+    lua.new_usertype<CChar>("CChar",
+		"getZone", &CChar::getZone);
+
+    lua.new_usertype<CZone>("CZone",
+		"getID", &CZone::getID);
+
+    lua.script(R"(
+		f = function(char)
+            print(char:getZone():getID())
+        end
+	)");
+
+    lua["f"](c);
+    
+    return 0;
+}
+```
