@@ -186,6 +186,7 @@
 | Cornelia | 💀 | Unsummonable: SE removed from the game |
 | Fablinix | ❌ | |
 | Kupofried | ❌ | |
+| Matsui-P | ❌ | |
 | Monberaux | ❌ | |
 | Moogle | ❌ | |
 | Mumor | ❌ | |
