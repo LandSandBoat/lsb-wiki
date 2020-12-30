@@ -13,9 +13,11 @@ In the old style of bindings, we would poke and probe the Lua stack to see what 
 
 We capture these args in the signature like so: `void func(sol::variadic_args va)`
 
-We can as how many arguments there are: `va.size()`
+We can ask how many arguments there are: `va.size()`
 
 We can iterate over the arguments: `for (auto& v : va)`
+
+We can index-or-default (0-based): `uint32 x = va[0].is<uint32>() ? va[0].as<uint32>() : 0;`
 
 ### Global luautils functions
 The functions defined in luautils are available in two ways: Capitalized, as global objects `SpawnMob(id)` or lower-cased, attached to the `tpz.core` table: `tpz.core.spawnMob(id)`
