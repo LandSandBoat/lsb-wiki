@@ -5,6 +5,18 @@
 ### General
 We use Sol, which has a Lua 5.3 compatibility layer, on top of luajit 2.0, which acts like Lua 5.1. Given this mismatch there are a few idiosyncracies to be aware of, listed below.
 
+### Lua types and bindings
+In order to keep the functionality of the underlying objects (entities, items etc.) separate from the logic in the bindings that are exposed to Lua, the underlying objects are "wrapped" with their Lua bindings type before being sent into Lua function calls. These are also the types that are returned from Lua, so the underlying type has to be extracted.
+```cpp
+CBaseEntity* PEntity = GetEntity(...); // Underlying Type
+CLuaBaseEntity LuaEntity = CLuaBaseEntity(PEntity); // Underlying Type -> Wrapping Type
+
+CLuaBaseEntity ReturnedLuaEntity = luaFunction(LuaEntity); // Return Wrapping Type
+CBaseEntity* PReturnedEntity = ReturnedLuaEntity->GetBaseEntity(); // Wrapping Type -> Underlying Type
+
+assert(PEntity == PReturnedEntity);
+```
+
 ### The Lua stack and va_args
 https://sol2.readthedocs.io/en/latest/api/variadic_args.html
 
