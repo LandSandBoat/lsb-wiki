@@ -28,6 +28,7 @@ Information for new server administrators.
 Information for developers who work on Topaz Next.
 - [GitHub and Contributing](https://github.com/topaz-next/topaz/wiki/GitHub-and-Contributing)
 - [General Development](https://github.com/topaz-next/topaz/wiki/General-Development)
+- [Lua Guide and Gotchas](https://github.com/topaz-next/topaz/wiki/Lua-Guide-and-Gotchas)
 - [Spatial Orientation and Relative Positions](https://github.com/topaz-next/topaz/wiki/Spatial-Orientation-and-Relative-Positions)
 - [Understanding Variables](https://github.com/topaz-next/topaz/wiki/Understanding-variables-%E2%80%94-a-brief-guide)
 - [Performance Profiling with Tracy](https://github.com/topaz-next/topaz/wiki/Performance-Profiling-with-Tracy)
