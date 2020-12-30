@@ -27,8 +27,11 @@ Information for new server administrators.
 # [Development](https://github.com/topaz-next/topaz/wiki/Development)
 Information for developers who work on Topaz Next.
 - [GitHub and Contributing](https://github.com/topaz-next/topaz/wiki/GitHub-and-Contributing)
-- [Guides](https://github.com/topaz-next/topaz/wiki/Guides-(Development))
 - [General Development](https://github.com/topaz-next/topaz/wiki/General-Development)
+- [Spatial Orientation and Relative Positions](https://github.com/topaz-next/topaz/wiki/Spatial-Orientation-and-Relative-Positions)
+- [Understanding Variables](https://github.com/topaz-next/topaz/wiki/Understanding-variables-%E2%80%94-a-brief-guide)
+- [Performance Profiling with Tracy](https://github.com/topaz-next/topaz/wiki/Performance-Profiling-with-Tracy)
+
 # [Project Meta](https://github.com/topaz-next/topaz/wiki/Project-Meta)
 Information relating to the "meta" of Topaz Topaz - like project goals, codes of conduct, project roadmaps, and licensing information
 - [[Project Focus|https://github.com/topaz-next/topaz/wiki/Project-Focus]]
