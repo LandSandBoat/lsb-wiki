@@ -31,6 +31,14 @@ We can iterate over the arguments: `for (auto& v : va)`
 
 We can index-or-default (0-based): `uint32 x = va[0].is<uint32>() ? va[0].as<uint32>() : 0;`
 
+### Capturing numbers from Lua
+From the Lua docs: `The number type represents real (double-precision floating-point) numbers. Lua has no integer type, as it does not need it.`
+What this means in practice is if you ask sol "capture this int" or "if this type is an int, ...", it'll fail.
+
+The error message is of the form: `Invalid argument. Expected a number, got a number.`
+
+_When in doubt, capture a double and cast it into whatever you need._
+
 ### Global luautils functions
 The functions defined in luautils are available in two ways: Capitalized, as global objects `SpawnMob(id)` or lower-cased, attached to the `tpz.core` table: `tpz.core.spawnMob(id)`
 ```lua
@@ -57,3 +65,7 @@ can be used as regular function c:pairs() to get around limitation
 ```
 
 If returning a container from C++ into Lua, it will be treated as userdata, not a container. You cannot call `pairs(container)`. Instead you must call the convenience function: `container:pairs()`. Same for `ipairs`.
+
+In the interests of keeping the Lua layer consistent, it is preferable to create a table with `auto table = luautils::lua.create_table();`, populate it, and then return that to Lua. This allows you to continue using `pairs(container)`.
+
+**NOTE**: Creating a raw `sol::table` doesn't work. It appears as though the table type is some sort of voodoo with no inherent link to the Lua state, unless you create it that way. Use `lua.create_table()`!
