@@ -11,26 +11,25 @@
   * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_password` to the password set during MariaDB setup.
   * Open the tools folder, shift+right-click, open Powershell.
   * Type:
-  ```
-  py -3 -m pip install -r requirements.txt
-  py -3 dbtool.py
-  ```
+    ```
+    py -3 -m pip install -r requirements.txt
+    py -3 dbtool.py
+    ```
   * Follow the on-screen instructions.
   * Open the topaz root folder in VS2019.
-  * Build the solution in VS2019.
-  * Check the [CMake Build Guide](https://github.com/topaz-next/topaz/wiki/CMake-Build-Guide) if you're unsure about the build.
+  * [Build the solution in VS2019.](https://github.com/topaz-next/topaz/wiki/CMake-Build-Guide)
 
   ## To Update
   * Open the topaz folder in Explorer.
   * Shift+right-click, open Powershell.
   * Type:
-  ```
-  git stash
-  git pull
-  git stash pop
-  cd tools
-  py -3 dbtool.py update
-  ```
+    ```
+    git stash
+    git pull
+    git stash pop
+    cd tools
+    py -3 dbtool.py update
+    ```
   * Build the solution in VS2019.
 </details>
 
@@ -38,44 +37,48 @@
   <summary>Linux</summary>
   
   ## To Install
-  * Use your package manager to install the following packages or their equivalent (Debian packages listed): 
-`g++-8 cmake mariadb-server libmariadbclient-dev libluajit-5.1-dev libzmq3-dev libssl-dev python3 python3-pip git`
+  * Use your package manager to install the following packages or their equivalent:
+
+    **Debian/Ubuntu:**
+    ```
+    sudo apt install g++-8 cmake mariadb-server libmariadbclient-dev libluajit-5.1-dev libzmq3-dev libssl-dev python3 python3-pip git
+    ```
   * Type:
-  ```
-  sudo mysql_secure_installation
-  ```
+    ```
+    sudo mysql_secure_installation
+    ```
   * Follow the instructions for setting up the DB.
   * Type (changing 'password' to your password of choice):
-  ```
-  sudo mysql -u root -p -e "CREATE USER 'topaz'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE tpzdb;USE tpzdb;GRANT ALL PRIVILEGES ON tpzdb.* TO 'topaz'@'localhost';"
-  git clone --recursive https://github.com/topaz-next/topaz.git
-  cd topaz
-  cp conf/default/* conf/
-  ```
+    ```
+    sudo mysql -u root -p -e "CREATE USER 'topaz'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE tpzdb;USE tpzdb;GRANT ALL PRIVILEGES ON tpzdb.* TO 'topaz'@'localhost';"
+    git clone --recursive https://github.com/topaz-next/topaz.git
+    cd topaz
+    cp conf/default/* conf/
+    ```
   * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_login` and `mysql_password` to the login/password set during MariaDB setup.
   * In the `topaz` dir, type:
-  ```
-  mkdir build
-  cd build
-  cmake ..
-  make -j $(nproc)
-  cd ../tools
-  pip3 install -r requirements.txt
-  python3 dbtool.py
-  ```
+    ```
+    mkdir build
+    cd build
+    cmake ..
+    make -j $(nproc)
+    cd ../tools
+    pip3 install -r requirements.txt
+    python3 dbtool.py
+    ```
   * Select 'Reset DB' and follow the instructions to "reset" the database.
 
   ## To Update
   * Open the `topaz` dir in a terminal.
   * Type:
-  ```
-  git stash
-  git pull
-  git stash pop
-  cd build
-  cmake ..
-  make -j $(nproc)
-  cd ../tools
-  python3 dbtool.py update
-  ```
+    ```
+    git stash
+    git pull
+    git stash pop
+    cd build
+    cmake ..
+    make -j $(nproc)
+    cd ../tools
+    python3 dbtool.py update
+    ```
 </details>
