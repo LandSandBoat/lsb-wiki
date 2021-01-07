@@ -20,7 +20,7 @@
     py -3 dbtool.py
     ```
   * Follow the on-screen instructions.
-  * Open the topaz root folder in VS2019.
+  * Open the `topaz` root folder in VS2019.
   * [Build the solution in VS2019.](https://github.com/topaz-next/topaz/wiki/CMake-Build-Guide)
 
   ## To Update
