@@ -11,9 +11,11 @@ There is a mini technical guide to using Sol [here](https://github.com/topaz-nex
 ### Runtime Safety
 <img src="https://user-images.githubusercontent.com/1389729/103868903-38b9ff80-50d2-11eb-985d-cf0e567ae285.png" width="600" height="300" />
 
-Unless programmed very carefully, if an error is encountered in C++; it will kill the server. Unless you're debugging or you're set up correctly to capture crash information this crash will be difficult to explain to devs. Even if you catch the crash, it can be hard to explain or understand unless you're comfortable with C++.
+Unless handled very carefully, if an error is encountered in C++; it will kill the server. Unless you're debugging or you're set up correctly to capture crash information this crash will be difficult to explain to devs. Even if you catch the crash, it can be hard to explain or understand unless you're comfortable with C++.
 
 The more errors we can catch in the Lua layer before they make it into C++, the less crashes there'll be. If an error is encountered in Lua it will log all the information it has and then bail out of the current script; allowing the C++ execution to continue underneath it.
+
+An added benefit of using Sol is that it validates the use of bindings at the Lua level. If you call `mob:takeDamage(x)`, but `mob` or `x` are nil/invalid; it won't make it into the C++. It'll log an error and operation will continue.
 
 ### Runtime Performance
 <img src="https://user-images.githubusercontent.com/1389729/103868923-41aad100-50d2-11eb-80b7-abd2f6d29afa.png" width="600" height="300" />
