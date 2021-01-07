@@ -1,7 +1,10 @@
-**Not yet released**
+**Not yet live**
 
 ## Introduction
 After months of talk, hinting at "something huge" coming soon, and a lot of uncertainly; the first part of the Sol Refactor effort has been released. There are a lot of things enabled by this work that might not be easily digestible by non-developers, so this article is an attempt to explain why this work has taken priority over everything else, and why you'll soon be reaping the benefits!
+
+#### Technical Details
+There is a mini technical guide to using Sol [here](https://github.com/topaz-next/topaz/wiki/Sol-Lua-Binding-Library). 
 
 ## Motivation
 
@@ -16,6 +19,8 @@ The more errors we can catch in the Lua layer before they make it into C++, the 
 <img src="https://user-images.githubusercontent.com/1389729/103868923-41aad100-50d2-11eb-80b7-abd2f6d29afa.png" width="600" height="300" />
 
 Historically, a fast iteration time while writing scripts was preferred over performance. Every time a script is run (for the most part), it will be read off the disk. You can read about the comp-sci details [here](https://en.wikipedia.org/wiki/Memory_hierarchy), but briefly; reading a file off disk is much much slower than reading it from memory. If we have 10 players, each in different zones, every mob in each of those zones will be calling `OnMobRoam` multiple times per second, each call linked to a file read. This is why performance is so heavily linked to your disk speed. Upgrading from HDD to SSD is the biggest improvement you can make to your server. SSD to Ramdisk is probably another good boost, but I've never tested it.
+
+<img src="https://user-images.githubusercontent.com/1389729/103680388-c8ef2c00-4f8e-11eb-8632-f589d0d9f9b6.png" width="400" height="300" />
 
 ### Developer Quality of Life
 <img src="https://user-images.githubusercontent.com/1389729/103868938-47a0b200-50d2-11eb-8557-c4c3b9319cfe.png" width="600" height="300" />
