@@ -9,14 +9,6 @@ If it was rock-solid and easy to use/understand/extend, then we would be perfect
 
 The most promising and well supported library at the moment is **[sol](https://github.com/ThePhD/sol2)** (sol2 v3, referred to as Sol/sol for clarity).
 
-This work is a prerequisite for more exciting concrete improvements to the codebase.
-
-#### How long will this take?
-Quite a while. Every single binding and `luautil` function has to be modified. Some of these are swapping out a couple of words, some of these are total rewrites. 
-
-#### How will this affect me?
-This is a massive architectural change. As such, it will not easily be compatible with the old binding system. If you've written your own old-style bindings, they'll need to rewritten. Since we're also modifying every single binding, it's guaranteed that a few mistakes slip in and a binding breaks or starts acting strangely.
-
 ### Examples
 #### Usage
 ```cpp
