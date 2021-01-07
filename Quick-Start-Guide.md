@@ -6,12 +6,16 @@
   * Install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/community/), check Desktop development with C++.
   * Install [MariaDB](https://mariadb.org/), use defaults, set a root password.
   * Install [Python 3](https://www.python.org/downloads/), check to add to PATH.
-  * [Use a Git client to clone](https://github.com/topaz-next/topaz/wiki/Server-setup-and-maintenance-%5BWindows-10%5D#2-download-the-source-code) from URL https://github.com/topaz-next/topaz.git
-  * Open in Explorer, **copy** all files in `topaz/conf/default/` into `topaz/conf/`.
-  * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_password` to the password set during MariaDB setup.
-  * Open the tools folder, shift+right-click, open Powershell.
+  * Open a PowerShell window and navigate to your chosen install directory.
   * Type:
     ```
+    git clone --recursive https://github.com/topaz-next/topaz.git
+    cp topaz/conf/default/* conf/
+    ```
+  * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_password` to the password set during MariaDB setup.
+  * Back in your PowerShell window, type:
+    ```
+    cd topaz/tools
     py -3 -m pip install -r requirements.txt
     py -3 dbtool.py
     ```
@@ -20,8 +24,7 @@
   * [Build the solution in VS2019.](https://github.com/topaz-next/topaz/wiki/CMake-Build-Guide)
 
   ## To Update
-  * Open the topaz folder in Explorer.
-  * Shift+right-click, open Powershell.
+  * Open a PowerShell window and navigate to your `topaz` directory.
   * Type:
     ```
     git stash
@@ -56,7 +59,7 @@
     cp conf/default/* conf/
     ```
   * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_login` and `mysql_password` to the login/password set during MariaDB setup.
-  * In the `topaz` dir, type:
+  * In the `topaz` directory, type:
     ```
     mkdir build
     cd build
@@ -69,7 +72,7 @@
   * Select 'Reset DB' and follow the instructions to "reset" the database.
 
   ## To Update
-  * Open the `topaz` dir in a terminal.
+  * Open the `topaz` directory in a terminal.
   * Type:
     ```
     git stash
