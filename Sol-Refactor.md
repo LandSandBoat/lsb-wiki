@@ -57,7 +57,14 @@ All interaction between Lua and C++ before was handled manually. You would have 
 Using Sol to handle C++/Lua interop is the difference between trying to clean your living-room floor with a blowtorch, or turning on your Roomba. It's a night-and-day difference.
 
 ## What does this mean for my server?
-This is a huge breaking change. Every single binding has been rewritten, every single mob script has been modified. We may or may not be changing every single effect/status script. We recommend you take our repo and re-apply your changes over the top of it. Unless you have more time than sense, you won't be able to merge this into your current branches.
+This is a huge breaking change. Every single binding has been rewritten, every single mob and effect script has been modified. We recommend you take our repo and re-apply your custom changes over the top of it. Unless you have more time than sense, you won't be able to merge this into your current branches.
+
+If you have custom bindings, there should be enough examples of the new style to allow you to convert them without much effort.
+
+## Small Warning
+Does this mean calling Lua is faster, easier, and more efficient? Yes. Absolutely. 
+
+Does this mean we should start cramming everything into Lua indiscriminately? **No.** Lua, Luajit (our fast version of Lua), and Sol are wonderful tools, but they are not a replacement for the sheer heavy lifting power of C++, or the storage/querying power of SQL. This work doesn't turn on some kind of "everything should be in Lua now" switch. Make the same choices you would have before, so that we can use these performance gains to carry the project into the future!
 
 ## Other Goodies
 Content contributions are now OPEN*! 🎉
