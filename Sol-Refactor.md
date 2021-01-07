@@ -12,6 +12,8 @@ There are a lot of things enabled by this work that might not be easily digestib
 
 There is a mini technical guide to using Sol [here](https://github.com/topaz-next/topaz/wiki/Sol-Lua-Binding-Library).
 
+This work was originally planned to be executed over the course of 2x 6-week stages, but the first stage was so successful we rolled the second one into it to deliver them together. 
+
 I'd also like to extend my extreme thanks to Wren and claywar, for absolutely annihilating any estimates I had for when this work would be complete. We're literally _months_ ahead of schedule because of their bonkers work ethics!
 
 ## Motivation
@@ -38,6 +40,8 @@ With the new design, scripts are read once at startup, and their various functio
 
 `The fabled 20x performance improvement`
 
+_This work was/is possible without using Sol, but it is MUCH harder to pull off. It was made nearly trivial to implement by leaning on Sol._
+
 The one benefit of the old system was the ability to hot-swap and modify scripts on-the-fly. If it's being read all the time, any changes you make will get picked up and used immediately - leading to a very short iteration cycle. This is a feature we absolutely couldn't have dropped, it's vital for anyone wanting to write scripts. We've kept this functionality by adding a `FileWatcher`; this will inform the server process if anything in the `scripts/` folder has changed during operation and re-cache it. This functionality is enabled by default for Debug builds, and disabled in Release builds.
 
 ### Developer Quality of Life
@@ -53,6 +57,6 @@ This is a huge breaking change. Every single binding has been rewritten, every s
 ## Other Goodies
 Content contributions are now OPEN*! 🎉
 
-_*Please keep in mind we're still a small crew, and one of the reasons Project Topaz folded was the stress of constantly bending over backwards to please contributors._
+_***Please** keep in mind we're still a small crew, and one of the reasons Project Topaz folded was the stress of constantly bending over backwards to please contributors._
 
 This work enables basic Lua modules. If you know what you're doing, you can start writing them _today_ by overwriting cache entries. If you're not sure, we'll have some examples out sometime soon.
