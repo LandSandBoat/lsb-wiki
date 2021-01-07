@@ -5,7 +5,7 @@
 ## Introduction
 Towards the end of Project Topaz, we were planning on writing a nice "year in review" article presenting all of the things we had developed and released with the community's help over the past year. Unfortunately, Project Topaz folded and I don't feel like it's appropriate to present that type of article now that we're operating under a different name. Alongside this article we had proof of concepts and early implementations of important architectural work that was 95% ready to roll out. We've since rewritten that work and taken it to completion! We no longer have to hint at the cool stuff we're working on in a secret Discord, in a secret repo. It's ready for you to use **today**!
 
-In short:
+**Summary:**
 > We've gutted the entire system that links C++ to Lua, replacing it with the excellent Sol framework
 
 There are a lot of things enabled by this work that might not be easily digestible by non-developers, so this article is an attempt to explain why this work has taken priority over everything else, and why you'll soon be reaping the benefits!
