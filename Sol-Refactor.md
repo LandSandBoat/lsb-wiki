@@ -1,6 +1,6 @@
 **Not yet live**
 
-> TLDR: The main destructive changes we've been working on at Topaz-Next are complete, and contributions are now OPEN.
+> TLDR: The main destructive changes we've been working on at Topaz-Next are complete. 20x performance improvement! Contributions are OPEN again!
 
 ## Introduction
 Towards the end of Project Topaz, we were planning on writing a nice "year in review" article presenting all of the things we had developed and released with the community's help over the past year. Unfortunately, Project Topaz folded and I don't feel like it's appropriate to present that type of article now that we're operating under a different name. Alongside this article we had proof of concepts and early implementations of important architectural work that was 95% ready to roll out. We've since rewritten that work and taken it to completion! We no longer have to hint at the cool stuff we're working on in a secret Discord, in a secret repo. It's ready for you to use **today**!
