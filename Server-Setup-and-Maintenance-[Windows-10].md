@@ -19,9 +19,9 @@ To build, run, and maintain a Topaz server, you will need to download and instal
 
 ## 2. Download the source code:
 <details>
-  <summary>Git CLI</summary>
+  <summary>Git for Windows</summary>
   
-1. Open a PowerShell window.
+1. Open a PowerShell window and navigate to your chosen install directory.
 2. Type:
 ```
 git clone --recursive https://github.com/topaz-next/topaz.git
