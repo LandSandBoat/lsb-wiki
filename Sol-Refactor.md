@@ -1,6 +1,7 @@
 **Not yet live**
 
-> TLDR: The main destructive changes we've been working on at Topaz-Next are complete. 20x performance improvement*! Contributions are OPEN again!
+**TLDR:**
+>The main destructive changes we've been working on at Topaz-Next are complete. 20x performance improvement*! Contributions are OPEN again!
 >
 >_* In some areas, forgive me for the clickbait!_
 
