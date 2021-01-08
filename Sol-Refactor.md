@@ -49,6 +49,11 @@ _This work was/is possible without using Sol, but it is MUCH harder to pull off.
 
 The one benefit of the old system was the ability to hot-swap and modify scripts on-the-fly. If it's being read all the time, any changes you make will get picked up and used immediately - leading to a very short iteration cycle. This is a feature we absolutely couldn't have dropped, it's vital for anyone wanting to write scripts. We've kept this functionality by adding a `FileWatcher`; this will inform the server process if anything in the `scripts/` folder has changed during operation and re-cache it. This functionality is enabled by default for Debug builds, and disabled in Release builds.
 
+```
+[FileWatch] Modifiy: ./scripts/zones/South_Gustaberg/mobs/Tococo.lua
+[FileWatch] Caching: tpz.zones.South_Gustaberg.mobs.Tococo
+```
+
 ### Developer Quality of Life
 <img src="https://user-images.githubusercontent.com/1389729/103868938-47a0b200-50d2-11eb-8557-c4c3b9319cfe.png" width="600" height="300" />
 
