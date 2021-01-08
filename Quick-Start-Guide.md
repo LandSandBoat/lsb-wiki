@@ -10,7 +10,7 @@
   * Type:
     ```
     git clone --recursive https://github.com/topaz-next/topaz.git
-    cp topaz/conf/default/* conf/
+    cp topaz/conf/default/* topaz/conf/
     ```
   * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_password` to the password set during MariaDB setup.
   * Back in your PowerShell window, type:
