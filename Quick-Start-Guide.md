@@ -7,13 +7,13 @@
   * Install [MariaDB](https://mariadb.org/), use defaults, set a root password.
   * Install [Python 3](https://www.python.org/downloads/), check to add to PATH.
   * Open a PowerShell window and navigate to your chosen install directory.
-  * Type:
+  * Download the latest code and copy the configuration files:
     ```
     git clone --recursive https://github.com/topaz-next/topaz.git
     cp topaz/conf/default/* topaz/conf/
     ```
   * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_password` to the password set during MariaDB setup.
-  * Back in your PowerShell window, type:
+  * Back in your PowerShell window, move to `topaz/tools/` and build the database:
     ```
     cd topaz/tools
     py -3 -m pip install -r requirements.txt
@@ -25,15 +25,23 @@
 
   ## To Update
   * Open a PowerShell window and navigate to your `topaz` directory.
-  * Type:
+  * Stash any changes you've made and pull the latest code from upstream:
     ```
     git stash
     git pull
     git stash pop
+    ```
+    ⚠️ Pay attention! If you stashed any changes, there is a chance you will see the following:
+    >CONFLICT (content): Merge conflict in _**some file**_
+
+    ⚠️ If this happens, you need to manually edit the conflicting files before continuing.
+  * Move to `topaz/tools/` and update the database:
+    ```
     cd tools
     py -3 dbtool.py update
     ```
-  * Build the solution in VS2019.
+  * Open the `topaz` root folder in VS2019.
+  * [Build the solution in VS2019.](https://github.com/topaz-next/topaz/wiki/CMake-Build-Guide)
 </details>
 
 <details>
@@ -46,25 +54,29 @@
     ```
     sudo apt install g++-8 cmake mariadb-server libmariadbclient-dev libluajit-5.1-dev libzmq3-dev libssl-dev python3 python3-pip git
     ```
-  * Type:
+  * Run the following script to improve database security:
     ```
     sudo mysql_secure_installation
     ```
-  * Follow the instructions for setting up the DB.
-  * Type (changing 'password' to your password of choice):
+  * Download the latest code and copy the configuration files:
+    ```
+    git clone --recursive https://github.com/topaz-next/topaz.git
+    cp topaz/conf/default/* topaz/conf/
+    ```
+  * Type the following to create a database user with the login _**topaz**_ and password _**password**_, and an empty database called _**tpzdb**_. Change these to improve security:
     ```
     sudo mysql -u root -p -e "CREATE USER 'topaz'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE tpzdb;USE tpzdb;GRANT ALL PRIVILEGES ON tpzdb.* TO 'topaz'@'localhost';"
-    git clone --recursive https://github.com/topaz-next/topaz.git
-    cd topaz
-    cp conf/default/* conf/
     ```
-  * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_login` and `mysql_password` to the login/password set during MariaDB setup.
-  * In the `topaz` directory, type:
+  * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_login`, `mysql_password`, and `mysql_database` to the information used above (_**topaz**_, _**password**_, and _**tpzdb**_).
+  * In the `topaz` directory, prepare and build the executables:
     ```
     mkdir build
     cd build
     cmake ..
     make -j $(nproc)
+    ```
+  * Wait for the build to complete, then move to `topaz/tools/` and build the database:
+    ```
     cd ../tools
     pip3 install -r requirements.txt
     python3 dbtool.py
@@ -73,14 +85,24 @@
 
   ## To Update
   * Open the `topaz` directory in a terminal.
-  * Type:
+  * Stash any changes you've made and pull the latest code from upstream:
     ```
     git stash
     git pull
     git stash pop
+    ```
+    ⚠️ Pay attention! If you stashed any changes, there is a chance you will see the following:
+    >CONFLICT (content): Merge conflict in _**some file**_
+
+    ⚠️ If this happens, you need to manually edit the conflicting files before continuing.
+  * Prepare and build the executables:
+    ```
     cd build
     cmake ..
     make -j $(nproc)
+    ```
+  * Wait for the build to complete, then move to `topaz/tools/` and update the database:
+    ```
     cd ../tools
     python3 dbtool.py update
     ```
