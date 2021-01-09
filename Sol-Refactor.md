@@ -45,7 +45,7 @@ With the new design, scripts are read once at startup, and their various functio
 
 `The fabled 20x performance improvement`
 
-_This work was/is possible without using Sol, but it is MUCH harder to pull off. It was made nearly trivial to implement by leaning on Sol._
+_This work was/is possible without using Sol, and was prototyped without it, but that was MUCH harder to pull off. It was made nearly trivial to implement by leaning on Sol._
 
 The one benefit of the old system was the ability to hot-swap and modify scripts on-the-fly. If it's being read all the time, any changes you make will get picked up and used immediately - leading to a very short iteration cycle. This is a feature we absolutely couldn't have dropped, it's vital for anyone wanting to write scripts. We've kept this functionality by adding a `FileWatcher`; this will inform the server process if anything in the `scripts/` folder has changed during operation and re-cache it. This functionality is enabled by default for Debug builds, and disabled in Release builds.
 
