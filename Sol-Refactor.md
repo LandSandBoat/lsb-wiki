@@ -78,6 +78,6 @@ Content contributions are now OPEN*! 🎉
 
 _***Please** keep in mind we're still a small crew, and one of the reasons Project Topaz folded was the stress of constantly bending over backwards to please contributors._
 
-This work is licensed under [GNU General Public License v3.0](https://github.com/topaz-next/topaz/blob/release/LICENSE), the same license as everything else. There are no additional hoops to jump through or things to worry about. Use it with our blessing! _(but please don't try and pass it off as your own work)_
+This work is licensed under [GNU General Public License v3.0](https://github.com/topaz-next/topaz/blob/release/LICENSE), the same license as everything else. There are no additional hoops to jump through or things to worry about. Use it with our blessing! _(but please don't try and pass it off as your own work, we appreciate shout-outs in your patch notes <3)_
 
 This work enables basic Lua modules. If you know what you're doing, you can start writing them _today_ by overwriting cache entries. If you're not sure, we'll have some examples out sometime soon.
