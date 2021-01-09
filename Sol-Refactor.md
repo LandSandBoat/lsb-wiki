@@ -39,7 +39,7 @@ An added benefit of using Sol is that it validates the use of bindings at the Lu
 
 Every time a script is run (for the most part) it will be freshly read off the disk, regardless of if it has been read before. You can read about the comp-sci details [here](https://en.wikipedia.org/wiki/Memory_hierarchy), but briefly; reading a file off disk is much much slower than reading it from memory. Every Player, NPC, and Mob who is currently active will be constantly calling and loading Lua scripts from the disk. The performance cost of this adds up very quickly and can get out of hand, rendering your server unresponsive. Using an SSD or other high-performance storage can ease the load a bit, but doesn't erase the issue.
 
-With the new design, scripts are read once at startup, and their various function calls are cached in memory. This leads to a very significant improvement in lookup time:
+With the new design, scripts are read once at startup, and their various function calls are cached in memory. This leads to a very significant improvement in lookup and execution time:
 
 <img src="https://user-images.githubusercontent.com/1389729/103680388-c8ef2c00-4f8e-11eb-8632-f589d0d9f9b6.png" width="400" height="300" />
 
