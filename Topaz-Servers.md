@@ -7,7 +7,7 @@
 # 99/ilvl Cap Servers
 * [BNET.cc](#bnetcc) modern era, custom content
 * [Canaria](#Canaria) modern era
-* [Tantalus](#Tantalus) 80 cap era, QOL changes
+* [Tantalus](#Tantalus) 85 cap era, QOL changes
 * [Vana Skies](#Vana-Skies) modern era
 * [Omicron](#Omicron) modern era, QOL changes
 
@@ -169,9 +169,9 @@ Augments are tradeable. Augments can be added to and recovered from items.
 * **Website:** http://tantalus.ninja/
 * **Discord:** https://discord.gg/a9Xcgjr
 
-**Expansions enabled:** Rise of Zilart, Chains of Promathia, Treasures of Aht Urhgan, Wings of the Goddess, Vision of Abyssea.
+**Expansions enabled:** Rise of Zilart, Chains of Promathia, Treasures of Aht Urhgan, Wings of the Goddess, Vision of Abyssea, Scars of Abyssea.
 
-* **Level Cap:** 80
+* **Level Cap:** 85
 * **Fields of Valor:** Enabled increased gil and tabs but no XP
 * **Grounds of Valor:** Enabled increased gil and tabs but no XP
 * **Explorer Moogles:** Enabled
