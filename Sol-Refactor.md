@@ -41,6 +41,8 @@ Every time a script is run (for the most part) it will be freshly read off the d
 
 With the new design, scripts are read once at startup, and their various function calls are cached in memory. This leads to a very significant improvement in lookup and execution time:
 
+<img src="https://user-images.githubusercontent.com/1389729/104839710-8f41ed80-58cb-11eb-8d5a-500d6f3c3216.png" width="700" height="400" />
+
 <img src="https://user-images.githubusercontent.com/1389729/103680388-c8ef2c00-4f8e-11eb-8632-f589d0d9f9b6.png" width="400" height="300" />
 
 `The fabled 20x performance improvement`
@@ -71,7 +73,7 @@ If you have custom bindings, there should be enough examples of the new style to
 ## Small Warning
 Does this mean calling Lua is faster, easier, and more efficient? Yes. Absolutely. 
 
-Does this mean we should start cramming everything into Lua indiscriminately? **No.** Lua, Luajit (our fast version of Lua), and Sol are wonderful tools, but they are not a replacement for the sheer heavy lifting power of C++, or the storage/querying power of SQL. This work doesn't turn on some kind of "everything should be in Lua now" switch. Make the same choices you would have before, so that we can use these performance gains to carry the project into the future!
+Does this mean we should start cramming everything into Lua indiscriminately? **No.** Lua, Luajit (our fast version of Lua), and Sol are wonderful tools, but they are not a replacement for the sheer heavy lifting power of C++, or the storage/querying power of SQL. This work doesn't turn on some kind of "everything should be in Lua now" switch. Make the same choices you would have before so that we can use these performance gains to carry the project into the future!
 
 ## Other Goodies
 Content contributions are now OPEN*! 🎉
