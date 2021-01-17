@@ -54,6 +54,16 @@
     ```
     sudo apt install g++-8 cmake mariadb-server libmariadbclient-dev libluajit-5.1-dev libzmq3-dev libssl-dev python3 python3-pip git
     ```
+    **Arch:**
+    ```
+    sudo pacman -S gcc make cmake mariadb mariadb-libs luajit zeromq openssl python3 python-pip git
+    ```
+    * Arch users will need to initialize and start the database software if not done already:
+        ```
+        sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+        sudo systemctl enable mariadb
+        sudo systemctl start mariadb
+        ```
   * Run the following script to improve database security:
     ```
     sudo mysql_secure_installation
