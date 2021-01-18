@@ -2,7 +2,7 @@
 
 **TLDR:**
 >- The main destructive changes we've been working on at Topaz-Next are complete!
->- 20x performance improvement*!
+>- Up to 20x performance improvement*!
 >- Contributions are OPEN again!
 >
 >_* In some hot-path areas, forgive me for the clickbait!_
