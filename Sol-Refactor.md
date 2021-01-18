@@ -66,7 +66,7 @@ All interaction between Lua and C++ before was handled manually. You would have 
 Using Sol to handle C++/Lua interop is the difference between trying to clean your living-room floor with a blowtorch, or turning on your Roomba. It's a night-and-day difference.
 
 ## What does this mean for my server?
-This is a huge breaking change. Every single binding has been rewritten, every single mob and effect script has been modified. We recommend you take our repo and re-apply your custom changes over the top of it. Unless you have more time than sense, you won't be able to merge this into your current branches.
+This is a huge breaking change. Every single binding has been rewritten, every single script has been modified. We recommend you take our repo and re-apply your custom changes over the top of it. Unless you have more time than sense, you won't be able to merge this into your current branches.
 
 If you have custom bindings, there should be enough examples of the new style to allow you to convert them without much effort.
 
