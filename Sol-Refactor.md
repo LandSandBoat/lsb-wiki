@@ -41,13 +41,16 @@ Every time a script is run (for the most part) it will be freshly read off the d
 
 With the new design, scripts are read once at startup, and their various function calls are cached in memory. This leads to a very significant improvement in lookup and execution time:
 
+<img src="https://user-images.githubusercontent.com/1389729/104956773-7de50800-59d5-11eb-9c4a-7aa67a68bc4d.png" width="600" height="500" />
+</br>
 <img src="https://user-images.githubusercontent.com/1389729/104839710-8f41ed80-58cb-11eb-8d5a-500d6f3c3216.png" width="700" height="400" />
-
+</br>
 <img src="https://user-images.githubusercontent.com/1389729/103680388-c8ef2c00-4f8e-11eb-8632-f589d0d9f9b6.png" width="400" height="300" />
-
+</br>
 `The fabled 20x performance improvement`
 
 _This work was/is possible without using Sol, and was prototyped without it, but that was MUCH harder to pull off. It was made nearly trivial to implement by leaning on Sol._
+
 
 **Live reloading scripts**
 
