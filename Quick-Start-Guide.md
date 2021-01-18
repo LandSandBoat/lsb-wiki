@@ -52,11 +52,11 @@
 
     **Debian/Ubuntu:**
     ```
-    sudo apt install g++-8 cmake mariadb-server libmariadbclient-dev libluajit-5.1-dev libzmq3-dev libssl-dev python3 python3-pip git
+    sudo apt install g++-8 make cmake libluajit-5.1-dev libzmq3-dev libssl-dev python3 python3-pip git mariadb-server libmariadb-dev
     ```
     **Arch:**
     ```
-    sudo pacman -S gcc make cmake mariadb mariadb-libs luajit zeromq openssl python3 python-pip git
+    sudo pacman -S gcc make cmake luajit zeromq openssl python3 python-pip git mariadb
     ```
     * Arch users will need to initialize and start the database software if not done already:
         ```
