@@ -3,25 +3,38 @@
 **TLDR:**
 >- The main destructive changes we've been working on at Topaz-Next are complete!
 >- Up to 20x performance improvement*!
+>- **ZERO** runtime file reads for scripting, down from 100-300 per second!
+>- Stats: 13835 files changed (lines: +110,185, −75,662 lines), 350+ commits in one month! 
 >- Contributions are OPEN again!
 >
 >_* In some hot-path areas, forgive me for the clickbait!_
 
 ## Introduction
-Towards the end of Project Topaz, we were planning on writing a nice "year in review" article presenting all of the things we had developed and released with the community's help over the past year. Unfortunately, Project Topaz folded and I don't feel like it's appropriate to present that type of article now that we're operating under a different name. Alongside this article we had proof of concepts and early implementations of important architectural work that was 95% ready to roll out. We've since rewritten that work and taken it to completion! We no longer have to hint at the cool stuff we're working on in a secret Discord, in a secret repo. It's ready for you to use **today**!
+Towards the end of Project Topaz, we were planning on writing a nice "year in review" article presenting all of the things we had developed and released with the community's help over the past year. Unfortunately, Project Topaz folded and I don't feel like it's appropriate to present that type of article now that we're operating under a different name. Alongside this article we had proof of concepts and early implementations of important architectural work that was almost ready to roll out. We've since entirely rewritten that work and taken it to completion!
 
 **Summary:**
 > We've gutted the entire system that links C++ to Lua, replacing it with the excellent Sol framework
 
 There are a lot of things enabled by this work that might not be easily digestible by non-developers, so this article is an attempt to explain why this work has taken priority over everything else, and why you'll soon be reaping the benefits!
 
-There is a mini technical guide to using Sol [here](https://github.com/topaz-next/topaz/wiki/Sol-Lua-Binding-Library).
-
 This work was originally planned to be executed over the course of 2x 6-week stages, but the first stage was so successful we rolled the second one into it to deliver them together. 
 
 I'd also like to extend my extreme thanks to Wren and claywar, for absolutely annihilating any estimates I had for when this work would be complete. We're literally _months_ ahead of schedule because of their bonkers work ethics!
 
-## Motivation
+
+## Background
+
+We use Lua (Portuguese for Moon, not an acronym) as a scripting language for quick iteration, and to lower the barrier to entry for newcomers. Aside from a couple of quirks that get under peoples' skin (1-indexed arrays); it is a wonderful language that is very fast to pick up and has surprising versatility.
+
+In order to use Lua alongside our Core C++ code, we need to `bind` C++ functions to Lua, and represent `C++ Types` as `Lua Usertypes`. This is achieved by using a `binding system`, or `binding library`. 
+
+Our current binding system is called [Lunar](http://lua-users.org/wiki/CppBindingWithLunar) and was originally published as a code snippet around 2009. At the time, there probably wasn't much available in terms of binding libraries, so this would have been a godsend in terms of "easy" interplay with C++. Unfortunately, Lunar hasn't been upgraded or iterated on... ever. We haven't touched it (apart from formatting passes) since [Sep 16, 2011](https://github.com/topaz-next/topaz/commit/7a160120a7b7313cbfc1b5483627cebc24776ada#diff-605911436f6554e7f7420de334e67cd1d76100e8c8f33559c4d9733db3011b70).
+
+If it was rock-solid and easy to use/understand/extend, then we would be perfectly fine to leave it alone forever. This, however, is not the case. The binding system and the process of getting information into and out of the Lua state is fragile and arcane. Much developer time has been wasted "fiddling with the stack". Since our adoption of Lunar pre-2011, the Lua-binding ecosystem has moved on and there are a wealth of viable libraries allowing for safer usage, modern workflows, and easier to understand/maintain code.
+
+The most promising and well supported library at the moment is **[sol](https://github.com/ThePhD/sol2)** (sol2 v3, referred to as Sol/sol for clarity).
+
+## Goals
 
 ### Runtime Safety
 <img src="https://user-images.githubusercontent.com/1389729/103868903-38b9ff80-50d2-11eb-985d-cf0e567ae285.png" width="600" height="300" />
@@ -78,11 +91,19 @@ Does this mean calling Lua is faster, easier, and more efficient? Yes. Absolutel
 
 Does this mean we should start cramming everything into Lua indiscriminately? **No.** Lua, Luajit (our fast version of Lua), and Sol are wonderful tools, but they are not a replacement for the sheer heavy lifting power of C++, or the storage/querying power of SQL. This work doesn't turn on some kind of "everything should be in Lua now" switch. Make the same choices you would have before so that we can use these performance gains to carry the project into the future!
 
+## What's Next?
+The `sol_refactor` branch will become the new starting point for `canary`. If you're familiar with the Topaz branching strategy; `release` is our stable branch and `canary` is our "use-at-your-own-risk-beta-test" branch. We want to complete at least a few weeks of open testing in `canary` before we promote this refactor to `release`. After that, regular development will resume! 
+
+We have a few other projects in the planning stages that should double overall zone performance again, and they aren't as drastic as this refactoring, so look forward to that :)
+
+
 ## Other Goodies
 Content contributions are now OPEN*! 🎉
 
 _***Please** keep in mind we're still a small crew, and one of the reasons Project Topaz folded was the stress of constantly bending over backwards to please contributors._
 
-This work is licensed under [GNU General Public License v3.0](https://github.com/topaz-next/topaz/blob/release/LICENSE), the same license as everything else. There are no additional hoops to jump through or things to worry about. Use it with our blessing! _(but please don't try and pass it off as your own work, we appreciate shout-outs in your patch notes <3)_
+This work enables basic Lua modules. If you know what you're doing, you can start writing them _today_ by overwriting cache entries. If you're not sure, we'll have some small examples out sometime soon.
 
-This work enables basic Lua modules. If you know what you're doing, you can start writing them _today_ by overwriting cache entries. If you're not sure, we'll have some examples out sometime soon.
+## Licensing
+
+This work is licensed under [GNU General Public License v3.0](https://github.com/topaz-next/topaz/blob/release/LICENSE), the same license as everything else. Please use it with our blessing!
