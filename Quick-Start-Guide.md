@@ -7,16 +7,16 @@
   * Install [MariaDB](https://mariadb.org/), use defaults, set a root password.
   * Install [Python 3](https://www.python.org/downloads/), check to add to PATH.
   * Open a PowerShell window and navigate to your chosen install directory.
-  * Download the latest code and copy the configuration files:
+  * Download the latest code, install Python requirements, and copy the configuration files:
     ```
     git clone --recursive https://github.com/topaz-next/topaz.git
+    py -3 -m pip install -r topaz/tools/requirements.txt
     cp topaz/conf/default/* topaz/conf/
     ```
   * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_password` to the password set during MariaDB setup.
   * Back in your PowerShell window, move to `topaz/tools/` and build the database:
     ```
     cd topaz/tools
-    py -3 -m pip install -r requirements.txt
     py -3 dbtool.py
     ```
   * Follow the on-screen instructions.
@@ -64,14 +64,15 @@
         sudo systemctl enable mariadb
         sudo systemctl start mariadb
         ```
+  * Download the latest code, install Python requirements, and copy the configuration files:
+    ```
+    git clone --recursive https://github.com/topaz-next/topaz.git
+    pip3 install -r topaz/tools/requirements.txt
+    cp topaz/conf/default/* topaz/conf/
+    ```
   * Run the following script to improve database security:
     ```
     sudo mysql_secure_installation
-    ```
-  * Download the latest code and copy the configuration files:
-    ```
-    git clone --recursive https://github.com/topaz-next/topaz.git
-    cp topaz/conf/default/* topaz/conf/
     ```
   * Type the following to create a database user with the login _**topaz**_ and password _**password**_, and an empty database called _**tpzdb**_. Change these to improve security:
     ```
@@ -88,7 +89,6 @@
   * Wait for the build to complete, then move to `topaz/tools/` and build the database:
     ```
     cd ../tools
-    pip3 install -r requirements.txt
     python3 dbtool.py
     ```
   * Select 'Reset DB' and follow the instructions to "reset" the database.
