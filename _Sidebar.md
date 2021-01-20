@@ -1,7 +1,7 @@
 [Home](https://github.com/topaz-next/topaz/wiki)
 * General
   * [[What Works|https://github.com/topaz-next/topaz/wiki/What-Works]]
-  * [[Quickstart Guide|https://github.com/topaz-next/topaz/wiki/Quick-Start-Guide]]
+  * [[Quick Start Guide|https://github.com/topaz-next/topaz/wiki/Quick-Start-Guide]]
   * [[Frequently Asked Questions|https://github.com/topaz-next/topaz/wiki/Frequently-Asked-Questions]]
 * Client Setup
   * [[Windows 10|https://github.com/topaz-next/topaz/wiki/Client-setup-%5BWindows%5D]]
