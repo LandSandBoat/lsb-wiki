@@ -99,6 +99,7 @@ Then edit them as follows:
 
 ```
 cd conf
+echo -e "\n#DB_VER=`git rev-parse --short=4 HEAD`" >> version.conf
 nano login.conf
 ```
 Look for mysql_login: root and change it to mysql_login: topazadmin
@@ -138,7 +139,7 @@ nano settings.lua
 For any change to the version you want your clients be running
 ```
 cd ../..
-nano version.info
+nano conf/version.conf
 ```
 Port forwarding 
 ```
@@ -167,7 +168,7 @@ screen -r topaz_search
 As development is always ongoing, you may want to periodically update to the latest version of Topaz. This can be done quite simply with a few steps, and using the magic of `git`! 
 
 0. Backup your SQL database!
-Use a tool of your choice, HeidiSQL or the command line MySQL utility `mysqldump tpzdb -u topazadmin -p<yourDBpassword> > topaz.backup.sql`
+By default, dbtool will backup your whole database into `topaz/sql/backups/`. You can turn this off and do manual backups either with the TUI using `python3 dbtool.py` in the tools folder, or by running `python3 dbtool.py backup`. You can create a backup of only sensitive player data by using `python3 dbtool.py backup lite`.
 1. Save your custom modifications + settings
 ```git stash```
 This will ask git to store changes you've made since cloning so we can put them back after updating.
@@ -177,5 +178,10 @@ This assumes you cloned from the topaz github as detailed above. If you are usin
 3. Put back your changes
 ```git stash pop```
 Git may notify you which, if any, files were changed by both yourself and the Topaz project. You will want to edit these to confirm they are set the way you'd like them.
-4. Import any changed sql files from the `sql/` folder.
-5. Run the migration script `migrations/migrate.py`.
+4. Compile the source code
+```
+cd build
+cmake ..
+make -j $(nproc)
+```
+5. Run dbtool either with the TUI using `python3 dbtool.py` in the tools folder, or by running `python3 dbtool.py update`. If there is a SQL change detected, the TUI will give the option for an "express upgrade" and a chance to review the changes. The CLI option will automatically apply any changes if necessary, and has options (on by default) to backup the whole database first and to update the client version in `version.conf` if a version update happens.
