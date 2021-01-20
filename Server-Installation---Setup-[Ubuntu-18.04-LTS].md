@@ -99,7 +99,7 @@ Then edit them as follows:
 
 ```
 cd conf
-echo -e "\n#DB_VER=`git rev-parse --short=4 HEAD`" >> version.conf
+echo -e "\n#DB_VER: `git rev-parse --short=4 HEAD`" >> version.conf
 nano login.conf
 ```
 Look for mysql_login: root and change it to mysql_login: topazadmin
