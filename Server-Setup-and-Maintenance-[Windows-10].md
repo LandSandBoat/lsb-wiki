@@ -150,6 +150,8 @@ to:
 
 save then restart the topaz_connect.exe server.
 
+**Next Step: [Post-Install Guide](https://github.com/topaz-next/topaz/wiki/Post-Install-Guide)**
+
 # Update
 
 First, pull updated server files from Topaz Next.
