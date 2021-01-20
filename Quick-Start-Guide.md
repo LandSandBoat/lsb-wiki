@@ -117,3 +117,5 @@
     python3 dbtool.py update
     ```
 </details>
+
+**Next Step: [Post-Install Guide](https://github.com/topaz-next/topaz/wiki/Post-Install-Guide)**
