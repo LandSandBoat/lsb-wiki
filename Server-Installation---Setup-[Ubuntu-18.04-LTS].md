@@ -1,6 +1,7 @@
 ##### Table of Contents  
 - [Install](#install)  
 - [Update](#update)  
+- [Miscellaneous](#miscellaneous)  
 
 # Install
 
@@ -197,3 +198,12 @@ make -j $(nproc)
 python3 dbtool.py update
 ```
 If there is a SQL change detected, the TUI will give the option for an "express upgrade" and a chance to review the changes. The CLI option will automatically apply any changes if necessary, and has options (on by default) to backup the whole database first and to update the client version in `version.conf` if a version update happens.
+
+# Miscellaneous
+## Raspberry Pi Warnings
+#### RAM
+The Raspberry pi 3b/3b+ only has 1GB of ram, and it only has access to a certain amount which varies based on how much you set aside for your graphics adapter during the initial set up of your pi.  Due to this, running topaz_game my make your pi seemingly freeze.  It is thusly advised that you run your servers one at a time starting with topaz_connect, then topaz_game, then topaz_search until they all say they are ready (the search one is the fastest, it will pretty much be ready as soon as it's run).  However, once topaz_game has done everything it needs to do and has run for a certain amount of time aftwards, it will only use about 250MB by itself, adding about 1.5MB give or take for additional players, and the other 2 servers use very little.  It is recommended, for this reason, that you disable areas you are not going to use on your server.  This can be done by changing the IP address of the zones in zone_settings in your database, or removing the zone from zone_settings.  You can also cluster zones to different machines, and use other Pis or computers to host them.
+#### Power
+Raspberry Pis require at least a 2.5amp power supply to run at full power, if you are getting a little yellow lightning bolt in the top right, you have hit the limit of your current power supply, and may not be able to take full advantage of your CPU's power, and may lose connectivity to Bluetooth, or USB devices.
+
+Should you hit either of these 2 limitations, it will take considerably longer for the process to finish, my Pi 3b ran for 12 hours and never finished loading all the zones and reducing the RAM usage to normal ranges.
