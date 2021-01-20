@@ -50,20 +50,28 @@
   ## To Install
   * Use your package manager to install the following packages or their equivalent:
 
-    **Debian/Ubuntu:**
+    <details>
+      <summary>Debian/Ubuntu</summary>
+
+      ```
+      sudo apt update
+      sudo apt install git python3 python3-pip g++-8 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev mariadb-server libmariadb-dev
+      ```
+    </details>
+    <details>
+      <summary>Arch</summary>
+
     ```
-    sudo apt install g++-8 make cmake libluajit-5.1-dev libzmq3-dev libssl-dev python3 python3-pip git mariadb-server libmariadb-dev
-    ```
-    **Arch:**
-    ```
-    sudo pacman -S gcc make cmake luajit zeromq openssl python3 python-pip git mariadb
+    sudo pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl mariadb
     ```
     * Arch users will need to initialize and start the database software if not done already:
-        ```
-        sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
-        sudo systemctl enable mariadb
-        sudo systemctl start mariadb
-        ```
+      ```
+      sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+      sudo systemctl enable mariadb
+      sudo systemctl start mariadb
+      ```
+    </details>
+
   * Download the latest code, install Python requirements, and copy the configuration files:
     ```
     git clone --recursive https://github.com/topaz-next/topaz.git
