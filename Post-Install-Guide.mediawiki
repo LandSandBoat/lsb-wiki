@@ -13,7 +13,7 @@ UPDATE chars SET gmlevel = 4 WHERE charname = "Name";
 Available commands are [https://github.com/topaz-next/topaz/tree/release/scripts/commands found in the scripts/commands/ folder], and a description of each command can be found at the top of the script. Commands can be used in-game using the script name with a preceding <code>!</code>, and removing <code>.lua</code>. For example, <code>prompte.lua</code> is ran in game using <code>!promote</code>. This is the command you would use to make additional GMs.
 
 == Changing Game Settings ==
-Various details about the game can be changed via editing the settings files. Some settings are located in <code>topaz/conf/map.conf</code> and require a server reboot to apply. Other settings are found in <code>topaz/scripts/globals/settings.lua</code> and only require a GM command to reload, <code>!reloadglobal settings</code>. Other files in the <code>topaz/scripts/globals/</code> folder can be changed in the same way.
+Various details about the game can be changed via editing the settings files. Some settings are located in <code>topaz/conf/map.conf</code> and require a server reboot to apply. Other settings are found in <code>topaz/scripts/globals/settings.lua</code> and only require a GM command to reload, <code>!reloadglobal settings</code> (although some settings still require a reboot for full effect). Other files in the <code>topaz/scripts/globals/</code> folder can be changed in the same way.
 
 == Changing the Server IP Address ==
 To make the server accessible over a network, the zoneip must be changed in the zone_settings table. You can do this with a simple MySQL query.
