@@ -1,3 +1,9 @@
+##### Table of Contents  
+- [Install](#install)  
+- [Update](#update)  
+
+# Install
+
 All the steps below in code block are to be done on the terminal:
 
 Installs requirements to run the sql database and tools to compile the source code
@@ -163,7 +169,7 @@ screen -r topaz_game
 screen -r topaz_search
 ```
 
-## Updating Topaz
+# Update
 
 As development is always ongoing, you may want to periodically update to the latest version of Topaz. This can be done quite simply with a few steps, and using the magic of `git`! 
 
