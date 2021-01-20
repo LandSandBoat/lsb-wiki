@@ -7,13 +7,37 @@
 
 All the steps below in code block are to be done on the terminal:
 
-Installs requirements to run the sql database and tools to compile the source code
+Installs requirements to run the sql database and tools to compile the source code (click your distro)
+<details>
+  <summary>Ubuntu 18.04</summary>
+
 ```
 sudo apt update
-sudo apt install cmake mariadb-server libmariadbclient-dev libmariadb-dev-compat libluajit-5.1-dev libzmq3-dev autoconf pkg-config zlib1g-dev libssl-dev
+sudo apt install git python3 python3-pip g++-8 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev mariadb-server libmariadb-dev-compat autoconf pkg-config zlib1g-dev libmariadbclient-dev
 ```
 > Note: If you receive errors regarding dependency conflicts, you can remove `libmariadbclient-dev`
+</details>
+<details>
+  <summary>Debian/Ubuntu 20.04</summary>
 
+```
+sudo apt update
+sudo apt install git python3 python3-pip g++-8 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev mariadb-server libmariadb-dev
+```
+</details>
+<details>
+  <summary>Arch</summary>
+
+```
+sudo pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl mariadb
+```
+* Arch users will need to initialize and start the database software if not done already:
+    ```
+    sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+    sudo systemctl enable mariadb
+    sudo systemctl start mariadb
+    ```
+</details>
 
 Clones the repository to the current folder you are in
 ```
