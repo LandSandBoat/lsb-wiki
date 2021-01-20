@@ -30,11 +30,13 @@ UDP port: 54230
 ```
 
 == Database Management ==
-By default, dbtool will backup your whole database into <code>topaz/sql/backups/</code> whenever it performs an update. You can turn this off and do manual backups either with the TUI, or by running <code>python3 dbtool.py backup</code> (Windows: <code>py -3 dbtool.py backup</code>). You can create a backup of only sensitive player data by using <code>python3 dbtool.py backup lite</code> (Windows: <code>py -3 dbtool.py backup lite</code>). The tables it backs up with the <code>lite</code> argument are defined in <code>topaz/tools/config.yaml</code>. The backups can be imported using the <b>Restore/Import</b> command in dbtool.
+By default, dbtool will backup your whole database into <code>topaz/sql/backups/</code> whenever it performs an update. You can turn this off and do manual backups either with the TUI, or by running <code>python3 dbtool.py backup</code> (Windows: <code>py -3 dbtool.py backup</code>). You can create a backup of only sensitive player data by using <code>python3 dbtool.py backup lite</code> (Windows: <code>py -3 dbtool.py backup lite</code>). The tables it backs up with the <code>lite</code> argument are defined in <code>topaz/tools/config.yaml</code> (created automatically by dbtool the first time you run it). The backups can be imported using the <b>Restore/Import</b> command in dbtool.
 
 == See Also ==
 [https://github.com/topaz-next/topaz/wiki/Miscellaneous-(Server) Common Issues and Tweaks]
 
 [https://github.com/topaz-next/topaz/wiki/Useful-SQL-queries Useful SQL Queries]
+
+[https://github.com/topaz-next/topaz/wiki/Database-Management Database Management]
 
 [https://github.com/topaz-next/topaz/wiki/Debugging Debugging]
