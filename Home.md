@@ -1,9 +1,9 @@
 This is the wiki for Topaz Next - an open-source server emulator for FFXI.
 
 # General
-General articles about the project
+General articles about the project.
 - [[What Works|https://github.com/topaz-next/topaz/wiki/What-Works]]
-- [[Quickstart Guide|https://github.com/topaz-next/topaz/wiki/Quick-Start-Guide]]
+- [[Quick Start Guide|https://github.com/topaz-next/topaz/wiki/Quick-Start-Guide]]
 - [[Frequently Asked Questions|https://github.com/topaz-next/topaz/wiki/Frequently-Asked-Questions]]
 # Client Setup
 Instructions for installing FFXI, connecting to a private server, and keeping the game updated.
@@ -11,17 +11,16 @@ Instructions for installing FFXI, connecting to a private server, and keeping th
 - [Common Concerns](https://github.com/topaz-next/topaz/wiki/Miscellaneous-(Client))
 
 # Server Setup
-Instructions for cloning, building, and running a Topaz Next server
+Instructions for cloning, building, running, and updating a Topaz Next server.
 - [[Windows 10|https://github.com/topaz-next/topaz/wiki/Server-setup-and-maintenance-%5BWindows-10%5D]]
-- [[Ubuntu 18.04|https://github.com/topaz-next/topaz/wiki/Server-Installation---Setup-%5BUbuntu-18.04-LTS%5D]]
-- [[Raspberry Pi 3b/3b+/4b (Raspbian)|https://github.com/topaz-next/topaz/wiki/Server-installation---setup-%5BRaspberry-pi-3b-4,-Raspbian-OS%5D]]
+- [[Linux|https://github.com/topaz-next/topaz/wiki/Server-Setup-and-Maintenance-%5BLinux%5D]]
 
 # [Server Administration](https://github.com/topaz-next/topaz/wiki/Server-Administration)
 Information for new server administrators.
 - [Common Issues & Tweaks](https://github.com/topaz-next/topaz/wiki/Miscellaneous-(Server))
+- [Useful SQL Queries](https://github.com/topaz-next/topaz/wiki/Useful-SQL-queries)
 - [Database Management](https://github.com/topaz-next/topaz/wiki/Database-Management)
 - [Debugging](https://github.com/topaz-next/topaz/wiki/Debugging)
-- [Useful SQL Queries](https://github.com/topaz-next/topaz/wiki/Useful-SQL-queries)
 
 # [Development](https://github.com/topaz-next/topaz/wiki/Development)
 Information for developers who work on Topaz Next.
@@ -33,11 +32,11 @@ Information for developers who work on Topaz Next.
 - [Performance Profiling with Tracy](https://github.com/topaz-next/topaz/wiki/Performance-Profiling-with-Tracy)
 
 # [Project Meta](https://github.com/topaz-next/topaz/wiki/Project-Meta)
-Information relating to the "meta" of Topaz Topaz - like project goals, codes of conduct, project roadmaps, and licensing information
+Information relating to the "meta" of Topaz Next - like project goals, codes of conduct, project roadmaps, and licensing information.
 - [[Project Focus|https://github.com/topaz-next/topaz/wiki/Project-Focus]]
 - [[Contributor Conduct|https://github.com/topaz-next/topaz/wiki/Contributor-Conduct]]
 - [[Staff Conduct|https://github.com/topaz-next/topaz/wiki/Staff-Conduct]]
 # [[Server List|Topaz-Servers]]
-List of known public Topaz servers, if you want to join one, or test out Topaz before setting up your own
+List of known public Topaz servers, if you want to join one, or test out Topaz before setting up your own.
 # [Resources](https://github.com/topaz-next/topaz/wiki/Resources)
-Additional resources and tools of interest to administrators, developers, or players
+Additional resources and tools of interest to administrators, developers, or players.
