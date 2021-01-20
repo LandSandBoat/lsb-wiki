@@ -1,5 +1,12 @@
+== Executing a MySQL Query ==
+Linux and Windows users with MySQL in their PATH can execute a query from the terminal using the following format:
+```
+mysql -u topaz -ppassword tpzdb -e "QUERY"
+```
+Where <b>topaz</b>, <b>password</b>, <b>tpzdb</b>, and <b>QUERY</b> are changed to your needs. Windows users can also use the query tab in HeidiSQL (default keybind is ctrl+t).
+
 == Making a Game Master Character ==
-After creating your first character you'll want to make it a GM by run the following MySQL query, replacing <code>Name</code> with your character name:
+After creating your first character you'll want to make it a GM by executing the following MySQL query, replacing <code>Name</code> with your character name:
 ```
 UPDATE chars SET gmlevel = 4 WHERE charname = "Name";
 ```
@@ -16,10 +23,10 @@ UPDATE zone_settings SET zoneip = 'IP';
 Replace <code>IP</code> with the desired IP. To access the game only on the same machine, this should be <code>127.0.0.1</code>. If you're accessing the server from another machine on the network, it should be the local IP address of the host, e.g. <code>192.168.0.11</code>. If you want to access it over the internet, it needs to be your public IP which can be gathered from various websites such as https://www.whatismyip.com/.
 
 == Database Management ==
-By default, dbtool will backup your whole database into <code>topaz/sql/backups/</code> whenever it performs an update. You can turn this off and do manual backups either with the TUI, or by running <code>python3 dbtool.py backup</code>. You can create a backup of only sensitive player data by using <code>python3 dbtool.py backup lite</code>. The tables it backs up with the <code>lite</code> argument are defined in <code>topaz/tools/config.yaml</code>. The backups can be imported using the <code>Restore/Import</code> command in dbtool.
+By default, dbtool will backup your whole database into <code>topaz/sql/backups/</code> whenever it performs an update. You can turn this off and do manual backups either with the TUI, or by running <code>python3 dbtool.py backup</code>. You can create a backup of only sensitive player data by using <code>python3 dbtool.py backup lite</code>. The tables it backs up with the <code>lite</code> argument are defined in <code>topaz/tools/config.yaml</code>. The backups can be imported using the <b>Restore/Import</b> command in dbtool.
 
 == Auto-Starting the Server ==
-Linux users can create several systemd services to automate the servers.
+Linux users can create several systemd services to automate the servers (make sure to update <code>/path/to/topaz</code>, and the User/Group):
 
 ```
 #topaz.service
