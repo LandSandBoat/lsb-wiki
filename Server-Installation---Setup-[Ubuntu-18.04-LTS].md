@@ -64,7 +64,7 @@ exit
 
 Goes inside the sql folder and imports all tables inside the database we just created (tpzdb)
 ```
-cd sql
+cd ../sql
 for f in *.sql
   do
      echo -n "Importing $f into the database..."
@@ -88,10 +88,7 @@ hostname -I
 The following is going to log in to your sql server and change the zoneip value of the zone_settings table
 Replace '127.0.0.1' with the IP you will be using from the previous step - this is REQUIRED if your server is public-facing.
 ```
-mysql -u topazadmin -ptopazisawesome
-USE tpzdb;
-UPDATE zone_settings SET zoneip = '127.0.0.1'; 
-exit
+mysql tpzdb -u topazadmin -ptopazisawesome -e "UPDATE zone_settings SET zoneip = '127.0.0.1';" 
 ```
 
 Now we are going to enter the username and password for sql inside three different files login.conf, map.conf, and search_server.conf
@@ -173,16 +170,20 @@ screen -r topaz_search
 
 As development is always ongoing, you may want to periodically update to the latest version of Topaz. This can be done quite simply with a few steps, and using the magic of `git`! 
 
-0. Backup your SQL database!
-By default, dbtool will backup your whole database into `topaz/sql/backups/`. You can turn this off and do manual backups either with the TUI using `python3 dbtool.py` in the tools folder, or by running `python3 dbtool.py backup`. You can create a backup of only sensitive player data by using `python3 dbtool.py backup lite`.
 1. Save your custom modifications + settings
-```git stash```
+```
+git stash
+```
 This will ask git to store changes you've made since cloning so we can put them back after updating.
 2. Pull new changes from the repository. You should also close your topaz servers before updating.
-```git pull origin release```
+```
+git pull origin release
+```
 This assumes you cloned from the topaz github as detailed above. If you are using your own fork, this command may differ for you.
 3. Put back your changes
-```git stash pop```
+```
+git stash pop
+```
 Git may notify you which, if any, files were changed by both yourself and the Topaz project. You will want to edit these to confirm they are set the way you'd like them.
 4. Compile the source code
 ```
@@ -190,4 +191,8 @@ cd build
 cmake ..
 make -j $(nproc)
 ```
-5. Run dbtool either with the TUI using `python3 dbtool.py` in the tools folder, or by running `python3 dbtool.py update`. If there is a SQL change detected, the TUI will give the option for an "express upgrade" and a chance to review the changes. The CLI option will automatically apply any changes if necessary, and has options (on by default) to backup the whole database first and to update the client version in `version.conf` if a version update happens.
+5. Run dbtool either with the TUI using `python3 dbtool.py` in the tools folder, or by running 
+```
+python3 dbtool.py update
+```
+If there is a SQL change detected, the TUI will give the option for an "express upgrade" and a chance to review the changes. The CLI option will automatically apply any changes if necessary, and has options (on by default) to backup the whole database first and to update the client version in `version.conf` if a version update happens.
