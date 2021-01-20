@@ -123,3 +123,103 @@ Done.
 
 === How do I set JP Midnight? ===
 JP midnight is now coded to align with the retail JST midnight regardless of your local timezone setting and manual configuration is no longer required. There is no setting for JP Midnight and we do not recommend altering server timing behaviour as the client has hard-coded expectations that certain events and resets will occur at certain times.
+
+=== Auto-Starting the Server (Linux) ===
+Linux users can create several systemd services to automate the servers (make sure to update <code>/path/to/topaz</code>, and the User/Group):
+
+```
+#topaz.service
+
+[Unit]
+Description=Topaz - FFXI Server Emulator
+After=mysql.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/true
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```
+#topaz_game.service
+
+[Unit]
+Description=Topaz Game Server
+Wants=network.target
+StartLimitIntervalSec=120
+StartLimitBurst=5
+PartOf=topaz.service
+After=topaz.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=topaz
+Group=topaz
+WorkingDirectory=/path/to/topaz
+# For multiple map servers:
+# - Make a copy of this file for each server. Rename appropriately, e.g. topaz_game-cities.service
+# - Add this to a file named ip.txt in the topaz folder, replacing YOUR_PUBLIC_IP with your IP: "IP=YOUR_PUBLIC_IP"
+# - Change the zone ports in zone_settings table. A custom.sql file is useful for this.
+# - Remove the line below, 'ExecStart=/path/to/topaz_game'.
+# - Uncomment and edit the 2 lines below with the appropriate port and log location for each zone server.
+#EnvironmentFile=/path/to/topaz/ip.txt
+#ExecStart=/path/to/topaz/topaz_game --ip $IP --port 54230 --log /path/to/log/map_server.log
+ExecStart=/path/to/topaz/topaz_game
+
+[Install]
+WantedBy=topaz.service
+```
+
+```
+#topaz_connect.service
+
+[Unit]
+Description=Topaz Connect Server
+Wants=network.target
+StartLimitIntervalSec=120
+StartLimitBurst=5
+PartOf=topaz.service
+After=topaz.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=topaz
+Group=topaz
+WorkingDirectory=/path/to/topaz
+ExecStart=/path/to/topaz/topaz_connect
+
+[Install]
+WantedBy=topaz.service
+```
+
+```
+#topaz_search.service
+
+[Unit]
+Description=Topaz Search Server
+Wants=network.target
+StartLimitIntervalSec=120
+StartLimitBurst=5
+PartOf=topaz.service
+After=topaz.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=topaz
+Group=topaz
+WorkingDirectory=/path/to/topaz
+ExecStart=/path/to/topaz/topaz_search
+
+[Install]
+WantedBy=topaz.service
+```
+After adding these to <code>/etc/systemd/system/</code>, run <code>systemctl daemon-reload</code> followed by <code>systemctl enable topaz_game topaz_connect topaz_search</code>. You can start/stop all the servers at once with <code>systemctl start/stop topaz</code> or each individual service separately. To enable auto-start, type <code>systemctl enable topaz</code>. Make sure topaz is in a location accessible to the user that will be running the service, and the correct permissions are set.
