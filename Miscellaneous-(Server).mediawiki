@@ -124,7 +124,8 @@ Done.
 === How do I set JP Midnight? ===
 JP midnight is now coded to align with the retail JST midnight regardless of your local timezone setting and manual configuration is no longer required. There is no setting for JP Midnight and we do not recommend altering server timing behaviour as the client has hard-coded expectations that certain events and resets will occur at certain times.
 
-=== Auto-Starting the Server (Linux) ===
+=== Auto-Starting the Server ===
+==== Linux ====
 Linux users can create several systemd services to automate the servers (make sure to update <code>/path/to/topaz</code>, and the User/Group):
 
 ```
