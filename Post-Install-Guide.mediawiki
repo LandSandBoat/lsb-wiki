@@ -22,6 +22,13 @@ UPDATE zone_settings SET zoneip = 'IP';
 ```
 Replace <code>IP</code> with the desired IP. To access the game only on the same machine, this should be <code>127.0.0.1</code>. If you're accessing the server from another machine on the network, it should be the local IP address of the host, e.g. <code>192.168.0.11</code>. If you want to access it over the internet, it needs to be your public IP which can be gathered from various websites such as https://www.whatismyip.com/.
 
+=== Port forwarding ===
+Make sure you have the following ports forwarded by your router and open in any firewall software if accessing the server over a network:
+```
+TCP ports: 54230, 54231, 54001, 54002
+UDP port: 54230
+```
+
 == Database Management ==
 By default, dbtool will backup your whole database into <code>topaz/sql/backups/</code> whenever it performs an update. You can turn this off and do manual backups either with the TUI, or by running <code>python3 dbtool.py backup</code> (Windows: <code>py -3 dbtool.py backup</code>). You can create a backup of only sensitive player data by using <code>python3 dbtool.py backup lite</code> (Windows: <code>py -3 dbtool.py backup lite</code>). The tables it backs up with the <code>lite</code> argument are defined in <code>topaz/tools/config.yaml</code>. The backups can be imported using the <b>Restore/Import</b> command in dbtool.
 
