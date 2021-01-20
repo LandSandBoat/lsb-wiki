@@ -1,5 +1,6 @@
 # Migrating from older versions of Topaz Next
-https://github.com/topaz-next/topaz/wiki/Server-Update
+- [Windows 10](https://github.com/topaz-next/topaz/wiki/Server-setup-and-maintenance-%5BWindows-10%5D#update)
+- [Ubuntu 18.04](https://github.com/topaz-next/topaz/wiki/Server-Installation---Setup-%5BUbuntu-18.04-LTS%5D#update)
 
 # Migrating from Darkstar Project
 
