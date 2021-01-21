@@ -19,7 +19,7 @@ This list is free for anyone to update and is very probably out of date, feel fr
 # Jobs
 | Status | Jobs |
 |---|---|
-| ❌ | GEO, RUN |
+| ❌ | GEO (potentially crashes the server), RUN |
 | ⚠️ | SMN, BLU |
 | ⛔ | PUP |
 | ✔️ | All others (up to Lv75) |
