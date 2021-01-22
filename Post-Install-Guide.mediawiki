@@ -22,7 +22,10 @@ UPDATE zone_settings SET zoneip = 'IP';
 ```
 Replace <code>IP</code> with the desired IP. To access the game only on the same machine, this should be <code>127.0.0.1</code>. If you're accessing the server from another machine on the network, it should be the local IP address of the host, e.g. <code>192.168.0.11</code>. If you want to access it over the internet, it needs to be your public IP which can be gathered from various websites such as https://www.whatismyip.com/.
 
-=== Port forwarding ===
+;Note
+:<code>zone_settings</code> is not a protected table, so this change can be overwritten during an update. It is recommended to save this query in a <code>.sql</code> file in <code>topaz/sql/backups/</code> then import it after an update. See [https://github.com/topaz-next/topaz/wiki/Database-Management#making-persistent-changes Database Management].
+
+=== Port Forwarding ===
 Make sure you have the following ports forwarded by your router and open in any firewall software if accessing the server over a network:
 ```
 TCP ports: 54230, 54231, 54001, 54002
