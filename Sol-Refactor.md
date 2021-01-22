@@ -27,7 +27,7 @@ We use Lua (Portuguese for Moon, not an acronym) as a scripting language for qui
 
 In order to use Lua alongside our Core C++ code, we need to `bind` C++ functions to Lua, and represent `C++ Types` as `Lua Usertypes`. This is achieved by using a `binding system`, or `binding library`. 
 
-Our current binding system is called [Lunar](http://lua-users.org/wiki/CppBindingWithLunar) and was originally published as a code snippet around 2009. At the time, there probably wasn't much available in terms of binding libraries, so this would have been a godsend in terms of "easy" interplay with C++. Unfortunately, Lunar hasn't been upgraded or iterated on... ever. We haven't touched it (apart from formatting passes) since [Sep 16, 2011](https://github.com/topaz-next/topaz/commit/7a160120a7b7313cbfc1b5483627cebc24776ada#diff-605911436f6554e7f7420de334e67cd1d76100e8c8f33559c4d9733db3011b70).
+Our old binding system was called [Lunar](http://lua-users.org/wiki/CppBindingWithLunar) and was originally published as a code snippet around 2009. At the time, there probably wasn't much available in terms of binding libraries, so this would have been a godsend in terms of "easy" interop with C++. Unfortunately, Lunar hasn't been upgraded or iterated on... ever. We haven't touched it (apart from formatting passes) since [Sep 16, 2011](https://github.com/topaz-next/topaz/commit/7a160120a7b7313cbfc1b5483627cebc24776ada#diff-605911436f6554e7f7420de334e67cd1d76100e8c8f33559c4d9733db3011b70).
 
 If it was rock-solid and easy to use/understand/extend, then we would be perfectly fine to leave it alone forever. This, however, is not the case. The binding system and the process of getting information into and out of the Lua state is fragile and arcane. Much developer time has been wasted "fiddling with the stack". Since our adoption of Lunar pre-2011, the Lua-binding ecosystem has moved on and there are a wealth of viable libraries allowing for safer usage, modern workflows, and easier to understand/maintain code.
 
@@ -63,6 +63,10 @@ With the new design, scripts are read once at startup, and their various functio
 
 _This work was/is possible without using Sol, and was prototyped without it, but that was MUCH harder to pull off. It was made nearly trivial to implement by leaning on Sol._
 
+**Memory Impact**
+
+In the grand scheme of the entire program, our overall Lua memory usage has gone up from 6mb to 28mb per instance. An instance is already running at 700-1000mb usage, so this isn't much of an impact considering the performance gains.
+
 
 **Live reloading scripts**
 
@@ -91,10 +95,9 @@ Does this mean calling Lua is faster, easier, and more efficient? Yes. Absolutel
 Does this mean we should start cramming everything into Lua indiscriminately? **No.** Lua, Luajit (our fast version of Lua), and Sol are wonderful tools, but they are not a replacement for the sheer heavy lifting power of C++, or the storage/querying power of SQL. This work doesn't turn on some kind of "everything should be in Lua now" switch. Make the same choices you would have before so that we can use these performance gains to carry the project into the future!
 
 ## What's Next?
-The `sol_refactor` branch will become the new starting point for `canary`. If you're familiar with the Topaz branching strategy; `release` is our stable branch and `canary` is our "use-at-your-own-risk-beta-test" branch. We want to complete at least a few weeks of open testing in `canary` before we promote this refactor to `release`. After that, regular development will resume! 
+The `sol_refactor` branch has become the new starting point for `canary`. If you're familiar with the Topaz branching strategy; `release` is our stable branch and `canary` is our "use-at-your-own-risk-beta-test-but-it-has-cool-stuff" branch. We want to complete at least a few weeks of open testing in `canary` before we promote this refactor to `release`. After that, full regular development will resume! 
 
 We have a few other projects in the planning stages that should double overall zone performance again, and they aren't as drastic as this refactoring, so look forward to that :)
-
 
 ## Other Goodies
 Content contributions are now OPEN*! 🎉
