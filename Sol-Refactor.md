@@ -3,6 +3,7 @@
 >- Up to 20x performance improvement*!
 >- **ZERO** runtime file reads for scripting, down from 100-300 per second!
 >- Stats: 13838 files changed (lines: +111,537, −75,698), 381 commits in one month! 
+>- `canary` branch is back and is the test environment for the refactor.
 >- Contributions are OPEN again!
 >
 >_* In some hot-path areas, forgive me for the clickbait!_
