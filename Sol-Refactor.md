@@ -59,6 +59,8 @@ With the new design, scripts are read once at startup, and their various functio
 </br>
 <img src="https://user-images.githubusercontent.com/1389729/103680388-c8ef2c00-4f8e-11eb-8632-f589d0d9f9b6.png" width="400" height="300" />
 </br>
+
+
 `The fabled 20x performance improvement`
 
 _This work was/is possible without using Sol, and was prototyped without it, but that was MUCH harder to pull off. It was made nearly trivial to implement by leaning on Sol._
