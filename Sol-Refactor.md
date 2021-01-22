@@ -9,7 +9,7 @@
 >_* In some hot-path areas, forgive me for the clickbait!_
 
 ## Introduction
-Towards the end of Project Topaz, we were planning on writing a nice "year in review" article presenting all of the things we had developed and released with the community's help over the past year. Unfortunately, Project Topaz folded and I don't feel like it's appropriate to present that type of article now that we're operating under a different name. Alongside this article, we had proof of concepts and early implementations of important architectural work that was almost ready to roll out. We've since entirely rewritten that work and taken it to completion!
+Towards the end of Project Topaz, we were planning on writing a nice "year in review" article presenting all of the things we had developed and released with the community's help over the past year. Unfortunately, Project Topaz folded and I don't feel like it's appropriate to present that type of article now that we're operating under a different name. Alongside this article, we had proof of concepts and early implementations of important architectural work that was almost ready to roll out. Since then we've entirely rewritten that work and taken it to completion!
 
 **Summary:**
 > We've gutted the entire system that links C++ to Lua, replacing it with the excellent Sol framework
