@@ -1,5 +1,3 @@
-**Not yet live**
-
 **TLDR:**
 >- The main destructive changes we've been working on at Topaz-Next are complete!
 >- Up to 20x performance improvement*!
