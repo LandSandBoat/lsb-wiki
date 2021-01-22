@@ -4,7 +4,7 @@
 >- The main destructive changes we've been working on at Topaz-Next are complete!
 >- Up to 20x performance improvement*!
 >- **ZERO** runtime file reads for scripting, down from 100-300 per second!
->- Stats: 13835 files changed (lines: +110,185, −75,662 lines), 350+ commits in one month! 
+>- Stats: 13838 files changed (lines: +111,537, −75,698), 381 commits in one month! 
 >- Contributions are OPEN again!
 >
 >_* In some hot-path areas, forgive me for the clickbait!_
