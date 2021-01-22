@@ -3,13 +3,13 @@
 >- Up to 20x performance improvement*!
 >- **ZERO** runtime file reads for scripting, down from 100-300 per second!
 >- Stats: 13838 files changed (lines: +111,537, −75,698), 381 commits in one month! 
->- `canary` branch is back and is the test environment for the refactor.
+>- `canary` branch is back and is the test environment for the refactor!
 >- Contributions are OPEN again!
 >
 >_* In some hot-path areas, forgive me for the clickbait!_
 
 ## Introduction
-Towards the end of Project Topaz, we were planning on writing a nice "year in review" article presenting all of the things we had developed and released with the community's help over the past year. Unfortunately, Project Topaz folded and I don't feel like it's appropriate to present that type of article now that we're operating under a different name. Alongside this article we had proof of concepts and early implementations of important architectural work that was almost ready to roll out. We've since entirely rewritten that work and taken it to completion!
+Towards the end of Project Topaz, we were planning on writing a nice "year in review" article presenting all of the things we had developed and released with the community's help over the past year. Unfortunately, Project Topaz folded and I don't feel like it's appropriate to present that type of article now that we're operating under a different name. Alongside this article, we had proof of concepts and early implementations of important architectural work that was almost ready to roll out. We've since entirely rewritten that work and taken it to completion!
 
 **Summary:**
 > We've gutted the entire system that links C++ to Lua, replacing it with the excellent Sol framework
@@ -18,7 +18,7 @@ There are a lot of things enabled by this work that might not be easily digestib
 
 This work was originally planned to be executed over the course of 2x 6-week stages, but the first stage was so successful we rolled the second one into it to deliver them together. 
 
-I'd also like to extend my extreme thanks to Wren and claywar, for absolutely annihilating any estimates I had for when this work would be complete. We're literally _months_ ahead of schedule because of their bonkers work ethics!
+I'd also like to extend my extreme thanks to Wren and claywar; for absolutely annihilating any estimates I had for when this work would be complete. We're literally _months_ ahead of schedule because of their bonkers work ethics! Also a special thanks to the few brave souls who were willing to test the refactor work as it went on, you've helped us shake out a lot of bugs!
 
 
 ## Background
