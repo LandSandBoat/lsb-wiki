@@ -44,7 +44,7 @@ sudo apt install git python3 python3-pip g++-9 cmake make libluajit-5.1-dev libz
   <summary>Arch</summary>
 
 ```
-sudo pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl mariadb
+sudo pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl zlib mariadb
 ```
 * Arch users will need to initialize and start the database software if not done already:
     ```
