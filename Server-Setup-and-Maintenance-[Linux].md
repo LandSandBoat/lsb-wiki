@@ -12,6 +12,7 @@ Installs requirements to run the sql database and tools to compile the source co
   <summary>Ubuntu 18.04</summary>
 
 ```
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt update
 sudo apt install git python3 python3-pip g++-9 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev mariadb-server libmariadb-dev-compat autoconf pkg-config zlib1g-dev libmariadbclient-dev
 ```
@@ -24,6 +25,23 @@ sudo apt install git python3 python3-pip g++-9 cmake make libluajit-5.1-dev libz
 sudo apt update
 sudo apt install git python3 python3-pip g++-9 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev mariadb-server libmariadb-dev
 ```
+  * Note: Debian stable (Buster) users will need to install g++-9 from the testing branch.
+    ```
+    echo 'deb http://deb.debian.org/debian testing main' > /etc/apt/sources.list.d/testing.list
+    apt update
+    cat <<EOF > /etc/apt/preferences.d/pin
+    Package: *
+    Pin: release a=stable
+    Pin-Priority: 700
+
+    Package: *
+    Pin: release a=testing
+    Pin-Priority: 650
+    EOF
+
+    apt install -t testing g++-9
+    ```
+
 </details>
 <details>
   <summary>Arch</summary>
