@@ -55,7 +55,7 @@
 
       ```
       sudo apt update
-      sudo apt install git python3 python3-pip g++-8 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev mariadb-server libmariadb-dev
+      sudo apt install git python3 python3-pip g++-9 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev mariadb-server libmariadb-dev
       ```
     </details>
     <details>
