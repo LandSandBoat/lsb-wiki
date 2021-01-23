@@ -2,6 +2,25 @@
 === Gil not sent to the Delivery Box from the Auction House  ===
 One possible fix: Execute HeidiSQL > select your session and connect to it > select "tpzdb" > File > Run SQL file... > select the triggers.sql file from the \topaz\sql folder > Open.
 
+=== Version Mismatch ===
+<b>WE STRONGLY ADVISE AGAINST LOCKING THE SERVER TO OLDER VERSIONS. IT IS A UNIVERSALLY BAD IDEA.</b> It <em>will</em> cause issues even <em>if</em> you manage to keep both server and client versions on par!
+
+If the server (Topaz Next) and the client (Final Fantasy XI) don't share the same version, you'll probably get this error in the topaz_connect.exe log window:
+```
+[Error] lobbyview_parse: Incorrect client version: got 000000xx_x, expected 000000xx_x
+[Error] lobbyview_parse: The server must be updated to support this client version
+```
+Open the <code>topaz\conf\version.conf</code> file with a text editor and modify the following line:
+```
+VER_LOCK: 2
+```
+to:
+```
+VER_LOCK: 0
+```
+save then restart the topaz_connect.exe server.
+
+
 == Tweaks ==
 === Setting up an automated Auction House with Python. ===
 ==== Installing ====
