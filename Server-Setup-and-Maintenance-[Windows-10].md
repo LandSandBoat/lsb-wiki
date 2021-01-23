@@ -83,26 +83,6 @@ In the new dbtool window:
 
 Done.
 
-If you are running a server for others to connect to, you NEED to update the `zoneip` column in the `zone_settings` table in your database. An easy way to do this is to create a .sql file in `topaz\sql\backups\` with the following line: 
-```
-UPDATE zone_settings SET zoneip = 'your.public.IP';
-```
-Then run dbtool, select the option to Restore/Import, and import the file you just created. Be sure to import this file again if an update overwrites this setting. You can also use a url as the zoneip, as in: 
-```
-UPDATE zone_settings SET zoneip = 'myurl.noip.com';
-```
-This process is also how you would go about maintaining custom mob levels, positions, and other custom database changes while staying mostly up to date with upstream.
-
----
-⚠️
-
-Updating Python: Default location of the Python installation files is: `C:\Users\Username\AppData\Local\Programs\Python`, when updating you may want to relocate old files from your old version's folder to the new one (copy/paste).
-
-Updating modules: Make sure you check if your modules are up to date from time to time (you'll probably get reminded while running migrations scripts). To do so, open a command prompt like stated above and enter:
-```
-py -3 -m pip install --upgrade Modulename
-```
-
 ## 5. Build the servers:
 
 **We have a new build system, read how to use it here:**
@@ -116,39 +96,6 @@ https://github.com/topaz-next/topaz/wiki/CMake-Build-Guide
 should be present in the `topaz\` folder.
 
 Servers are now configured properly. Execute all the above .exes (as Administrator, you can create a shortcut for each one and topaz_search.exe is optional, if you want to use the search function and pydarkstar).
-
----
-
-⚠️ **Port forwarding**
-
-If you are running a server for others to play on, make sure you have the following ports forwarded:
-
-TCP ports: 54230, 54231, 54001 and 54002.
-
-UDP port: 54230.
-
----
-
-⚠️ **Common Issue**
-
-⚠️ **WE STRONGLY ADVISE AGAINST LOCKING THE SERVER TO OLDER VERSIONS. IT IS A UNIVERSALLY BAD IDEA.** It _will_ cause issues even _if_ you manage to keep both server and client versions on par!
-
-If the server (Topaz Next) and the client (Final Fantasy XI) don't share the same version, you'll probably get this error in the topaz_connect.exe log window:
-
-```
-[Error] lobbyview_parse: Incorrect client version: got 000000xx_x, expected 000000xx_x
-[Error] lobbyview_parse: The server must be updated to support this client version
-```
-
-Open the `topaz\conf\version.conf` file with a text editor (Notepad or [Notepad++](https://notepad-plus-plus.org/)) and modify the following line:
-
-> VER_LOCK: 2
-
-to:
-
-> VER_LOCK: 0
-
-save then restart the topaz_connect.exe server.
 
 **Next Step: [Post-Install Guide](https://github.com/topaz-next/topaz/wiki/Post-Install-Guide)**
 
