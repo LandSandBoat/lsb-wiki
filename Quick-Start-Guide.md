@@ -55,14 +55,15 @@
 
       ```
       sudo apt update
-      sudo apt install git python3 python3-pip g++-9 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev mariadb-server libmariadb-dev
+      sudo apt install git python3 python3-pip g++-9 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev
       ```
+    * **Debian 10/Ubuntu 18.04:** See the [Linux Setup Guide](https://github.com/topaz-next/topaz/wiki/Server-Setup-and-Maintenance-%5BLinux%5D#install) for information about upgrading to and building with g++-9.
     </details>
     <details>
       <summary>Arch</summary>
 
     ```
-    sudo pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl mariadb
+    sudo pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl zlib mariadb
     ```
     * Arch users will need to initialize and start the database software if not done already:
       ```
