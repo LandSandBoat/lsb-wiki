@@ -122,25 +122,6 @@ for f in *.sql
   done
 cd ..
 ```
-
-Run the following command if your server is going to be available to the whole internet, to get your IP address.
-Keep a record of this IP address
-```
-dig TXT +short o-o.myaddr.l.google.com @ns1.google.com | awk -F'"' '{ print $2}'
-```
-
-Run the following command if your server is only going to be available to machines at your home
-Keep a record of this IP address
-```
-hostname -I
-```
-
-The following is going to log in to your sql server and change the zoneip value of the zone_settings table
-Replace '127.0.0.1' with the IP you will be using from the previous step - this is REQUIRED if your server is public-facing.
-```
-mysql tpzdb -u topazadmin -ptopazisawesome -e "UPDATE zone_settings SET zoneip = '127.0.0.1';" 
-```
-
 Now we are going to enter the username and password for sql inside three different files login.conf, map.conf, and search_server.conf
 
 First, copy these config files to the conf folder:
@@ -156,53 +137,38 @@ echo -e "\n#DB_VER: `git rev-parse --short=4 HEAD`" >> version.conf
 nano login.conf
 ```
 Look for mysql_login: root and change it to mysql_login: topazadmin
+
 Look for mysql_password: root and change it to mysql_password: topazisawesome
+
 Once that's changed press CONTROL + X, then press enter and hit Y to save the file
 ```
 nano map.conf
 ```
 Look for mysql_login: root and change it to mysql_login: topazadmin
+
 Look for mysql_password: root and change it to mysql_password: topazisawesome
+
 Once that's changed press CONTROL + X, then press enter and hit Y to save the file
 ```
 nano search_server.conf
 ```
 Look for mysql_login: root and change it to mysql_login: topazadmin
-Look for mysql_password: root and change it to mysql_password: topazisawesome
-Once that's changed press CONTROL + X, then press enter and hit Y to save the file
-```
-cd ..
-```
 
-Ubuntu installs with unatteded-upgrades enabled by default, this will cause issues
+Look for mysql_password: root and change it to mysql_password: topazisawesome
+
+Once that's changed press CONTROL + X, then press enter and hit Y to save the file
+
+* Ubuntu installs with unatteded-upgrades enabled by default, this will cause issues
 with mariadb restarting when an update is available, leaving the server without
 access to the database. To fix this run
-```
-dpkg-reconfigure unattended-upgrades
-```
-and choose "No." You just have to make sure to run updates manually.
+  ```
+  dpkg-reconfigure unattended-upgrades
+  ```
+  and choose "No." You just have to make sure to run updates manually.
 
-
-For any custom changes you need to make to your server
-```
-cd scripts/globals
-nano settings.lua
-```
-
-For any change to the version you want your clients be running
-```
-cd ../..
-nano conf/version.conf
-```
-Port forwarding 
-```
-If you are running a server for others to play on, make sure you have 
-the following ports forwarded: 
-TCP Ports: 54230 54231 54001 54002
-UDP Port: 54230
-```
 Now it's time to run your server
 ```
+cd ..
 screen -d -m -S topaz_connect ./topaz_connect
 screen -d -m -S topaz_game ./topaz_game
 screen -d -m -S topaz_search ./topaz_search
