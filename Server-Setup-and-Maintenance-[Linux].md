@@ -8,28 +8,25 @@
 All the steps below in code block are to be done on the terminal:
 
 Installs requirements to run the sql database and tools to compile the source code (click your distro)
-<details>
-  <summary>Ubuntu 18.04</summary>
 
-```
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test
-sudo apt update
-sudo apt install git python3 python3-pip g++-9 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev mariadb-server libmariadb-dev-compat autoconf pkg-config zlib1g-dev libmariadbclient-dev
-```
-> Note: If you receive errors regarding dependency conflicts, you can remove `libmariadbclient-dev`
-</details>
 <details>
-  <summary>Debian/Ubuntu 20.04</summary>
+  <summary>Debian/Ubuntu</summary>
 
 ```
 sudo apt update
-sudo apt install git python3 python3-pip g++-9 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev mariadb-server libmariadb-dev
+sudo apt install git python3 python3-pip g++-9 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev
 ```
+  * Note: Ubuntu 18.04 users will need to upgrade to g++-9.
+    ```
+    sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+    sudo apt update
+    sudo apt install g++-9
+    ```
   * Note: Debian stable (Buster) users will need to install g++-9 from the testing branch.
     ```
-    echo 'deb http://deb.debian.org/debian testing main' > /etc/apt/sources.list.d/testing.list
-    apt update
-    cat <<EOF > /etc/apt/preferences.d/pin
+    sudo echo 'deb http://deb.debian.org/debian testing main' > /etc/apt/sources.list.d/testing.list
+    sudo apt update
+    sudo cat <<EOF > /etc/apt/preferences.d/pin
     Package: *
     Pin: release a=stable
     Pin-Priority: 700
@@ -39,7 +36,7 @@ sudo apt install git python3 python3-pip g++-9 cmake make libluajit-5.1-dev libz
     Pin-Priority: 650
     EOF
 
-    apt install -t testing g++-9
+    sudo apt install -t testing g++-9
     ```
 
 </details>
@@ -57,7 +54,7 @@ sudo pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl maria
     ```
 </details>
 
-Clones the repository to the current folder you are in
+Clone the repository to the current folder you are in
 ```
 git clone --recursive https://github.com/topaz-next/topaz.git
 ```
@@ -67,7 +64,7 @@ If you want to clone the repository with `canary` branch already checked-out you
 git clone --recursive --single-branch --branch canary https://github.com/topaz-next/topaz.git
 ```
 
-Goes inside the project's folder and compiles the source code
+Go inside the project's folder and compile the source code
 ```
 cd topaz
 mkdir build
@@ -75,29 +72,39 @@ cd build
 cmake ..
 make -j $(nproc)
 ```
+  * Note: If you had to upgrade to g++-9 it may be necessary to supply the compiler flag when using cmake.
+    ```
+    cmake -D CMAKE_CXX_COMPILER=g++-9 ..
+    make -j $(nproc)
+    ```
 
 The following command sets up mysql (Follow the prompts)
 We won't be using the root account for the database we will be using
+
 Root password: "Choose a secure root password"
+
 Remove annonymous user: yes
+
 Disallow root login: yes
+
 Remove test data: yes
+
 Reload privileged data: yes
 ```
 sudo mysql_secure_installation
 ```
 
-Logs in to sql
+Log in to sql
 ```
 sudo mysql -u root -p
 ```
 
-Creates the user 'topazadmin' with the password 'topazisawesome'
+Create the user 'topazadmin' with the password 'topazisawesome'
 ```
 CREATE USER 'topazadmin'@'localhost' IDENTIFIED BY 'topazisawesome';
 ```
 
-Creates the tpzdb database and grants all access to the user we just created (topazadmin)
+Create the tpzdb database and grant all access to the user we just created (topazadmin)
 ```
 CREATE DATABASE tpzdb;
 USE tpzdb;
@@ -105,7 +112,7 @@ GRANT ALL PRIVILEGES ON tpzdb.* TO 'topazadmin'@'localhost';
 exit
 ```
 
-Goes inside the sql folder and imports all tables inside the database we just created (tpzdb)
+Go inside the sql folder and import all tables inside the database we just created (tpzdb)
 ```
 cd ../sql
 for f in *.sql
@@ -191,7 +198,8 @@ Port forwarding
 ```
 If you are running a server for others to play on, make sure you have 
 the following ports forwarded: 
-TCP Ports: 54230 54231 54001 54002 UDP Port: 54230
+TCP Ports: 54230 54231 54001 54002
+UDP Port: 54230
 ```
 Now it's time to run your server
 ```
