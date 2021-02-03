@@ -9,7 +9,7 @@
 * [Canaria](#Canaria) modern era
 * [Tantalus](#Tantalus) 85 cap era, QOL changes
 * [Vana Skies](#Vana-Skies) modern era
-* [Omicron](#Omicron) modern era, QOL changes
+
 
 ***
 # Server Details
@@ -225,43 +225,3 @@ Level 99 Cap with endgame ilvl content coming soon. Vanadiel "JP Midnight" has b
 * **All Outpost Warps Unlocked:** Enabled.
 * **New Style Skill-Ups:** Enabled. (Allows parry, block, and guard to skill up regardless of the action occurring)
 
-## Omicron:
-
-Level 99 Cap Just here to have fun, made this server to have my old friends/family to play and relive some of the glory-ish day's. Based of Canary branch will update every so often. GEO is in its beta phase, all spells/abilities are working can obtain the job by completing Dances with Luopans.
-
-* **Server address:** --server 96.244.4.162
-* **Discord:** https://discord.gg/4MS2FWr
-* **Website:** https://omicronxi.fandom.com
-
-* **Expansions:** All expansions are Active within the limitation's of Topaz Next.
-* **EXP Rate:** x2  - 600% EXP bonus while using !buff command. 
-* **Fame Rate:** x2
-* **F0V:** Active with objectives.
-* **Skill-Up Rate:** Maxed
-* **Craft Skill-Up Rate:** Maxed
-* **Skill/Craft Multiplier:** x5 Crafting can go to 110, all crafting synths are open.
-* **Starting Gil:** 100,000 gil
-* **Start Inventory:** 80
-* **Healing tick speed:** 1 seconds.
-* **EXP Loss:** None
-* **Battlefield Lvl Cap:** 99
-* **Player Speed:** 80
-* **Trusts:** Slightly Custom 
-* **Mob Speed:** normal.
-* **All Maps Unlocked:** Enabled.
-* **Level Cap:** 99, Unlocked.
-* **Subjob:** Unlocked.
-* **Advanced Job's:** Unlocked  -- GEO and RUN are available via unlock quest.
-* **Fields of Valor:** Enabled.
-* **Grounds of Valor:** Enabled.
-* **Explorer Moogles:** Enabled, available at level 1.
-* **Crystal and Book Teleport:** Enabled, but you must collect them.
-* **Widescan:** Enabled for all jobs.
-* **All Outpost Warps Unlocked:** Enabled.
-* **Mobs:** all mobs have 1 second re-spawn time. 
-* **subjob-to-mainjob:** 1:1 of main job (99/99).
-* **Max Meritpoints held:** 100 for no actual reason.
-* **King Behemoth:** has 7.5mil HP...for fun. If you want defending ring, just ask.
-* **Auction House:** AH is stocked and updated regularly bot will buy/sell every 30 seconds.
-* **Gobbie Box:** Active at start, 150Login points daily.
-* **Custom Commands:** !AH, !homepoint, !goto,!shop, !mogshop, !wallhack.
