@@ -1,3 +1,8 @@
+# Note
+This list is maintained by the community. As such, it may not be completely up to date. You are free to edit the page and add your server, or remove/rename it should that be required. We haven't had any instances of vandalism, but if we do, we won't hesitate to remove this page entirely.
+
+Please add your server to the table of contents at the top, with a couple of words describing the server. Link this entry to a more detailed write-up below.
+
 # 75 Cap Servers
 * [Aurora](#Aurora) era, custom hardcore
 * [Grounds of Titan](#GoT) 75 cap,  great QOL perks (new server 2020/05)
