@@ -1,10 +1,13 @@
 
 
 ## What works? Is quest X implemented?
-https://github.com/topaz-next/topaz/wiki/What-Works
+[What Works?](https://github.com/topaz-next/topaz/wiki/What-Works)
 
 ## How can I help the project?
-https://github.com/topaz-next/topaz/wiki/How-Can-I-Help
+[How can I help?](https://github.com/topaz-next/topaz/wiki/How-Can-I-Help)
+
+## Where can I find servers to play on?
+[Topaz Servers](https://github.com/topaz-next/topaz/wiki/Topaz-Servers)
 
 ## Canary? Release?
 Topaz Next maintains two long-term branches: `release` and `canary`. `release` is the default branch and contains changes that have been vetted and tested. Human error can always occur, but this is the most stable place to get code. `canary` ([origin](https://en.wiktionary.org/wiki/canary_in_a_coal_mine)) is based on `release`, but contains our `feature` branches and experimental content. It is for testing and is not guaranteed to be stable. Think of it as the "beta testing" branch.
