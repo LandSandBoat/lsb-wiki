@@ -50,9 +50,6 @@ Keep in mind that we haven't completed all content up to 2007, so a full impleme
 </p>
 </details>
 
-## I heard Topaz is interested in modules and customization?
-_"When the rest of the codebase isn't on fire."_ ~ibm2431
-
 ## Can I change job X to play like job Y?
 No.
 <details>
