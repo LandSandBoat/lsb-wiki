@@ -94,11 +94,12 @@ enum ZONEMISC
 </p>
 </details>
 
-## What is Project Topaz / TPZ?
-Project Topaz was the most-recent FFXI server codebase which Topaz Next forked from. It is no longer being developed.
+## What is Darkstar Project (DSP), or Project Topaz (TPZ)?
+Project Topaz was the FFXI server codebase the Topaz Next forked from.
+Darkstar Project was the FFXI server codebase which Project Topaz forked from.
+Neither are still being actively developed.
 
-## What is Darkstar Project / DSP?
-Darkstar Project was the FFXI server codebase which Project Topaz forked from. It is no longer being developed.
+More project history [here](https://github.com/topaz-next/topaz/wiki/Project-History).
 
 ## Why is the airship in Sauromugue Champaign skidding along the ground like a land speeder?
 It's a feature, not a bug. 👀
