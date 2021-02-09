@@ -235,7 +235,7 @@ Level 99 Cap with endgame ilvl content coming soon. Vanadiel "JP Midnight" has b
 Level 99 Cap Just here to have fun, made this server to have my old friends/family to play and relive some of the glory-ish day's. Based of Canary branch will update every so often. GEO is in its beta phase, all spells/abilities are working can obtain the job by completing Dances with Luopans.
 
 * **Server address:** --server 96.244.4.162
-* **Discord:** https://discord.gg/RmPbZcAh
+* **Discord:** https://discord.gg/99GRmg9Vet
 * **Website:** https://omicronxi.fandom.com
 
 * **Expansions:** All expansions are Active within the limitation's of Topaz Next.
