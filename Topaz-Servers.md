@@ -8,6 +8,7 @@ Please add your server to the table of contents at the top, with a couple of wor
 * [Grounds of Titan](#GoT) 75 cap,  great QOL perks (new server 2020/05)
 * [QuetzRebirth](#QuetzRebirth) era, QOL changes, some custom content
 * [Phynix](#Phynix) 75 cap, QOL changes
+* [Wings](#WingsXI) 75 capped era non-custom Wings of the Goddess server.
 
 # 99/ilvl Cap Servers
 * [BNET.cc](#bnetcc) modern era, custom content
