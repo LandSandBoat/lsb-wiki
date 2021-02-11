@@ -268,3 +268,25 @@ Level 99 Cap Just here to have fun, made this server to have my old friends/fami
 * **Gobbie Box:** Active at start, 150Login points daily.
 * **Custom Commands:** !AH, !homepoint, !goto,!shop, !mogshop, !wallhack.
 
+## WingsXI:
+
+Wings is an [open source 75-capped project](https://discord.gg/wNpVm35wbz) with a focus on building an emulation platform alongside Topaz for people who want to start their own 75 capped servers without having to do all the work of traveling back thru time.  While our focus is to recreate the era feel of the Wings of the Goddess expansion, there are a few custom changes to make the game feel up to date with modern games, such as progressing wardrobe unlocks through storyline content, improved controls when engaging mobs, and overall improved gameplay mechanics.
+
+* **Server address:** --server play.wingsxi.com
+* **Discord:** https://discord.gg/wNpVm35wbz
+* **Website:** https://wingsxi.com/
+
+* **Expansions:** Rise of the Zilart, Chains of Promathia, Treasures of Aht Urghan, and Wings of the Goddess.
+* **EXP Rate:** x1.
+* **Fame Rate:** x1.
+* **Dual boxing:** Not allowed and IPs are restricted to one account per IP address.
+* **Fields of Valor:** One page per day.
+* **Grounds of Valor:** Disabled.
+* **Gobbiebag Quests:** Available up to 80 inventory.
+* **Mog Wardrobes:** Mog Wardrobes are enabled gradually as you progress through storyline content.  If a player completes all storyline content, they will have access to all 4 Wardrobes by the end.
+* **Skill-Up Rate:** x1.
+* **Craft Skill-Up Rate:** x1.
+* **Maps:** All maps are unlocked upon character creation.
+* **Level Cap:** 75.
+* **Auction House:** Player-driven economy.
+
