@@ -89,15 +89,15 @@ Type "!command" in game (for said "command" refer to the ones listed here: https
 \topaz\src\map\packets\char_stats.cpp:
 
 Replace:
-```
+```cpp
 //0x52 = superior level (1 or 2)
 ```
 with:
-```
+```cpp
 ref<uint8>(0x52) = X; // replace X with desired superior level
 ```
 or:
-```
+```cpp
 ref<uint8>(0x52) = PChar->GetMLevel() == 99 ? 5 : 0; // level 99 auto superior 5
 ```
 Rebuild the solution.
@@ -243,3 +243,14 @@ ExecStart=/path/to/topaz/topaz_search
 WantedBy=topaz.service
 ```
 After adding these to <code>/etc/systemd/system/</code>, run <code>systemctl daemon-reload</code> followed by <code>systemctl enable topaz_game topaz_connect topaz_search</code>. You can start/stop all the servers at once with <code>systemctl start/stop topaz</code> or each individual service separately. To enable auto-start, type <code>systemctl enable topaz</code>. Make sure topaz is in a location accessible to the user that will be running the service, and the correct permissions are set.
+
+=== Automatically give new players a server linkshell ===
+In <code>topaz/scripts/globals/player.lua</code> find the following line:
+```lua
+player:setNewPlayer(true) -- apply new player flag
+```
+and add the following line:
+```lua
+player:addLinkpearl("YOURLS", true)
+```
+Replace <code>YOURLS</code> with the name of your linkshell, and the second parameter <code>true</code> will equip the linkpearl in slot 2. Change to <code>false</code> if you want to just place it in the inventory without equipping.
