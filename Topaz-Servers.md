@@ -271,7 +271,13 @@ Level 99 Cap Just here to have fun, made this server to have my old friends/fami
 
 ## WingsXI:
 
-Wings is an [open source 75-capped project](https://discord.gg/wNpVm35wbz) with a focus on building an emulation platform alongside Topaz for people who want to start their own 75 capped servers without having to do all the work of traveling back thru time.(*)  While our focus is to recreate the era feel of the Wings of the Goddess expansion, there are a few custom changes to make the game feel up to date with modern games, such as progressing wardrobe unlocks through storyline content, improved controls when engaging mobs, and overall improved gameplay mechanics.
+Wings is an open-source 75-capped project with a focus on building an emulation platform alongside Topaz for people who want to start their own 75 capped servers without having to do all the work of travelling back through time. While our focus is to recreate the era feel of the Wings of the Goddess expansion, there are a few custom changes to make the game feel up to date with modern games, such as progressing wardrobe unlocks through storyline content, improved controls when engaging mobs, and overall improved gameplay mechanics.
+
+> **NOTE:** Please be aware that portions of the Wings repo are licensed as AGPLv3. This license places additional requirements on users when compared to the GPLv3 license Topaz-Next, Project Topaz, and Darkstar Project use. Make sure you understand the ramifications of adopting code with a different license before you start copy/pasting!
+>
+> https://www.gnu.org/licenses/gpl-3.0.en.html
+>
+> https://www.gnu.org/licenses/agpl-3.0.en.html
 
 * **Server address:** --server play.wingsxi.com
 * **Discord:** https://discord.gg/wNpVm35wbz
@@ -290,7 +296,3 @@ Wings is an [open source 75-capped project](https://discord.gg/wNpVm35wbz) with 
 * **Maps:** All maps are unlocked upon character creation.
 * **Level Cap:** 75.
 * **Auction House:** Player-driven economy.
-
-_(*) Please be aware that portions of this linked repo are licensed as AGPLv3. This license places additional requirements on users when compared to the GPLv3 license Topaz-Next, Project Topaz, and Darkstar Project use. Make sure you understand the ramifications of adopting code with a different license before you start copy/pasting!_
-_https://www.gnu.org/licenses/gpl-3.0.en.html_
-_https://www.gnu.org/licenses/agpl-3.0.en.html_
