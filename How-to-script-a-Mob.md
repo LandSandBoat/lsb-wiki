@@ -88,7 +88,7 @@ mob:setLocalVar("counter", mob:getLocalVar("counter) + 1)
 ## Listeners
 `TODO`
 Listeners fire a callback once the trigger has been executed. The list of triggers is very similar (but not the same) as the available Lua functions
-```
+```lua
 mob:addListener("SPAWN", "SPAWN_IDENTIFIER_STRING", function(mob)
     print("I have spawned!")
     mob:useMobAbility(1)
