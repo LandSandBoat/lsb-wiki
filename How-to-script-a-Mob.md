@@ -87,15 +87,20 @@ mob:setLocalVar("counter", mob:getLocalVar("counter) + 1)
 
 ## Listeners
 `TODO`
+Listeners can be attached to entities at runtime to fire callbacks based on certain triggering conditions. They cover everything that's covered by regular Lua functions, but also have a lot finer-grained options available.
 
 `mixins` are all based around listeners, highly recommended you look at them for guidance.
 
-Listeners fire a callback once the trigger has been executed. The list of triggers is very similar (but not the same) as the available Lua functions
 ```lua
 mob:addListener("SPAWN", "SPAWN_IDENTIFIER_STRING", function(mob)
     print("I have spawned!")
     mob:useMobAbility(1)
 end)
+
+mob:addListener("TAKE_DAMAGE", "TAKE_DAMAGE_IDENTIFIER_STRING", function(mob, amount, attacker, attackType, damageType)
+end
+
+-- and many others
 ```
 
 ## Working with 400ms ticks
