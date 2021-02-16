@@ -87,6 +87,9 @@ mob:setLocalVar("counter", mob:getLocalVar("counter) + 1)
 
 ## Listeners
 `TODO`
+
+`mixins` are all based around listeners, highly recommended you look at them for guidance.
+
 Listeners fire a callback once the trigger has been executed. The list of triggers is very similar (but not the same) as the available Lua functions
 ```lua
 mob:addListener("SPAWN", "SPAWN_IDENTIFIER_STRING", function(mob)
