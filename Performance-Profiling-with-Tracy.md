@@ -45,6 +45,8 @@ If you're performing before/after testing, try as hard as you can to make sure t
 Searchable statistics are in the `Statistics` header, log messages are in `Messages`. You can click and drag and zoom around the main timeline window for information about whats going on. You can "re-attach" to the most active frames by clicking on the `Pause/Resume` header and using the options there.
 
 **Known bottlenecks**
-- Excessive use of Lua's `prepFile`
 - Expensive pathing and navmesh access... all the time... every tick... every mob... everywhere...
 - `parse` routine is slow
+
+**Issues identified by Tracy (and fixed)**
+- Excessive use of Lua's `prepFile` (runtime file reads, not gone)
