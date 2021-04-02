@@ -58,7 +58,7 @@ Server has been in operation since 2013, and operates on a dedicated box on a 50
 * **Skillup Rate:** Super fast
 * **Inventory:** Max space
 
-**Expansions enabled:** All Zilart, CoP, ToAU, and WotG [content up to what's available on Topaz Canary branch](https://github.com/topaz-next/topaz/tree/canary).
+**Expansions enabled:** All Zilart, CoP, ToAU, and WotG [content up to what's available on Topaz Canary branch](https://github.com/DerpyProjectGroup/topaz/tree/canary).
 
 * NM boosted 15x normal for real challenges with all of the player enhancements.
 * Wallhacking encouraged (And turned on for all players), several other commands available (Check website for details as more are added over time!)
@@ -71,13 +71,13 @@ Server has been in operation since 2013, and operates on a dedicated box on a 50
 ## Canaria:
 Focus of this server is to have a good time, have access to the latest features of Topaz Next, and enjoy the quality of life improvements (book/crystal teleport, ground/field of valor) that make this game fun to play in small or long sessions.
 
-All content comes from the [canary branch](https://github.com/topaz-next/topaz/tree/canary), no custom modifications are in place.
+All content comes from the [canary branch](https://github.com/DerpyProjectGroup/topaz/tree/canary), no custom modifications are in place.
 
 * **Server address:** topaz.catsangel.com
 * **Website:** http://topaz.catsangel.com
 * **Discord:** https://discord.gg/3MMnnx4
 
-**Expansions enabled:** All [content up to what's available on Topaz Canary branch](https://github.com/topaz-next/topaz/tree/canary)
+**Expansions enabled:** All [content up to what's available on Topaz Canary branch](https://github.com/DerpyProjectGroup/topaz/tree/canary)
 
 * **Level Cap:** 99
 * **Fields of Valor:** Enabled

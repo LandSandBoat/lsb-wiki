@@ -27,7 +27,7 @@ This list is free for anyone to update and is very probably out of date, feel fr
 
 # Missions
 Playable missions are marked in the following file with `--+--` after their names <br>
-https://github.com/topaz-next/topaz/blob/release/scripts/globals/missions.lua
+https://github.com/DerpyProjectGroup/topaz/blob/release/scripts/globals/missions.lua
 
 | Status | Name | Notes |
 |---|---|---|
@@ -47,7 +47,7 @@ https://github.com/topaz-next/topaz/blob/release/scripts/globals/missions.lua
 
 # Quests
 Playable quests are marked in the following file with `--+--` after their names <br>
-https://github.com/topaz-next/topaz/blob/release/scripts/globals/quests.lua
+https://github.com/DerpyProjectGroup/topaz/blob/release/scripts/globals/quests.lua
 
 # Battle Content (by era)
 ## Pre-Item Level
@@ -56,10 +56,10 @@ https://github.com/topaz-next/topaz/blob/release/scripts/globals/quests.lua
 
 | Status | Name | Notes |
 |---|---|---|
-| ⚠️ | BCNMs | Unusable fights are commented out with `--`: <br>https://github.com/topaz-next/topaz/blob/release/scripts/globals/bcnm.lua |
+| ⚠️ | BCNMs | Unusable fights are commented out with `--`: <br>https://github.com/DerpyProjectGroup/topaz/blob/release/scripts/globals/bcnm.lua |
 | ❌ | Garrison | |
 | ✔️ | HNMs - Land Kings | |
-| ❌ | "Classic" Dynamis | [Will not be implemented.](https://github.com/topaz-next/topaz/wiki/Frequently-Asked-Questions#when-can-i-play-classic-dynamis) |
+| ❌ | "Classic" Dynamis | [Will not be implemented.](https://github.com/DerpyProjectGroup/topaz/wiki/Frequently-Asked-Questions#when-can-i-play-classic-dynamis) |
 | ⚠️ | "Neo" Dynamis | City and Dreamworld zones farmable, some unimplemented NMs |
 | ✔️ | Sky NMs | |
 
@@ -159,7 +159,7 @@ https://github.com/topaz-next/topaz/blob/release/scripts/globals/quests.lua
 | ❌ | Pankration | |
 | 🐤 | Records of Eminence| ~300 records + Timed challenges |
 | ❌ | Synergy | |
-| 🐤 | Trusts | Trust status: <br>https://github.com/topaz-next/topaz/wiki/Trusts |
+| 🐤 | Trusts | Trust status: <br>https://github.com/DerpyProjectGroup/topaz/wiki/Trusts |
 
 # Mechanics
 

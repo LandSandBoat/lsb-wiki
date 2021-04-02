@@ -2,7 +2,7 @@
 
 Every entity in the game is controlled by a `Controller`.
 
-Mobs are controlled by `MobController` ([link](https://github.com/topaz-next/topaz/blob/release/src/map/ai/controllers/mob_controller.cpp)).
+Mobs are controlled by `MobController` ([link](https://github.com/DerpyProjectGroup/topaz/blob/release/src/map/ai/controllers/mob_controller.cpp)).
 
 The controller is `Ticked` every 400ms. This tick executes the Mob's AI routine. This includes spawning, despawning, casting, targetting, auto-attacks, weaponskills, combat logic, roaming logic, detection/aggro, linking and all other things it is that Mobs do.
 

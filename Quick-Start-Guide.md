@@ -9,7 +9,7 @@
   * Open a PowerShell window and navigate to your chosen install directory.
   * Download the latest code, install Python requirements, and copy the configuration files:
     ```
-    git clone --recursive https://github.com/topaz-next/topaz.git
+    git clone --recursive https://github.com/DerpyProjectGroup/topaz.git
     py -3 -m pip install -r topaz/tools/requirements.txt
     cp topaz/conf/default/* topaz/conf/
     ```
@@ -21,7 +21,7 @@
     ```
   * Follow the on-screen instructions.
   * Open the `topaz` root folder in VS2019.
-  * [Build the solution in VS2019.](https://github.com/topaz-next/topaz/wiki/CMake-Build-Guide)
+  * [Build the solution in VS2019.](https://github.com/DerpyProjectGroup/topaz/wiki/CMake-Build-Guide)
 
   ## To Update
   * Open a PowerShell window and navigate to your `topaz` directory.
@@ -41,7 +41,7 @@
     py -3 dbtool.py update
     ```
   * Open the `topaz` root folder in VS2019.
-  * [Build the solution in VS2019.](https://github.com/topaz-next/topaz/wiki/CMake-Build-Guide)
+  * [Build the solution in VS2019.](https://github.com/DerpyProjectGroup/topaz/wiki/CMake-Build-Guide)
 </details>
 
 <details>
@@ -57,7 +57,7 @@
       sudo apt update
       sudo apt install git python3 python3-pip g++-9 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev
       ```
-    * **Debian 10/Ubuntu 18.04:** See the [Linux Setup Guide](https://github.com/topaz-next/topaz/wiki/Server-Setup-and-Maintenance-%5BLinux%5D#install) for information about upgrading to and building with g++-9.
+    * **Debian 10/Ubuntu 18.04:** See the [Linux Setup Guide](https://github.com/DerpyProjectGroup/topaz/wiki/Server-Setup-and-Maintenance-%5BLinux%5D#install) for information about upgrading to and building with g++-9.
     </details>
     <details>
       <summary>Arch</summary>
@@ -75,7 +75,7 @@
 
   * Download the latest code, install Python requirements, and copy the configuration files:
     ```
-    git clone --recursive https://github.com/topaz-next/topaz.git
+    git clone --recursive https://github.com/DerpyProjectGroup/topaz.git
     pip3 install -r topaz/tools/requirements.txt
     cp topaz/conf/default/* topaz/conf/
     ```
@@ -127,4 +127,4 @@
     ```
 </details>
 
-**Next Step: [Post-Install Guide](https://github.com/topaz-next/topaz/wiki/Post-Install-Guide)**
+**Next Step: [Post-Install Guide](https://github.com/DerpyProjectGroup/topaz/wiki/Post-Install-Guide)**

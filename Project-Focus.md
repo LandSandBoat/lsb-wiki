@@ -1,6 +1,6 @@
 A "**project focus**" is development that Topaz Next is trying to focus on to add new features or improve the quality of existing features. These focuses are strategically chosen by our team to meet the desires of the community, increase adoption rate, or broaden our general appeal.
 
-Our current focuses can be found under [our list of Projects on GitHub](https://github.com/topaz-next/topaz/projects).
+Our current focuses can be found under [our list of Projects on GitHub](https://github.com/DerpyProjectGroup/topaz/projects).
 
 If you want to help contribute to Topaz Next and are looking for direction, we would be especially eager for contributions relating to one of our current focuses. Of course, we will still gladly review contributions outside of our current project focuses and consider them for inclusion into Topaz Next!
 
