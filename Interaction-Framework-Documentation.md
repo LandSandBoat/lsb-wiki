@@ -4,7 +4,7 @@ Interaction Framework
 The common term used for quests and missions in this document and in the code is "containers", since they contain all the things that go into making a quest/mission/etc work.
 
 <!-- TODO: Fix link to proper file in repository -->
-See [Some_Example_Quest.lua](https://github.com/) quest file for a full example of how a quest can be defined.
+See [Full Quest Example](https://github.com/DerpyProjectGroup/topaz/wiki/Full-Quest-Example) quest file for a full example of how a quest can be defined.
 
 
 Sections
