@@ -1,7 +1,7 @@
 # Basic Branch/Pull Request Information
 If you followed the Server Setup instructions, you've already cloned Topaz's default branch (called `release`). If you want to make changes and contribute to Topaz, here's a quick guide on how to push changes.
 
-**1 - Set up your fork on GitHub if you haven't already.** This is where you'll push changes to then submit a pull request. You can click on [the fork button in the upper-right, above the main `DerpyProjectGroup/topaz` repository to fork](https://raw.githubusercontent.com/wiki/DerpyProjectGroup/topaz/images/github-fork.png).
+**1 - Set up your fork on GitHub if you haven't already.** This is where you'll push changes to then submit a pull request. You can click on [the fork button in the upper-right, above the main `LandSandBoat/server` repository to fork](https://raw.githubusercontent.com/wiki/LandSandBoat/server/images/github-fork.png).
 
 **2 - Make a new branch from your copy of `release` for _any_ changes.** Do NOT make your changes directly on `release`. Even if you _don't_ plan on making Pull Requests, make a new branch for your personal changes - this lets you easily update your copy of Topaz's `release` branch and merge it into your personal branch. **Making changes on `release` will prevent you from making different changes until the Pull Request you've opened is reviewed and incorporated.**
 

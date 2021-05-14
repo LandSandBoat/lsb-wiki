@@ -56,12 +56,12 @@ sudo pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl zlib 
 
 Clone the repository to the current folder you are in
 ```
-git clone --recursive https://github.com/DerpyProjectGroup/topaz.git
+git clone --recursive https://github.com/LandSandBoat/server.git
 ```
 
 If you want to clone the repository with `canary` branch already checked-out you can use:
 ```
-git clone --recursive --single-branch --branch canary https://github.com/DerpyProjectGroup/topaz.git
+git clone --recursive --single-branch --branch canary https://github.com/LandSandBoat/server.git
 ```
 
 Go inside the project's folder and compile the source code
@@ -182,7 +182,7 @@ screen -r topaz_connect
 screen -r topaz_game
 screen -r topaz_search
 ```
-**Next Step: [Post-Install Guide](https://github.com/DerpyProjectGroup/topaz/wiki/Post-Install-Guide)**
+**Next Step: [Post-Install Guide](https://github.com/LandSandBoat/server/wiki/Post-Install-Guide)**
 
 # Update
 

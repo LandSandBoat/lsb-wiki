@@ -12,7 +12,7 @@
 Towards the end of Project Topaz, we were planning on writing a nice "year in review" article presenting all of the things we had developed and released with the community's help over the past year. Unfortunately, Project Topaz folded and I don't feel like it's appropriate to present that type of article now that we're operating under a different name. Alongside this article, we had proof of concepts and early implementations of important architectural work that was almost ready to roll out. Since then we've entirely rewritten that work and taken it to completion!
 
 ## The PR
-<https://github.com/DerpyProjectGroup/topaz/pull/2288>
+<https://github.com/LandSandBoat/server/pull/2288>
 
 **Summary:**
 > We've gutted the entire system that links C++ to Lua, replacing it with the excellent Sol framework
@@ -30,7 +30,7 @@ We use Lua (Portuguese for Moon, not an acronym) as a scripting language for qui
 
 In order to use Lua alongside our Core C++ code, we need to `bind` C++ functions to Lua, and represent `C++ Types` as `Lua Usertypes`. This is achieved by using a `binding system`, or `binding library`. 
 
-Our old binding system was called [Lunar](http://lua-users.org/wiki/CppBindingWithLunar) and was originally published as a code snippet around 2009. At the time, there probably wasn't much available in terms of binding libraries, so this would have been a godsend in terms of "easy" interop with C++. Unfortunately, Lunar hasn't been upgraded or iterated on... ever. We haven't touched it (apart from formatting passes) since [Sep 16, 2011](https://github.com/DerpyProjectGroup/topaz/commit/7a160120a7b7313cbfc1b5483627cebc24776ada#diff-605911436f6554e7f7420de334e67cd1d76100e8c8f33559c4d9733db3011b70).
+Our old binding system was called [Lunar](http://lua-users.org/wiki/CppBindingWithLunar) and was originally published as a code snippet around 2009. At the time, there probably wasn't much available in terms of binding libraries, so this would have been a godsend in terms of "easy" interop with C++. Unfortunately, Lunar hasn't been upgraded or iterated on... ever. We haven't touched it (apart from formatting passes) since [Sep 16, 2011](https://github.com/LandSandBoat/server/commit/7a160120a7b7313cbfc1b5483627cebc24776ada#diff-605911436f6554e7f7420de334e67cd1d76100e8c8f33559c4d9733db3011b70).
 
 If it was rock-solid and easy to use/understand/extend, then we would be perfectly fine to leave it alone forever. This, however, is not the case. The binding system and the process of getting information into and out of the Lua state is fragile and arcane. Much developer time has been wasted "fiddling with the stack". Since our adoption of Lunar pre-2011, the Lua-binding ecosystem has moved on and there are a wealth of viable libraries allowing for safer usage, modern workflows, and easier to understand/maintain code.
 
@@ -113,4 +113,4 @@ This work enables basic Lua modules. If you know what you're doing, you can star
 
 ## Licensing
 
-This work is licensed under [GNU General Public License v3.0](https://github.com/DerpyProjectGroup/topaz/blob/release/LICENSE), the same license as everything else. Please use it with our blessing!
+This work is licensed under [GNU General Public License v3.0](https://github.com/LandSandBoat/server/blob/release/LICENSE), the same license as everything else. Please use it with our blessing!

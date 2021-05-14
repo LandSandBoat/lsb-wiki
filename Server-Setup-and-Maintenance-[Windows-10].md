@@ -27,7 +27,7 @@ To build, run, and maintain a Topaz server, you will need to download and instal
 1. Open a PowerShell window and navigate to your chosen install directory.
 2. Type:
 ```
-git clone --recursive https://github.com/DerpyProjectGroup/topaz.git
+git clone --recursive https://github.com/LandSandBoat/server.git
 ```
 </details>
 <details>
@@ -35,7 +35,7 @@ git clone --recursive https://github.com/DerpyProjectGroup/topaz.git
   
 1. Open GitHub desktop. File > Clone repository > URL button (along top).
 2. Enter the following:
-  * Repository URL: either [your forked copy of our repository](https://raw.githubusercontent.com/wiki/DerpyProjectGroup/topaz/images/github-fork.png) `https://github.com/your-github-name/topaz.git` (recommended), or our repository `https://github.com/DerpyProjectGroup/topaz.git`
+  * Repository URL: either [your forked copy of our repository](https://raw.githubusercontent.com/wiki/LandSandBoat/server/images/github-fork.png) `https://github.com/your-github-name/topaz.git` (recommended), or our repository `https://github.com/LandSandBoat/server.git`
   * Local path: Where you want the source code to live on your computer.
 3. Select `Clone` button:
 [[/images/github-desktop-clone.png|Pull Origin button location]]
@@ -43,7 +43,7 @@ git clone --recursive https://github.com/DerpyProjectGroup/topaz.git
 <details>
   <summary>TortoiseGit</summary>
   
-1. Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/DerpyProjectGroup/topaz.git ("release" branch by default) > OK > then Close when it's done. 
+1. Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/LandSandBoat/server.git ("release" branch by default) > OK > then Close when it's done. 
 
 2. Don't forget about Navmeshes (https://github.com/topaz-next/xiNavmeshes.git): right click on the freshly downloaded "topaz" folder > TortoiseGit > Submodule Update... > OK > then Close when it's done.
 </details>
@@ -87,7 +87,7 @@ Done.
 
 **We have a new build system, read how to use it here:**
 
-https://github.com/DerpyProjectGroup/topaz/wiki/CMake-Build-Guide
+https://github.com/LandSandBoat/server/wiki/CMake-Build-Guide
 
 * topaz_connect.exe
 * topaz_game.exe
@@ -97,7 +97,7 @@ should be present in the `topaz\` folder.
 
 Servers are now configured properly. Execute all the above .exes (as Administrator, you can create a shortcut for each one and topaz_search.exe is optional, if you want to use the search function and pydarkstar).
 
-**Next Step: [Post-Install Guide](https://github.com/DerpyProjectGroup/topaz/wiki/Post-Install-Guide)**
+**Next Step: [Post-Install Guide](https://github.com/LandSandBoat/server/wiki/Post-Install-Guide)**
 
 # Update
 
@@ -135,9 +135,9 @@ py -3 dbtool.py update
 ```
 This will import all of the .sql files that were updated and run any needed migrations. It will also possibly overwrite any custom changes you have made to your SQL tables. If you are running custom mobs/items/etc. of any kind, you'll want to save these as queries in a .sql file in `topaz\sql\backups\` and use the Restore/Import option in dbtool to import those changes after an update.
 
-❔ For more information on database management, see [Database Management](https://github.com/DerpyProjectGroup/topaz/wiki/Database-Management) or [Preparing the Database](https://github.com/DerpyProjectGroup/topaz/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#4-preparing-the-database).
+❔ For more information on database management, see [Database Management](https://github.com/LandSandBoat/server/wiki/Database-Management) or [Preparing the Database](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#4-preparing-the-database).
 
-* REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **[5. Build the servers](https://github.com/DerpyProjectGroup/topaz/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#5-build-the-servers)**).
+* REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **[5. Build the servers](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#5-build-the-servers)**).
 * RESTART YOUR SERVER(S) FOR .conf FILES AND AFTER UPDATES WITH dbtool.
 * .lua files ARE INSTANT IN MOST CASES (`topaz\scripts\globals\` .luas will need to be reloaded by using the GM command `!reloadglobal` where appropriate or restarting the server).
 * ⚠️ In the `topaz\conf\default\` folder, make sure you take any .conf file that was updated and put it/them in the precedent folder (`topaz\conf\`). Do not overwrite version.conf, as dbtool uses it to track DB version and will update CLIENT_VER for you if it changes. ⚠️

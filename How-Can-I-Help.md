@@ -1,16 +1,16 @@
 This guide assumes you've managed to download, build, and run the server correctly on your platform of choice.
 
 ### Quick Links
-- [GitHub Issues tagged as "Good First Issue"](https://github.com/DerpyProjectGroup/topaz/labels/good%20first%20issue)
-- [GitHub Issues](https://github.com/DerpyProjectGroup/topaz/issues)
-- [What Works?](https://github.com/DerpyProjectGroup/topaz/wiki/What-Works)
-- [Using GitHub](https://github.com/DerpyProjectGroup/topaz/wiki/Using-Github)
-- [Contribution Guide & Style Guide](https://github.com/DerpyProjectGroup/topaz/blob/release/CONTRIBUTING.md)
-- [Technical Articles & Guides](https://github.com/DerpyProjectGroup/topaz/wiki/Guides-(Development))
-- [Our License](https://github.com/DerpyProjectGroup/topaz/blob/release/LICENSE)
+- [GitHub Issues tagged as "Good First Issue"](https://github.com/LandSandBoat/server/labels/good%20first%20issue)
+- [GitHub Issues](https://github.com/LandSandBoat/server/issues)
+- [What Works?](https://github.com/LandSandBoat/server/wiki/What-Works)
+- [Using GitHub](https://github.com/LandSandBoat/server/wiki/Using-Github)
+- [Contribution Guide & Style Guide](https://github.com/LandSandBoat/server/blob/release/CONTRIBUTING.md)
+- [Technical Articles & Guides](https://github.com/LandSandBoat/server/wiki/Guides-(Development))
+- [Our License](https://github.com/LandSandBoat/server/blob/release/LICENSE)
 
 ### Whatever your skill level
-Make sure you have read our [Contributor's Guide](https://github.com/DerpyProjectGroup/topaz/blob/release/CONTRIBUTING.md) (also be aware of our [License](https://github.com/DerpyProjectGroup/topaz/blob/release/LICENSE)).
+Make sure you have read our [Contributor's Guide](https://github.com/LandSandBoat/server/blob/release/CONTRIBUTING.md) (also be aware of our [License](https://github.com/LandSandBoat/server/blob/release/LICENSE)).
 
 Join our Discord server and ask us any questions you may have.
 

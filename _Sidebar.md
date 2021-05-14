@@ -1,27 +1,27 @@
-[Home](https://github.com/DerpyProjectGroup/topaz/wiki)
+[Home](https://github.com/LandSandBoat/server/wiki)
 * General
-  * [[What Works|https://github.com/DerpyProjectGroup/topaz/wiki/What-Works]]
-  * [[Quick Start Guide|https://github.com/DerpyProjectGroup/topaz/wiki/Quick-Start-Guide]]
-  * [[Frequently Asked Questions|https://github.com/DerpyProjectGroup/topaz/wiki/Frequently-Asked-Questions]]
+  * [[What Works|https://github.com/LandSandBoat/server/wiki/What-Works]]
+  * [[Quick Start Guide|https://github.com/LandSandBoat/server/wiki/Quick-Start-Guide]]
+  * [[Frequently Asked Questions|https://github.com/LandSandBoat/server/wiki/Frequently-Asked-Questions]]
 * Client Setup
-  * [[Windows 10|https://github.com/DerpyProjectGroup/topaz/wiki/Client-setup-%5BWindows%5D]]
-  * [Common Concerns](https://github.com/DerpyProjectGroup/topaz/wiki/Miscellaneous-(Client))
+  * [[Windows 10|https://github.com/LandSandBoat/server/wiki/Client-setup-%5BWindows%5D]]
+  * [Common Concerns](https://github.com/LandSandBoat/server/wiki/Miscellaneous-(Client))
 * Server Setup + Maintenance
-  * [[Windows 10|https://github.com/DerpyProjectGroup/topaz/wiki/Server-setup-and-maintenance-%5BWindows-10%5D]]
-  * [[Linux|https://github.com/DerpyProjectGroup/topaz/wiki/Server-Setup-and-Maintenance-%5BLinux%5D]]
-* [Server Administration](https://github.com/DerpyProjectGroup/topaz/wiki/Server-Administration)
-  * [Common Issues & Tweaks](https://github.com/DerpyProjectGroup/topaz/wiki/Miscellaneous-(Server))
-  * [Useful SQL Queries](https://github.com/DerpyProjectGroup/topaz/wiki/Useful-SQL-queries)
-  * [Database Management](https://github.com/DerpyProjectGroup/topaz/wiki/Database-Management)
-  * [Debugging](https://github.com/DerpyProjectGroup/topaz/wiki/Debugging)
-* [Development](https://github.com/DerpyProjectGroup/topaz/wiki/Development)
-  * [GitHub and Contributing](https://github.com/DerpyProjectGroup/topaz/wiki/GitHub-and-Contributing)
-  * [Guides and Articles](https://github.com/DerpyProjectGroup/topaz/wiki/Guides-(Development))
-  * [General Development](https://github.com/DerpyProjectGroup/topaz/wiki/General-Development)
-  * [CMake Build Guide](https://github.com/DerpyProjectGroup/topaz/wiki/CMake-Build-Guide)
-* [Project Meta](https://github.com/DerpyProjectGroup/topaz/wiki/Project-Meta)
-  * [[Project Focus|https://github.com/DerpyProjectGroup/topaz/wiki/Project-Focus]]
-  * [[Contributor Conduct|https://github.com/DerpyProjectGroup/topaz/wiki/Contributor-Conduct]]
-  * [[Staff Conduct|https://github.com/DerpyProjectGroup/topaz/wiki/Staff-Conduct]]
+  * [[Windows 10|https://github.com/LandSandBoat/server/wiki/Server-setup-and-maintenance-%5BWindows-10%5D]]
+  * [[Linux|https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BLinux%5D]]
+* [Server Administration](https://github.com/LandSandBoat/server/wiki/Server-Administration)
+  * [Common Issues & Tweaks](https://github.com/LandSandBoat/server/wiki/Miscellaneous-(Server))
+  * [Useful SQL Queries](https://github.com/LandSandBoat/server/wiki/Useful-SQL-queries)
+  * [Database Management](https://github.com/LandSandBoat/server/wiki/Database-Management)
+  * [Debugging](https://github.com/LandSandBoat/server/wiki/Debugging)
+* [Development](https://github.com/LandSandBoat/server/wiki/Development)
+  * [GitHub and Contributing](https://github.com/LandSandBoat/server/wiki/GitHub-and-Contributing)
+  * [Guides and Articles](https://github.com/LandSandBoat/server/wiki/Guides-(Development))
+  * [General Development](https://github.com/LandSandBoat/server/wiki/General-Development)
+  * [CMake Build Guide](https://github.com/LandSandBoat/server/wiki/CMake-Build-Guide)
+* [Project Meta](https://github.com/LandSandBoat/server/wiki/Project-Meta)
+  * [[Project Focus|https://github.com/LandSandBoat/server/wiki/Project-Focus]]
+  * [[Contributor Conduct|https://github.com/LandSandBoat/server/wiki/Contributor-Conduct]]
+  * [[Staff Conduct|https://github.com/LandSandBoat/server/wiki/Staff-Conduct]]
 * [[Server List|Topaz-Servers]]
-* [Resources](https://github.com/DerpyProjectGroup/topaz/wiki/Resources)
+* [Resources](https://github.com/LandSandBoat/server/wiki/Resources)

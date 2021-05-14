@@ -1,19 +1,19 @@
 
 
 ## What works? Is quest X implemented?
-[What Works?](https://github.com/DerpyProjectGroup/topaz/wiki/What-Works)
+[What Works?](https://github.com/LandSandBoat/server/wiki/What-Works)
 
 ## How can I help the project?
-[How can I help?](https://github.com/DerpyProjectGroup/topaz/wiki/How-Can-I-Help)
+[How can I help?](https://github.com/LandSandBoat/server/wiki/How-Can-I-Help)
 
 ## Where can I find servers to play on?
-[Topaz Servers](https://github.com/DerpyProjectGroup/topaz/wiki/Topaz-Servers)
+[Topaz Servers](https://github.com/LandSandBoat/server/wiki/Topaz-Servers)
 
 ## Canary? Release?
 Topaz Next maintains two long-term branches: `release` and `canary`. `release` is the default branch and contains changes that have been vetted and tested. Human error can always occur, but this is the most stable place to get code. `canary` ([origin](https://en.wiktionary.org/wiki/canary_in_a_coal_mine)) is based on `release`, but contains our `feature` branches and experimental content. It is for testing and is not guaranteed to be stable. Think of it as the "beta testing" branch.
 
 ## Is there a GM command that does X?
-All available GM commands, with descriptions and the level of GM they require, can be found [here](https://github.com/DerpyProjectGroup/topaz/tree/release/scripts/commands).
+All available GM commands, with descriptions and the level of GM they require, can be found [here](https://github.com/LandSandBoat/server/tree/release/scripts/commands).
 
 ## When will feature X arrive?
 We practice [clean room engineering](https://en.wikipedia.org/wiki/Clean_room_design), which means we have to implement everything from scratch. As such, progress is slow. We are also trying to balance feature development, bugfixes, performance improvements, exploit resolution, code review, and testing.
@@ -24,14 +24,14 @@ We will never accept financial or material incentives for our work. This is a ho
 ## Where is fishing?
 Not yet implemented.
 
-See: [What Works?](https://github.com/DerpyProjectGroup/topaz/wiki/What-Works)
+See: [What Works?](https://github.com/LandSandBoat/server/wiki/What-Works)
 
 ## The code for feature X is available in the community, why haven't you taken it?
 Features in Topaz Next are those that have been submitted to us, meet our standards for quality and accuracy, and that we have had the time to review and integrate with the rest of the codebase. It is very rare that we will accept code on someone else's behalf. While there is technically nothing stopping us, it would undermine our position in the community.
 
 Similarly, sending us code snippets creates more work and strain on staff and developers. If you have code you want to contribute, please speak to us on Discord and open a Pull Request.
 
-See: [Where is fishing?](https://github.com/DerpyProjectGroup/topaz/wiki/Frequently-Asked-Questions#where-is-fishing)
+See: [Where is fishing?](https://github.com/LandSandBoat/server/wiki/Frequently-Asked-Questions#where-is-fishing)
 
 ## When can I play "Classic" Dynamis?
 You can't - it isn't in the game anymore.
@@ -64,7 +64,7 @@ Bypassing these restrictions would need heavy client modification (which we don'
 </details>
 
 ## Why isn't Yell/Trust/Auction House etc. available in every zone?
-What's available to use per-zone is controlled with the `misc` flags column in `zone_settings.sql`. These flags correspond to the `ZONEMISC` enum in `zone.h`. A query to modify those flags can be found in [Useful SQL queries](https://github.com/DerpyProjectGroup/topaz/wiki/Useful-SQL-queries#enable-zonemisc-features-everywhere).
+What's available to use per-zone is controlled with the `misc` flags column in `zone_settings.sql`. These flags correspond to the `ZONEMISC` enum in `zone.h`. A query to modify those flags can be found in [Useful SQL queries](https://github.com/LandSandBoat/server/wiki/Useful-SQL-queries#enable-zonemisc-features-everywhere).
 
 <details>
 <summary>Read more</summary>
@@ -96,7 +96,7 @@ Project Topaz was the FFXI server codebase the Topaz Next forked from.
 Darkstar Project was the FFXI server codebase which Project Topaz forked from.
 Neither are still being actively developed.
 
-More project history [here](https://github.com/DerpyProjectGroup/topaz/wiki/Project-History).
+More project history [here](https://github.com/LandSandBoat/server/wiki/Project-History).
 
 ## Why is the airship in Sauromugue Champaign skidding along the ground like a land speeder?
 It's a feature, not a bug. 👀
