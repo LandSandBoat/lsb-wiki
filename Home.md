@@ -1,4 +1,4 @@
-This is the wiki for Topaz Next - an open-source server emulator for FFXI.
+This is the wiki for LandSandBoat (LSB below) - an open-source server emulator for FFXI.
 
 # General
 General articles about the project.
@@ -11,7 +11,7 @@ Instructions for installing FFXI, connecting to a private server, and keeping th
 - [Common Concerns](https://github.com/LandSandBoat/server/wiki/Miscellaneous-(Client))
 
 # Server Setup
-Instructions for cloning, building, running, and updating a Topaz Next server.
+Instructions for cloning, building, running, and updating a LSB server.
 - [[Windows 10|https://github.com/LandSandBoat/server/wiki/Server-setup-and-maintenance-%5BWindows-10%5D]]
 - [[Linux|https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BLinux%5D]]
 
@@ -23,15 +23,15 @@ Information for new server administrators.
 - [Debugging](https://github.com/LandSandBoat/server/wiki/Debugging)
 
 # [Development](https://github.com/LandSandBoat/server/wiki/Development)
-Information for developers who work on Topaz Next.
+Information for developers who work on LSB.
 - [Development Landing Page](https://github.com/LandSandBoat/server/wiki/Development)
 
 # [Project Meta](https://github.com/LandSandBoat/server/wiki/Project-Meta)
-Information relating to the "meta" of Topaz Next - like project goals, codes of conduct, project roadmaps, and licensing information.
+Information relating to the "meta" of LSB - like project goals, codes of conduct, project roadmaps, and licensing information.
 - [[Project Focus|https://github.com/LandSandBoat/server/wiki/Project-Focus]]
 - [[Contributor Conduct|https://github.com/LandSandBoat/server/wiki/Contributor-Conduct]]
 - [[Staff Conduct|https://github.com/LandSandBoat/server/wiki/Staff-Conduct]]
 # [[Server List|Topaz-Servers]]
-List of known public Topaz servers, if you want to join one, or test out Topaz before setting up your own.
+List of known public LSB servers. Useful if you want to join one, or test it out before setting up your own.
 # [Resources](https://github.com/LandSandBoat/server/wiki/Resources)
 Additional resources and tools of interest to administrators, developers, or players.
