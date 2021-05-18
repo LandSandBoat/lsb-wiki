@@ -10,6 +10,7 @@ Articles in this category are guides covering specific subject matter. They're i
   * [Spatial Orientation and Relative Positions](https://github.com/LandSandBoat/server/wiki/Spatial-Orientation-and-Relative-Positions)
   * [Understanding Variables](https://github.com/LandSandBoat/server/wiki/Understanding-variables-%E2%80%94-a-brief-guide)
   * [CMake Build Guide](https://github.com/LandSandBoat/server/wiki/CMake-Build-Guide)
+  * [Performance Profiling with Tracy](https://github.com/LandSandBoat/server/wiki/Performance-Profiling-with-Tracy)
   * [Sol Refactor](https://github.com/LandSandBoat/server/wiki/Sol-Refactor)
 
 # General Development
