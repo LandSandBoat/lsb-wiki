@@ -7,6 +7,7 @@ Articles in this category are designed to familiarize the reader with git, GitHu
 # Guides and Articles
 Articles in this category are guides covering specific subject matter. They're intended to familiarize the reader on certain aspects of developing for the codebase.
 
+  * [Developer Intro](https://github.com/LandSandBoat/server/wiki/Developer-Intro)
   * [Spatial Orientation and Relative Positions](https://github.com/LandSandBoat/server/wiki/Spatial-Orientation-and-Relative-Positions)
   * [Understanding Variables](https://github.com/LandSandBoat/server/wiki/Understanding-variables-%E2%80%94-a-brief-guide)
   * [CMake Build Guide](https://github.com/LandSandBoat/server/wiki/CMake-Build-Guide)
