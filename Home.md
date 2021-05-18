@@ -24,12 +24,7 @@ Information for new server administrators.
 
 # [Development](https://github.com/LandSandBoat/server/wiki/Development)
 Information for developers who work on Topaz Next.
-- [GitHub and Contributing](https://github.com/LandSandBoat/server/wiki/GitHub-and-Contributing)
-- [General Development](https://github.com/LandSandBoat/server/wiki/General-Development)
-- [Lua Guide and Gotchas](https://github.com/LandSandBoat/server/wiki/Lua-Guide-and-Gotchas)
-- [Spatial Orientation and Relative Positions](https://github.com/LandSandBoat/server/wiki/Spatial-Orientation-and-Relative-Positions)
-- [Understanding Variables](https://github.com/LandSandBoat/server/wiki/Understanding-variables-%E2%80%94-a-brief-guide)
-- [Performance Profiling with Tracy](https://github.com/LandSandBoat/server/wiki/Performance-Profiling-with-Tracy)
+- [Development Landing Page](https://github.com/LandSandBoat/server/wiki/Development)
 
 # [Project Meta](https://github.com/LandSandBoat/server/wiki/Project-Meta)
 Information relating to the "meta" of Topaz Next - like project goals, codes of conduct, project roadmaps, and licensing information.
