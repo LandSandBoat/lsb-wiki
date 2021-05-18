@@ -18,7 +18,6 @@
   * [GitHub and Contributing](https://github.com/LandSandBoat/server/wiki/GitHub-and-Contributing)
   * [Guides and Articles](https://github.com/LandSandBoat/server/wiki/Guides-(Development))
   * [General Development](https://github.com/LandSandBoat/server/wiki/General-Development)
-  * [CMake Build Guide](https://github.com/LandSandBoat/server/wiki/CMake-Build-Guide)
 * [Project Meta](https://github.com/LandSandBoat/server/wiki/Project-Meta)
   * [[Project Focus|https://github.com/LandSandBoat/server/wiki/Project-Focus]]
   * [[Contributor Conduct|https://github.com/LandSandBoat/server/wiki/Contributor-Conduct]]
