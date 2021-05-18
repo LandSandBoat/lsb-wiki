@@ -16,3 +16,6 @@ Articles in this category are general development topics, relating to overall de
 
   * [Debugging](https://github.com/LandSandBoat/server/wiki/Debugging)
   * [Developer Workflow](https://github.com/LandSandBoat/server/wiki/Developer-Workflow)
+
+# Misc. Writeups
+  * [Sol Refactor](https://github.com/LandSandBoat/server/wiki/Sol-Refactor)
