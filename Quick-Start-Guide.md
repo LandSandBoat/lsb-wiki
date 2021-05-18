@@ -10,21 +10,21 @@
   * Download the latest code, install Python requirements, and copy the configuration files:
     ```
     git clone --recursive https://github.com/LandSandBoat/server.git
-    py -3 -m pip install -r topaz/tools/requirements.txt
-    cp topaz/conf/default/* topaz/conf/
+    py -3 -m pip install -r server/tools/requirements.txt
+    cp server/conf/default/* server/conf/
     ```
-  * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_password` to the password set during MariaDB setup.
-  * Back in your PowerShell window, move to `topaz/tools/` and build the database:
+  * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `server/conf/` and change `mysql_password` to the password set during MariaDB setup.
+  * Back in your PowerShell window, move to `server/tools/` and build the database:
     ```
-    cd topaz/tools
+    cd server/tools
     py -3 dbtool.py
     ```
   * Follow the on-screen instructions.
-  * Open the `topaz` root folder in VS2019.
+  * Open the `server` root folder in VS2019.
   * [Build the solution in VS2019.](https://github.com/LandSandBoat/server/wiki/CMake-Build-Guide)
 
   ## To Update
-  * Open a PowerShell window and navigate to your `topaz` directory.
+  * Open a PowerShell window and navigate to your `server` directory.
   * Stash any changes you've made and pull the latest code from upstream:
     ```
     git stash
@@ -35,12 +35,12 @@
     >CONFLICT (content): Merge conflict in _**some file**_
 
     ⚠️ If this happens, you need to manually edit the conflicting files before continuing.
-  * Move to `topaz/tools/` and update the database:
+  * Move to `server/tools/` and update the database:
     ```
     cd tools
     py -3 dbtool.py update
     ```
-  * Open the `topaz` root folder in VS2019.
+  * Open the `server` root folder in VS2019.
   * [Build the solution in VS2019.](https://github.com/LandSandBoat/server/wiki/CMake-Build-Guide)
 </details>
 
@@ -76,26 +76,26 @@
   * Download the latest code, install Python requirements, and copy the configuration files:
     ```
     git clone --recursive https://github.com/LandSandBoat/server.git
-    pip3 install -r topaz/tools/requirements.txt
-    cp topaz/conf/default/* topaz/conf/
+    pip3 install -r server/tools/requirements.txt
+    cp server/conf/default/* server/conf/
     ```
   * Run the following script to improve database security:
     ```
     sudo mysql_secure_installation
     ```
-  * Type the following to create a database user with the login _**topaz**_ and password _**password**_, and an empty database called _**tpzdb**_. Change these to improve security:
+  * Type the following to create a database user with the login _**xi**_ and password _**password**_, and an empty database called _**xidb**_. Change these to improve security:
     ```
-    sudo mysql -u root -p -e "CREATE USER 'topaz'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE tpzdb;USE tpzdb;GRANT ALL PRIVILEGES ON tpzdb.* TO 'topaz'@'localhost';"
+    sudo mysql -u root -p -e "CREATE USER 'xi'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE xidb;USE xidb;GRANT ALL PRIVILEGES ON xidb.* TO 'xi'@'localhost';"
     ```
-  * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `topaz/conf/` and change `mysql_login`, `mysql_password`, and `mysql_database` to the information used above (_**topaz**_, _**password**_, and _**tpzdb**_).
-  * In the `topaz` directory, prepare and build the executables:
+  * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `server/conf/` and change `mysql_login`, `mysql_password`, and `mysql_database` to the information used above (_**xi**_, _**password**_, and _**xidb**_).
+  * In the `server` directory, prepare and build the executables:
     ```
     mkdir build
     cd build
     cmake ..
     make -j $(nproc)
     ```
-  * Wait for the build to complete, then move to `topaz/tools/` and build the database:
+  * Wait for the build to complete, then move to `server/tools/` and build the database:
     ```
     cd ../tools
     python3 dbtool.py
@@ -103,7 +103,7 @@
   * Select 'Reset DB' and follow the instructions to "reset" the database.
 
   ## To Update
-  * Open the `topaz` directory in a terminal.
+  * Open the `server` directory in a terminal.
   * Stash any changes you've made and pull the latest code from upstream:
     ```
     git stash
@@ -120,7 +120,7 @@
     cmake ..
     make -j $(nproc)
     ```
-  * Wait for the build to complete, then move to `topaz/tools/` and update the database:
+  * Wait for the build to complete, then move to `server/tools/` and update the database:
     ```
     cd ../tools
     python3 dbtool.py update
