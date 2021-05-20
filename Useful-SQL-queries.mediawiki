@@ -19,18 +19,12 @@ INSERT INTO delivery_box VALUES (charid, 'name here', 1, 0, itemid, 0, quantity,
 == Find All Mobs Without Pets ==
 
 <pre>
-select mobid, mobname, mob_pets.pet_offset 
-from mob_spawn_points 
-inner join mob_groups on mob_spawn_points.groupid = mob_groups.groupid 
-inner join mob_pools on mob_groups.poolid = mob_pools.poolid 
-left join mob_pets on mob_pets.mob_mobid = mob_spawn_points.mobid 
-where mob_pools.mJob IN (9, 14, 15, 18) and mob_pets.pet_offset IS NULL;
-</pre>
-
-== Find All Pets Without a Master ==
-
-<pre>
-select mobid, mobname from mob_spawn_points where mobname LIKE '%\_s\_%' and NOT EXISTS (select * from mob_pets where mob_mobid + pet_offset = mobid limit 1);
+select ms.mobid, ms.mobname, pt.pet_offset 
+from mob_spawn_points ms
+inner join mob_groups gr on ms.groupid = gr.groupid and gr.zoneid = ((ms.mobid >> 12) & 0xFFF)
+inner join mob_pools pl on gr.poolid = pl.poolid 
+left join mob_pets pt on pt.mob_mobid = ms.mobid 
+where pl.mJob IN (9, 14, 15, 18) and pt.pet_offset IS NULL;
 </pre>
 
 == Expansion icons ==
