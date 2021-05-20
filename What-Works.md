@@ -27,7 +27,7 @@ This list is free for anyone to update and is very probably out of date, feel fr
 
 # Missions
 Playable missions are marked in the following file with `--+--` after their names <br>
-https://github.com/LandSandBoat/server/blob/release/scripts/globals/missions.lua
+https://github.com/LandSandBoat/server/blob/base/scripts/globals/missions.lua
 
 | Status | Name | Notes |
 |---|---|---|
@@ -47,7 +47,7 @@ https://github.com/LandSandBoat/server/blob/release/scripts/globals/missions.lua
 
 # Quests
 Playable quests are marked in the following file with `--+--` after their names <br>
-https://github.com/LandSandBoat/server/blob/release/scripts/globals/quests.lua
+https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
 
 # Battle Content (by era)
 ## Pre-Item Level
@@ -56,7 +56,7 @@ https://github.com/LandSandBoat/server/blob/release/scripts/globals/quests.lua
 
 | Status | Name | Notes |
 |---|---|---|
-| ⚠️ | BCNMs | Unusable fights are commented out with `--`: <br>https://github.com/LandSandBoat/server/blob/release/scripts/globals/bcnm.lua |
+| ⚠️ | BCNMs | Unusable fights are commented out with `--`: <br>https://github.com/LandSandBoat/server/blob/base/scripts/globals/bcnm.lua |
 | ❌ | Garrison | |
 | ✔️ | HNMs - Land Kings | |
 | ❌ | "Classic" Dynamis | [Will not be implemented.](https://github.com/LandSandBoat/server/wiki/Frequently-Asked-Questions#when-can-i-play-classic-dynamis) |
