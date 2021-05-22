@@ -15,9 +15,6 @@
   * [Database Management](https://github.com/LandSandBoat/server/wiki/Database-Management)
   * [Debugging](https://github.com/LandSandBoat/server/wiki/Debugging)
 * [Development](https://github.com/LandSandBoat/server/wiki/Development)
-  * [GitHub and Contributing](https://github.com/LandSandBoat/server/wiki/Development#github-and-contributing)
-  * [Guides and Articles](https://github.com/LandSandBoat/server/wiki/Development#guides-and-articles)
-  * [General Development](https://github.com/LandSandBoat/server/wiki/Development#general-development)
 * [Project Meta](https://github.com/LandSandBoat/server/wiki/Project-Meta)
   * [[Project Focus|https://github.com/LandSandBoat/server/wiki/Project-Focus]]
   * [[Contributor Conduct|https://github.com/LandSandBoat/server/wiki/Contributor-Conduct]]
