@@ -2,11 +2,11 @@ Does `-ffast-math (/fp:fast)` matter? Should we be using it? DSP and a lot of To
 It breaks IEEE compliance. Anecdotal tales of gamedev, and looking at the accuracy of float being used by the game say that this probably doesn't matter.
 
 ## Test
-Log in in {Kuftal Tunnel}.
-Aggro and train the first group of crabs.
-Take them around to the left.
-Aggro the second group of crabs.
-Wait for 700-ish samples of ZoneServer tick.
+- Log in in {Kuftal Tunnel}.
+- Aggro and train the first group of crabs.
+- Take them around to the left.
+- Aggro the second group of crabs.
+- Wait for 700-ish samples of ZoneServer tick.
 
 ## Results (ZoneServer tick (ms), n=700)
 | metric | fastmath OFF | fastmath ON |
