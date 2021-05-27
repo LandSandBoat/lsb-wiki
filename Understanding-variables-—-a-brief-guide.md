@@ -56,6 +56,7 @@ utils.setQuestVar(player, 0, 1, 'Prog', 1)
 The resulting charVar stored would be `Quest[0][1]Prog` with a value of 1.
 
 *NOTE:* Quest variables are deleted when quest:complete(player) is called by the script, also, the utils function should *never* be used in a quest script itself, unless a value needs to be changed in a *DIFFERENT* quest.  For things internal to a quest script, use `quest:setVar()` or `quest:getVar`.  See Interaction Framework documentation for additional information.
+<br><br>
 
 ```lua
 -- Sets a server var in the database
