@@ -31,7 +31,9 @@ Information relating to the "meta" of LSB - like project goals, codes of conduct
 - [[Project Focus|https://github.com/LandSandBoat/server/wiki/Project-Focus]]
 - [[Contributor Conduct|https://github.com/LandSandBoat/server/wiki/Contributor-Conduct]]
 - [[Staff Conduct|https://github.com/LandSandBoat/server/wiki/Staff-Conduct]]
-# [[Server List|Topaz-Servers]]
-List of known public LSB servers. Useful if you want to join one, or test it out before setting up your own.
-# [Resources](https://github.com/LandSandBoat/server/wiki/Resources)
-Additional resources and tools of interest to administrators, developers, or players.
+
+# Server List
+[[List of known public LSB servers|Topaz-Servers]]. Useful if you want to join one, or test it out before setting up your own.
+
+# Resources
+Additional [resources](https://github.com/LandSandBoat/server/wiki/Resources) and tools of interest to administrators, developers, or players.
