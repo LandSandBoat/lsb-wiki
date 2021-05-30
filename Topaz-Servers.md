@@ -8,6 +8,7 @@ Please add your server to the table of contents at the top, with a couple of wor
 * [Grounds of Titan](#GoT) 75 cap,  great QOL perks (new server 2020/05)
 * [QuetzRebirth](#QuetzRebirth) era, QOL changes, some custom content
 * [Phynix](#Phynix) 75 cap, QOL changes
+* [Supernova](#Supernova) 75 cap, QOL changes, large amount of custom content
 * [Wings](#WingsXI) 75 capped era non-custom Wings of the Goddess server.
 
 # 99/ilvl Cap Servers
@@ -296,3 +297,33 @@ Wings is an open-source 75-capped project with a focus on building an emulation 
 * **Maps:** All maps are unlocked upon character creation.
 * **Level Cap:** 75.
 * **Auction House:** Player-driven economy.
+
+## Supernova
+
+* **Server address:** login.supernovaffxi.com 
+* **Website:** http://supernovaffxi.com/
+* **Discord:** https://discord.gg/QBBdfQh
+
+Come by and visit Supernova! We're a 75-era server based closely on LandSandBoat code with some custom tweaks:
+
+    • Challenging Prestige quest to unlock Mythic weapon skills
+    • 64 fun, custom Zantetstuken missions to keep you on your toes
+    • Overall EXP bonuses incentivizing party play
+    • Quality-of-Life updates to make leveling, gear acquisition, travel, and fighting missions more accessible
+    • Oldstyle Dynamis with currency duplication to build faster Relic weapons
+    • Every job can now use a Relic weapon (including COR, BLU, PUP, DNC and SCH)
+    • Certain Relic weapons (and their weapon skills) have custom modifiers/aftermaths to better fit the job
+    • Augment your Relic weapons in unique ways
+    • Custom loot pools for HNMs and many notable Notorious Monsters
+    • Player-stocked Auction House where all items cost 2 gil
+    • 150% movement speed
+    • All characters start with 1 million gil with ways to instantly get more should they run out
+    • Boosted synthesis skillup rates (4x retail)
+
+Content available on Supernova is in line with availability as the LandSandBoat Project, with a few additions. Visit our website to see what's available!
+
+There are also Supernova-specific quests that can earn players some highly coveted equipment.
+
+All jobs through the Wings of the Goddess expansion are available to play.
+
+Add to this a friendly player base and accessible staff who are ready to help be it in-game or on our discord server, we're confident that Supernova can be a place for any type of player. Come join in the fun!
