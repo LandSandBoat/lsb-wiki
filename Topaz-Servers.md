@@ -300,7 +300,7 @@ Wings is an open-source 75-capped project with a focus on building an emulation 
 
 ## Supernova
 
-* **Server Promo Video:** https://www.youtube.com/watch?v=lnUAg0Vylns
+* **Server Promo Video:** https://youtu.be/lnUAg0Vylns
 * **Server address:** login.supernovaffxi.com 
 * **Website:** http://supernovaffxi.com/
 * **Discord:** https://discord.gg/QBBdfQh
