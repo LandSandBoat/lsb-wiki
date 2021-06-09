@@ -59,7 +59,7 @@ Server has been in operation since 2013, and operates on a dedicated box on a 50
 * **Skillup Rate:** Super fast
 * **Inventory:** Max space
 
-**Expansions enabled:** All Zilart, CoP, ToAU, and WotG [content up to what's available on Topaz Canary branch](https://github.com/LandSandBoat/server/tree/canary).
+**Expansions enabled:** All Zilart, CoP, ToAU, and WotG [content up to what's available on LandSandBoat Canary branch](https://github.com/LandSandBoat/server/tree/canary).
 
 * NM boosted 15x normal for real challenges with all of the player enhancements.
 * Wallhacking encouraged (And turned on for all players), several other commands available (Check website for details as more are added over time!)
@@ -70,7 +70,7 @@ Server has been in operation since 2013, and operates on a dedicated box on a 50
 * Prepare to be tormented sometimes by server admin. (Tagban) but all jovial. 
 
 ## Canaria:
-Focus of this server is to have a good time, have access to the latest features of Topaz Next, and enjoy the quality of life improvements (book/crystal teleport, ground/field of valor) that make this game fun to play in small or long sessions.
+Focus of this server is to have a good time, have access to the latest features of LandSandBoat, and enjoy the quality of life improvements (book/crystal teleport, ground/field of valor) that make this game fun to play in small or long sessions.
 
 All content comes from the [canary branch](https://github.com/LandSandBoat/server/tree/canary), no custom modifications are in place.
 
@@ -78,7 +78,7 @@ All content comes from the [canary branch](https://github.com/LandSandBoat/serve
 * **Website:** http://topaz.catsangel.com
 * **Discord:** https://discord.gg/3MMnnx4
 
-**Expansions enabled:** All [content up to what's available on Topaz Canary branch](https://github.com/LandSandBoat/server/tree/canary)
+**Expansions enabled:** All [content up to what's available on LandSandBoat Canary branch](https://github.com/LandSandBoat/server/tree/canary)
 
 * **Level Cap:** 99
 * **Fields of Valor:** Enabled
@@ -272,9 +272,9 @@ Level 99 Cap Just here to have fun, made this server to have my old friends/fami
 
 ## WingsXI:
 
-Wings is an open-source 75-capped project with a focus on building an emulation platform alongside Topaz for people who want to start their own 75 capped servers without having to do all the work of travelling back through time. While our focus is to recreate the era feel of the Wings of the Goddess expansion, there are a few custom changes to make the game feel up to date with modern games, such as progressing wardrobe unlocks through storyline content, improved controls when engaging mobs, and overall improved gameplay mechanics.
+Wings is an open-source 75-capped project with a focus on building an emulation platform alongside LandSandBoat for people who want to start their own 75 capped servers without having to do all the work of travelling back through time. While our focus is to recreate the era feel of the Wings of the Goddess expansion, there are a few custom changes to make the game feel up to date with modern games, such as progressing wardrobe unlocks through storyline content, improved controls when engaging mobs, and overall improved gameplay mechanics.
 
-> **NOTE:** Please be aware that portions of the Wings repo are licensed as AGPLv3. This license places additional requirements on users when compared to the GPLv3 license Topaz-Next, Project Topaz, and Darkstar Project use. Make sure you understand the ramifications of adopting code with a different license before you start copy/pasting!
+> **NOTE:** Please be aware that portions of the Wings repo are licensed as AGPLv3. This license places additional requirements on users when compared to the GPLv3 license LandSandBoat, Topaz Next, Project Topaz, and Darkstar Project use. Make sure you understand the ramifications of adopting code with a different license before you start copy/pasting!
 >
 > https://www.gnu.org/licenses/gpl-3.0.en.html
 >
