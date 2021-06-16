@@ -6,6 +6,6 @@ Focus of this server is to have a good time, have access to the latest features 
 
 All content comes from the base branch, no custom modifications are in place.
 
-    Server address: topaz.catsangel.com
-    Website: [http://topaz.catsangel.com](http://topaz.catsangel.com)
-    Discord: [https://discord.gg/3MMnnx4](https://discord.gg/3MMnnx4)
+* Server address: topaz.catsangel.com
+* Website: [http://topaz.catsangel.com](http://topaz.catsangel.com)
+* Discord: [https://discord.gg/3MMnnx4](https://discord.gg/3MMnnx4)
