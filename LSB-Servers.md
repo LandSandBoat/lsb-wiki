@@ -6,14 +6,15 @@ Focus of this server is to have a good time, have access to the latest features 
 
 All content comes from the base branch, no custom modifications are in place.
 
-* Server address: topaz.catsangel.com
-* Website: [http://topaz.catsangel.com](http://topaz.catsangel.com)
-* Discord: [https://discord.gg/3MMnnx4](https://discord.gg/3MMnnx4)
+* **Server address:** topaz.catsangel.com
+* **Website:** [http://topaz.catsangel.com](http://topaz.catsangel.com)
+* **Other contact (Discord):** [https://discord.gg/3MMnnx4](https://discord.gg/3MMnnx4)
 
 # Demiurge:
 
 This server intends to "level up" and enable expansion content in stages, as happened with retail. It is presently 75 capped and stops at Chains of Promathia. There is heavy customization, with a lot of stuff that doesn't exist in any version of the retail game. Custom monster, NMs, NPCs, and seasonal events, even made up systems and game mechanics. The owner values creativity over adherence to any past era of the game.
 
-* Server address: demiurge.pw
-* Website: http://www.demiurge.pw
-* Discord: https://discord.gg/SSU3HMq
+* **Server address:** demiurge.pw
+* **Modified client?:** NO, never needed.
+* **Website:** http://www.demiurge.pw
+* **Other contact (Discord):** https://discord.gg/SSU3HMq
