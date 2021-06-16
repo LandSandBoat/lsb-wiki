@@ -11,7 +11,7 @@ This list is free for anyone to update and is very probably out of date, feel fr
 | ✔️ | Implemented (A fair approximation of retail) |
 | ⚠️ | Partially Implemented = Playable |
 | ⛔ | Partially Implemented = Unplayable / Broken |
-| 🐤 | In progress, likely available in `canary` or `feature` branches |
+| 🐤 | In progress, in a `feature` branch |
 | ❌ | Unimplemented |
 | ❔ | Status Unknown |
 | No Mark | Status Unknown |
@@ -19,7 +19,7 @@ This list is free for anyone to update and is very probably out of date, feel fr
 # Jobs
 | Status | Jobs |
 |---|---|
-| ❌ | GEO (potentially crashes the server), RUN |
+| ❌ | GEO, RUN |
 | ⚠️ | SMN, BLU |
 | ⛔ | PUP |
 | ✔️ | All others (up to Lv75) |
@@ -37,11 +37,11 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/missions.lua
 | ✔️ | Rise of the Zilart | |
 | ✔️ | Chains of Promathia | |
 | ⚠️ | Treasures of Aht Urhgan | Some bugs and broken cutscenes |
-| ❌ | Wings of the Goddess | |
+| ⛔ | Wings of the Goddess | Up to WOTG 07 |
 | ⛔ | Seekers of Adoulin | Up to SOA 1-8 |
-| ⛔ | A Crystalline Prophecy | Up to ACP 4 |
-| ⛔ | A Moogle Kupo d'Etat | Up to AMK 4 |
-| ⛔ | A Shantotto Ascension | Up to ASA 3 |
+| ⛔ | A Crystalline Prophecy | Up to ACP 04 |
+| 🐤 | A Moogle Kupo d'Etat | Up to AMK 08 |
+| ⛔ | A Shantotto Ascension | Up to ASA 03 |
 | ⛔ | Rhapsodies of Vanadiel | Up to ROV 1-18 |
 | ❌ | The Voracious Resurgence | |
 
@@ -83,7 +83,7 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
 | ❔ | Imperial Seal Notorious Monsters (ISNM) | |
 | ❌ | Nyzul Isle Investigation | |
 | ❌ | Salvage | |
-| ❔ | Zeni Notorious Monsters (ZNM) | Some NMs scripted (accuracy unverified), Zeni itself not implemented |
+| ❔ | Zeni Notorious Monsters (ZNM) | Some NMs scripted (accuracy unverified) |
 
 ### Wings of the Goddess ❌
 
@@ -157,7 +157,8 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
 | ❌ | Monstrosity | |
 | ✔️ | Mounts & 'Full Speed Ahead' Minigame | |
 | ❌ | Pankration | |
-| 🐤 | Records of Eminence| ~300 records + Timed challenges |
+| 🐤 | Records of Eminence | ~300 records + Timed challenges |
+| 🐤 | Soultrapping, Soul Plates & Zeni | |
 | ❌ | Synergy | |
 | 🐤 | Trusts | Trust status: <br>https://github.com/LandSandBoat/server/wiki/Trusts |
 
@@ -165,7 +166,7 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
 
 | Status | Name | Notes |
 |---|---|---|
-| ⛔ | Aura Effects | |
+| ⚠️ | Aura Effects | |
 | ⚠️ | Basic PVP | |
-| ⛔ | Confrontation Effects | |
+| 🐤 | Confrontation Effects | |
 | ⚠️ | Stagger Effects | Neo-Dynamis and Abyssea proc systems implemented |
