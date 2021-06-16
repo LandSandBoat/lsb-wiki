@@ -1,4 +1,4 @@
-This is a listing of known public LandSandBoat servers.
+This is a listing of known public LandSandBoat servers. Feel free to edit the wiki and add yours here in alphabetical order and maintaining the same format, with a respectable description.
 
 # Canaria:
 
