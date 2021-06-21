@@ -37,7 +37,7 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/missions.lua
 | ✔️ | Rise of the Zilart | |
 | ✔️ | Chains of Promathia | |
 | ⚠️ | Treasures of Aht Urhgan | Some bugs and broken cutscenes |
-| ⛔ | Wings of the Goddess | Up to WOTG 07 |
+| 🐤 | Wings of the Goddess | Up to WOTG 08 (mainline missions only, nation quest status unknown) |
 | ⛔ | Seekers of Adoulin | Up to SOA 1-8 |
 | ⛔ | A Crystalline Prophecy | Up to ACP 04 |
 | 🐤 | A Moogle Kupo d'Etat | Up to AMK 08 |
@@ -158,7 +158,7 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
 | ✔️ | Mounts & 'Full Speed Ahead' Minigame | |
 | ❌ | Pankration | |
 | 🐤 | Records of Eminence | ~300 records + Timed challenges |
-| 🐤 | Soultrapping, Soul Plates & Zeni | |
+| ✔️ | Soultrapping, Soul Plates & Zeni | Works, but Zeni values are placeholder |
 | ❌ | Synergy | |
 | 🐤 | Trusts | Trust status: <br>https://github.com/LandSandBoat/server/wiki/Trusts |
 
