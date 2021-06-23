@@ -127,7 +127,7 @@
 | Lion | ❌ | |
 | Luzaf | ❌ | |
 | Mayakov | ❌ | |
-| Naja Salaheem | ❌ | |
+| Naja Salaheem | ✔️ | |
 | Najelith | ❌ | |
 | Robel-Akbel | ❌ | |
 | Rongelouts | ❌ | |
