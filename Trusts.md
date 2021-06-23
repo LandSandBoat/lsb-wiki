@@ -122,7 +122,7 @@
 | D. Shantotto | ❌ | |
 | Karaha-Baruha | ❌ | |
 | Kuyin Hathdenna | ❌ | |
-| Lehko Habhoka | ❌ | |
+| Lehko Habhoka | ✔️ | |
 | Lhe Lhangavo | ❌ | |
 | Lion | ❌ | |
 | Luzaf | ❌ | |
@@ -186,7 +186,7 @@
 | Cornelia | 💀 | Unsummonable: SE removed from the game |
 | Fablinix | ❌ | |
 | Kupofried | ❌ | |
-| Matsui-P | ❌ | |
+| Matsui-P | 💀 | Unsummonable: SE removed from the game |
 | Monberaux | ❌ | |
 | Moogle | ❌ | |
 | Mumor | ❌ | |
