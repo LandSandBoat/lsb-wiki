@@ -195,14 +195,14 @@ git stash
 This will ask git to store changes you've made since cloning so we can put them back after updating.
 2. Pull new changes from the repository. You should also close your topaz servers before updating.
 ```
-git pull origin release
+git pull origin base
 ```
-This assumes you cloned from the topaz github as detailed above. If you are using your own fork, this command may differ for you.
+This assumes you cloned from the LSB github as detailed above. If you are using your own fork, this command may differ for you.
 3. Put back your changes
 ```
 git stash pop
 ```
-Git may notify you which, if any, files were changed by both yourself and the Topaz project. You will want to edit these to confirm they are set the way you'd like them.
+Git may notify you which, if any, files were changed by both yourself and the LSB project. You will want to edit these to confirm they are set the way you'd like them.
 4. Compile the source code
 ```
 cd build
