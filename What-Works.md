@@ -153,12 +153,13 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
 | ✔️ | Hunt Registry | |
 | ❌ | Job Points | |
 | 🐤 | Magian Trials | |
+| ✔️ | Mannequins | |
 | ❌ | Mog Garden | |
 | ❌ | Monstrosity | |
 | ✔️ | Mounts & 'Full Speed Ahead' Minigame | |
 | ❌ | Pankration | |
 | 🐤 | Records of Eminence | ~300 records + Timed challenges |
-| ✔️ | Soultrapping, Soul Plates & Zeni | Works, but Zeni values are placeholder |
+| ✔️ | Soultrapping, Soul Plates & Zeni | Works, but Zeni values are placeholders |
 | ❌ | Synergy | |
 | 🐤 | Trusts | Trust status: <br>https://github.com/LandSandBoat/server/wiki/Trusts |
 
