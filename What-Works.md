@@ -11,7 +11,7 @@ This list is free for anyone to update and is very probably out of date, feel fr
 | ✔️ | Implemented (A fair approximation of retail) |
 | ⚠️ | Partially Implemented = Playable |
 | ⛔ | Partially Implemented = Unplayable / Broken |
-| 🐤 | In progress, in a `feature` branch |
+| 🐤 | In progress, and/or in a `feature` branch |
 | ❌ | Unimplemented |
 | ❔ | Status Unknown |
 | No Mark | Status Unknown |
@@ -79,7 +79,7 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
 | ❌ | Assault | |
 | ❌ | Besieged | |
 | ❌ | Einherjar | |
-| ✔️ | HNMs - ToAU Zones| |
+| ✔️ | HNMs - ToAU Zones | |
 | ❔ | Imperial Seal Notorious Monsters (ISNM) | |
 | ❌ | Nyzul Isle Investigation | |
 | ❌ | Salvage | |
@@ -91,6 +91,7 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
 |---|---|---|
 | ❌ | Allied Notes Notorious Monsters (ANNM) | |
 | ❌ | Campaign | |
+| ❌ | HNMs - WoTG Zones (Sandworm and Dark Ixion) | |
 | ❌ | Moblin Maze Mongers | |
 | ❌ | Stronghold Notorious Monsters (SCNM) | |
 | ❌ | Walk of Echoes | |
@@ -153,7 +154,7 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
 | ✔️ | Hunt Registry | |
 | ❌ | Job Points | |
 | 🐤 | Magian Trials | |
-| ✔️ | Mannequins | |
+| 🐤 | Mannequins | |
 | ❌ | Mog Garden | |
 | ❌ | Monstrosity | |
 | ✔️ | Mounts & 'Full Speed Ahead' Minigame | |
@@ -167,7 +168,7 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
 
 | Status | Name | Notes |
 |---|---|---|
-| ⚠️ | Aura Effects | |
+| 🐤 | Aura Effects | |
 | ⚠️ | Basic PVP | |
 | 🐤 | Confrontation Effects | |
 | ⚠️ | Stagger Effects | Neo-Dynamis and Abyssea proc systems implemented |
