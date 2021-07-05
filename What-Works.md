@@ -1,8 +1,6 @@
 This list is not the final word in what works in the project, or how well it works. Your best bet is always to check the code and check in-game.
 This list is free for anyone to update and is very probably out of date, feel free to fill it in!
 
-**DO NOT HOUND STAFF ABOUT THIS PAGE BEING OUT OF DATE**
-
 **NO SPOILERS, NO MISSION NAMES, NO IN-DEPTH DETAILS etc.**
 
 | Mark | Status |
