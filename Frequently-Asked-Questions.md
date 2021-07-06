@@ -7,7 +7,7 @@
 [How can I help?](https://github.com/LandSandBoat/server/wiki/How-Can-I-Help)
 
 ## Where can I find servers to play on?
-[Private Servers](https://github.com/LandSandBoat/server/wiki/Topaz-Servers)
+You can find a list of LandSandBoat public servers [[here|https://github.com/LandSandBoat/server/wiki/LSB-Servers]].
 
 ## Is there a GM command that does X?
 All available GM commands, with descriptions and the level of GM they require, can be found [here](https://github.com/LandSandBoat/server/tree/release/scripts/commands).
