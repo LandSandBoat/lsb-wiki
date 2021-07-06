@@ -19,5 +19,5 @@
   * [[Project Focus|https://github.com/LandSandBoat/server/wiki/Project-Focus]]
   * [[Contributor Conduct|https://github.com/LandSandBoat/server/wiki/Contributor-Conduct]]
   * [[Staff Conduct|https://github.com/LandSandBoat/server/wiki/Staff-Conduct]]
-* [[https://github.com/LandSandBoat/server/wiki/LSB-Servers|LSB Private Servers]]
+* [[LSB Private Servers|https://github.com/LandSandBoat/server/wiki/LSB-Servers]]
 * [Resources](https://github.com/LandSandBoat/server/wiki/Resources)
