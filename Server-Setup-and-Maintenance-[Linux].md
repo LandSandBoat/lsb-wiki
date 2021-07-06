@@ -66,10 +66,8 @@ git clone --recursive --single-branch --branch canary https://github.com/LandSan
 
 Go inside the project's folder and compile the source code
 ```
-cd topaz
-mkdir build
-cd build
-cmake ..
+cd server
+cmake .
 make -j $(nproc)
 ```
   * Note: If you had to upgrade to g++-9 it may be necessary to supply the compiler flag when using cmake.
