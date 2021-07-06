@@ -15,7 +15,6 @@
   * [Database Management](https://github.com/LandSandBoat/server/wiki/Database-Management)
   * [Debugging](https://github.com/LandSandBoat/server/wiki/Debugging)
 * [Development](https://github.com/LandSandBoat/server/wiki/Development)
-* [Project Meta](https://github.com/LandSandBoat/server/wiki/Project-Meta)
-  * [[Contributor Conduct|https://github.com/LandSandBoat/server/wiki/Contributor-Conduct]]
+* [[Contributor Conduct|https://github.com/LandSandBoat/server/wiki/Contributor-Conduct]]
 * [[LSB Private Servers|https://github.com/LandSandBoat/server/wiki/LSB-Servers]]
 * [Resources](https://github.com/LandSandBoat/server/wiki/Resources)
