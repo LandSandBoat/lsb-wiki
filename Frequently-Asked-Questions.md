@@ -88,7 +88,7 @@ enum ZONEMISC
 </p>
 </details>
 
-## What is Darkstar Project (DSP), or Project Topaz (TPZ)?
+## What is Darkstar Project (DSP), Project Topaz (TPZ), or Topaz Next? What happened to them?
 See the project history page [here](https://github.com/LandSandBoat/server/wiki/Project-History) for more details.
 
 ## Why is the airship in Sauromugue Champaign skidding along the ground like a land speeder?
