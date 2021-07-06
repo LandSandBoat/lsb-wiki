@@ -1,6 +1,6 @@
 **WORK IN PROGRESS**
 
-**So you want to develop for Topaz Next huh? (or forks and related projects)**
+**So you want to develop for LandSandBoat huh? (or forks and related projects)**
 
 In this series of articles we're going to go over common concerns, tips and tricks, and examples you'll find useful on your journey. The topics are organized (roughly) from general and beginner-friendly, to specific and advanced.
 
