@@ -24,7 +24,7 @@ Not yet implemented.
 See: [What Works?](https://github.com/LandSandBoat/server/wiki/What-Works)
 
 ## The code for feature X is available in the community, why haven't you taken it?
-Features in Topaz Next are those that have been submitted to us, meet our standards for quality and accuracy, and that we have had the time to review and integrate with the rest of the codebase. It is very rare that we will accept code on someone else's behalf. While there is technically nothing stopping us, it would undermine our position in the community.
+Features in LandSandBoat are those that have been submitted to us, meet our standards for quality and accuracy, and that we have had the time to review and integrate with the rest of the codebase. It is very rare that we will accept code on someone else's behalf. While there is technically nothing stopping us, it would undermine our position in the community.
 
 Similarly, sending us code snippets creates more work and strain on staff and developers. If you have code you want to contribute, please speak to us on Discord and open a Pull Request.
 
@@ -89,11 +89,7 @@ enum ZONEMISC
 </details>
 
 ## What is Darkstar Project (DSP), or Project Topaz (TPZ)?
-Project Topaz was the FFXI server codebase the Topaz Next forked from.
-Darkstar Project was the FFXI server codebase which Project Topaz forked from.
-Neither are still being actively developed.
-
-More project history [here](https://github.com/LandSandBoat/server/wiki/Project-History).
+See the project history page [here](https://github.com/LandSandBoat/server/wiki/Project-History) for more details.
 
 ## Why is the airship in Sauromugue Champaign skidding along the ground like a land speeder?
 It's a feature, not a bug. 👀
