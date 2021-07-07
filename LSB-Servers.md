@@ -25,7 +25,7 @@ This server intends to "level up" and enable expansion content in stages, as hap
 * **Modified client?:** NO.
 * **Website:** https://supernovaffxi.wordpress.com/
 * **Other contact (Discord):** https://discord.gg/QBBdfQh
-* **[Promotional Video](https://youtu.be/lnUAg0Vylns) 
+* [**Promotional Video**](https://youtu.be/lnUAg0Vylns) 
 
 Come by and visit Supernova! We're a 75-era server based closely on Landsandboat code with some custom tweaks:
 
