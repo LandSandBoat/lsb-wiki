@@ -19,7 +19,7 @@ This server intends to "level up" and enable expansion content in stages, as hap
 * **Website:** http://www.demiurge.pw
 * **Other contact (Discord):** https://discord.gg/SSU3HMq
 
-#Supernova:
+# Supernova:
 
 * **Server address:** login.supernovaffxi.com
 * **Modified client?:** NO.
