@@ -27,7 +27,7 @@ This server intends to "level up" and enable expansion content in stages, as hap
 * **Other contact (Discord):** https://discord.gg/QBBdfQh
 * **[Promotional Video](https://youtu.be/lnUAg0Vylns) 
 
-Come by and visit Supernova! We're a 75-era server based closely on Topaz code with some custom tweaks:
+Come by and visit Supernova! We're a 75-era server based closely on Landsandboat code with some custom tweaks:
 
     • Challenging Prestige quest to unlock Mythic weapon skills
     • 64 fun, custom Zantetstuken missions to keep you on your toes
