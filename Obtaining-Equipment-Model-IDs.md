@@ -61,7 +61,7 @@ So now scroll down inside the top-right box and you might see something like thi
 
 ![PC Update packet with no model information](https://i.imgur.com/Fx1Q4Vo.png)
 
-If the model information is `None < = 0 (0x0000)` like displayed above, we did not capture the appearance of the player with the selected PC Update packet. Hopefully you have more of them in the list on the left. If not, you'll have to attempt logging the packet again.
+If the model information is `None < = 0 (0x0000)` like displayed above, we did not capture the appearance of the player with the selected PC Update packet. Hopefully you have more PC Update entries in the list on the left. If not, you'll have to attempt logging the packet again.
 
 However, if the information is like below and it's of the target character, then great job! You've most likely obtained the right model, unless they swapped gear again during logging. This is why running PacketViewer only when required is a good idea to help eliminate additional noise.
 
