@@ -1,4 +1,4 @@
-This is a simple guide on how to obtain equipment model IDs from retail to implement new items for LandSandBoat.
+This is a simple guide on how to obtain equipment model IDs from retail to implement new items for LandSandBoat. There's a lot of words here, but it really is a simple process.
 
 ### Required Software
 
