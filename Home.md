@@ -26,11 +26,8 @@ Information for new server administrators.
 Information for developers who work on LSB.
 - [Development Landing Page](https://github.com/LandSandBoat/server/wiki/Development)
 
-# [Project Meta](https://github.com/LandSandBoat/server/wiki/Project-Meta)
-Information relating to the "meta" of LSB - like project goals, codes of conduct, project roadmaps, and licensing information.
-- [[Project Focus|https://github.com/LandSandBoat/server/wiki/Project-Focus]]
-- [[Contributor Conduct|https://github.com/LandSandBoat/server/wiki/Contributor-Conduct]]
-- [[Staff Conduct|https://github.com/LandSandBoat/server/wiki/Staff-Conduct]]
+# [[Contributor Conduct|https://github.com/LandSandBoat/server/wiki/Contributor-Conduct]]
+All participants are expected to abide by our CoC. Please be sure to review it. It's fairly sane.
 
 # Server List
 [[List of known public LSB servers|LSB-Servers]]. Useful if you want to join one, or test it out before setting up your own.
