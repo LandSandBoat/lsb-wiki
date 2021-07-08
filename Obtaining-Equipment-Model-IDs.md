@@ -31,7 +31,7 @@ For future reference in other utilization of PacketViewer, you may want to do `/
 
 When a player character is either first drawn for your client or when they change their visible gear, that information is sent to your client from the server. Any other time their character needs updated while nearby, the server doesn't send any additional information about that player's gear models because it would be unnecessary.
 
-Knowing that, it's obvious we ether need to capture the moment they're first introduced to your client or when they swap from another appearance of the target slot to the desired piece. 
+Knowing that, it's obvious we either need to capture the moment they're first introduced to your client or when they swap from another appearance of the target slot to the desired piece. 
 
 With incoming packets being logged to file, orchestrate for either of these to occur. If the player is idle with the desired item displayed, you may need to go the extra mile and zone back into the area and approach them until they are drawn onscreen again. Sometimes simply exiting draw distance range and returning isn't enough to have a fresh packet sent to your client with their visual information.
 
