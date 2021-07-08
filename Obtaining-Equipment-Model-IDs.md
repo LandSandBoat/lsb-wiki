@@ -37,6 +37,8 @@ With incoming packets being logged to file, orchestrate for either of these to o
 
 With your packet captured, now we move to the final task to obtain the appropriate model ID for your item. You can now unload PacketViewer with a simple `//lua u packetviewer` to stop writing new packets to disk and adding information we don't need to the mix.
 
+**Note: If you've used PacketViewer previously, you may want to first cleanup prior data by archiving it elsewhere or deleting it.**
+
 ### Examining the Packet with PacketViewerLogViewer
 
 Now navigate to where you've placed PacketViewerLogViewer (PVLV) and load the program `PVLV.exe`. You will be confronted with a screen that looks like this.
