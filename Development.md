@@ -2,7 +2,7 @@
 Articles in this category are designed to familiarize the reader with git, GitHub, and contributing back to the project!
 
   * [Using Github](https://github.com/LandSandBoat/server/wiki/Using-Github)
-  * [Style Guide](https://github.com/LandSandBoat/server/blob/release/CONTRIBUTING.md#style-guide)
+  * [Style Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md#style-guide)
 
 # Guides and Articles
 Articles in this category are guides covering specific subject matter. They're intended to familiarize the reader on certain aspects of developing for the codebase.
