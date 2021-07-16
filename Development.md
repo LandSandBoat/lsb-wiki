@@ -14,7 +14,7 @@ Articles in this category are guides covering specific subject matter. They're i
   * [Performance Profiling with Tracy](https://github.com/LandSandBoat/server/wiki/Performance-Profiling-with-Tracy)
   * [Sol Refactor](https://github.com/LandSandBoat/server/wiki/Sol-Refactor)
   * [Does -ffast-math matter?](https://github.com/LandSandBoat/server/wiki/Does--ffast-math-matter%3F)
-  * [[Interaction-Framework-Documentation]]
+  * [Interaction Framework Documentation](Interaction-Framework-Documentation)
 
 # General Development
 Articles in this category are general development topics, relating to overall development processes and tools.
