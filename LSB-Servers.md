@@ -38,6 +38,8 @@ This server intends to "level up" and enable expansion content in stages, as hap
     • Case, Satchel and Wardrobe 1 & 2
     • Level Sync Working Without Restrictions.
     • Increased Auction House slots
+    • Timed spawn HNMS
+    • No Octave clubs
     • Enterprise grade backups
     • Server protected by Uninterruptable Power Supply with generator on hand
 
