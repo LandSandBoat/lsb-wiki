@@ -19,6 +19,28 @@ This server intends to "level up" and enable expansion content in stages, as hap
 * **Website:** http://www.demiurge.pw
 * **Other contact (Discord):** https://discord.gg/SSU3HMq
 
+# Made to Raid:
+
+* **Server address:** ffxi.madetoraid.com
+* **Modified client?:** No
+* **Website:** [https://ffxi.madetoraid.com](https://ffxi.madetoraid.com)
+* **Other contact (Discord):** [https://discord.gg/6VVNNEf](https://discord.gg/6VVNNEf)
+
+75-era server based on Landsandboat code. Up to Treasures of Aht Urghan enabled. Custom tweaks and quality of life options enabled:
+
+    • HP Crystals
+    • Mounts
+    • Trusts
+    • Movement speed matches current retail
+    • Festive Moogle gives out unique rewards based on play time
+    • Synthesis skill up rate increased
+    • Web site tools to manage account, view character data, manage auction house listings, item search and more
+    • Case, Satchel and Wardrobe 1 & 2
+    • Level Sync Working Without Restrictions.
+    • Increased Auction House slots
+    • Enterprise grade backups
+    • Server protected by Uninterruptable Power Supply with generator on hand
+
 # Supernova:
 
 * **Server address:** login.supernovaffxi.com
