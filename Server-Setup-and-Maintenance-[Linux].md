@@ -66,7 +66,7 @@ git clone --recursive --single-branch --branch canary https://github.com/LandSan
 
 Go inside the project's folder and compile the source code
 ```
-cd topaz
+cd server
 mkdir build
 cd build
 cmake ..
