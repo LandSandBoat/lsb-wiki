@@ -10,6 +10,14 @@ All content comes from the "everything" branch, no custom modifications are in p
 * **Website:** [http://topaz.catsangel.com](http://topaz.catsangel.com)
 * **Other contact (Discord):** [https://discord.gg/3MMnnx4](https://discord.gg/3MMnnx4)
 
+# Catseyexi:
+
+75 cap, with accelerated exp agains through RoE, quality of life improvements, trusts system, pvp 
+
+* **Server address:** server.catseyexi.com
+* **Website:** http://catseyexi.com/
+* **Other contact (Discord):** https://discord.gg/Xge4v6cyA3
+
 # Demiurge:
 
 This server intends to "level up" and enable expansion content in stages, as happened with retail. It is presently 75 capped and stops at Chains of Promathia. There is heavy customization, with a lot of stuff that doesn't exist in any version of the retail game. Custom monster, NMs, NPCs, and seasonal events, even made up systems and game mechanics. The owner values creativity over adherence to any past era of the game.
