@@ -1,4 +1,9 @@
-== Common issues ==
+== Common Tasks ==
+=== Generating LandSandBoat patch notes  ===
+You can use <code>tools/generate_changelog.py</code> to generate patch notes from LandSandBoat to publish as-is, or to supplement your own patch notes.
+By default, <code>tools/generate_changelog.py</code> will generate patch notes for the last 14 days, but it accepts an argument if you wanted to use an arbitrary number of days: <code>tools/generate_changelog.py 30</code> will generate 30 days. We automatically generate and store patch notes on the 1st and 15th day of the month, and store them here: https://github.com/LandSandBoat/server/tree/website/changelogs.
+
+== Common Issues ==
 === Gil not sent to the Delivery Box from the Auction House  ===
 One possible fix: Execute HeidiSQL > select your session and connect to it > select "tpzdb" > File > Run SQL file... > select the triggers.sql file from the \topaz\sql folder > Open.
 
