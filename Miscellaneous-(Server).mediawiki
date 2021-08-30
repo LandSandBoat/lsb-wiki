@@ -259,3 +259,18 @@ and add the following line:
 player:addLinkpearl("YOURLS", true)
 ```
 Replace <code>YOURLS</code> with the name of your linkshell, and the second parameter <code>true</code> will equip the linkpearl in slot 2. Change to <code>false</code> if you want to just place it in the inventory without equipping.
+
+=== Announce to entire server when a player logs in ===
+At the end of <code>LoadChar(...)</code> in <code>src/map/utils/charutils.cpp</code> you can add the following snippet to announce when a player logs in for the first time in their play session:
+```cpp
+        if (zoning == 2)
+        {
+            // Send message to all logged in players
+            zoneutils::ForEachZone([&](CZone* PZone) {
+                PZone->ForEachChar([&](CCharEntity* PLoggedInChar) {
+                    PLoggedInChar->pushPacket(new CChatMessagePacket(PLoggedInChar, CHAT_MESSAGE_TYPE::MESSAGE_SYSTEM_1,
+                        fmt::format("{} has logged into the server.", PChar->GetName())));
+                });
+            });
+        }
+```
