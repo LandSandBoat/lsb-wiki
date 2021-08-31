@@ -1,5 +1,3 @@
-
-
 ## What works? Is quest X implemented?
 [What Works?](https://github.com/LandSandBoat/server/wiki/What-Works)
 
@@ -14,6 +12,9 @@ All available GM commands, with descriptions and the level of GM they require, c
 
 ## When will feature X arrive?
 We practice [clean room engineering](https://en.wikipedia.org/wiki/Clean_room_design), which means we have to implement everything from scratch. As such, progress is slow. We are also trying to balance feature development, bugfixes, performance improvements, exploit resolution, code review, and testing.
+
+## Can I use Trust: X, why doesn't Trust: Y do anything?
+Go check their status [here](https://github.com/LandSandBoat/server/wiki/Trusts).
 
 ## Can I pay someone to implement feature X?
 We will never accept financial or material incentives for our work. This is a hobby project. External incentives would drive developer and staff time in a way that makes it no longer a hobby.
