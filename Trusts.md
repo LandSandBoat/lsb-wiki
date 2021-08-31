@@ -6,63 +6,64 @@
 | ⛔ | Partially Implemented (Playable, Most things missing) |
 | ❌ | Unimplemented (Will just stand around) |
 
-### This page is only for tracking Trust combat logic, not whether they obtainable or not. This assumes you have access to them through GM commands or otherwise (`!addalltrusts`).
+**This page is only for tracking Trust combat logic, not whether they obtainable or not. This assumes you have access to them through GM commands or otherwise (`!addalltrusts`).**
 
 ## General Notes
 - All mages are very MP-hungry
 - Spell selection is very simple
-- Trusts don't track if their spells were resisted, or if they might get resisted
+- Trusts don't track elemental resistances.
+- As above, Trusts don't track if their spells were resisted, or if they might get resisted
 - Melee trusts don't get access to TP skills that can form Light/Dark skillchains until Lv60, unless that's the only skill they have.
-
+- The default TP/SC behaviour is ASAP + Random (Use TP ASAP, pick a random valid skill from your list).
 ***
 
 ### San d'Oria
-| Name | Status | Notes |
-|---|---|---|
-| Excenmille | ✔️ | |
-| Curilla | ✔️ | |
-| Trion | ✔️ | |
+| Name | Status | TP Behaviour | SC Behaviour | Notes |
+|---|---|---|---|---|
+| Excenmille | ✔️ | | | |
+| Curilla | ✔️ | | | | |
+| Trion | ✔️ | | | | |
 
 ### Bastok
-| Name | Status | Notes |
-|---|---|---|
+| Name | Status | TP Behaviour | SC Behaviour | Notes |
+|---|---|---|---|---|
 | Naji | ✔️ | |
 | Ayame | ✔️ | |
-| Iron Eater | ⚠️ | Missing specific logic |
-| Volker | ⚠️ | Missing specific logic |
+| Iron Eater | ⚠️ | | | Missing specific logic |
+| Volker | ⚠️ | | | Missing specific logic |
 
 ### Windurst
-| Name | Status | Notes |
-|---|---|---|
+| Name | Status | TP Behaviour | SC Behaviour | Notes |
+|---|---|---|---|---|
 | Kupipi| ✔️ | |
-| Nanaa Mihgo | ✔️ | Despoil log message is broken |
+| Nanaa Mihgo | ✔️ | | | Despoil log message is broken |
 | Ajido-Marujido | ✔️ | |
 | Shantotto | ✔️ | |
 
 ### Jeuno
-| Name | Status | Notes |
-|---|---|---|
-| Maat | ⛔ | Needs captures of special TP skills |
+| Name | Status | TP Behaviour | SC Behaviour | Notes |
+|---|---|---|---|---|
+| Maat | ⛔ | | | Needs captures of special TP skills |
 
 ### Chains of Promathia
-| Name | Status | Notes |
-|---|---|---|
+| Name | Status | TP Behaviour | SC Behaviour | Notes |
+|---|---|---|---|---|
 | Cherukiki | ❌ | |
 | Prishe | ❌ | |
 | Ulmia | ❌ | |
 | Shikaree Z | ❌ | |
 
 ### Treasures of Aht Urhgan
-| Name | Status | Notes |
-|---|---|---|
+| Name | Status | TP Behaviour | SC Behaviour | Notes |
+|---|---|---|---|---|
 | Gadalar | ❌ | |
 | Gessho | ❌ | |
 | Nashmeira | ❌ | |
 | Zazarg | ❌ | |
 
 ### Wings of the Goddess
-| Name | Status | Notes |
-|---|---|---|
+| Name | Status | TP Behaviour | SC Behaviour | Notes |
+|---|---|---|---|---|
 | Excenmille (S) | ❌ | |
 | Klara | ❌ | |
 | Lilisette | ❌ | |
@@ -70,8 +71,8 @@
 | Romaa Mihgo | ❌ | |
 
 ### Seekers of Adoulin
-| Name | Status | Notes |
-|---|---|---|
+| Name | Status | TP Behaviour | SC Behaviour | Notes |
+|---|---|---|---|---|
 | Arciela  | ❌ | |
 | August | ❌ | |
 | Chacharoon | ❌ | |
@@ -80,8 +81,8 @@
 | Ygnas | ❌ | |
 
 ### Rhapsodies of Vana'diel
-| Name | Status | Notes |
-|---|---|---|
+| Name | Status | TP Behaviour | SC Behaviour | Notes |
+|---|---|---|---|---|
 | Abquhbah | ❌ | |
 | Arciela II | ❌ | |
 | Balamor | ❌ | |
@@ -95,11 +96,11 @@
 | Selh'teus | ❌ | |
 | Semih Lafihna | ❌ | |
 | Tenzen II | ❌ | |
-| Zeid II | ⚠️ | Implemented very quickly, probably missing things |
+| Zeid II | ⚠️ | | | Implemented very quickly, probably missing things |
 
 ### Unity Concord
-| Name | Status | Notes |
-|---|---|---|
+| Name | Status | TP Behaviour | SC Behaviour | Notes |
+|---|---|---|---|---|
 | Aldo (UC) | ❌ | |
 | Apururu (UC) | ❌ | |
 | Ayame (UC) | ❌ | |
@@ -113,8 +114,8 @@
 | Yoran-Oran (UC) | ❌ | |
 
 ### Repeat Login Campaigns
-| Name | Status | Notes |
-|---|---|---|
+| Name | Status | TP Behaviour | SC Behaviour | Notes |
+|---|---|---|---|---|
 | Abenzio | ❌ | |
 | Areuhat | ❌ | |
 | Brygid | ❌ | |
@@ -132,7 +133,7 @@
 | Robel-Akbel | ❌ | |
 | Rongelouts | ❌ | |
 | Rughadjeen  | ❌ |
-| Shantotto II | ⛔ | No TP moves |
+| Shantotto II | ⛔ | | | No TP moves |
 | Star Sibyl | ❌ | |
 | Teodor | ❌ | |
 | Uka Totlihn | ❌ | |
@@ -140,18 +141,18 @@
 | Zeid | ❌ | |
 
 ### Records of Eminence
-| Name | Status | Notes |
-|---|---|---|
-| Adelheid | ⛔ | No Scholar abilities/spells |
-| Joachim | ⛔ | Song selection is hard-coded |
+| Name | Status | TP Behaviour | SC Behaviour | Notes |
+|---|---|---|---|---|
+| Adelheid | ⛔ | | | No Scholar abilities/spells |
+| Joachim | ⛔ | | | Song selection is hard-coded |
 | Koru-Moru | ✔️ | |
-| Mihli Aliapoh | ⚠️ | Implemented very quickly, probably missing things |
-| Tenzen | ⚠️ | Implemented very quickly, probably missing things |
-| Valaineral | ⚠️ | Implemented very quickly, probably missing things |
+| Mihli Aliapoh | ⚠️ | | | Implemented very quickly, probably missing things |
+| Tenzen | ⚠️ | | | Implemented very quickly, probably missing things |
+| Valaineral | ⚠️ | | | Implemented very quickly, probably missing things |
 
 ### Alter Ego Extravaganzas
-| Name | Status | Notes |
-|---|---|---|
+| Name | Status | TP Behaviour | SC Behaviour | Notes |
+|---|---|---|---|---|
 | Amchuchu | ❌ | |
 | Cid | ❌ | |
 | Elivira | ❌ | |
@@ -171,11 +172,11 @@
 | Ovjang | ❌ | |
 | Qultada | ❌ | |
 | Rahal | ❌ | |
-| Sakura | ⚠️ | Immortal, but still can get hit by things when it shouldn't |
+| Sakura | ⚠️ | | | Immortal, but still can get hit by things when it shouldn't |
 
 ### Other Events
-| Name | Status | Notes |
-|---|---|---|
+| Name | Status | TP Behaviour | SC Behaviour | Notes |
+|---|---|---|---|---|
 | AAEV | ❌ | |
 | AAGK  | ❌ | |
 | AAHM | ❌ | |
@@ -183,10 +184,10 @@
 | AATT | ❌ | |
 | Aldo | ❌ | |
 | Babban | ❌ | |
-| Cornelia | 💀 | Unsummonable: SE removed from the game |
+| Cornelia | 💀 | | | Unsummonable: SE removed from the game |
 | Fablinix | ❌ | |
 | Kupofried | ❌ | |
-| Matsui-P | 💀 | Unsummonable: SE removed from the game |
+| Matsui-P | 💀 | | | Unsummonable: SE removed from the game |
 | Monberaux | ❌ | |
 | Moogle | ❌ | |
 | Mumor | ❌ | |
