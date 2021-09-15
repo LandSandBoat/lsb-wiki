@@ -10,7 +10,7 @@
 
 ## General Notes
 - All mages are very MP-hungry
-- Spell selection is very simple
+- Spell selection is very simple and doesn't account for weaknesses/immunities/absorbs.
 - Trusts don't track elemental resistances.
 - As above, Trusts don't track if their spells were resisted, or if they might get resisted
 - Melee trusts don't get access to TP skills that can form Light/Dark skillchains until Lv60, unless that's the only skill they have.
@@ -43,7 +43,7 @@
 ### Jeuno
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
-| Maat | ⛔ | | | Needs captures of special TP skills |
+| Maat | ✔️ | | | |
 
 ### Chains of Promathia
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
@@ -67,7 +67,7 @@
 | Excenmille (S) | ❌ | |
 | Klara | ❌ | |
 | Lilisette | ❌ | |
-| Rainemard | ❌ | |
+| Rainemard | ✔️ | En-spell selection is hard-coded |
 | Romaa Mihgo | ❌ | |
 
 ### Seekers of Adoulin
