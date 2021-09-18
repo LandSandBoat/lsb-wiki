@@ -136,7 +136,7 @@
 | Shantotto II | ⛔ | | | No TP moves |
 | Star Sibyl | ❌ | |
 | Teodor | ❌ | |
-| Uka Totlihn | ❌ | |
+| Uka Totlihn | ✔️ | |
 | Ullegore | ❌ | |
 | Zeid | ❌ | |
 
