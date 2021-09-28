@@ -69,3 +69,22 @@ If returning a container from C++ into Lua, it will be treated as userdata, not 
 In the interests of keeping the Lua layer consistent, it is preferable to create a table with `auto table = luautils::lua.create_table();`, populate it, and then return that to Lua. This allows you to continue using `pairs(container)`.
 
 **NOTE**: Creating a raw `sol::table` doesn't work. It appears as though the table type is some sort of voodoo with no inherent link to the Lua state, unless you create it that way. Use `lua.create_table()`!
+
+### lua_Number truncation
+```cpp
+// sol changes this behaviour to return 0 rather than truncating
+// we rely on that, so change it back
+#undef lua_tointeger
+#define lua_tointeger(L, n) static_cast<lua_Integer>(std::floor(lua_tonumber(L, n)))
+```
+https://github.com/LandSandBoat/server/blob/base/src/map/lua/luautils.h#L37-L40
+
+### Build flags
+```cmake
+# Globally define SOL_ALL_SAFETIES_ON so sol can be included anywhere
+# If SOL_NO_CHECK_NUMBER_PRECISION is defined, turns off number precision and integer
+# precision fitting when pushing numbers into sol
+# add_compile_definitions() comes with CMake 3.12
+add_definitions(-DSOL_ALL_SAFETIES_ON=1 -DSOL_NO_CHECK_NUMBER_PRECISION=1)
+```
+https://github.com/LandSandBoat/server/blob/base/CMakeLists.txt#L68-L72
