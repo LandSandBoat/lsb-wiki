@@ -111,6 +111,9 @@ _***Please** keep in mind we're still a small crew, and one of the reasons Proje
 
 This work enables basic Lua modules. If you know what you're doing, you can start writing them _today_ by overwriting cache entries. If you're not sure, we'll have some small examples out sometime soon.
 
+### Help?
+If you are going to undertake a similar process to this, we've captured some of the more insidious gotchas in the [Lua gotchas page](https://github.com/LandSandBoat/server/wiki/Lua-Guide-and-Gotchas).
+
 ## Licensing
 
 This work is licensed under [GNU General Public License v3.0](https://github.com/LandSandBoat/server/blob/release/LICENSE), the same license as everything else. Please use it with our blessing!
