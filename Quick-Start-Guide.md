@@ -127,4 +127,38 @@
     ```
 </details>
 
+<details>
+  <summary>OSX</summary>
+  
+## To Install
+  
+* Get dependencies from brew:
+
+```
+brew install git pkg-config autoconf make cmake gcc openssl mariadb zeromq zmqpp
+```
+
+* The version of LuaJIT that you can get through brew is old. You can build and install LuaJIT for your system with:
+
+```
+git clone https://github.com/LuaJIT/LuaJIT.git
+cd LuaJIT
+sudo make install MACOSX_DEPLOYMENT_TARGET=$(sw_vers -productVersion) -j $(sysctl -n hw.physicalcpu)
+sudo ln -sf luajit-2.1.0-beta3 /usr/local/bin/luajit
+```
+
+* Download and build the server binaries:
+
+```
+git clone --recursive https://github.com/LandSandBoat/server.git
+mkdir build
+cd build
+cmake ..
+make -j $(sysctl -n hw.physicalcpu)
+```
+
+From here, the instructions are the same as the Linux builds. Good luck!
+
+</details>
+
 **Next Step: [Post-Install Guide](https://github.com/LandSandBoat/server/wiki/Post-Install-Guide)**
