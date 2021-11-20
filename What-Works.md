@@ -19,7 +19,7 @@ This list is free for anyone to update and is very probably out of date, feel fr
 |---|---|
 | ❌ | GEO, RUN |
 | ⚠️ | SMN, BLU |
-| ⛔ | PUP |
+| ⚠️ | PUP |
 | ✔️ | All others (up to Lv75) |
 | ❔ | All others (post-75) |
 
