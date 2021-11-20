@@ -36,7 +36,7 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/missions.lua
 | ✔️ | Chains of Promathia | |
 | ⚠️ | Treasures of Aht Urhgan | Some bugs and broken cutscenes |
 | 🐤 | Wings of the Goddess | Up to WOTG 08 (mainline missions only, nation quest status unknown) |
-| ⛔ | Seekers of Adoulin | Up to SOA 2-7-3 |
+| 🐤 | Seekers of Adoulin | Up to SOA 2-7-3 |
 | ⛔ | A Crystalline Prophecy | Up to ACP 04 |
 | 🐤 | A Moogle Kupo d'Etat | Up to AMK 08 |
 | ⛔ | A Shantotto Ascension | Up to ASA 03 |
