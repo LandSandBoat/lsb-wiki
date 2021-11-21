@@ -1,3 +1,5 @@
+# Main Supported Platforms
+
 <details>
   <summary>Windows 10</summary>
   
@@ -45,7 +47,7 @@
 </details>
 
 <details>
-  <summary>Linux</summary>
+  <summary>Linux (Debian/Ubuntu)</summary>
   
   ## To Install
   * Use your package manager to install the following packages or their equivalent:
@@ -127,6 +129,10 @@
     ```
 </details>
 
+# Experimental Platforms
+
+_These platforms should work but are not actively maintained or used by the development team. The development team (especially in the case of OSX) might not have the hardware or expertise to be able to help you debug problems on these platforms. Use at your own risk. Good luck!_
+
 <details>
   <summary>OSX</summary>
   
@@ -159,6 +165,33 @@ make -j $(sysctl -n hw.physicalcpu)
 
 From here, the instructions are the same as the Linux builds. Good luck!
 
+NOTE: You may have problems with missing symbols from LuaJIT. This happens if the build system picks up LuaJIT's headers instead of our internal (and expected) ones. We discovered this in [this discussion](https://github.com/LandSandBoat/server/discussions/1015).
+
+In your CMake configuration, you should see this:
+```
+-- LuaJIT_FOUND: TRUE
+-- LuaJIT_LIBRARY: /usr/local/lib/libluajit-5.1.dylib
+-- LuaJIT_INCLUDE_DIR: /Users/runner/work/server/server/ext/lua/include
+```
+
+If the `LuaJIT_INCLUDE_DIR` is pointing somewhere other than `<SERVER_ROOT>/server/server/ext/lua/include`, you can change it during CMake configuration by using:
+```
+cmake .. -DLuaJIT_INCLUDE_DIR=<SERVER_ROOT>/server/ext/lua/include
+```
+
 </details>
 
-**Next Step: [Post-Install Guide](https://github.com/LandSandBoat/server/wiki/Post-Install-Guide)**
+<details>
+  <summary>Linux (Arch)</summary>
+
+  - TODO
+</details>
+
+<details>
+  <summary>Docker</summary>
+
+  - TODO
+</details>
+
+## Next Steps:
+- [Post-Install Guide](https://github.com/LandSandBoat/server/wiki/Post-Install-Guide)
