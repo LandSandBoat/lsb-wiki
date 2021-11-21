@@ -185,6 +185,17 @@ cmake .. -DLuaJIT_INCLUDE_DIR=<SERVER_ROOT>/server/ext/lua/include
   <summary>Linux (Arch)</summary>
 
   - TODO
+```
+// Arch Container (for reference)
+FROM archlinux:latest
+WORKDIR /server
+RUN echo "Y" | pacman -Syu
+RUN echo "Y" | pacman -S sudo
+RUN sudo echo "Y" | pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl zlib mariadb
+ADD . /server
+RUN mkdir docker_build && cd docker_build && cmake .. && make -j $(nproc)  && cd .. && rm -r /server/docker_build
+```
+
 </details>
 
 <details>
