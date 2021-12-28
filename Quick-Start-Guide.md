@@ -183,8 +183,8 @@ cmake .. -DLuaJIT_INCLUDE_DIR=<SERVER_ROOT>/server/ext/lua/include
 
 <details>
   <summary>Linux (Arch)</summary>
+Some users have had success building on Arch, we've been able to reproduce a build using the Docker file below. We can't and won't support Arch as main platform. Good luck!
 
-  - TODO
 ```
 // Arch Container (for reference)
 FROM archlinux:latest
@@ -201,13 +201,19 @@ RUN mkdir docker_build && cd docker_build && cmake .. && make -j $(nproc)  && cd
 <details>
   <summary>Linux (Raspberry Pi)</summary>
 
-  - TODO
+**Raspberry Pi 3**
+
+Build instructions should be the same or similar as a regular Linux build. The build process may take a long time, but running the game doesn't take much computing power. You should use a suitably powerful and stable power supply!
+
+**Raspberry Pi 4**
+
+As above, the instructions should be the same as a regular Linux build, with one exception: You must use a suitably modern version of LuaJIT. This comes by default with Ubuntu 21.04 onwards. Or you can build LuaJIT from source (see our OSX build for more details). You should use a suitably powerful and stable power supply!
+
 </details>
 
 <details>
   <summary>Docker</summary>
-
-  - TODO
+We have had users appear and write a Dockerfile for us. None of the main devs use Docker in our regular workflows and are not particularly familiar with workflows or best practices. We can't provide support if you decide to use it. Good luck!
 </details>
 
 ## Next Steps:
