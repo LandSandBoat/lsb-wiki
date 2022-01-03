@@ -16,6 +16,7 @@
     cp server/conf/default/* server/conf/
     ```
   * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `server/conf/` and change `mysql_password` to the password set during MariaDB setup.
+  * Copy the file "main.lua" inside server/scripts/settings/default to server/scripts/settings and edit it.
   * Back in your PowerShell window, move to `server/tools/` and build the database:
     ```
     cd server/tools
@@ -90,6 +91,7 @@
     sudo mysql -u root -p -e "CREATE USER 'xi'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE xidb;USE xidb;GRANT ALL PRIVILEGES ON xidb.* TO 'xi'@'localhost';"
     ```
   * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `server/conf/` and change `mysql_login`, `mysql_password`, and `mysql_database` to the information used above (_**xi**_, _**password**_, and _**xidb**_).
+  * Copy the file "main.lua" inside server/scripts/settings/default to server/scripts/settings and edit it.
   * In the `server` directory, prepare and build the executables:
     ```
     mkdir build
