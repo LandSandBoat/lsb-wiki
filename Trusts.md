@@ -133,7 +133,7 @@
 | Robel-Akbel | ❌ | |
 | Rongelouts | ❌ | |
 | Rughadjeen  | ❌ |
-| Shantotto II | ⛔ | | | No TP moves |
+| Shantotto II | ✔️ | | | |
 | Star Sibyl | ❌ | |
 | Teodor | ❌ | |
 | Uka Totlihn | ✔️ | |
