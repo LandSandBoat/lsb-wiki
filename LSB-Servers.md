@@ -18,6 +18,25 @@ All content comes from the "everything" branch, no custom modifications are in p
 * **Website:** http://catseyexi.com/
 * **Other contact (Discord):** https://discord.gg/Xge4v6cyA3
 
+# Dawnbreak:
+* **Server address:** dawnbreak.servegame.com
+* **Modified client?:** No
+* **Website:** Coming Soon
+* **Other contact (Discord): https://discord.gg/Jvkn8p7qrx**
+
+Generally Wings of The Goddess/Abyssea-era (Abyssea will be nerfed when it becomes enabled) with a few customizations and quality of life improvements. We're aiming to have:
+
+• 75 cap that may raise in the future, but if raised, the leveling experience will still be like it was in Wings of the Goddess. (Abyssea burns and books burns won't be a thing). Community will decide.
+• Mounts that can be purchased from NPCs once the chocobo license is unlocked. They'll be hidden in various vendors so you'll have to hunt for them.
+• Limited Trusts. At first with low population, we will have 3 trusts max, however when the population is more sustainable it will be only 1 trust and they will be nerfed so that partying with humans is still preferred.
+• Slightly weighted conquest system so that nations that end up in last place after a conquest tally will receive slightly more influence (does not affect CP) in regions. This way everyone doesn't have to be from Sandy to get outposts.
+• Explorer Moogles usable at level 1 so that you're not having to do that super long run to Dunes or your friends' starting nations.
+• Skill up rate slightly increased.
+• Exp rate slightly increased.
+• Mog Case matches your inventory size, Satchel unlocked, Wardrobes unlocked through missions
+• Level Sync Working Without Restrictions.
+• Increased Auction House slots (99 per person, listings last for 30 days)
+
 # Demiurge:
 
 This server intends to "level up" and enable expansion content in stages, as happened with retail. It is presently 75 capped and stops at Chains of Promathia. There is heavy customization, with a lot of stuff that doesn't exist in any version of the retail game. Custom monster, NMs, NPCs, and seasonal events, even made up systems and game mechanics. The owner values creativity over adherence to any past era of the game.
