@@ -19,23 +19,14 @@ All content comes from the "everything" branch, no custom modifications are in p
 * **Other contact (Discord):** https://discord.gg/Xge4v6cyA3
 
 # Dawnbreak:
+75 cap and Generally Wings of The Goddess era with some customization/quality of life improvements. (may change cap in the future, but if raised, the leveling experience will still be like it was in Wings of the Goddess - Abyssea burns / books burns won't be a thing. Community will decide.)
+
+Exp and skillup rates boosted. Limited Trusts. Partying with humans is still preferred. Unrestricted level sync enabled. Conquest system modified to boost weaker nations regional influence. Inventory such as wardrobes are unlocked and expended by custom means. Explorer moogle enabled at level 1. 99 AH slots expiry at 30 days. Mounts that can be purchased from NPCs once the chocobo license is unlocked. They'll be hidden in various vendors so you'll have to hunt for them.
+
 * **Server address:** dawnbreak.servegame.com
 * **Modified client?:** No
 * **Website:** Coming Soon
 * **Other contact (Discord): https://discord.gg/Jvkn8p7qrx**
-
-Generally Wings of The Goddess/Abyssea-era (Abyssea will be nerfed when it becomes enabled) with a few customizations and quality of life improvements. We're aiming to have:
-
-* 75 cap that may raise in the future, but if raised, the leveling experience will still be like it was in Wings of the Goddess. (Abyssea burns and books burns won't be a thing). Community will decide.
-* Mounts that can be purchased from NPCs once the chocobo license is unlocked. They'll be hidden in various vendors so you'll have to hunt for them.
-* Limited Trusts. At first with low population, we will have 3 trusts max, however when the population is more sustainable it will be only 1 trust and they will be nerfed so that partying with humans is still preferred.
-* Slightly weighted conquest system so that nations that end up in last place after a conquest tally will receive slightly more influence (does not affect CP) in regions. This way everyone doesn't have to be from Sandy to get outposts.
-* Explorer Moogles usable at level 1 so that you're not having to do that super long run to Dunes or your friends' starting nations.
-* Skill up rate slightly increased.
-* Exp rate slightly increased.
-* Mog Case matches your inventory size, Satchel unlocked, Wardrobes unlocked through missions
-* Level Sync Working Without Restrictions.
-* Increased Auction House slots (99 per person, listings last for 30 days)
 
 # Demiurge:
 
