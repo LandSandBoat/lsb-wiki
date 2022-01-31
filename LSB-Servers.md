@@ -1,15 +1,5 @@
 This is a listing of known public LandSandBoat servers. Feel free to edit the wiki and add yours here in alphabetical order and maintaining the same format, with a respectable description.
 
-# Canaria:
-
-Focus of this server is to have a good time, have access to the latest features of LSB, and enjoy the quality of life improvements (book/crystal teleport, ground/field of valor) that make this game fun to play in small or long sessions.
-
-All content comes from the "everything" branch, no custom modifications are in place.
-
-* **Server address:** topaz.catsangel.com
-* **Website:** [http://topaz.catsangel.com](http://topaz.catsangel.com)
-* **Other contact (Discord):** [https://discord.gg/3MMnnx4](https://discord.gg/3MMnnx4)
-
 # Catseyexi:
 
 75 cap, with accelerated exp agains through RoE, quality of life improvements, trusts system, pvp 
@@ -92,3 +82,14 @@ There are also Supernova-specific quests that can earn players some highly covet
 All jobs through the Wings of the Goddess expansion are available to play.
 
 Add to this a friendly player base and accessible staff who are ready to help be it in-game or on our discord server, we're confident that Supernova can be a place for any type of player. Come join in the fun!
+
+# xiweb:
+
+Focus of this server is to have a good time, have access to the latest features of LSB, and enjoy the quality of life improvements (book/crystal teleport, ground/field of valor) that make this game fun to play in small or long sessions.
+
+All content comes from the "everything" branch, no custom modifications are in place.
+
+* **Server address:** xiweb.catsangel.com
+* **Website:** [http://xiweb.catsangel.com](http://xiweb.catsangel.com)
+* **Other contact (Discord):** [https://discord.gg/3MMnnx4](https://discord.gg/3MMnnx4)
+
