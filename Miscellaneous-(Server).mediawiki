@@ -258,7 +258,7 @@ and add the following line:
 ```lua
 player:addLinkpearl("YOURLS", true)
 ```
-Replace <code>YOURLS</code> with the name of your linkshell, and the second parameter <code>true</code> will equip the linkpearl in slot 2. Change to <code>false</code> if you want to just place it in the inventory without equipping.
+Replace <code>YOURLS</code> with the name of your linkshell, and the second parameter <code>true</code> will equip the linkpearl in slot 2. Change to <code>false</code> if you want to just place it in the inventory without equipping. '''''NOTE THAT THE LINKSHELL MUST ALREADY EXIST FIRST.'''''
 
 === Announce to entire server when a player logs in ===
 At the end of <code>LoadChar(...)</code> in <code>src/map/utils/charutils.cpp</code> you can add the following snippet to announce when a player logs in for the first time in their play session:
