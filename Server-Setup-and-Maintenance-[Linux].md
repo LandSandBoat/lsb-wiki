@@ -158,7 +158,12 @@ Look for mysql_password: root and change it to mysql_password: topazisawesome
 
 Once that's changed press CONTROL + X, then press enter and hit Y to save the file
 
-* Ubuntu installs with unatteded-upgrades enabled by default, this will cause issues
+You should also copy the default game scripting settings and modify them to your preferences:
+```
+cp server/scripts/settings/default/* server/scripts/settings/
+```
+
+* Ubuntu installs with unattended-upgrades enabled by default, this will cause issues
 with mariadb restarting when an update is available, leaving the server without
 access to the database. To fix this run
   ```
