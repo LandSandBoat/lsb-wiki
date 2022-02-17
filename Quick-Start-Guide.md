@@ -14,6 +14,7 @@
     git clone --recursive https://github.com/LandSandBoat/server.git
     py -3 -m pip install -r server/tools/requirements.txt
     cp server/conf/default/* server/conf/
+    cp server/scripts/settings/default/* server/scripts/settings/
     ```
   * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `server/conf/` and change `mysql_password` to the password set during MariaDB setup.
   * Copy the file "main.lua" inside server/scripts/settings/default to server/scripts/settings and edit it.
@@ -81,6 +82,7 @@
     git clone --recursive https://github.com/LandSandBoat/server.git
     pip3 install -r server/tools/requirements.txt
     cp server/conf/default/* server/conf/
+    cp server/scripts/settings/default/* server/scripts/settings/
     ```
   * Run the following script to improve database security:
     ```
