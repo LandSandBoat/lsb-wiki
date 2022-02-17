@@ -62,6 +62,12 @@ then modify this line each time:
 
 (replace "root" with your MariaDB password)
 
+You should also do this copy process for the scripting settings:
+```
+Copy from: server/scripts/settings/default/*
+Into: server/scripts/settings/
+```
+
 ## 4. Preparing the database:
 
 In the `topaz\tools\` folder, right click + holding the Shift key > context menu: Open command window here/Open PowerShell window here.: then type:
