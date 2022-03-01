@@ -83,6 +83,15 @@ All jobs through the Wings of the Goddess expansion are available to play.
 
 Add to this a friendly player base and accessible staff who are ready to help be it in-game or on our discord server, we're confident that Supernova can be a place for any type of player. Come join in the fun!
 
+# Vana Skies:
+
+Placeholder description
+
+* **Server address:** www.vanaskiesffxi.com
+* **Modified client?:** NO
+* **Website:** [Placeholder](Placholder)
+* **Other contact (Discord):** [https://discord.gg/rQjzkpA](https://discord.gg/rQjzkpA)
+
 # xiweb:
 
 Focus of this server is to have a good time, have access to the latest features of LSB, and enjoy the quality of life improvements (book/crystal teleport, ground/field of valor) that make this game fun to play in small or long sessions.
