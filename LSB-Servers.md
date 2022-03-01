@@ -85,12 +85,39 @@ Add to this a friendly player base and accessible staff who are ready to help be
 
 # Vana Skies:
 
-Placeholder description
+Lvl 99 Cap with endgame ilvl content coming soon.
 
 * **Server address:** www.vanaskiesffxi.com
 * **Modified client?:** NO
-* **Website:** [Placeholder](Placholder)
 * **Other contact (Discord):** [https://discord.gg/rQjzkpA](https://discord.gg/rQjzkpA)
+
+    • EXP Rate: x4
+    • Drop Rate: x10
+    • Fame Rate: x3
+    • Skill-Up Rate: x5
+    • Craft Skill-Up Rate: x5
+    • Skill/Craft Multiplier: x5
+    • Starting Gil: 100,000 gil
+    • Start Inventory: 80
+    • Player TP Gain: x3
+    • Player HP / MP / Stats: x3
+    • Weapon Skill Damage: x4
+    • Healing tick speed: 5 seconds. (Instead of 10)
+    • No EXP loss upon death
+    • Battlefield Lvl Cap: 99
+    • Player Speed: 75% Faster than retail.(70)
+    • Mob Speed: normal
+    • Unlocked Subjob: Disabled.
+    • All Maps Unlocked: Enabled.
+    • Limit Break Quests: Disabled. Players are able to lvl straight to 99.
+    • All Outpost Warps Unlocked: Enabled.
+    • FoV / GoV: Enabled.
+    • FoV/Quest Exp: x4
+    • Explorer Moogle: Enabled and available at lvl 1.
+    • Homepoint Teleport: Enabled with healing upon touch.
+    • Survival Guides: Enabled.
+    • All Jobs have Widescan: Enabled.
+    • New Style Skill-Ups: Enabled. (Allows parry, block, and guard to skill up regardless of the action occurring) (edited)
 
 # xiweb:
 
