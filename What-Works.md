@@ -34,7 +34,7 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/missions.lua
 | ✔️ | Windurst | |
 | ✔️ | Rise of the Zilart | |
 | ✔️ | Chains of Promathia | |
-| ⚠️ | Treasures of Aht Urhgan | Some bugs and broken cutscenes |
+| ⚠️ | Treasures of Aht Urhgan | Completable. Retail accurate up to Mission 18. Rest in need of confirmation. |
 | 🐤 | Wings of the Goddess | Up to WOTG 08 (mainline missions only, nation quest status unknown) |
 | 🐤 | Seekers of Adoulin | Up to SOA 2-7-3 |
 | ⛔ | A Crystalline Prophecy | Up to ACP 04 |
