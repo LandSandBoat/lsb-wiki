@@ -91,6 +91,8 @@ Lvl 99 Cap with endgame ilvl content coming soon.
 * **Modified client?:** NO
 * **Other contact (Discord):** [https://discord.gg/rQjzkpA](https://discord.gg/rQjzkpA)
 
+Server Tweaks:
+
     • EXP Rate: x4
     • Drop Rate: x10
     • Fame Rate: x3
