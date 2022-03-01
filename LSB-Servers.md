@@ -119,7 +119,7 @@ Server Tweaks:
     • Homepoint Teleport: Enabled with healing upon touch.
     • Survival Guides: Enabled.
     • All Jobs have Widescan: Enabled.
-    • New Style Skill-Ups: Enabled. (Allows parry, block, and guard to skill up regardless of the action occurring) (edited)
+    • New Style Skill-Ups: Enabled. (Allows parry, block, and guard to skill up regardless of the action occurring)
 
 # xiweb:
 
