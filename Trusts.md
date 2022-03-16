@@ -57,7 +57,7 @@
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | Gadalar | ❌ | |
-| Gessho | ❌ | |
+| Gessho | ✔️ | |
 | Nashmeira | ❌ | |
 | Zazarg | ❌ | |
 
