@@ -16,6 +16,7 @@ Articles in this category are guides covering specific subject matter. They're i
   * [Does -ffast-math matter?](https://github.com/LandSandBoat/server/wiki/Does-ffast-math-flag-matter)
   * [Interaction Framework Documentation](Interaction-Framework-Documentation)
   * [Dummy System](https://github.com/LandSandBoat/server/wiki/Dummy-System)
+  * [Git Attribution](https://github.com/LandSandBoat/server/wiki/Git-Attribution)
 
 # General Development
 Articles in this category are general development topics, relating to overall development processes and tools.
