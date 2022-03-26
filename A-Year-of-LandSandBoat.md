@@ -53,7 +53,7 @@ These include:
 - All Windurst Missions
 - All Rise of the Zilart Missions
 - About half of Chains of Promathia Missions
-- All Treasures of Aht Urghan Missions
+- Nearly all Treasures of Aht Urghan Missions (45/48)
 - Chapters 1 & 2 of Seekers of Adoulin
 - Rhapsodies of Vana'diel Missions up to start of Chapter 2
 
