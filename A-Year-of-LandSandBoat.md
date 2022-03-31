@@ -93,6 +93,7 @@ We have a branch for Abyssea being worked on by claywar, building on the work of
 ### Crafting Recipes
 
 Back in Topaz times, many recipes were disabled, for several reasons, like... Recipe levels or resulting items not matching wikis, several being non-retail/custom recipes and even some obscure recipes used to exploit the system and level up skills easily.
+
 The idea behind it was to slowly audit them while also saving some trouble to server operators.
 
 Many recipes have been audited and re-enabled since then and many more will come.
