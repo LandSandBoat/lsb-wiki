@@ -33,7 +33,11 @@ Python and the MySQL Python Connector are needed and should already be installed
 
 Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/AdamGagorik/pydarkstar.git > OK > then Close when it's done.
 
-⚠ Running topaz-search.exe in the background (as administrator) is mandatory ⚠
+Its setup instructions (found [http://adamgagorik.github.io/pydarkstar/generated/setup.html '''HERE''']) are focused on a package manager named anaconda. The below instructions are focused on pip, which comes with the stock python installer. Anaconda may work better for you if the command line is scary.
+
+'''''Whichever you choose, it is important to note that LSB doesn't maintain or provide support for pydarkstar - its a nice thing that happens to work. PLEASE contact its author NOT US, for any that wasn't a direct result of us screwing up our guide! Thanks for your understanding.'''''
+
+''To get started via pip:''
 
 Right click + holding the Shift key > context menu: Open command window here/Open PowerShell window here, then type:
 ```
