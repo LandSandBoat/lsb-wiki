@@ -61,13 +61,15 @@ stock12: 5 (number of stacks items that will be restocked each tick)
 ```
 
 ==== Running ====
-1. Execute \pydarkstar\pydarkstar\bin\scrub.py to build up the items list from https://www.ffxiah.com/ (will take some time). Unfortunately you can't select the server from which the prices are pulled, if I'm correct Bahamut is the server by default. Rerun it if you want to update prices automatically.
+1. <s>Execute \pydarkstar\pydarkstar\bin\scrub.py to build up the items list from https://www.ffxiah.com/ (will take some time). Unfortunately you can't select the server from which the prices are pulled, if I'm correct Bahamut is the server by default. Rerun it if you want to update prices automatically.</s> '''''Do not run the scrape to get new prices from ffxiah. Just don't. The stock file was heavily edited to ensure you didn't create a gil printing press on your server.'''''
 
 2. Execute \pydarkstar\pydarkstar\bin\broker.py: Script that will automatically buy/sell stuff. Let it run in the background.
 
 Executing \pydarkstar\pydarkstar\bin\refill.py will restock items automatically.
 
 Editing prices manually: open \pydarkstar\bin\items.csv with a text editor (0 = non listed item, add them by referring to the IDs in \topaz\sql\item_equipment.sql if necessary) and change prices accordingly.
+
+
 
 HeidiSQL useful querys:
 ```
