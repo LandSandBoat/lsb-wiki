@@ -17,9 +17,7 @@ This list is free for anyone to update and is very probably out of date, feel fr
 # Jobs
 | Status | Jobs |
 |---|---|
-| ❌ | GEO, RUN |
-| ⚠️ | SMN, BLU |
-| ⚠️ | PUP |
+| ⚠️ | SMN, BLU, PUP, GEO, RUN |
 | ✔️ | All others (up to Lv75) |
 | ❔ | All others (post-75) |
 
