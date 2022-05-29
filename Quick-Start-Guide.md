@@ -186,6 +186,11 @@ cmake .. -DLuaJIT_INCLUDE_DIR=<SERVER_ROOT>/server/ext/lua/include
 </details>
 
 <details>
+  <summary>Linux (through WSL)</summary>
+[Working with WSL](https://github.com/LandSandBoat/server/wiki/Working-with-WSL)
+</details>
+
+<details>
   <summary>Linux (Arch)</summary>
 Some users have had success building on Arch, we've been able to reproduce a build using the Docker file below. We can't and won't support Arch as main platform. Good luck!
 
