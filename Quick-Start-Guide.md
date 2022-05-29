@@ -59,9 +59,9 @@
 
       ```
       sudo apt update
-      sudo apt install git python3 python3-pip g++-9 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev
+      sudo apt install git python3 python3-pip g++-10 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev
       ```
-    * **Debian 10/Ubuntu 18.04:** See the [Linux Setup Guide](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BLinux%5D#install) for information about upgrading to and building with g++-9.
+    * **Debian 10/Ubuntu 18.04:** See the [Linux Setup Guide](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BLinux%5D#install) for information about upgrading to and building with g++-10.
     </details>
     <details>
       <summary>Arch</summary>
