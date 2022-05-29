@@ -28,3 +28,10 @@ mysql_login:     root
 mysql_password:  root
 mysql_database:  xidb
 ```
+
+```
+cd server
+mkdir build
+cmake -S . -B build
+cmake --build build -j8
+```
