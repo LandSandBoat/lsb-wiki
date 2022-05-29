@@ -1,3 +1,12 @@
+It's better to clone your repo to somewhere like `/home/`. It is _incredibly_ slow to use `/mnt/c/...`.
+
+From WSL, get the IP of your Windows machine:
+```
+ping "$(hostname).local"
+```
+
+Result: `172.30.167.123`
+
 In your MariaDB server:
 ```
 CREATE USER 'root'@'172.30.167.123' IDENTIFIED BY 'root';
