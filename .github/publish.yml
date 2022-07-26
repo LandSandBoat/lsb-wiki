@@ -1,0 +1,30 @@
+name: publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Publish_Wiki:
+    runs-on: ubuntu-22.04
+    steps:
+    # Checkout the server.wiki repo that we want to publish to with the GH_PAT token.
+    # This allows us to push to it when we're ready with changes.
+    - uses: actions/checkout@v3
+      with:
+        repository: LandSandBoat/server.wiki
+        ref: master
+    - uses: webfactory/ssh-agent@v0.5.4
+      with:
+          ssh-private-key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
+    - name: Add lsb-wiki remote
+      run: |
+        git remote add lsb-wiki https://github.com/LandSandBoat/lsb-wiki.git
+    - name: Fetch lsb-wiki
+      run: |
+        git fetch lsb-wiki main:lsb-wiki
+    - name: Push lsb-wiki changes
+      run: |
+        # Force-push local lsb-wiki branch onto server.wiki's master branch (this is the visible branch)
+        git push --force origin lsb-wiki:master
