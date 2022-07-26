@@ -1,11 +1,10 @@
-This list is not the final word in what works in the project, or how well it works. Your best bet is always to check the code and check in-game.
-This list is free for anyone to update and is very probably out of date, feel free to fill it in!
+This list is not the final word on what works in the project, or how well it works. Your best bet is always to check the code and check in-game.
 
 **NO SPOILERS, NO MISSION NAMES, NO IN-DEPTH DETAILS etc.**
 
 | Mark | Status |
 |---|---|
-| ✅ | Verified (As close to retail as possible) (**Only Staff should mark this**) |
+| ✅ | Verified (As close to retail as possible, doesn't need any more work) |
 | ✔️ | Implemented (A fair approximation of retail) |
 | ⚠️ | Partially Implemented = Playable |
 | ⛔ | Partially Implemented = Unplayable / Broken |
@@ -66,7 +65,7 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
 | ✔️ | HNMs - Wyrms | |
 | ⚠️ | Sea NMs | Some NMs unimplemented: Jailer of Justice / Jailer of Love / Absolute Virtue |
 | 🐤 | Limbus | |
-| ❔ | Empty Notorious Monsters (ENM) | |
+| ❔ | Empty Notorious Monsters (ENM) | Tracked the same way as BCNMs:<br>Unusable fights are commented out with `--`: <br>https://github.com/LandSandBoat/server/blob/base/scripts/globals/bcnm.lua |
 
 ### Treasures of Aht Urhgan ❔
 
