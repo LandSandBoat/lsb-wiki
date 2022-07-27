@@ -1,9 +1,10 @@
 [Home](https://github.com/LandSandBoat/server/wiki)
 
 * General
-  * [What Works](https://github.com/LandSandBoat/server/wiki/What-Works)
   * [Quick Start Guide](https://github.com/LandSandBoat/server/wiki/Quick-Start-Guide)
   * [Frequently Asked Questions](https://github.com/LandSandBoat/server/wiki/Frequently-Asked-Questions)
+  * [What Works](https://github.com/LandSandBoat/server/wiki/What-Works)
+  * [Contributing Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md)
 * Client Setup
   * [Windows 10](https://github.com/LandSandBoat/server/wiki/Client-setup-%5BWindows%5D)
   * [Common Concerns](https://github.com/LandSandBoat/server/wiki/Miscellaneous-(Client))

@@ -13,11 +13,10 @@
     ```
     git clone --recursive https://github.com/LandSandBoat/server.git
     py -3 -m pip install -r server/tools/requirements.txt
-    cp server/conf/default/* server/conf/
-    cp server/scripts/settings/default/* server/scripts/settings/
+    cp server/settings/default/* server/settings
     ```
-  * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `server/conf/` and change `mysql_password` to the password set during MariaDB setup.
-  * Copy the file "main.lua" inside server/scripts/settings/default to server/scripts/settings and edit it.
+  * Edit the file `network.lua` inside `server/settings/` and change `SQL_PASSWORD` to the password set during MariaDB setup.
+  * Edit the file `main.lua` inside `server/settings` with settings for your server.
   * Back in your PowerShell window, move to `server/tools/` and build the database:
     ```
     cd server/tools
@@ -81,8 +80,7 @@
     ```
     git clone --recursive https://github.com/LandSandBoat/server.git
     pip3 install -r server/tools/requirements.txt
-    cp server/conf/default/* server/conf/
-    cp server/scripts/settings/default/* server/scripts/settings/
+    cp server/settings/default/* server/settings
     ```
   * Run the following script to improve database security:
     ```
@@ -92,8 +90,8 @@
     ```
     sudo mysql -u root -p -e "CREATE USER 'xi'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE xidb;USE xidb;GRANT ALL PRIVILEGES ON xidb.* TO 'xi'@'localhost';"
     ```
-  * Edit the new `login.conf`, `map.conf`, and `search_server.conf` files in `server/conf/` and change `mysql_login`, `mysql_password`, and `mysql_database` to the information used above (_**xi**_, _**password**_, and _**xidb**_).
-  * Copy the file "main.lua" inside server/scripts/settings/default to server/scripts/settings and edit it.
+  * Edit the file `network.lua` inside `server/settings/` and change `SQL_PASSWORD` to the password set during MariaDB setup.
+  * Edit the file `main.lua` inside `server/settings` with settings for your server.
   * In the `server` directory, prepare and build the executables:
     ```
     mkdir build

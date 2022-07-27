@@ -8,9 +8,10 @@ If you wish to made changes or additions to the wiki please submit a pull reques
 
 General articles about the project.
 
-- [What Works](https://github.com/LandSandBoat/server/wiki/What-Works)
 - [Quick Start Guide](https://github.com/LandSandBoat/server/wiki/Quick-Start-Guide)
 - [Frequently Asked Questions](https://github.com/LandSandBoat/server/wiki/Frequently-Asked-Questions)
+- [What Works](https://github.com/LandSandBoat/server/wiki/What-Works)
+- [Contributing Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md)
 
 ## Client Setup
 
