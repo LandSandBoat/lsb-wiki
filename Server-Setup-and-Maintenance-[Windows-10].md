@@ -63,7 +63,14 @@ then modify this line:
 (replace **root** with your MariaDB password)<br>
 (leave the quotation marks surrounding your MariaDB password)
 
-If you wish to change the name of your database from the default name (xidb), you need to also **copy** the following file from the `server\settings\default\` folder into the `server\settings\` folder and open the copied file with a text editor:
+If you wish to change the name of your database from the default name (**xidb**), you also would that in this file, modifying this line:
+
+> SQL_DATABASE = "xidb",
+
+(replace **xidb** with your desired database name)<br>
+(leave the quotation marks surrounding your desired database name)
+
+If you wish to change the name of your server (in-game) from the default name (**Nameless**), you need to also **copy** the following file from the `server\settings\default\` folder into the `server\settings\` folder and open the copied file with a text editor:
 
 * main.lua
 
