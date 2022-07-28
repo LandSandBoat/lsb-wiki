@@ -78,8 +78,8 @@ then modify this line:
 
 > SERVER_NAME = "Nameless",
 
-(replace **Nameless** with your database name)<br>
-(leave the quotation marks surrounding your database name)
+(replace **Nameless** with your desired server name)<br>
+(leave the quotation marks surrounding your desired server name)
 
 ## 4. Preparing the database:
 
