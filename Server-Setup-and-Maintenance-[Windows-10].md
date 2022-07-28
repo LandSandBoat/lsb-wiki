@@ -43,34 +43,27 @@ git clone --recursive https://github.com/LandSandBoat/server.git
 <details>
   <summary>TortoiseGit</summary>
   
-1. Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/LandSandBoat/server.git ("release" branch by default) > OK > then Close when it's done. 
+1. Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/LandSandBoat/server.git ("base" branch by default) > OK > then Close when it's done. 
 
-2. Don't forget about Navmeshes (https://github.com/topaz-next/xiNavmeshes.git): right click on the freshly downloaded "topaz" folder > TortoiseGit > Submodule Update... > OK > then Close when it's done.
+2. Don't forget about Navmeshes (https://github.com/LandSandBoat/xiNavmeshes.git): right click on the freshly downloaded "server" folder that was created in Step 1 > TortoiseGit > Submodule Update... > OK > then Close when it's done.
 </details>
 
 ## 3. .conf files configuration:
 
-In the `topaz\conf\default\` folder, make sure you **copy** all the files in there and put them in the precedent folder (`topaz\conf\`) like the readme.md file says. Open these three files (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
+In the `server\settings\default\` folder, make sure you **copy** all the files in there and put them in the precedent folder (`server\settings\`) like the readme.md file says. Open the following file (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
 
-* login.conf
-* map.conf
-* search_server.conf
+* network.lua
 
-then modify this line each time:
+then modify this line:
 
-> mysql_password: root 
+> SQL_PASSWORD = "root", 
 
-(replace "root" with your MariaDB password)
-
-You should also do this copy process for the scripting settings:
-```
-Copy from: server/scripts/settings/default/*
-Into: server/scripts/settings/
-```
+(replace **root** with your MariaDB password)<br>
+(leave the quotation marks surrounding your MariaDB password)
 
 ## 4. Preparing the database:
 
-In the `topaz\tools\` folder, right click + holding the Shift key > context menu: Open command window here/Open PowerShell window here.: then type:
+In the `server\tools\` folder, right click + holding the Shift key > context menu: Open command window here/Open PowerShell window here.: then type:
 
 ```
 py -3 -m pip install -r requirements.txt
@@ -81,11 +74,11 @@ Followed by:
 ```
 py -3 dbtool.py
 ```
-(or just double click on `topaz\tools\dbtool.py`)
+(or just double click on `server\tools\dbtool.py`)
 
 In the new dbtool window:
 
-"Database tpzdb (default name, change it in the .conf files if you want a different one) does not exist. Would you like to create new database: tpzdb? [y/N]" > y > Enter
+"Database xidb (default name, change it in the .conf files if you want a different one) does not exist. Would you like to create new database: xidb? [y/N]" > y > Enter
 
 Done.
 
@@ -95,23 +88,23 @@ Done.
 
 https://github.com/LandSandBoat/server/wiki/CMake-Build-Guide
 
-* topaz_connect.exe
-* topaz_game.exe
-* topaz_search.exe
+* xi_connect.exe
+* xi_game.exe
+* xi_search.exe
 
-should be present in the `topaz\` folder.
+should be present in the `server\` folder.
 
-Servers are now configured properly. Execute all the above .exes (as Administrator, you can create a shortcut for each one and topaz_search.exe is optional, if you want to use the search function and pydarkstar).
+Servers are now configured properly. Execute all the above .exes (as Administrator, you can create a shortcut for each one. Executing xi_search.exe is optional, it's only needed if you want to use the in-game search function and/or pydarkstar).
 
 **Next Step: [Post-Install Guide](https://github.com/LandSandBoat/server/wiki/Post-Install-Guide)**
 
 # Update
 
-First, pull updated server files from Topaz Next.
+First, pull updated server files from LandSandBoat.
 <details>
   <summary>Git for Windows</summary>
   
-1. In the `topaz\` folder, open a PowerShell window.
+1. In the `server\` folder, open a PowerShell window.
 2. Type:
 ```
 git stash
@@ -130,20 +123,20 @@ git stash pop
   
 1. Right click wherever you want > TortoiseGit > Settings > Context Menu > check: "Pull..." > Apply > OK.
 
-2. Right click on the "topaz" folder > Git Pull... > Remote Branch: (select or type) "release" (stable) or "canary" (master) > OK > Close.
+2. Right click on the `server\` folder > Git Pull... > Remote Branch: (select or type) "base" (stable) > OK > Close.
 </details>
 
 After pulling the new files:
 
-* RERUN EVERY .sql MODIFIED FILES: Open a PowerShell window in the `topaz\tools\` folder and type:
+* RERUN EVERY .sql MODIFIED FILES: Open a PowerShell window in the `server\tools\` folder and type:
 ```
 py -3 dbtool.py update
 ```
-This will import all of the .sql files that were updated and run any needed migrations. It will also possibly overwrite any custom changes you have made to your SQL tables. If you are running custom mobs/items/etc. of any kind, you'll want to save these as queries in a .sql file in `topaz\sql\backups\` and use the Restore/Import option in dbtool to import those changes after an update.
+This will import all of the .sql files that were updated and run any needed migrations. It will also possibly overwrite any custom changes you have made to your SQL tables. If you are running custom mobs/items/etc. of any kind, you'll want to save these as queries in a .sql file in `server\sql\backups\` and use the Restore/Import option in dbtool to import those changes after an update.
 
 ❔ For more information on database management, see [Database Management](https://github.com/LandSandBoat/server/wiki/Database-Management) or [Preparing the Database](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#4-preparing-the-database).
 
 * REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **[5. Build the servers](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#5-build-the-servers)**).
 * RESTART YOUR SERVER(S) FOR .conf FILES AND AFTER UPDATES WITH dbtool.
-* .lua files ARE INSTANT IN MOST CASES (`topaz\scripts\globals\` .luas will need to be reloaded by using the GM command `!reloadglobal` where appropriate or restarting the server).
-* ⚠️ In the `topaz\conf\default\` folder, make sure you take any .conf file that was updated and put it/them in the precedent folder (`topaz\conf\`). Do not overwrite version.conf, as dbtool uses it to track DB version and will update CLIENT_VER for you if it changes. ⚠️
+* .lua files ARE INSTANT IN MOST CASES (`server\scripts\globals\` .luas will need to be reloaded by using the GM command `!reloadglobal` where appropriate or restarting the server).
+* ⚠️ In the `server\conf\default\` folder, make sure you take any .conf file that was updated and put it/them in the precedent folder (`topaz\conf\`). Do not overwrite version.conf, as dbtool uses it to track DB version and will update CLIENT_VER for you if it changes. ⚠️
