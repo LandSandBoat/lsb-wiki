@@ -2,7 +2,7 @@
 
 This is the wiki for LandSandBoat (LSB below) - an open-source server emulator for FFXI.
 
-If you wish to made changes or additions to the wiki please submit a pull request to our [editable wiki mirror](https://github.com/LandSandBoat/lsb-wiki). Changes will be published once they are reviewed and merged.
+If you wish to make changes or additions to the wiki please submit a pull request to our [editable wiki mirror](https://github.com/LandSandBoat/lsb-wiki). Changes will be automatically published once they are reviewed and merged.
 
 ## General
 
