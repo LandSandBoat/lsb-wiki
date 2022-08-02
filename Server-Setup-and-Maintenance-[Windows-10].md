@@ -8,7 +8,7 @@
 
 ### ⚠️ Make sure you have the latest version of each software mentioned on this page installed on your system.
 
-To build, run, and maintain a Topaz server, you will need to download and install the following third-party software:
+To build, run, and maintain a LandSandBoat server, you will need to download and install the following third-party software:
 
 **All of:**
 * [Git for Windows](https://gitforwindows.org/): Accept defaults.
@@ -35,7 +35,7 @@ git clone --recursive https://github.com/LandSandBoat/server.git
   
 1. Open GitHub desktop. File > Clone repository > URL button (along top).
 2. Enter the following:
-  * Repository URL: either [your forked copy of our repository](https://raw.githubusercontent.com/wiki/LandSandBoat/server/images/github-fork.png) `https://github.com/your-github-name/topaz.git` (recommended), or our repository `https://github.com/LandSandBoat/server.git`
+  * Repository URL: either [your forked copy of our repository](https://raw.githubusercontent.com/wiki/LandSandBoat/server/images/github-fork.png) `https://github.com/your-github-name/server.git` (recommended), or our repository `https://github.com/LandSandBoat/server.git`
   * Local path: Where you want the source code to live on your computer.
 3. Select `Clone` button:
 [[/images/github-desktop-clone.png|Pull Origin button location]]
@@ -48,9 +48,11 @@ git clone --recursive https://github.com/LandSandBoat/server.git
 2. Don't forget about Navmeshes (https://github.com/LandSandBoat/xiNavmeshes.git): right click on the freshly downloaded "server" folder that was created in Step 1 > TortoiseGit > Submodule Update... > OK > then Close when it's done.
 </details>
 
-## 3. .conf files configuration:
+## 3. Settings .lua files configuration:
 
-In the `server\settings\default\` folder, make sure you **copy** all the files in there and put them in the precedent folder (`server\settings\`) like the readme.md file says. Open the following file (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
+Any .lua file that you wish to update needs to first be **copied** from the `server\settings\default\` folder and put in the precedent folder (`server\settings\`). Any .lua file(s) not updated can remain in the `server\settings\default\` folder (the .lua files in the `server\settings\default` folder are used if updated ones are not found in the `server\settings\` folder). 
+
+**Copy** the following file from the `server\settings\default\` folder into the `server\settings\` folder and open the copied file (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
 
 * network.lua
 
@@ -60,6 +62,24 @@ then modify this line:
 
 (replace **root** with your MariaDB password)<br>
 (leave the quotation marks surrounding your MariaDB password)
+
+If you wish to change the name of your database from the default name (**xidb**), you also would that in this file, modifying this line:
+
+> SQL_DATABASE = "xidb",
+
+(replace **xidb** with your desired database name)<br>
+(leave the quotation marks surrounding your desired database name)
+
+If you wish to change the name of your server (in-game) from the default name (**Nameless**), you need to also **copy** the following file from the `server\settings\default\` folder into the `server\settings\` folder and open the copied file with a text editor:
+
+* main.lua
+
+then modify this line:
+
+> SERVER_NAME = "Nameless",
+
+(replace **Nameless** with your desired server name)<br>
+(leave the quotation marks surrounding your desired server name)
 
 ## 4. Preparing the database:
 
@@ -78,7 +98,7 @@ py -3 dbtool.py
 
 In the new dbtool window:
 
-"Database xidb (default name, change it in the .conf files if you want a different one) does not exist. Would you like to create new database: xidb? [y/N]" > y > Enter
+"Database xidb (default name, unless it was changed above in [Section 3](https://github.com/LandSandBoat/server/wiki/Server-setup-and-maintenance-%5BWindows-10%5D#3-Settings-lua-files-configuration)) does not exist. Would you like to create new database: xidb? [y/N]" > y > Enter
 
 Done.
 
@@ -123,7 +143,7 @@ git stash pop
   
 1. Right click wherever you want > TortoiseGit > Settings > Context Menu > check: "Pull..." > Apply > OK.
 
-2. Right click on the `server\` folder > Git Pull... > Remote Branch: (select or type) "base" (stable) > OK > Close.
+2. Right click on the `server\` folder > Git Pull... > Remote Branch: (select or type) "base" > OK > Close.
 </details>
 
 After pulling the new files:
@@ -137,6 +157,6 @@ This will import all of the .sql files that were updated and run any needed migr
 ❔ For more information on database management, see [Database Management](https://github.com/LandSandBoat/server/wiki/Database-Management) or [Preparing the Database](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#4-preparing-the-database).
 
 * REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **[5. Build the servers](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#5-build-the-servers)**).
-* RESTART YOUR SERVER(S) FOR .conf FILES AND AFTER UPDATES WITH dbtool.
-* .lua files ARE INSTANT IN MOST CASES (`server\scripts\globals\` .luas will need to be reloaded by using the GM command `!reloadglobal` where appropriate or restarting the server).
-* ⚠️ In the `server\conf\default\` folder, make sure you take any .conf file that was updated and put it/them in the precedent folder (`topaz\conf\`). Do not overwrite version.conf, as dbtool uses it to track DB version and will update CLIENT_VER for you if it changes. ⚠️
+* RESTART YOUR SERVER(S) FOR CHANGES to the `server\settings\` .lua FILES AND AFTER UPDATES WITH dbtool.
+* .lua files changes ARE INSTANT IN MOST CASES (`server\scripts\globals\` .luas will need to be reloaded by using the GM command `!reloadglobal` where appropriate). Restart your server(s) if any .lua file changes are not noticed.
+* ⚠️ Any .lua file that you wish to update needs to first be **copied** from the `server\settings\default\` folder and put in the precedent folder (`server\settings\`). Any .lua file(s) not updated can remain in the `server\settings\default\` folder (the .lua files in the `server\settings\default` folder are used if updated ones are not found in the `server\settings\` folder). ⚠️
