@@ -4,7 +4,7 @@ This list is not the final word on what works in the project, or how well it wor
 
 | Mark | Status |
 |---|---|
-| ✅ | Verified (As close to retail as possible, doesn't need any more work) |
+| ✅ | Verified (As close to retail as possible) |
 | ✔️ | Implemented (A fair approximation of retail) |
 | ⚠️ | Partially Implemented = Playable |
 | ⛔ | Partially Implemented = Unplayable / Broken |
@@ -14,15 +14,39 @@ This list is not the final word on what works in the project, or how well it wor
 | No Mark | Status Unknown |
 
 # Jobs
-| Status | Jobs |
-|---|---|
-| ⚠️ | SMN, BLU, PUP, GEO, RUN |
-| ✔️ | All others (up to Lv75) |
-| ❔ | All others (post-75) |
+
+| Job | 75-era | 99-era | 119-era | Quests | Notes | 
+|-----|---|-|-|-|--------------------|
+| WAR | ✔️ | | | | Needs confirmation |
+| MNK | ✔️ | | | | Needs confirmation |
+| WHM | ✔️ | | | | Needs confirmation |
+| BLM | ✔️ | | | | Needs confirmation |
+| RDM | ✔️ | | | | Needs confirmation |
+| THF | ✔️ | | | | Needs confirmation |
+| PLD |   | | | | Needs confirmation |
+| DRK |   | | | | Needs confirmation |
+| BST |   | | | | Needs confirmation |
+| BRD |   | | | | Needs confirmation |
+| RNG |   | | | | Needs confirmation |
+| SAM |   | | | | Needs confirmation |
+| NIN |   | | | | Needs confirmation |
+| DRG |   | | | | Needs confirmation |
+| SMN |   | | | | Needs confirmation |
+| BLU |   | | | | Needs confirmation |
+| COR |   | | | | Needs confirmation |
+| PUP |   | | | | Needs confirmation |
+| DNC |   | | | | Needs confirmation |
+| SCH |   | | | | Needs confirmation |
+| GEO |   | | | | Needs confirmation |
+| RUN |   | | | | Needs confirmation |
+
 
 # Missions
 Playable missions are marked in the following file with `--+--` after their names <br>
 https://github.com/LandSandBoat/server/blob/base/scripts/globals/missions.lua
+
+We have a new format for missions. Newly written/rewritten missions can be found here: <br>
+https://github.com/LandSandBoat/server/tree/base/scripts/missions
 
 | Status | Name | Notes |
 |---|---|---|
@@ -32,17 +56,21 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/missions.lua
 | ✔️ | Rise of the Zilart | |
 | ✔️ | Chains of Promathia | |
 | ⚠️ | Treasures of Aht Urhgan | Completable. Retail accurate up to Mission 18. Rest in need of confirmation. |
-| 🐤 | Wings of the Goddess | Up to WOTG 08 (mainline missions only, nation quest status unknown) |
-| 🐤 | Seekers of Adoulin | Up to SOA 2-7-3 |
+| 🐤 | Wings of the Goddess | Up to WOTG 36 (mainline missions only, nation quest status unknown, missing a lot of fight content) |
+| 🐤 | Seekers of Adoulin | Up to SOA 5-5-1 (missing a lot of fight content) |
 | ⛔ | A Crystalline Prophecy | Up to ACP 04 |
 | 🐤 | A Moogle Kupo d'Etat | Up to AMK 08 |
 | ⛔ | A Shantotto Ascension | Up to ASA 03 |
-| ⛔ | Rhapsodies of Vanadiel | Up to ROV 1-18 |
-| ❌ | The Voracious Resurgence | |
+| ⛔ | Rhapsodies of Vanadiel | Up to ROV 2-13 (missing a lot of fight content) |
+| ❌ | The Voracious Resurgence | Will not implement, go play retail. |
 
 # Quests
+
 Playable quests are marked in the following file with `--+--` after their names <br>
 https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
+
+We have a new format for quests. Newly written/rewritten quests can be found here: <br>
+https://github.com/LandSandBoat/server/tree/base/scripts/quests
 
 # Battle Content (by era)
 ## Pre-Item Level
@@ -119,7 +147,7 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
 | Status | Name | Notes |
 |---|---|---|
 | ❌ | AMAN Trove | |
-| ❌ | Ambuscade | |
+| ⛔ | Ambuscade | |
 | ❌ | Domain Invasion | |
 | ❌ | Dynamis Divergence | |
 | ❌ | High-Tier Mission Battlefields | |
@@ -141,29 +169,29 @@ https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
 | ❌ | Chocobo Raising | |
 | ✔️ | Crafting | |
 | ✔️ | Fields of Valor | |
-| ❌ | Fishing | |
+| 🐤 | Fishing | |
 | ✔️ | Gardening | |
-| 🐤 | Gobbie Mystery Box | |
+| ✔️ | Gobbie Mystery Box | |
 | ✔️ | Grounds of Valor | |
 | ✔️ | HELM | |
 | ✔️ | Hunt Registry | |
-| ❌ | Job Points | |
-| 🐤 | Magian Trials | |
+| ⚠️ | Job Points | |
+| ⚠️ | Magian Trials | |
 | 🐤 | Mannequins | |
 | ❌ | Mog Garden | |
 | ❌ | Monstrosity | |
 | ✔️ | Mounts & 'Full Speed Ahead' Minigame | |
 | ❌ | Pankration | |
-| 🐤 | Records of Eminence | ~300 records + Timed challenges |
+| ✔️ | Records of Eminence | ~300 records + Timed challenges |
 | ✔️ | Soultrapping, Soul Plates & Zeni | Works, but Zeni values are placeholders |
 | ❌ | Synergy | |
-| 🐤 | Trusts | Trust status: <br>https://github.com/LandSandBoat/server/wiki/Trusts |
+| ⚠️ | Trusts | Trust status: <br>https://github.com/LandSandBoat/server/wiki/Trusts |
 
 # Mechanics
 
 | Status | Name | Notes |
 |---|---|---|
-| 🐤 | Aura Effects | |
+| ⚠️ | Aura Effects | |
 | ⚠️ | Basic PVP | |
 | 🐤 | Confrontation Effects | |
 | ⚠️ | Stagger Effects | Neo-Dynamis and Abyssea proc systems implemented |
