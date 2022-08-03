@@ -38,6 +38,26 @@ Captures are required for messages, especially for action packets. Until recentl
 
 _How am I supposed to know the NM's level?_ Good question! It turns out the widescan packet has all monsters level embedded in it... including Notorious Monsters. This way there's no reversing or guessing and it comes straight from the servers.
 
+About Sourcing
+------------
+
+Often content is added using one or more of the fan sites or wiki's as a source. Most of this isn't as trustworthy as you might expect: wiki articles are sometimes getting what they say from the same person across multipel wiki's or obtaining what they say from another wiki, or worse, over google translate and not realizing what translation mistakes have been made.
+
+**Retail packet captures are the end all be all of anything that can be seen in a packet.**
+
+Some things can't be seen in the packets though, and when personally testing and corroborating isn't feasible, we try to find as many online sources as possible to give us a reasonable estimate of what retail does.
+
+Some common data sources are:
+* https://www.bg-wiki.com/
+* https://ffxiclopedia.fandom.com/
+* http://wiki.ffo.jp/
+* https://www.ffxiah.com/
+* http://ffxidb.com/
+
+Things to remember:
+* With crafting we compare ALL recipe sources but ffo.jp has usually been the most reliable.
+* With drop rates sample size will influence the values you see on fan sites. ffxidb combines all tiers of Treasure Hunter higher than 2 in the "3+" column and that the "average" column combines all tiers even no TH at all - and so does ffxiclopedia. Further more, due to sampel sizes and random variance the rates won't exactly match retail on any site so we look at multiple data points at different TH tiers t make an educated guess about what rarity the item actually is, [based on the chart SE released.](TH-chart.md)
+
 About Videos
 ------------
 
