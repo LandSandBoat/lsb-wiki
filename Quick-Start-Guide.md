@@ -185,7 +185,8 @@ cmake .. -DLuaJIT_INCLUDE_DIR=<SERVER_ROOT>/server/ext/lua/include
 
 <details>
   <summary>Linux (through WSL)</summary>
-[Working with WSL](https://github.com/LandSandBoat/server/wiki/Working-with-WSL)
+  
+[Working with WSL](Working-with-WSL)
 </details>
 
 <details>
