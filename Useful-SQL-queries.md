@@ -1,9 +1,9 @@
-== Resetting an account password ==
+## Resetting an account password
 
-<pre>
+```sql
 UPDATE accounts SET password = PASSWORD("NEW_PASSWORD_HERE") WHERE login = 'ACCOUNT_NAME_HERE';
-</pre>
-''Note: This function is deprecated in stock MySQL''
+```
+* Note: This function is deprecated in stock MySQL*
 
 == Mail an item to all characters on the entire server ==
 <pre>
@@ -66,7 +66,7 @@ MISC_YELL = 0x0400, // Send and receive /yell commands
 0x0400 is hex for 1024, so we'll use that value going forwards. The following query will add the flag 1024 to any zone misc that doesn't already have it set.
 
 ```sql
-UPDATE tpzdb.zone_settings 
+UPDATE xidb.zone_settings 
 SET 
     misc = misc + 1024
 WHERE

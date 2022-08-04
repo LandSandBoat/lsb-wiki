@@ -1,4 +1,4 @@
-# Migrating from older versions of Topaz Next
+# Migrating from older versions of Topaz or Topaz Next
 - [Windows 10](https://github.com/LandSandBoat/server/wiki/Server-setup-and-maintenance-%5BWindows-10%5D#update)
 - [Linux](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BLinux%5D#update)
 
@@ -26,7 +26,7 @@
     * 💻 In Git bash: `git pull topaz release`
     * ❕ This will also pull all changes made to Darkstar Project since the last time you updated
 4. Resolve any merge conflicts
-5. For your custom changes, you may need to edit them to reflect Topaz moving from the `dsp` namespace to the `tpz` namespace
+5. For your custom changes, you may need to edit them to reflect the project moving from the `dsp` and `tpz` namespaces to the `xi` namespace
     * 🛠️ (Todo: Fill out this section with required changes)
 6. Copy your configuration files from your Darkstar's `confs` folder to your fresh Topaz's `confs` folder
     * ❕ Do _not_ compile or run the server yet

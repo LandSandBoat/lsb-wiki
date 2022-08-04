@@ -13,28 +13,9 @@ General articles about the project.
 - [What Works](https://github.com/LandSandBoat/server/wiki/What-Works)
 - [Contributing Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md)
 
-## Client Setup
+## Resources
 
-Instructions for installing FFXI, connecting to a private server, and keeping the game updated.
-
-- [Windows 10](https://github.com/LandSandBoat/server/wiki/Client-setup-%5BWindows%5D)
-- [Common Concerns](https://github.com/LandSandBoat/server/wiki/Miscellaneous-(Client))
-
-## Server Setup
-
-Instructions for cloning, building, running, and updating a LSB server.
-
-- [Windows 10](https://github.com/LandSandBoat/server/wiki/Server-setup-and-maintenance-%5BWindows-10%5D)
-- [Linux](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BLinux%5D)
-
-## [Server Administration](https://github.com/LandSandBoat/server/wiki/Server-Administration)
-
-Information for new server administrators.
-
-- [Common Issues & Tweaks](https://github.com/LandSandBoat/server/wiki/Miscellaneous-(Server))
-- [Useful SQL Queries](https://github.com/LandSandBoat/server/wiki/Useful-SQL-queries)
-- [Database Management](https://github.com/LandSandBoat/server/wiki/Database-Management)
-- [Debugging](https://github.com/LandSandBoat/server/wiki/Debugging)
+- [Additional useful resources](https://github.com/LandSandBoat/server/wiki/Resources) and tools of interest to administrators, developers, or players.
 
 ## [Development](https://github.com/LandSandBoat/server/wiki/Development)
 
@@ -42,10 +23,28 @@ Information for developers who work on LSB.
 
 - [Development Landing Page](https://github.com/LandSandBoat/server/wiki/Development)
 
-## [Code of Conduct](https://github.com/LandSandBoat/server/blob/base/CODE_OF_CONDUCT.md)
+## Server Setup
+
+Instructions for cloning, building, running, and updating a LSB server.
+
+- [Windows 10](https://github.com/LandSandBoat/server/wiki/Server-setup-and-maintenance-Windows-10)
+- [Linux](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-Linux)
+
+## Client Setup
+
+Instructions for installing FFXI, connecting to a private server, and keeping the game updated.
+
+- [Windows 10](https://github.com/LandSandBoat/server/wiki/Client-Setup-Windows)
+- [Common Concerns](https://github.com/LandSandBoat/server/wiki/Miscellaneous-Client)
+
+## [Server Administration](https://github.com/LandSandBoat/server/wiki/Server-Administration)
+
+Information for new server administrators.
+
+- [Server Administration Landing Page](https://github.com/LandSandBoat/server/wiki/Server-Administration)
+
+## Code of Conduct
 
 All participants are expected to abide by our Code of Conduct. Please be sure to review it.
 
-## Resources
-
-[Additional resources](https://github.com/LandSandBoat/server/wiki/Resources) and tools of interest to administrators, developers, or players.
+- [Code of Conduct](https://github.com/LandSandBoat/server/blob/base/CODE_OF_CONDUCT.md)

@@ -5,7 +5,7 @@ By default, <code>tools/generate_changelog.py</code> will generate patch notes f
 
 == Common Issues ==
 === Gil not sent to the Delivery Box from the Auction House  ===
-One possible fix: Execute HeidiSQL > select your session and connect to it > select "tpzdb" > File > Run SQL file... > select the triggers.sql file from the \topaz\sql folder > Open.
+One possible fix: Execute HeidiSQL > select your session and connect to it > select "xidb" > File > Run SQL file... > select the triggers.sql file from the \topaz\sql folder > Open.
 
 === Version Mismatch ===
 <b>WE STRONGLY ADVISE AGAINST LOCKING THE SERVER TO OLDER VERSIONS. IT IS A UNIVERSALLY BAD IDEA.</b> It <em>will</em> cause issues even <em>if</em> you manage to keep both server and client versions on par!

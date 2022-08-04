@@ -55,8 +55,8 @@ The loop is pretty tight, you'll have to spam CTRL+C a few times to get back to 
 ```cpp
 12074    inline int32 CLuaBaseEntity::spawnTrust(lua_State *L)
 12075    {
-12076        TPZ_DEBUG_BREAK_IF(m_PBaseEntity == nullptr);
-12077        TPZ_DEBUG_BREAK_IF(m_PBaseEntity->objtype != TYPE_PC); // only PCs can spawn trusts
+12076        XI_DEBUG_BREAK_IF(m_PBaseEntity == nullptr);
+12077        XI_DEBUG_BREAK_IF(m_PBaseEntity->objtype != TYPE_PC); // only PCs can spawn trusts
 12078    
 12079        ((CCharEntity*)m_PBaseEntity)->PPet->PMaster = nullptr;
 12080    
