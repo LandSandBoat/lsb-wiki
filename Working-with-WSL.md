@@ -1,6 +1,6 @@
 # Working with WSL
 
-It's better to clone your repo to somewhere like `/home/`. It is _incredibly_ slow to use `/mnt/c/...`.
+It's better to clone your repo to somewhere like `/home/`. It is _incredibly_ slow to use `/mnt/c/`.
 
 From WSL, get the IP of your Windows machine:
 

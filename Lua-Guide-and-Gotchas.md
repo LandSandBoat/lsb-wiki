@@ -1,5 +1,3 @@
-**This guide is only relevant after the Sol refactoring is complete**
-
 # Gotchas
 
 ### General
@@ -40,19 +38,12 @@ The error message is of the form: `Invalid argument. Expected a number, got a nu
 _When in doubt, capture a double and cast it into whatever you need._
 
 ### Global luautils functions
-The functions defined in luautils are available in two ways: Capitalized, as global objects `SpawnMob(id)` or lower-cased, attached to the `tpz.core` table: `tpz.core.spawnMob(id)`
+
 ```lua
 SpawnMob(...)
 DespawnMob(...)
 GetPlayerByName(...)
 GetPlayerByID(...)
-
-tpz.core.spawnMob(...)
-tpz.core.despawnMob(...)
-tpz.core.getPlayerByName(...)
-tpz.core.getPlayerByID(...)
-
-etc.
 ```
 
 ### ipairs, pairs, collections

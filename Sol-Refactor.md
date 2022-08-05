@@ -79,7 +79,7 @@ The one benefit of the old system was the ability to hot-swap and modify scripts
 
 ```
 [FileWatch] Modifiy: ./scripts/zones/South_Gustaberg/mobs/Tococo.lua
-[FileWatch] Caching: tpz.zones.South_Gustaberg.mobs.Tococo
+[FileWatch] Caching: xi.zones.South_Gustaberg.mobs.Tococo
 ```
 
 ### Developer Quality of Life

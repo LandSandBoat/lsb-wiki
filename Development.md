@@ -24,5 +24,4 @@ Articles in this category are guides covering specific subject matter. They're i
 Articles in this category are general development topics, relating to overall development processes and tools.
 
   * [Debugging](https://github.com/LandSandBoat/server/wiki/Debugging)
-  * [Developer Workflow](https://github.com/LandSandBoat/server/wiki/Developer-Workflow)
   * [Docker](https://github.com/LandSandBoat/server/wiki/Docker)

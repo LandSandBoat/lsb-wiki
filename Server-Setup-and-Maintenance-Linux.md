@@ -104,21 +104,21 @@ Create the user 'topazadmin' with the password 'topazisawesome'
 CREATE USER 'topazadmin'@'localhost' IDENTIFIED BY 'topazisawesome';
 ```
 
-Create the tpzdb database and grant all access to the user we just created (topazadmin)
+Create the xidb database and grant all access to the user we just created (topazadmin)
 ```
-CREATE DATABASE tpzdb;
-USE tpzdb;
-GRANT ALL PRIVILEGES ON tpzdb.* TO 'topazadmin'@'localhost';
+CREATE DATABASE xidb;
+USE xidb;
+GRANT ALL PRIVILEGES ON xidb.* TO 'topazadmin'@'localhost';
 exit
 ```
 
-Go inside the sql folder and import all tables inside the database we just created (tpzdb)
+Go inside the sql folder and import all tables inside the database we just created (xidb)
 ```
 cd ../sql
 for f in *.sql
   do
      echo -n "Importing $f into the database..."
-     mysql tpzdb -u topazadmin -ptopazisawesome < $f && echo "Success"      
+     mysql xidb -u topazadmin -ptopazisawesome < $f && echo "Success"      
   done
 cd ..
 ```

@@ -1,7 +1,7 @@
 # Making Persistent Changes
 When updates happen to our SQL files, the import process will overwrite any changes you've made to those tables in your database. To keep your database up to date with the latest changes, as well as maintain your own custom changes, it is recommended that you save your changes as SQL queries in a `.sql` file in `topaz/sql/backups/`, then import that file after an update using either the dbtool **Restore/Import** function or another method of importing, such as:
 ```
-mysql -u topaz -ppassword tpzdb < topaz/sql/backups/custom.sql
+mysql -u topaz -ppassword xidb < topaz/sql/backups/custom.sql
 ```
 
 # dbtool
