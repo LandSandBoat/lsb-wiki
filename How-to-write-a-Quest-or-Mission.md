@@ -1,4 +1,4 @@
-The purpose of this guide is to provide a brief overview of the structure used for quests and missions with the addition of the interaction framework.  For a reference of available functions, please see the documentation located in your repository, or at [in the Wiki](https://github.com/LandSandBoat/server/wiki/Interaction-Framework-Documentation).
+The purpose of this guide is to provide a brief overview of the structure used for quests and missions with the addition of the interaction framework.  For a reference of available functions, please see the documentation located in your repository, or at [in the Wiki](Interaction-Framework-Documentation).
 
 ## Mission/Quest Header
 Quests and Missions can have references to multiple triggers and NPCs across multiple zones.  To allow for easier testing, pos references should be included in the comments (example below):

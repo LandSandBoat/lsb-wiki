@@ -82,7 +82,7 @@ https://github.com/LandSandBoat/server/tree/base/scripts/quests
 | ⚠️ | BCNMs | Unusable fights are commented out with `--`: <br>https://github.com/LandSandBoat/server/blob/base/scripts/globals/bcnm.lua |
 | ❌ | Garrison | |
 | ✔️ | HNMs - Land Kings | |
-| ❌ | "Classic" Dynamis | [Will not be implemented.](https://github.com/LandSandBoat/server/wiki/Frequently-Asked-Questions#when-can-i-play-classic-dynamis) |
+| ❌ | "Classic" Dynamis | [Will not be implemented.](Frequently-Asked-Questions#when-can-i-play-classic-dynamis) |
 | ⚠️ | "Neo" Dynamis | City and Dreamworld zones farmable, some unimplemented NMs |
 | ✔️ | Sky NMs | |
 
@@ -185,7 +185,7 @@ https://github.com/LandSandBoat/server/tree/base/scripts/quests
 | ✔️ | Records of Eminence | ~300 records + Timed challenges |
 | ✔️ | Soultrapping, Soul Plates & Zeni | Works, but Zeni values are placeholders |
 | ❌ | Synergy | |
-| ⚠️ | Trusts | Trust status: <br>https://github.com/LandSandBoat/server/wiki/Trusts |
+| ⚠️ | Trusts | Trust status: <br>Trusts |
 
 # Mechanics
 

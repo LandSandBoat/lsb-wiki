@@ -1,10 +1,10 @@
 ## What works? Is quest X implemented?
 
-[What Works?](https://github.com/LandSandBoat/server/wiki/What-Works)
+[What Works?](What-Works)
 
 ## How can I help the project?
 
-[How can I help?](https://github.com/LandSandBoat/server/wiki/How-Can-I-Help)
+[How can I help?](How-Can-I-Help)
 
 ## Where can I find servers to play on?
 
@@ -20,7 +20,7 @@ We practice [clean room engineering](https://en.wikipedia.org/wiki/Clean_room_de
 
 ## Can I use Trust: X, why doesn't Trust: Y do anything?
 
-Go check their status [here](https://github.com/LandSandBoat/server/wiki/Trusts).
+Go check their status [here](Trusts).
 
 ## Can I pay someone to implement feature X?
 
@@ -71,7 +71,7 @@ Bypassing these restrictions would need heavy client modification (which we don'
 
 ## Why isn't Yell/Trust/Auction House etc. available in every zone?
 
-What's available to use per-zone is controlled with the `misc` flags column in `zone_settings.sql`. These flags correspond to the `ZONEMISC` enum in `zone.h`. A query to modify those flags can be found in [Useful SQL queries](https://github.com/LandSandBoat/server/wiki/Useful-SQL-queries#enable-zonemisc-features-everywhere).
+What's available to use per-zone is controlled with the `misc` flags column in `zone_settings.sql`. These flags correspond to the `ZONEMISC` enum in `zone.h`. A query to modify those flags can be found in [Useful SQL queries](Useful-SQL-queries#enable-zonemisc-features-everywhere).
 
 <details>
 <summary>Read more</summary>
@@ -100,7 +100,7 @@ enum ZONEMISC
 
 ## What is Darkstar Project (DSP), Project Topaz (TPZ), or Topaz Next? What happened to them?
 
-See the project history page [here](https://github.com/LandSandBoat/server/wiki/Project-History) for more details.
+See the project history page [here](Project-History) for more details.
 
 ## Why is the airship in Sauromugue Champaign skidding along the ground like a land speeder?
 

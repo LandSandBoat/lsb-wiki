@@ -98,7 +98,7 @@ py -3 dbtool.py
 
 In the new dbtool window:
 
-"Database xidb (default name, unless it was changed above in [Section 3](https://github.com/LandSandBoat/server/wiki/Server-setup-and-maintenance-%5BWindows-10%5D#3-Settings-lua-files-configuration)) does not exist. Would you like to create new database: xidb? [y/N]" > y > Enter
+"Database xidb (default name, unless it was changed above in [Section 3](Server-setup-and-maintenance-Windows-10#3-Settings-lua-files-configuration)) does not exist. Would you like to create new database: xidb? [y/N]" > y > Enter
 
 Done.
 
@@ -106,7 +106,7 @@ Done.
 
 **We have a new build system, read how to use it here:**
 
-https://github.com/LandSandBoat/server/wiki/CMake-Build-Guide
+CMake-Build-Guide
 
 * xi_connect.exe
 * xi_game.exe
@@ -116,7 +116,7 @@ should be present in the `server\` folder.
 
 Servers are now configured properly. Execute all the above .exes (as Administrator, you can create a shortcut for each one. Executing xi_search.exe is optional, it's only needed if you want to use the in-game search function and/or pydarkstar).
 
-**Next Step: [Post-Install Guide](https://github.com/LandSandBoat/server/wiki/Post-Install-Guide)**
+**Next Step: [Post-Install Guide](Post-Install-Guide)**
 
 # Update
 
@@ -154,9 +154,9 @@ py -3 dbtool.py update
 ```
 This will import all of the .sql files that were updated and run any needed migrations. It will also possibly overwrite any custom changes you have made to your SQL tables. If you are running custom mobs/items/etc. of any kind, you'll want to save these as queries in a .sql file in `server\sql\backups\` and use the Restore/Import option in dbtool to import those changes after an update.
 
-❔ For more information on database management, see [Database Management](https://github.com/LandSandBoat/server/wiki/Database-Management) or [Preparing the Database](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#4-preparing-the-database).
+❔ For more information on database management, see [Database Management](Database-Management) or [Preparing the Database](Server-Setup-and-Maintenance-Windows-10/#4-preparing-the-database).
 
-* REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **[5. Build the servers](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BWindows-10%5D/#5-build-the-servers)**).
+* REBUILD THE SOLUTION IF ANY .cpp/.h/.in IS MODIFIED (referring to the whole example at **[5. Build the servers](Server-Setup-and-Maintenance-Windows-10/#5-build-the-servers)**).
 * RESTART YOUR SERVER(S) FOR CHANGES to the `server\settings\` .lua FILES AND AFTER UPDATES WITH dbtool.
 * .lua files changes ARE INSTANT IN MOST CASES (`server\scripts\globals\` .luas will need to be reloaded by using the GM command `!reloadglobal` where appropriate). Restart your server(s) if any .lua file changes are not noticed.
 * ⚠️ Any .lua file that you wish to update needs to first be **copied** from the `server\settings\default\` folder and put in the precedent folder (`server\settings\`). Any .lua file(s) not updated can remain in the `server\settings\default\` folder (the .lua files in the `server\settings\default` folder are used if updated ones are not found in the `server\settings\` folder). ⚠️

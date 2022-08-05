@@ -8,40 +8,40 @@ If you wish to make changes or additions to the wiki please submit a pull reques
 
 General articles about the project.
 
-- [Quick Start Guide](https://github.com/LandSandBoat/server/wiki/Quick-Start-Guide)
-- [Frequently Asked Questions](https://github.com/LandSandBoat/server/wiki/Frequently-Asked-Questions)
-- [What Works](https://github.com/LandSandBoat/server/wiki/What-Works)
+- [Quick Start Guide](Quick-Start-Guide)
+- [Frequently Asked Questions](Frequently-Asked-Questions)
+- [What Works](What-Works)
 - [Contributing Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md)
 
 ## Resources
 
-- [Additional useful resources](https://github.com/LandSandBoat/server/wiki/Resources) and tools of interest to administrators, developers, or players.
+- [Additional useful resources](Resources) and tools of interest to administrators, developers, or players.
 
-## [Development](https://github.com/LandSandBoat/server/wiki/Development)
+## [Development](Development)
 
 Information for developers who work on LSB.
 
-- [Development Landing Page](https://github.com/LandSandBoat/server/wiki/Development)
+- [Development Landing Page](Development)
 
 ## Server Setup
 
 Instructions for cloning, building, running, and updating a LSB server.
 
-- [Windows 10](https://github.com/LandSandBoat/server/wiki/Server-setup-and-maintenance-Windows-10)
-- [Linux](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-Linux)
+- [Windows 10](Server-setup-and-maintenance-Windows-10)
+- [Linux](Server-Setup-and-Maintenance-Linux)
 
 ## Client Setup
 
 Instructions for installing FFXI, connecting to a private server, and keeping the game updated.
 
-- [Windows 10](https://github.com/LandSandBoat/server/wiki/Client-Setup-Windows)
-- [Common Concerns](https://github.com/LandSandBoat/server/wiki/Miscellaneous-Client)
+- [Windows 10](Client-Setup-Windows)
+- [Common Concerns](Miscellaneous-Client)
 
-## [Server Administration](https://github.com/LandSandBoat/server/wiki/Server-Administration)
+## [Server Administration](Server-Administration)
 
 Information for new server administrators.
 
-- [Server Administration Landing Page](https://github.com/LandSandBoat/server/wiki/Server-Administration)
+- [Server Administration Landing Page](Server-Administration)
 
 ## Code of Conduct
 

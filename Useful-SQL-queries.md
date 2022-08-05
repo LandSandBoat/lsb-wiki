@@ -1,8 +1,11 @@
+# Useful SQL Queries
+
 ## Resetting an account password
 
 ```sql
 UPDATE accounts SET password = PASSWORD("NEW_PASSWORD_HERE") WHERE login = 'ACCOUNT_NAME_HERE';
 ```
+
 * Note: This function is deprecated in stock MySQL*
 
 == Mail an item to all characters on the entire server ==

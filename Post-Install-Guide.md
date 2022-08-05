@@ -23,7 +23,7 @@ UPDATE zone_settings SET zoneip = 'IP';
 Replace <code>IP</code> with the desired IP. To access the game only on the same machine, this should be <code>127.0.0.1</code>. If you're accessing the server from another machine on the network, it should be the local IP address of the host, e.g. <code>192.168.0.11</code>. If you want to access it over the internet, it needs to be your public IP which can be gathered from various websites such as https://www.whatismyip.com/.
 
 ;Note
-:<code>zone_settings</code> is not a protected table, so this change can be overwritten during an update. It is recommended to save this query in a <code>.sql</code> file in <code>server/sql/backups/</code> then import it after an update. See [https://github.com/LandSandBoat/server/wiki/Database-Management#making-persistent-changes Database Management].
+:<code>zone_settings</code> is not a protected table, so this change can be overwritten during an update. It is recommended to save this query in a <code>.sql</code> file in <code>server/sql/backups/</code> then import it after an update. See [Database-Management#making-persistent-changes Database Management].
 
 === Port Forwarding ===
 Make sure you have the following ports forwarded by your router and open in any firewall software if accessing the server over a network:
@@ -36,10 +36,10 @@ UDP port: 54230
 By default, dbtool will backup your whole database into <code>server/sql/backups/</code> whenever it performs an update. You can turn this off and do manual backups either with the TUI, or by running <code>python3 dbtool.py backup</code> (Windows: <code>py -3 dbtool.py backup</code>). You can create a backup of only sensitive player data by using <code>python3 dbtool.py backup lite</code> (Windows: <code>py -3 dbtool.py backup lite</code>). The tables it backs up with the <code>lite</code> argument are defined in <code>server/tools/config.yaml</code> (created automatically by dbtool the first time you run it). The backups can be imported using the <b>Restore/Import</b> command in dbtool.
 
 == See Also ==
-[https://github.com/LandSandBoat/server/wiki/Miscellaneous-(Server) Common Issues and Tweaks]
+[Miscellaneous-(Server) Common Issues and Tweaks]
 
-[https://github.com/LandSandBoat/server/wiki/Useful-SQL-queries Useful SQL Queries]
+[Useful-SQL-queries Useful SQL Queries]
 
-[https://github.com/LandSandBoat/server/wiki/Database-Management Database Management]
+[Database-Management Database Management]
 
-[https://github.com/LandSandBoat/server/wiki/Debugging Debugging]
+[Debugging Debugging]

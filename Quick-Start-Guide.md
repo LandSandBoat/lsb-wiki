@@ -24,7 +24,7 @@
     ```
   * Follow the on-screen instructions.
   * Open the `server` root folder in VS2019.
-  * [Build the solution in VS2019.](https://github.com/LandSandBoat/server/wiki/CMake-Build-Guide)
+  * [Build the solution in VS2019.](CMake-Build-Guide)
 
   ## To Update
   * Open a PowerShell window and navigate to your `server` directory.
@@ -44,7 +44,7 @@
     py -3 dbtool.py update
     ```
   * Open the `server` root folder in VS2019.
-  * [Build the solution in VS2019.](https://github.com/LandSandBoat/server/wiki/CMake-Build-Guide)
+  * [Build the solution in VS2019.](CMake-Build-Guide)
 </details>
 
 <details>
@@ -60,7 +60,7 @@
       sudo apt update
       sudo apt install git python3 python3-pip g++-10 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev
       ```
-    * **Debian 10/Ubuntu 18.04:** See the [Linux Setup Guide](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BLinux%5D#install) for information about upgrading to and building with g++-10.
+    * **Debian 10/Ubuntu 18.04:** See the [Linux Setup Guide](Server-Setup-and-Maintenance-Linux#install) for information about upgrading to and building with g++-10.
     </details>
     <details>
       <summary>Arch</summary>
@@ -225,4 +225,4 @@ We have had users appear and write a Dockerfile for us. None of the main devs us
 </details>
 
 ## Next Steps:
-- [Post-Install Guide](https://github.com/LandSandBoat/server/wiki/Post-Install-Guide)
+- [Post-Install Guide](Post-Install-Guide)
