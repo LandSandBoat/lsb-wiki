@@ -1,3 +1,5 @@
+# Treasure Hunter Chart
+
 TH Level | Very Common | Common | UnCommon | Rare | Very Rare | Super Rare | Ultra Rare
 | :----: | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 0 | 24.00% | 15.00% | 10.00% | 5.00% | 1.00% | 0.50% | 0.10%

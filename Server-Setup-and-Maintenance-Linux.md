@@ -187,7 +187,7 @@ screen -r topaz_connect
 screen -r topaz_game
 screen -r topaz_search
 ```
-**Next Step: [Post-Install Guide](https://github.com/LandSandBoat/server/wiki/Post-Install-Guide)**
+**Next Step: [Post-Install Guide](Post-Install-Guide)**
 
 # Update
 

@@ -1,3 +1,5 @@
+# Trusts
+
 | Mark | Status |
 |---|---|
 | ✅ | Verified (As close to retail as possible) (**Only Staff should mark this**) |
@@ -9,15 +11,18 @@
 **This page is only for tracking Trust combat logic, not whether they obtainable or not. This assumes you have access to them through GM commands or otherwise (`!addalltrusts`).**
 
 ## General Notes
+
 - All mages are very MP-hungry
 - Spell selection is very simple and doesn't account for weaknesses/immunities/absorbs.
 - Trusts don't track elemental resistances.
 - As above, Trusts don't track if their spells were resisted, or if they might get resisted
 - Melee trusts don't get access to TP skills that can form Light/Dark skillchains until Lv60, unless that's the only skill they have.
 - The default TP/SC behaviour is ASAP + Random (Use TP ASAP, pick a random valid skill from your list).
+
 ***
 
 ### San d'Oria
+
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | Excenmille | ✔️ | | | |
@@ -25,6 +30,7 @@
 | Trion | ✔️ | | | | |
 
 ### Bastok
+
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | Naji | ✔️ | |
@@ -33,6 +39,7 @@
 | Volker | ⚠️ | | | Missing specific logic |
 
 ### Windurst
+
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | Kupipi| ✔️ | |
@@ -41,11 +48,13 @@
 | Shantotto | ✔️ | |
 
 ### Jeuno
+
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | Maat | ✔️ | | | |
 
 ### Chains of Promathia
+
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | Cherukiki | ❌ | |
@@ -54,6 +63,7 @@
 | Shikaree Z | ❌ | |
 
 ### Treasures of Aht Urhgan
+
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | Gadalar | ❌ | |
@@ -62,6 +72,7 @@
 | Zazarg | ❌ | |
 
 ### Wings of the Goddess
+
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | Excenmille (S) | ❌ | |
@@ -71,6 +82,7 @@
 | Romaa Mihgo | ❌ | |
 
 ### Seekers of Adoulin
+
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | Arciela  | ❌ | |
@@ -81,6 +93,7 @@
 | Ygnas | ❌ | |
 
 ### Rhapsodies of Vana'diel
+
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | Abquhbah | ❌ | |
@@ -99,6 +112,7 @@
 | Zeid II | ⚠️ | | | Implemented very quickly, probably missing things |
 
 ### Unity Concord
+
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | Aldo (UC) | ❌ | |
@@ -114,6 +128,7 @@
 | Yoran-Oran (UC) | ❌ | |
 
 ### Repeat Login Campaigns
+
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | Abenzio | ❌ | |
@@ -141,6 +156,7 @@
 | Zeid | ❌ | |
 
 ### Records of Eminence
+
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | Adelheid | ⛔ | | | No Scholar abilities/spells |
@@ -151,6 +167,7 @@
 | Valaineral | ⚠️ | | | Implemented very quickly, probably missing things |
 
 ### Alter Ego Extravaganzas
+
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | Amchuchu | ❌ | |
@@ -175,6 +192,7 @@
 | Sakura | ⚠️ | | | Immortal, but still can get hit by things when it shouldn't |
 
 ### Other Events
+
 | Name | Status | TP Behaviour | SC Behaviour | Notes |
 |---|---|---|---|---|
 | AAEV | ❌ | |

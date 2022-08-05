@@ -29,7 +29,7 @@ save then restart the topaz_connect.exe server.
 == Tweaks ==
 === Setting up an automated Auction House with Python. ===
 ==== Installing ====
-Python and the MySQL Python Connector are needed and should already be installed if you previously followed our [https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-[Windows-10] Windows 10 installation setup guide].
+Python and the MySQL Python Connector are needed and should already be installed if you previously followed our [Server-Setup-and-Maintenance-[Windows-10] Windows 10 installation setup guide].
 
 Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/AdamGagorik/pydarkstar.git > OK > then Close when it's done.
 

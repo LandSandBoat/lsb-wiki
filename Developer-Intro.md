@@ -5,6 +5,7 @@
 In this series of articles we're going to go over common concerns, tips and tricks, and examples you'll find useful on your journey. The topics are organized (roughly) from general and beginner-friendly, to specific and advanced.
 
 **Topics**
+
 - The Tech Stack (C++, Lua, SQL, (Python))
   - C++
   - Lua

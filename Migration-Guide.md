@@ -1,6 +1,6 @@
 # Migrating from older versions of Topaz or Topaz Next
-- [Windows 10](https://github.com/LandSandBoat/server/wiki/Server-setup-and-maintenance-%5BWindows-10%5D#update)
-- [Linux](https://github.com/LandSandBoat/server/wiki/Server-Setup-and-Maintenance-%5BLinux%5D#update)
+- [Windows 10](Server-setup-and-maintenance-Windows-10#update)
+- [Linux](Server-Setup-and-Maintenance-Linux#update)
 
 # Migrating from Darkstar Project
 
@@ -9,9 +9,9 @@
     * ❗ Downloading zip is **_highly discouraged_**
 2. Copy your configuration files from your Darkstar's `confs` folder to your fresh Topaz's `confs` folder
     * ❕ Do _not_ compile or run the server yet
-3. Follow steps on the [Database Management page](https://github.com/LandSandBoat/server/wiki/Database-Management) to use the dbtool to backup and update your SQL database.
+3. Follow steps on the [Database Management page](Database-Management) to use the dbtool to backup and update your SQL database.
     * ⚠️ You will need Python 3, pip, and the dbtool's dependencies `py -3 -m pip install -r requirements.txt`
-4. [Compile the server. Topaz Next exclusively uses CMake](https://github.com/LandSandBoat/server/wiki/CMake-Build-Guide), which is a different build process from Darkstar Project
+4. [Compile the server. Topaz Next exclusively uses CMake](CMake-Build-Guide), which is a different build process from Darkstar Project
 5. Try booting it!
     * ❕ You may see strange new notices about unrecognized configuration settings, as we've changed or removed settings which Darkstar Project had. You can:
         1. Copy a new conf file from the `confs/defaults` folder into `confs/` and reapply your desired changes
@@ -30,9 +30,9 @@
     * 🛠️ (Todo: Fill out this section with required changes)
 6. Copy your configuration files from your Darkstar's `confs` folder to your fresh Topaz's `confs` folder
     * ❕ Do _not_ compile or run the server yet
-7. Follow steps on the [Database Management page](https://github.com/LandSandBoat/server/wiki/Database-Management) to use the dbtool to backup and update your SQL database.
+7. Follow steps on the [Database Management page](Database-Management) to use the dbtool to backup and update your SQL database.
     * ⚠️ You will need Python 3, pip, and the dbtool's dependencies `py -3 -m pip install -r requirements.txt`
-8. [Compile the server. Topaz Next exclusively uses CMake](https://github.com/LandSandBoat/server/wiki/CMake-Build-Guide), which is a different build process from Darkstar Project
+8. [Compile the server. Topaz Next exclusively uses CMake](CMake-Build-Guide), which is a different build process from Darkstar Project
 9. Try booting it!
     * ❕ You may see strange new notices about unrecognized configuration settings, as we've changed or removed settings which Darkstar Project had. You can:
         1. Copy a new conf file from the `confs/defaults` folder into `confs/` and reapply your desired changes

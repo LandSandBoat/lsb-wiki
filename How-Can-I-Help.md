@@ -3,10 +3,10 @@ This guide assumes you've managed to download, build, and run the server correct
 ### Quick Links
 - [GitHub Issues tagged as "Good First Issue"](https://github.com/LandSandBoat/server/labels/good%20first%20issue)
 - [GitHub Issues](https://github.com/LandSandBoat/server/issues)
-- [What Works?](https://github.com/LandSandBoat/server/wiki/What-Works)
-- [Using GitHub](https://github.com/LandSandBoat/server/wiki/Using-Github)
+- [What Works?](What-Works)
+- [Using GitHub](Using-Github)
 - [Contribution Guide & Style Guide](https://github.com/LandSandBoat/server/blob/release/CONTRIBUTING.md)
-- [Technical Articles & Guides](https://github.com/LandSandBoat/server/wiki/Guides-(Development))
+- [Technical Articles & Guides](Guides-(Development))
 - [Our License](https://github.com/LandSandBoat/server/blob/release/LICENSE)
 
 ### Whatever your skill level
