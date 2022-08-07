@@ -59,9 +59,9 @@ Clone the repository to the current folder you are in
 git clone --recursive https://github.com/LandSandBoat/server.git
 ```
 
-If you want to clone the repository with `canary` branch already checked-out you can use:
+If you want to clone the repository with `base` branch already checked-out you can use:
 ```
-git clone --recursive --single-branch --branch canary https://github.com/LandSandBoat/server.git
+git clone --recursive --single-branch --branch base https://github.com/LandSandBoat/server.git
 ```
 
 Go inside the project's folder and compile the source code
@@ -99,16 +99,16 @@ Log in to sql
 sudo mysql -u root -p
 ```
 
-Create the user 'topazadmin' with the password 'topazisawesome'
+Create the user 'lsbadmin' with the password 'lsbisawesome'
 ```
-CREATE USER 'topazadmin'@'localhost' IDENTIFIED BY 'topazisawesome';
+CREATE USER 'lsbadmin'@'localhost' IDENTIFIED BY 'lsbisawesome';
 ```
 
-Create the xidb database and grant all access to the user we just created (topazadmin)
+Create the xidb database and grant all access to the user we just created (lsbadmin)
 ```
 CREATE DATABASE xidb;
 USE xidb;
-GRANT ALL PRIVILEGES ON xidb.* TO 'topazadmin'@'localhost';
+GRANT ALL PRIVILEGES ON xidb.* TO 'lsbadmin'@'localhost';
 exit
 ```
 
@@ -118,50 +118,31 @@ cd ../sql
 for f in *.sql
   do
      echo -n "Importing $f into the database..."
-     mysql xidb -u topazadmin -ptopazisawesome < $f && echo "Success"      
+     mysql xidb -u lsbadmin -plsbisawesome < $f && echo "Success"      
   done
 cd ..
 ```
-Now we are going to enter the username and password for sql inside three different files login.conf, map.conf, and search_server.conf
+Now we are going to enter the username and password for sql inside `network.lua`
 
-First, copy these config files to the conf folder:
+First, copy the .lua settings files from the `settings\default\` folder to the `settings\` folder:
 ```
-cp conf/default/* conf/
+cp settings/default/* settings/
 ```
 
-Then edit them as follows:
+Then edit the copied `network.lua` as follows:
 
 ```
-cd conf
-echo -e "\n#DB_VER: `git rev-parse --short=4 HEAD`" >> version.conf
-nano login.conf
+cd settings
+echo -e "\n#DB_VER: `git rev-parse --short=4 HEAD`" >> network.lua
+nano network.lua
 ```
-Look for mysql_login: root and change it to mysql_login: topazadmin
+Look for `SQL_LOGIN    = "root",` and change it to `SQL_LOGIN    = "lsbadmin",`
 
-Look for mysql_password: root and change it to mysql_password: topazisawesome
-
-Once that's changed press CONTROL + X, then press enter and hit Y to save the file
-```
-nano map.conf
-```
-Look for mysql_login: root and change it to mysql_login: topazadmin
-
-Look for mysql_password: root and change it to mysql_password: topazisawesome
-
-Once that's changed press CONTROL + X, then press enter and hit Y to save the file
-```
-nano search_server.conf
-```
-Look for mysql_login: root and change it to mysql_login: topazadmin
-
-Look for mysql_password: root and change it to mysql_password: topazisawesome
+Look for `SQL_PASSWORD = "root",` and change it to `SQL_PASSWORD = "lsbisawesome",`
 
 Once that's changed press CONTROL + X, then press enter and hit Y to save the file
 
-You should also copy the default game scripting settings and modify them to your preferences:
-```
-cp server/scripts/settings/default/* server/scripts/settings/
-```
+NOTE: Any .lua files in the `settings\default\` folder that you wish to update needs to first be **copied** from the `server\settings\default\` folder and put in the precedent folder (`server\settings\`). Any .lua file(s) not updated can remain in the `server\settings\default\` folder (the .lua files in the `server\settings\default` folder are used if updated ones are not found in the `server\settings\` folder).
 
 * Ubuntu installs with unattended-upgrades enabled by default, this will cause issues
 with mariadb restarting when an update is available, leaving the server without
@@ -174,24 +155,24 @@ access to the database. To fix this run
 Now it's time to run your server
 ```
 cd ..
-screen -d -m -S topaz_connect ./topaz_connect
-screen -d -m -S topaz_game ./topaz_game
-screen -d -m -S topaz_search ./topaz_search
+screen -d -m -S xi_connect ./xi_connect
+screen -d -m -S xi_game ./xi_game
+screen -d -m -S xi_search ./xi_search
 ```
 
 You are done :)
 
 If you need to connect to one of those three screens we have created to take a look at the logs run
 ```
-screen -r topaz_connect
-screen -r topaz_game
-screen -r topaz_search
+screen -r xi_connect
+screen -r xi_game
+screen -r xi_search
 ```
 **Next Step: [Post-Install Guide](Post-Install-Guide)**
 
 # Update
 
-As development is always ongoing, you may want to periodically update to the latest version of Topaz. This can be done quite simply with a few steps, and using the magic of `git`! 
+As development is always ongoing, you may want to periodically update to the latest version of LandSandBoat. This can be done quite simply with a few steps, and using the magic of `git`! 
 
 1. Save your custom modifications + settings
 ```
