@@ -1,43 +1,45 @@
-== Common Tasks ==
-=== Generating LandSandBoat patch notes  ===
-You can use <code>tools/generate_changelog.py</code> to generate patch notes from LandSandBoat to publish as-is, or to supplement your own patch notes.
-By default, <code>tools/generate_changelog.py</code> will generate patch notes for the last 14 days, but it accepts an argument if you wanted to use an arbitrary number of days: <code>tools/generate_changelog.py 30</code> will generate 30 days. We automatically generate patch notes on the 1st and 15th day of the month, and store them here: https://github.com/LandSandBoat/server/tree/website/changelogs.
+## Common Tasks
+### Generating LandSandBoat patch notes
+You can use `server\tools\generate_changelog.py` to generate patch notes from LandSandBoat to publish as-is, or to supplement your own patch notes.
+By default, `server\tools\generate_changelog.py` will generate patch notes for the last 14 days, but it accepts an argument if you wanted to use an arbitrary number of days: <code>tools\generate_changelog.py 30</code> will generate 30 days. We automatically generate patch notes on the 1st and 15th day of the month, and store them here: https://github.com/LandSandBoat/server/tree/website/changelogs.
 
-== Common Issues ==
-=== Gil not sent to the Delivery Box from the Auction House  ===
-One possible fix: Execute HeidiSQL > select your session and connect to it > select "xidb" > File > Run SQL file... > select the triggers.sql file from the \topaz\sql folder > Open.
+## Common Issues
+### Gil not sent to the Delivery Box from the Auction House
+One possible fix: Execute HeidiSQL > select your session and connect to it > select "xidb" > File > Run SQL file... > select the triggers.sql file from the `server\sql` folder > Open.
 
-=== Version Mismatch ===
-<b>WE STRONGLY ADVISE AGAINST LOCKING THE SERVER TO OLDER VERSIONS. IT IS A UNIVERSALLY BAD IDEA.</b> It <em>will</em> cause issues even <em>if</em> you manage to keep both server and client versions on par!
+### Version Mismatch
+**WE STRONGLY ADVISE AGAINST LOCKING THE SERVER TO OLDER VERSIONS. IT IS A UNIVERSALLY BAD IDEA.** It *will* cause issues even *if* you manage to keep both server and client versions on par!
 
-If the server (LandSandBoat) and the client (Final Fantasy XI) don't share the same version, you'll probably get this error in the topaz_connect.exe log window:
+If the server (LandSandBoat) and the client (Final Fantasy XI) don't share the same version, you'll probably get this error in the xi_connect.exe log window:
 ```
 [Error] lobbyview_parse: Incorrect client version: got 000000xx_x, expected 000000xx_x
 [Error] lobbyview_parse: The server must be updated to support this client version
 ```
-Open the <code>topaz\conf\version.conf</code> file with a text editor and modify the following line:
-```
-VER_LOCK: 2
-```
-to:
-```
-VER_LOCK: 0
-```
-save then restart the topaz_connect.exe server.
+**Copy** the following file from the `server\settings\default\` folder into the `server\settings\` folder and open the copied file (with the default Windows text editor (Notepad) or an external one (like  [Notepad++](https://notepad-plus-plus.org/)):
+
+* login.lua
+
+then modify this line:
+
+> VER_LOCK = 2,
+
+(replace **2** with **0**)
+
+then save the changes and restart the **xi_connect.exe** server.
 
 
-== Tweaks ==
-=== Setting up an automated Auction House with Python. ===
-==== Installing ====
+## Tweaks
+### Setting up an automated Auction House with Python
+#### Installing
 Python and the MySQL Python Connector are needed and should already be installed if you previously followed our [Server-Setup-and-Maintenance-[Windows-10] Windows 10 installation setup guide].
 
 Right click wherever you want to download the repository > Git Clone... > URL: https://github.com/AdamGagorik/pydarkstar.git > OK > then Close when it's done.
 
-Its setup instructions (found [http://adamgagorik.github.io/pydarkstar/generated/setup.html '''HERE''']) are focused on a package manager named anaconda. The below instructions are focused on pip, which comes with the stock python installer. Anaconda may work better for you if the command line is scary.
+Its setup instructions (found **[HERE](http://adamgagorik.github.io/pydarkstar/generated/setup.html)**) are focused on a package manager named Anaconda. The below instructions are focused on pip, which comes with the stock python installer. Anaconda may work better for you if the command line is scary.
 
-'''''Whichever you choose, it is important to note that LSB doesn't maintain or provide support for pydarkstar - its a nice thing that happens to work. PLEASE contact its author NOT US, for any that wasn't a direct result of us screwing up our guide! Thanks for your understanding.'''''
+***Whichever you choose, it is important to note that LSB doesn't maintain or provide support for pydarkstar - its a nice thing that happens to work. PLEASE contact its author NOT US, for any that wasn't a direct result of us screwing up our guide! Thanks for your understanding.***
 
-''To get started via pip:''
+#### To get started via pip: 
 
 Right click + holding the Shift key > context menu: Open command window here/Open PowerShell window here, then type:
 ```
@@ -49,10 +51,10 @@ py -3 -m pip install beautifulsoup4
 py -3 -m pip install pymysql
 py -3 -m pip install sqlalchemy
 ```
-Double click on \pydarkstar\makebin.py to create base files then open \pydarkstar\bin\config.yaml with a text editor (default options are listed below, you can edit them at your convenience):
+Double click on `\pydarkstar\makebin.py` to create base files then open `\pydarkstar\bin\config.yaml` with a text editor (default options are listed below, you can edit them at your convenience):
 ```
 name: Zissou (will be the name of the bot displayed in the AH lists, buying and selling items)
-database: dspdb (change it accordingly to your database's name)
+database: xidb (change it accordingly to your database's name)
 password: root (replace with your MariaDB password)
 restock: 3600 (seconds between each automatic restock)
 tick: 30 (seconds between each purchase will be made by the bot)
@@ -60,18 +62,17 @@ stock01: 5 (number of single items that will be restocked each tick)
 stock12: 5 (number of stacks items that will be restocked each tick)
 ```
 
-==== Running ====
-1. <s>Execute \pydarkstar\pydarkstar\bin\scrub.py to build up the items list from https://www.ffxiah.com/ (will take some time). Unfortunately you can't select the server from which the prices are pulled, if I'm correct Bahamut is the server by default. Rerun it if you want to update prices automatically.</s> '''''Do not run the scrape to get new prices from ffxiah. Just don't. The stock file was heavily edited to ensure you didn't create a gil printing press on your server.'''''
+#### Running
+1. ~~Execute \pydarkstar\pydarkstar\bin\scrub.py to build up the items list from https://www.ffxiah.com/ (will take some time). Unfortunately you can't select the server from which the prices are pulled, if I'm correct Bahamut is the server by default. Rerun it if you want to update prices automatically.~~ **Do not run the scrape to get new prices from ffxiah. Just don't. The stock file was heavily edited to ensure you didn't create a gil printing press on your server.**
 
-2. Execute \pydarkstar\pydarkstar\bin\broker.py: Script that will automatically buy/sell stuff. Let it run in the background.
+2. Execute `\pydarkstar\pydarkstar\bin\broker.py`: Script that will automatically buy/sell stuff. Let it run in the background.
 
-Executing \pydarkstar\pydarkstar\bin\refill.py will restock items automatically.
+3. Executing `\pydarkstar\pydarkstar\bin\refill.py` will restock items automatically.
 
-Editing prices manually: open \pydarkstar\bin\items.csv with a text editor (0 = non listed item, add them by referring to the IDs in \topaz\sql\item_equipment.sql if necessary) and change prices accordingly.
+4. Editing prices manually: open `\pydarkstar\bin\items.csv` with a text editor (0 = non listed item, add them by referring to the IDs in `\server\sql\item_equipment.sql` if necessary) and change prices accordingly.
 
+### HeidiSQL useful querys:
 
-
-HeidiSQL useful querys:
 ```
 UPDATE auction_house SET seller_name = 'Your-choice-here';
 UPDATE auction_house SET buyer_name = 'Your-choice-here';
@@ -79,29 +80,29 @@ UPDATE auction_house SET buyer_name = 'Your-choice-here' where buyer_name is nul
 UPDATE auction_house SET sell_date = 'Your-choice-here' where sell_date = 'Your-choice-here';
 ```
 
-=== Updating Python ===
-Updating Python: Default location of the Python installation files is: C:\Users\Username\AppData\Local\Programs\Python, when updating you may want to relocate old files from your old version's folder to the new one (copy/paste).
+### Updating Python
+Updating Python: Default location of the Python installation files is: `C:\Users\Username\AppData\Local\Programs\Python`, when updating you may want to relocate old files from your old version's folder to the new one (copy/paste).
 
 Updating modules: Make sure you check if your modules are up to date from time to time (you'll probably get reminded while running migrations scripts). To do so, open a command prompt like stated above and enter:
-```
-py -3 -m pip install --upgrade Modulename
-```
 
-=== Useful GM Commands ===
-Type "!command" in game (for said "command" refer to the ones listed here: https://github.com/LandSandBoat/server/tree/release/scripts/commands).
+`py -3 -m pip install --upgrade Modulename
+`
 
-!togglegm: no more aggro.
+### Useful GM Commands
+Type `!command` in game (for other GM commands to use in place of **!command**, refer to: `\server\scripts\commands`). 
+
+!togglegm: no more aggro and the GM icon next to the character name
 
 !togglegm + /anon: invisible through /search.
 
-!hide: invisible to players.
+!hide: switches between being visible/invisible to players.
 
-=== Unlock Superior levels (to wear particular items) ===
-\topaz\src\map\packets\char_stats.cpp:
+### Unlock Superior (Su) levels (to wear particular items)
+In ``\server\src\map\packets\char_stats.cpp``:
 
 Replace:
 ```cpp
-//0x52 = superior level (1 or 2)
+ref<uint8>(0x52) = PChar->getMod(Mod::SUPERIOR_LEVEL);
 ```
 with:
 ```cpp
@@ -114,14 +115,10 @@ ref<uint8>(0x52) = PChar->GetMLevel() == 99 ? 5 : 0; // level 99 auto superior 5
 Rebuild the solution.
 
 
-=== Change your MariaDB password ===
+### Change your MariaDB password
 Open: Start Menu > "MariaDB xx.x (x64)" folder > "MySQL Client (MariaDB xx.x)".
 
-Then in the prompt command, enter the following commands:
-```
-Enter password: Your-current-MariaDB-password
-```
-Hit "Enter", then type:
+In the prompt command, you will be prompted to enter your current MySQL DB password.  Do so, hit "Enter", then enter the following commands:
 ```
 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('Your-new-desired-password');
 ```
@@ -151,12 +148,12 @@ Hit "Enter" (returned message: "Bye").
 
 Done.
 
-=== How do I set JP Midnight? ===
+### How do I set JP Midnight?
 JP midnight is now coded to align with the retail JST midnight regardless of your local timezone setting and manual configuration is no longer required. There is no setting for JP Midnight and we do not recommend altering server timing behaviour as the client has hard-coded expectations that certain events and resets will occur at certain times.
 
-=== Auto-Starting the Server ===
-==== Linux ====
-Linux users can create several systemd services to automate the servers (make sure to update <code>/path/to/topaz</code>, and the User/Group):
+### Auto-Starting the Server
+#### Linux
+Linux users can create several systemd services to automate the servers (make sure to update `/path/to/topaz`, and the User/Group):
 
 ```
 #topaz.service
@@ -253,10 +250,10 @@ ExecStart=/path/to/topaz/topaz_search
 [Install]
 WantedBy=topaz.service
 ```
-After adding these to <code>/etc/systemd/system/</code>, run <code>systemctl daemon-reload</code> followed by <code>systemctl enable topaz_game topaz_connect topaz_search</code>. You can start/stop all the servers at once with <code>systemctl start/stop topaz</code> or each individual service separately. To enable auto-start, type <code>systemctl enable topaz</code>. Make sure topaz is in a location accessible to the user that will be running the service, and the correct permissions are set.
+After adding these to `/etc/systemd/system/`, run `systemctl daemon-reload` followed by `systemctl enable topaz_game topaz_connect topaz_search`. You can start/stop all the servers at once with `systemctl start/stop topaz` or each individual service separately. To enable auto-start, type `systemctl enable topaz`. Make sure topaz is in a location accessible to the user that will be running the service, and the correct permissions are set.
 
-=== Automatically give new players a server linkshell ===
-In <code>topaz/scripts/globals/player.lua</code> find the following line:
+### Automatically give new players a server linkshell
+In `server\scripts\globals\player.lua` find the following line:
 ```lua
 player:setNewPlayer(true) -- apply new player flag
 ```
@@ -264,10 +261,13 @@ and add the following line:
 ```lua
 player:addLinkpearl("YOURLS", true)
 ```
-Replace <code>YOURLS</code> with the name of your linkshell, and the second parameter <code>true</code> will equip the linkpearl in slot 2. Change to <code>false</code> if you want to just place it in the inventory without equipping. '''''NOTE THAT THE LINKSHELL MUST ALREADY EXIST FIRST.'''''
+(replace **YOURLS** with the desired linkshell name)
+(leave the quotation marks surrounding the desired linkshell name)
 
-=== Announce to entire server when a player logs in ===
-At the end of <code>LoadChar(...)</code> in <code>src/map/utils/charutils.cpp</code> you can add the following snippet to announce when a player logs in for the first time in their play session:
+The second parameter **true** will equip the linkpearl in slot 2. Change to **false** if you want to just place it in the inventory without equipping. ***NOTE THAT THE LINKSHELL MUST ALREADY EXIST FIRST.***
+
+### Announce to entire server when a player logs in
+At the end of `LoadChar(...)` in `\server\src\map\utils\charutils.cpp` you can add the following snippet to announce when a player logs in for the first time in their play session:
 ```cpp
         if (zoning == 2)
         {
