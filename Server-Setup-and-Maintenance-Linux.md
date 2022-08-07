@@ -124,7 +124,7 @@ cd ..
 ```
 Now we are going to enter the username and password for sql inside `network.lua`
 
-First, copy the .lua settings files from the `settings\default\` folder to the `settings\` folder:
+First, copy the .lua settings files from the `settings/default/` folder to the `settings/` folder:
 ```
 cp settings/default/* settings/
 ```
@@ -142,7 +142,7 @@ Look for `SQL_PASSWORD = "root",` and change it to `SQL_PASSWORD = "lsbisawesome
 
 Once that's changed press CONTROL + X, then press enter and hit Y to save the file
 
-NOTE: Any .lua files in the `settings\default\` folder that you wish to update needs to first be **copied** from the `server\settings\default\` folder and put in the precedent folder (`server\settings\`). Any .lua file(s) not updated can remain in the `server\settings\default\` folder (the .lua files in the `server\settings\default` folder are used if updated ones are not found in the `server\settings\` folder).
+NOTE: Any .lua files in the `settings/default/` folder that you wish to update needs to first be **copied** from the `server/settings/default/` folder and put in the precedent folder (`server/settings/`). Any .lua file(s) not updated can remain in the `server/settings/default/` folder (the .lua files in the `server/settings/default` folder are used if updated ones are not found in the `server/settings/` folder).
 
 * Ubuntu installs with unattended-upgrades enabled by default, this will cause issues
 with mariadb restarting when an update is available, leaving the server without
