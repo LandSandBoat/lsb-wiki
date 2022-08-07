@@ -1,7 +1,7 @@
 # Rotation Values
 The Rotation Value of an entity represents where it's facing in the world. This is stored and used as `uint8`, meaning that **values range 0~255**.
 
-⚠️ **As such, all degrees on Topaz are based on a "256 degree" scale. This is _not_ the same "360 degree" scale that you may be used to.**
+⚠️ **As such, all degrees on LSB are based on a "256 degree" scale. This is _not_ the same "360 degree" scale that you may be used to.**
 
 Rotation 0 is aligned with as due East, with values increasing as you rotate **to the right**.
 
