@@ -1,5 +1,5 @@
 **TLDR:**
->- The main destructive changes we've been working on at Topaz-Next are complete!
+>- The main destructive changes we've been working on at LandSandBoat are complete!
 >- Up to 20x performance improvement*!
 >- **ZERO** runtime file reads for scripting, down from 100-300 per second!
 >- Stats: 13838 files changed (lines: +111,537, −75,698), 381 commits in one month! 
@@ -100,7 +100,6 @@ Does this mean calling Lua is faster, easier, and more efficient? Yes. Absolutel
 Does this mean we should start cramming everything into Lua indiscriminately? **No.** Lua, Luajit (our fast version of Lua), and Sol are wonderful tools, but they are not a replacement for the sheer heavy lifting power of C++, or the storage/querying power of SQL. This work doesn't turn on some kind of "everything should be in Lua now" switch. Make the same choices you would have before so that we can use these performance gains to carry the project into the future!
 
 ## What's Next?
-The `sol_refactor` branch has become the new starting point for `canary`. If you're familiar with the Topaz branching strategy; `release` is our stable branch and `canary` is our "use-at-your-own-risk-beta-test-but-it-has-cool-stuff" branch. We want to complete at least a few weeks of open testing in `canary` before we promote this refactor to `release`. After that, full regular development will resume! 
 
 We have a few other projects in the planning stages that should double overall zone performance again, and they aren't as drastic as this refactoring, so look forward to that :)
 
