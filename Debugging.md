@@ -13,7 +13,7 @@ Close TortoiseGit.
 
 (Make sure you're running your servers and you identified a crash for which you've been asked to provide a dump file.)
 
-Execute Visual Studio 2019 > Debug > Attach to Process... > select xi_game.exe in the list > Attach.
+Execute Visual Studio 2019 > Debug > Attach to Process... > select `xi_map.exe` in the list > Attach.
 
 Once the crash is reproduced while being monitored by Visual Studio 2019:
 
@@ -21,7 +21,7 @@ Debug > Save Dump As...
 
 The same steps can be made through the Task Manager:
 
-Right click on the taskbar > Task Manager > Processes > right click on xi_game.exe > Create Dump File.
+Right click on the taskbar > Task Manager > Processes > right click on `xi_map.exe` > Create Dump File.
 
 **If you're asked for a dump file, you must also provide the `.exe` and `.pdb` files that were being used when you made your dump. The dump is useless without them**
 
@@ -34,7 +34,7 @@ Create a file in your server root directory called `multirun.gdb` with the follo
 while 1
   set confirm off
   set logging off 
-  file xi_game
+  file xi_map
   run
   set logging on
   list
