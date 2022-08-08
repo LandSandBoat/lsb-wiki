@@ -109,7 +109,7 @@ Done.
 CMake-Build-Guide
 
 * xi_connect.exe
-* xi_game.exe
+* xi_map.exe
 * xi_search.exe
 
 should be present in the `server\` folder.
