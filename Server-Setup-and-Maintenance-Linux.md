@@ -156,7 +156,7 @@ Now it's time to run your server
 ```
 cd ..
 screen -d -m -S xi_connect ./xi_connect
-screen -d -m -S xi_game ./xi_game
+screen -d -m -S xi_map ./xi_map
 screen -d -m -S xi_search ./xi_search
 ```
 
@@ -165,7 +165,7 @@ You are done :)
 If you need to connect to one of those three screens we have created to take a look at the logs run
 ```
 screen -r xi_connect
-screen -r xi_game
+screen -r xi_map
 screen -r xi_search
 ```
 **Next Step: [Post-Install Guide](Post-Install-Guide)**
