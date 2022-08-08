@@ -19,12 +19,12 @@ We can't know how good/bad our performance is until we measure it.
 
 ## Setup
 
-Add `-DTRACY_ENABLE=ON` to your `CMake` configuration arguments. It will download and build the `Tracy` client into `topaz_game` for you.
+Add `-DTRACY_ENABLE=ON` to your `CMake` configuration arguments. It will download and build the `Tracy` client into `xi_game` for you.
 
-1) Build `topaz_game` with `-DTRACY_ENABLE=ON` (or use one of the `-Tracy` targets in VS)
+1) Build `xi_game` with `-DTRACY_ENABLE=ON` (or use one of the `-Tracy` targets in VS)
 2) Launch `Tracy.exe` from the Tracy Release
 3) In Tracy, press "Connect". It will wait for data to be sent to it.
-4) Launch `topaz_game` and watch the data stream in.
+4) Launch `xi_game` and watch the data stream in.
 
 ## Gotchas
 Remember that there are a lot of things that can affect performance.
