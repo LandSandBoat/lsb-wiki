@@ -73,7 +73,7 @@ Put it wherever you want but remember its path.
 
 # 5. Connecting to a Private Server
 
-* Execute xiloader.exe as an administrator (_after_ launching `xi_connect` and `xi_game` if connecting to your own local sever), then select the "Create New Account" option by hitting "2" then:
+* Execute xiloader.exe as an administrator (_after_ launching `xi_connect` and `xi_map` if connecting to your own local sever), then select the "Create New Account" option by hitting "2" then:
 ```
 Username: Username
 Password: Password (then repeat)
