@@ -8,31 +8,35 @@ UPDATE accounts SET password = PASSWORD("NEW_PASSWORD_HERE") WHERE login = 'ACCO
 
 * Note: This function is deprecated in stock MySQL*
 
-== Mail an item to all characters on the entire server ==
-<pre>
+## Mail an item to all characters on the entire server ==
+
+```sql
 INSERT INTO delivery_box (charid, charname, box, slot, itemid, itemsubid, quantity, extra, senderid, sender, received, sent)
   SELECT chars.charid, chars.charname, 1, 0, ItemIdHere, 0, 1, NULL, 0, 'The MHMU', 0, 0 FROM chars;
-</pre>
+```
 
-== Mail an item to one character ==
-<pre>
+## Mail an item to one character ==
+
+```sql
 INSERT INTO delivery_box VALUES (charid, 'name here', 1, 0, itemid, 0, quantity, NULL, 0, 'The MHMU', 0, 0);
-</pre>
+```
 
-== Find All Mobs Without Pets ==
+## Find All Mobs Without Pets ==
 
-<pre>
+```sql
 select ms.mobid, ms.mobname, pt.pet_offset 
 from mob_spawn_points ms
 inner join mob_groups gr on ms.groupid = gr.groupid and gr.zoneid = ((ms.mobid >> 12) & 0xFFF)
 inner join mob_pools pl on gr.poolid = pl.poolid 
 left join mob_pets pt on pt.mob_mobid = ms.mobid 
 where pl.mJob IN (9, 14, 15, 18) and pt.pet_offset IS NULL;
-</pre>
+```
 
-== Expansion icons ==
+## Expansion icons
+
 Icons are set per-account now, in the accounts table. Change the default value in the table design to the value you want everyone to have (without having to set it every time someone creates an account).
-<pre>
+
+```txt
 Expansion Icons - 2 Bytes
 
 Byte 1 - Zilart to A Shantotto Ascension
@@ -54,12 +58,14 @@ Byte 2 - Vision of Abyssea to Seekers of Adoulin
 00100000 Bit5 - Not Used - Future expansion
 01000000 Bit6 - Not Used - Future expansion
 10000000 Bit7 - Not Used - Future expansion
-</pre>
+```
 
-It's a decimal representation of multiple bytes. Lets look at them in binary, where it's all on/off (one and zero):<br>
+It's a decimal representation of multiple bytes. Lets look at them in binary, where it's all on/off (one and zero):
+
 so our default value of 4094 = 0000111111111110 (everything except the "Not Used" bits). You can use almost any calculator to swap between these formats if you need to.
 
-== Enable ZONEMISC features everywhere ==
+## Enable ZONEMISC features everywhere
+
 In this example, we'll enable MISC_YELL everywhere. You can see these flags in zone.h.
 
 ```cpp
@@ -76,7 +82,7 @@ WHERE
     NOT(misc & 1024);
 ```
 
-== Show contents of players' bazaars ==
+## Show contents of players' bazaars
 
 ```sql
 SELECT
@@ -98,7 +104,7 @@ LEFT JOIN accounts_sessions AS acc_sess on c.accid = acc_sess.accid
 WHERE ci.bazaar > 0;
 ```
 
-```
-Testo	1	100	adventurer_coupon	Southern_San_dOria	1
-Testo	1	99999999	kraken_club	Southern_San_dOria	1
+```txt
+Testo    1    100        adventurer_coupon    Southern_San_dOria    1
+Testo    1    99999999   kraken_club          Southern_San_dOria    1
 ```
