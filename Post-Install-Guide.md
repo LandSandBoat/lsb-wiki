@@ -4,7 +4,7 @@
 
 Various details about the game can be changed via editing the settings files. Settings are located in `settings/` and require a server reboot to apply. If you edit the settings files in `settings/default` nothing will happen. These are used as default values for the settings if you don't copy any files from `settings/default` to `settings/`.
 
-## Executing a MySQL Query ==
+## Executing a MySQL Query
 
 Linux and Windows users with MySQL in their PATH can execute a query from the terminal using the following format:
 
@@ -51,7 +51,7 @@ UDP port: 54230
 
 By default, dbtool will backup your whole database into `server/sql/backups/` whenever it performs an update. You can turn this off and do manual backups either with the TUI, or by running `python3 dbtool.py backup` (Windows: `py -3 dbtool.py backup`). You can create a backup of only sensitive player data by using `python3 dbtool.py backup lite` (Windows: `py -3 dbtool.py backup lite`). The tables it backs up with the `lite` argument are defined in `server/tools/config.yaml` (created automatically by dbtool the first time you run it). The backups can be imported using the **Restore/Import** command in dbtool.
 
-## See Also ==
+## See Also
 
 [Server Administration](Server-Administration)
 
