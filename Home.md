@@ -47,4 +47,4 @@ Information for new server administrators.
 
 All participants are expected to abide by our Code of Conduct. Please be sure to review it.
 
-- [Code of Conduct](https://github.com/LandSandBoat/server/blob/base/CODE_OF_CONDUCT.md)
+- [Code of Conduct](Code_of_Conduct)

@@ -56,7 +56,7 @@ Some common data sources are:
 
 Things to remember:
 * With crafting we compare ALL recipe sources but ffo.jp has usually been the most reliable.
-* With drop rates sample size will influence the values you see on fan sites. ffxidb combines all tiers of Treasure Hunter higher than 2 in the "3+" column and that the "average" column combines all tiers even no TH at all - and so does ffxiclopedia. Further more, due to sample sizes and random variance the rates won't exactly match retail on any site so we look at multiple data points at different TH tiers t make an educated guess about what rarity the item actually is, [based on the chart SE released.](TH-chart.md)
+* With drop rates sample size will influence the values you see on fan sites. ffxidb combines all tiers of Treasure Hunter higher than 2 in the "3+" column and that the "average" column combines all tiers even no TH at all - and so does ffxiclopedia. Further more, due to sample sizes and random variance the rates won't exactly match retail on any site so we look at multiple data points at different TH tiers t make an educated guess about what rarity the item actually is, [based on the chart SE released.](TH-chart)
 
 About Videos
 ------------

@@ -53,12 +53,12 @@ By default, dbtool will backup your whole database into `server/sql/backups/` wh
 
 ## See Also ==
 
-[Server Administration](Server-Administration.md)
+[Server Administration](Server-Administration)
 
-[Common Tasks](Miscellaneous-Server.md)
+[Common Tasks](Miscellaneous-Server)
 
-[Useful SQL Queries](Useful-SQL-queries.md)
+[Useful SQL Queries](Useful-SQL-queries)
 
-[Database Management](Database-Management.md)
+[Database Management](Database-Management)
 
-[Development](Development.md)
+[Development](Development)

@@ -18,4 +18,4 @@
   * [Database Management](Database-Management)
   * [Debugging](Debugging)
 * [Development](Development)
-* [Code of Conduct](Code_of_Conduct.md)
+* [Code of Conduct](Code_of_Conduct)
