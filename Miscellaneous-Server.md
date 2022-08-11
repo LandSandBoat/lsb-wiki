@@ -217,30 +217,6 @@ Type `!command` in game (for other GM commands to use in place of **!command**, 
 
 !hide: switches between being visible/invisible to players.
 
-### Unlock Superior (Su) levels (to wear particular items)
-
-In ``\server\src\map\packets\char_stats.cpp``:
-
-Replace:
-
-```cpp
-ref<uint8>(0x52) = PChar->getMod(Mod::SUPERIOR_LEVEL);
-```
-
-with:
-
-```cpp
-ref<uint8>(0x52) = X; // replace X with desired superior level
-```
-
-or:
-
-```cpp
-ref<uint8>(0x52) = PChar->GetMLevel() == 99 ? 5 : 0; // level 99 auto superior 5
-```
-
-Rebuild the solution.
-
 ### Change your MariaDB password
 
 Open: Start Menu > "MariaDB xx.x (x64)" folder > "MySQL Client (MariaDB xx.x)".
