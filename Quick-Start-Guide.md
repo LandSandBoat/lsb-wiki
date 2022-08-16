@@ -15,11 +15,12 @@
     py -3 -m pip install -r server/tools/requirements.txt
     cp server/settings/default/* server/settings
     ```
-  * Edit the file `network.lua` inside `server/settings/` and change `SQL_PASSWORD` to the password set during MariaDB setup.
-  * Edit the file `main.lua` inside `server/settings` with settings for your server.
-  * Back in your PowerShell window, move to `server/tools/` and build the database:
+  * Edit the file `network.lua` inside `server\settings\` and change "root" to the password set during MariaDB setup
+    * Make sure to leave the quotation marks surrounding the password!
+  * Edit the file `main.lua` inside `server\settings\` with your desired settings for your server.
+    * Make sure to leave the quotation marks surrounding that has them around it!
+  * Back in your PowerShell window, navigate to `server\tools\` and build the database:
     ```
-    cd server/tools
     py -3 dbtool.py
     ```
   * Follow the on-screen instructions.
@@ -38,9 +39,8 @@
     >CONFLICT (content): Merge conflict in _**some file**_
 
     ⚠️ If this happens, you need to manually edit the conflicting files before continuing.
-  * Move to `server/tools/` and update the database:
+  * Navigate to `server\tools\` and update the database:
     ```
-    cd tools
     py -3 dbtool.py update
     ```
   * Open the `server` root folder in VS2019.
@@ -86,12 +86,14 @@
     ```
     sudo mysql_secure_installation
     ```
-  * Type the following to create a database user with the login _**xi**_ and password _**password**_, and an empty database called _**xidb**_. Change these to improve security:
+  * Type the following to create a database user with the login <ins>_**xi**_</ins> and password <ins>_**password**_</ins>, and an empty database called <ins>_**xidb**_</ins>. NOTE: You _SHOULD_ change **ALL THREE OF THESE** to improve security:
     ```
     sudo mysql -u root -p -e "CREATE USER 'xi'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE xidb;USE xidb;GRANT ALL PRIVILEGES ON xidb.* TO 'xi'@'localhost';"
     ```
-  * Edit the file `network.lua` inside `server/settings/` and change `SQL_PASSWORD` to the password set during MariaDB setup.
-  * Edit the file `main.lua` inside `server/settings` with settings for your server.
+  * Edit the file `network.lua` inside `server/settings/` and change "root" to the password set during MariaDB setup
+    * Make sure to leave the quotation marks surrounding the password!
+  * Edit the file `main.lua` inside `server/settings` with your desired settings for your server.
+    * Make sure to leave the quotation marks surrounding that has them around it!
   * In the `server` directory, prepare and build the executables:
     ```
     mkdir build
