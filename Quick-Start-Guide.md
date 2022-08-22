@@ -193,17 +193,13 @@ cmake .. -DLuaJIT_INCLUDE_DIR=<SERVER_ROOT>/server/ext/lua/include
 
 <details>
   <summary>Linux (Arch)</summary>
-Some users have had success building on Arch, we've been able to reproduce a build using the Docker file below. We can't and won't support Arch as main platform. Good luck!
+Some users have had success building on Arch. We can't and won't support Arch as main platform. Good luck!
 
-```
-// Arch Container (for reference)
-FROM archlinux:latest
-WORKDIR /server
-RUN echo "Y" | pacman -Syu
-RUN echo "Y" | pacman -S sudo
-RUN sudo echo "Y" | pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl zlib mariadb
-ADD . /server
-RUN mkdir docker_build && cd docker_build && cmake .. && make -j $(nproc)  && cd .. && rm -r /server/docker_build
+```sh
+echo "Y" | pacman -Syu
+echo "Y" | pacman -S sudo
+sudo echo "Y" | pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl zlib mariadb
+# CMake build as normal
 ```
 
 </details>
@@ -223,7 +219,9 @@ As above, the instructions should be the same as a regular Linux build, with one
 
 <details>
   <summary>Docker</summary>
-We have had users appear and write a Dockerfile for us. None of the main devs use Docker in our regular workflows and are not particularly familiar with workflows or best practices. We can't provide support if you decide to use it. Good luck!
+
+The core team of LSB does not use Docker in their workflows, and as such can't properly maintain a Docker setup as a first-class citizen. There is an unofficial Docker guide [here](Docker).
+
 </details>
 
 ## Next Steps:
