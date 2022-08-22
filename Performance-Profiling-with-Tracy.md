@@ -68,6 +68,44 @@ If you want to record a trace for later use you can click on the `Wifi symbol` a
 
 **WARNING** Traces can be very large! Plan accordingly!
 
+## Usage (Headless)
+
+If you need to capture a trace without launching the GUI (on a remote VM, a resource constrained system, etc.), Tracy comes with `capture.exe`.
+
+```txt
+You can capture a trace using a command line utility contained in the capture directory. To use it you may
+provide the following parameters:
+
+• -o output.tracy – the file name of the resulting trace (required).
+• -a address – specifies the IP address (or a domain name) of the client application (uses localhost if
+not provided).
+• -p port – network port which should be used (optional).
+• -f – force overwrite, if output file already exists.
+• -s seconds – number of seconds to capture before automatically disconnecting (optional).
+
+If no client is running at the given address, the server will wait until it can make a connection. During the
+capture, the utility will display the following information:
+```
+
+You can launch it from the command line:
+
+```txt
+PS C:\ffxi\server> .\capture.exe -o trace.tracy -f -s 60
+Connecting to 127.0.0.1:8086...
+Queue delay: 0 ns
+Timer resolution: 100 ns
+   1.32 Kbps /138.5% =   0.00 Mbps | Tx: 41.34 MB | 330.28 MB | 1:32.9
+Frames: 26
+Time span: 1:32.9
+Zones: 941,349
+Elapsed time: 1:00.1
+Saving trace... done!
+Trace size 40.59 MB (24.26% ratio)
+PS C:\ffxi\server> 
+```
+
+You can open the resulting Trace in the `Tracy.exe` GUI at a later time.
+
 ## Finding Problems
 
 Searchable statistics are in the `Statistics` header, log messages are in `Messages`. You can click and drag and zoom around the main timeline window for information about whats going on. You can "re-attach" to the most active frames by clicking on the `Pause/Resume` header and using the options there.
