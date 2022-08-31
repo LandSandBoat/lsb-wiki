@@ -106,7 +106,7 @@ Done.
 
 **We have a new build system, read how to use it here:**
 
-CMake-Build-Guide
+[Cmake Build Guide](Cmake-Build-Guide)
 
 * xi_connect.exe
 * xi_map.exe
