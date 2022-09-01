@@ -12,6 +12,7 @@ Articles in this category are general development topics, relating to overall de
 
 * [Debugging](Debugging)
 * [Docker](Docker)
+* [Module Guide](Module-Guide)
 
 ## Articles
 
