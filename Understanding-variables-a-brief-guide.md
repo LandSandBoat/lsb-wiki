@@ -42,20 +42,22 @@ This persists through logging out and back in and only work with player type ent
 
 ```lua
 -- Sets a quest variable in the format 'Quest[logId#][questId#]varName'
-utils.setQuestVar(player, logId, questId, "varName", value)
+xi.mission.setVar(player, logId, questId, "varName", value)
 
 -- Gets a quest variable in the format 'Quest[logId#][questId#]varName'
-utils.setQuestVar(player, logId, questId, "varName")
+xi.quest.getVar(player, logId, questId, "varName")
 ```
 Interaction Framework (used for updated quests and missions) standardizes the way variables are stored.  For quests, they follow the format of a variable prefix that includes log ID (which quest area is it, such as San d'Oria, or other areas), and ID (this can be found in `scripts/globals/quests.lua`.  For example, if the variable name was `Prog`, and we wanted to set Prog for San d'Oria quest 'Waters of the Cheval' to 1, the following call and result would occur:
 
 ```lua
 -- Set Progress for A Sentry's Peril to 1 (Log ID: 0, Quest ID: 1)
-utils.setQuestVar(player, 0, 1, 'Prog', 1)
+xi.quest.setVar(player, 0, 1, 'Prog', 1)
 ```
 The resulting charVar stored would be `Quest[0][1]Prog` with a value of 1.
 
 *NOTE:* Quest variables are deleted when quest:complete(player) is called by the script, also, the utils function should *never* be used in a quest script itself, unless a value needs to be changed in a *DIFFERENT* quest.  For things internal to a quest script, use `quest:setVar()` or `quest:getVar`.  See Interaction Framework documentation for additional information.
+
+*Additional Note:* When accessing mission or quest variables, the functions that can be used (getVar, setVar, getLocalVar, setLocalVar, getMustZone, setMustZone) are contained in their appropriate missions or quests globals.
 <br><br>
 
 ```lua
