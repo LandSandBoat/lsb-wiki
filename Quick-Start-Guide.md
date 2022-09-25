@@ -58,7 +58,7 @@
 
       ```
       sudo apt update
-      sudo apt install git python3 python3-pip g++-10 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev
+      sudo apt install git python3 python3-pip g++-10 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev binutils-dev
       ```
     * **Debian 10/Ubuntu 18.04:** See the [Linux Setup Guide](Server-Setup-and-Maintenance-Linux#install) for information about upgrading to and building with g++-10.
     </details>
@@ -66,7 +66,7 @@
       <summary>Arch</summary>
 
     ```
-    sudo pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl zlib mariadb
+    sudo pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl zlib mariadb binutils
     ```
     * Arch users will need to initialize and start the database software if not done already:
       ```
@@ -198,7 +198,7 @@ Some users have had success building on Arch. We can't and won't support Arch as
 ```sh
 echo "Y" | pacman -Syu
 echo "Y" | pacman -S sudo
-sudo echo "Y" | pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl zlib mariadb
+sudo echo "Y" | pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl zlib mariadb binutils
 # CMake build as normal
 ```
 

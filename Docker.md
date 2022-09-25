@@ -60,7 +60,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 WORKDIR /server
 
 # Update and install all requirements as well as some useful tools such as net-tools and nano
-RUN apt update && apt install -y net-tools nano software-properties-common git clang-11 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev luarocks
+RUN apt update && apt install -y net-tools nano software-properties-common git clang-11 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev luarocks binutils-dev
 
 # Use Clang 11
 ENV CC=/usr/bin/clang-11
