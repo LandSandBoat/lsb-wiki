@@ -58,7 +58,7 @@ end
 
 -- When a Mob dies
 -- NOTE: Called once for every member of the killing alliance
-entity.onMobDeath = function(mob, player, isKiller)
+entity.onMobDeath = function(mob, player, optParams)
 end
 
 -- When a Mob despawns
