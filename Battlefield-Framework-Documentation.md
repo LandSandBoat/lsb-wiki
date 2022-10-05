@@ -2,6 +2,8 @@
 
 A battlefield is any content where players are warped from an entrance point into a special area and receive a Battlefield effect. The goal with the Battlefield Framework is to simplify the creation of battlefield content. This new solution attempts to achieve this by reducing repeated code and unifying battlefield details into a single file. This document covers how to use the new battlefield framework as well as how to implement new and migrate existing battlefield content.
 
+See the following for a [Full Battlefield Example](Full-Battlefield-Example).
+
 ## How to Use
 
 The Battlefield Framework is based on the [Interaction Framework](Interaction-Framework-Documentation) and consequently having an understanding of that system is beneficial but not strictly necessary.
