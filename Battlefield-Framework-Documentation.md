@@ -243,3 +243,22 @@ Once all of the battlefields have been migrated then the previous battlefield so
 - Remove CBattlefield::isInteraction()
 - Remove xi.battlefield.HandleLootRolls
 - Remove xi.battlefield.HandleWipe
+
+## Battlefield Modules
+
+Writing lua modules to override behavior of battlefields is easily done with this new framework. Every battlefield can be accessed easily with the following method.
+
+```lua
+local content = xi.battlefield.contents[xi.battlefield.id.BROTHERS]
+```
+
+With the `content` object you can change any existing variables such as the `levelCap` or `grantXP`. Additionally it is possible to override behavior by following [Overriding Battlefield Logic](#overriding-battlefield-logic).
+
+```lua
+content.levelCap = 75
+
+function content:checkRequirements(player, npc, registrant, trade)
+    -- Always allow entry into the battlefield
+    return true
+end
+```
