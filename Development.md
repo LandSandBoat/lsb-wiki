@@ -1,9 +1,9 @@
-# Github and Contributing
+# Git, Github, and Contributing
 
 Articles in this category are designed to familiarize the reader with git, GitHub, and contributing back to the project!
 
+* [Git Guide](Git-Guide)
 * [Using Github](Using-Github)
-* [Git Attribution](Git-Attribution.md)
 * [Style Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md#style-guide)
 
 ## General Development
