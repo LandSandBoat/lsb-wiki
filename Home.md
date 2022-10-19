@@ -17,9 +17,9 @@ General articles about the project.
 
 - [Additional useful resources](Resources) and tools of interest to administrators, developers, or players.
 
-## [Development](Development)
+## Development
 
-Information for developers who work on LSB.
+Information for those who work on, or want to work on LSB.
 
 - [Development Landing Page](Development)
 

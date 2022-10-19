@@ -1,31 +1,29 @@
-# Git, Github, and Contributing
+# Development
 
-Articles in this category are designed to familiarize the reader with git, GitHub, and contributing back to the project!
+Articles in this category are general development topics, relating to overall development processes and tools. It is still assumed you've read the [Contributing Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md).
 
-* [Git Guide](Git-Guide)
-* [Using Github](Using-Github)
-* [Style Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md#style-guide)
-
-## General Development
-
-Articles in this category are general development topics, relating to overall development processes and tools.
-
+* [Development Guide (General)](Development-Guide-General)
+* [Development Guide (Git)](Development-Guide-Git)
+* [Development Guide (Lua)](Development-Guide-Lua)
+* [Development Guide (C++)](Development-Guide-Cpp)
+* [Development Guide (SQL)](Development-Guide-SQL)
+* [Development Guide (Python)](Development-Guide-Python)
 * [Debugging](Debugging)
-* [Docker](Docker)
 * [Module Guide](Module-Guide)
+* [Docker](Docker)
 
 ## Articles
 
 Articles in this category are guides covering specific subject matter. They're intended to familiarize the reader on certain aspects of developing for the codebase.
 
-* [Developer Intro](Developer-Intro)
+* [Module Guide](Module-Guide)
+* [Proof of Work](Proof-of-Work)
+* [Understanding Variables](Understanding-variables-a-brief-guide.md)
 * [Spatial Orientation and Relative Positions](Spatial-Orientation-and-Relative-Positions)
-* [Understanding Variables](Understanding-variables-%E2%80%94-a-brief-guide)
 * [CMake Build Guide](CMake-Build-Guide)
 * [Performance Profiling with Tracy](Performance-Profiling-with-Tracy)
 * [Sol Refactor](Sol-Refactor)
 * [Does -ffast-math matter?](Does-ffast-math-flag-matter)
 * [Interaction Framework Documentation](Interaction-Framework-Documentation)
 * [Dummy System](Dummy-System)
-* [Modules](Modules)
 * [Working with WSL](Working-with-WSL)

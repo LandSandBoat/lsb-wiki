@@ -5,12 +5,12 @@ This guide assumes you've managed to download, build, and run the server correct
 - [GitHub Issues](https://github.com/LandSandBoat/server/issues)
 - [What Works?](What-Works)
 - [Using GitHub](Using-Github)
-- [Contribution Guide & Style Guide](https://github.com/LandSandBoat/server/blob/release/CONTRIBUTING.md)
-- [Technical Articles & Guides](Guides-(Development))
+- [Contribution Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md)
+- [Development Landing Page](Development)
 - [Our License](https://github.com/LandSandBoat/server/blob/release/LICENSE)
 
 ### Whatever your skill level
-Make sure you have read our [Contributor's Guide](https://github.com/LandSandBoat/server/blob/release/CONTRIBUTING.md) (also be aware of our [License](https://github.com/LandSandBoat/server/blob/release/LICENSE)).
+Make sure you have read our [Contributor's Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md) (also be aware of our [License](https://github.com/LandSandBoat/server/blob/base/LICENSE)).
 
 Join our Discord server and ask us any questions you may have.
 

@@ -1,10 +1,10 @@
-# Git Guide
+# Development Guide (Git)
 
 Git is important, it's important that you use it correctly.
 
 -----
 
-- [Git Guide](#git-guide)
+- [Development Guide (Git)](#development-guide-git)
   - [Example of making changes (command line)](#example-of-making-changes-command-line)
   - [Amending the previous commit](#amending-the-previous-commit)
   - [Git Attribution](#git-attribution)
