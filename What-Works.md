@@ -56,12 +56,12 @@ https://github.com/LandSandBoat/server/tree/base/scripts/missions
 | ✔️ | Rise of the Zilart | |
 | ✔️ | Chains of Promathia | |
 | ⚠️ | Treasures of Aht Urhgan | Completable. Retail accurate up to Mission 18. Rest in need of confirmation. |
-| 🐤 | Wings of the Goddess | Up to WOTG 36 (mainline missions only, nation quest status unknown, missing a lot of fight content) |
+| 🐤 | Wings of the Goddess | Up to WOTG 54 (mainline missions only, nation quest status unknown, missing a lot of fight content) |
 | 🐤 | Seekers of Adoulin | Up to SOA 5-5-1 (missing a lot of fight content) |
 | ⛔ | A Crystalline Prophecy | Up to ACP 04 |
 | 🐤 | A Moogle Kupo d'Etat | Up to AMK 08 |
 | ⛔ | A Shantotto Ascension | Up to ASA 03 |
-| ⛔ | Rhapsodies of Vanadiel | Up to ROV 2-13 (missing a lot of fight content) |
+| ⛔ | Rhapsodies of Vanadiel | Up to ROV 2-25 (missing a lot of fight content) |
 | ❌ | The Voracious Resurgence | Will not implement, go play retail. |
 
 # Quests
