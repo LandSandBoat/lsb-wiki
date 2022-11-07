@@ -2,7 +2,7 @@
 
 <details>
   <summary>Windows 10</summary>
-  
+
   ## To Install
   * Install [Git for Windows](https://gitforwindows.org/), accept defaults, change default text editor if desired.
   * Install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/community/), check Desktop development with C++.
@@ -49,13 +49,16 @@
 
 <details>
   <summary>Linux (Debian/Ubuntu)</summary>
-  
+
   ## To Install
   * Use your package manager to install the following packages or their equivalent:
 
     <details>
       <summary>Debian/Ubuntu</summary>
 
+      Run these steps to use Mariadb's community provided .deb packages through apt:
+
+      https://mariadb.com/docs/connect/programming-languages/c/install/#connector-c-install-repo-configure-cs
       ```
       sudo apt update
       sudo apt install git python3 python3-pip g++-10 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev binutils-dev
@@ -139,9 +142,9 @@ _These platforms should work but are not actively maintained or used by the deve
 
 <details>
   <summary>OSX</summary>
-  
+
 ## To Install
-  
+
 * Get dependencies from brew:
 
 ```
@@ -187,7 +190,7 @@ cmake .. -DLuaJIT_INCLUDE_DIR=<SERVER_ROOT>/server/ext/lua/include
 
 <details>
   <summary>Linux (through WSL)</summary>
-  
+
 [Working with WSL](Working-with-WSL)
 </details>
 
