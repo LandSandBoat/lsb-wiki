@@ -46,6 +46,36 @@ flowchart LR
  I[Internet] --> RP
 ```
 
+## update_db_then_launch.sh
+```bash
+#!/bin/bash
+
+while ! mysql --host=$XI_NETWORK_SQL_HOST --port=$XI_NETWORK_SQL_PORT --user=$XI_NETWORK_SQL_LOGIN --password=$XI_NETWORK_SQL_PASSWORD $XI_NETWORK_SQL_DATABASE -e "SELECT 1 FROM zone_weather LIMIT 1"; do
+    sleep 5
+done
+sleep 5
+
+# Update databse
+echo "updating database"
+python3 ./tools/dbtool.py update
+sleep 5
+
+# Update zone_settings to host IP
+mysql --host=$XI_NETWORK_SQL_HOST --port=$XI_NETWORK_SQL_PORT --user=$XI_NETWORK_SQL_LOGIN --password=$XI_NETWORK_SQL_PASSWORD $XI_NETWORK_SQL_DATABASE -e "UPDATE zone_settings set zoneip='$XI_NETWORK_ZONE_IP'"
+
+# Start servers
+echo "starting xi_connect"
+nohup ./xi_connect &
+sleep 5
+
+echo "starting xi_search"
+nohup ./xi_search &
+
+sleep 5
+echo "starting xi_map"
+./xi_map
+```
+
 ## Dockerfile
 
 ```docker
@@ -59,8 +89,29 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Working directory will be /server meaning that the contents of server will exist in /server
 WORKDIR /server
 
+# MariaDB C Connector that ships with ubuntu:20.04 is out of date.
+# Need to install latest python/pip/maria libs in order to
+# let us run dbtool.py from within our container.
+# This lets us update the DB on container start by default, so it's never
+# out of date, since we can't reach it from outside the container composition by design.
+RUN apt update && apt install -y wget curl software-properties-common
+RUN add-apt-repository ppa:deadsnakes/ppa
+
+RUN wget https://downloads.mariadb.com/MariaDB/mariadb_repo_setup
+RUN chmod ugo+x ./mariadb_repo_setup
+RUN ./mariadb_repo_setup --mariadb-server-version="mariadb-10.6"
+
+RUN apt-get install -y libmariadb3 libmariadb-dev mariadb-server
+
+RUN apt-get update
+RUN apt-get upgrade -y
+
+RUN apt install -y python3.12 python3.12-dev python3-pip
+
+RUN python3 --version
+
 # Update and install all requirements as well as some useful tools such as net-tools and nano
-RUN apt update && apt install -y net-tools nano software-properties-common git clang-11 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev luarocks binutils-dev
+RUN apt install -y net-tools nano git clang-11 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev luarocks binutils-dev
 
 # Use Clang 11
 ENV CC=/usr/bin/clang-11
@@ -69,14 +120,19 @@ ENV CXX=/usr/bin/clang++-11
 # Copy everything from the host machine server folder to /server
 ADD . /server
 
+RUN pip3 install --upgrade -r ./tools/requirements.txt
+
 # Configure and build
 RUN mkdir docker_build && cd docker_build && cmake .. && make -j $(nproc)  && cd .. && rm -r /server/docker_build
 
-# Ensure wait_for_db_then_launch.sh is executable
-RUN chmod +x ./tools/wait_for_db_then_launch.sh
+# Ensure we can run the db update
+RUN chmod +x ./tools/dbtool.py
+
+# Ensure we can run the startup script
+RUN chmod +x ./update_db_then_launch.sh
 
 # Startup the server when the container starts
-ENTRYPOINT ./tools/wait_for_db_then_launch.sh
+ENTRYPOINT ./update_db_then_launch.sh
 ```
 
 ## docker-compose.yml
@@ -132,6 +188,8 @@ services:
       XI_NETWORK_LOGIN_AUTH_PORT: 54231
       XI_NETWORK_ZMQ_IP: 0.0.0.0
       XI_NETWORK_ZMQ_PORT: 54003
+      # UPDATE THIS TO THE LAN IP OF THE HOST MACHINE
+      XI_NETWORK_ZONE_IP: 192.168.50.248
       XI_NETWORK_MAP_PORT: 54230
       XI_NETWORK_SEARCH_PORT: 54002
     depends_on:
