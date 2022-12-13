@@ -163,6 +163,82 @@ then
 end
 ```
 
+### No whitespace between function name and parameters; Space between parameters
+
+```lua
+-- Correct ✔️
+local function myFunction(param1, param2, param3)
+end
+
+-- Wrong ❌
+local function myFunction (param1,param2,param3)
+end
+```
+
+### Logical and mathematical operators should have one space padding
+```lua
+-- Correct ✔️
+if a == b then
+    a = b + c
+end
+
+-- Wrong ❌
+if a==b then
+    a = b+c
+end
+```
+
+### Code following `end` on same indentation level should have a newline inbetween
+```lua
+-- Correct ✔️
+if a == b then
+    a = b + c
+end
+
+return a
+
+-- Wrong ❌
+if a == b then
+    a = b + c
+end
+return a
+```
+
+### No empty newlines after function declaration, or prior to end
+```lua
+-- Correct ✔️
+local function myFunction(param1, param2, param3)
+    return param1 + param2
+end
+
+-- Wrong ❌
+local function myFunction(param1, param2, param3)
+
+    return param1 + param2
+end
+
+local function myFunction(param1, param2, param3)
+    return param1 + param2
+
+end
+```
+
+### No single-line functions or conditions
+-- Correct ✔️
+if a == b then
+    a = b + c
+end
+
+local function myFunction(param1, param2, param3)
+    return param1 + param2
+end
+
+-- Wrong ❌
+if a == b then a = b + c end
+
+local function myFunction(param1, param2, param3) return param1 + param2 end
+```
+
 #### Inline tables
 
 ##### THIS IS THE ONE EXCEPTION TO THE GLOBAL NEWLINE-BRACE RULES
