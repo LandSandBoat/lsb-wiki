@@ -115,20 +115,20 @@ GRANT ALL PRIVILEGES ON xidb.* TO 'lsbadmin'@'localhost';
 exit
 ```
 
-Go inside the sql folder and import all tables inside the database we just created (xidb)
+Go inside the tools folder and import all tables inside the database we just created (xidb)
 ```
-cd ../sql
-for f in *.sql
-  do
-     echo -n "Importing $f into the database..."
-     mysql xidb -u lsbadmin -plsbisawesome < $f && echo "Success"      
-  done
-cd ..
+cd ../tools
+pip3 install -r requirements.txt
+python3 dbtool.py
 ```
+
+Select the "Reset DB" option, enter "N" to skip the backup, and type "reset xidb" to finish setting up your database. Wait for it to finish then exit the program.
+
 Now we are going to enter the username and password for sql inside `network.lua`
 
 First, copy the .lua settings files from the `settings/default/` folder to the `settings/` folder:
 ```
+cd ..
 cp settings/default/* settings/
 ```
 
@@ -136,7 +136,6 @@ Then edit the copied `network.lua` as follows:
 
 ```
 cd settings
-echo -e "\n#DB_VER: `git rev-parse --short=4 HEAD`" >> network.lua
 nano network.lua
 ```
 Look for `SQL_LOGIN    = "root",` and change it to `SQL_LOGIN    = "lsbadmin",`
