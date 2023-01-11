@@ -6,21 +6,25 @@
 
 [How can I help?](How-Can-I-Help)
 
+## Do you have a Discord I can join?
+
+We prefer to work through GitHub [Issues](https://github.com/LandSandBoat/server/issues), [Pull Requests](https://github.com/LandSandBoat/server/pulls), and [Discussions](https://github.com/LandSandBoat/server/discussions).
+
 ## Where can I find servers to play on?
 
-Final Fantasy XI Private Servers Community [Discord](https://discordapp.com/invite/msACzWV) & [Reddit](https://www.reddit.com/r/FFXIPrivateServers/)
+Check out the Final Fantasy XI Private Servers Community [List of Servers](https://github.com/XiPrivateServers/Servers/tree/main/servers). You can also head to the [Discord](https://discordapp.com/invite/msACzWV) & [Reddit](https://www.reddit.com/r/FFXIPrivateServers/).
 
 ## Is there a GM command that does X?
 
 All available GM commands, with descriptions and the level of GM they require, can be found [here](https://github.com/LandSandBoat/server/tree/base/scripts/commands).
 
-## When will feature X arrive?
+## When will feature X be completed, when will bug Y be fixed?
 
-We practice [clean room engineering](https://en.wikipedia.org/wiki/Clean_room_design), which means we have to implement everything from scratch. As such, progress is slow. We are also trying to balance feature development, bugfixes, performance improvements, exploit resolution, code review, and testing.
+We practice [clean room engineering](https://en.wikipedia.org/wiki/Clean_room_design), which means we have to implement everything from scratch. As such, progress is slow and difficult. We are also trying to balance feature development, bugfixes, performance improvements, exploit resolution, code review, and testing.
 
-## Can I use Trust: X, why doesn't Trust: Y do anything?
+This project is maintained entirely by volunteers in their spare time. We can't and won't ever guarantee any timelines for features or bugfixes. Sometimes the maintainers have lots of time to work on the project, sometimes they have none, sometimes they just don't feel like it and want to go outside and touch grass instead.
 
-Go check their status [here](Trusts).
+The fastest way to get new features or bugfixes is to roll up your sleeves, get in there, and start working on them :)!
 
 ## Can I pay someone to implement feature X?
 
@@ -32,6 +36,10 @@ Features in LandSandBoat are those that have been submitted to us, meet our stan
 
 Similarly, sending us code snippets creates more work and strain on staff and developers. If you have code you want to contribute, please speak to us with GitHub Issues, Discussions, and open a Pull Request.
 
+## Can I use Trust: X, why doesn't Trust: Y do anything?
+
+Go check their status [here](Trusts).
+
 ## When can I play "Classic" Dynamis?
 
 You can't - it isn't in the game anymore.
@@ -41,18 +49,13 @@ You can't - it isn't in the game anymore.
 <p>
 
 "Classic" Dynamis was removed from the game in 2011. The spawn mechanisms as you remember them are gone from the game, and those zones no longer act the way they used to.
+
 The overall project goal is to emulate the retail game as closely as possible, so a massive custom solution to approximate "Classic" Dynamis is not on our roadmap.
-
-However, in 2017 Dynamis Divergence was released, a content level 149 version of the "Classic" Dynamis players wanted to experience again.
-
-If we were to support a custom Dynamis solution, it would be the implementation of Dynamis Divergence and a set of mods or switches that scale it down to level 75 era difficulty.
-
-Keep in mind that we haven't completed all content up to 2007, so a full implementation of content from 2017 with mods on top isn't coming any time soon.
 
 </p>
 </details>
 
-## Can I change job X to play like job Y?
+## Can I change job X to play like job Y, Can I create an entirely new job?
 
 No.
 
@@ -102,6 +105,8 @@ enum ZONEMISC
 
 These are the predecessor projects that LandSandBoat is derived from, which are archived and no longer maintained or supported.
 
-## Why is the airship in Sauromugue Champaign skidding along the ground like a land speeder?
+## Why did the airship in Sauromugue Champaign used to skid along the ground like a land speeder?
 
-It's a feature, not a bug. 👀
+It's the project namesake. It's a feature, not a bug. 👀
+
+You can re-enable this using the [lsb_mascot.sql](https://github.com/LandSandBoat/server/blob/base/modules/custom/sql/lsb_mascot.sql) module.
