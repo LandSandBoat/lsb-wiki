@@ -16,6 +16,7 @@ Articles in this category are general development topics, relating to overall de
 
 Articles in this category are guides covering specific subject matter. They're intended to familiarize the reader on certain aspects of developing for the codebase.
 
+* [Server Startup Tutorial](Development-Server-Startup-Tutorial)
 * [Module Guide](Module-Guide)
 * [Proof of Work](Proof-of-Work)
 * [Understanding Variables](Understanding-variables-a-brief-guide.md)
