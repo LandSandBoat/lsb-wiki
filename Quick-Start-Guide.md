@@ -33,6 +33,7 @@
     ```
     git stash
     git pull
+    git submodule update --init --recursive --progress
     git stash pop
     ```
     ⚠️ Pay attention! If you stashed any changes, there is a chance you will see the following:
@@ -117,6 +118,7 @@
     ```
     git stash
     git pull
+    git submodule update --init --recursive --progress
     git stash pop
     ```
     ⚠️ Pay attention! If you stashed any changes, there is a chance you will see the following:
