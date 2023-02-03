@@ -102,11 +102,9 @@ In the new dbtool window:
 
 Done.
 
-## 5. Build the servers:
+## 5. Build the servers
 
-**We have a new build system, read how to use it here:**
-
-[Cmake Build Guide](Cmake-Build-Guide)
+See the [Quick Start Guide](Quick-Start-Guide).
 
 * xi_connect.exe
 * xi_map.exe

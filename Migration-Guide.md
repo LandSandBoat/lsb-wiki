@@ -15,7 +15,7 @@
     * ❕ Do _not_ compile or run the server yet
 3. Follow steps on the [Database Management page](Database-Management) to use the dbtool to backup and update your SQL database.
     * ⚠️ You will need Python 3, pip, and the dbtool's dependencies `py -3 -m pip install -r requirements.txt`
-4. [Compile the server. LandSandBoat exclusively uses CMake](CMake-Build-Guide), which is a different build process from Darkstar Project
+4. Compile the server. LandSandBoat exclusively uses CMake, which is a different build process from Darkstar Project
 5. Try booting it!
     
 ## If you made many custom changes
@@ -37,5 +37,5 @@
     * ❕ Do _not_ compile or run the server yet
 7. Follow steps on the [Database Management page](Database-Management) to use the dbtool to backup and update your SQL database.
     * ⚠️ You will need Python 3, pip, and the dbtool's dependencies `py -3 -m pip install -r requirements.txt`
-8. [Compile the server. LandSandBoat exclusively uses CMake](CMake-Build-Guide), which is a different build process from Darkstar Project
+8. Compile the server. LandSandBoat exclusively uses CMake, which is a different build process from Darkstar Project
 9. Try booting it!
