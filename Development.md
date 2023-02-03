@@ -20,7 +20,7 @@ Articles in this category are guides covering specific subject matter. They're i
 * [Proof of Work](Proof-of-Work)
 * [Understanding Variables](Understanding-variables-a-brief-guide.md)
 * [Spatial Orientation and Relative Positions](Spatial-Orientation-and-Relative-Positions)
-* [CMake Build Guide](CMake-Build-Guide)
+* [Build Troubleshooting](Build-Troubleshooting)
 * [Performance Profiling with Tracy](Performance-Profiling-with-Tracy)
 * [Sol Refactor](Sol-Refactor)
 * [Does -ffast-math matter?](Does-ffast-math-flag-matter)

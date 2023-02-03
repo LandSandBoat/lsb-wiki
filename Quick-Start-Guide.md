@@ -4,12 +4,16 @@
   <summary>Windows 10</summary>
 
   ## To Install
-  * Install [Git for Windows](https://gitforwindows.org/), accept defaults, change default text editor if desired.
-  * Install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/community/), check Desktop development with C++.
-  * Install [MariaDB](https://mariadb.org/), use defaults, set a root password.
-  * Install [Python 3](https://www.python.org/downloads/), check to add to PATH.
+  * Install [Git for Windows](https://gitforwindows.org/).
+    * The latest version is fine, accept defaults, change default text editor if desired.
+  * Install [Visual Studio](https://visualstudio.microsoft.com/vs/community/).
+    * `2019` or `2022` are fine, check `Desktop development with C++` workload (under Desktop & Mobile).
+  * Install [MariaDB Server](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.6.11&os=windows&cpu=x86_64&pkg=msi&m=xtom_ams).
+    * Use the latest in the `10.6.x` family of releases, use default settings, **set a root password**.
+  * Install [Python 3](https://www.python.org/downloads/).
+    * The latest version is fine, during installation check the `add python.exe to PATH` checkbox.
   * Open a PowerShell window and navigate to your chosen install directory.
-  * Download the latest code, install Python requirements, and copy the configuration files:
+  * To download the latest code, install Python requirements, and copy the configuration files:
     ```
     git clone --recursive https://github.com/LandSandBoat/server.git
     py -3 -m pip install -r server/tools/requirements.txt
@@ -24,8 +28,15 @@
     py -3 dbtool.py
     ```
   * Follow the on-screen instructions.
-  * Open the `server` root folder in VS2019.
-  * [Build the solution in VS2019.](CMake-Build-Guide)
+  * Open the `server` root folder in Visual Studio 2019/2022.
+    * "Open a local folder" on the splash screen.
+  * The build will start configuring itself for your system.
+    * This stage is done when the `CMake` window at the bottom of the window says `1> CMake generation finished.`.
+  * Ensure the dropdown near the top of the window says `x64-Debug`.
+  * In the top toolbar, select `Build > Build All`.
+    * This may take a little while if you have a weaker machine.
+  * You should eventually see `Build All succeeded.`.
+    * Congratulations, you've built the server!
 
   ## To Update
   * Open a PowerShell window and navigate to your `server` directory.
@@ -44,8 +55,11 @@
     ```
     py -3 dbtool.py update
     ```
-  * Open the `server` root folder in VS2019.
-  * [Build the solution in VS2019.](CMake-Build-Guide)
+  * Open the `server` root folder in VS2019/2022.
+    * CMake _may_ reconfigure, wait for it to complete like before.
+  * In the top toolbar, select `Build > Build All`.
+    * This may take a little while if you have a weaker machine.
+  * You should eventually see `Build All succeeded.`.
 </details>
 
 <details>
