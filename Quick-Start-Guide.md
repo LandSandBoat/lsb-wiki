@@ -1,160 +1,209 @@
 # Main Supported Platforms
 
+**NOTE:** While it's possible to achieve the steps in this guide using different tools and versions of the software we list, we _cannot recommend enough_ following this guide to the letter and make sure you have everything working before you stray from the well-tested path.
+
 <details>
   <summary>Windows 10</summary>
 
-  ## To Install
-  * Install [Git for Windows](https://gitforwindows.org/).
-    * The latest version is fine, accept defaults, change default text editor if desired.
-  * Install [Visual Studio](https://visualstudio.microsoft.com/vs/community/).
-    * `2019` or `2022` are fine, check `Desktop development with C++` workload (under Desktop & Mobile).
-  * Install [MariaDB Server](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.6.11&os=windows&cpu=x86_64&pkg=msi&m=xtom_ams).
-    * Use the latest in the `10.6.x` family of releases, use default settings, **set a root password**.
-  * Install [Python 3](https://www.python.org/downloads/).
-    * The latest version is fine, during installation check the `add python.exe to PATH` checkbox.
-  * Open a PowerShell window and navigate to your chosen install directory.
-  * To download the latest code, install Python requirements, and copy the configuration files:
-    ```
-    git clone --recursive https://github.com/LandSandBoat/server.git
-    py -3 -m pip install -r server/tools/requirements.txt
-    cp server/settings/default/* server/settings
-    ```
-  * Edit the file `network.lua` inside `server\settings\` and change "root" to the password set during MariaDB setup
-    * Make sure to leave the quotation marks surrounding the password!
-  * Edit the file `main.lua` inside `server\settings\` with your desired settings for your server.
-    * Make sure to leave the quotation marks surrounding that has them around it!
-  * Back in your PowerShell window, navigate to `server\tools\` and build the database:
-    ```
-    py -3 dbtool.py
-    ```
-  * Follow the on-screen instructions.
-  * Open the `server` root folder in Visual Studio 2019/2022.
-    * "Open a local folder" on the splash screen.
-  * The build will start configuring itself for your system.
-    * This stage is done when the `CMake` window at the bottom of the window says `1> CMake generation finished.`.
-  * Ensure the dropdown near the top of the window says `x64-Debug`.
-  * In the top toolbar, select `Build > Build All`.
-    * This may take a little while if you have a weaker machine.
-  * You should eventually see `Build All succeeded.`.
-    * Congratulations, you've built the server!
+## To Install
 
-  ## To Update
-  * Open a PowerShell window and navigate to your `server` directory.
-  * Stash any changes you've made and pull the latest code from upstream:
-    ```
-    git stash
-    git pull
-    git submodule update --init --recursive --progress
-    git stash pop
-    ```
-    ⚠️ Pay attention! If you stashed any changes, there is a chance you will see the following:
-    >CONFLICT (content): Merge conflict in _**some file**_
+* Install [Git for Windows](https://gitforwindows.org/).
+  * The latest version is fine, accept defaults, change default text editor if desired.
+* Install [Visual Studio](https://visualstudio.microsoft.com/vs/community/).
+  * `2019` or `2022` are fine, check `Desktop development with C++` workload (under Desktop & Mobile).
+* Install [MariaDB Server](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.6.11&os=windows&cpu=x86_64&pkg=msi&m=xtom_ams).
+  * Use the latest in the `10.6.x` family of releases, use default settings, **set a root password**.
+* Install [Python 3](https://www.python.org/downloads/).
+  * The latest version is fine, during installation check the `add python.exe to PATH` checkbox.
+* Open a PowerShell window and navigate to your chosen install directory.
+* To download the latest code, install Python requirements, and copy the configuration files:
 
-    ⚠️ If this happens, you need to manually edit the conflicting files before continuing.
-  * Navigate to `server\tools\` and update the database:
-    ```
-    py -3 dbtool.py update
-    ```
-  * Open the `server` root folder in VS2019/2022.
-    * CMake _may_ reconfigure, wait for it to complete like before.
-  * In the top toolbar, select `Build > Build All`.
-    * This may take a little while if you have a weaker machine.
-  * You should eventually see `Build All succeeded.`.
+```ps
+git clone --recursive https://github.com/LandSandBoat/server.git
+py -3 -m pip install -r server/tools/requirements.txt
+cp server/settings/default/* server/settings
+```
+
+* Edit the file `network.lua` inside `server\settings\` and change "root" to the password set during MariaDB setup
+  * Make sure to leave the quotation marks surrounding the password!
+* Edit the file `main.lua` inside `server\settings\` with your desired settings for your server.
+  * Make sure to leave the quotation marks surrounding that has them around it!
+* Back in your PowerShell window, navigate to `server\tools\` and build the database:
+
+```ps
+py -3 dbtool.py
+```
+
+* Follow the on-screen instructions:
+
+```txt
+Please enter the path to your MySQL bin directory or press enter to check PATH.
+e.g. C:\Program Files\MariaDB 10.6\bin\
+```
+
+```txt
+Database xidb does not exist.
+Would you like to create new database: xidb? [y/N]
+```
+
+* You will eventually get to the main `dbtool` menu.
+
+```txt
+o------------------------------------------o
+|  LandSandBoat Database Management Tool   |
+|            Connected to xidb             |
+|                  #e222b                  |
+o------------------------------------------o
+| 1. Update DB                             |
+| 2. Check migrations                      |
+| 3. Backup                                |
+| 4. Restore/Import                        |
+| r. Reset DB                              |
+| t. Maintenance Tasks                     |
+| s. Settings                              |
+| q. Quit                                  |
+o------------------------------------------o
+```
+
+* You can exit out of `dbtool` now with `q`.
+* Open the `server` root folder in `Visual Studio 2019/2022`.
+  * `Open a local folder` on the splash screen.
+* The build will start configuring itself for your system.
+  * This stage is done when the `CMake` window at the bottom of the window says `1> CMake generation finished.`.
+* Ensure the dropdown near the top of the window says `x64-Debug`.
+* In the top toolbar, select `Build > Build All`.
+  * This may take a little while!
+* You should eventually see `Build All succeeded.`.
+  * Congratulations, you've built the server!
+
+## To Update
+
+* **Take down all of your server processes!**
+* Open a PowerShell window and navigate to your `server` directory.
+* Stash any changes you've made and pull the latest code from upstream:
+
+```ps
+git stash
+git pull
+git submodule update --init --recursive --progress
+git stash pop
+```
+
+⚠️ Pay attention! If you stashed any changes, there is a chance you will see the following:
+
+>CONFLICT (content): Merge conflict in _**some file**_
+
+⚠️ If this happens, you need to manually edit the conflicting files before continuing.
+
+* Navigate to `server\tools\` and update the database:
+
+```ps
+py -3 dbtool.py update
+```
+
+* Open the `server` root folder in VS2019/2022.
+  * CMake _may_ reconfigure, wait for it to complete like before.
+* In the top toolbar, select `Build > Build All`.
+  * This may take a little while if you have a weaker machine.
+* You should eventually see `Build All succeeded.`.
+
 </details>
 
 <details>
   <summary>Linux (Debian/Ubuntu)</summary>
 
-  ## To Install
-  * Use your package manager to install the following packages or their equivalent:
+## To Install
 
-    <details>
-      <summary>Debian/Ubuntu</summary>
+* Run these steps to use Mariadb's community provided .deb packages through apt:
+  * https://mariadb.com/docs/connect/programming-languages/c/install/#connector-c-install-repo-configure-cs
+* Use your package manager to install the following packages or their equivalents:
 
-      Run these steps to use Mariadb's community provided .deb packages through apt:
+```sh
+sudo apt update
+sudo apt install git python3 python3-pip g++-10 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev binutils-dev
+```
 
-      https://mariadb.com/docs/connect/programming-languages/c/install/#connector-c-install-repo-configure-cs
-      ```
-      sudo apt update
-      sudo apt install git python3 python3-pip g++-10 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev binutils-dev
-      ```
-    * **Debian 10/Ubuntu 18.04:** See the [Linux Setup Guide](Server-Setup-and-Maintenance-Linux#install) for information about upgrading to and building with g++-10.
-    </details>
-    <details>
-      <summary>Arch</summary>
+* Download the latest code, install Python requirements, and copy the configuration files:
 
-    ```
-    sudo pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl zlib mariadb binutils
-    ```
-    * Arch users will need to initialize and start the database software if not done already:
-      ```
-      sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
-      sudo systemctl enable mariadb
-      sudo systemctl start mariadb
-      ```
-    </details>
+```sh
+git clone --recursive https://github.com/LandSandBoat/server.git
+pip3 install -r server/tools/requirements.txt
+cp server/settings/default/* server/settings
+```
 
-  * Download the latest code, install Python requirements, and copy the configuration files:
-    ```
-    git clone --recursive https://github.com/LandSandBoat/server.git
-    pip3 install -r server/tools/requirements.txt
-    cp server/settings/default/* server/settings
-    ```
-  * Run the following script to improve database security:
-    ```
-    sudo mysql_secure_installation
-    ```
-  * Type the following to create a database user with the login <ins>_**xi**_</ins> and password <ins>_**password**_</ins>, and an empty database called <ins>_**xidb**_</ins>. NOTE: You _SHOULD_ change **ALL THREE OF THESE** to improve security:
-    ```
-    sudo mysql -u root -p -e "CREATE USER 'xi'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE xidb;USE xidb;GRANT ALL PRIVILEGES ON xidb.* TO 'xi'@'localhost';"
-    ```
-  * Edit the file `network.lua` inside `server/settings/` and change "root" to the password set during MariaDB setup
-    * Make sure to leave the quotation marks surrounding the password!
-  * Edit the file `main.lua` inside `server/settings` with your desired settings for your server.
-    * Make sure to leave the quotation marks surrounding that has them around it!
-  * In the `server` directory, prepare and build the executables:
-    ```
-    mkdir build
-    cd build
-    cmake ..
-    make -j $(nproc)
-    ```
-  * Wait for the build to complete, then move to `server/tools/` and build the database:
-    ```
-    cd ../tools
-    python3 dbtool.py
-    ```
-  * Select 'Reset DB' and follow the instructions to "reset" the database.
+* Run the following script to improve database security:
 
-  ## To Update
-  * Open the `server` directory in a terminal.
-  * Stash any changes you've made and pull the latest code from upstream:
-    ```
-    git stash
-    git pull
-    git submodule update --init --recursive --progress
-    git stash pop
-    ```
-    ⚠️ Pay attention! If you stashed any changes, there is a chance you will see the following:
-    >CONFLICT (content): Merge conflict in _**some file**_
+```sh
+sudo mysql_secure_installation
+```
 
-    ⚠️ If this happens, you need to manually edit the conflicting files before continuing.
-  * Prepare and build the executables:
-    ```
-    cd build
-    cmake ..
-    make -j $(nproc)
-    ```
-  * Wait for the build to complete, then move to `server/tools/` and update the database:
-    ```
-    cd ../tools
-    python3 dbtool.py update
-    ```
+* Type the following to create a database user with the login <ins>_**xi**_</ins> and password <ins>_**password**_</ins>, and an empty database called <ins>_**xidb**_</ins>. NOTE: You _SHOULD_ change **ALL THREE OF THESE** to improve security:
+
+```sh
+sudo mysql -u root -p -e "CREATE USER 'xi'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE xidb;USE xidb;GRANT ALL PRIVILEGES ON xidb.* TO 'xi'@'localhost';"
+```
+
+* Edit the file `network.lua` inside `server/settings/` and change "root" to the password set during MariaDB setup
+  * Make sure to leave the quotation marks surrounding the password!
+* Edit the file `main.lua` inside `server/settings` with your desired settings for your server.
+  * Make sure to leave the quotation marks surrounding that has them around it!
+* In the `server` directory, prepare and build the executables:
+
+```sh
+mkdir build
+cd build
+cmake ..
+make -j $(nproc)
+```
+
+* Wait for the build to complete, then move to `server/tools/` and build the database:
+
+```sh
+cd ../tools
+python3 dbtool.py
+```
+
+* Select 'Reset DB' and follow the instructions to "reset" the database.
+
+## To Update
+
+* **Take down all of your server processes!**
+* Open the `server` directory in a terminal.
+* Stash any changes you've made and pull the latest code from upstream:
+
+```sh
+git stash
+git pull
+git submodule update --init --recursive --progress
+git stash pop
+```
+
+⚠️ Pay attention! If you stashed any changes, there is a chance you will see the following:
+
+>CONFLICT (content): Merge conflict in _**some file**_
+
+⚠️ If this happens, you need to manually edit the conflicting files before continuing.
+
+* Prepare and build the executables:
+
+```sh
+cd build
+cmake ..
+make -j $(nproc)
+```
+
+* Wait for the build to complete, then move to `server/tools/` and update the database:
+
+```sh
+cd ../tools
+python3 dbtool.py update
+```
+
 </details>
 
 # Experimental Platforms
 
-_These platforms should work but are not actively maintained or used by the development team. The development team (especially in the case of OSX) might not have the hardware or expertise to be able to help you debug problems on these platforms. Use at your own risk. Good luck!_
+**NOTE:** These platforms should work, but are not actively maintained or used by the development team. The development team (especially in the case of OSX) might not have the hardware or expertise to be able to help you debug problems on these platforms. Use at your own risk. Good luck!
 
 <details>
   <summary>OSX</summary>
@@ -163,7 +212,7 @@ _These platforms should work but are not actively maintained or used by the deve
 
 * Get dependencies from brew:
 
-```
+```sh
 brew install git pkg-config autoconf make cmake gcc openssl mariadb zeromq zmqpp
 ```
 
@@ -207,17 +256,22 @@ cmake .. -DLuaJIT_INCLUDE_DIR=<SERVER_ROOT>/server/ext/lua/include
 <details>
   <summary>Linux (through WSL)</summary>
 
-[Working with WSL](Working-with-WSL)
+All of the instructions for Linux should be valid for WSL. There are additional points covered in the [Working with WSL](Working-with-WSL) article.
+
 </details>
 
 <details>
   <summary>Linux (Arch)</summary>
-Some users have had success building on Arch. We can't and won't support Arch as main platform. Good luck!
+
+Some users have had success building and running on Arch. We can't and won't support Arch as main platform. Good luck!
 
 ```sh
 echo "Y" | pacman -Syu
 echo "Y" | pacman -S sudo
 sudo echo "Y" | pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl zlib mariadb binutils
+sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+sudo systemctl enable mariadb
+sudo systemctl start mariadb
 # CMake build as normal
 ```
 
@@ -226,13 +280,21 @@ sudo echo "Y" | pacman -S git python3 python-pip gcc cmake make luajit zeromq op
 <details>
   <summary>Linux (Raspberry Pi)</summary>
 
-**Raspberry Pi 3**
+Build instructions should be the same or similar as a regular Linux build. The build process may take a long time, but running the game doesn't take much computing power.
 
-Build instructions should be the same or similar as a regular Linux build. The build process may take a long time, but running the game doesn't take much computing power. You should use a suitably powerful and stable power supply!
+#### Power
 
-**Raspberry Pi 4**
+Raspberry Pis require at least a 2.5amp power supply to run at full power. If you are getting a little yellow lightning bolt in the top right of your display you have hit the limit of your current power supply. If this happens you may not be able to take full advantage of your CPU's power and may lose connectivity to Bluetooth or USB devices.
 
-As above, the instructions should be the same as a regular Linux build, with one exception: You must use a suitably modern version of LuaJIT. This comes by default with Ubuntu 21.04 onwards. Or you can build LuaJIT from source (see our OSX build for more details). You should use a suitably powerful and stable power supply!
+Should you hit either of these 2 limitations it will take considerably longer for the build process to finish, if it finishes at all!
+
+#### LuaJIT
+
+Depending on your distro, the LuaJIT that comes through the package manager may not have required fixes for ARM platforms included with it. It's recommended you follow the steps in the OSX build guide to build and use the latest LuaJIT.
+
+#### RAM
+
+Each server process startup can be quite resource intensive for both CPU and RAM. Older Raspberry Pis don't have much RAM, so you may need to start up each of the server processes one-by-one to ensure that they start and run correctly.
 
 </details>
 

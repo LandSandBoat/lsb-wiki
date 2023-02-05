@@ -8,20 +8,20 @@ UPDATE accounts SET password = PASSWORD("NEW_PASSWORD_HERE") WHERE login = 'ACCO
 
 * Note: This function is deprecated in stock MySQL*
 
-## Mail an item to all characters on the entire server ==
+## Mail an item to all characters on the entire server
 
 ```sql
 INSERT INTO delivery_box (charid, charname, box, slot, itemid, itemsubid, quantity, extra, senderid, sender, received, sent)
   SELECT chars.charid, chars.charname, 1, 0, ItemIdHere, 0, 1, NULL, 0, 'The MHMU', 0, 0 FROM chars;
 ```
 
-## Mail an item to one character ==
+## Mail an item to one character
 
 ```sql
 INSERT INTO delivery_box VALUES (charid, 'name here', 1, 0, itemid, 0, quantity, NULL, 0, 'The MHMU', 0, 0);
 ```
 
-## Find All Mobs Without Pets ==
+## Find All Mobs Without Pets
 
 ```sql
 select ms.mobid, ms.mobname, pt.pet_offset 

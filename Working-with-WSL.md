@@ -6,7 +6,11 @@ If you're going to build from WSL, it's better to clone your repo to somewhere l
 
 ## Connecting to MariaDB on Windows from WSL
 
-Find the nameserver:
+WSL acts like another machine on your local network, so if you are hosting your database on your Windows machine but running your server processes in WSL, you'll need to configure things differently.
+
+### In WSL
+
+Find the information about your Windows machine:
 
 ```sh
 cat /etc/resolv.conf
@@ -27,9 +31,21 @@ Set the IP found here in `network.lua` settings.
 xi.settings.network =
 {
     SQL_HOST     = "172.18.64.1",
+    
+    ...
 ```
 
-If you need to give your WSL instance permissions to use MariaDB, you can create a user for it:
+### In Windows
+
+If you need to give your WSL instance permissions to use MariaDB, you can create a user for it (using ):
+
+Get the IP of your WSL instance:
+
+```ps
+wsl hostname -I
+```
+
+Create a user at that IP:
 
 ```sql
 CREATE USER 'root'@'172.30.167.123' IDENTIFIED BY 'root';

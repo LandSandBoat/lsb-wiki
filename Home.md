@@ -27,8 +27,7 @@ Information for those who work on, or want to work on LSB.
 
 Instructions for cloning, building, running, and updating a LSB server.
 
-- [Windows 10](Server-setup-and-maintenance-Windows-10)
-- [Linux](Server-Setup-and-Maintenance-Linux)
+- [Server Setup Guide](Server-Setup-Guide)
 
 ## Client Setup
 

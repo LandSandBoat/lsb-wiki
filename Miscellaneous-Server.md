@@ -142,7 +142,7 @@ then save the changes and restart the **xi_connect.exe** server.
 
 #### Installing
 
-Python and the MySQL Python Connector are needed and should already be installed if you previously followed our [Server-Setup-and-Maintenance-[Windows-10] Windows 10 installation setup guide].
+Python and the MySQL Python Connector are needed and should already be installed if you previously followed the [Quick-Start Guide](Quick-Start-Guide).
 
 Right click wherever you want to download the repository > Git Clone... > URL: <https://github.com/AdamGagorik/pydarkstar.git> > OK > then Close when it's done.
 
