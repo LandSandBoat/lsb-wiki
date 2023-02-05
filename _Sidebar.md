@@ -9,10 +9,9 @@
 * Client Setup
   * [Windows 10](Client-Setup-Windows)
   * [Common Concerns](Miscellaneous-Client)
-* Server Setup + Maintenance
-  * [Windows 10](Server-setup-and-maintenance-Windows-10)
-  * [Linux](Server-Setup-and-Maintenance-Linux)
-* [Server Administration](Server-Administration)
+* Server Setup
+  * [Server Setup Guide](Server-Setup-Guide)
+* [Server Administration + Maintenance](Server-Administration)
   * [Common Tasks, Issues & Tweaks](Miscellaneous-Server)
   * [Useful SQL Queries](Useful-SQL-queries)
   * [Database Management](Database-Management)
