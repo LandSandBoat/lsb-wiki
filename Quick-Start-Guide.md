@@ -12,8 +12,10 @@
 * Install [Visual Studio](https://visualstudio.microsoft.com/vs/community/).
   * `2019` or `2022` are fine, check `Desktop development with C++` workload (under Desktop & Mobile).
 * Install [MariaDB Server](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.6.12&os=windows&cpu=x86_64&pkg=msi&m=xtom_ams).
-  * Use the latest in the `10.6.x` family of releases, use default settings, **set a root password**, **use UTF8 as character set**.
-  * **IT IS INCREDIBLY IMPORTANT** that you check the `Use UTF8 as server's character set` checkbox on the `Default instance properties` page during installation. If you don't do this you may face very hard to diagnose crashes.
+  * Use the latest in the `10.6.x` family of releases, default settings are mostly OK - aside from:
+    * **Set a root password**.
+    * **Use UTF8 as character set**.
+    * **IT IS INCREDIBLY IMPORTANT** that you check the `Use UTF8 as server's character set` checkbox on the `Default instance properties` page during installation. If you don't do this you may face very hard to diagnose crashes.
 * Install [Python 3](https://www.python.org/downloads/).
   * The latest version is fine, during installation check the `add python.exe to PATH` checkbox.
 * Open a PowerShell window and navigate to your chosen install directory.
