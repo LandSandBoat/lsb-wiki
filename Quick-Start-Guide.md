@@ -77,7 +77,7 @@ o------------------------------------------o
 * In the top toolbar, select `Build > Build All`.
   * This may take a little while!
 * You should eventually see `Build All succeeded.`.
-  * Congratulations, you've built the server!
+  * Congratulations, you've built the server! You can now go onto [Next Steps](#next-steps).
 
 ## To Update
 
@@ -167,6 +167,8 @@ python3 dbtool.py
 ```
 
 * Select 'Reset DB' and follow the instructions to "reset" the database.
+
+* Congratulations, you've built and set up the server! You can now go onto [Next Steps](#next-steps).
 
 ## To Update
 
@@ -308,5 +310,13 @@ The core team of LSB does not use Docker in their workflows, and as such can't p
 
 </details>
 
-## Next Steps:
-- [Post-Install Guide](Post-Install-Guide)
+## Next Steps
+
+* The most basic way to start your server is to launch the newly-built `xi_*` executables:
+  * `xi_connect.exe`
+  * `xi_map.exe`
+  * `xi_search.exe`
+  * `xi_world.exe`
+* Once running, it's a good idea to connect to your server as soon as possible and make sure everything is running as expected.
+  * [Client Setup Guide (Windows)](Client-Setup-Windows)
+* Once you've confirmed everything is working and you can connect to your server, you can start exploring the [Post-Install Guide](Post-Install-Guide) and [Development Landing Page](Development)!
