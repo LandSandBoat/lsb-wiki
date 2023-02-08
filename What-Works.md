@@ -8,14 +8,14 @@ This list is not the final word on what works in the project, or how well it wor
 | ✔️ | Implemented (A fair approximation of retail) |
 | ⚠️ | Partially Implemented = Playable |
 | ⛔ | Partially Implemented = Unplayable / Broken |
-| 🐤 | In progress, and/or in a `feature` branch |
+| 🐤 | In progress |
 | ❌ | Unimplemented |
 | ❔ | Status Unknown |
 | No Mark | Status Unknown |
 
 # Jobs
 
-| Job | 75-era | 99-era | 119-era | Quests | Notes | 
+| Job | 75-era | 99-era | 119-era | Quests | Notes |
 |-----|---|-|-|-|--------------------|
 | WAR | ✔️ | | | | Needs confirmation |
 | MNK | ✔️ | | | | Needs confirmation |
@@ -23,29 +23,29 @@ This list is not the final word on what works in the project, or how well it wor
 | BLM | ✔️ | | | | Needs confirmation |
 | RDM | ✔️ | | | | Needs confirmation |
 | THF | ✔️ | | | | Needs confirmation |
-| PLD |   | | | | Needs confirmation |
-| DRK |   | | | | Needs confirmation |
-| BST |   | | | | Needs confirmation |
-| BRD |   | | | | Needs confirmation |
-| RNG |   | | | | Needs confirmation |
-| SAM |   | | | | Needs confirmation |
-| NIN |   | | | | Needs confirmation |
-| DRG |   | | | | Needs confirmation |
-| SMN |   | | | | Needs confirmation |
-| BLU |   | | | | Needs confirmation |
-| COR |   | | | | Needs confirmation |
-| PUP |   | | | | Needs confirmation |
-| DNC |   | | | | Needs confirmation |
-| SCH |   | | | | Needs confirmation |
-| GEO |   | | | | Needs confirmation |
-| RUN |   | | | | Needs confirmation |
-
+| PLD | | | | | Needs confirmation |
+| DRK | | | | | Needs confirmation |
+| BST | | | | | Needs confirmation |
+| BRD | | | | | Needs confirmation |
+| RNG | | | | | Needs confirmation |
+| SAM | | | | | Needs confirmation |
+| NIN | | | | | Needs confirmation |
+| DRG | | | | | Needs confirmation |
+| SMN | | | | | Needs confirmation |
+| BLU | 🐤 | | | | Needs confirmation |
+| COR | 🐤 | | | | Needs confirmation |
+| PUP | 🐤 | | | | Needs confirmation |
+| DNC | 🐤 | | | | Needs confirmation |
+| SCH | 🐤 | | | | Needs confirmation |
+| GEO | 🐤 | | | | Needs confirmation |
+| RUN | 🐤 | | | | Needs confirmation |
 
 # Missions
-Playable missions are marked in the following file with `--+--` after their names <br>
+
+Playable missions are marked in the following file with `--+--` after their names<br>
 https://github.com/LandSandBoat/server/blob/base/scripts/globals/missions.lua
 
-We have a new format for missions. Newly written/rewritten missions can be found here: <br>
+We have a new format for missions. Newly written/rewritten missions can be found here:<br>
 https://github.com/LandSandBoat/server/tree/base/scripts/missions
 
 | Status | Name | Notes |
@@ -66,20 +66,21 @@ https://github.com/LandSandBoat/server/tree/base/scripts/missions
 
 # Quests
 
-Playable quests are marked in the following file with `--+--` after their names <br>
+Playable quests are marked in the following file with `--+--` after their names<br>
 https://github.com/LandSandBoat/server/blob/base/scripts/globals/quests.lua
 
-We have a new format for quests. Newly written/rewritten quests can be found here: <br>
+We have a new format for quests. Newly written/rewritten quests can be found here:<br>
 https://github.com/LandSandBoat/server/tree/base/scripts/quests
 
 # Battle Content (by era)
+
 ## Pre-Item Level
 
 ### Base Game & Rise of the Zilart ⚠️
 
 | Status | Name | Notes |
 |---|---|---|
-| ⚠️ | BCNMs | Unusable fights are commented out with `--`: <br>https://github.com/LandSandBoat/server/blob/base/scripts/globals/bcnm.lua |
+| ⚠️ | BCNMs | Unusable fights are commented out with `--`:<br>https://github.com/LandSandBoat/server/blob/base/scripts/globals/bcnm.lua |
 | ❌ | Garrison | |
 | ✔️ | HNMs - Land Kings | |
 | ❌ | "Classic" Dynamis | [Will not be implemented.](Frequently-Asked-Questions#when-can-i-play-classic-dynamis) |
@@ -93,7 +94,7 @@ https://github.com/LandSandBoat/server/tree/base/scripts/quests
 | ✔️ | HNMs - Wyrms | |
 | ⚠️ | Sea NMs | Some NMs unimplemented: Jailer of Justice / Jailer of Love / Absolute Virtue |
 | 🐤 | Limbus | |
-| ❔ | Empty Notorious Monsters (ENM) | Tracked the same way as BCNMs:<br>Unusable fights are commented out with `--`: <br>https://github.com/LandSandBoat/server/blob/base/scripts/globals/bcnm.lua |
+| ❔ | Empty Notorious Monsters (ENM) | Tracked the same way as BCNMs:<br>Unusable fights are commented out with `--`:<br>https://github.com/LandSandBoat/server/blob/base/scripts/globals/bcnm.lua |
 
 ### Treasures of Aht Urhgan ❔
 
@@ -127,7 +128,8 @@ https://github.com/LandSandBoat/server/tree/base/scripts/quests
 | ❌ | Bastion | |
 | ❌ | Legion | |
 | ❌ | Meeble Burrows | |
-| ❌ | Voidwatch  | |
+| ❌ | Voidwalker NM System | |
+| ❌ | Voidwatch | |
 
 ## Post-Item Level ❌
 
@@ -152,9 +154,11 @@ https://github.com/LandSandBoat/server/tree/base/scripts/quests
 | ❌ | Dynamis Divergence | |
 | ❌ | High-Tier Mission Battlefields | |
 | ❌ | Geas Fete | |
+| ❌ | Master Trials | |
 | ❌ | Odyssey | |
 | ❌ | Omen | |
 | ❌ | Sacred Kindred Crest Notorious Monsters (SKCNM) | |
+| ❌ | Sortie | |
 | ❌ | Unity - Wanted | |
 
 # Hobby & Misc Content
@@ -176,22 +180,24 @@ https://github.com/LandSandBoat/server/tree/base/scripts/quests
 | ✔️ | HELM | |
 | ✔️ | Hunt Registry | |
 | ⚠️ | Job Points | |
+| ✔️ | Login Campaign | |
 | ⚠️ | Magian Trials | |
-| 🐤 | Mannequins | |
+| ✔️ | Mannequins | |
 | ❌ | Mog Garden | |
+| ✔️ | Mog House 2nd Floor | |
 | ❌ | Monstrosity | |
 | ✔️ | Mounts & 'Full Speed Ahead' Minigame | |
 | ❌ | Pankration | |
 | ✔️ | Records of Eminence | ~300 records + Timed challenges |
 | ✔️ | Soultrapping, Soul Plates & Zeni | Works, but Zeni values are placeholders |
 | ❌ | Synergy | |
-| ⚠️ | Trusts | Trust status: <br>Trusts |
+| ⚠️ | Trusts | Trust status:<br>Trusts |
 
 # Mechanics
 
 | Status | Name | Notes |
 |---|---|---|
-| ⚠️ | Aura Effects | |
+| ✔️ | Aura Effects | |
 | ⚠️ | Basic PVP | |
 | 🐤 | Confrontation Effects | |
 | ⚠️ | Stagger Effects | Neo-Dynamis and Abyssea proc systems implemented |
