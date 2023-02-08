@@ -1,4 +1,4 @@
-**Note: To be able to update the Final Fantasy XI client - and connect to private servers using the most recent version - you must be capable of connecting to retail at least once. Possible methods for doing so may be found below in [Section 2 - Connect to Retail](Client-Setup-Windows#2-connecting-to-retail). LandSandBoat does not condone methods enabling client updates without having connected to SquareEnix's retail servers.**
+**Note: To be able to update the Final Fantasy XI client - and connect to private servers using the most recent version - you must be capable of connecting to retail at least once. Possible methods for doing so may be found below in [Section 2 - Connect to Retail](#2-connecting-to-retail). LandSandBoat does not condone methods enabling client updates without having connected to SquareEnix's retail servers.**
 
 # 1. Install and Update Final Fantasy XI
 
@@ -26,7 +26,9 @@ This step is for Windows 10 users and can be skipped otherwise.
    * `(Root FFXI Install Directory)/PlayOnline/SquareEnix/FINAL FANTASY XI/Tools/FINAL FANTASY XI Config`
 
 # 2. Connecting to Retail
+
 To be capable of connecting to a private server, you must be able to update your local install of Final Fantasy XI. To do this, you must connect - or have connected - to SquareEnix's retail servers at least once. You may connect to the official retail servers in the following ways:
+
    1. Connect to retail with your existing retail subscription.
    2. Purchase a copy of Final Fantasy XI, which comes with a 30-day subscription.
    3. For users who have previously purchased Final Fantasy XI and have since reinstalled the software, connect to retail during a Return Home to Vana'diel campaign when SquareEnix allows former subscribers to play on retail servers for free.
@@ -48,74 +50,77 @@ After having connected to retail at least once since installing Final Fantasy XI
 
 6. Once everything is done, click on "OK" then "Exit Viewer" and "Yes".
 
-# 4. Building xiloader
+# 4. xiloader
 
-To connect to a private server, you need to be able to direct _where_ your local client communicates. This is done through programs like [xiloader](https://github.com/zircon-tpl/xiloader/releases).
+To connect to a private server you need to point your client at that private server. This is done through `bootloaders` like `xiloader`.
 
-**Note: Ashita has a loader built into it. Users who plan to use Ashita may skip to [Section 6 - Launcher Configuration](Client-installation-setup-Windows-%28second-part%29/#6-launcher-configuration). However, we _highly recommend_ connecting to your server for the first time with only xiloader so that you can minimize potential setup problems.**
+* [Download pre-built xiloader](https://github.com/LandSandBoat/xiloader/releases)
+* [Download source code for xiloader to build for yourself](https://github.com/LandSandBoat/xiloader)
 
-To build xiloader from [source](https://github.com/LandSandBoat/xiloader/):
-
-1. Download and install [MSVC 2015 Runtimes](https://www.microsoft.com/en-ca/download/details.aspx?id=48145) (if needed).
-
-2. Right click wherever you want to download the xiloader repository > Git Clone... > URL: https://github.com/zircon-tpl/xiloader.git > OK > then Close when it's done.
-
-3. Execute Visual Studio Community 2019: Open a project or solution (on the right) > select the "xiloader.sln" file from the \xiloader\ folder > Open (click "OK" when asked to "Retarget Projects").
-
-4. Once it's loaded > Build > Build Solution.
-
-5. To confirm that everything was built properly, you should see:
-
-> ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
-
-in the output console at the bottom and the xiloader executable file should be present in the \xiloader\Debug\ folder.
-Put it wherever you want but remember its path.
+**Note: Ashita comes bundled with it's own bootloader. Users who plan to use Ashita may skip to [Section 6 - Launcher Configuration](#6-launcher-configuration). However, we _highly recommend_ connecting to your server for the first time with only xiloader so that you can minimize potential setup problems.**
 
 # 5. Connecting to a Private Server
 
 * Execute xiloader.exe as an administrator (_after_ launching `xi_connect` and `xi_map` if connecting to your own local sever), then select the "Create New Account" option by hitting "2" then:
-```
+
+```txt
 Username: Username
 Password: Password (then repeat)
 ```
+
 * After that, with each launch, select the "Login" option by hitting "1" then:
-```
+
+```txt
 Username: Username
 Password: Password
 ```
 
-/!\ **Notes** /!\
+⚠️ **Notes** ⚠️
 
 * Username (3-15) (as displayed on the loader for now): less than 3 characters and more than 15 characters works.
 * Password (6-15) (as displayed on the loader for now): less than 6 characters works. More than 15 characters works _when you register, BUT note_ that typing the first 15 characters when you're trying to log in will let you in.
 
 # 6. Launcher Configuration
+
 After confirming that your client can connect to a server, you can use one of the popular third-party launchers for ease-of-use and additional features.
 
-## 6a. Launching via Windower
+## 6a. Launching via Ashita v4
 
-1. Download [Windower](http://windower.net/).
+**NOTE:** `Ashita v3` seems to be nearing end-of-life and `Ashita v4` has been very stable in beta for a long time. We recommend getting the `Ashita v4 Beta` from [their Discord](https://discord.gg/ashita).
 
-2. Execute Windower as an administrator and it will download updates automatically.
+### Ashita v4
 
-3. Click on the pen to edit the "Default Profile" and modify its options at your will.
+1. Download `Ashita v4 Beta` from [their Discord](https://discord.gg/ashita).
 
-4. Open the settings.xml file and set your options as followed (don't forget to save changes):
+2. Go to `Ashita-v4beta\config\boot` and make a copy of `example-privateserver.ini`, renaming it to `localhost.ini`.
 
-```
-<profile name="Username">
-  <args>--server Server.IP.address --user Username --pass Password</args>
-  <executable>HDD:\path\to\xiloader.exe</executable>
-</profile>
-```
+3. Alter the `[ashita.boot]` section in `localhost.ini` to look like this:
 
-5. Execute Windower.exe.
+   ```ini
+   [ashita.boot]
+   ; Private Server Usage
+   file        = .\\bootloader\\pol.exe
+   command     = --server 127.0.0.1
+   gamemodule  = ffximain.dll
+   script      = default.txt
+   args        = 
+   ```
 
-6. Select your profile and click on the arrow (bottom right), it will launch xiloader.
+4. Create a Windows shortcut:
 
-## 6b. Launching via Ashita
+   ```txt
+   Target:
+   C:\ffxi\Ashita-v4beta\Ashita-cli.exe localhost.ini
 
-1. Download [Ashita](https://www.ashitaxi.com/).
+   Starts In:
+   C:\ffxi\Ashita-v4beta\
+   ```
+
+5. Double-click your new shortcut to connect to your local server.
+
+### Ashita v3
+
+1. Download [Ashita v3](https://www.ashitaxi.com/).
 
 2. Run Ashita as administrator.
 
@@ -126,3 +131,30 @@ After confirming that your client can connect to a server, you can use one of th
 5. Choose "Window" to adjust your resolution if need be.
 
 6. Click the paper icon to save, launch with the red arrow.
+
+## 6b. Launching via Windower
+
+### Windower v4
+
+1. Download [Windower](http://windower.net/).
+
+2. Execute Windower as an administrator and it will download updates automatically.
+
+3. Click on the pen to edit the "Default Profile" and modify its options at your will.
+
+4. Open the settings.xml file and set your options as followed (don't forget to save changes):
+
+   ```xml
+   <profile name="Username">
+   <args>--server Server.IP.address --user Username --pass Password</args>
+   <executable>HDD:\path\to\xiloader.exe</executable>
+   </profile>
+   ```
+
+5. Execute Windower.exe.
+
+6. Select your profile and click on the arrow (bottom right), it will launch xiloader.
+
+### Windower v5 / Fennestra
+
+Nobody in LandSandBoat has much experience using [Windower v5/Fennestra](https://github.com/Windower/Fenestra), so we can't give any advice on how to use it. You can [check out their Discord](https://discord.gg/aUrHCvk) though!

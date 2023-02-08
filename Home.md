@@ -8,7 +8,7 @@ If you wish to make changes or additions to the wiki please submit a pull reques
 
 General articles about the project.
 
-- [Quick Start Guide](Quick-Start-Guide)
+- [Quick Start Guide](Quick-Start-Guide) (<-- Start here!)
 - [Frequently Asked Questions](Frequently-Asked-Questions)
 - [What Works](What-Works)
 - [Contributing Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md)
