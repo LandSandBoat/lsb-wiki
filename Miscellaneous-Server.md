@@ -14,7 +14,7 @@ Virtual machines, machine images, stuff in the cloud etc. are all very cool and 
 
 ### Minimise inter-process latency
 
-Your server processes (`xi_connect`, `xi_map`, `xi_search`, etc.) and your database service (`MariaDB database server`, `mariadb.service`, etc.) should be running on the same machine. Splitting these processes/services onto different real/virtual machine introduces latency into systems that are blocking and will have a direct effect on the experience of your players.
+Your server processes (`xi_connect`, `xi_map`, `xi_search`, `xi_world`, etc.) and your database service (`MariaDB database server`, `mariadb.service`, etc.) should be running on the same machine. Splitting these processes/services onto different real/virtual machine introduces latency into systems that are blocking and will have a direct effect on the experience of your players.
 
 ### Avoid heavy database operations
 
