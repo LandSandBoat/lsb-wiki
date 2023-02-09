@@ -74,6 +74,10 @@ nohup ./xi_search &
 sleep 5
 echo "starting xi_map"
 ./xi_map
+
+sleep 5
+echo "starting xi_world"
+./xi_world
 ```
 
 ## Dockerfile
