@@ -2449,11 +2449,53 @@
 | 2448         |                                                   |
 | 2449         |                                                   |
 | 2450         |                                                   |
-| 2466         | PROMATHIA?                                        |
-| 2467         | Phoenix??                                         |
-| 2468         | Altana???                                         |
-| 2500         |                                                   |
+|              |                                                   |
+| 2466         | Metus                                             |
+| 2467         | Phoenix                                           |
+| 2468         | Altana                                            |
+|              |                                                   |
+| 2493         | Valhallan Rift                                    |
+|              |                                                   |
+| 2500         | Colkhab/Muyingwa                                  |
+| 2501         | Xevioso                                           |
+| 2502         | Mini Bztavian                                     |
+| 2503         |                                                   |
+| 2504         |                                                   |
+| 2505         | Tchakka/Dakuwaqa                                  |
+| 2506         | Ngai                                              |
+| 2507         | Mini Rockfin                                      |
+|              |                                                   |
 | 2678         | Arciela                                           |
+|              |                                                   |
+| 2832         | Voodoo Doll                                       |
+|              |                                                   |
+| 2850         | Luopan (Fire)                                     |
+| 2851         | Luopan (Ice)                                      |
+| 2852         | Luopan (Wind)                                     |
+| 2853         | Luopan (Earth)                                    |
+| 2854         | Luopan (Lightning)                                |
+| 2855         | Luopan (Water)                                    |
+| 2856         | Luopan (Light)                                    |
+| 2857         | Luopan (Dark)                                     |
+| 2858         | Luopan (Fire, bigger)                             |
+| 2859         | Luopan (Ice, bigger)                              |
+| 2860         | Luopan (Wind, bigger)                             |
+| 2861         | Luopan (Earth, bigger)                            |
+| 2862         | Luopan (Lightning, bigger)                        |
+| 2863         | Luopan (Water, bigger)                            |
+| 2864         | Luopan (Light, bigger)                            |
+| 2865         | Luopan (Dark, bigger)                             |
+| 2866         | Skormoth                                          |
+| 2870         | Black Antlion (small)                             |
+| 2871         | Black Antlion (large)                             |
+| 2872         | Blue Crab                                         |
+| 2873         | Red Cargo Crab                                    |
+| 2874         | Red Crab                                          |
+| 2875         | Chocobo                                           |
+| 2876         | Green Treant                                      |
+| 2877         | Autumn Treant                                     |
+| 2878         | Barren Treant                                     |
+| 2879         | Twinkling Treant                                  |
 | 2882         | FF14 Spriggan                                     |
 | 2881         | DQ Slime                                          |
 | 2907         | DQ She-Slime (Red Slime)                          |
@@ -2461,6 +2503,27 @@
 | 2909         | FF14 Spriggan                                     |
 | 2910         | FF14 Spriggan                                     |
 | 2928         | Porxie                                            |
+| 2948         | Baby Karakul                                      |
+| 2949         | Chacharoon                                        |
+| 2950         | Big Moogle Wearing Shades                         |
+| 2951         | Frog (green)                                      |
+| 2952         | Poroggo (red)                                     |
+| 2953         | Poroggo (green)                                   |
+| 2954         | Mandragora (large)                                |
+| 2955         | Giant Rarab                                       |
+| 2956         | Very Large Worm                                   |
+| 2957         | Micro Ameretat                                    |
+| 2958         | Magh Bihu? (large)                                |
+| 2959         | Mandragora (small)                                |
+| 2960         | Korrigan                                          |
+| 2961         | Pachypodium                                       |
+| 2962         | Adenium                                           |
+| 2963         | Magh Bihu? (small)                                |
+| 2964         | Golden Bomb                                       |
+| 2965         | Golden Crab                                       |
+| 2966         | Golden Volcanic Crab                              |
+| 2966         | Giant White Rarab                                 |
+|              |                                                   |
 | 3000         | Trust: Shantotto                                  |
 | 3001         | Trust: Naji                                       |
 | 3002         | Trust: Kupipi                                     |
@@ -2569,3 +2632,33 @@
 | 3117         | Trust: Ark GK                                     |
 | 3118         | Trust: Ygnas                                      |
 | 3119         | Trust: Cornelia                                   |
+| 3120         | Trust: Monberaux                                  |
+| 3121         | Trust: Matsui-P                                   |
+| 3128         | Lion                                              |
+| 3129         | Prishe                                            |
+| 3130         | Nashmeira                                         |
+| 3131         | Lilisette                                         |
+| 3132         | Arciela                                           |
+| 3133         | Aldo                                              |
+| 3134         | Maat                                              |
+| 3135         | Zeid                                              |
+| 3136         | Volker                                            |
+| 3137         | Trion                                             |
+| 3138         | Curilla                                           |
+| 3139         | Shantotto                                         |
+| 3140         | Ajido-Marujido                                    |
+| 3141         | Star Sybil                                        |
+| 3142         | Semih Lafihna                                     |
+| 3143         | Gilgamesh                                         |
+| 3144         | Ovjang                                            |
+| 3145         | Mnejing                                           |
+| 3146         | Luzaf                                             |
+| 3147         | Ulmia                                             |
+| 3148         | Lion II (RoV CS)                                  |
+| 3149         | Prishe II (RoV CS)                                |
+| 3150         | Nashmeira II (RoV CS)                             |
+| 3151         | Lilisette II (RoV CS)                             |
+| 3152         | Arciela II (RoV CS)                               |
+| 3153         | World Eater Egg                                   |
+| 3155         | Perfectly Lucky Egg                               |
+| 3156         | Chaos                                             |
