@@ -28,3 +28,4 @@ Articles in this category are guides covering specific subject matter. They're i
 * [Interaction Framework Documentation](Interaction-Framework-Documentation)
 * [Dummy System](Dummy-System)
 * [Working with WSL](Working-with-WSL)
+* [Cloud Guide (GCP)](Cloud-Guide-GCP)
