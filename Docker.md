@@ -83,7 +83,7 @@ echo "starting xi_world"
 ## Dockerfile
 
 ```docker
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 RUN apt clean
 
