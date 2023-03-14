@@ -10,6 +10,35 @@
 
 We prefer to work through GitHub [Issues](https://github.com/LandSandBoat/server/issues), [Pull Requests](https://github.com/LandSandBoat/server/pulls), and [Discussions](https://github.com/LandSandBoat/server/discussions).
 
+## Can anyone run their own private server for Final Fantasy XI?
+
+While technically yes, anyone can run their own server as the software required is entirely free and open source, it is not recommended. In order to create your own server, you will be required to understand how to install and use several various tools that are needed in order to run the server. This includes things such as running tools from the command line, understanding how to use and operate an SQL database, understanding how to compile source code, and more. In order to make any kind of changes to the server once its setup, you will also need to understand how to do some level of programming depending on the changes you wish to make.
+
+## What programming languages are used to work on a private server?
+
+The current core languages used with the main fork of the server software are:
+
+  - C/C++ - Used for the main server core code and other core tooling such as the boot loader.
+  - Lua - Used for the server scripting system.
+  - SQL - Used for the database.
+  - Python - Used for additional tooling.
+
+_While you do not need to know every one of these languages, depending on what you are looking to modify you will need some experience in them at least. Additional languages may be required for individual private servers that you may look to help in regards to things such as their own websites, launcher, etc._
+
+## What is the current software used for creating a Final Fantasy XI private server?
+
+Private servers for Final Fantasy XI are made entirely through homebrew code (using mixes of the above aforementioned programming languages). **We do not have any kind of official source code or other material from SE.**
+
+The current actively maintained fork of the private server emulation software is called: **LandSandBoat** (you are currently reading the wiki for **LandSandBoat**).
+
+## I need help setting up my server!
+
+Firstly, please understand that we **DO NOT** encourage for everyone to make their own private server. If you are not familiar with the requirements to setup the server or do not understand how to follow the instructions given, then we do kindly ask that you play on an existing server instead.
+
+If you do feel as though you understand what you are doing and potentially have hit an issue with the given instructions, then you should first ask for help directly on the **LandSandBoat** [Discussions](https://github.com/LandSandBoat/server/discussions) page.
+
+You can also ask for help within the **#dev-support** channel of the Final Fantasy XI Private Servers [Discord](https://discordapp.com/invite/msACzWV). But please be aware, if you are asking extremely basic/general questions in regards to setting up the server software that show you do not actually know what you are doing, you will most likely be ignored.
+
 ## Where can I find servers to play on?
 
 Check out the Final Fantasy XI Private Servers Community [List of Servers](https://github.com/XiPrivateServers/Servers/tree/main/servers). You can also head to the [Discord](https://discordapp.com/invite/msACzWV) & [Reddit](https://www.reddit.com/r/FFXIPrivateServers/).
