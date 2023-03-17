@@ -146,8 +146,8 @@ sudo mysql_secure_installation
 sudo mysql -u root -p -e "CREATE USER 'xi'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE xidb;USE xidb;GRANT ALL PRIVILEGES ON xidb.* TO 'xi'@'localhost';"
 ```
 
-* Edit the file `network.lua` inside `server/settings/` and change "root" to the password set during MariaDB setup
-  * Make sure to leave the quotation marks surrounding the password!
+* Edit the file `network.lua` inside `server/settings/` and change the `SQL_LOGIN`, `SQL_PASSWORD`, and `SQL_DATABASE` to the login, password, and database you used in the above command (default xi, password, xidb).
+  * Make sure to include the quotation marks!
 * Edit the file `main.lua` inside `server/settings` with your desired settings for your server.
   * Make sure to leave the quotation marks surrounding that has them around it!
 * In the `server` directory, prepare and build the executables:
