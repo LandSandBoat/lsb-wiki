@@ -113,9 +113,13 @@ py -3 dbtool.py update
 </details>
 
 <details>
-  <summary>Linux (Debian/Ubuntu)</summary>
+  <summary>Linux (Debian/Ubuntu 22.04)</summary>
 
 ## To Install
+
+```txt
+NOTE: We try to keep up to date with whatever the latest LTS release of Ubuntu is (Ubuntu 22.04). We run all of our CI builds on this release. We can't guarantee that older LTS versions will work. When in doubt, update!
+```
 
 * Run these steps to use Mariadb's community provided .deb packages through apt:
   * https://mariadb.com/docs/connect/programming-languages/c/install/#connector-c-install-repo-configure-cs
