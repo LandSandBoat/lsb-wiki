@@ -6,7 +6,7 @@ To give your server the best chance of providing a snappy and stable gameplay ex
 
 ### Build and run in Release mode
 
-Either through Visual Studio, or CMake (`cmake -DCMAKE_BUILD_TYPE=Release ..`) you should be building in `Release` mode when you're ready to have players connect to your server. A lot of debug information and tooling is removed from the build and it will run much faster. If you need to debug things you should revert to a `Debug` build.
+Either through Visual Studio, or CMake (`cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo ..`) you should be building in `RelWithDebInfo` mode when you're ready to have players connect to your server. A lot of debug information and tooling is removed from the build and it will run much faster than pure Debug mode. If you need to debug things you should revert to a `Debug` build.
 
 ### Use a bare-metal/real machine
 
