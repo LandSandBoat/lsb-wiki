@@ -306,6 +306,45 @@ Depending on your distro, the LuaJIT that comes through the package manager may 
 Each server process startup can be quite resource intensive for both CPU and RAM. Older Raspberry Pis don't have much RAM, so you may need to start up each of the server processes one-by-one to ensure that they start and run correctly.
 
 </details>
+  
+<details>
+  <summary>Linux (Gentoo OpenRC)</summary>
+  
+Ensure your system is up to date:
+```sh
+sudo emerge --sync && emerge -avuDU @world
+```
+Emerge the following packages and their dependencies: 
+```sh
+sudo emerge -a dev-db/mariadb dev-lang/luajit dev-vcs/git net-libs/zeromq
+```
+Clone the repo in your folder of choice, then copy the settings files:
+```sh
+cd ~/ && mkdir git && cd ~/git 
+git clone --recursive https://github.com/LandSandBoat/server.git
+cp server/settings/default/* server/settings
+```
+MariaDB will need to be configured and the database initialized before the service can be started. If you have issues, or are using Systemd instead of OpenRC, refer to the [Gentoo Wiki](https://wiki.gentoo.org/wiki/MariaDB).
+```sh
+sudo emerge --config dev-db/mariadb
+sudo rc-update add mysql default
+sudo rc-service mysql start
+```
+In order to use dbtool for managing your database, additional packages are required, one of which is not in the main Gentoo repository. This is a problem on Gentoo as installing with pip instead of portage can break your system. Thankfully, with an overlay we can get what we need (ensure you have already installed and configured [eselect-repository](https://wiki.gentoo.org/wiki/Eselect/Repository)):
+```sh
+sudo eselect repository add claytabase git https://github.com/claybie/claytabase.git
+sudo emaint sync -r claytabase
+```
+Now we can emerge all the necessary packages for dbtool:
+```sh
+sudo emerge -a dev-python/black dev-python/colorama dev-python/GitPython dev-python/mariadb dev-python/pylint dev-python/pyyaml dev-python/pyzmq dev-python/regex
+```
+Additionally, you will also need to emerge the below packages if you wish to use [pydarkstar](https://github.com/AdamGagorik/pydarkstar) as an automated auction house:
+```sh
+sudo emerge -a dev-python/beautifulsoup4 dev-python/sqlalchemy
+```
+The process for securing the MariaDB installation, creating the SQL database, building the project with make, populating the database using dbtool and performing future updates is the same as on Ubuntu. It can be referenced above from the *Linux (Debian/Ubuntu 22.04)* section.
+</details>
 
 <details>
   <summary>Docker</summary>
