@@ -355,11 +355,16 @@ The core team of LSB does not use Docker in their workflows, and as such can't p
 
 ## Next Steps
 
-* The most basic way to start your server is to launch the newly-built `xi_*` executables:
+* The most basic way to start your server is to launch the newly-built `xi_*` executables, found in your repo root:
   * `xi_connect.exe`
   * `xi_map.exe`
   * `xi_search.exe`
   * `xi_world.exe`
-* Once running, it's a good idea to connect to your server as soon as possible and make sure everything is running as expected.
-  * [Client Setup Guide (Windows)](Client-Setup-Windows)
+
+_If they don't run or close immediately be sure to check the log output in the `log/` folder._
+
+* Once everything is launched, you should connect to your server as soon as possible and make sure everything is running as expected.
+  * You should make sure you have a working client for local testing: [Client Setup Guide (Windows)](Client-Setup-Windows)
 * Once you've confirmed everything is working and you can connect to your server, you can start exploring the [Post-Install Guide](Post-Install-Guide) and [Development Landing Page](Development)!
+
+_The above articles tell you how to do important things like changing settings, making a Game Master character, making your server available to the internet, etc._
