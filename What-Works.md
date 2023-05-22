@@ -15,6 +15,8 @@ This list is not the final word on what works in the project, or how well it wor
 
 # Jobs
 
+Note: All jobs are working and playable up to Lv75. It is unknown how much Lv99, i119, and Quest content is complete for all jobs. 
+
 | Job | 75-era | 99-era | 119-era | Quests | Notes |
 |-----|---|-|-|-|--------------------|
 | WAR | ✔️ | | | | Needs confirmation |
