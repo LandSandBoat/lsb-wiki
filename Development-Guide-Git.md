@@ -5,6 +5,7 @@ Git is important, it's important that you use it correctly.
 -----
 
 - [Development Guide (Git)](#development-guide-git)
+  - [Writing useful commit messages](#writing-useful-commit-messages)
   - [Example of making changes (command line)](#example-of-making-changes-command-line)
   - [Amending the previous commit](#amending-the-previous-commit)
   - [Git Attribution](#git-attribution)
@@ -14,6 +15,49 @@ Git is important, it's important that you use it correctly.
   - [Other Guides](#other-guides)
 
 -----
+
+## Writing useful commit messages
+
+When you make a commit, you're adding a collection of changes with a title describing them to the codebase. These commits and messages are being constantly read and checked against as others do work on the codebase. It is vitally important that the messages you assign to your commits are a clear representation of the work you're submitting - in the context of the entire codebase, not just your pull request!
+
+There are no hard or fast rules for what a good commit message should look like, but it:
+- Shouldn't be too short or long
+- If you need to explain more, consider leaving notes in the code, or make the commit multiline
+- It should describe what's changing, possibly also why - if it makes sense to mention that
+
+For example: If your changes are adding a feature to trusts, your commit message should look like:
+
+```txt
+[trust] Allow trusts to heal themselves
+```
+
+Or multiline:
+
+```txt
+[trust] Allow trusts to heal themselves
+
+Trusts didn't have context for how hurt they were relative to other party members. This adds a structure to the CParty* that lets them track whats going on with the rest of the party.
+```
+
+If you submit some code and we ask you to make changes to it you should ammend your previous commits rather than adding new commits to address our requests.
+
+This is also the case if you have to make changes to your code to get it to pass our CI checks.
+
+Some examples of **WHAT NOT TO DO**:
+
+```txt
+Update file.txt
+```
+
+```txt
+Remove debug logging because maintainers asked me to
+```
+
+```txt
+Align comments to pass CI
+```
+
+If (once your PR is merged) the content of your message loses all meaning - then it's a bad message.
 
 ## Example of making changes (command line)
 
