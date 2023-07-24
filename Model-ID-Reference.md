@@ -2522,7 +2522,7 @@
 | 2964         | Golden Bomb                                       |
 | 2965         | Golden Crab                                       |
 | 2966         | Golden Volcanic Crab                              |
-| 2966         | Giant White Rarab                                 |
+| 2967         | Giant White Rarab                                 |
 |              |                                                   |
 | 3000         | Trust: Shantotto                                  |
 | 3001         | Trust: Naji                                       |
@@ -2662,3 +2662,5 @@
 | 3153         | World Eater Egg                                   |
 | 3155         | Perfectly Lucky Egg                               |
 | 3156         | Chaos                                             |
+|              |                                                   |
+| 3581         | Giant Moogle (Bonanza Biscuit Costume)            |
