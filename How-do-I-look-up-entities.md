@@ -1,5 +1,9 @@
 # How do I look up entities?
 
+## Why can't I just hard-code my IDs with the IDs from the client or database?
+
+We pin the the current retail client version - which updates every month. Every time there is a retail client update, various things in the client shift around - including entity IDs. If you hard-code something and then it shifts in a version update, your hard-coded code will break. If you do a lookup by name a load-time or run-time there is a better chance things won't break between updates since we have tooling that can (mostly) handle those ID shifts, but only in the database.
+
 ## Load-time
 
 When the server is first starting up a lot of information you might expect to be available hasn't yet been loaded, so you need to be careful about how you do entity lookup.
