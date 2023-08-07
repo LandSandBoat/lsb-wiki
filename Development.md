@@ -17,9 +17,10 @@ Articles in this category are general development topics, relating to overall de
 Articles in this category are guides covering specific subject matter. They're intended to familiarize the reader on certain aspects of developing for the codebase.
 
 * [Server Startup Tutorial](Development-Server-Startup-Tutorial)
+# [How-do-I-look-up-entities](How-do-I-look-up-entities)
 * [Module Guide](Module-Guide)
 * [Proof of Work](Proof-of-Work)
-* [Understanding Variables](Understanding-variables-a-brief-guide.md)
+* [Understanding Variables](Understanding-variables-a-brief-guide)
 * [Spatial Orientation and Relative Positions](Spatial-Orientation-and-Relative-Positions)
 * [Build Troubleshooting](Build-Troubleshooting)
 * [Performance Profiling with Tracy](Performance-Profiling-with-Tracy)
