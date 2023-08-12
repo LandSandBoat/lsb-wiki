@@ -312,6 +312,41 @@ if (thatThing())
 }
 ```
 
+#### Breaks to split wide conditional lines - after the operator
+
+- There is no hard rule about how wide is too wide at this time.
+- Use your best judgement, but nobody likes left/right scrolling.
+
+```cpp
+// Correct ✔️ 
+if (lotsOfStuff &&
+    evenMoreStuff &&
+    evenMoreStuff &&
+    evenMoreStuff &&
+    evenMoreStuff &&
+    evenMoreStuff)
+{
+
+}
+
+// Wrong ❌
+if (lotsOfStuff
+    && evenMoreStuff
+    && evenMoreStuff
+    && evenMoreStuff
+    && evenMoreStuff
+    && evenMoreStuff)
+{
+
+}
+
+// Wrong ❌ (this is 102 chars wide)
+if (lotsOfStuff && evenMoreStuff && evenMoreStuff && evenMoreStuff && evenMoreStuff && evenMoreStuff)
+{
+
+}
+```
+
 #### Casting - static_cast over C-Style
 
 `cppcoreguidelines-pro-type-cstyle-cast`
