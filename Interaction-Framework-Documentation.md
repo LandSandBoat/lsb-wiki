@@ -260,7 +260,7 @@ In order to properly prioritize quest/mission events over default dialogue from 
 These default actions can be defined by creating a `DefaultActions.lua` file in the corresponding zone folder, and adding the actions using the short-hand method for them:
 
 ```lua
-local ID = require("scripts/zones/Northern_San_dOria/IDs")
+local ID = zones[xi.zone.NORTHERN_SAN_DORIA]
 
 return {
     ['Ailbeche'] = { event = 868 },
