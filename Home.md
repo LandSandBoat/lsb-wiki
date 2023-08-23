@@ -2,48 +2,52 @@
 
 This is the wiki for LandSandBoat (LSB below) - an open-source server emulator for FFXI.
 
+If you're looking to setup and install the project, start with the [Quick Start Guide](Quick-Start-Guide).
+
 If you wish to make changes or additions to the wiki please submit a pull request to our [editable wiki mirror](https://github.com/LandSandBoat/lsb-wiki). Changes will be automatically published once they are reviewed and merged.
 
 ## General
 
-General articles about the project.
+* [Frequently Asked Questions](Frequently-Asked-Questions)
+  * [What works?](What-Works)
+    * [Trusts](Trusts)
+  * [How can I help?](How-Can-I-Help)
+    * [Using GitHub](Using-Github)
+* [Useful Resources](Resources)
+  * [Model ID reference lists](Model-ID-Reference)
+  * [Treasure Hunter Chart](TH-chart)
 
-- [Quick Start Guide](Quick-Start-Guide) (<-- Start here!)
-- [Frequently Asked Questions](Frequently-Asked-Questions)
-- [What Works](What-Works)
-- [Contributing Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md)
+## Server Administration
 
-## Resources
+Articles in this category are geared towards what a server administrator might want to know to setup and keep their server running smoothly.
 
-- [Additional useful resources](Resources) and tools of interest to administrators, developers, or players.
+* [Quick Start Guide](Quick-Start-Guide)
+  * [Working with WSL](Working-with-WSL)
+  * [Docker](Docker)
+* [Post-Install Guide](Post-Install-Guide)
+* [Database Management](Database-Management)
+* [Useful SQL Queries](Useful-SQL-queries)
+* [Common Tasks, Issues & Tweaks](Miscellaneous-Server)
 
 ## Development
 
-Information for those who work on, or want to work on LSB.
+Articles in this category are general development topics relating to overall development processes and tools. The Articles page contains guides covering specific subject matter.
 
-- [Development Landing Page](Development)
-
-## Server Setup
-
-Instructions for cloning, building, running, and updating a LSB server.
-
-- [Server Setup Guide](Server-Setup-Guide)
+* [Contributing Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md)
+* [Development Guide](Development-Guide)
+* [Git Guide](Development-Guide-Git)
+* [Debugging](Debugging)
+* [Articles](Development)
 
 ## Client Setup
 
 Instructions for installing FFXI, connecting to a private server, and keeping the game updated.
 
-- [Windows 10](Client-Setup-Windows)
-- [Common Concerns](Miscellaneous-Client)
-
-## [Server Administration](Server-Administration)
-
-Information for new server administrators.
-
-- [Server Administration Landing Page](Server-Administration)
+* [Windows 10](Client-Setup-Windows)
+* [Common Concerns](Miscellaneous-Client)
 
 ## Code of Conduct
 
 All participants are expected to abide by our Code of Conduct. Please be sure to review it.
 
-- [Code of Conduct](https://github.com/LandSandBoat/server/blob/base/CODE_OF_CONDUCT.md)
+* [Code of Conduct](https://github.com/LandSandBoat/server/blob/base/CODE_OF_CONDUCT.md)

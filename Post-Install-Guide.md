@@ -53,12 +53,7 @@ By default, dbtool will offer to backup your whole database into `server/sql/bac
 
 ## See Also
 
-[Server Administration](Server-Administration)
-
-[Common Tasks](Miscellaneous-Server)
-
-[Useful SQL Queries](Useful-SQL-queries)
-
-[Database Management](Database-Management)
-
-[Development Landing Page](Development)
+* [Database Management](Database-Management)
+* [Useful SQL Queries](Useful-SQL-queries)
+* [Common Tasks](Miscellaneous-Server)
+* [Development Articles](Development)
