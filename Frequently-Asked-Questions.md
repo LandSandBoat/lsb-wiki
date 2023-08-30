@@ -48,9 +48,9 @@ You can't - it isn't in the game anymore.
 <summary>Read more</summary>
 <p>
 
-"Classic" Dynamis was removed from the game in 2011. The spawn mechanisms as you remember them are gone from the game, and those zones no longer act the way they used to.
+"Classic" Dynamis was removed from the game in 2011. The spawn mechanisms and mobs as you remember them are gone from the game, and those zones no longer act the way they used to.
 
-The overall project goal is to emulate the retail game as closely as possible, so a massive custom solution to approximate "Classic" Dynamis is not on our roadmap.
+The overall project goal is to emulate the retail game as closely as possible, so a massive custom solution to approximate "Classic" Dynamis is not on our roadmap. If a content-complete, balanced, stable, neat, and well-written module becomes available for "Classic" Dynamis, we would consider accepting it.
 
 </p>
 </details>
@@ -101,12 +101,37 @@ enum ZONEMISC
 </p>
 </details>
 
+## Will you accept custom content that doesn't exist on the retail version of the game?
+
+No. We are a retail server emulator.
+
+<details>
+<summary>Read more</summary>
+<p>
+
+There is a very small set of scenarios where we **might** consider taking in custom content that doesn't demonstrate the same behaviour as on retail FFXI (_these are entirely at our discretion_):
+- There is an obvious bug in the retail client that we can easily remedy, ideally toggleable with a setting.
+  - Example: Trusts continuing their casting animations if a battle ends while they're in the middle of casting a spell.
+- There is content that has been removed, which we can re-add through careful use of modules and settings.
+- There is a very easy to tweak magic number we can hook up to a module or setting.
+
+We don't want to become a platform for people to express _what they think_ FFXI is or should be, or what FFXI was during a given time period. This would create lots of extra noise and work, and distract us from emulating the retail game as closely as possible (the version of the game we have access to right now, which also has the most content).
+
+We invite you to make whatever changes you like to your own server, share your code with your friends, and have a good time with the game we all love.
+
+</p>
+</details>
+
 ## What is Darkstar Project (DSP), Project Topaz (TPZ), or Topaz Next (TPZN)?
 
 These are the predecessor projects that LandSandBoat is derived from, which are archived and no longer maintained or supported.
 
+## Why the strange name? What is a LandSandBoat?
+
+See below: [Why did the airship in Sauromugue Champaign used to skid along the ground like a land speeder?](#why-did-the-airship-in-sauromugue-champaign-used-to-skid-along-the-ground-like-a-land-speeder)
+
 ## Why did the airship in Sauromugue Champaign used to skid along the ground like a land speeder?
 
-It's the project namesake. It's a feature, not a bug. 👀
+When incorrectly reading binary data from the database, it caused the airship in Sauromugue Champaign to skate along the ground like an air-hockey puck. It's the project namesake. It's a feature, not a bug. 👀
 
 You can re-enable this using the [lsb_mascot.sql](https://github.com/LandSandBoat/server/blob/base/modules/custom/sql/lsb_mascot.sql) module.
