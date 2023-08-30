@@ -20,6 +20,10 @@ It is assumed you've read the [Contributing Guide](https://github.com/LandSandBo
 - `UpperCamelCase` for namespaced functions and classes.
 - `UPPER_SNAKE_CASE` for enums (exception for enum classes: style as classes).
 - `lowerCamelCase` for everything else.
+- You should use exceptions only in exceptional circumstances:
+  - If player/server data is at risk of being lost or corrupted, this is probably a good time to throw an exception and take down the server.
+  - If you're encountering a situation that shouldn't ever be happening, best to kill it with an exception.
+  - (Begrudgingly) If the STL, a third party lib, or legacy code relies on throwing exceptions as part of regular operation (LuaJIT does this) - wrap them in try/catch and move on with your life.
 
 ### Styling
 
