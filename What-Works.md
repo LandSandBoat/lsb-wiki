@@ -83,7 +83,7 @@ https://github.com/LandSandBoat/server/tree/base/scripts/quests
 | Status | Name | Notes |
 |---|---|---|
 | ⚠️ | BCNMs | Unusable fights are commented out with `--`:<br>https://github.com/LandSandBoat/server/blob/base/scripts/globals/bcnm.lua |
-| ❌ | Garrison | |
+| ✔️ | Garrison | |
 | ✔️ | HNMs - Land Kings | |
 | ❌ | "Classic" Dynamis | [Will not be implemented.](Frequently-Asked-Questions#when-can-i-play-classic-dynamis) |
 | ⚠️ | "Neo" Dynamis | City and Dreamworld zones farmable, some unimplemented NMs |
