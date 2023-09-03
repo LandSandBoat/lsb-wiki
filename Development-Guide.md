@@ -1,4 +1,4 @@
-<h1 id="table-of-contents">Table of Contents</h1>
+# <a id="table-of-contents"/>Table of Contents
 
 - [C++](#c)
 - [Lua](#lua)
@@ -6,13 +6,13 @@
 - [Python](#python)
 - [Git](Development-Guide-Git)
 
-<h2 id="contributing">Contributing</h2>
+## <a id="contributing"/>Contributing
 
 It is assumed you've read the [Contributing Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md).
 
-<h2 id="c">C++</h2>
+## <a id="c"/>C++
 
-<h3 id="c-naming-misc">Naming & Misc</h3>
+### <a id="c-naming-misc"/>Naming & Misc
 
 - The STL is your friend, don't be afraid to use it.
 - Be careful with `auto`, it can mask important type details.
@@ -25,17 +25,17 @@ It is assumed you've read the [Contributing Guide](https://github.com/LandSandBo
   - If you're encountering a situation that shouldn't ever be happening, best to kill it with an exception.
   - (Begrudgingly) If the STL, a third party lib, or legacy code relies on throwing exceptions as part of regular operation (LuaJIT does this) - wrap them in try/catch and move on with your life.
 
-<h3 id="c-styling">Styling</h3>
+### <a id="c-styling"/>Styling
 
 We keep a `.clang-format` file in the root of the repo, but accept it can be difficult to set up for use on _just your changes_, as opposed to entire files that you're working with that might have legacy styling you don't want to mess with.
 
 Here are the points from `.clang-format` explained:
 
-<h4 id="c-basedonstyle">BasedOnStyle: WebKit</h4>
+#### <a id="c-basedonstyle"/>BasedOnStyle: WebKit
 
 When in doubt, defaulting to `WebKit style with Allman braces` is _seemingly_ a safe option.
 
-<h4 id="c-accessmodifieroffset">AccessModifierOffset: -4</h4>
+#### <a id="c-accessmodifieroffset"/>AccessModifierOffset: -4
 
 ```cpp
 // Correct ✔️ 
@@ -59,7 +59,7 @@ class Classname
 }
 ```
 
-<h4 id="c-allowshortfunctionsonasingleline">AllowShortFunctionsOnASingleLine: Empty</h4>
+#### <a id="c-allowshortfunctionsonasingleline"/>AllowShortFunctionsOnASingleLine: Empty
 
 ```cpp
 // Correct ✔️ 
@@ -72,7 +72,7 @@ void f()
 void f() { foo(); }
 ```
 
-<h4 id="c-breakbeforebraces">BreakBeforeBraces: Allman</h4>
+#### <a id="c-breakbeforebraces"/>BreakBeforeBraces: Allman
 
 Braces should _almost always_ be on a new line.
 
@@ -89,7 +89,7 @@ if (x == 5) {
 }
 ```
 
-<h4 id="c-breakconstructorinitializers-constructorinitializerindentwidth">BreakConstructorInitializers: BeforeComma & ConstructorInitializerIndentWidth: 0</h4>
+#### <a id="c-breakconstructorinitializers-constructorinitializerindentwidth"/>BreakConstructorInitializers: BeforeComma & ConstructorInitializerIndentWidth: 0
 
 ```cpp
 // Correct ✔️ 
@@ -104,7 +104,7 @@ Constructor(int param0, int param1)
     : member0(param0), member1(param1){}
 ```
 
-<h4 id="c-compactnamespaces">CompactNamespaces: 'false'</h4>
+#### <a id="c-compactnamespaces"/>CompactNamespaces: 'false'
 
 ```cpp
 // Correct ✔️ 
@@ -120,7 +120,7 @@ namespace Foo { namespace Bar {
 }}
 ```
 
-<h4 id="c-cpp11bracedliststyle">Cpp11BracedListStyle: 'false'</h4>
+#### <a id="c-cpp11bracedliststyle"/>Cpp11BracedListStyle: 'false'
 
 ```cpp
 // Correct ✔️ 
@@ -130,7 +130,7 @@ std::vector<int> x{ 1, 2, 3, 4 };
 std::vector<int> x{1, 2, 3, 4};
 ```
 
-<h4 id="c-indentcaselabels">IndentCaseLabels: 'true'</h4>
+#### <a id="c-indentcaselabels"/>IndentCaseLabels: 'true'
 
 ```cpp
 // Correct ✔️ 
@@ -154,7 +154,7 @@ case 0:
 
 - **Note**: It doesn't matter if your `break;` is inside or outside the body of your case statement - as long as it's there (if you indend it to be).
 
-<h4 id="c-indentwidth">IndentWidth: 4</h4>
+#### <a id="c-indentwidth"/>IndentWidth: 4
 
 ```cpp
 // Correct ✔️ 
@@ -170,7 +170,7 @@ if (func())
 }
 ```
 
-<h4 id="c-keepemptylinesatthestartofblocks">KeepEmptyLinesAtTheStartOfBlocks: 'false'</h4>
+#### <a id="c-keepemptylinesatthestartofblocks"/>KeepEmptyLinesAtTheStartOfBlocks: 'false'
 
 ```cpp
 // Correct ✔️ 
@@ -187,11 +187,11 @@ void function(int x)
 }
 ```
 
-<h4 id="c-language">Language: Cpp</h4>
+#### <a id="c-language"/>Language: Cpp
 
 Yup.
 
-<h4 id="c-pointeralignment">PointerAlignment: Left</h4>
+#### <a id="c-pointeralignment"/>PointerAlignment: Left
 
 ```cpp
 // Correct ✔️ 
@@ -207,11 +207,11 @@ void function(CBigType * type);
 void function(CBigType & type);
 ```
 
-<h4 id="c-sortincludes-sortusingdeclarations">SortIncludes: 'true' & SortUsingDeclarations: 'true'</h4>
+#### <a id="c-sortincludes-sortusingdeclarations"/>SortIncludes: 'true' & SortUsingDeclarations: 'true'
 
 - Try to keep your `include` and `using` statements organised alphabetically, in logical blocks.
 
-<h4 id="c-spacebeforeparens">SpaceBeforeParens: ControlStatements</h4>
+#### <a id="c-spacebeforeparens"/>SpaceBeforeParens: ControlStatements
 
 ```cpp
 // Correct ✔️ 
@@ -227,7 +227,7 @@ if(true)
 }
 ```
 
-<h4 id="c-standard">Standard: Cpp11</h4>
+#### <a id="c-standard"/>Standard: Cpp11
 
 ```cpp
 // Correct ✔️ 
@@ -237,7 +237,7 @@ A<A<int>>
 A<A<int> >
 ```
 
-<h4 id="c-usetab">UseTab: Never</h4>
+#### <a id="c-usetab"/>UseTab: Never
 
 ```cpp
 // Correct ✔️
@@ -250,7 +250,7 @@ A<A<int> >
 <a half-tab>
 ```
 
-<h4 id="c-braces-around-statements">Braces Around Statements</h4>
+#### <a id="c-braces-around-statements"/>Braces Around Statements
 
 `readability-braces-around-statements`
 
@@ -274,7 +274,7 @@ else
 }
 ```
 
-<h4 id="c-breaks-between-consecutive-conditional-statements">Breaks between consecutive conditional statements</h4>
+#### <a id="c-breaks-between-consecutive-conditional-statements"/>Breaks between consecutive conditional statements
 
 ```cpp
 // Correct ✔️ 
@@ -328,7 +328,7 @@ if (thatThing())
 }
 ```
 
-<h4 id="c-breaks-to-split-wide-conditional-lines-after-the-operator">Breaks to split wide conditional lines - after the operator</h4>
+#### <a id="c-breaks-to-split-wide-conditional-lines-after-the-operator"/>Breaks to split wide conditional lines - after the operator
 
 - There is no hard rule about how wide is too wide at this time.
 - Use your best judgement, but nobody likes left/right scrolling.
@@ -363,7 +363,7 @@ if (lotsOfStuff && evenMoreStuff && evenMoreStuff && evenMoreStuff && evenMoreSt
 }
 ```
 
-<h4 id="c-casting-static-cast-over-c-style">Casting - static_cast over C-Style</h4>
+#### <a id="c-casting-static-cast-over-c-style"/>Casting - static_cast over C-Style
 
 `cppcoreguidelines-pro-type-cstyle-cast`
 
@@ -375,7 +375,7 @@ uint32 param = static_cast<uint32>(input);
 uint32 param = (uint32)input;
 ```
 
-<h4 id="c-dont-use-static-cast-to-downcast">Don't use static_cast to downcast: Use dynamic_cast instead</h4>
+#### <a id="c-dont-use-static-cast-to-downcast"/>Don't use static_cast to downcast: Use dynamic_cast instead
 
 `cppcoreguidelines-pro-type-static-cast-downcast`
 
@@ -400,7 +400,7 @@ if (auto PChar = static_cast<CCharEntity*>(baseEntity))
 }
 ```
 
-<h4 id="c-arg-param-spacing">Arg/Param spacing</h4>
+#### <a id="c-arg-param-spacing"/>Arg/Param spacing
 
 ```cpp
 // Correct ✔️ 
@@ -410,7 +410,7 @@ auto f(0, 1, 2, 3, 4, 5, 6);
 auto f(0,1,2,3,4,5,6);
 ```
 
-<h4 id="c-lambdas">Lambdas</h4>
+#### <a id="c-lambdas"/>Lambdas
 
 Formatting tools have a famously difficult time with lamdas, so we tend to wrap them in `// clang-format on/off` to ensure we can format them how we'd like.
 
@@ -441,11 +441,11 @@ auto isEntityAlive =
 
 [Back to Top](#table-of-contents)
 
-<h2 id="lua">Lua</h2>
+## <a id="lua"/>Lua
 
 A lot of the styling rules from the C++ guide can and should be applied to Lua code. Here are the important points to remember when styling your Lua:
 
-<h3 id="lua-naming-and-misc">Naming and Misc</h3>
+### <a id="lua-naming-and-misc"/>Naming and Misc
 
 - Our lua functions and members are typically `lowerCamelCased`, with few exceptions.
 - Make sure you check out `scripts/globals/npc_util.lua` for useful tools and helpers.
@@ -463,7 +463,7 @@ local missionStatus = player:getCharVar("PromathiaStatus")
 local quests = xi.quest.id.sandoria
 ```
 
-<h3 id="lua-local-vars-are-almost-always-preferred">Local vars are (almost) always preferred</h3>
+### <a id="lua-local-vars-are-almost-always-preferred"/>Local vars are (almost) always preferred
 
 ```lua
 -- Correct ✔️ 
@@ -473,7 +473,7 @@ local var = 0
 var = 0
 ```
 
-<h3 id="lua-allman-braces">Allman Braces</h3>
+### <a id="lua-allman-braces"/>Allman Braces
 
 ```lua
 -- Correct ✔️ 
@@ -490,7 +490,7 @@ local table = {
 
 **NOTE:** The final entry in a multi-line table should have a comma after it.
 
-<h3 id="lua-no-parentheses-unless-needed-to-clarify-order-of-operations">No parentheses unless needed to clarify order of operations</h3>
+### <a id="lua-no-parentheses-unless-needed-to-clarify-order-of-operations"/>No parentheses unless needed to clarify order of operations
 
 ```lua
 -- Correct ✔️ 
@@ -509,7 +509,7 @@ if (condition1 == 1) then
 end
 ```
 
-<h3 id="lua-no-semicolons">No semicolons</h3>
+### <a id="lua-no-semicolons"/>No semicolons
 
 ```lua
 -- Correct ✔️ 
@@ -524,7 +524,7 @@ trigger(42);
 local x = 42; trigger(42);
 ```
 
-<h3 id="lua-formatting-conditional-blocks">Formatting Conditional Blocks</h3>
+### <a id="lua-formatting-conditional-blocks"/>Formatting Conditional Blocks
 
 ```lua
 -- Short - Correct ✔️
@@ -560,7 +560,7 @@ then
 end
 ```
 
-<h3 id="lua-placement-of-logical-operators-in-long-blocks">Placement of logical operators in long blocks</h3>
+### <a id="lua-placement-of-logical-operators-in-long-blocks"/>Placement of logical operators in long blocks
 
 - `not` before, `and/or` after
 
@@ -584,7 +584,7 @@ then
 end
 ```
 
-<h3 id="lua-no-excess-whitespace">No excess whitespace inside of parentheses or solely for alignment</h3>
+### <a id="lua-no-excess-whitespace"/>No excess whitespace inside of parentheses or solely for alignment
 
 ```lua
 -- Correct ✔️ 
@@ -606,7 +606,7 @@ then
 end
 ```
 
-<h3 id="lua-no-whitespace-between-function-name-and-parameters-space-between-parameters">No whitespace between function name and parameters; Space between parameters</h3>
+### <a id="lua-no-whitespace-between-function-name-and-parameters-space-between-parameters"/>No whitespace between function name and parameters; Space between parameters
 
 ```lua
 -- Correct ✔️
@@ -618,7 +618,7 @@ local function myFunction (param1,param2,param3)
 end
 ```
 
-<h3 id="lua-logical-and-mathematical-operators-should-have-one-space-padding">Logical and mathematical operators should have one space padding</h3>
+### <a id="lua-logical-and-mathematical-operators-should-have-one-space-padding"/>Logical and mathematical operators should have one space padding
 
 ```lua
 -- Correct ✔️
@@ -632,7 +632,7 @@ if a==b then
 end
 ```
 
-<h3 id="lua-code-following-end-on-same-indentation-level-should-have-a-newline-inbetween">Code following `end` on same indentation level should have a newline inbetween</h3>
+### <a id="lua-code-following-end-on-same-indentation-level-should-have-a-newline-inbetween"/>Code following `end` on same indentation level should have a newline inbetween
 
 ```lua
 -- Correct ✔️
@@ -649,7 +649,7 @@ end
 return a
 ```
 
-<h3 id="lua-no-empty-newlines-after-function-declaration-or-prior-to-end">No empty newlines after function declaration, or prior to end</h3>
+### <a id="lua-no-empty-newlines-after-function-declaration-or-prior-to-end"/>No empty newlines after function declaration, or prior to end
 
 ```lua
 -- Correct ✔️
@@ -669,7 +669,7 @@ local function myFunction(param1, param2, param3)
 end
 ```
 
-<h3 id="lua-no-single-line-functions-or-conditions">No single-line functions or conditions</h3>
+### <a id="lua-no-single-line-functions-or-conditions"/>No single-line functions or conditions
 
 ```lua
 -- Correct ✔️
@@ -687,9 +687,9 @@ if a == b then a = b + c end
 local function myFunction(param1, param2, param3) return param1 + param2 end
 ```
 
-<h4 id="lua-inline-tables">Inline tables</h4>
+#### <a id="lua-inline-tables"/>Inline tables
 
-<h5 id="lua-this-is-the-one-exception-to-the-global-newline-brace-rules">THIS IS THE ONE EXCEPTION TO THE GLOBAL NEWLINE-BRACE RULES</h5>
+##### <a id="lua-this-is-the-one-exception-to-the-global-newline-brace-rules"/>THIS IS THE ONE EXCEPTION TO THE GLOBAL NEWLINE-BRACE RULES
 
 ```lua
 -- Correct ✔️ 
@@ -709,7 +709,7 @@ xi.func(
 
 [Back to Top](#table-of-contents)
 
-<h2 id="sql">SQL</h2>
+## <a id="sql"/>SQL
 
 - Don't put single quotes around non string fields:
 
@@ -750,11 +750,11 @@ xi.func(
   insert into table_name
   ```
 
-<h3 id="sql-commenting-in-sql">Commenting in SQL</h3>
+### <a id="sql-commenting-in-sql"/>Commenting in SQL
 
 Our SQL tables are big and confusing, and they are also modified by hand. It can be very helpful to leave _short_ comments on your additions and modifications to highlight what they are.
 
-<h4 id="sql-example">Example</h4>
+#### <a id="sql-example"/>Example
 
 Without a comment, this entry is not easily human-readable:
 
@@ -776,7 +776,7 @@ INSERT INTO `weapon_skills` VALUES (1,'combo',0x02020000000200000000000002000000
 
 The format of the comment isn't massively important, but it is preferred not to use ';' as a seperator in the middle of your comment. This is a little confusing, as it's the statement-terminator in SQL.
 
-<h3 id="sql-placeholder-data-in-table-rows">Placeholder Data in table rows</h3>
+### <a id="sql-placeholder-data-in-table-rows"/>Placeholder Data in table rows
 
 In general, it is preferred to comment out the entire row rather than only leaving a comment about still needing to capture it. Examples include item and NPC models. Use your best judgment and if you aren't sure you can always ask.
 
@@ -793,17 +793,17 @@ In general, it is preferred to comment out the entire row rather than only leavi
 
 **_And absolutely never substitute item modifiers!_**
 
-<h3 id="sql-sql-migrations-for-schema-changes">SQL Migrations for Schema changes</h3>
+### <a id="sql-sql-migrations-for-schema-changes"/>SQL Migrations for Schema changes
 
 - Going forward schema changes should be accompanied by a migration script.
 
 [Back to Top](#table-of-contents)
 
-<h2 id="python">Python</h2>
+## <a id="python"/>Python
 
 Python is primarily used for support scripts.
 
-<h3 id="python-naming-and-misc">Naming and Misc</h3>
+### <a id="python-naming-and-misc"/>Naming and Misc
 
 - Python uses `lower_snake_case`
 
