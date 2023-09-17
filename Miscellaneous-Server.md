@@ -67,9 +67,11 @@ UPDATE xidb.zone_settings SET zoneport = 54231 WHERE zoneid % 2 = 0;
 Then when we launch our server processes we make sure to specify a process that uses the original `zoneport` and the new `zoneport`:
 
 ```sh
-    screen -d -m -S xi_map ./xi_map --log map-server-0.log --port 54230
-    screen -d -m -S xi_map ./xi_map --log map-server-1.log --port 54231
+    screen -d -m -S xi_map ./xi_map --ip 127.0.0.1 --port 54230 --log map-server-0.log
+    screen -d -m -S xi_map ./xi_map --ip 127.0.0.1 --port 54231 --log map-server-1.log
 ```
+
+**NOTE**: You must make sure to specify `--ip` for each process you run. This should match up to whatever you have set in `zone_settings`. See the [Post-Install Guide](https://github.com/LandSandBoat/server/wiki/Post-Install-Guide#making-the-server-available-to-the-internet) if you need to change this.
 
 It's also recommended (as above) that you specify different log files to be used by each process.
 
