@@ -473,18 +473,28 @@ local var = 0
 var = 0
 ```
 
-### <a id="lua-allman-braces"/>Allman Braces
+### <a id="lua-table-formatting"/>Table Formatting
 
 ```lua
--- Correct ✔️ 
+-- Correct (Allman style for multi-line tables) ✔️ 
 local table =
 {
-    content = 1,
+    one = 1,
+    two = 2,
 }
+
+-- Correct (Oneliner style for small, single-line tables) ✔️ 
+local table = { 1, 2, 3, 4 }
 
 -- Wrong ❌
 local table = {
     content = 1,
+}
+
+-- Wrong ❌
+local table =
+{ one = 1,
+    two = 2,
 }
 ```
 
