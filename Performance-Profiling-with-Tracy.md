@@ -58,9 +58,11 @@ If building from Visual Studio, select one of the `-Tracy` build configurations 
 
 ## Usage
 
-During the Tracy-enabled build from the previous steps, the client code will be downloaded and built into `xi_map` executable. The server executables will also be downloaded and placed in the repo root (`Tracy.exe, etc.`).
+During the Tracy-enabled build from the previous steps, the client code will be downloaded and built into `xi_map` executable. The server executables will also be downloaded and placed in the repo root (`Tracy.exe`, etc.).
 
 The build will output `xi_map_tracy.exe` instead of `xi_map.exe`, so you can continue to run multi-process setups by swapping out the single `xi_map` process you want to profile with the Tracy-enabled exe.
+
+**WARNING:** Tracy is designed to only bind to and profile a single executable at a time. If you launch multiple `xi_map_tracy.exe`'s at the same time, `Tracy.exe` will bind to the first one it finds, not necessarily the one you're wanting to profile.
 
 Run your `xi_map_tracy.exe` and then launch `Tracy.exe`.
 
