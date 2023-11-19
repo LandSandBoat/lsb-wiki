@@ -4,7 +4,7 @@
 
 > A real time, nanosecond resolution, remote telemetry, hybrid frame and sampling profiler for games and other applications.
 
-<img src="https://user-images.githubusercontent.com/1389729/97106613-832f0100-16cb-11eb-8452-267e406bceb9.png" width="640" height="480"/>
+![image](https://user-images.githubusercontent.com/1389729/97106613-832f0100-16cb-11eb-8452-267e406bceb9.png)
 
 ## Intro
 
@@ -17,7 +17,13 @@ We can't know how good/bad our performance is until we measure it.
 
 ## Setup
 
-If building on the command line, add `-DTRACY_ENABLE=ON` to your configuration arguments. It will download the Tracy client and server, and build the `Tracy` client into `xi_map` for you.
+### Command Line
+
+If building on the command line:
+
+- Add `-DTRACY_ENABLE=ON` to your configuration arguments and build as normal.
+
+### Visual Studio
 
 If building from Visual Studio, select one of the `-Tracy` build configurations and build as normal.
 
@@ -50,11 +56,25 @@ If building from Visual Studio, select one of the `-Tracy` build configurations 
 1> [CMake] -- Build files have been written to: C:/ffxi/server/build/x64-Release-Tracy
 ```
 
-`Tracy.exe` will be placed in your repo root.
-
 ## Usage
 
-Run your Tracy-enabled `xi_map.exe` and then launch `Tracy.exe`. You will see it connect and start profiling. You can launch `Tracy.exe` before or after `xi_map.exe`, it isn't important.
+During the Tracy-enabled build from the previous steps, the client code will be downloaded and built into `xi_map` executable. The server executables will also be downloaded and placed in the repo root (`Tracy.exe`, etc.).
+
+The build will output `xi_map_tracy.exe` instead of `xi_map.exe`, so you can continue to run multi-process setups by swapping out the single `xi_map` process you want to profile with the Tracy-enabled exe.
+
+**WARNING:** Tracy is designed to only bind to and profile a single executable at a time. If you launch multiple `xi_map_tracy.exe`'s at the same time, `Tracy.exe` will bind to the first one it finds, not necessarily the one you're wanting to profile.
+
+Run your `xi_map_tracy.exe` and then launch `Tracy.exe`.
+
+![image](https://github.com/LandSandBoat/server/assets/1389729/89b7bffe-a170-4398-b08c-d04e8c392fa3)
+
+You can connect to your local machine (`127.0.0.1`) or you can enter the IP address of another machine on your network to connect to it. You'll need to make sure port `8086` is open.
+
+Press `Connect`.
+
+You will see it connect and start profiling.
+
+You can launch `Tracy.exe` before or after `xi_map.exe`, it isn't important.
 
 It is usually better to wait until startup has completed before you attach Tracy, as the startup routine isn't a good indicator of the server's runtime performance.
 
