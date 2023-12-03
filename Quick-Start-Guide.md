@@ -364,7 +364,7 @@ The core team of LSB does not use Docker in their workflows, and as such can't p
 _If they don't run or close immediately be sure to check the log output in the `log/` folder._
 
 * Once everything is launched, you should connect to your server as soon as possible and make sure everything is running as expected.
-  * You should make sure you have a working client for local testing: [Client Setup Guide (Windows)](Client-Setup-Windows)
+  * You should make sure you have a working client for local testing: [Client Setup Guide (Windows)](Client-Setup-Windows) (This includes sections for setting up Ashita and Windower).
 * Once you've confirmed everything is working and you can connect to your server, you can start exploring the [Post-Install Guide](Post-Install-Guide) and articles in the Development section!
 
 _The above articles tell you how to do important things like changing settings, making a Game Master character, making your server available to the internet, etc._
