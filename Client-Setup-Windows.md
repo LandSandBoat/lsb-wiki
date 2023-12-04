@@ -32,7 +32,7 @@ To be capable of connecting to a private server, you must be able to update your
    1. Connect to retail with your existing retail subscription.
    2. Purchase a copy of Final Fantasy XI, which comes with a 30-day subscription.
    3. For users who have previously purchased Final Fantasy XI and have since reinstalled the software, connect to retail during a Return Home to Vana'diel campaign when SquareEnix allows former subscribers to play on retail servers for free.
-   4. [Activate a trial account provided by SquareEnix.](https://store.na.square-enix-games.com/en_US/product/442968/final-fantasy-xi-free-trial-pc-download) When you do so, you will be emailed an activation key. This key may be used like a normal activation key.
+   4. [Activate a trial account provided by SquareEnix.](https://na.store.square-enix-games.com/final-fantasy_-xi_-free-trial---digital) When you do so, you will be emailed an activation key. This key may be used like a normal activation key.
 
 # 3. Later Updates
 
@@ -54,7 +54,7 @@ After having connected to retail at least once since installing Final Fantasy XI
 
 To connect to a private server you need to point your client at that private server. This is done through `bootloaders` like `xiloader`.
 
-* [Download pre-built xiloader](https://github.com/LandSandBoat/xiloader/releases)
+* [Download pre-built latest xiloader](https://github.com/LandSandBoat/xiloader/releases)
 * [Download source code for xiloader to build for yourself](https://github.com/LandSandBoat/xiloader)
 
 **Note: Ashita comes bundled with it's own bootloader. Users who plan to use Ashita may skip to [Section 6 - Launcher Configuration](#6-launcher-configuration). However, we _highly recommend_ connecting to your server for the first time with only xiloader so that you can minimize potential setup problems.**
@@ -96,10 +96,17 @@ After confirming that your client can connect to a server, you can use one of th
 
 3. Alter the `[ashita.boot]` section in `localhost.ini` to look like this:
 
+   > **Note: Ashita comes bundled with it's own bootloader (bootloader/pol.exe). To connect to the latest version of the server you will need to use the most current version of xiloader. You will need to adjust your boot ini file to point to xiloader.**
+   > 
+   > **If you use an old/incompatible bootloader you will get errors in xi_connect in the form of:**
+   >
+   > `127.0.0.1: (167772427), wrong version number (SSL routines)`
+
    ```ini
    [ashita.boot]
-   ; Private Server Usage
-   file        = .\\bootloader\\pol.exe
+   ; Private Server Usage, using xiloader.exe instead of pol.exe
+   ; This path can also be relative (starting with .\\)
+   file        = C:\\some path\\xiloader.exe
    command     = --server 127.0.0.1
    gamemodule  = ffximain.dll
    script      = default.txt
