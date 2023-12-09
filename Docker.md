@@ -93,18 +93,11 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Working directory will be /server meaning that the contents of server will exist in /server
 WORKDIR /server
 
-# MariaDB C Connector that ships with ubuntu:20.04 is out of date.
-# Need to install latest python/pip/maria libs in order to
-# let us run dbtool.py from within our container.
-# This lets us update the DB on container start by default, so it's never
-# out of date, since we can't reach it from outside the container composition by design.
+# Some dependencies are pulled from deadsnakes
 RUN apt update && apt install -y wget curl software-properties-common
 RUN add-apt-repository ppa:deadsnakes/ppa
 
-RUN wget https://downloads.mariadb.com/MariaDB/mariadb_repo_setup
-RUN chmod ugo+x ./mariadb_repo_setup
-RUN ./mariadb_repo_setup --mariadb-server-version="mariadb-11.3"
-
+# Need mariadb as per-requirements, doesn't come pre-packaged I don't think
 RUN apt-get install -y libmariadb3 libmariadb-dev mariadb-server
 
 RUN apt-get update
@@ -115,11 +108,7 @@ RUN apt install -y python3.12 python3.12-dev python3-pip
 RUN python3 --version
 
 # Update and install all requirements as well as some useful tools such as net-tools and nano
-RUN apt install -y net-tools nano git clang-15 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev luarocks binutils-dev
-
-# Use Clang 15
-ENV CC=/usr/bin/clang-15
-ENV CXX=/usr/bin/clang++-15
+RUN apt install -y net-tools nano git cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev luarocks binutils-dev
 
 # Copy everything from the host machine server folder to /server
 ADD . /server
