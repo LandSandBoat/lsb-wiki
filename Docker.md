@@ -103,7 +103,7 @@ RUN add-apt-repository ppa:deadsnakes/ppa
 
 RUN wget https://downloads.mariadb.com/MariaDB/mariadb_repo_setup
 RUN chmod ugo+x ./mariadb_repo_setup
-RUN ./mariadb_repo_setup --mariadb-server-version="mariadb-10.6"
+RUN ./mariadb_repo_setup --mariadb-server-version="mariadb-11.3"
 
 RUN apt-get install -y libmariadb3 libmariadb-dev mariadb-server
 
@@ -115,11 +115,11 @@ RUN apt install -y python3.12 python3.12-dev python3-pip
 RUN python3 --version
 
 # Update and install all requirements as well as some useful tools such as net-tools and nano
-RUN apt install -y net-tools nano git clang-11 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev luarocks binutils-dev
+RUN apt install -y net-tools nano git clang-15 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev luarocks binutils-dev
 
-# Use Clang 11
-ENV CC=/usr/bin/clang-11
-ENV CXX=/usr/bin/clang++-11
+# Use Clang 15
+ENV CC=/usr/bin/clang-15
+ENV CXX=/usr/bin/clang++-15
 
 # Copy everything from the host machine server folder to /server
 ADD . /server
