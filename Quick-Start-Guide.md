@@ -147,7 +147,7 @@ sudo mysql_secure_installation
 * Type the following to create a database user with the login <ins>_**xi**_</ins> and password <ins>_**password**_</ins>, and an empty database called <ins>_**xidb**_</ins>. NOTE: You _SHOULD_ change **ALL THREE OF THESE** to improve security:
 
 ```sh
-sudo mysql -u root -p -e "CREATE USER 'xi'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE xidb;USE xidb;GRANT ALL PRIVILEGES ON xidb.* TO 'xi'@'localhost';"
+sudo mysql -u root -p -e "CREATE USER 'xi'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE xidb CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;USE xidb;GRANT ALL PRIVILEGES ON xidb.* TO 'xi'@'localhost';"
 ```
 
 * Edit the file `network.lua` inside `server/settings/` and change the `SQL_LOGIN`, `SQL_PASSWORD`, and `SQL_DATABASE` to the login, password, and database you used in the above command (default xi, password, xidb).
