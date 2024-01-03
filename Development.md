@@ -18,6 +18,7 @@ Articles in this category are guides covering specific subject matter. They're i
 * [Dummy System](Dummy-System)
 * [Sol Refactor](Sol-Refactor)
 * [Performance Profiling with Tracy](Performance-Profiling-with-Tracy)
+* [Programming for Performance](Programming-for-Performance)
 * [Does -ffast-math matter?](Does-ffast-math-flag-matter)
 * [Build Troubleshooting](Build-Troubleshooting)
 * [Cloud Guide (GCP)](Cloud-Guide-GCP)
