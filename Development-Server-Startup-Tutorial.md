@@ -182,6 +182,6 @@ The most common places to look up bindings between C++ and Lua are `src/map/lua/
 
 ## Some things of note
 
-- All of this main logic is single-threaded, we ship some things off to other threads, but we _very much on purpose_ keep threading to a minimum. This protects us from a whole category of difficult to diagnose and difficult to fix bugs.
+- All of this main logic is single-threaded, we ship some things off to other threads, but we _very much on purpose_ keep threading to a minimum. This protects us from a whole category of difficult to diagnose and difficult to fix bugs. See [Programming for Performance](Programming-for-Performance).
 
 - In order to "scale" once the server workload gets sufficiently high, we can run multiple of the `xi_map.exe` process, assign different zones to them, and they'll communicate using ZMQ. Until you have 100+ concurrent users, you don't have to think about this. _Theoretical happy limit_ per process is 200-400 players, dependant on many different factors.
