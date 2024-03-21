@@ -1,0 +1,66 @@
+# I run many things on the stack server that I run land sand boat on. Due to this I needed to avoid using the python and script methods for installation. 
+# I figured that a guide to do this would be helpful for others. This guide is based on the guides from Project Topaz/Darkstar.
+# This was done on Ubunutu 22.04 server edition but should work on any debain based system
+
+## Install Land Sand Boat FFXI Server ##
+
+# Add user for ffxi, home dir, and make part of sudo group
+sudo adduser ffxi
+sudo usermod -aG sudo ffxi
+sudo su ffxi
+cd ~
+
+# install requirements
+sudo apt install git g++-10 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev binutils-dev
+
+# download latest code from git (or your own fork)
+git clone --recursive https://github.com/LandSandBoat/server.git
+
+# build program
+mkdir -p ~/ffxi/build && cd ~/ffxi/build
+cmake ..
+make -j $(nproc)
+
+# log into sql root
+sudo mysql -h'127.0.0.1' -P'3306' -u'root' -p'YourPasswordHere' -A
+CREATE USER 'ffxiadmin'@'localhost' IDENTIFIED BY 'ffxiadminpassword';
+CREATE DATABASE ffxidb;
+USE ffxidb;
+GRANT ALL PRIVILEGES ON ffxidb.* TO 'ffxiadmin'@'localhost';
+exit
+
+# make a bash script and run in sql folder
+cd ~/ffxi/sql
+sudo nano sql.sh
+
+####paste below code
+#!/bin/bash
+PASS='ffxiadminpassword'
+for f in *.sql
+  do
+     echo -n "Importing $f into the database..."
+     mysql ffxidb -u ffxiadmin -p$PASS < $f && echo "Success"      
+  done
+
+
+# set mysql info
+sudo chmod u+x sql.sh
+sudo ./sql.sh
+
+# setup confs
+cp ~/ffxi/settings/default/* ~/ffxi/settings
+cd  ~/ffxi/settings
+sudo nano network.lua 
+
+# set zone IP
+mysql -u ffxiadmin -p
+USE ffxidb;
+UPDATE zone_settings SET zoneip = 'public ip here';
+exit; 
+
+# start servers
+cd ~/ffxi
+screen -d -m -S  xi_connect ./xi_connect
+screen -d -m -S xi_map ./xi_map
+screen -d -m -S xi_search ./xi_search
+screen -d -m -S xi_world ./xi_world
