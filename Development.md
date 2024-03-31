@@ -22,3 +22,4 @@ Articles in this category are guides covering specific subject matter. They're i
 * [Does -ffast-math matter?](Does-ffast-math-flag-matter)
 * [Build Troubleshooting](Build-Troubleshooting)
 * [Cloud Guide (GCP)](Cloud-Guide-GCP)
+* [Database Library Upgrade](Database-Library-Upgrade)
