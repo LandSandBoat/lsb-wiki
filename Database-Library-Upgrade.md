@@ -18,19 +18,23 @@
 
 <https://github.com/LandSandBoat/server/pull/4601>
 
-## Background
-
-## Goals
-
-### Safety
-
-Prepared statements
-
-### Developer Quality of Life
-
 ## What does this mean for my server?
 
+As a player or an operator; nothing. This is primarily a change to help core developers.
+
+### Safety & Developer Quality of Life
+
+Currently, it's very easy to trip yourself up while using the existing code built on top of `mariadb-connector-c`. If you have more than one query in flight on a single connection, you'll clobber the data of your first query. In addition to being very careful, we have had to build many checks and warnings on top of the connector to make it safer an easier to use.
+
+If you have many columns of data to pull from the results of your query, you've previously had to keep them in order and index into the results. If you needed to add or remove columns, you'd have to update all of your indexes. Quite fragile, and this has been the cause of more than a couple of bugs over the last few years.
+
+The new `mariadb-connector-cpp` library fixes both of these issues and provides other goodies for developers. Your query results are stored away into a `Result Set` object, which is safe from clobbering if you want to do other things while you iterate your results. You can now ask your `Result Set` for results by name, rather than index - making it a lot more robust.
+
+It also introduces [Prepared Statements](https://en.wikipedia.org/wiki/Prepared_statement); which boosts efficieny of calling queries by not having to recompile each query from a string on every call, and adds an additional layer of protection for converted queries from [SQL injection](https://en.wikipedia.org/wiki/SQL_injection) attacks.
+
 ## What's Next?
+
+Currently, it isn't possible to use `db::encodeToBlob` inline with `db::preparedStmt`. This is first on the list to try and fix. After this, keeping a pool of connections behind the scene which can be "checked out" by callers and then returned to the pool when they're finished doing their work. Maybe combining the new `db::` namespace with `async`.  
 
 ## Usage and Query Migration Guide
 
@@ -82,7 +86,7 @@ They are lazily constructed and cached on your behalf.
 
 ```cpp
 const char* query = "SELECT set_blue_spells FROM "
-                    "chars WHERE charid = (?);";  // <-- Note the dynamic parameter slot here
+                    "chars WHERE charid = ?;";  // <-- Note the dynamic parameter slot here
 
 // The prepared statement will be created, cached, and bound for you behind the scenes
 auto rset = db::preparedStmt(query, PChar->id);
@@ -90,4 +94,15 @@ if (rset && rset->rowsCount() && rset->next()) // Inspect and iterate as normal
 {
     db::extractFromBlob(rset, "set_blue_spells", PChar->m_SetBlueSpells);
 }
+```
+
+### `db::encodeToBlob`
+
+To write structs into the database, they must be encoded with `db::encodeToBlob` and baked into a query string with `fmt::format`, for execution with `db::query`. This replaces the `char buffer[T * 2 + 1]; std::memcpy(...)` pattern seen in many places in the codebase. Eventually it'll be possible to use `db::encodeToBlob` inline with `db::preparedStmt` and `db::query` will be extended to be variadic and forward arguments interally to `fmt::format`.
+
+```cpp
+    auto set_blue_spells = db::encodeToBlob(PChar->m_SetBlueSpells);
+    auto query           = fmt::format("UPDATE chars SET set_blue_spells = '{}' WHERE charid = {} LIMIT 1",
+                                        set_blue_spells, PChar->id);
+    db::query(query);
 ```
