@@ -157,6 +157,10 @@ After confirming that your client can connect to a server, you can use one of th
    <executable>HDD:\path\to\xiloader.exe</executable>
    </profile>
    ```
+   NOTE: If your registered password contains any of the following characters, you will need to replace/escape them in the file to avoid corrupting the entire setting.xml file
+   * replace all `&` in your password with `&amp;`
+   * replace all `<` in your password with `&lt;`
+   * replace all `>` in your password with `&gt;`
 
 5. Execute Windower.exe.
 
