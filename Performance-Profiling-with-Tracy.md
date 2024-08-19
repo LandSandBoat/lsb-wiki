@@ -12,8 +12,8 @@ We can't know how good/bad our performance is until we measure it.
 
 `Tracy` is made up of two parts:
 
-- The client - which you build into your program and will broadcast your performance information.
-- The server - an external program (available in the Tracy Release) which will receive the information and allow you to analyze it.
+- The client - which you build into your program and will broadcast your performance information to the server.
+- The server - an external program (available in the Tracy release, now called `tracy-profiler.exe`) which will receive the information and allow you to analyze it.
 
 ## Setup
 
@@ -25,9 +25,9 @@ If building on the command line:
 
 ### Visual Studio
 
-If building from Visual Studio, select one of the `-Tracy` build configurations and build as normal.
+If building from Visual Studio, select one of the `-Tracy` build configurations and build as normal. To get a fair measure of runtime performance, you probably want to profile the `Release` variant of the program.
 
-![image](https://user-images.githubusercontent.com/1389729/184948461-879157e5-b367-462c-8d21-6e56036216a8.png)
+<img width="395" alt="image" src="https://github.com/user-attachments/assets/aab0f2f8-b693-4112-9523-17005a6f20e8">
 
 ```sh
 1> Working directory: C:\ffxi\server\build\x64-Release-Tracy
@@ -44,11 +44,8 @@ If building from Visual Studio, select one of the `-Tracy` build configurations 
 1> [CMake] x tracy-0.8.2/.github/workflows/
 ... 
 1> [CMake] -- Downloading Tracy client
-1> [CMake] x capture.exe
-1> [CMake] x csvexport.exe
-1> [CMake] x import-chrome.exe
-1> [CMake] x Tracy.exe
-1> [CMake] x update.exe
+1> [CMake] x tracy-profiler.exe
+...
 1> [CMake] -- Modifying C:/ffxi/server/ext/tracy/tracy-0.8.2/client/TracyProfiler.hpp
 ...
 1> [CMake] -- Configuring done
@@ -58,13 +55,15 @@ If building from Visual Studio, select one of the `-Tracy` build configurations 
 
 ## Usage
 
-During the Tracy-enabled build from the previous steps, the client code will be downloaded and built into `xi_map` executable. The server executables will also be downloaded and placed in the repo root (`Tracy.exe`, etc.).
+During the Tracy-enabled build from the previous steps, the client code will be downloaded and built into `xi_map` build target. The server executables will also be downloaded and placed in the repo root (`tracy-profiler.exe`, etc.).
 
-The build will output `xi_map_tracy.exe` instead of `xi_map.exe`, so you can continue to run multi-process setups by swapping out the single `xi_map` process you want to profile with the Tracy-enabled exe.
+The build will output `xi_map_tracy.exe` instead of `xi_map.exe`, so you can continue to run multi-process setups by swapping out the single `xi_map.exe` process you want to profile with the Tracy-enabled `xi_map_tracy.exe`.
 
-**WARNING:** Tracy is designed to only bind to and profile a single executable at a time. If you launch multiple `xi_map_tracy.exe`'s at the same time, `Tracy.exe` will bind to the first one it finds, not necessarily the one you're wanting to profile.
+**WARNING:** Tracy is designed to only bind to and profile a single executable at a time. If you launch multiple `xi_map_tracy.exe`'s at the same time, `tracy-profiler.exe` will bind to the first one it finds, not necessarily the one you're wanting to profile.
 
-Run your `xi_map_tracy.exe` and then launch `Tracy.exe`.
+**WARNING:** Tracy can only properly gather all the information it needs if you run `xi_map_tracy.exe` as **Administrator/root**. There are loud warnings if you don't do this, so you're unlikely to miss them.
+
+Run your `xi_map_tracy.exe` as Administrator/root and then launch `tracy-profiler.exe`.
 
 ![image](https://github.com/LandSandBoat/server/assets/1389729/89b7bffe-a170-4398-b08c-d04e8c392fa3)
 
@@ -74,9 +73,9 @@ Press `Connect`.
 
 You will see it connect and start profiling.
 
-You can launch `Tracy.exe` before or after `xi_map.exe`, it isn't important.
+You can launch `tracy-profiler.exe` before or after `xi_map.exe`, it isn't important.
 
-It is usually better to wait until startup has completed before you attach Tracy, as the startup routine isn't a good indicator of the server's runtime performance.
+It is usually better to wait until startup has completed before you attach Tracy, as the startup routine isn't a good indicator of the server's runtime performance. The startup is also incredibly intensive in terms of how much data is collected and transmitted. If you don't need to profile the startup specifically, you should only attach `tracy-profiler.exe` once the server is up and running.
 
 Once connected, you should see something like this:
 
@@ -90,7 +89,7 @@ If you want to record a trace for later use you can click on the `Wifi symbol` a
 
 ## Usage (Headless)
 
-If you need to capture a trace without launching the GUI (on a remote VM, a resource constrained system, etc.), Tracy comes with `capture.exe`.
+If you need to capture a trace without launching the GUI (on a remote VM, a resource constrained system, etc.), Tracy comes with `tracy-capture.exe`.
 
 ```txt
 You can capture a trace using a command line utility contained in the capture directory. To use it you may
@@ -124,7 +123,7 @@ Trace size 40.59 MB (24.26% ratio)
 PS C:\ffxi\server> 
 ```
 
-You can open the resulting Trace in the `Tracy.exe` GUI at a later time.
+You can open the resulting Trace in the `tracy-profiler.exe` GUI at a later time.
 
 ## Finding Problems
 
@@ -152,7 +151,10 @@ Remember that there are a lot of things that can affect performance.
 
 If you're performing before/after testing, try as hard as you can to make sure the conditions are the same for both runs and change as little as possible for each change. It is also helpful to take multiple readings and many samples per reading to try and get an accurate view of performance.
 
+It's also possible to convince yourself that something is very expensive by looking at the distribution of time spent in child calls for a given function. If a function is only taking `nanoseconds` overall, but it's spending 80% of its time in a particular child call, this probably isn't a good candidate for investigation.
+
 ## Known bottlenecks
 
 - Expensive pathing and navmesh access... all the time... every tick... every mob... everywhere...
-- `parse` routine is slow
+- `parse` routine is slow.
+- Next to nothing is threaded, almost everything is blocking.
