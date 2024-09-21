@@ -6,6 +6,7 @@ Articles in this category are guides covering specific subject matter. They're i
 
 * [Maintaining Your Fork](Maintaining-Your-Fork)
 * [Proof of Work](Proof-of-Work)
+* [Performance Profiling with Tracy](Performance-Profiling-with-Tracy)
 * [Server Startup Tutorial](Development-Server-Startup-Tutorial)
 * [Understanding Variables](Understanding-variables-a-brief-guide)
 * [Spatial Orientation and Relative Positions](Spatial-Orientation-and-Relative-Positions)
@@ -17,7 +18,6 @@ Articles in this category are guides covering specific subject matter. They're i
 * [Module Guide](Module-Guide)
 * [Dummy System](Dummy-System)
 * [Sol Refactor](Sol-Refactor)
-* [Performance Profiling with Tracy](Performance-Profiling-with-Tracy)
 * [Programming for Performance](Programming-for-Performance)
 * [Does -ffast-math matter?](Does-ffast-math-flag-matter)
 * [Build Troubleshooting](Build-Troubleshooting)
