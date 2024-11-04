@@ -16,8 +16,9 @@
     * **Set a root password**.
     * **Use UTF8 as character set**.
     * **IT IS INCREDIBLY IMPORTANT** that you check the `Use UTF8 as server's character set` checkbox on the `Default instance properties` page during installation. If you don't do this you may face very hard to diagnose crashes.
-* Install [Python 3](https://www.python.org/downloads/).
-  * The latest version is fine, during installation check the `add python.exe to PATH` checkbox.
+* Install [Python 3.12](https://www.python.org/downloads/).
+  * We're a bit behind for how we use Python, so [version 3.12](https://www.python.org/downloads/release/python-3127/) is required, other versions break with our usage!
+  * During installation YOU MUST check the `add python.exe to PATH` checkbox.
 * Open a PowerShell window and navigate to your chosen install directory.
 * To download the latest code, install Python requirements, and copy the configuration files:
 
@@ -365,6 +366,8 @@ _If they don't run or close immediately be sure to check the log output in the `
 
 * Once everything is launched, you should connect to your server as soon as possible and make sure everything is running as expected.
   * You should make sure you have a working client for local testing: [Client Setup Guide (Windows)](Client-Setup-Windows) (This includes sections for setting up Ashita and Windower).
-* Once you've confirmed everything is working and you can connect to your server, you can start exploring the [Post-Install Guide](Post-Install-Guide) and articles in the Development section!
-
-_The above articles tell you how to do important things like changing settings, making a Game Master character, making your server available to the internet, etc._
+* Once you've confirmed everything is working and you can connect to your local server, you can start exploring the [Post-Install Guide](Post-Install-Guide) and articles in the Development section. These articles tell you how to do important things such as:
+  * Changing settings
+  * Making a Game Master/Admin character
+  * Making your server available to the wider internet
+  * And other useful things!
