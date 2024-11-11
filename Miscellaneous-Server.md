@@ -273,13 +273,14 @@ JP midnight is now coded to align with the retail JST midnight regardless of you
 
 #### Linux
 
-Linux users can create several systemd services to automate the servers (make sure to update `/path/to/topaz`, and the User/Group):
+Linux users can create several systemd services to automate the servers (make sure to update `/path/to/lsb`, and the User/Group):
 
 ```ini
-#topaz.service
+#lsb.service
 
 [Unit]
-Description=Topaz - FFXI Server Emulator
+Description=Land Sand Boat - FFXI Server Emulator
+Documentation=https://github.com/LandSandBoat/server/wiki/Miscellaneous-Server#linux
 After=mysql.service
 
 [Service]
@@ -292,23 +293,26 @@ WantedBy=multi-user.target
 ```
 
 ```ini
-#topaz_game.service
+#lsb_map.service
 
 [Unit]
-Description=Topaz Game Server
+Description=LSB Map Server
 Wants=network.target
 StartLimitIntervalSec=120
 StartLimitBurst=5
-PartOf=topaz.service
-After=topaz.service
+PartOf=lsb.service
+After=lsb.service
 
 [Service]
 Type=simple
 Restart=always
 RestartSec=5
-User=topaz
-Group=topaz
-WorkingDirectory=/path/to/topaz
+# You can use your regular system user or a custom user you make
+# ie User=xiplayer or User=myusername
+User=
+# omit Group and it will use the Users primary group. Otherwise you can explicitly list it
+# Group=
+WorkingDirectory=/path/to/lsb
 # For multiple map servers:
 # - Make a copy of this file for each server. Rename appropriately, e.g. topaz_game-cities.service
 # - Add this to a file named ip.txt in the topaz folder, replacing YOUR_PUBLIC_IP with your IP: "IP=YOUR_PUBLIC_IP"
@@ -317,61 +321,94 @@ WorkingDirectory=/path/to/topaz
 # - Uncomment and edit the 2 lines below with the appropriate port and log location for each zone server.
 #EnvironmentFile=/path/to/topaz/ip.txt
 #ExecStart=/path/to/topaz/topaz_game --ip $IP --port 54230 --log /path/to/log/map_server.log
-ExecStart=/path/to/topaz/topaz_game
+ExecStart=/path/to/lsb/xi_map
 
 [Install]
-WantedBy=topaz.service
+WantedBy=lsb.service
 ```
 
 ```ini
-#topaz_connect.service
+#lsb_connect.service
 
 [Unit]
-Description=Topaz Connect Server
+Description=LSB Connect Server
 Wants=network.target
 StartLimitIntervalSec=120
 StartLimitBurst=5
-PartOf=topaz.service
-After=topaz.service
+PartOf=lsb.service
+After=lsb.service
 
 [Service]
 Type=simple
 Restart=always
 RestartSec=5
-User=topaz
-Group=topaz
-WorkingDirectory=/path/to/topaz
-ExecStart=/path/to/topaz/topaz_connect
+# You can use your regular system user or a custom user you make
+# ie User=xiplayer or User=myregularusername
+User=
+# omit Group and it will use the Users primary group. Otherwise you can explicitly list it
+# Group=
+WorkingDirectory=/path/to/lsb
+ExecStart=/path/to/lsb/xi_connect
 
 [Install]
-WantedBy=topaz.service
+WantedBy=lsb.service
 ```
 
 ```ini
-#topaz_search.service
+#lsb_search.service
 
 [Unit]
-Description=Topaz Search Server
+Description=LSB Search Server
 Wants=network.target
 StartLimitIntervalSec=120
 StartLimitBurst=5
-PartOf=topaz.service
-After=topaz.service
+PartOf=lsb.service
+After=lsb.service
 
 [Service]
 Type=simple
 Restart=always
 RestartSec=5
-User=topaz
-Group=topaz
-WorkingDirectory=/path/to/topaz
-ExecStart=/path/to/topaz/topaz_search
+# You can use your regular system user or a custom user you make
+# ie User=xiplayer or User=myregularusername
+User=
+# omit Group and it will use the Users primary group. Otherwise you can explicitly list it
+Group=
+WorkingDirectory=/path/to/lsb
+ExecStart=/path/to/lsb/xi_search
 
 [Install]
-WantedBy=topaz.service
+WantedBy=lsb.service
 ```
 
-After adding these to `/etc/systemd/system/`, run `systemctl daemon-reload` followed by `systemctl enable topaz_game topaz_connect topaz_search`. You can start/stop all the servers at once with `systemctl start/stop topaz` or each individual service separately. To enable auto-start, type `systemctl enable topaz`. Make sure topaz is in a location accessible to the user that will be running the service, and the correct permissions are set.
+```ini
+#lsb_world.service
+
+[Unit]
+Description=LSB World Server
+Wants=network.target
+StartLimitIntervalSec=120
+StartLimitBurst=5
+PartOf=lsb.service
+After=lsb.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+# You can use your regular system user or a custom user you make
+# ie User=xiplayer or User=myregularusername
+User=
+# omit Group and it will use the Users primary group. Otherwise you can explicitly list it
+Group=
+WorkingDirectory=/path/to/lsb
+ExecStart=/path/to/lsb/xi_world
+
+[Install]
+WantedBy=lsb.service
+```
+
+After adding these to `/etc/systemd/system/`, run `systemctl daemon-reload` followed by `systemctl enable lsb_connect lsb_map lsb_search lsb_world`. You can start/stop all the servers at once with `systemctl start/stop lsb` or each individual service separately. To enable auto-start, type `systemctl enable lsb`. Make sure lsb is in a location accessible to the user that will be running the service, and the correct permissions are set.
 
 ### Automatically give new players a server linkshell
 
