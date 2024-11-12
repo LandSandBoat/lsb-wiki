@@ -276,7 +276,7 @@ JP midnight is now coded to align with the retail JST midnight regardless of you
 Linux users can create several systemd services to automate the servers (make sure to update `/path/to/lsb`, and the User/Group):
 
 ```ini
-#lsb.service
+#xi.service
 
 [Unit]
 Description=LandSandBoat - a server emulator for Final Fantasy XI
@@ -293,15 +293,15 @@ WantedBy=multi-user.target
 ```
 
 ```ini
-#lsb_map.service
+#xi_map.service
 
 [Unit]
-Description=LSB Map Server
+Description=XI Map Server
 Wants=network.target
 StartLimitIntervalSec=120
 StartLimitBurst=5
-PartOf=lsb.service
-After=lsb.service
+PartOf=xi.service
+After=xi.service
 
 [Service]
 Type=simple
@@ -324,19 +324,19 @@ WorkingDirectory=/path/to/lsb
 ExecStart=/path/to/lsb/xi_map
 
 [Install]
-WantedBy=lsb.service
+WantedBy=xi.service
 ```
 
 ```ini
-#lsb_connect.service
+#xi_connect.service
 
 [Unit]
-Description=LSB Connect Server
+Description=XI Connect Server
 Wants=network.target
 StartLimitIntervalSec=120
 StartLimitBurst=5
-PartOf=lsb.service
-After=lsb.service
+PartOf=xi.service
+After=xi.service
 
 [Service]
 Type=simple
@@ -351,19 +351,19 @@ WorkingDirectory=/path/to/lsb
 ExecStart=/path/to/lsb/xi_connect
 
 [Install]
-WantedBy=lsb.service
+WantedBy=xi.service
 ```
 
 ```ini
-#lsb_search.service
+#xi_search.service
 
 [Unit]
-Description=LSB Search Server
+Description=XI Search Server
 Wants=network.target
 StartLimitIntervalSec=120
 StartLimitBurst=5
-PartOf=lsb.service
-After=lsb.service
+PartOf=xi.service
+After=xi.service
 
 [Service]
 Type=simple
@@ -373,24 +373,24 @@ RestartSec=5
 # ie User=xiplayer or User=myregularusername
 User=
 # omit Group and it will use the Users primary group. Otherwise you can explicitly list it
-Group=
+#Group=
 WorkingDirectory=/path/to/lsb
 ExecStart=/path/to/lsb/xi_search
 
 [Install]
-WantedBy=lsb.service
+WantedBy=xi.service
 ```
 
 ```ini
-#lsb_world.service
+#xi_world.service
 
 [Unit]
-Description=LSB World Server
+Description=XI World Server
 Wants=network.target
 StartLimitIntervalSec=120
 StartLimitBurst=5
-PartOf=lsb.service
-After=lsb.service
+PartOf=xi.service
+After=xi.service
 
 [Service]
 Type=simple
@@ -400,12 +400,12 @@ RestartSec=5
 # ie User=xiplayer or User=myregularusername
 User=
 # omit Group and it will use the Users primary group. Otherwise you can explicitly list it
-Group=
+#Group=
 WorkingDirectory=/path/to/lsb
 ExecStart=/path/to/lsb/xi_world
 
 [Install]
-WantedBy=lsb.service
+WantedBy=xi.service
 ```
 
 After adding these to `/etc/systemd/system/`, run `systemctl daemon-reload` followed by `systemctl enable lsb_connect lsb_map lsb_search lsb_world`. You can start/stop all the servers at once with `systemctl start/stop lsb` or each individual service separately. To enable auto-start, type `systemctl enable lsb`. Make sure lsb is in a location accessible to the user that will be running the service, and the correct permissions are set.
