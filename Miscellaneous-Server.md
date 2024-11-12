@@ -408,7 +408,7 @@ ExecStart=/path/to/lsb/xi_world
 WantedBy=xi.service
 ```
 
-After adding these to `/etc/systemd/system/`, run `systemctl daemon-reload` followed by `systemctl enable lsb_connect lsb_map lsb_search lsb_world`. You can start/stop all the servers at once with `systemctl start/stop lsb` or each individual service separately. To enable auto-start, type `systemctl enable lsb`. Make sure lsb is in a location accessible to the user that will be running the service, and the correct permissions are set.
+After adding these to `/etc/systemd/system/`, run `systemctl daemon-reload` followed by `systemctl enable xi_connect xi_map xi_search xi_world`. You can start/stop all the servers at once with `systemctl start/stop xi` or each individual service separately. To enable auto-start, type `systemctl enable xi`. Make sure lsb is in a location accessible to the user that will be running the service, and the correct permissions are set.
 
 ### Automatically give new players a server linkshell
 
