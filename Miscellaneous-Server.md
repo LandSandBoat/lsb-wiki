@@ -279,7 +279,7 @@ Linux users can create several systemd services to automate the servers (make su
 #lsb.service
 
 [Unit]
-Description=Land Sand Boat - FFXI Server Emulator
+Description=LandSandBoat - a server emulator for Final Fantasy XI
 Documentation=https://github.com/LandSandBoat/server/wiki/Miscellaneous-Server#linux
 After=mysql.service
 
