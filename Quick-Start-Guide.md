@@ -3,7 +3,7 @@
 **NOTE:** While it's possible to achieve the steps in this guide using different tools and versions of the software we list, we _cannot recommend enough_ following this guide to the letter and make sure you have everything working before you stray from the well-tested path.
 
 <details>
-  <summary>Windows 10</summary>
+  <summary>Windows 10/11</summary>
 
 ## To Install
 
