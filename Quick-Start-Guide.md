@@ -3,7 +3,7 @@
 **NOTE:** While it's possible to achieve the steps in this guide using different tools and versions of the software we list, we _cannot recommend enough_ following this guide to the letter and make sure you have everything working before you stray from the well-tested path.
 
 <details>
-  <summary>Windows 10</summary>
+  <summary>Windows 10/11</summary>
 
 ## To Install
 
@@ -114,12 +114,12 @@ py -3 dbtool.py update
 </details>
 
 <details>
-  <summary>Linux (Debian/Ubuntu 22.04)</summary>
+  <summary>Linux (Ubuntu 22.04)</summary>
 
 ## To Install
 
 ```txt
-NOTE: We try to keep up to date with whatever the latest LTS release of Ubuntu is (Ubuntu 22.04). We run all of our CI builds on this release. We can't guarantee that older LTS versions will work. When in doubt, update!
+NOTE: We try to keep up to date with whatever the latest LTS release of Ubuntu is (Ubuntu 22.04). We run all of our CI builds on this release. We can't guarantee that older LTS versions will work. When in doubt: update!
 ```
 
 * Run these steps to use Mariadb's community provided ("CS" instructions) .deb packages through apt:
@@ -368,6 +368,6 @@ _If they don't run or close immediately be sure to check the log output in the `
   * You should make sure you have a working client for local testing: [Client Setup Guide (Windows)](Client-Setup-Windows) (This includes sections for setting up Ashita and Windower).
 * Once you've confirmed everything is working and you can connect to your local server, you can start exploring the [Post-Install Guide](Post-Install-Guide) and articles in the Development section. These articles tell you how to do important things such as:
   * Changing settings
-  * Making a Game Master/Admin character
+  * Making a Game Master/Admin character and finding/using GM commands (giving yourself items, teleporting, etc.)
   * Making your server available to the wider internet
-  * And other useful things!
+  * And many other useful things!
