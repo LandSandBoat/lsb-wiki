@@ -10,7 +10,8 @@
 * Install [Git for Windows](https://gitforwindows.org/).
   * The latest version is fine, accept defaults, change default text editor if desired.
 * Install [Visual Studio](https://visualstudio.microsoft.com/vs/community/).
-  * `2019` or `2022` are fine, check `Desktop development with C++` workload (under Desktop & Mobile).
+  * `2019` or `2022` are fine.
+  * **YOU MUST** check the checkbox for `Desktop development with C++` workload (under Desktop & Mobile) or you won't be able to build anything.
 * Install [MariaDB Server](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.6.12&os=windows&cpu=x86_64&pkg=msi&m=xtom_ams).
   * Use the latest in the `10.6.x` family of releases, default settings are mostly OK - aside from:
     * **Set a root password**.
