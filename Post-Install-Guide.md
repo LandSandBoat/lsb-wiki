@@ -62,6 +62,10 @@ mysql -u xi -ppassword xidb -e "QUERY"
 
 Where **xi**, **password**, **xidb**, and **QUERY** are changed to your needs. Windows users can also use the query tab in HeidiSQL (default keybind is CTRL+T).
 
+## Server Customisation
+
+During early experimentation it's probably fine for you to tinker with the main files of the repo to get a feel for how things fit together. Once you start to scale up, pulling updates regularly from LandSandBoat ("upstream"), trying to track your changes against the base repo - you're going to want to start using `modules`. You can read the module guide [here](https://github.com/LandSandBoat/server/wiki/Module-Guide).
+
 ## See Also
 
 * [Database Management](Database-Management)
