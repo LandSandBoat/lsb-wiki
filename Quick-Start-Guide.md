@@ -371,4 +371,5 @@ _If they don't run or close immediately be sure to check the log output in the `
   * Changing settings
   * Making a Game Master/Admin character and finding/using GM commands (giving yourself items, teleporting, etc.)
   * Making your server available to the wider internet
+  * Further guides, including; deeper customisation using modules, performance profiling and preparing for large userbases, etc.
   * And many other useful things!

@@ -1,8 +1,61 @@
 # Module Guide
 
+Modules are bundles of user-defined code that are injected into the server process at different points to allow users to customise the server without needing to modify the `src/`, `sql/`, or `scripts/` directories - leaving behind changes in git that might lead to difficult to resolve conflicts during regular updates.
+
+Modules are designed _first and foremost_ to ensure that server operators can safely keep their servers updated and that bug reports sent back upstream are valid and not the result of deep customisation. Secondarily, they are designed to allow users to share popular modifications and non-retail features with eachother without them needing to be integrated into or maintained by LandSandBoat.
+
+Modules are **NOT** designed to allow operators to implement retail features or bug fixes and keep them away from the rest of the community in order to drive player counts or engagement. Please participate in the open source that you're benefitting from.
+
 Please see `modules/init.txt` for how to load modules.
 
+Example `modules/init.txt`
+
+```txt
+# This file is for marking which modules you wish to load.
+#
+# - This file is tracked in git, but ignores changes: git update-index --assume-unchanged FILE_NAME
+# - You can list files and folders you wish to load as modules.
+# - One entry per line.
+# - Empty lines and comments are ignored.
+# - Comments are marked with '#'
+# - It is optional to mark folders with a trailing '/'.
+# - If you list a folder, all of it's contents will be available for loading.
+# - If you list a file, it will be made available for loading.
+# - Valid files are: *.cpp, *.lua, *.sql.
+# - cpp files are loaded and built with CMake.
+# - lua files are loaded at runtime by the main program.
+# - sql files are loaded either by dbtool, or by hand.
+#
+# Examples:
+#
+# init.txt:
+# ---------------------
+# | 
+# | renamer
+# | 
+# ---------------------
+#
+# Will load everything under the renamer folder.
+#
+# init.txt:
+# ---------------------
+# | 
+# | custom/cpp/custom_module.cpp
+# | custom/lua/claim_shield.lua
+# |
+# ---------------------
+#
+# Will load only custom/cpp/custom_module.cpp and custom/lua/claim_shield.lua.
+#
+# Live example:
+
+custom/commands/
+custom/lua/test_npcs_in_gm_home.lua
+```
+
 ## Lua Modules
+
+Lua modules are bundles of Lua code that are prepared before the whole map Lua state is prepared, and each override is injected as the relevant Lua functions are loaded. Then when the relevant Lua function call is executed the override will fire instead, either wrapping or replacing the original function call.
 
 ```lua
 -----------------------------------
@@ -78,6 +131,8 @@ xi.zones.GM_Home.npcs.DE_Horro.onTrigger = onTriggerFunc
 ![image](https://user-images.githubusercontent.com/1389729/184301844-c675393a-c1e0-43a6-a923-23f8cf449f35.png)
 
 ## CPP Modules
+
+CPP modules are less flexible than Lua modules. There are hard-defined customisation points where you can inject your own code, or there are arrays of function objects where you can inject your own function objects (optionally wrapping the object that was already there, if any).
 
 Place a `.cpp` file somewhere in the `modules/` subfolder and enable it with `init.txt`. You'll then need to re-configure
 your build using CMake. Towards the end of configuration, it will log which module files have been added to the build:
@@ -181,7 +236,7 @@ REGISTER_CPP_MODULE(TestModule);
 ## SQL Modules
 
 SQL modules are additional SQL files that are run at the end of `dbtool.py` updates, after all the other SQL files.
-They still need to be enabled with `init.txt`.
+`dbtool` will look them up and load them for you, so they still need to be enabled with `init.txt`.
 
 ```sql
 -- Setting all 2HR abilities to 2HR cooldown
