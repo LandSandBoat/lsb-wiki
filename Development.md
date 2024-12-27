@@ -23,3 +23,4 @@ Articles in this category are guides covering specific subject matter. They're i
 * [Build Troubleshooting](Build-Troubleshooting)
 * [Cloud Guide (GCP)](Cloud-Guide-GCP)
 * [Database Library Upgrade](Database-Library-Upgrade)
+* [How to install a Let's Encrypt certificate](LetsEncrypt)
