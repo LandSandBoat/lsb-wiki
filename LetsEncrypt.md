@@ -13,7 +13,7 @@ Make sure you replace any references to `/path/to/server/` with your own server'
 
 ## Install Certbot
 <details>
-  <summary>Linux (Ubuntu 22.04)</summary>
+  <summary>Linux (Ubuntu 24.04)</summary>
 
 ### Backup Existing Cert
 Chances are you already have a cert in your xi server directory. The connect server will automatically generate a self-signed certificate if it does not detect one. Its a good idea to back anything we are changing just in case.
