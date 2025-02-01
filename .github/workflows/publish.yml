@@ -7,7 +7,7 @@ on:
 
 jobs:
   Publish_Wiki:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
     # Checkout the server.wiki repo that we want to publish to with the GH_PAT token.
     # This allows us to push to it when we're ready with changes.

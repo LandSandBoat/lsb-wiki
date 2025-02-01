@@ -115,12 +115,12 @@ py -3 dbtool.py update
 </details>
 
 <details>
-  <summary>Linux (Ubuntu 22.04)</summary>
+  <summary>Linux (Ubuntu 24.04)</summary>
 
 ## To Install
 
 ```txt
-NOTE: We try to keep up to date with whatever the latest LTS release of Ubuntu is (Ubuntu 22.04). We run all of our CI builds on this release. We can't guarantee that older LTS versions will work. When in doubt: update!
+NOTE: We try to keep up to date with whatever the latest LTS release of Ubuntu is (Ubuntu 24.04). We run all of our CI builds on this release. We can't guarantee that older LTS versions will work. When in doubt: update!
 ```
 
 * Run these steps to use Mariadb's community provided ("CS" instructions) .deb packages through apt:

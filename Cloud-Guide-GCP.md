@@ -69,7 +69,7 @@ Machine type: e2-standard-2 (2vCPU, 8 GM memory)
 GPUs: Not needed
 Display device: Not needed
 Boot disk: The default 10 GB storage is fine
-Operating system: Change it to `Ubuntu 22.04 LTS`, `x86/64, arm64 jammy`
+Operating system: Change it to `Ubuntu 24.04 LTS`
 Boot disk type: Balanced persistent disk
 Firewall: Allow both HTTP and HTTPS traffic
 ```

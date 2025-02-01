@@ -4,7 +4,11 @@ This is the wiki for LandSandBoat (LSB below) - an open-source server emulator f
 
 If you're looking to setup and install the project, start with the [Quick Start Guide](Quick-Start-Guide).
 
+After you have a server set up, if you want to find out more about development, head to the [Development page](Development).
+
 If you wish to make changes or additions to the wiki please submit a pull request to our [editable wiki mirror](https://github.com/LandSandBoat/lsb-wiki). Changes will be automatically published once they are reviewed and merged.
+
+To raise problems or suggestions about the wiki, you can open issues on the main LandSandBoat repo and tag them with the `wiki` tag.
 
 ## General
 
