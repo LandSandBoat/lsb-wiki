@@ -113,7 +113,11 @@ RUN apt install -y net-tools nano git cmake make libluajit-5.1-dev libzmq3-dev l
 # Copy everything from the host machine server folder to /server
 ADD . /server
 
-RUN pip3 install --upgrade -r ./tools/requirements.txt
+# New python requires us to either create a virtual ENV or 
+# set --break-system-packages at our own risk. Since this is
+# a one-off docker context, we don't care if it mucks with
+# system packages as long as it all works in the end.
+RUN pip3 install --upgrade --break-system-packages -r ./tools/requirements.txt
 
 # Configure and build
 RUN mkdir docker_build && cd docker_build && cmake .. && make -j $(nproc)  && cd .. && rm -r /server/docker_build
