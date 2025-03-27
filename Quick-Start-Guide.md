@@ -2,6 +2,10 @@
 
 **NOTE:** While it's possible to achieve the steps in this guide using different tools and versions of the software we list, we _cannot recommend enough_ following this guide to the letter and make sure you have everything working before you stray from the well-tested path.
 
+_(click to expand sections)_
+
+-----
+
 <details>
   <summary>Windows 10/11</summary>
 
@@ -114,6 +118,8 @@ py -3 dbtool.py update
 
 </details>
 
+-----
+
 <details>
   <summary>Linux (Ubuntu 24.04)</summary>
 
@@ -212,9 +218,15 @@ python3 dbtool.py update
 
 </details>
 
+-----
+
 # Experimental Platforms
 
 **NOTE:** These platforms should work, but are not actively maintained or used by the development team. The development team (especially in the case of OSX) might not have the hardware or expertise to be able to help you debug problems on these platforms. Use at your own risk. Good luck!
+
+_(click to expand sections)_
+
+-----
 
 <details>
   <summary>OSX</summary>
@@ -264,12 +276,16 @@ cmake .. -DLuaJIT_INCLUDE_DIR=<SERVER_ROOT>/server/ext/lua/include
 
 </details>
 
+-----
+
 <details>
   <summary>Linux (through WSL)</summary>
 
 All of the instructions for Linux should be valid for WSL. There are additional points covered in the [Working with WSL](Working-with-WSL) article.
 
 </details>
+
+-----
 
 <details>
   <summary>Linux (Arch)</summary>
@@ -287,6 +303,8 @@ sudo systemctl start mariadb
 ```
 
 </details>
+
+-----
 
 <details>
   <summary>Linux (Raspberry Pi)</summary>
@@ -308,7 +326,9 @@ Depending on your distro, the LuaJIT that comes through the package manager may 
 Each server process startup can be quite resource intensive for both CPU and RAM. Older Raspberry Pis don't have much RAM, so you may need to start up each of the server processes one-by-one to ensure that they start and run correctly.
 
 </details>
-  
+
+-----
+
 <details>
   <summary>Linux (Gentoo OpenRC)</summary>
   
@@ -348,6 +368,8 @@ sudo emerge -a dev-python/beautifulsoup4 dev-python/sqlalchemy
 The process for securing the MariaDB installation, creating the SQL database, building the project with make, populating the database using dbtool and performing future updates is the same as on Ubuntu. It can be referenced above from the *Linux (Debian/Ubuntu 22.04)* section.
 </details>
 
+-----
+
 <details>
   <summary>Docker</summary>
 
@@ -355,7 +377,9 @@ The core team of LSB does not use Docker in their workflows, and as such can't p
 
 </details>
 
-## Next Steps
+-----
+
+# Next Steps
 
 * The most basic way to start your server is to launch the newly-built `xi_*` executables, found in your repo root:
   * `xi_connect.exe`
@@ -363,10 +387,15 @@ The core team of LSB does not use Docker in their workflows, and as such can't p
   * `xi_search.exe`
   * `xi_world.exe`
 
-_If they don't run or close immediately be sure to check the log output in the `log/` folder._
+  _If they don't run, or close immediately, be sure to check the log output in the `log/` or `dmp/` folders._
+
+-----
 
 * Once everything is launched, you should connect to your server as soon as possible and make sure everything is running as expected.
-  * You should make sure you have a working client for local testing: [Client Setup Guide (Windows)](Client-Setup-Windows) (This includes sections for setting up Ashita and Windower).
+  * You should make sure you have a working client for local testing: [Client Setup Guide (Windows)](Client-Setup-Windows) (This includes sections for setting up Ashita and Windower, and getting the _latest_ version of `xiloader`)
+
+-----
+
 * Once you've confirmed everything is working and you can connect to your local server, you can start exploring the [Post-Install Guide](Post-Install-Guide) and articles in the Development section. These articles tell you how to do important things such as:
   * Changing settings
   * Making a Game Master/Admin character and finding/using GM commands (giving yourself items, teleporting, etc.)
