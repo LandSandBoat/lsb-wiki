@@ -1,6 +1,6 @@
 # Main Supported Platforms
 
-**NOTE:** While it's possible to achieve the steps in this guide using different tools and versions of the software we list, we _cannot recommend enough_ following this guide to the letter and make sure you have everything working before you stray from the well-tested path.
+**NOTE:** While it's possible to achieve the steps in this guide using different tools and versions of the software we list, we _cannot recommend enough_ following this guide to the letter and make sure you have everything working before you stray from the well-tested path. Using software parts from a pre-made stack like WAMP, the built-in Python that ships with Strawberry Perl, etc. is NOT suitable for the first time you're getting set up. Please follow the instructions to the letter and only start swapping pieces out once you have a working server.
 
 _(click to expand sections)_
 
