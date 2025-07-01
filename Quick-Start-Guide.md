@@ -135,7 +135,7 @@ NOTE: We try to keep up to date with whatever the latest LTS release of Ubuntu i
 
 ```sh
 sudo apt update
-sudo apt install git python3 python3-pip g++-10 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev binutils-dev
+sudo apt install git python3 python3-pip g++-14 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev binutils-dev
 ```
 
 * Download the latest code, install Python requirements, and copy the configuration files:
