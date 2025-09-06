@@ -14,6 +14,7 @@
   * [Development Guide](Development-Guide)
   * [Git Guide](Development-Guide-Git)
   * [Debugging](Debugging)
+  * [Testing](Testing)
   * [Articles](Development)
 * Client Setup
   * [Windows 10](Client-Setup-Windows)
