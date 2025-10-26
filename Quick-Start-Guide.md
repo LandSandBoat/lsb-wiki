@@ -220,6 +220,101 @@ python3 dbtool.py update
 
 -----
 
+<details>
+  <summary>Docker</summary>
+
+## I just want to run the server
+
+Checking out the repository with Git is not required for this method.
+
+* Create a file named `docker-compose.yml` using the [example in the README](https://github.com/LandSandBoat/server/tree/base/docker#via-docker-compose) (consider changing the passwords at the top).
+  * You can put this in an empty folder.
+
+* Run the following command to install meshes:
+
+```sh
+docker run --rm -v losmeshes:/losmeshes -v navmeshes:/navmeshes ghcr.io/landsandboat/ximeshes:latest
+```
+
+* Start the server:
+
+```sh
+docker compose up --detach
+```
+
+### Updating
+
+```sh
+docker compose pull && docker compose up -d
+```
+
+## I want to build and develop with Docker
+
+* First you need to clone the repo:
+
+```sh
+git clone https://github.com/LandSandBoat/server.git
+```
+
+* You don't need the submodules, and can use the same command as above to store them in a volume:
+
+```sh
+docker run --rm -v losmeshes:/losmeshes -v navmeshes:/navmeshes ghcr.io/landsandboat/ximeshes:latest
+```
+
+* Copy [dev.docker-compose.yml](https://github.com/LandSandBoat/server/tree/base/dev.docker-compose.yml) to `docker-compose.yml`:
+
+```sh
+cp dev.docker-compose.yml docker-compose.yml
+```
+
+* Build the image:
+  * You can use `--build clang_tidy` instead of `--build build`.
+    * It will take longer but you'll get clang-tidy results in `log/clang_tidy_summary.md`.
+  * Both `build` and `clang_tidy` build the `landsandboat/server:testing` image used for the other services.
+
+```sh
+docker compose up -d --build build
+```
+
+* Start the database:
+  * By default, there's no volume for the database, so any changes are deleted when you remove the containers. You can add a volume to your `docker-compose.yml` if you want the changes to persist.
+
+```sh
+docker compose up -d database
+```
+
+* Update the database:
+
+```sh
+docker compose up -d setup_database
+```
+
+* Run sanity checks (the output will be in `sanity_checks_summary.md`):
+
+```sh
+docker compose up -d sanity_checks
+```
+
+* Run xi_test (the output will be in `log/tests.ctrf.json`):
+
+```sh
+docker compose up -d test
+```
+
+* Run the server:
+  * This will start the database, world, connect, and search services if they haven't been started already.
+
+```sh
+docker compose up -d map
+```
+
+Those are the basics. You can edit your `docker-compose.yml` to fit your needs and tastes.
+
+</details>
+
+-----
+
 # Experimental Platforms
 
 **NOTE:** These platforms should work, but are not actively maintained or used by the development team. The development team (especially in the case of OSX) might not have the hardware or expertise to be able to help you debug problems on these platforms. Use at your own risk. Good luck!
@@ -366,15 +461,6 @@ Additionally, you will also need to emerge the below packages if you wish to use
 sudo emerge -a dev-python/beautifulsoup4 dev-python/sqlalchemy
 ```
 The process for securing the MariaDB installation, creating the SQL database, building the project with make, populating the database using dbtool and performing future updates is the same as on Ubuntu. It can be referenced above from the *Linux (Debian/Ubuntu 22.04)* section.
-</details>
-
------
-
-<details>
-  <summary>Docker</summary>
-
-The core team of LSB does not use Docker in their workflows, and as such can't properly maintain a Docker setup as a first-class citizen. There is an unofficial Docker guide [here](Docker).
-
 </details>
 
 -----
