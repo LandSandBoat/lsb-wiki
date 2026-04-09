@@ -11,10 +11,6 @@
 
 It is assumed you've read the [Contributing Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md).
 
-## <a id="ai"/>AI, LLMs, etc.
-
-[Please consult our guidelines of the use of AI.](Use-of-AI)
-
 ## <a id="c"/>C++
 
 ### <a id="c-naming-misc"/>Naming & Misc
