@@ -5,7 +5,6 @@ Articles in this category are guides covering specific subject matter. They're i
 ## Articles
 
 * [Maintaining Your Fork](Maintaining-Your-Fork)
-* [Use of AI, LLMs, etc.](Use-of-AI)
 * [Proof of Work](Proof-of-Work)
 * [Performance Profiling with Tracy](Performance-Profiling-with-Tracy)
 * [Server Startup Tutorial](Development-Server-Startup-Tutorial)
