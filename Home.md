@@ -13,8 +13,6 @@ To raise problems or suggestions about the wiki, you can open issues on the main
 ## General
 
 * [Frequently Asked Questions](Frequently-Asked-Questions)
-  * [What works?](What-Works)
-    * [Trusts](Trusts)
   * [How can I help?](How-Can-I-Help)
     * [Using GitHub](Using-Github)
 * [Useful Resources](Resources)

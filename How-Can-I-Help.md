@@ -4,7 +4,6 @@ This guide assumes you've managed to download, build, and run the server correct
 
 - [GitHub Issues tagged as "Good First Issue"](https://github.com/LandSandBoat/server/labels/good%20first%20issue)
 - [GitHub Issues](https://github.com/LandSandBoat/server/issues)
-- [What Works?](What-Works)
 - [Using GitHub](Using-Github)
 - [Contribution Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md)
 - [Development Landing Page](Development)
@@ -16,7 +15,7 @@ Make sure you have read our [Contributor's Guide](https://github.com/LandSandBoa
 
 #### I am unfamiliar with programming
 
-Not a problem! Since the project has such a long history, many things are not correctly documented. You can go through the "What Works?" page linked above and verify the status of different features by playing. If you find broken features, wacky balance issues, crashes etc., it is very helpful for you to create GitHub Issues for them so we can keep track and eventually fix them. It is also very helpful to go through existing issues and see what is still valid, or if conditions have changed.
+Not a problem! Use and enjoy the emulator. If you find broken features, wacky balance issues, crashes etc., it is very helpful for you to create GitHub Issues for them so we can keep track and eventually fix them. It is also very helpful to go through existing issues and see what is still valid, or if conditions have changed. It's also extremely useful to play on retail and collect captures for us.
 
 #### I have programmed with different languages
 
