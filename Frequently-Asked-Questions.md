@@ -1,6 +1,11 @@
 ## What works? Is quest X implemented?
 
-[What Works?](What-Works)
+We used to keep a document of "What Works?", but maintainers didn't have time to keep it up to date and nobody in the community ever stepped up to help populate it.
+Your best bet is always to check the code and fire up the emulator to check in-game.
+
+- [Missions scripts folder](https://github.com/LandSandBoat/server/tree/base/scripts/missions)
+- [Quests scripts folder](https://github.com/LandSandBoat/server/tree/base/scripts/quests)
+- [Trust scripts folder](https://github.com/LandSandBoat/server/tree/base/scripts/actions/spells/trust)
 
 ## How can I help the project?
 
@@ -35,10 +40,6 @@ We will never accept financial or material incentives for our work. This is a ho
 Features in LandSandBoat are those that have been submitted to us, meet our standards for quality and accuracy, and that we have had the time to review and integrate with the rest of the codebase. It is very rare that we will accept code on someone else's behalf. While there is technically nothing stopping us, it would undermine our position in the community.
 
 Similarly, sending us code snippets creates more work and strain on staff and developers. If you have code you want to contribute, please speak to us with GitHub Issues, Discussions, and open a Pull Request.
-
-## Can I use Trust: X, why doesn't Trust: Y do anything?
-
-Go check their status [here](Trusts).
 
 ## When can I play "Classic" Dynamis?
 
