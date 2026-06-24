@@ -21,8 +21,8 @@ _(click to expand sections)_
     * **Set a root password**.
     * **Use UTF8 as character set**.
     * **IT IS INCREDIBLY IMPORTANT** that you check the `Use UTF8 as server's character set` checkbox on the `Default instance properties` page during installation. If you don't do this you may face very hard to diagnose crashes.
-* Install [Python 3.12](https://www.python.org/downloads/).
-  * We're a bit behind for how we use Python, so [version 3.12](https://www.python.org/downloads/release/python-3127/) is required, other versions break with our usage!
+* Install [Python 3.14.6](https://www.python.org/downloads/).
+  * Make sure this is the correct version [version 3.14.6](https://www.python.org/downloads/release/python-3146/), other versions break with our usage!
   * During installation YOU MUST check the `add python.exe to PATH` checkbox.
 * Open a PowerShell window and navigate to your chosen install directory.
 * To download the latest code, install Python requirements, and copy the configuration files:
@@ -75,8 +75,9 @@ o------------------------------------------o
 ```
 
 * You can exit out of `dbtool` now with `q`.
-* Open the `server` root folder in `Visual Studio 2019/2022`.
+* Open the `server` root folder in `Visual Studio 2022/2026`.
   * `Open a local folder` on the splash screen.
+  * Make sure VS has administrator priviledges so it can fetch all the data it needs.
 * The build will start configuring itself for your system.
   * This stage is done when the `CMake` window at the bottom of the window says `1> CMake generation finished.`.
 * Ensure the dropdown near the top of the window says `x64-Debug`.
@@ -110,7 +111,7 @@ git stash pop
 py -3 dbtool.py update
 ```
 
-* Open the `server` root folder in VS2019/2022.
+* Open the `server` root folder in VS2022/2026.
   * CMake _may_ reconfigure, wait for it to complete like before.
 * In the top toolbar, select `Build > Build All`.
   * This may take a little while if you have a weaker machine.
