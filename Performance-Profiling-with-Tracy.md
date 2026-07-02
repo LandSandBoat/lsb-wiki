@@ -13,7 +13,7 @@ We can't know how good/bad our performance is until we measure it.
 `Tracy` is made up of two parts:
 
 - The client - which you build into your program and will broadcast your performance information to the server.
-- The server - an external program (available in the Tracy release, now called `tracy-profiler.exe`) which will receive the information and allow you to analyze it.
+- The server - an external program (available in the Tracy release, now called `tracy-profiler.exe` or `tracy-capture.exe`) which will receive the information and allow you to analyze it.
 
 ## Setup
 
@@ -23,9 +23,16 @@ If building on the command line:
 
 - Add `-DTRACY_ENABLE=ON` to your configuration arguments and build as normal.
 
+Useful example commandline setup:
+
+```sh
+cmake -S . -B build -G Ninja -DTRACY_ENABLE=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo
+cmake --build build --config RelWithDebInfo -j32
+```
+
 ### Visual Studio
 
-If building from Visual Studio, select one of the `-Tracy` build configurations and build as normal. To get a fair measure of runtime performance, you probably want to profile the `Release` variant of the program.
+If building from Visual Studio, select one of the `*-Tracy` build configurations and build as normal. To get a fair measure of runtime performance, you probably want to profile the `RelWithDebInfo` variant of the program.
 
 <img width="395" alt="image" src="https://github.com/user-attachments/assets/aab0f2f8-b693-4112-9523-17005a6f20e8">
 
@@ -53,15 +60,15 @@ If building from Visual Studio, select one of the `-Tracy` build configurations 
 1> [CMake] -- Build files have been written to: C:/ffxi/server/build/x64-Release-Tracy
 ```
 
-## Usage
+## Usage (Windows)
 
 During the Tracy-enabled build from the previous steps, the client code will be downloaded and built into `xi_map` build target. The server executables will also be downloaded and placed in the repo root (`tracy-profiler.exe`, etc.).
 
 The build will output `xi_map_tracy.exe` instead of `xi_map.exe`, so you can continue to run multi-process setups by swapping out the single `xi_map.exe` process you want to profile with the Tracy-enabled `xi_map_tracy.exe`.
 
-**WARNING:** Tracy is designed to only bind to and profile a single executable at a time. If you launch multiple `xi_map_tracy.exe`'s at the same time, `tracy-profiler.exe` will bind to the first one it finds, not necessarily the one you're wanting to profile.
+**WARNING:** Tracy is designed to only bind to and profile a single executable at a time. If you launch multiple `xi_map_tracy.exe`'s at the same time, you will need to set environment variables before each exe launches so Tracy can serve on different ports. On Linux this looks like: `TRACY_PORT=8088 ./xi_map_tracy --other-args etc. --stuff 1`
 
-**WARNING:** Tracy can only properly gather all the information it needs if you run `xi_map_tracy.exe` as **Administrator/root**. There are loud warnings if you don't do this, so you're unlikely to miss them.
+**WARNING:** On Windows, Tracy can only properly gather all the information it needs if you run `xi_map_tracy.exe` as **Administrator/root**. There are loud warnings if you don't do this, so you're unlikely to miss them.
 
 Run your `xi_map_tracy.exe` as Administrator/root and then launch `tracy-profiler.exe`.
 
@@ -87,43 +94,13 @@ If you want to record a trace for later use you can click on the `Wifi symbol` a
 
 **WARNING** Traces can be very large! Plan accordingly!
 
-## Usage (Headless)
+## Usage (Linux/Mac/Headless)
 
-If you need to capture a trace without launching the GUI (on a remote VM, a resource constrained system, etc.), Tracy comes with `tracy-capture.exe`.
+If you need to capture a trace without launching the GUI (ie. on Linux/Mac where the full GUI isn't easily buildable, on a remote VM, a resource constrained system, etc.), Tracy comes with `tracy-capture.exe`. We automatically build it for you on Linux/Mac builds.
 
-```txt
-You can capture a trace using a command line utility contained in the capture directory. To use it you may
-provide the following parameters:
+We provide a capture helper script which you can launch as: `python3 ./tools/capture.py (--port 8088 etc. if needed)`. By default this will capture for 60 seconds, then close. This is normally sufficient.
 
-• -o output.tracy – the file name of the resulting trace (required).
-• -a address – specifies the IP address (or a domain name) of the client application (uses localhost if
-not provided).
-• -p port – network port which should be used (optional).
-• -f – force overwrite, if output file already exists.
-• -s seconds – number of seconds to capture before automatically disconnecting (optional).
-
-If no client is running at the given address, the server will wait until it can make a connection. During the
-capture, the utility will display the following information:
-```
-
-You can launch it from the command line:
-
-```txt
-PS C:\ffxi\server> .\capture.exe -o trace.tracy -f -s 60
-Connecting to 127.0.0.1:8086...
-Queue delay: 0 ns
-Timer resolution: 100 ns
-   1.32 Kbps /138.5% =   0.00 Mbps | Tx: 41.34 MB | 330.28 MB | 1:32.9
-Frames: 26
-Time span: 1:32.9
-Zones: 941,349
-Elapsed time: 1:00.1
-Saving trace... done!
-Trace size 40.59 MB (24.26% ratio)
-PS C:\ffxi\server> 
-```
-
-You can open the resulting Trace in the `tracy-profiler.exe` GUI at a later time.
+You can open the resulting Trace in the `tracy-profiler.exe` GUI at a later time, or decompose it into a CSV with `tracy-csvextract.exe`.
 
 ## Finding Problems
 
