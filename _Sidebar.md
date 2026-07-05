@@ -15,6 +15,7 @@
   * [Git Guide](Development-Guide-Git)
   * [Debugging](Debugging)
   * [Testing](Testing)
+  * [Troubleshooting with Sanitizers](Sanitizers)
   * [Articles](Development)
 * Client Setup
   * [Windows 10](Client-Setup-Windows)

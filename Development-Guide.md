@@ -1,5 +1,6 @@
 # <a id="table-of-contents"/>Table of Contents
 
+- [AI, LLMs, etc.](#ai)
 - [C++](#c)
 - [Lua](#lua)
 - [SQL](#sql)
