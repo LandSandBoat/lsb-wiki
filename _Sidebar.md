@@ -14,6 +14,7 @@
   * [Development Guide](Development-Guide)
   * [Git Guide](Development-Guide-Git)
   * [Debugging](Debugging)
+  * [Testing](Testing)
   * [Troubleshooting with Sanitizers](Sanitizers)
   * [Articles](Development)
 * Client Setup
