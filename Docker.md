@@ -83,7 +83,7 @@ echo "starting xi_world"
 ## Dockerfile
 
 ```docker
-FROM ubuntu:24.04
+FROM ubuntu:26.04
 
 RUN apt clean
 
@@ -108,7 +108,7 @@ RUN apt install -y python3.12 python3.12-dev python3-pip
 RUN python3 --version
 
 # Update and install all requirements as well as some useful tools such as net-tools and nano
-RUN apt install -y net-tools nano git cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev luarocks binutils-dev
+RUN apt install -y net-tools nano git cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev libzstd-dev luarocks binutils-dev
 
 # Copy everything from the host machine server folder to /server
 ADD . /server
