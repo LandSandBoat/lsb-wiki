@@ -16,8 +16,8 @@ _(click to expand sections)_
 * Install [Visual Studio](https://visualstudio.microsoft.com/vs/community/).
   * `2022` and `2026` are fine.
   * **YOU MUST** check the checkbox for `Desktop development with C++` workload (under Desktop & Mobile) or you won't be able to build anything.
-* Install [MariaDB Server](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.6.12&os=windows&cpu=x86_64&pkg=msi&m=xtom_ams).
-  * Use the latest in the `10.6.x` family of releases, default settings are mostly OK - aside from:
+* Install [MariaDB Server](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.18&os=windows&cpu=x86_64&pkg=msi&m=xtom_ams).
+  * Use the latest in the `10.11.x` family of releases, default settings are mostly OK - aside from:
     * **Set a root password**.
     * **Use UTF8 as character set**.
     * **IT IS INCREDIBLY IMPORTANT** that you check the `Use UTF8 as server's character set` checkbox on the `Default instance properties` page during installation. If you don't do this you may face very hard to diagnose crashes.
@@ -47,7 +47,7 @@ py -3 dbtool.py
 
 ```txt
 Please enter the path to your MySQL bin directory or press enter to check PATH.
-e.g. C:\Program Files\MariaDB 10.6\bin\
+e.g. C:\Program Files\MariaDB 10.11\bin\
 ```
 
 ```txt
