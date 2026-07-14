@@ -2,7 +2,7 @@
 
 ## Docker Support in LSB
 
-The core team of LSB does not use Docker in their workflows, and as such can't properly maintain a docker setup as a first-class citizen in the LSB project. Over time, people would pop in with functioning Docker/compose files, which would then decay after they left. This article is a compromise for those that want to use docker as part of their workflow, where we'll try our best to keep some working example files here that anyone can drop into their LSB server project and run.
+This article is for those that want to use Docker as part of their workflow, to share some working example files here that anyone can drop into their LSB server project and run. See [the README](https://github.com/LandSandBoat/server/tree/base/docker) for official Docker support.
 
 ## No GitHub Issues + Support
 
@@ -20,7 +20,6 @@ The goal of the provided files was as follows:
 
 The caveats of the provided examples are:
 
-- Performance may suffer since the different pieces of the server are not being decoupled.
 - The configuration provided are defaults for local development and **should not be used for a production deployment**.
 
 ## Docker Architecture
@@ -46,179 +45,68 @@ flowchart LR
  I[Internet] --> RP
 ```
 
-## update_db_then_launch.sh
-```bash
-#!/bin/bash
-
-while ! mysql --host=$XI_NETWORK_SQL_HOST --port=$XI_NETWORK_SQL_PORT --user=$XI_NETWORK_SQL_LOGIN --password=$XI_NETWORK_SQL_PASSWORD $XI_NETWORK_SQL_DATABASE -e "SELECT 1 FROM zone_weather LIMIT 1"; do
-    sleep 5
-done
-sleep 5
-
-# Update databse
-echo "updating database"
-python3 ./tools/dbtool.py update
-sleep 5
-
-# Update zone_settings to host IP
-mysql --host=$XI_NETWORK_SQL_HOST --port=$XI_NETWORK_SQL_PORT --user=$XI_NETWORK_SQL_LOGIN --password=$XI_NETWORK_SQL_PASSWORD $XI_NETWORK_SQL_DATABASE -e "UPDATE zone_settings set zoneip='$XI_NETWORK_ZONE_IP'"
-
-# Start servers
-echo "starting xi_connect"
-nohup ./xi_connect &
-sleep 5
-
-echo "starting xi_search"
-nohup ./xi_search &
-
-sleep 5
-echo "starting xi_map"
-./xi_map
-
-sleep 5
-echo "starting xi_world"
-./xi_world
-```
-
-## Dockerfile
-
-```docker
-FROM ubuntu:24.04
-
-RUN apt clean
-
-# Avoid any UI since we don't have one
-ENV DEBIAN_FRONTEND=noninteractive
-
-# Working directory will be /server meaning that the contents of server will exist in /server
-WORKDIR /server
-
-# Some dependencies are pulled from deadsnakes
-RUN apt update && apt install -y wget curl software-properties-common
-RUN add-apt-repository ppa:deadsnakes/ppa
-
-# Need mariadb as per-requirements, doesn't come pre-packaged I don't think
-RUN apt-get install -y libmariadb3 libmariadb-dev mariadb-server
-
-RUN apt-get update
-RUN apt-get upgrade -y
-
-RUN apt install -y python3.12 python3.12-dev python3-pip
-
-RUN python3 --version
-
-# Update and install all requirements as well as some useful tools such as net-tools and nano
-RUN apt install -y net-tools nano git cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev luarocks binutils-dev
-
-# Copy everything from the host machine server folder to /server
-ADD . /server
-
-# New python requires us to either create a virtual ENV or 
-# set --break-system-packages at our own risk. Since this is
-# a one-off docker context, we don't care if it mucks with
-# system packages as long as it all works in the end.
-RUN pip3 install --upgrade --break-system-packages -r ./tools/requirements.txt
-
-# Configure and build
-RUN mkdir docker_build && cd docker_build && cmake .. && make -j $(nproc)  && cd .. && rm -r /server/docker_build
-
-# Ensure we can run the db update
-RUN chmod +x ./tools/dbtool.py
-
-# Ensure we can run the startup script
-RUN chmod +x ./update_db_then_launch.sh
-
-# Startup the server when the container starts
-ENTRYPOINT ./update_db_then_launch.sh
-```
-
 ## docker-compose.yml
 
 ```yml
-version: '3.1'
+x-dbcreds: &dbcreds
+  # MARIADB_ROOT_PASSWORD required if setting up fresh database.
+  # Or generate a random root password and print it to build log:
+  # MARIADB_RANDOM_ROOT_PASSWORD: true
+  MARIADB_ROOT_PASSWORD: 'root'
+  MARIADB_DATABASE: xidb
+  MARIADB_USER: xiadmin
+  MARIADB_PASSWORD: 'password'
+
+x-common: &common
+  image: ghcr.io/landsandboat/server:latest
+  environment:
+    <<: *dbcreds
+    XI_NETWORK_HTTP_HOST: 0.0.0.0
+    XI_NETWORK_ZMQ_IP: world
+    XI_NETWORK_SQL_HOST: database
+    XI_NETWORK_ZONE_IP: 192.168.11.11 # UPDATE THIS TO THE LAN IP OF THE HOST MACHINE
+    # XI_{file}_{setting}: value
+  volumes:
+    - losmeshes:/server/losmeshes
+    - navmeshes:/server/navmeshes
+    # - ./config.yaml:/server/tools/config.yaml
+    # - ./map.lua:/server/settings/map.lua
+    # - ./modules:/server/modules
+  networks:
+    - lsb
+  labels:
+    - "traefik.enable=true"
+    - "traefik.udp.routers.game.service=svc_game"
+    - "traefik.udp.services.svc_game.loadbalancer.server.port=54230"
+    - "traefik.tcp.routers.connect.rule=HostSNI(`*`)"
+    - "traefik.tcp.routers.connect.entrypoints=connect"
+    - "traefik.tcp.routers.connect.service=svc_connect"
+    - "traefik.tcp.services.svc_connect.loadbalancer.server.port=54230"
+    - "traefik.tcp.routers.connect1.rule=HostSNI(`*`)"
+    - "traefik.tcp.routers.connect1.entrypoints=connect1"
+    - "traefik.tcp.routers.connect1.service=svc_connect1"
+    - "traefik.tcp.services.svc_connect1.loadbalancer.server.port=54231"
+    - "traefik.tcp.routers.connect2.rule=HostSNI(`*`)"
+    - "traefik.tcp.routers.connect2.entrypoints=connect2"
+    - "traefik.tcp.routers.connect2.service=svc_connect2"
+    - "traefik.tcp.services.svc_connect2.loadbalancer.server.port=54001"
+    - "traefik.tcp.routers.search.rule=HostSNI(`*`)"
+    - "traefik.tcp.routers.search.entrypoints=search"
+    - "traefik.tcp.routers.search.service=svc_search"
+    - "traefik.tcp.services.svc_search.loadbalancer.server.port=54002"
+
 
 services:
-  # The DB service
-  db:
-    image: mariadb
-    restart: always
-    environment:
-      MYSQL_USER: xiuser
-      MYSQL_PASSWORD: xipassword
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: xidb
-    networks:
-      - lsb
-    # Run all the .sql files in the /sql directory to initalize the DB. This only hapens the first time this service is started and will not handle additions/modifications
-    volumes:
-      - ./sql:/docker-entrypoint-initdb.d
-      - ~/lsb_server/data:/var/lib/mysql
-    ports:
-      - "3306:3306"
-
   # Ease of access tool for the DB, you can type in localhost:8080 to get a web interface to the DB. You can log in with root:wheel
   db_admin_portal:
     image: adminer
     restart: always
     depends_on:
-      - db
+      - database
     networks:
       - lsb
     ports:
       - 8080:8080
-
-  # The server service
-  game:
-    # Build whatever is in the Dockerfile in the server root folder
-    build: .
-    environment:
-      XI_NETWORK_SQL_HOST: db
-      XI_NETWORK_SQL_PORT: 3306
-      XI_NETWORK_SQL_LOGIN: xiuser
-      XI_NETWORK_SQL_PASSWORD: xipassword
-      XI_NETWORK_SQL_DATABASE: xidb
-      XI_NETWORK_LOGIN_DATA_IP: 0.0.0.0
-      XI_NETWORK_LOGIN_DATA_PORT: 54230
-      XI_NETWORK_LOGIN_VIEW_IP: 0.0.0.0
-      XI_NETWORK_LOGIN_VIEW_PORT: 54001
-      XI_NETWORK_LOGIN_AUTH_IP: 0.0.0.0
-      XI_NETWORK_LOGIN_AUTH_PORT: 54231
-      XI_NETWORK_ZMQ_IP: 0.0.0.0
-      XI_NETWORK_ZMQ_PORT: 54003
-      # UPDATE THIS TO THE LAN IP OF THE HOST MACHINE
-      XI_NETWORK_ZONE_IP: 192.168.50.248
-      XI_NETWORK_MAP_PORT: 54230
-      XI_NETWORK_SEARCH_PORT: 54002
-    depends_on:
-      - db
-      - traefik
-    networks:
-      - lsb
-    labels:
-      - "traefik.enable=true"
-
-      - "traefik.udp.routers.game.service=svc_game"
-      - "traefik.udp.services.svc_game.loadbalancer.server.port=54230"
-
-      - "traefik.tcp.routers.connect.rule=HostSNI(`*`)"
-      - "traefik.tcp.routers.connect.entrypoints=connect"
-      - "traefik.tcp.routers.connect.service=svc_connect"
-      - "traefik.tcp.services.svc_connect.loadbalancer.server.port=54230"
-
-      - "traefik.tcp.routers.connect1.rule=HostSNI(`*`)"
-      - "traefik.tcp.routers.connect1.entrypoints=connect1"
-      - "traefik.tcp.routers.connect1.service=svc_connect1"
-      - "traefik.tcp.services.svc_connect1.loadbalancer.server.port=54231"
-
-      - "traefik.tcp.routers.connect2.rule=HostSNI(`*`)"
-      - "traefik.tcp.routers.connect2.entrypoints=connect2"
-      - "traefik.tcp.routers.connect2.service=svc_connect2"
-      - "traefik.tcp.services.svc_connect2.loadbalancer.server.port=54001"
-
-      - "traefik.tcp.routers.search.rule=HostSNI(`*`)"
-      - "traefik.tcp.routers.search.entrypoints=search"
-      - "traefik.tcp.routers.search.service=svc_search"
-      - "traefik.tcp.services.svc_search.loadbalancer.server.port=54002"
 
   traefik:
     image: traefik
@@ -226,7 +114,6 @@ services:
     environment:
       TRAEFIK_API_DASHBOARD: false
       TRAEFIK_API_INSECURE: true
-
       TRAEFIK_ENTRYPOINTS_GAME: true
       TRAEFIK_ENTRYPOINTS_GAME_ADDRESS: ":54230/udp"
       TRAEFIK_ENTRYPOINTS_CONNECT: true
@@ -237,12 +124,10 @@ services:
       TRAEFIK_ENTRYPOINTS_CONNECT2_ADDRESS: ":54001/tcp"
       TRAEFIK_ENTRYPOINTS_SEARCH: true
       TRAEFIK_ENTRYPOINTS_SEARCH_ADDRESS: ":54002/tcp"
-
       TRAEFIK_PROVIDERS_DOCKER: true
       TRAEFIK_PROVIDERS_DOCKER_WATCH: true
       TRAEFIK_PROVIDERS_DOCKER_NETWORK: "web"
       TRAEFIK_PROVIDERS_DOCKER_EXPOSEDBYDEFAULT: false
-
     ports:
       - "54231:54231/tcp"
       - "54230:54230/tcp"
@@ -255,9 +140,98 @@ services:
       - web
       - lsb
 
+  database:
+    image: mariadb:lts
+    restart: always
+    command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_general_ci']
+    environment:
+      <<: *dbcreds
+    volumes:
+      - database:/var/lib/mysql
+    networks:
+      - lsb
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      start_period: 10s
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  database-update:
+    <<: *common
+    command: ["python", "/server/tools/dbtool.py", "update"]
+    depends_on:
+      database:
+        condition: service_healthy
+      traefik:
+        condition: service_healthy
+
+  connect:
+    <<: *common
+    command: ["/server/xi_connect"]
+    restart: unless-stopped
+    ports:
+      - "54001:54001"
+      - "54230:54230"
+      - "54231:54231"
+    depends_on:
+      database:
+        condition: service_healthy
+        restart: true
+      database-update:
+        condition: service_completed_successfully
+
+  search:
+    <<: *common
+    command: ["/server/xi_search"]
+    restart: unless-stopped
+    ports:
+      - "54002:54002"
+    depends_on:
+      database:
+        condition: service_healthy
+        restart: true
+      database-update:
+        condition: service_completed_successfully
+
+  world:
+    <<: *common
+    command: ["/server/xi_world"]
+    restart: unless-stopped
+    ports:
+      - "8088:8088"
+    depends_on:
+      database:
+        condition: service_healthy
+        restart: true
+      database-update:
+        condition: service_completed_successfully
+
+  map:
+    <<: *common
+    command: ["/server/xi_map"]
+    restart: unless-stopped
+    ports:
+      - "54230:54230/udp"
+    depends_on:
+      database:
+        condition: service_healthy
+        restart: true
+      database-update:
+        condition: service_completed_successfully
+      world:
+        condition: service_started
+
 networks:
   lsb:
     external: false
   web:
+    external: true
+
+volumes:
+  database:
+  losmeshes:
+    external: true
+  navmeshes:
     external: true
 ```

@@ -1,4 +1,35 @@
-# Main Supported Platforms
+# Quick Start
+
+## Docker
+
+The fastest way to get started is through [Docker](https://docs.docker.com/).
+
+Checking out the repository with Git is not required for this method.
+
+* Create a file named `docker-compose.yml` using the [example in the README](https://github.com/LandSandBoat/server/tree/base/docker#via-docker-compose) (consider changing the passwords at the top).
+  * You can put this in an empty folder.
+
+* Run the following command to install meshes:
+
+```sh
+docker run --rm -v losmeshes:/losmeshes -v navmeshes:/navmeshes ghcr.io/landsandboat/ximeshes:latest
+```
+
+* Start the server:
+
+```sh
+docker compose up --detach
+```
+
+### Updating
+
+```sh
+docker compose pull && docker compose up -d
+```
+
+## Building from source
+
+### Main Supported Platforms
 
 **NOTE:** While it's possible to achieve the steps in this guide using different tools and versions of the software we list, we _cannot recommend enough_ following this guide to the letter and make sure you have everything working before you stray from the well-tested path. Using software parts from a pre-made stack like WAMP, the built-in Python that ships with Strawberry Perl, etc. is NOT suitable for the first time you're getting set up. Please follow the instructions to the letter and only start swapping pieces out once you have a working server.
 
@@ -9,7 +40,9 @@ _(click to expand sections)_
 <details>
   <summary>Windows 10/11</summary>
 
-## To Install
+#### Windows
+
+##### Install (Windows)
 
 * Install [Git for Windows](https://gitforwindows.org/).
   * The latest version is fine, accept defaults, change default text editor if desired.
@@ -86,7 +119,7 @@ o------------------------------------------o
 * You should eventually see `Build All succeeded.`.
   * Congratulations, you've built the server! You can now go onto [Next Steps](#next-steps).
 
-## To Update
+##### Update (Windows)
 
 * **Take down all of your server processes!**
 * Open a PowerShell window and navigate to your `server` directory.
@@ -124,14 +157,16 @@ py -3 dbtool.py update
 <details>
   <summary>Linux (Ubuntu 24.04)</summary>
 
-## To Install
+#### Linux (Ubuntu)
+
+##### Install (Ubuntu)
 
 ```txt
 NOTE: We try to keep up to date with whatever the latest LTS release of Ubuntu is (Ubuntu 24.04). We run all of our CI builds on this release. We can't guarantee that older LTS versions will work. When in doubt: update!
 ```
 
 * Run these steps to use Mariadb's community provided ("CS" instructions) .deb packages through apt:
-  * https://mariadb.com/docs/server/connect/programming-languages/c/install/#CS_Package_Repository
+  * <https://mariadb.com/docs/server/connect/programming-languages/c/install/#CS_Package_Repository>
 * Use your package manager to install the following packages or their equivalents:
 
 ```sh
@@ -153,7 +188,7 @@ cp server/settings/default/* server/settings
 sudo mysql_secure_installation
 ```
 
-* Type the following to create a database user with the login <ins>_**xi**_</ins> and password <ins>_**password**_</ins>, and an empty database called <ins>_**xidb**_</ins>. NOTE: You _SHOULD_ change **ALL THREE OF THESE** to improve security:
+* Type the following to create a database user with the login _**xi**_ and password _**password**_, and an empty database called _**xidb**_. NOTE: You _SHOULD_ change **ALL THREE OF THESE** to improve security:
 
 ```sh
 sudo mysql -u root -p -e "CREATE USER 'xi'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE xidb CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;USE xidb;GRANT ALL PRIVILEGES ON xidb.* TO 'xi'@'localhost';"
@@ -183,7 +218,7 @@ python3 dbtool.py
 
 * Congratulations, you've built and set up the server! You can now go onto [Next Steps](#next-steps).
 
-## To Update
+##### Update (Ubuntu)
 
 * **Take down all of your server processes!**
 * Open the `server` directory in a terminal.
@@ -221,7 +256,77 @@ python3 dbtool.py update
 
 -----
 
-# Experimental Platforms
+<details>
+  <summary>Docker</summary>
+
+#### Build with Docker
+
+* First you need to clone the repo:
+
+```sh
+git clone https://github.com/LandSandBoat/server.git
+```
+
+* You don't need the submodules, and can use the same command as above to store them in a volume:
+
+```sh
+docker run --rm -v losmeshes:/losmeshes -v navmeshes:/navmeshes ghcr.io/landsandboat/ximeshes:latest
+```
+
+* Copy [dev.docker-compose.yml](https://github.com/LandSandBoat/server/tree/base/dev.docker-compose.yml) to `docker-compose.yml`:
+
+```sh
+cp dev.docker-compose.yml docker-compose.yml
+```
+
+* Build the image:
+  * You can use `--build clang_tidy` instead of `--build build`.
+    * It will take longer but you'll get clang-tidy results in `log/clang_tidy_summary.md`.
+  * Both `build` and `clang_tidy` build the `landsandboat/server:testing` image used for the other services.
+
+```sh
+docker compose up -d --build build
+```
+
+* Start the database:
+  * By default, there's no volume for the database, so any changes are deleted when you remove the containers. You can add a volume to your `docker-compose.yml` if you want the changes to persist.
+
+```sh
+docker compose up -d database
+```
+
+* Update the database:
+
+```sh
+docker compose up -d setup_database
+```
+
+* Run sanity checks (the output will be in `sanity_checks_summary.md`):
+
+```sh
+docker compose up -d sanity_checks
+```
+
+* Run xi_test (the output will be in `log/tests.ctrf.json`):
+
+```sh
+docker compose up -d test
+```
+
+* Run the server:
+  * This will start the database, world, connect, and search services if they haven't been started already.
+
+```sh
+docker compose up -d map
+```
+
+Those are the basics. You can edit your `docker-compose.yml` to fit your needs and tastes. See [the README](https://github.com/LandSandBoat/server/tree/base/docker) for more.
+
+</details>
+
+-----
+
+### Experimental Platforms
 
 **NOTE:** These platforms should work, but are not actively maintained or used by the development team. The development team (especially in the case of OSX) might not have the hardware or expertise to be able to help you debug problems on these platforms. Use at your own risk. Good luck!
 
@@ -230,9 +335,9 @@ _(click to expand sections)_
 -----
 
 <details>
-  <summary>OSX</summary>
+  <summary>macOS</summary>
 
-## To Install
+#### macOS
 
 * Get dependencies from brew:
 
@@ -242,7 +347,7 @@ brew install git pkg-config autoconf make cmake gcc openssl mariadb zeromq zmqpp
 
 * The version of LuaJIT that you can get through brew is old. You can build and install LuaJIT for your system with:
 
-```
+```sh
 git clone https://github.com/LuaJIT/LuaJIT.git
 cd LuaJIT
 sudo make install MACOSX_DEPLOYMENT_TARGET=$(sw_vers -productVersion) -j $(sysctl -n hw.physicalcpu)
@@ -251,7 +356,7 @@ sudo ln -sf luajit-2.1.0-beta3 /usr/local/bin/luajit
 
 * Download and build the server binaries:
 
-```
+```sh
 git clone --recursive https://github.com/LandSandBoat/server.git
 mkdir build
 cd build
@@ -264,14 +369,16 @@ From here, the instructions are the same as the Linux builds. Good luck!
 NOTE: You may have problems with missing symbols from LuaJIT. This happens if the build system picks up LuaJIT's headers instead of our internal (and expected) ones. We discovered this in [this discussion](https://github.com/LandSandBoat/server/discussions/1015).
 
 In your CMake configuration, you should see this:
-```
+
+```sh
 -- LuaJIT_FOUND: TRUE
 -- LuaJIT_LIBRARY: /usr/local/lib/libluajit-5.1.dylib
 -- LuaJIT_INCLUDE_DIR: /Users/runner/work/server/server/ext/lua/include
 ```
 
 If the `LuaJIT_INCLUDE_DIR` is pointing somewhere other than `<SERVER_ROOT>/server/server/ext/lua/include`, you can change it during CMake configuration by using:
-```
+
+```sh
 cmake .. -DLuaJIT_INCLUDE_DIR=<SERVER_ROOT>/server/ext/lua/include
 ```
 
@@ -282,6 +389,8 @@ cmake .. -DLuaJIT_INCLUDE_DIR=<SERVER_ROOT>/server/ext/lua/include
 <details>
   <summary>Linux (through WSL)</summary>
 
+#### WSL
+
 All of the instructions for Linux should be valid for WSL. There are additional points covered in the [Working with WSL](Working-with-WSL) article.
 
 </details>
@@ -290,6 +399,8 @@ All of the instructions for Linux should be valid for WSL. There are additional 
 
 <details>
   <summary>Linux (Arch)</summary>
+
+#### Linux (Arch)
 
 Some users have had success building and running on Arch. We can't and won't support Arch as main platform. Good luck!
 
@@ -310,19 +421,21 @@ sudo systemctl start mariadb
 <details>
   <summary>Linux (Raspberry Pi)</summary>
 
+#### Linux (Raspberry Pi)
+
 Build instructions should be the same or similar as a regular Linux build. The build process may take a long time, but running the game doesn't take much computing power.
 
-#### Power
+##### Power
 
 Raspberry Pis require at least a 2.5amp power supply to run at full power. If you are getting a little yellow lightning bolt in the top right of your display you have hit the limit of your current power supply. If this happens you may not be able to take full advantage of your CPU's power and may lose connectivity to Bluetooth or USB devices.
 
 Should you hit either of these 2 limitations it will take considerably longer for the build process to finish, if it finishes at all!
 
-#### LuaJIT
+##### LuaJIT
 
 Depending on your distro, the LuaJIT that comes through the package manager may not have required fixes for ARM platforms included with it. It's recommended you follow the steps in the OSX build guide to build and use the latest LuaJIT.
 
-#### RAM
+##### RAM
 
 Each server process startup can be quite resource intensive for both CPU and RAM. Older Raspberry Pis don't have much RAM, so you may need to start up each of the server processes one-by-one to ensure that they start and run correctly.
 
@@ -333,54 +446,61 @@ Each server process startup can be quite resource intensive for both CPU and RAM
 <details>
   <summary>Linux (Gentoo OpenRC)</summary>
   
-Ensure your system is up to date:
+#### Linux (Gentoo OpenRC)
+
+Ensure your system is up to date:\
+
 ```sh
 sudo emerge --sync && emerge -avuDU @world
 ```
-Emerge the following packages and their dependencies: 
+
+Emerge the following packages and their dependencies:
+
 ```sh
 sudo emerge -a dev-db/mariadb dev-lang/luajit dev-vcs/git net-libs/zeromq
 ```
+
 Clone the repo in your folder of choice, then copy the settings files:
+
 ```sh
 cd ~/ && mkdir git && cd ~/git 
 git clone --recursive https://github.com/LandSandBoat/server.git
 cp server/settings/default/* server/settings
 ```
+
 MariaDB will need to be configured and the database initialized before the service can be started. If you have issues, or are using Systemd instead of OpenRC, refer to the [Gentoo Wiki](https://wiki.gentoo.org/wiki/MariaDB).
+
 ```sh
 sudo emerge --config dev-db/mariadb
 sudo rc-update add mysql default
 sudo rc-service mysql start
 ```
+
 In order to use dbtool for managing your database, additional packages are required, one of which is not in the main Gentoo repository. This is a problem on Gentoo as installing with pip instead of portage can break your system. Thankfully, with an overlay we can get what we need (ensure you have already installed and configured [eselect-repository](https://wiki.gentoo.org/wiki/Eselect/Repository)):
+
 ```sh
 sudo eselect repository add claytabase git https://github.com/claybie/claytabase.git
 sudo emaint sync -r claytabase
 ```
+
 Now we can emerge all the necessary packages for dbtool:
+
 ```sh
 sudo emerge -a dev-python/black dev-python/colorama dev-python/GitPython dev-python/mariadb dev-python/pylint dev-python/pyyaml dev-python/pyzmq dev-python/regex
 ```
+
 Additionally, you will also need to emerge the below packages if you wish to use [pydarkstar](https://github.com/AdamGagorik/pydarkstar) as an automated auction house:
+
 ```sh
 sudo emerge -a dev-python/beautifulsoup4 dev-python/sqlalchemy
 ```
+
 The process for securing the MariaDB installation, creating the SQL database, building the project with make, populating the database using dbtool and performing future updates is the same as on Ubuntu. It can be referenced above from the *Linux (Debian/Ubuntu 22.04)* section.
 </details>
 
 -----
 
-<details>
-  <summary>Docker</summary>
-
-The core team of LSB does not use Docker in their workflows, and as such can't properly maintain a Docker setup as a first-class citizen. There is an unofficial Docker guide [here](Docker).
-
-</details>
-
------
-
-# Next Steps
+## Next Steps
 
 * The most basic way to start your server is to launch the newly-built `xi_*` executables, found in your repo root:
   * `xi_connect.exe`
