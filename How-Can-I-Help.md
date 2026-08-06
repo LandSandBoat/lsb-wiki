@@ -4,7 +4,7 @@ This guide assumes you've managed to download, build, and run the server correct
 
 - [GitHub Issues tagged as "Good First Issue"](https://github.com/LandSandBoat/server/labels/good%20first%20issue)
 - [GitHub Issues](https://github.com/LandSandBoat/server/issues)
-- [Using GitHub](Using-Github)
+- [Using GitHub](Using-GitHub)
 - [Contribution Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md)
 - [Development Landing Page](Development)
 - [Our License](https://github.com/LandSandBoat/server/blob/release/LICENSE)

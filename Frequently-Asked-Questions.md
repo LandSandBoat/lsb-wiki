@@ -35,11 +35,22 @@ The fastest way to get new features or bugfixes is to roll up your sleeves, get 
 
 We will never accept financial or material incentives for our work. This is a hobby project. External incentives would drive developer and staff time in a way that makes it no longer a hobby.
 
-## The code for feature X is available in the community, why haven't you taken it?
+## The code for feature X is available in another project or server, why haven't you taken it?
 
 Features in LandSandBoat are those that have been submitted to us, meet our standards for quality and accuracy, and that we have had the time to review and integrate with the rest of the codebase. It is very rare that we will accept code on someone else's behalf. While there is technically nothing stopping us, it would undermine our position in the community.
 
 Similarly, sending us code snippets creates more work and strain on staff and developers. If you have code you want to contribute, please speak to us with GitHub Issues, Discussions, and open a Pull Request.
+
+## Can I use AI to help me write code for LandSandBoat?
+
+Yes, but...
+
+If you submit code written or heavily influenced by AI, you are still responsible for it. That means you understand it, you have tested it, you have implemented it against retail captures and observation, and you have verified it behaves correctly in the official game client. Your code will be read many times over by reviewers and by future contributors. Your pull request, commits,
+ code, and research will need to stand up to this scrutiny.
+
+**We can't and won't accept low effort "slop".** A pull request that clearly came straight out of a model with little oversight wastes reviewer time and degrades the codebase. If we suspect a contribution is vibe-coded slop, we will close it without further comment.
+
+Read [`documentation/ai_agents/README.md`](https://github.com/LandSandBoat/server/blob/base/documentation/ai_agents/README.md) in the server repo before you submit anything. It covers where AI genuinely helps, where it does not, and what we expect from you. It also carries guides for the agents themselves.
 
 ## When can I play "Classic" Dynamis?
 

@@ -13,16 +13,16 @@ _(click to expand sections)_
 
 * Install [Git for Windows](https://gitforwindows.org/).
   * The latest version is fine, accept defaults, change default text editor if desired.
-* Install [Visual Studio](https://visualstudio.microsoft.com/vs/community/).
-  * `2022` and `2026` are fine.
+* Install [Visual Studio 2026](https://visualstudio.microsoft.com/vs/community/).
+  * **Use 2026.** We like to use the latest compilers we can.
   * **YOU MUST** check the checkbox for `Desktop development with C++` workload (under Desktop & Mobile) or you won't be able to build anything.
 * Install [MariaDB Server](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.18&os=windows&cpu=x86_64&pkg=msi&m=xtom_ams).
   * Use the latest in the `10.11.x` family of releases, default settings are mostly OK - aside from:
     * **Set a root password**.
     * **Use UTF8 as character set**.
     * **IT IS INCREDIBLY IMPORTANT** that you check the `Use UTF8 as server's character set` checkbox on the `Default instance properties` page during installation. If you don't do this you may face very hard to diagnose crashes.
-* Install [Python 3.14.6](https://www.python.org/downloads/).
-  * Make sure this is the correct version [version 3.14.6](https://www.python.org/downloads/release/python-3146/), other versions break with our usage!
+* Install [Python 3.14.x](https://www.python.org/downloads/).
+  * Use the latest `3.14` release. Our CI builds and tests on `3.14`; older or newer major versions break with our usage.
   * During installation YOU MUST check the `add python.exe to PATH` checkbox.
 * Open a PowerShell window and navigate to your chosen install directory.
 * To download the latest code, install Python requirements, and copy the configuration files:
@@ -33,14 +33,15 @@ py -3 -m pip install -r server/tools/requirements.txt
 cp server/settings/default/* server/settings
 ```
 
-* Edit the file `network.lua` inside `server\settings\` and change "root" to the password set during MariaDB setup
-  * Make sure to leave the quotation marks surrounding the password!
+* Edit the file `network.lua` inside `server\settings\` and set `SQL_PASSWORD` to the root password you set during MariaDB setup.
+  * Leave `SQL_LOGIN` as `'root'` and `SQL_DATABASE` as `'xidb'`.
+  * Keep the quotation marks around the password!
 * Edit the file `main.lua` inside `server\settings\` with your desired settings for your server.
-  * Make sure to leave the quotation marks surrounding that has them around it!
-* Back in your PowerShell window, navigate to `server\tools\` and build the database:
+  * Keep the quotation marks around any value that already has them.
+* Back in your PowerShell window, navigate to `server\` and build the database:
 
 ```ps
-py -3 dbtool.py
+py -3 ./tools/dbtool.py
 ```
 
 * Follow the on-screen instructions:
@@ -69,18 +70,25 @@ o------------------------------------------o
 | 4. Restore/Import                        |
 | r. Reset DB                              |
 | t. Maintenance Tasks                     |
+| p. Player Administration                 |
+| l. Launch Server                         |
 | s. Settings                              |
 | q. Quit                                  |
 o------------------------------------------o
 ```
 
+* An extra `e. Express Update` entry appears at the top of the menu when an express update is available for your database version.
 * You can exit out of `dbtool` now with `q`.
-* Open the `server` root folder in `Visual Studio 2022/2026`.
+* Open the `server` root folder in Visual Studio 2026.
   * `Open a local folder` on the splash screen.
   * Make sure VS has administrator priviledges so it can fetch all the data it needs.
 * The build will start configuring itself for your system.
   * This stage is done when the `CMake` window at the bottom of the window says `1> CMake generation finished.`.
-* Ensure the dropdown near the top of the window says `x64-Debug`.
+
+⚠️ **Check the configuration dropdown near the top of the window before you build.** Visual Studio often selects a `Debug` configuration by default. A `Debug` build of the map server is many times slower than an optimized one. Slow enough that it becomes painful to use. Only build `Debug` when you are chasing a serious problem and need the full debug information.
+
+* Set the dropdown to `Default (RelWithDebInfo)`.
+  * This is suitable for daily use.
 * In the top toolbar, select `Build > Build All`.
   * This may take a little while!
 * You should eventually see `Build All succeeded.`.
@@ -105,14 +113,15 @@ git stash pop
 
 ⚠️ If this happens, you need to manually edit the conflicting files before continuing.
 
-* Navigate to `server\tools\` and update the database:
+* Navigate to `server` and update the database:
 
 ```ps
-py -3 dbtool.py update
+py -3 ./tools/dbtool.py update
 ```
 
-* Open the `server` root folder in VS2022/2026.
+* Open the `server` root folder in Visual Studio 2026.
   * CMake _may_ reconfigure, wait for it to complete like before.
+  * Check the configuration dropdown again. You'll still want to use `Default (RelWithDebInfo)`.
 * In the top toolbar, select `Build > Build All`.
   * This may take a little while if you have a weaker machine.
 * You should eventually see `Build All succeeded.`.
@@ -122,12 +131,12 @@ py -3 dbtool.py update
 -----
 
 <details>
-  <summary>Linux (Ubuntu 24.04)</summary>
+  <summary>Linux (Ubuntu 26.04)</summary>
 
 ## To Install
 
 ```txt
-NOTE: We try to keep up to date with whatever the latest LTS release of Ubuntu is (Ubuntu 24.04). We run all of our CI builds on this release. We can't guarantee that older LTS versions will work. When in doubt: update!
+NOTE: We try to keep up to date with whatever the latest LTS release of Ubuntu is (Ubuntu 26.04). We run all of our CI builds on this release. We can't guarantee that older LTS versions will work. When in doubt: update!
 ```
 
 * Run these steps to use Mariadb's community provided ("CS" instructions) .deb packages through apt:
@@ -136,8 +145,10 @@ NOTE: We try to keep up to date with whatever the latest LTS release of Ubuntu i
 
 ```sh
 sudo apt update
-sudo apt install git python3 python3-pip g++-14 cmake make libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev mariadb-server libmariadb-dev binutils-dev
+sudo apt install git python3 python3-pip g++-15 cmake make pkg-config libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev libzstd-dev libdwarf-dev mariadb-server libmariadb-dev-compat binutils-dev
 ```
+
+* The project needs a compiler with C++23 support and CMake 3.25 or newer. Our CI builds with `g++-15` and `clang-22`. If your distribution only offers an older `g++`, expect build failures.
 
 * Download the latest code, install Python requirements, and copy the configuration files:
 
@@ -162,21 +173,25 @@ sudo mysql -u root -p -e "CREATE USER 'xi'@'localhost' IDENTIFIED BY 'password';
 * Edit the file `network.lua` inside `server/settings/` and change the `SQL_LOGIN`, `SQL_PASSWORD`, and `SQL_DATABASE` to the login, password, and database you used in the above command (default xi, password, xidb).
   * Make sure to include the quotation marks!
 * Edit the file `main.lua` inside `server/settings` with your desired settings for your server.
-  * Make sure to leave the quotation marks surrounding that has them around it!
-* In the `server` directory, prepare and build the executables:
+  * Keep the quotation marks around any value that already has them.
+* In the `server` directory, build the executables:
 
 ```sh
-mkdir build
-cd build
-cmake ..
-make -j $(nproc)
+python3 ./tools/build.py
 ```
 
-* Wait for the build to complete, then move to `server/tools/` and build the database:
+* `build.py` configures and builds with the `default` CMake preset, which is `RelWithDebInfo`. This is the configuration you want for everyday use. Pass `--preset debug` only when you are chasing a serious problem. A `Debug` build of the map server is many times slower.
+* If you would rather drive CMake yourself, this is what `build.py` runs:
 
 ```sh
-cd ../tools
-python3 dbtool.py
+cmake --preset default
+cmake --build --preset default
+```
+
+* Wait for the build to complete, then build the database. Still from the `server` directory:
+
+```sh
+python3 ./tools/dbtool.py
 ```
 
 * Select 'Reset DB' and follow the instructions to "reset" the database.
@@ -202,19 +217,16 @@ git stash pop
 
 ⚠️ If this happens, you need to manually edit the conflicting files before continuing.
 
-* Prepare and build the executables:
+* Rebuild the executables:
 
 ```sh
-cd build
-cmake ..
-make -j $(nproc)
+python3 ./tools/build.py
 ```
 
-* Wait for the build to complete, then move to `server/tools/` and update the database:
+* Wait for the build to complete, then update the database. Still from the `server` directory:
 
 ```sh
-cd ../tools
-python3 dbtool.py update
+python3 ./tools/dbtool.py update
 ```
 
 </details>
@@ -232,32 +244,38 @@ _(click to expand sections)_
 <details>
   <summary>OSX</summary>
 
-## To Install
+## Use Docker first
+
+**On macOS, run the server in Docker rather than building it on bare metal.**
+
+A bare-metal macOS build works, but it is the platform the development team can help you with least. You will be the one debugging any Homebrew, linker, or LuaJIT problem you hit. Docker gives you the same Linux build we test in CI, and keeps FFXI's dependencies out of your system.
+
+We publish images for `linux/amd64`, `linux/arm64`, and `linux/arm/v7`, so Apple Silicon Macs pull a native `arm64` image and run at full speed. No emulation.
+
+Start here:
+
+* [`docker/README.md`](https://github.com/LandSandBoat/server/blob/base/docker/README.md)
+
+## To Install on bare metal
+
+If you would rather build natively, read the warning at the top of this section and continue.
 
 * Get dependencies from brew:
 
 ```sh
-brew install git pkg-config autoconf make cmake gcc openssl mariadb zeromq zmqpp
+brew install git pkg-config cmake ninja openssl mariadb zeromq luajit
 ```
 
-* The version of LuaJIT that you can get through brew is old. You can build and install LuaJIT for your system with:
-
-```
-git clone https://github.com/LuaJIT/LuaJIT.git
-cd LuaJIT
-sudo make install MACOSX_DEPLOYMENT_TARGET=$(sw_vers -productVersion) -j $(sysctl -n hw.physicalcpu)
-sudo ln -sf luajit-2.1.0-beta3 /usr/local/bin/luajit
-```
-
+* Build with Apple Clang, which ships with the Xcode command line tools.
 * Download and build the server binaries:
 
 ```
 git clone --recursive https://github.com/LandSandBoat/server.git
-mkdir build
-cd build
-cmake ..
-make -j $(sysctl -n hw.physicalcpu)
+cd server
+python3 ./tools/build.py
 ```
+
+* `build.py` uses the `default` CMake preset, which builds `RelWithDebInfo`. Use `--preset debug` only when you need full debug information. A `Debug` map server is many times slower.
 
 From here, the instructions are the same as the Linux builds. Good luck!
 
@@ -272,7 +290,7 @@ In your CMake configuration, you should see this:
 
 If the `LuaJIT_INCLUDE_DIR` is pointing somewhere other than `<SERVER_ROOT>/server/server/ext/lua/include`, you can change it during CMake configuration by using:
 ```
-cmake .. -DLuaJIT_INCLUDE_DIR=<SERVER_ROOT>/server/ext/lua/include
+cmake --preset default -DLuaJIT_INCLUDE_DIR=<SERVER_ROOT>/server/ext/lua/include
 ```
 
 </details>
@@ -291,16 +309,30 @@ All of the instructions for Linux should be valid for WSL. There are additional 
 <details>
   <summary>Linux (Arch)</summary>
 
+**NOTE**: Nobody has tried this in a long time. It's probably out of date.
+
 Some users have had success building and running on Arch. We can't and won't support Arch as main platform. Good luck!
 
 ```sh
-echo "Y" | pacman -Syu
-echo "Y" | pacman -S sudo
-sudo echo "Y" | pacman -S git python3 python-pip gcc cmake make luajit zeromq openssl zlib mariadb binutils
+sudo pacman -Syu --noconfirm
+sudo pacman -S --noconfirm git python python-pip gcc cmake make pkgconf luajit zeromq openssl zlib zstd libdwarf mariadb binutils
 sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 sudo systemctl enable mariadb
 sudo systemctl start mariadb
-# CMake build as normal
+```
+
+Install the Python requirements. Arch marks its system Python as externally managed, so use a virtual environment:
+
+```sh
+python -m venv .venv
+source .venv/bin/activate
+pip install -r server/tools/requirements.txt
+```
+
+Then build as described in the Ubuntu section:
+
+```sh
+python3 ./tools/build.py
 ```
 
 </details>
@@ -309,6 +341,8 @@ sudo systemctl start mariadb
 
 <details>
   <summary>Linux (Raspberry Pi)</summary>
+
+**NOTE**: Nobody has tried this in a long time. It's probably out of date.
 
 Build instructions should be the same or similar as a regular Linux build. The build process may take a long time, but running the game doesn't take much computing power.
 
@@ -320,7 +354,15 @@ Should you hit either of these 2 limitations it will take considerably longer fo
 
 #### LuaJIT
 
-Depending on your distro, the LuaJIT that comes through the package manager may not have required fixes for ARM platforms included with it. It's recommended you follow the steps in the OSX build guide to build and use the latest LuaJIT.
+Depending on your distro, the LuaJIT that comes through the package manager may not have required fixes for ARM platforms included with it. If you hit LuaJIT problems, build and install it from source:
+
+```sh
+git clone https://github.com/LuaJIT/LuaJIT.git
+cd LuaJIT
+sudo make install -j $(nproc)
+```
+
+`make install` creates the `luajit` symlink for you. Check it with `ls -l /usr/local/bin/luajit` and create it yourself if it is missing, using the versioned name the installer reported.
 
 #### RAM
 
@@ -332,6 +374,8 @@ Each server process startup can be quite resource intensive for both CPU and RAM
 
 <details>
   <summary>Linux (Gentoo OpenRC)</summary>
+
+**NOTE**: Nobody has tried this in a long time. It's probably out of date.
   
 Ensure your system is up to date:
 ```sh
@@ -362,11 +406,15 @@ Now we can emerge all the necessary packages for dbtool:
 ```sh
 sudo emerge -a dev-python/black dev-python/colorama dev-python/GitPython dev-python/mariadb dev-python/pylint dev-python/pyyaml dev-python/pyzmq dev-python/regex
 ```
+
+⚠️ **This list is incomplete.** `server/tools/requirements.txt` is the source of truth, and it has grown since this section was written. At the time of writing it also needs `ruamel.yaml`, `requests`, `bcrypt`, `jinja2`, and `jsonschema`. Without them `dbtool` fails on import.
+
+Check `requirements.txt` yourself and emerge the matching `dev-python/*` atoms. Portage atom names do not always match the PyPI name, so search with `emerge -s` if an obvious guess fails.
 Additionally, you will also need to emerge the below packages if you wish to use [pydarkstar](https://github.com/AdamGagorik/pydarkstar) as an automated auction house:
 ```sh
 sudo emerge -a dev-python/beautifulsoup4 dev-python/sqlalchemy
 ```
-The process for securing the MariaDB installation, creating the SQL database, building the project with make, populating the database using dbtool and performing future updates is the same as on Ubuntu. It can be referenced above from the *Linux (Debian/Ubuntu 22.04)* section.
+The process for securing the MariaDB installation, creating the SQL database, building the project, populating the database using dbtool and performing future updates is the same as on Ubuntu. See the *Linux (Ubuntu 26.04)* section above.
 </details>
 
 -----
@@ -374,7 +422,9 @@ The process for securing the MariaDB installation, creating the SQL database, bu
 <details>
   <summary>Docker</summary>
 
-The core team of LSB does not use Docker in their workflows, and as such can't properly maintain a Docker setup as a first-class citizen. There is an unofficial Docker guide [here](Docker).
+We maintain Dockerfiles in the server repo under `docker/`, and our CI builds them, runs `xi_test` and startup checks inside the container, and publishes images to `ghcr.io/landsandboat/server` for `linux/amd64`, `linux/arm64`, and `linux/arm/v7`.
+
+* [`docker/README.md`](https://github.com/LandSandBoat/server/blob/base/docker/README.md)
 
 </details>
 
@@ -382,13 +432,34 @@ The core team of LSB does not use Docker in their workflows, and as such can't p
 
 # Next Steps
 
-* The most basic way to start your server is to launch the newly-built `xi_*` executables, found in your repo root:
-  * `xi_connect.exe`
-  * `xi_map.exe`
-  * `xi_search.exe`
-  * `xi_world.exe`
+## Starting the server
 
-  _If they don't run, or close immediately, be sure to check the log output in the `log/` or `dmp/` folders._
+The server is four separate processes. You can start them with `dbtool`, or by hand.
+
+**With dbtool (easiest):**
+
+1. Run `dbtool` from `server/`:
+
+```sh
+python3 ./tools/dbtool.py
+```
+
+Windows: `py -3 ./tools/dbtool.py`
+
+2. Choose `l. Launch Server`. This starts `xi_connect`, `xi_search` and `xi_world`, then starts one `xi_map` for each distinct zone port you have configured (default 1).
+
+**By hand:**
+
+Launch the newly-built `xi_*` executables from your repo root:
+
+* `xi_connect`
+* `xi_world`
+* `xi_search`
+* `xi_map`
+
+On Windows these have an `.exe` extension. Each one opens its own console window; leave them all running. Start `xi_map` last, after the other three are up.
+
+_If a process doesn't run, or closes immediately, check the log output in the `log/` or `dmp/` folders for clues._
 
 -----
 
@@ -400,6 +471,6 @@ The core team of LSB does not use Docker in their workflows, and as such can't p
 * Once you've confirmed everything is working and you can connect to your local server, you can start exploring the [Post-Install Guide](Post-Install-Guide) and articles in the Development section. These articles tell you how to do important things such as:
   * Changing settings
   * Making a Game Master/Admin character and finding/using GM commands (giving yourself items, teleporting, etc.)
-  * Making your server available to the wider internet
+  * Making your server available to your friends and the wider internet
   * Further guides, including; deeper customisation using modules, performance profiling and preparing for large userbases, etc.
   * And many other useful things!
