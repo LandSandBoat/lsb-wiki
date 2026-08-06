@@ -27,30 +27,67 @@ Make sure you look in `scripts/commands` for more commands!
 
 ## Making the Server Available to the Internet
 
-To make the server accessible over a network, the zoneip field for all zones must be changed in the zone_settings table. You can do this with a simple MySQL query.
+To reach the server from anywhere other than the machine it runs on, the `zoneip` field for every zone in the `zone_settings` table must hold the address clients will connect to.
 
-```sql
-UPDATE zone_settings SET zoneip = 'IP';
+`dbtool` does this for you. From the `server` directory, run `python3 ./tools/dbtool.py` (Windows: `py -3 ./tools/dbtool.py`), choose `t. Maintenance Tasks`, then `2. Set zone IP addresses`:
+
+```txt
+o------------------------------------------o
+|          Set Zone IP Addresses           |
+o------------------------------------------o
+| 1. Local only (127.0.0.1)                |
+| 2. Local network (auto-detect LAN IP)    |
+| 3. Public IP (via ident.me)              |
+| m. Manual entry                          |
+| q. Quit to tasks menu                    |
+o------------------------------------------o
 ```
 
-Replace `IP` with the desired IP. To access the game only on the same machine, this should be `127.0.0.1`. If you're accessing the server from another machine on the network, it should be the local IP address of the host, e.g. `192.168.0.11`. If you want to access it over the internet, it needs to be your public IP which can be gathered from various websites such as <https://www.whatismyip.com/>.
+Pick the one that matches how players will reach you:
 
-### Note
+* **Local only**: you are the only player, connecting from the same machine.
+* **Local network**: players are on your LAN. `dbtool` detects the host's LAN address, e.g. `192.168.0.11`.
+* **Public IP**: players connect over the internet. `dbtool` looks your address up through `ident.me`.
+* **Manual entry**: anything else.
 
-`zone_settings` is not a protected table, so this change can be overwritten during an update. It is recommended to save this query in a `.sql` file in `server/sql/backups/` then import it after an update. This could also be a [module](Module-Guide).
+Setting a public IP is not enough on its own. You also need the [ports below](#port-forwarding) forwarded and open.
+
+### These settings are wiped by updates
+
+⚠️ `zone_settings` is not a protected table. Any database update or reset overwrites your `zoneip` values, and players will not be able to connect until you set them again.
+
+Do not rely on remembering. Make the change reproducible:
+
+* Put it in a [module](Module-Guide), which survives updates and is the better option once you are running a server for other people.
 
 ## Port Forwarding
 
 Make sure you have the following ports forwarded by your router and open in any firewall software if accessing the server over a network:
 
 ```txt
-TCP ports: 54230, 54231, 54001, 54002
+TCP ports: 54230, 54231, 54001, 54002, 51220
 UDP port: 54230
 ```
 
 ## Database Management
 
-By default, dbtool will offer to backup your whole database into `server/sql/backups/` whenever it performs an update. You can turn this off and do manual backups either with the TUI, or by running `python3 dbtool.py backup` (Windows: `py -3 dbtool.py backup`). You can create a backup of only sensitive player data by using `python3 dbtool.py backup lite` (Windows: `py -3 dbtool.py backup lite`). The tables it backs up with the `lite` argument are defined in `server/tools/config.yaml` (created automatically by dbtool the first time you run it). The backups can be imported using the **Restore/Import** command in dbtool.
+By default, dbtool will offer to backup your whole database into `server/sql/backups/` whenever it performs an update. You can turn this off and do manual backups either with the TUI, or by running the commands below from the `server` directory.
+
+Back up everything:
+
+```sh
+python3 ./tools/dbtool.py backup
+```
+
+Back up only sensitive player data:
+
+```sh
+python3 ./tools/dbtool.py backup lite
+```
+
+Windows users: `py -3` instead of `python3`.
+
+The tables it backs up with the `lite` argument are defined in `server/tools/config.yaml` (created automatically by dbtool the first time you run it). The backups can be imported using the **Restore/Import** command in dbtool.
 
 ## Executing a MySQL Query
 

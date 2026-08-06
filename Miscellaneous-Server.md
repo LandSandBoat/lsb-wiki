@@ -4,9 +4,24 @@
 
 To give your server the best chance of providing a snappy and stable gameplay experience, you should ensure the following:
 
-### Build and run in Release mode
+### Build and run in RelWithDebInfo mode
 
-Either through Visual Studio, or CMake (`cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo ..`) you should be building in `RelWithDebInfo` mode when you're ready to have players connect to your server. A lot of debug information and tooling is removed from the build and it will run much faster than pure Debug mode. If you need to debug things you should revert to a `Debug` build.
+Build `RelWithDebInfo` before you let players connect. A lot of debug information and tooling is removed from the build, and it runs much faster than a `Debug` build. Only revert to `Debug` when you are chasing a serious problem.
+
+`RelWithDebInfo` is the `default` CMake preset, so this is what you get from:
+
+```sh
+python3 ./tools/build.py
+```
+
+Or, driving CMake yourself:
+
+```sh
+cmake --preset default
+cmake --build --preset default
+```
+
+In Visual Studio, set the configuration dropdown to `Default (RelWithDebInfo)`. Check it after every reconfigure. Visual Studio often resets it to `Debug`.
 
 ### Use a bare-metal/real machine
 

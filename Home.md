@@ -14,7 +14,7 @@ To raise problems or suggestions about the wiki, you can open issues on the main
 
 * [Frequently Asked Questions](Frequently-Asked-Questions)
   * [How can I help?](How-Can-I-Help)
-    * [Using GitHub](Using-Github)
+    * [Using GitHub](Using-GitHub)
 * [Useful Resources](Resources)
   * [Model ID reference lists](Model-ID-Reference)
   * [Treasure Hunter Chart](TH-chart)
@@ -36,16 +36,19 @@ Articles in this category are geared towards what a server administrator might w
 Articles in this category are general development topics relating to overall development processes and tools. The Articles page contains guides covering specific subject matter.
 
 * [Contributing Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md)
+* [Use of AI and Code Generation Tools](https://github.com/LandSandBoat/server/blob/base/documentation/ai_agents/README.md)
 * [Development Guide](Development-Guide)
 * [Git Guide](Development-Guide-Git)
 * [Debugging](Debugging)
+* [Testing](Testing)
+* [Troubleshooting with Sanitizers](Sanitizers)
 * [Articles](Development)
 
 ## Client Setup
 
 Instructions for installing FFXI, connecting to a private server, and keeping the game updated.
 
-* [Windows 10](Client-Setup-Windows)
+* [Windows 10/11](Client-Setup-Windows)
 * [Common Concerns](Miscellaneous-Client)
 
 ## Code of Conduct

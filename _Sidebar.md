@@ -11,6 +11,7 @@
   * [Common Tasks, Issues & Tweaks](Miscellaneous-Server)
 * Development
   * [Contributing Guide](https://github.com/LandSandBoat/server/blob/base/CONTRIBUTING.md)
+  * [Use of AI and Code Generation Tools](https://github.com/LandSandBoat/server/blob/base/documentation/ai_agents/README.md)
   * [Development Guide](Development-Guide)
   * [Git Guide](Development-Guide-Git)
   * [Debugging](Debugging)
@@ -18,6 +19,6 @@
   * [Troubleshooting with Sanitizers](Sanitizers)
   * [Articles](Development)
 * Client Setup
-  * [Windows 10](Client-Setup-Windows)
+  * [Windows 10/11](Client-Setup-Windows)
   * [Common Concerns](Miscellaneous-Client)
-* [Code of Conduct](Code_of_Conduct.md)
+* [Code of Conduct](https://github.com/LandSandBoat/server/blob/base/CODE_OF_CONDUCT.md)

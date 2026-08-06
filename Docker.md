@@ -1,12 +1,22 @@
 # Docker Support + Examples
 
+## Read this first: there is now an official Docker setup
+
+⚠️ **Most people should not use the examples on this page.** The server repo now carries maintained Dockerfiles under `docker/`, and our CI builds them, runs `xi_test` and startup checks inside the container, and publishes images to `ghcr.io/landsandboat/server` for `linux/amd64`, `linux/arm64`, and `linux/arm/v7`.
+
+Start with [`docker/README.md`](https://github.com/LandSandBoat/server/blob/base/docker/README.md) in the server repo. It is the maintained reference, and it covers the published image, the `ximeshes` navmesh image, database credentials, port binding, and adjusting settings through environment variables.
+
+Use this page only if you want to see a hand-rolled example, or you need something the official images do not cover.
+
 ## Docker Support in LSB
 
-The core team of LSB does not use Docker in their workflows, and as such can't properly maintain a docker setup as a first-class citizen in the LSB project. Over time, people would pop in with functioning Docker/compose files, which would then decay after they left. This article is a compromise for those that want to use docker as part of their workflow, where we'll try our best to keep some working example files here that anyone can drop into their LSB server project and run.
+This article predates the official images. It was written when the core team did not use Docker and could not maintain a Docker setup as a first-class citizen: people would pop in with functioning Docker/compose files, which would then decay after they left. The examples below are kept for reference.
 
 ## No GitHub Issues + Support
 
-Since these examples are provided without warranty or support, and may not be maintainable depending on who's currently around, please do not raise any new GitHub issues if they aren't working. Feel free to submit a PR to the wiki if you have a fix, but otherwise it's on the user to make do. And we'll try and periodically review and update them if possible.
+The examples *on this page* are provided without warranty or support, and may not be maintainable depending on who's currently around. Please do not raise GitHub issues about them. Feel free to submit a PR to the wiki if you have a fix, but otherwise it's on the user to make do.
+
+This does not apply to the official images. Problems with those are ordinary bugs, raise them as issues.
 
 ## Docker Example Goals
 
@@ -119,8 +129,11 @@ ADD . /server
 # system packages as long as it all works in the end.
 RUN pip3 install --upgrade --break-system-packages -r ./tools/requirements.txt
 
-# Configure and build
-RUN mkdir docker_build && cd docker_build && cmake .. && make -j $(nproc)  && cd .. && rm -r /server/docker_build
+# Configure and build.
+# The 'default' preset builds RelWithDebInfo into /server/build.
+# Do not use a bare `cmake ..` here - it leaves CMAKE_BUILD_TYPE empty,
+# which gives you an unoptimized build with no debug information.
+RUN cmake --preset default && cmake --build --preset default && rm -rf /server/build
 
 # Ensure we can run the db update
 RUN chmod +x ./tools/dbtool.py
